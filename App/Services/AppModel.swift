@@ -232,6 +232,7 @@ final class AppModel: ObservableObject {
             consentGranted = true
             showConsent = false
             refreshAIAvailability()
+            Task { await AIConsentKeychainMirror.persist(allowed: true) }
             let action = pendingAIAction
             pendingAIAction = nil
             action?()
@@ -245,6 +246,7 @@ final class AppModel: ObservableObject {
         pendingAIAction = nil
         statusMessage = "AI not authorized. Local audit tools remain available."
         refreshAIAvailability()
+        Task { await AIConsentKeychainMirror.clear() }
     }
 
     func revokeConsent() {
@@ -253,6 +255,7 @@ final class AppModel: ObservableObject {
             consentGranted = false
             statusMessage = "AI access revoked. Outbound sends stopped."
             refreshAIAvailability()
+            Task { await AIConsentKeychainMirror.persist(allowed: false) }
         } catch {
             statusMessage = "Revoke failed: \(error.localizedDescription)"
         }
@@ -291,9 +294,10 @@ final class AppModel: ObservableObject {
             return
         }
         do {
-            let client = DeepSeekClient(apiKey: apiKey()!)
             let labels = activePunchItems.map(\.title)
-            let drafts = try await client.detectSnags(
+            let drafts = try await AIPrivacyTransport.detectSnags(
+                gate: consentGate,
+                apiKey: apiKey()!,
                 photos: activePhotos.map { photoURL(for: $0) },
                 priorLabels: labels,
                 auditId: audit.id
@@ -388,8 +392,9 @@ final class AppModel: ObservableObject {
             return
         }
         do {
-            let client = DeepSeekClient(apiKey: apiKey()!)
-            let patch = try await client.suggestFieldPatch(
+            let patch = try await AIPrivacyTransport.suggestFieldPatch(
+                gate: consentGate,
+                apiKey: apiKey()!,
                 item: item,
                 chatText: chatText,
                 priorFeedback: item.feedbackNotes
@@ -448,9 +453,12 @@ final class AppModel: ObservableObject {
             return
         }
         do {
-            let client = DeepSeekClient(apiKey: apiKey()!)
             let items = activePunchItems
-            let caption = try await client.annotateCaption(items: items)
+            let caption = try await AIPrivacyTransport.annotateCaption(
+                gate: consentGate,
+                apiKey: apiKey()!,
+                items: items
+            )
             // Compose a local annotated preview using punch labels over the first photo.
             let out = reportsRoot.appendingPathComponent("\(UUID().uuidString).jpg")
             if let first = activePhotos.first,
