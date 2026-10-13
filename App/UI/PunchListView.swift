@@ -1,0 +1,92 @@
+import SwiftUI
+
+struct PunchListView: View {
+    @EnvironmentObject private var model: AppModel
+    @Binding var path: NavigationPath
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if let audit = model.activeAudit {
+                    Text(audit.title).font(.title2.weight(.bold))
+                    Text(audit.siteLabel.isEmpty ? "Active audit" : audit.siteLabel)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text("No active audit")
+                        .font(.title3)
+                    PrimaryCTA(title: "Start audit", systemImage: "plus.circle.fill") {
+                        path.append(SnagRoute.newAudit)
+                    }
+                }
+
+                if let msg = model.statusMessage {
+                    StatusBanner(message: msg)
+                }
+
+                if model.activeAudit != nil {
+                    HStack(spacing: 10) {
+                        navButton("Add photos", icon: "camera.fill", route: .capture)
+                        navButton("Review snags", icon: "eye", route: .review)
+                    }
+                    HStack(spacing: 10) {
+                        navButton("Chat fill", icon: "text.bubble", route: .chat)
+                        navButton("Annotate", icon: "pencil.and.outline", route: .report)
+                    }
+                    PrimaryCTA(title: "Read aloud", systemImage: "speaker.wave.2.fill") {
+                        path.append(SnagRoute.tts)
+                    }
+                }
+
+                if model.activePunchItems.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Punch list empty")
+                            .font(.headline)
+                        Text("Detect snags or add a snag, then Save to grow this list.")
+                            .foregroundStyle(.secondary)
+                        Button("Add snag") {
+                            model.addManualSnag()
+                            path.append(SnagRoute.review)
+                        }
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(SnagTheme.panel)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                } else {
+                    ForEach(model.activePunchItems) { item in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(item.title).font(.headline)
+                            Text("\(item.location.isEmpty ? "Location TBD" : item.location) · \(item.severity)")
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                            if !item.assignee.isEmpty {
+                                Text("Assignee: \(item.assignee)").font(.caption)
+                            }
+                            if !item.notes.isEmpty {
+                                Text(item.notes).font(.footnote)
+                            }
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(SnagTheme.panel)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                }
+            }
+            .padding()
+        }
+        .background(SnagTheme.background.ignoresSafeArea())
+        .navigationTitle("Active punch")
+    }
+
+    private func navButton(_ title: String, icon: String, route: SnagRoute) -> some View {
+        Button {
+            path.append(route)
+        } label: {
+            Label(title, systemImage: icon)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+        }
+        .buttonStyle(.bordered)
+    }
+}

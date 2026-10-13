@@ -1,0 +1,11 @@
+{
+  "schema": "appfactory.package_manifest.v1",
+  "app_name": "SnagCue AI",
+  "bundle_id": "com.lingguang.snagcue",
+  "development_bundle_id": "com.lingguang.snagcue",
+  "marketing_version": "1.0.0",
+  "build_number": "1",
+  "platform": "ios",
+  "ai_profile": "ultra_lite",
+  "config_mode": "local_only"
+}
