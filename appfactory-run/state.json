@@ -1,5 +1,5 @@
 {
-  "_control_event_cursor": 35,
+  "_control_event_cursor": 37,
   "acceptance_policy": {
     "acceptance_policy": {
       "authorization": {
@@ -80,10 +80,18 @@
     "delivery": {
       "attempts": 1,
       "blockers": [],
-      "evidence_refs": {},
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/delivery/attempt-1/MAP.md",
+        "result_sha256": "173ecfc0ee18b15d3a75037880a908ac4021f6a6e942ef8757dc0305c9933187",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "052b1d96aa1fb18617a0a9849ed76d0946274ef92903114658176f9701fd74f2",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276"
+      },
       "started_at": "2026-10-13T12:51:37Z",
-      "status": "active",
-      "updated_at": "2026-10-13T12:51:37Z"
+      "status": "validated",
+      "updated_at": "2026-10-13T12:57:29Z"
     },
     "goal": {
       "attempts": 1,
@@ -142,10 +150,10 @@
     },
     "vision_effort": "auto"
   },
-  "report_status": "pending",
+  "report_status": "produced",
   "requested_count": 1,
   "run_id": "kf-20261013T095600Z-1e00eb7a",
-  "run_status": "active",
+  "run_status": "delivered",
   "schema_version": "claude-app-factory.run-state.v1",
   "self_evolution_cases": [],
   "stage_cost": {
@@ -211,10 +219,10 @@
         "attempts": [
           {
             "attempt": 1,
-            "duration_seconds": null,
-            "finished_at": null,
+            "duration_seconds": 352.0,
+            "finished_at": "2026-10-13T12:57:29Z",
             "started_at": "2026-10-13T12:51:37Z",
-            "status": "active",
+            "status": "validated",
             "usage": null
           }
         ]
@@ -233,6 +241,6 @@
       }
     }
   },
-  "state_version": 18,
+  "state_version": 19,
   "ultra_lite_execution_revision": "p1"
 }
