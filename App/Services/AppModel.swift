@@ -34,6 +34,13 @@ final class AppModel: ObservableObject {
     @Published var pendingAIAction: (() -> Void)?
     @Published var aiUnavailableReason: String?
     @Published var lastReportPreviewPath: String?
+    @Published var voiceNoteBusy = false
+    @Published var speechBusy = false
+    @Published var activeVoiceNotePunchItemId: String?
+
+    private let voiceNotesRoot: URL
+    private let voiceRecorder = VoiceNoteRecorder()
+    private let speechService = SpeechRecognitionService()
 
     let consentGate: AIConsentGate
     let navigation: TypedNavigationStore<SnagCueRoute>
@@ -80,8 +87,10 @@ final class AppModel: ObservableObject {
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         reportsRoot = root.appendingPathComponent("reports", isDirectory: true)
+        voiceNotesRoot = root.appendingPathComponent("voice-notes", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(at: reportsRoot, withIntermediateDirectories: true)
+        try? FileManager.default.createDirectory(at: voiceNotesRoot, withIntermediateDirectories: true)
 
         auditsStore = AtomicCodableStore(url: root.appendingPathComponent("\(SnagCueStores.audits).json"))
         photosStore = AtomicCodableStore(url: root.appendingPathComponent("\(SnagCueStores.walkthroughPhotos).json"))
@@ -209,6 +218,119 @@ final class AppModel: ObservableObject {
             }
         } catch {
             statusMessage = "Import failed: \(error.localizedDescription)"
+        }
+    }
+
+    /// Camera capture path — same WalkthroughPhoto persist as library import.
+    func importCapturedImage(_ data: Data) async {
+        guard let audit = activeAudit else {
+            statusMessage = "Create an audit first."
+            return
+        }
+        recognitionBusy = true
+        defer { recognitionBusy = false }
+        do {
+            let dest = importsRoot.appendingPathComponent("\(UUID().uuidString).jpg")
+            let session = PhotoImportSession(destination: dest)
+            let result = try await session.importSelection { data }
+            switch result {
+            case .imported(let url):
+                let photo = WalkthroughPhoto(
+                    id: UUID().uuidString,
+                    auditId: audit.id,
+                    relativePath: url.lastPathComponent,
+                    sequence: activePhotos.count + 1
+                )
+                photos.append(photo)
+                persistPhotos()
+                statusMessage = "Camera photo saved. Detect snags or add manually."
+            case .cancelled:
+                statusMessage = "Camera capture cancelled."
+            case .superseded:
+                statusMessage = "Camera capture superseded."
+            }
+        } catch {
+            statusMessage = "Camera save failed: \(error.localizedDescription)"
+        }
+    }
+
+    func startVoiceNote(punchItemId: String) {
+        guard activePunchItems.contains(where: { $0.id == punchItemId }) else {
+            statusMessage = "Select a punch item first."
+            return
+        }
+        if voiceNoteBusy {
+            statusMessage = "Already recording a voice note."
+            return
+        }
+        let dest = voiceNotesRoot.appendingPathComponent("\(punchItemId)-\(UUID().uuidString).m4a")
+        voiceNoteBusy = true
+        activeVoiceNotePunchItemId = punchItemId
+        Task {
+            do {
+                try await voiceRecorder.start(to: dest)
+                statusMessage = "Recording voice note…"
+            } catch {
+                voiceNoteBusy = false
+                activeVoiceNotePunchItemId = nil
+                if VoiceNoteRecorder.isSimulatorLimited {
+                    statusMessage = "Microphone voice note: 真机待测 (Simulator limited)."
+                } else {
+                    statusMessage = "Mic start failed: \(error.localizedDescription)"
+                }
+            }
+        }
+    }
+
+    func stopVoiceNote() {
+        guard voiceNoteBusy, let punchId = activeVoiceNotePunchItemId else { return }
+        Task {
+            do {
+                let url = try await voiceRecorder.stop()
+                if let idx = punchItems.firstIndex(where: { $0.id == punchId }) {
+                    let tag = "[voice-note:\(url.lastPathComponent)]"
+                    let existing = punchItems[idx].notes
+                    punchItems[idx].notes = existing.isEmpty ? tag : existing + "\n" + tag
+                    persistPunch()
+                    statusMessage = "Voice note attached to punch item."
+                }
+            } catch {
+                if VoiceNoteRecorder.isSimulatorLimited {
+                    statusMessage = "Microphone voice note: 真机待测 (Simulator limited)."
+                } else {
+                    statusMessage = "Mic stop failed: \(error.localizedDescription)"
+                }
+            }
+            voiceNoteBusy = false
+            activeVoiceNotePunchItemId = nil
+        }
+    }
+
+    func transcribeSpeechIntoChat() {
+        guard !speechBusy else { return }
+        speechBusy = true
+        Task {
+            defer { speechBusy = false }
+            do {
+                let text = try await speechService.transcribeOnce()
+                let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !trimmed.isEmpty else {
+                    statusMessage = "No speech recognized."
+                    return
+                }
+                if chatText.isEmpty {
+                    chatText = trimmed
+                } else {
+                    chatText += " " + trimmed
+                }
+                statusMessage = "Speech added to chat field."
+            } catch {
+                if SpeechRecognitionService.isSimulatorLimited {
+                    statusMessage = "Speech recognition: 真机待测 (Simulator limited)."
+                } else {
+                    statusMessage = "Speech failed: \(error.localizedDescription)"
+                }
+            }
         }
     }
 

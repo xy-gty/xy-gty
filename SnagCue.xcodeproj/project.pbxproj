@@ -26,6 +26,7 @@
 		C217AD5C9FE0A3F0C2D209EC /* SnagRecognitionReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2786FF0FA0F6B7160E5ED2 /* SnagRecognitionReviewView.swift */; };
 		C83990983F623C869EB2399E /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BEC0BA497FDC5334498A95 /* DeepSeekClient.swift */; };
 		C87853F5B148087C98E788D4 /* SnagCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 31CB9ED34352A0AF587AEF89 /* SnagCueDomain */; };
+		CC5E00CAEFD0612C13038FDB /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5859370A93510A91A402A1F /* SpeechRecognitionService.swift */; };
 		CE544F34B8810AB8A6372509 /* TTSCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920906CFED6D6A1B9C080D8 /* TTSCoachView.swift */; };
 		CF7C1E2C835D5DD8576CEF3C /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = A067858D9244AA2CC2754B95 /* privacy.html */; };
 		DB14F2FD49D533D4D2CF2EDF /* SnagCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ACE4311DE209216D3A7320 /* SnagCueApp.swift */; };
@@ -34,6 +35,7 @@
 		E1CCFC61344A9F37D65F45B7 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738C85BBC0DE5FB3988E0FB /* SettingsPrivacyView.swift */; };
 		E292454DFC7746B2BC6A75F1 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = DAE2359009D865370C8C8865 /* terms.html */; };
 		E5926F485C2486A95D3BC264 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C26332C465491EDF02359 /* CaptureView.swift */; };
+		E5E3D9B79E29BBCDE35070C9 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB348789F6207D21EF18CE2 /* VoiceNoteRecorder.swift */; };
 		F94D6DDDEE2F35AF94DBCEA7 /* AnnotatedReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DB3728E823CD97A6B3023 /* AnnotatedReportView.swift */; };
 		FFBE7E768F159781D45BC958 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2E33F3C1E3414B34F67B4 /* RootTabView.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,7 @@
 		9C237A968FD379710659A090 /* ChatFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFillView.swift; sourceTree = "<group>"; };
 		A067858D9244AA2CC2754B95 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		A360F93770D3AB1D66275961 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BDB348789F6207D21EF18CE2 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
 		C0AB12783448CD18926AC748 /* SnagCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SnagCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BB1EB8757670EDFD9C3FC8 /* SnagCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnagCueDomainTests.swift; sourceTree = "<group>"; };
 		C881B770C6C49BB68E422480 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		E0BEC0BA497FDC5334498A95 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
 		E83C26332C465491EDF02359 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 		E88B8ED10FB9683FD17DEF54 /* FieldReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldReviewView.swift; sourceTree = "<group>"; };
+		F5859370A93510A91A402A1F /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
 		FE28DC66EED40A25CE622F83 /* NewAuditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAuditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +209,8 @@
 				E0BEC0BA497FDC5334498A95 /* DeepSeekClient.swift */,
 				D9F07E09B1E9110D30934653 /* LocalLegalWebView.swift */,
 				4738C85BBC0DE5FB3988E0FB /* SettingsPrivacyView.swift */,
+				F5859370A93510A91A402A1F /* SpeechRecognitionService.swift */,
+				BDB348789F6207D21EF18CE2 /* VoiceNoteRecorder.swift */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -327,7 +333,9 @@
 				DB14F2FD49D533D4D2CF2EDF /* SnagCueApp.swift in Sources */,
 				C217AD5C9FE0A3F0C2D209EC /* SnagRecognitionReviewView.swift in Sources */,
 				87AA97BECE0A84E682845DE6 /* SnagTheme.swift in Sources */,
+				CC5E00CAEFD0612C13038FDB /* SpeechRecognitionService.swift in Sources */,
 				CE544F34B8810AB8A6372509 /* TTSCoachView.swift in Sources */,
+				E5E3D9B79E29BBCDE35070C9 /* VoiceNoteRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +365,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "SnagCue AI";
-				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI can capture a walkthrough photo for optional snag recognition review.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SnagCue AI imports walkthrough photos you choose so you can review snag suggestions before saving punch-list items.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,8 +389,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "SnagCue AI";
-				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI can capture a walkthrough photo for optional snag recognition review.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SnagCue AI imports walkthrough photos you choose so you can review snag suggestions before saving punch-list items.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

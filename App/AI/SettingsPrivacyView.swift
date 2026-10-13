@@ -6,6 +6,17 @@ struct SettingsPrivacyView: View {
 
     var body: some View {
         List {
+            Section("Device permissions (site inspection)") {
+                Text("Camera: capture walkthrough photos on site so you can run optional snag review before saving punch-list items.")
+                    .font(.footnote)
+                Text("Photo library: import photos you choose for the same walkthrough and punch-list workflow.")
+                    .font(.footnote)
+                Text("Microphone: record short voice notes attached to punch-list items for hands-free field capture.")
+                    .font(.footnote)
+                Text("Speech recognition: convert spoken words into text for the punch-list chat field on device; this path does not upload audio to SnagCue servers.")
+                    .font(.footnote)
+            }
+
             Section("AI data sharing") {
                 Toggle("Allow DeepSeek inference", isOn: Binding(
                     get: { model.consentGranted },

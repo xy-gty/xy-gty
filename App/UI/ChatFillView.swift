@@ -39,6 +39,24 @@ struct ChatFillView: View {
                         .lineLimit(3...6)
                         .textFieldStyle(.roundedBorder)
                         .focused($focused)
+                    Button {
+                        focused = false
+                        model.transcribeSpeechIntoChat()
+                    } label: {
+                        Label("Speech to text", systemImage: "mic.badge.plus")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)
+                    }
+                    .buttonStyle(.bordered)
+                    .disabled(model.speechBusy || model.chatBusy)
+                    if model.speechBusy {
+                        ProgressView("Listening for speech…")
+                    }
+                    if SpeechRecognitionService.isSimulatorLimited {
+                        Text("Speech recognition: 真机待测")
+                            .font(.caption2)
+                            .foregroundStyle(.secondary)
+                    }
                     if model.chatBusy {
                         ProgressView("Waiting for suggestions…")
                     }

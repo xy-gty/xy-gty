@@ -4,6 +4,11 @@ import PhotosUI
 
 struct CaptureView: View {
     @EnvironmentObject private var model: AppModel
+    @State private var showCamera = false
+
+    private var cameraAvailable: Bool {
+        UIImagePickerController.isSourceTypeAvailable(.camera)
+    }
 
     var body: some View {
         ScrollView {
@@ -25,6 +30,22 @@ struct CaptureView: View {
                 .buttonStyle(.borderedProminent)
                 .tint(SnagTheme.steel)
                 .disabled(model.recognitionBusy)
+
+                if cameraAvailable {
+                    Button {
+                        showCamera = true
+                    } label: {
+                        Label("Take photo (camera)", systemImage: "camera.fill")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                    }
+                    .buttonStyle(.bordered)
+                    .disabled(model.recognitionBusy)
+                } else {
+                    Text("Camera capture: 真机待测 (Simulator has no camera; use photo library here).")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
 
                 if model.recognitionBusy {
                     ProgressView("Working…")
@@ -73,6 +94,54 @@ struct CaptureView: View {
         .navigationTitle("Capture")
         .onChange(of: model.selectedPhotoItem) { _, _ in
             Task { await model.importPhoto() }
+        }
+        .fullScreenCover(isPresented: $showCamera) {
+            WalkthroughCameraPicker { data in
+                Task { await model.importCapturedImage(data) }
+            }
+            .ignoresSafeArea()
+        }
+    }
+}
+
+private struct WalkthroughCameraPicker: UIViewControllerRepresentable {
+    @Environment(\.dismiss) private var dismiss
+    var onImageData: (Data) -> Void
+
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.sourceType = .camera
+        picker.delegate = context.coordinator
+        return picker
+    }
+
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(onImageData: onImageData, dismiss: dismiss)
+    }
+
+    final class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let onImageData: (Data) -> Void
+        let dismiss: DismissAction
+
+        init(onImageData: @escaping (Data) -> Void, dismiss: DismissAction) {
+            self.onImageData = onImageData
+            self.dismiss = dismiss
+        }
+
+        func imagePickerController(
+            _ picker: UIImagePickerController,
+            didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]
+        ) {
+            defer { dismiss() }
+            guard let image = info[.originalImage] as? UIImage,
+                  let data = image.jpegData(compressionQuality: 0.85) else { return }
+            onImageData(data)
+        }
+
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            dismiss()
         }
     }
 }

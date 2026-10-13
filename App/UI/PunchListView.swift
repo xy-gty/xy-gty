@@ -65,13 +65,21 @@ struct PunchListView: View {
                             if !item.notes.isEmpty {
                                 Text(item.notes).font(.footnote)
                             }
-                            Button {
-                                path.append(SnagRoute.chatForPunch(item.id))
-                            } label: {
-                                Label("Ask AI", systemImage: "text.bubble")
-                                    .font(.subheadline.weight(.semibold))
+                            HStack(spacing: 10) {
+                                Button {
+                                    path.append(SnagRoute.chatForPunch(item.id))
+                                } label: {
+                                    Label("Ask AI", systemImage: "text.bubble")
+                                        .font(.subheadline.weight(.semibold))
+                                }
+                                .buttonStyle(.bordered)
+                                voiceNoteControl(for: item.id)
                             }
-                            .buttonStyle(.bordered)
+                            if VoiceNoteRecorder.isSimulatorLimited {
+                                Text("Microphone voice note: 真机待测")
+                                    .font(.caption2)
+                                    .foregroundStyle(.secondary)
+                            }
                         }
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -84,6 +92,30 @@ struct PunchListView: View {
         }
         .background(SnagTheme.background.ignoresSafeArea())
         .navigationTitle("Active punch")
+    }
+
+    @ViewBuilder
+    private func voiceNoteControl(for punchItemId: String) -> some View {
+        let recordingThis = model.voiceNoteBusy && model.activeVoiceNotePunchItemId == punchItemId
+        if recordingThis {
+            Button {
+                model.stopVoiceNote()
+            } label: {
+                Label("Stop", systemImage: "stop.circle.fill")
+                    .font(.subheadline.weight(.semibold))
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.red)
+        } else {
+            Button {
+                model.startVoiceNote(punchItemId: punchItemId)
+            } label: {
+                Label("Voice note", systemImage: "mic.fill")
+                    .font(.subheadline.weight(.semibold))
+            }
+            .buttonStyle(.bordered)
+            .disabled(model.voiceNoteBusy)
+        }
     }
 
     private func navButton(_ title: String, icon: String, route: SnagRoute) -> some View {
