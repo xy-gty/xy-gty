@@ -42,6 +42,6 @@ struct AnnotatedReportView: View {
             .padding()
         }
         .background(SnagTheme.background.ignoresSafeArea())
-        .navigationTitle("Annotate")
+        .navigationTitle("Annotated report")
     }
 }

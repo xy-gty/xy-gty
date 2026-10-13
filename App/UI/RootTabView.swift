@@ -9,9 +9,7 @@ struct RootTabView: View {
             .tabItem { Label("Audits", systemImage: "list.bullet.rectangle") }
             .tag(AppModel.AppTab.audits)
 
-            NavigationStack {
-                ActivePunchHub()
-            }
+            ActivePunchHub()
             .tabItem { Label("Active punch", systemImage: "checkmark.seal") }
             .tag(AppModel.AppTab.active)
 
@@ -32,18 +30,20 @@ struct ActivePunchHub: View {
     @State private var path = NavigationPath()
 
     var body: some View {
-        PunchListView(path: $path)
-            .navigationDestination(for: SnagRoute.self) { route in
-                switch route {
-                case .capture: CaptureView()
-                case .review: SnagRecognitionReviewView()
-                case .chat: ChatFillView()
-                case .chatForPunch(let id): ChatFillView(initialPunchItemId: id)
-                case .report: AnnotatedReportView()
-                case .tts: TTSCoachView()
-                case .newAudit: NewAuditView()
+        NavigationStack(path: $path) {
+            PunchListView(path: $path)
+                .navigationDestination(for: SnagRoute.self) { route in
+                    switch route {
+                    case .capture: CaptureView()
+                    case .review: SnagRecognitionReviewView()
+                    case .chat: ChatFillView()
+                    case .chatForPunch(let id): ChatFillView(initialPunchItemId: id)
+                    case .report: AnnotatedReportView()
+                    case .tts: TTSCoachView()
+                    case .newAudit: NewAuditView()
+                    }
                 }
-            }
+        }
     }
 }
 
