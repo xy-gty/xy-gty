@@ -20,6 +20,7 @@
 		7E40FCD62175BA70CFF1C772 /* DocBriefDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 5CCAEFB92AEEE320EAAFE2EA /* DocBriefDomain */; };
 		823F1C4AD2C8FB19FE574368 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2948E8841B5D84917D9D97AB /* privacy.html */; };
 		876045031842DC83DA886F22 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9B4BEF197A418A2C56635 /* AppModel.swift */; };
+		8950587B0BD6C6C331D94C3E /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622A7B0B82429ED3BEE0F2E /* CameraCapturePicker.swift */; };
 		895958C3D1FADA66283C3E09 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D0B2660920BA952D99E40 /* SummaryCardView.swift */; };
 		9A42BD5247B585034EDB5A9A /* DocBriefDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 0A8277596D41E01B7C922464 /* DocBriefDomain */; };
 		9B2B8AFBF1DC5198A7EB6E7A /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C83D4EA3C7ACFAEABF6B36A /* support.html */; };
@@ -32,6 +33,7 @@
 		C777447E9602B68F8B369B8A /* TTSBriefingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4FA7290001F3C008E8A256 /* TTSBriefingView.swift */; };
 		E5795CFA8245A51F10DAD03C /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9395CD78DC760EC8E1186DA9 /* AppRuntimeCore */; };
 		F49DB75CBEA76B6EFC80FB69 /* ImportCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A8B9EE69BC2047279FB07 /* ImportCaptureView.swift */; };
+		FB80BE51C131EF0FAFB947DD /* VoiceSupplementSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C358F0E519096C6E6EA7E /* VoiceSupplementSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +67,13 @@
 		A99B564B156EC495886891BB /* ChatExtractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatExtractView.swift; sourceTree = "<group>"; };
 		AA521587EF8CB87040381C0B /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
 		B3A9F2B94E2C8B74DA2D9498 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		C622A7B0B82429ED3BEE0F2E /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
 		CF51A07373B4BFE3795BF82E /* BriefDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefDetailView.swift; sourceTree = "<group>"; };
 		D356E94BEE4428ED89DF8CDE /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
 		DF4FA7290001F3C008E8A256 /* TTSBriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSBriefingView.swift; sourceTree = "<group>"; };
 		F0930294B8A8E94E4EE8FAE7 /* RecognitionReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionReviewView.swift; sourceTree = "<group>"; };
 		F125B186DF71532C913B7589 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		F74C358F0E519096C6E6EA7E /* VoiceSupplementSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSupplementSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				7BB9B4BEF197A418A2C56635 /* AppModel.swift */,
+				C622A7B0B82429ED3BEE0F2E /* CameraCapturePicker.swift */,
+				F74C358F0E519096C6E6EA7E /* VoiceSupplementSession.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			files = (
 				876045031842DC83DA886F22 /* AppModel.swift in Sources */,
 				AB0B653140D491A095C3DD68 /* BriefDetailView.swift in Sources */,
+				8950587B0BD6C6C331D94C3E /* CameraCapturePicker.swift in Sources */,
 				22D7461A435BB3926907A5CB /* ChatExtractView.swift in Sources */,
 				9EB070943909206140C926A2 /* ConsentSheet.swift in Sources */,
 				5AD76A9C3435C7BFFBF24E94 /* DeepSeekClient.swift in Sources */,
@@ -312,6 +319,7 @@
 				77571F46B1C3648B6E3B8CC9 /* SettingsPrivacyView.swift in Sources */,
 				895958C3D1FADA66283C3E09 /* SummaryCardView.swift in Sources */,
 				C777447E9602B68F8B369B8A /* TTSBriefingView.swift in Sources */,
+				FB80BE51C131EF0FAFB947DD /* VoiceSupplementSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +507,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "DocBrief AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DocBrief AI imports document, whiteboard, or receipt photos you choose so you can review type and field suggestions before saving a brief.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DocBrief AI uses on-device speech recognition to turn your voice supplement into editable action or briefing text that you review with Save or Not this.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +531,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "DocBrief AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DocBrief AI imports document, whiteboard, or receipt photos you choose so you can review type and field suggestions before saving a brief.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DocBrief AI uses on-device speech recognition to turn your voice supplement into editable action or briefing text that you review with Save or Not this.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

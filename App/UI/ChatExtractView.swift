@@ -32,6 +32,12 @@ struct ChatExtractView: View {
             }
             .frame(minHeight: 160)
 
+            VoiceSupplementControls(
+                target: .actionSupplement,
+                voiceButtonAccessibilityID: "voice_supplement_chat",
+                showDueDateToggle: true
+            )
+
             if model.chatBusy {
                 ProgressView("Extracting…")
             }

@@ -30,6 +30,13 @@ struct ImportCaptureView: View {
                 Task { await model.importPhoto() }
             }
 
+            Button("Take photo") {
+                model.beginTakePhoto()
+            }
+            .accessibilityIdentifier("take_photo")
+            .buttonStyle(.borderedProminent)
+            .tint(DocBriefTheme.teal)
+
             if model.recognitionBusy {
                 ProgressView("Importing…")
             }
@@ -80,5 +87,20 @@ struct ImportCaptureView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(DocBriefTheme.paper.ignoresSafeArea())
         .navigationTitle("Import")
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("DocBrief AI")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(DocBriefTheme.teal.opacity(0.7))
+            }
+        }
+        .sheet(isPresented: $model.showCameraPicker) {
+            CameraCapturePicker(
+                onImageData: { data in
+                    Task { await model.handleCameraImageData(data) }
+                },
+                onCancel: { model.cancelCameraPicker() }
+            )
+        }
     }
 }

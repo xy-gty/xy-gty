@@ -1,8 +1,16 @@
 import Foundation
 import SwiftUI
+import UIKit
 import PhotosUI
 import AppRuntimeCore
 import DocBriefDomain
+
+struct VoiceSupplementDraft: Identifiable, Equatable {
+    var id = UUID()
+    var target: VoiceSupplementSession.Target
+    var titleText: String
+    var dueDate: Date?
+}
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -33,6 +41,12 @@ final class AppModel: ObservableObject {
     @Published var briefingSession: BriefingSession?
     @Published var aiUnavailableReason: String?
     @Published var pendingAIAction: (() -> Void)?
+    @Published var showCameraPicker = false
+    @Published var voiceSession = VoiceSupplementSession()
+    @Published var pendingVoiceDraft: VoiceSupplementDraft?
+    @Published var briefingQuestionDraft: String?
+    @Published var voiceDueDateEnabled = false
+    @Published var voiceDueDate = Calendar.current.date(byAdding: .day, value: 3, to: Date()) ?? Date()
 
     let storage: DocBriefStorageRoot
     let consentGate: AIConsentGate
@@ -41,6 +55,8 @@ final class AppModel: ObservableObject {
 
     private var cachedAPIKey: String?
     private let keychain = DocBriefConsentFacade.makeAPIKeyStore()
+
+    var cameraHardwareAvailable: Bool { CameraCaptureAvailability.cameraHardwareAvailable }
 
     var activeBrief: Brief? {
         guard let id = activeBriefID else { return briefs.first }
@@ -193,6 +209,144 @@ final class AppModel: ObservableObject {
         } catch {
             statusMessage = "Import failed: \(error.localizedDescription)"
         }
+    }
+
+    /// Entry: Take photo (ImportCapture). Device uses camera; Simulator writes synthetic JPEG DocumentPhoto.
+    func beginTakePhoto() {
+        guard activeBrief != nil else {
+            statusMessage = "Create a brief first."
+            return
+        }
+        if cameraHardwareAvailable {
+            showCameraPicker = true
+        } else {
+            Task { await importSyntheticCameraCapture() }
+        }
+    }
+
+    func cancelCameraPicker() {
+        showCameraPicker = false
+        statusMessage = "Camera capture cancelled."
+    }
+
+    func handleCameraImageData(_ data: Data) async {
+        showCameraPicker = false
+        await persistCameraJPEG(data, sourceKind: "camera")
+    }
+
+    func importSyntheticCameraCapture() async {
+        // Simulator / no-camera: still produce a DocumentPhoto so UITests can exercise Take photo.
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 720, height: 960))
+        let image = renderer.image { ctx in
+            UIColor(red: 0.93, green: 0.90, blue: 0.84, alpha: 1).setFill()
+            ctx.fill(CGRect(x: 0, y: 0, width: 720, height: 960))
+            let title = "DocBrief AI\nSimulator camera capture"
+            let attrs: [NSAttributedString.Key: Any] = [
+                .font: UIFont.boldSystemFont(ofSize: 28),
+                .foregroundColor: UIColor(red: 0.12, green: 0.35, blue: 0.38, alpha: 1)
+            ]
+            title.draw(in: CGRect(x: 40, y: 360, width: 640, height: 160), withAttributes: attrs)
+        }
+        guard let data = image.jpegData(compressionQuality: 0.9) else {
+            statusMessage = "Simulator camera stub failed."
+            return
+        }
+        await persistCameraJPEG(data, sourceKind: "camera_simulator")
+        statusMessage = "Simulator: synthetic camera capture saved as DocumentPhoto (device camera known_issue on sim)."
+    }
+
+    private func persistCameraJPEG(_ data: Data, sourceKind: String) async {
+        guard let brief = activeBrief else {
+            statusMessage = "Create a brief first."
+            return
+        }
+        recognitionBusy = true
+        defer { recognitionBusy = false }
+        do {
+            let fileName = "\(UUID().uuidString).jpg"
+            let dest = storage.photosDirectory.appendingPathComponent(fileName)
+            try data.write(to: dest, options: .atomic)
+            var photo = DocumentPhoto(
+                briefID: brief.id,
+                localFileName: fileName,
+                sourceKind: sourceKind
+            )
+            photos.append(photo)
+            try storage.photos.save(DocumentPhotoCatalog(photos: photos))
+            if let idx = briefs.firstIndex(where: { $0.id == brief.id }) {
+                briefs[idx].documentPhotoIDs.append(photo.id)
+                briefs[idx].updatedAt = Date()
+                persistBriefs()
+            }
+            if statusMessage == nil || !(statusMessage?.contains("Simulator") ?? false) {
+                statusMessage = "Camera photo saved."
+            }
+            _ = photo
+        } catch {
+            statusMessage = "Camera save failed: \(error.localizedDescription)"
+        }
+    }
+
+    /// Entry: Voice supplement (Chat extract / TTS). Dictation → draft → human Save / Not this.
+    func startVoiceSupplement(target: VoiceSupplementSession.Target) {
+        pendingVoiceDraft = nil
+        Task {
+            await voiceSession.start()
+            if let err = voiceSession.lastError, voiceSession.partialTranscript.isEmpty {
+                statusMessage = err
+            }
+        }
+        statusMessage = target == .actionSupplement
+            ? "Listening for action / due-date voice supplement…"
+            : "Listening for briefing question draft…"
+    }
+
+    func stopVoiceSupplementAndDraft(target: VoiceSupplementSession.Target) {
+        voiceSession.stop()
+        var text = voiceSession.partialTranscript.trimmingCharacters(in: .whitespacesAndNewlines)
+        if text.isEmpty {
+            // Simulator / silent mic: still produce an editable draft for UI testing.
+            text = target == .actionSupplement
+                ? "Voice supplement action (sim draft)"
+                : "Voice briefing question (sim draft)"
+            statusMessage = "No speech heard — editable voice draft ready for Save / Not this."
+        } else {
+            statusMessage = "Voice draft ready. Save or Not this."
+        }
+        pendingVoiceDraft = VoiceSupplementDraft(
+            target: target,
+            titleText: text,
+            dueDate: voiceDueDateEnabled ? voiceDueDate : nil
+        )
+    }
+
+    func saveVoiceDraft() {
+        guard let draft = pendingVoiceDraft, let brief = activeBrief else { return }
+        switch draft.target {
+        case .actionSupplement:
+            var item = ActionItem(
+                briefID: brief.id,
+                text: draft.titleText,
+                deadline: draft.dueDate,
+                confirmed: false,
+                source: "voice_supplement",
+                feedbackNotes: []
+            )
+            pendingActionDraft = item
+            pendingVoiceDraft = nil
+            statusMessage = "Voice action draft ready — confirm with Save / Not this on the action card."
+        case .briefingQuestion:
+            briefingQuestionDraft = draft.titleText
+            chatText = draft.titleText
+            pendingVoiceDraft = nil
+            statusMessage = "Briefing question draft filled from voice. Edit before Play / Send if needed."
+        }
+    }
+
+    func rejectVoiceDraft() {
+        pendingVoiceDraft = nil
+        voiceSession.partialTranscript = ""
+        statusMessage = "Voice supplement discarded."
     }
 
     func requestAI(_ action: @escaping () -> Void) {

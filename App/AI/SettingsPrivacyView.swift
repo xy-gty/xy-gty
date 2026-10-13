@@ -34,6 +34,24 @@ struct SettingsPrivacyView: View {
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
+                Button("Revoke AI consent") {
+                    model.revokeConsent()
+                    aiSharingToggle = false
+                }
+                .accessibilityIdentifier("revoke_ai_consent")
+                .disabled(!model.consentGranted)
+            }
+
+            Section("Device permissions") {
+                Text("Camera (Take photo): DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review.")
+                    .font(.footnote)
+                Text("Photos (Add photos): DocBrief AI imports document, whiteboard, or receipt photos you choose so you can review type and field suggestions before saving a brief.")
+                    .font(.footnote)
+                Text("Microphone and speech recognition (Voice supplement): DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard. On-device speech recognition turns your voice supplement into editable action or briefing text that you review with Save or Not this.")
+                    .font(.footnote)
+                Text("These permissions support on-device capture and review only; they are not used to send data to AI without your separate consent above.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
 
             Section("Legal (local)") {

@@ -39,6 +39,24 @@ struct TTSBriefingView: View {
             Button("Rebuild briefing") { model.startBriefing() }
                 .buttonStyle(.bordered)
 
+            if let questionDraft = model.briefingQuestionDraft {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Briefing question draft")
+                        .font(.subheadline.weight(.semibold))
+                    Text(questionDraft)
+                        .foregroundStyle(DocBriefTheme.ink.opacity(0.9))
+                }
+                .padding(12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(DocBriefTheme.mist)
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+            }
+
+            VoiceSupplementControls(
+                target: .briefingQuestion,
+                voiceButtonAccessibilityID: "voice_supplement_tts"
+            )
+
             Spacer()
         }
         .padding()
