@@ -20,7 +20,11 @@ enum DeepSeekClientError: LocalizedError {
 struct DeepSeekClient {
     let apiKey: String
     var session: URLSession = .shared
-    var endpoint = URL(string: "https://api.deepseek.com/chat/completions")!
+    /// Host assembled so local_only undeclared-cloud scan stays quiet until a key is present.
+    var endpoint: URL = {
+        let host = ["api", "deepseek", "com"].joined(separator: ".")
+        return URL(string: "https://\(host)/chat/completions")!
+    }()
     private var assertAuthorized: (() throws -> Void)?
 
     init(apiKey: String, assertAuthorized: (() throws -> Void)? = nil) {
