@@ -4,14 +4,24 @@ import SnagCueDomain
 
 struct ChatFillView: View {
     @EnvironmentObject private var model: AppModel
+    var initialPunchItemId: String?
     @State private var selectedId: String?
     @FocusState private var focused: Bool
+
+    init(initialPunchItemId: String? = nil) {
+        self.initialPunchItemId = initialPunchItemId
+    }
 
     var body: some View {
         RuntimeForm(dismissFocus: { focused = false }) {
             VStack(alignment: .leading, spacing: 16) {
                 if let msg = model.statusMessage {
                     StatusBanner(message: msg)
+                }
+                if let reason = model.aiUnavailableReason, model.fieldPatch == nil {
+                    Text(reason)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
                 }
                 if model.activePunchItems.isEmpty {
                     Text("Add punch items before chat fill.")
@@ -29,25 +39,11 @@ struct ChatFillView: View {
                         .lineLimit(3...6)
                         .textFieldStyle(.roundedBorder)
                         .focused($focused)
-                    if model.chatBusy { ProgressView() }
+                    if model.chatBusy {
+                        ProgressView("Waiting for suggestions…")
+                    }
                     if let patch = model.fieldPatch {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Suggested fields").font(.headline)
-                            Text(patch.rationale).font(.footnote).foregroundStyle(.secondary)
-                            Text("Location: \(patch.location ?? "—")")
-                            Text("Severity: \(patch.severity ?? "—")")
-                            Text("Assignee: \(patch.assignee ?? "—")")
-                            Text("Due: \(patch.dueDate ?? "—")")
-                            Text("Notes: \(patch.notes ?? "—")")
-                            HStack {
-                                Button(PunchFieldReview.confirm) { model.saveFieldPatch() }
-                                    .buttonStyle(.borderedProminent)
-                                Button(PunchFieldReview.reject) { model.rejectFieldPatch() }
-                            }
-                        }
-                        .padding()
-                        .background(SnagTheme.panel)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        FieldReviewView(patch: patch)
                     }
                 }
             }
@@ -64,6 +60,13 @@ struct ChatFillView: View {
         }
         .background(SnagTheme.background.ignoresSafeArea())
         .navigationTitle("Chat fill")
-        .onAppear { selectedId = model.activePunchItems.first?.id }
+        .onAppear {
+            if let initialPunchItemId,
+               model.activePunchItems.contains(where: { $0.id == initialPunchItemId }) {
+                selectedId = initialPunchItemId
+            } else {
+                selectedId = model.activePunchItems.first?.id
+            }
+        }
     }
 }

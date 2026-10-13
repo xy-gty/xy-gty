@@ -26,6 +26,11 @@ struct SettingsPrivacyView: View {
                 }
                 Text("Provider: \(AIConsentContract.provider)")
                 Text("Disclosure: \(AIConsentContract.disclosureVersion)")
+                ForEach(AIConsentContract.fields, id: \.self) { field in
+                    Text("• \(AIConsentContract.displayLabel(for: field))")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
             }
 
             Section("Legal (local)") {
@@ -78,35 +83,9 @@ struct LegalPagesView: View {
             }
             .pickerStyle(.segmented)
             .padding()
-            ScrollView {
-                Text(loadHTMLText(page.resource))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-            }
+            LocalLegalWebView(source: .bundleHTML(name: page.resource))
         }
         .onAppear { page = initial }
         .navigationTitle(page.title)
-    }
-
-    private func loadHTMLText(_ name: String) -> String {
-        if let url = Bundle.main.url(forResource: name, withExtension: "html", subdirectory: "Legal"),
-           let data = try? Data(contentsOf: url),
-           let html = String(data: data, encoding: .utf8) {
-            return stripTags(html)
-        }
-        return """
-        \(name.capitalized) — SnagCue AI
-
-        This local page ships with the app. External legal URLs are UNKNOWN gaps for this local_only delivery.
-
-        SnagCue AI stores audits, photos, and punch items on device. Optional AI features send listed fields to DeepSeek only after consent. Guidance only — not certification.
-        """
-    }
-
-    private func stripTags(_ html: String) -> String {
-        html
-            .replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression)
-            .replacingOccurrences(of: "&nbsp;", with: " ")
-            .trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

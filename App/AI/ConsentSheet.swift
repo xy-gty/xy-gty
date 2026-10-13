@@ -16,7 +16,7 @@ struct ConsentSheet: View {
                         Text("Fields that may be sent")
                             .font(.headline)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
-                            Label(field, systemImage: "arrow.up.circle")
+                            Label(AIConsentContract.displayLabel(for: field), systemImage: "arrow.up.circle")
                         }
                     }
                     .padding()
@@ -56,17 +56,19 @@ struct ConsentSheet: View {
 }
 
 struct ProviderPolicyView: View {
+    private static let inlineHTML = """
+    <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeepSeek provider policy</title></head><body>
+    <h1>DeepSeek provider policy</h1>
+    <p>SnagCue AI uses DeepSeek for optional cloud inference when an API key is configured and you allow AI data sharing.</p>
+    <p>External provider policy URL is not configured in this local_only delivery. No network request is sent before you tap Allow on the consent sheet.</p>
+    <p>Revoking consent in Settings stops outbound sends immediately, including in-flight requests.</p>
+    <p>Guidance only — not a building-code or legal certification.</p>
+    </body></html>
+    """
+
     var body: some View {
-        // Local fallback page when external URL is UNKNOWN gap.
-        ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-                Text("DeepSeek provider policy")
-                    .font(.title3.weight(.bold))
-                Text("External provider policy URL is not configured in this local_only delivery (gap). This in-app page discloses that SnagCue AI uses DeepSeek for optional cloud inference when a key and consent are present.")
-                Text("No request is sent before you tap Allow on the consent sheet. Revoking consent in Settings stops outbound sends immediately.")
-            }
-            .padding()
-        }
-        .navigationTitle("Provider policy")
+        LocalLegalWebView(source: .inline(Self.inlineHTML))
+            .navigationTitle("Provider policy")
     }
 }

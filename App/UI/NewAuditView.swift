@@ -17,7 +17,7 @@ struct NewAuditView: View {
                 TextField("Site label / zone", text: $model.newAuditSite)
                     .textFieldStyle(.roundedBorder)
                     .focused($focused)
-                Text("Photos come next on Active punch → Add photos.")
+                Text("After create, open Active punch → Add photos to import walkthrough shots.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }

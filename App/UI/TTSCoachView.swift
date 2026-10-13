@@ -14,27 +14,41 @@ struct TTSCoachView: View {
                 StatusBanner(message: msg)
             }
 
-            if let session = model.coach, model.activePunchItems.indices.contains(session.stepIndex) {
-                let item = model.activePunchItems[session.stepIndex]
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Item \(session.stepIndex + 1) of \(model.activePunchItems.count)")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    Text(item.title).font(.title3.weight(.semibold))
-                    Text(item.location.isEmpty ? "Location unspecified" : item.location)
-                    Text("Severity \(item.severity)")
-                    if session.isPlaying {
-                        Label("Playing", systemImage: "speaker.wave.2.fill")
-                            .foregroundStyle(SnagTheme.steel)
+            if model.activePunchItems.isEmpty {
+                Text("Add punch items on Active punch before coaching.")
+                    .foregroundStyle(.secondary)
+            } else {
+                let currentIndex = model.coach?.stepIndex ?? -1
+                ScrollView {
+                    VStack(spacing: 10) {
+                        ForEach(Array(model.activePunchItems.enumerated()), id: \.element.id) { index, item in
+                            let isCurrent = index == currentIndex
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text("Item \(index + 1)")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                Text(item.title).font(.headline)
+                                Text(item.location.isEmpty ? "Location unspecified" : item.location)
+                                    .font(.subheadline)
+                                Text("Severity \(item.severity)")
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                                if isCurrent, model.coach?.isPlaying == true {
+                                    Label("Playing", systemImage: "speaker.wave.2.fill")
+                                        .foregroundStyle(SnagTheme.safety)
+                                }
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(isCurrent ? SnagTheme.safety.opacity(0.22) : SnagTheme.panel)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                                    .stroke(isCurrent ? SnagTheme.safety : Color.clear, lineWidth: 2)
+                            )
+                            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        }
                     }
                 }
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(SnagTheme.panel)
-                .clipShape(RoundedRectangle(cornerRadius: 12))
-            } else {
-                Text("Press Play to begin.")
-                    .foregroundStyle(.secondary)
             }
 
             HStack {

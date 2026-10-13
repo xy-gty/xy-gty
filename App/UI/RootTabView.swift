@@ -5,9 +5,7 @@ struct RootTabView: View {
 
     var body: some View {
         TabView(selection: $model.selectedTab) {
-            NavigationStack {
-                HomeView()
-            }
+            HomeView()
             .tabItem { Label("Audits", systemImage: "list.bullet.rectangle") }
             .tag(AppModel.AppTab.audits)
 
@@ -40,6 +38,7 @@ struct ActivePunchHub: View {
                 case .capture: CaptureView()
                 case .review: SnagRecognitionReviewView()
                 case .chat: ChatFillView()
+                case .chatForPunch(let id): ChatFillView(initialPunchItemId: id)
                 case .report: AnnotatedReportView()
                 case .tts: TTSCoachView()
                 case .newAudit: NewAuditView()
@@ -50,4 +49,5 @@ struct ActivePunchHub: View {
 
 enum SnagRoute: Hashable {
     case newAudit, capture, review, chat, report, tts
+    case chatForPunch(String)
 }

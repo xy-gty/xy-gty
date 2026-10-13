@@ -70,6 +70,7 @@ struct HomeView: View {
                 case .capture: CaptureView()
                 case .review: SnagRecognitionReviewView()
                 case .chat: ChatFillView()
+                case .chatForPunch(let id): ChatFillView(initialPunchItemId: id)
                 case .report: AnnotatedReportView()
                 case .tts: TTSCoachView()
                 }

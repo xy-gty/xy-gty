@@ -54,7 +54,7 @@ struct PunchListView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 } else {
                     ForEach(model.activePunchItems) { item in
-                        VStack(alignment: .leading, spacing: 6) {
+                        VStack(alignment: .leading, spacing: 8) {
                             Text(item.title).font(.headline)
                             Text("\(item.location.isEmpty ? "Location TBD" : item.location) · \(item.severity)")
                                 .font(.subheadline)
@@ -65,11 +65,18 @@ struct PunchListView: View {
                             if !item.notes.isEmpty {
                                 Text(item.notes).font(.footnote)
                             }
+                            Button {
+                                path.append(SnagRoute.chatForPunch(item.id))
+                            } label: {
+                                Label("Ask AI", systemImage: "text.bubble")
+                                    .font(.subheadline.weight(.semibold))
+                            }
+                            .buttonStyle(.bordered)
                         }
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(SnagTheme.panel)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     }
                 }
             }

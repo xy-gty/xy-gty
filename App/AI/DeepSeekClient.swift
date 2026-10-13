@@ -3,12 +3,14 @@ import SnagCueDomain
 
 enum DeepSeekClientError: LocalizedError {
     case notConfigured
+    case notAuthorized
     case http(Int, String)
     case decode
 
     var errorDescription: String? {
         switch self {
         case .notConfigured: return "DeepSeek API key not configured"
+        case .notAuthorized: return "AI data sharing not authorized"
         case .http(let code, let body): return "DeepSeek HTTP \(code): \(body.prefix(200))"
         case .decode: return "Could not decode DeepSeek response"
         }
@@ -19,6 +21,12 @@ struct DeepSeekClient {
     let apiKey: String
     var session: URLSession = .shared
     var endpoint = URL(string: "https://api.deepseek.com/chat/completions")!
+    private var assertAuthorized: (() throws -> Void)?
+
+    init(apiKey: String, assertAuthorized: (() throws -> Void)? = nil) {
+        self.apiKey = apiKey
+        self.assertAuthorized = assertAuthorized
+    }
 
     func detectSnags(photos: [URL], priorLabels: [String], auditId: String) async throws -> [SnagDraft] {
         let names = photos.map(\.lastPathComponent).joined(separator: ", ")
@@ -54,6 +62,11 @@ struct DeepSeekClient {
 
     private func complete(prompt: String) async throws -> String {
         guard !apiKey.isEmpty else { throw DeepSeekClientError.notConfigured }
+        do {
+            try assertAuthorized?()
+        } catch {
+            throw DeepSeekClientError.notAuthorized
+        }
         var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -27,7 +27,7 @@ struct CaptureView: View {
                 .disabled(model.recognitionBusy)
 
                 if model.recognitionBusy {
-                    ProgressView("Importing…")
+                    ProgressView("Working…")
                 }
 
                 ForEach(model.activePhotos) { photo in
@@ -52,6 +52,20 @@ struct CaptureView: View {
                 PrimaryCTA(title: "Detect snags", systemImage: "sparkles") {
                     model.detectSnags()
                 }
+                .disabled(model.activePhotos.isEmpty || model.recognitionBusy)
+
+                if !model.activePhotos.isEmpty {
+                    NavigationLink(value: SnagRoute.review) {
+                        Label("Review snag drafts", systemImage: "eye")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                    }
+                    .buttonStyle(.bordered)
+                }
+
+                Text("Leaving this screen keeps imported photos for this audit. Discard only removes unsaved snag drafts from review.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
             .padding()
         }

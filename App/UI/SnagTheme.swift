@@ -36,5 +36,28 @@ struct PrimaryCTA: View {
         }
         .buttonStyle(.borderedProminent)
         .tint(SnagTheme.steel)
+        .accessibilityAddTraits(.isButton)
+    }
+}
+
+struct SecondaryOutlineButton: View {
+    let title: String
+    var systemImage: String?
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Group {
+                if let systemImage {
+                    Label(title, systemImage: systemImage)
+                } else {
+                    Text(title)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 12)
+        }
+        .buttonStyle(.bordered)
+        .tint(SnagTheme.steel)
     }
 }
