@@ -8,6 +8,8 @@ struct RecognitionReviewView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
+                DocBriefAIStatusBanner(retry: { model.runRecognition() })
+
                 if let draft = model.editingDraft ?? model.activeDraft {
                     Text("Proposed type: \(draft.proposedType)")
                         .font(.title3.weight(.semibold))
@@ -61,6 +63,12 @@ struct RecognitionReviewView: View {
                         .buttonStyle(.borderedProminent)
                         .tint(DocBriefTheme.teal)
                     ManualFieldAdder()
+                }
+
+                if let message = model.statusMessage {
+                    DocBriefErrorRetryBanner(message: message) {
+                        model.runRecognition()
+                    }
                 }
 
                 Text(DocBriefIdentity.nonCertificationDisclaimer)

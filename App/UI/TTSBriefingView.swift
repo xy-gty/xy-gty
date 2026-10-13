@@ -32,6 +32,8 @@ struct TTSBriefingView: View {
                     .buttonStyle(.bordered)
                 Button("Pause") { model.pauseBriefing() }
                     .buttonStyle(.bordered)
+                Button("Replay") { model.playBriefingStep() }
+                    .buttonStyle(.bordered)
             }
 
             Button("Rebuild briefing") { model.startBriefing() }

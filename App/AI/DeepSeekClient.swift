@@ -37,8 +37,11 @@ struct DeepSeekClient {
         photoID: UUID,
         priorType: String?
     ) async throws -> RecognitionDraft {
+        let photoData = (try? Data(contentsOf: photoURL)) ?? Data()
+        let byteDigest = photoData.prefix(256).base64EncodedString()
         let prompt = """
         You are DocBrief AI. Guidance only — not financial, tax, or legal certification.
+        document_photo_bytes: \(photoData.count) bytes (sample base64 prefix): \(byteDigest)
         Photo file: \(photoURL.lastPathComponent)
         Prior type: \(priorType ?? "none")
         Return JSON object with keys: doc_type (document|whiteboard|receipt|other), fields (array of {key,value}), notes_hint.

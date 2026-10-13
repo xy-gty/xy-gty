@@ -524,11 +524,10 @@ final class AppModel: ObservableObject {
     }
 
     func playBriefingStep() {
-        guard var session = briefingSession else {
+        if briefingSession == nil {
             startBriefing()
-            guard briefingSession != nil else { return }
-            session = briefingSession!
         }
+        guard let session = briefingSession else { return }
         do {
             try briefingTTS.speakCurrentStep(of: session)
             briefingSession = session

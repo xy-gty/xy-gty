@@ -11,3 +11,46 @@ enum DocBriefTheme {
         mist.opacity(0.9)
     }
 }
+
+struct DocBriefAIStatusBanner: View {
+    @EnvironmentObject private var model: AppModel
+    var retry: (() -> Void)?
+
+    var body: some View {
+        if let reason = model.aiUnavailableReason {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(reason)
+                    .font(.footnote)
+                    .foregroundStyle(DocBriefTheme.ink.opacity(0.85))
+                if let retry {
+                    Button("Retry", action: retry)
+                        .font(.footnote.weight(.semibold))
+                }
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(DocBriefTheme.mist)
+            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+        }
+    }
+}
+
+struct DocBriefErrorRetryBanner: View {
+    let message: String
+    let retry: () -> Void
+
+    var body: some View {
+        if message.localizedCaseInsensitiveContains("failed") {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(message)
+                    .font(.footnote)
+                Button("Retry", action: retry)
+                    .font(.footnote.weight(.semibold))
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(DocBriefTheme.amber.opacity(0.15))
+            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+        }
+    }
+}

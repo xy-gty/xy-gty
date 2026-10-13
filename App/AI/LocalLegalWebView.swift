@@ -2,12 +2,16 @@ import SwiftUI
 import WebKit
 
 struct LocalLegalWebView: UIViewRepresentable {
-    enum Source {
+    enum Source: Equatable {
         case bundleHTML(name: String)
         case inline(String)
     }
 
     let source: Source
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
 
     func makeUIView(context: Context) -> WKWebView {
         let view = WKWebView()
@@ -17,6 +21,8 @@ struct LocalLegalWebView: UIViewRepresentable {
     }
 
     func updateUIView(_ webView: WKWebView, context: Context) {
+        guard context.coordinator.loadedSource != source else { return }
+        context.coordinator.loadedSource = source
         switch source {
         case .bundleHTML(let name):
             if let url = Bundle.main.url(forResource: name, withExtension: "html", subdirectory: "Legal")
@@ -28,5 +34,9 @@ struct LocalLegalWebView: UIViewRepresentable {
         case .inline(let html):
             webView.loadHTMLString(html, baseURL: nil)
         }
+    }
+
+    final class Coordinator {
+        var loadedSource: Source?
     }
 }

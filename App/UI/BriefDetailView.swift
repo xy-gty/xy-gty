@@ -3,7 +3,6 @@ import DocBriefDomain
 
 struct BriefDetailView: View {
     @EnvironmentObject private var model: AppModel
-    @Binding var path: NavigationPath
 
     var body: some View {
         ScrollView {

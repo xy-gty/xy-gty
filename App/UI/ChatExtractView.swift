@@ -12,6 +12,8 @@ struct ChatExtractView: View {
             Text("Ask DocBrief to extract actions and deadlines from this brief.")
                 .foregroundStyle(.secondary)
 
+            DocBriefAIStatusBanner(retry: { model.runChatExtract() })
+
             RuntimeForm(dismissFocus: { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil) }) {
                 TextField("What should we pull out?", text: $model.chatText, axis: .vertical)
                     .lineLimit(3...6)
@@ -61,6 +63,12 @@ struct ChatExtractView: View {
                 .padding()
                 .background(DocBriefTheme.mist)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+
+            if let message = model.statusMessage {
+                DocBriefErrorRetryBanner(message: message) {
+                    model.runChatExtract()
+                }
             }
 
             if !model.activeActions.isEmpty {

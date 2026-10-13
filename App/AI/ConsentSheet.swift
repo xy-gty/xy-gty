@@ -42,6 +42,7 @@ struct ConsentSheet: View {
             }
             .background(DocBriefTheme.paper.ignoresSafeArea())
             .navigationTitle("Allow AI")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Not now") { model.denyConsent() }

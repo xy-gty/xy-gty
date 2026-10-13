@@ -25,6 +25,8 @@ struct RootTabView: View {
             .tag(AppModel.AppTab.settings)
         }
         .toolbarBackground(DocBriefTheme.paper, for: .tabBar)
+        .toolbarBackground(DocBriefTheme.paper, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $model.showConsent) {
             ConsentSheet().environmentObject(model)
         }
@@ -33,10 +35,9 @@ struct RootTabView: View {
 
 struct ActiveBriefHub: View {
     @EnvironmentObject private var model: AppModel
-    @State private var path = NavigationPath()
 
     var body: some View {
-        BriefDetailView(path: $path)
+        BriefDetailView()
             .navigationDestination(for: BriefRoute.self) { route in
                 switch route {
                 case .newBrief: NewBriefView()

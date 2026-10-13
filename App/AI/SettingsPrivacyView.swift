@@ -3,17 +3,20 @@ import DocBriefDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var model: AppModel
+    @State private var aiSharingToggle = false
 
     var body: some View {
         List {
             Section("AI data sharing") {
                 Toggle("Allow DeepSeek inference", isOn: Binding(
-                    get: { model.consentGranted },
+                    get: { aiSharingToggle },
                     set: { enabled in
+                        aiSharingToggle = enabled
                         if enabled {
-                            if !model.consentGranted {
-                                model.showConsent = true
+                            if model.consentGranted {
+                                return
                             }
+                            model.showConsent = true
                         } else {
                             model.revokeConsent()
                         }
@@ -48,10 +51,17 @@ struct SettingsPrivacyView: View {
         .scrollContentBackground(.hidden)
         .background(DocBriefTheme.paper.ignoresSafeArea())
         .navigationTitle("Settings")
-        .sheet(isPresented: $model.showConsent) {
-            ConsentSheet()
-                .environmentObject(model)
+        .onAppear { syncSharingToggle() }
+        .onChange(of: model.consentGranted) { _, _ in syncSharingToggle() }
+        .onChange(of: model.showConsent) { _, showing in
+            if !showing && !model.consentGranted {
+                aiSharingToggle = false
+            }
         }
+    }
+
+    private func syncSharingToggle() {
+        aiSharingToggle = model.consentGranted
     }
 }
 
