@@ -1,0 +1,14 @@
+Dispatch `ddfd9e54-…` completed. Launch hash verified; `pm_docs` finished **ready**.
+
+**DocBrief AI** (`com.lingguang.docbrief`) — free-app UltraLite design (paid unlock deferred as gap).
+
+| Checkpoint | Result |
+|---|---|
+| Technical contract | frozen `1a685a427ccc…` |
+| Visuals (8× r2) | frozen `ce43e843fe33…` — all readbacks **pass** |
+| Build docs | `product` / `features` / `design` / `acceptance` |
+| Finish | `cursor-package ultra-lite finish --status ready` ok |
+
+MAP: `runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/MAP.md`That background vision job finished (exit 0). It was the earlier **r1** pass against SnagCue local seeds, which correctly **failed** brand checks.
+
+The stage already moved on: **r2** DocBrief frames all **pass**, MAP is **ready**, and `cursor-package ultra-lite finish` succeeded for dispatch `ddfd9e54-…`.

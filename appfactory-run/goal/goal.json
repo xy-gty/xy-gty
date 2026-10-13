@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-13T09:57:45Z",
+  "model_mode": "dev",
+  "objective": "# External idea (operator-selected)\n\n**Mode:** pure Cursor Ultra-lite (model/auto per Cursor mode; no Codex / hybrid)\n**App name intent:** DocBrief AI\n**Positioning:** paid AI document / whiteboard / receipt briefing coach — NOT a dumb scanner\n**Reference:** TurboScan Pro / com.novosoft.TurboScan — category reference only; do NOT copy brand, UI, assets, or unauthorized scraping\n\n## Idea\nBuild a paid AI document briefer (not another dumb scanner): import doc/whiteboard/receipt photos, recognize type and key fields, chat to extract actions and deadlines, generate visual summary cards, TTS spoken briefing—unlock unlimited briefs.\n\n## Pricing intent\nPaid unlock for unlimited briefs (one-time or equivalent unlock path). Core free path may allow a limited demo brief if needed for App Store clarity; paid unlocks unlimited briefs + full coach features.\n\n## Constraints\n- Privacy local-first; minimize cloud retention of user photos/docs\n- Do not copy TurboScan brand/UI\n- Core sell-path must be runtime-tested; simulator-impossible items mark as 真机待测 (does not block delivery)\n- Only core defects block delivery; non-core → known_issues; max 2 repair rounds\n- Prefer product delivery push to git@github.com:xy-gty/xy-gty.git\n- Feishu registration / delivery card deferred (operator instruction)\n- No hand-editing MAP / receipts\n- App name, UI, store copy must avoid owner-forbidden languages when specified\n\n## Slot / worktree\nfactory-prod-2 · slot B · stagger simulator lease vs factory-prod-1\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "appfactory.ultra_lite_accept_evidence.v1",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "product_commit": "0ddb3670393a1fe8ba4797f1682c19aa67f9b235",
+  "branch": "main",
+  "bundle_id": "com.lingguang.docbrief",
+  "candidate": "0ddb3670393a-f526913024b3",
+  "pm_visual_manifest_sha256": "ce43e843fe336a5ad2098904dd7a7048610dfd94a8e0011242a20c00adbca1fc",
+  "simulator_udid": "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+  "uitest_log": "evidence/uitest-all2.log",
+  "config_key": "evidence/config-key.inspect.json",
+  "ul07_runtime": [
+    {
+      "frame_id": "home-empty",
+      "runtime_image": "screenshots/runtime-home-empty.png",
+      "runtime_sha256": "7747a0dddc3892719fbc659491615a3a5c98e20cea3d629625047927d679aa65",
+      "receipt": "evidence/visual-readback/runtime-home-empty.receipt.json",
+      "receipt_sha256": "061e61a77fc141c4bad457f9d6ba554171eac91fd273fa4ca33f4161bb529b28",
+      "vision_verdict": "pass"
+    },
+    {
+      "frame_id": "capture-import",
+      "runtime_image": "screenshots/runtime-capture-import.png",
+      "runtime_sha256": "762926167abd6829cffe7f7c1109d0c50526baf35737f9d73eb9f4be37f9d1fb",
+      "receipt": "evidence/visual-readback/runtime-capture-import.receipt.json",
+      "receipt_sha256": "eca7120fa290c7915a37c7f5a4aa04a0f043d3876164159495bdff5fbb017914",
+      "vision_verdict": "uncertain"
+    },
+    {
+      "frame_id": "fields-review",
+      "runtime_image": "screenshots/runtime-fields-review.png",
+      "runtime_sha256": "2cdad9ec5e8da1dd3bbe9d41fc9a97540a21b07be07b9252233b35fe642c1b15",
+      "receipt": "evidence/visual-readback/runtime-fields-review.receipt.json",
+      "receipt_sha256": "2cc44b34ae705dc229e9e1202d6144bd384dcb1204418dbfd293f068b4167718",
+      "vision_verdict": "fail"
+    },
+    {
+      "frame_id": "brief-detail-filled",
+      "runtime_image": "screenshots/runtime-brief-detail-filled.png",
+      "runtime_sha256": "524fde0f0ef44a9fd97f47a385d24febecddcd97ae8dbe50c74522eafc4da43c",
+      "receipt": "evidence/visual-readback/runtime-brief-detail-filled.receipt.json",
+      "receipt_sha256": "1f97b5c5c871a04f3b24a547612c7c201444d3bc9c91734a76cf413803e8dfdf",
+      "vision_verdict": "fail"
+    },
+    {
+      "frame_id": "chat-extract",
+      "runtime_image": "screenshots/runtime-chat-extract.png",
+      "runtime_sha256": "7d9002c337550e62f6de82e115e9f89f593f5ed929f5e41b9f6bf045e3473612",
+      "receipt": "evidence/visual-readback/runtime-chat-extract.receipt.json",
+      "receipt_sha256": "7ac9b7c38623dbd7d2858cffedd59498616c10e6f1d830ab943415417acf9fe0",
+      "vision_verdict": "fail"
+    },
+    {
+      "frame_id": "summary-card",
+      "runtime_image": "screenshots/runtime-summary-card.png",
+      "runtime_sha256": "0d29b74dd249f3e5d20bd40f8c7603399e77f78d44201bfd8a340058846a4004",
+      "receipt": "evidence/visual-readback/runtime-summary-card.receipt.json",
+      "receipt_sha256": "e3e0f08b61f27bcf72f891523acbbee2e6c78886aade5214b7b6c5829774cf6e",
+      "vision_verdict": "fail"
+    },
+    {
+      "frame_id": "tts-briefing",
+      "runtime_image": "screenshots/runtime-tts-briefing.png",
+      "runtime_sha256": "56ec0522d525471a6782cf19b2cb721da14bacf8c8058c70a623f50a37506a87",
+      "receipt": "evidence/visual-readback/runtime-tts-briefing.receipt.json",
+      "receipt_sha256": "7bd6d0b17119d2f71f512593be41546b2da6e5e60782ebf67adc017b446b2220",
+      "vision_verdict": "fail"
+    },
+    {
+      "frame_id": "settings-privacy",
+      "runtime_image": "screenshots/runtime-settings-privacy.png",
+      "runtime_sha256": "cd327dd97964654f332957553f716f8382c0f3f7433c6d176eb7da497ea78493",
+      "receipt": "evidence/visual-readback/runtime-settings-privacy.receipt.json",
+      "receipt_sha256": "4effaf657ef7573a49a7df518543646f9f2116b59a4240775ec3475a60b9cb3e",
+      "vision_verdict": "fail"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "appfactory.ultra_lite_preparation_seal.v1",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "dispatch_id": "37bf6106-5b86-4137-a6a7-fe06781a6818",
+  "producer_pm_attempt": 1,
+  "technical_contract_sha256": "1a685a427ccc34c95a8450a0cb87f3f75ae6086ee359b87652ea11fbf99d8aa0",
+  "members": [
+    {
+      "ref": "DocBriefDomain/BriefingTTS.swift",
+      "sha256": "bb1a0414fe94a7d10dfd8554e65a4d11de70362ae191fa81a0b78114c339bfd8"
+    },
+    {
+      "ref": "DocBriefDomain/ConsentFacade.swift",
+      "sha256": "d1d01273b3ab69db153f936c75bdc1431646f9084b2ace2d07f592c8691c3817"
+    },
+    {
+      "ref": "DocBriefDomain/Entities.swift",
+      "sha256": "4a38e81e1601eb99a7de404a3982d12489b64784187c23bbf4333cef604d9598"
+    },
+    {
+      "ref": "DocBriefDomain/Identity.swift",
+      "sha256": "4ff9c486a3f5cf4a93d0fc9512e10dd3cbce2e046a48814f332d0abc6a9abf16"
+    },
+    {
+      "ref": "DocBriefDomain/Navigation.swift",
+      "sha256": "955d8e5c67b591fa0e6748e5ff9613bd35d775f4785857fb49e67257fba24b00"
+    },
+    {
+      "ref": "DocBriefDomain/OutboundAIBoundary.swift",
+      "sha256": "26d9a5ea97ac89cee66da0aa6db2266489289a1668a6e80bad772e80410a225d"
+    },
+    {
+      "ref": "DocBriefDomain/PhotoImportFacade.swift",
+      "sha256": "5ead46f1db9bc2671fb9e6dba1312de0b7b626918d8a5e1085d2d20b33408c45"
+    },
+    {
+      "ref": "DocBriefDomain/ReviewControls.swift",
+      "sha256": "00c1a67cef90ac7f288163422821435d49b44dc68fa755ce5e129b974fbf8090"
+    },
+    {
+      "ref": "DocBriefDomain/StorageFacades.swift",
+      "sha256": "6ce57d73b9f3974235995c0ac86e9c1a0e8ed772d262c530d449f23ae87f26e7"
+    },
+    {
+      "ref": "Package.swift",
+      "sha256": "0dbb22d2ec0b33113eb9b0f9caabe80658027ec2794c799607f4d6f99c5607c8"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    }
+  ],
+  "map_sha256": "938843a3efa830d0154703a3087c278c8acbbbce555f3b7648f1d8bf006c49bb",
+  "spawn_receipt_sha256": "412a0db01bcf4e21f12c7282a938bacede044554f59a78b7006901324c68c97b",
+  "terminal_sha256": "11ad9e58a9545ae754c1e4b61ff10757b1ef1dd6dd47ee21cf3f08ea2aca3302",
+  "sealed_at": "2026-10-13T10:49:21Z",
+  "cache_receipt_sha256": "d2e62e8472cf7b529014d5b5c7c990bb34c702f781131eef2497dd4e6f0c719c",
+  "cache_key": "56cc6f2b80f2a7f17e52284ed171712d9d8aa28f02e1843d038537d75283a7ad"
+}

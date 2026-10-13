@@ -1,0 +1,41 @@
+{
+  "schema": "appfactory.ultra_lite_visual_readback.v1",
+  "side": "design",
+  "mode": "reused_design",
+  "key": {
+    "screenshot_sha256": "cf349bc59364be3d3c7d2a0da9723e1a188ea2d847b350e91785ce5839b68bcf",
+    "criterion": "Visible: Import/capture for document/whiteboard/receipt photos, Add photos CTA, DocBrief AI identity, no SnagCue/audit/punch chrome.\n",
+    "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: Import/capture for document/whiteboard/receipt photos, Add photos CTA, DocBrief AI identity, no SnagCue/audit/punch chrome.\n",
+    "model": "auto",
+    "reasoning_effort": "auto"
+  },
+  "pm_visual_manifest_sha256": "ce43e843fe336a5ad2098904dd7a7048610dfd94a8e0011242a20c00adbca1fc",
+  "origin": {
+    "key": {
+      "screenshot_sha256": "cf349bc59364be3d3c7d2a0da9723e1a188ea2d847b350e91785ce5839b68bcf",
+      "criterion": "Visible: Import/capture for document/whiteboard/receipt photos, Add photos CTA, DocBrief AI identity, no SnagCue/audit/punch chrome.\n",
+      "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: Import/capture for document/whiteboard/receipt photos, Add photos CTA, DocBrief AI identity, no SnagCue/audit/punch chrome.\n",
+      "model": "auto",
+      "reasoning_effort": "auto"
+    },
+    "origin_run_id": "kf-20261013T095745Z-aa3ad9a0",
+    "origin_pm_attempt": 1,
+    "frame_id": "capture-import",
+    "image_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/capture-import-r2.png",
+    "image_sha256": "cf349bc59364be3d3c7d2a0da9723e1a188ea2d847b350e91785ce5839b68bcf",
+    "receipt_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/evidence/visual-readback/capture-import-r2.receipt.json",
+    "receipt_sha256": "8e51e024b8468001a9dce6ae03a2e4eff798dff006db4c091166b385fe389db0",
+    "raw_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/evidence/visual-readback/capture-import-r2.receipt.jsonl",
+    "raw_sha256": "ea10501c39e27e4cfa778e3a0e14c94aba5111e8a1fb80f99636a645254a9988",
+    "thread_id": "8d6e8477-b53b-454e-88d3-130c94ed5e6f"
+  },
+  "index": {
+    "index_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/visual_readback_index.v1.json",
+    "index_sha256": "37e611307b1b15b3d47d577a39c9ac95e99bf7474f19a2ca5b42c2728e072452",
+    "counts": {
+      "reused_design": 2,
+      "new_design_read": 0,
+      "new_runtime_read": 0
+    }
+  }
+}

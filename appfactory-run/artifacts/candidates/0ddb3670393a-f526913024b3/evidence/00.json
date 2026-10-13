@@ -1,0 +1,77 @@
+{
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "0f296684-cbbc-4f69-98e3-ab957b89b8b0",
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product",
+  "source_commit": "0ddb3670393a1fe8ba4797f1682c19aa67f9b235",
+  "branch": "main",
+  "bundle_id": "com.lingguang.docbrief",
+  "app_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app",
+  "app_content_sha256": "f526913024b30076efa2ad3d1463cf25393f48aec238260e49f5e88c03ed3473",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "Home empty Start brief + brief list",
+    "New brief + photo import via PhotoImportSession",
+    "Recognition review Save/Not this/Edit fields with local heuristic when AI unavailable",
+    "Chat extract action draft with feedback reuse fields",
+    "Summary card Use/Discard (honest unconfigured without key)",
+    "TTS spoken briefing offline",
+    "Consent gate + Settings revoke + local Privacy/Terms/Support pages",
+    "AppRuntimeCore + DocBriefDomain persistence"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not run",
+    "Per-frame visual judgment deferred to ai_app_accept",
+    "Live DeepSeek outbound not configured (local_only ai_key UNKNOWN gap)",
+    "CloudKit / external legal URLs UNKNOWN gaps"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "DocBrief.xcodeproj",
+      "-scheme",
+      "DocBrief",
+      "-destination",
+      "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/DerivedData",
+      "-configuration",
+      "Debug",
+      "build",
+      "CODE_SIGNING_ALLOWED=YES",
+      "CODE_SIGN_IDENTITY=-"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "60e196dcdea2a82dfe07f284001702328b8c783c0b8a234ec62c8200c1b1a8d7"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "DocBrief.xcodeproj",
+        "-scheme",
+        "DocBrief",
+        "-destination",
+        "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/DerivedData",
+        "-configuration",
+        "Debug",
+        "test",
+        "-only-testing:DocBriefDomainTests",
+        "CODE_SIGNING_ALLOWED=YES",
+        "CODE_SIGN_IDENTITY=-"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "80add64bbbfbb70f9f827d0189a29fc864e274763e99be3a2c16076267b8c016"
+    }
+  ]
+}

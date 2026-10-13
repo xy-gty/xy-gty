@@ -1,0 +1,1 @@
+Visible: Chat extract screen with message thread proposing actions/deadlines, Send control, Save / Not this review affordance, keyboard-safe layout.

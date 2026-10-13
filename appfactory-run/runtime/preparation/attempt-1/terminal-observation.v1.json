@@ -1,0 +1,37 @@
+{
+  "event": {
+    "source": "cursor_task_host",
+    "dispatch_id": "37bf6106-5b86-4137-a6a7-fe06781a6818",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-37bf6106-prep",
+    "status": "completed",
+    "final_text": "Dispatch `37bf6106-…6818` finished **ready**.\n\n- Launch hash verified; bound sources matched.\n- Installed `Vendor/AppRuntimeCore`; scaffolded DocBrief domain (entities, storage, navigation, consent, TTS, outbound boundary).\n- Shared domain-test baseline built once via `preparation_cache ensure`; domain compile scratch kept outside workspace inventory.\n- `PREPARATION.md` written; `cursor-package ultra-lite preparation finish --status ready` succeeded (18 members).\n\nController can observe stop and seal."
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "ba4bd18e-e80b-4161-b939-a694b5631e8b",
+    "session_id": "grokbot-packaging-kf-20261013T095745Z-aa3ad9a0",
+    "session_kind": "interactive",
+    "observed_at": 1791888560.809149,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "ba4bd18e-e80b-4161-b939-a694b5631e8b",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_37bf61065b864137a6a7fe06781a6818",
+        "agent_id": "cursor-cli-37bf6106-prep",
+        "agent_status": "completed"
+      }
+    ]
+  },
+  "observed_at": "2026-10-13T10:49:20Z"
+}

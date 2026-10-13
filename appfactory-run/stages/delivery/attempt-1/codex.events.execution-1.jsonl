@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-82987770-delivery"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "That background job hung on `git fetch` / `ensure-product-github` and was aborted. Delivery itself is fine: the accepted commit is on `xy-gty` as `docbrief-ai-kf-20261013T095745Z-aa3ad9a0` (`09c4c0c3…`), and the UltraLite finish already reported `ready`."}]}, "session_id": "cursor-cli-82987770-delivery"}

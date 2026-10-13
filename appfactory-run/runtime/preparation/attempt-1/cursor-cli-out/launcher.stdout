@@ -1,0 +1,8 @@
+Dispatch `37bf6106-…6818` finished **ready**.
+
+- Launch hash verified; bound sources matched.
+- Installed `Vendor/AppRuntimeCore`; scaffolded DocBrief domain (entities, storage, navigation, consent, TTS, outbound boundary).
+- Shared domain-test baseline built once via `preparation_cache ensure`; domain compile scratch kept outside workspace inventory.
+- `PREPARATION.md` written; `cursor-package ultra-lite preparation finish --status ready` succeeded (18 members).
+
+Controller can observe stop and seal.

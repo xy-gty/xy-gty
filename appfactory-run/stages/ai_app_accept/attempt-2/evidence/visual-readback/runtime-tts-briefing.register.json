@@ -1,0 +1,9 @@
+{
+  "index_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/visual_readback_index.v1.json",
+  "index_sha256": "5bdf1fbfbf0409c193547a84170e871301fd30bbc93ddec2baa07f7904685e9a",
+  "counts": {
+    "reused_design": 8,
+    "new_design_read": 0,
+    "new_runtime_read": 8
+  }
+}

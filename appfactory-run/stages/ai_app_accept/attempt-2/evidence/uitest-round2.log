@@ -1,0 +1,1161 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project DocBriefAccept.xcodeproj -scheme DocBriefAccept -destination "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A" -derivedDataPath /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest "-only-testing:DocBriefAcceptUITests/FourPerm" "-only-testing:DocBriefAcceptUITests/DocBriefAcceptUITests/testUL06_privacyLegalAndRevoke" "-only-testing:DocBriefAcceptUITests/ScreenshotTour" CODE_SIGNING_ALLOWED=YES CODE_SIGN_IDENTITY=-
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = -
+    CODE_SIGNING_ALLOWED = YES
+
+note: Using codesigning identity override: -
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'DocBriefAcceptUITests' in project 'DocBriefAccept'
+        ➜ Explicit dependency on target 'DocBriefAcceptHost' in project 'DocBriefAccept'
+    Target 'DocBriefAcceptHost' in project 'DocBriefAccept' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAccept.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+SwiftDriver DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ DocBriefAcceptUITests.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+
+SwiftCompile normal arm64 Compiling\ FourPerm.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/FourPerm.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/FourPerm.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+
+SwiftCompile normal arm64 Compiling\ ScreenshotTour.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/ScreenshotTour.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/ScreenshotTour.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ DocBriefAcceptUITests (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+EmitSwiftModule normal arm64 (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling FourPerm.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ScreenshotTour.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriver\ Compilation DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for DocBriefAcceptUITests (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriver\ Compilation\ Requirements DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.abi.json (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftsourceinfo (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests normal (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests
+
+ExtractAppIntentsMetadata (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name DocBriefAcceptUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier accept.harness.docbrief.uitests --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests --dependency-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_dependency_info.dat --stringsdata-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.DependencyMetadataFileList --static-metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-13 20:43:22.623 appintentsmetadataprocessor[81639:4245808] Starting appintentsmetadataprocessor export
+2026-10-13 20:43:22.627 appintentsmetadataprocessor[81639:4245808] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/PlugIns --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/SystemExtensions --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app: replacing existing signature
+
+2026-10-13 20:43:23.852567+0800 DocBriefAcceptUITests-Runner[81643:4245914] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 20:43:24.297.
+Test Suite 'DocBriefAcceptUITests.xctest' started at 2026-10-13 20:43:24.298.
+Test Suite 'DocBriefAcceptUITests' started at 2026-10-13 20:43:24.298.
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke]' started.
+    t =     0.00s Start Test at 2026-10-13 20:43:24.298
+    t =     0.04s Set Up
+    t =     0.04s Open com.lingguang.docbrief
+    t =     0.04s     Launch com.lingguang.docbrief
+    t =     0.16s         Setting up automation session
+    t =     0.65s         Wait for com.lingguang.docbrief to idle
+objc[81643]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23E254a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a3dc310) and /Library/Developer/CoreSimulator/Volumes/iOS_23E254a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a410398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     2.38s Waiting 5.0s for "Settings" Button to exist
+    t =     3.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Button`
+    t =     3.45s         Checking existence of `"Settings" Button`
+    t =     3.55s Tap "Settings" Button
+    t =     3.55s     Wait for com.lingguang.docbrief to idle
+    t =     3.55s     Find the "Settings" Button
+    t =     3.57s     Check for interrupting elements affecting "Settings" Button
+    t =     3.60s     Synthesize event
+    t =     3.89s     Wait for com.lingguang.docbrief to idle
+    t =     6.39s Swipe up Application 'com.lingguang.docbrief'
+    t =     6.39s     Wait for com.lingguang.docbrief to idle
+    t =     6.40s     Find the Application 'com.lingguang.docbrief'
+    t =     6.45s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =     6.47s     Synthesize event
+    t =     6.89s     Wait for com.lingguang.docbrief to idle
+    t =     8.99s Swipe up Application 'com.lingguang.docbrief'
+    t =     9.00s     Wait for com.lingguang.docbrief to idle
+    t =     9.20s     Find the Application 'com.lingguang.docbrief'
+    t =     9.25s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =     9.28s     Synthesize event
+    t =     9.70s     Wait for com.lingguang.docbrief to idle
+    t =    10.15s Swipe up Application 'com.lingguang.docbrief'
+    t =    10.15s     Wait for com.lingguang.docbrief to idle
+    t =    10.15s     Find the Application 'com.lingguang.docbrief'
+    t =    10.19s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    10.21s     Synthesize event
+    t =    10.63s     Wait for com.lingguang.docbrief to idle
+    t =    11.11s Swipe up Application 'com.lingguang.docbrief'
+    t =    11.11s     Wait for com.lingguang.docbrief to idle
+    t =    11.12s     Find the Application 'com.lingguang.docbrief'
+    t =    11.15s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    11.18s     Synthesize event
+    t =    11.59s     Wait for com.lingguang.docbrief to idle
+    t =    12.08s Swipe up Application 'com.lingguang.docbrief'
+    t =    12.08s     Wait for com.lingguang.docbrief to idle
+    t =    12.08s     Find the Application 'com.lingguang.docbrief'
+    t =    12.10s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    12.12s     Synthesize event
+    t =    12.54s     Wait for com.lingguang.docbrief to idle
+    t =    13.14s Swipe up Application 'com.lingguang.docbrief'
+    t =    13.14s     Wait for com.lingguang.docbrief to idle
+    t =    13.14s     Find the Application 'com.lingguang.docbrief'
+    t =    13.18s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    13.21s     Synthesize event
+    t =    13.63s     Wait for com.lingguang.docbrief to idle
+=== SETTINGS ===
+    t =    14.12s Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    14.30s Requesting snapshot of accessibility hierarchy for app with pid 81647
+Optional(Attributes: Application, 0x106e43340, pid: 81647, label: 'DocBrief AI'
+Element subtree:
+ →Application, 0x106e43340, pid: 81647, label: 'DocBrief AI'
+    Window (Main), 0x106e435c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x106e43700, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x106e43840, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x106e43980, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x106e43ac0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x106e43c00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x106e43d40, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x106e43e80, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x116470000, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x116470140, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x116470280, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1164703c0, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x116470500, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Settings'
+                              StaticText, 0x116470640, {{167.7, 73.7}, {66.7, 20.7}}, label: 'Settings'
+                            Other, 0x116470780, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1164708c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x116470a00, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x116470b40, {{0.0, 0.0}, {402.0, 874.0}}
+                                    CollectionView, 0x116470c80, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x116470dc0, {{-16.0, -69.0}, {434.0, 451.3}}
+                                      Cell, 0x116470f00, {{16.0, -28.7}, {370.0, 81.7}}
+                                        Other, 0x116471040, {{16.0, -28.7}, {370.0, 81.7}}
+                                          Other, 0x116471180, {{16.0, -28.7}, {370.0, 81.7}}
+                                        Other, 0x1164712c0, {{16.0, -28.7}, {370.0, 81.7}}
+                                          Other, 0x116471400, {{16.0, -28.7}, {370.0, 81.7}}
+                                            Other, 0x116471540, {{16.0, -28.7}, {370.0, 81.7}}
+                                              StaticText, 0x116471680, {{16.0, -28.7}, {370.0, 81.7}}, label: 'Camera (Take photo): DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review.'
+                                      Other, 0x1164717c0, {{0.0, -0.0}, {402.0, 874.0}}
+                                        Other, 0x116471900, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x116471a40, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x116471b80, {{0.0, -0.0}, {402.0, 874.0}}
+                                        Other, 0x116471cc0, {{0.0, 0.0}, {402.0, 170.8}}
+                                          Other, 0x116471e00, {{0.0, 0.0}, {402.0, 94.3}}
+                                          Other, 0x116471f40, {{0.0, 0.0}, {402.0, 170.8}}
+                                            Other, 0x116472080, {{0.0, 0.0}, {402.0, 170.8}}
+                                          Other, 0x1164721c0, {{0.0, 0.0}, {402.0, 170.8}}
+                                            Other, 0x116472300, {{0.0, 0.0}, {402.0, 170.8}}
+                                          Other, 0x116472440, {{0.0, 0.0}, {402.0, 170.8}}
+                                            Other, 0x116472580, {{0.0, 0.0}, {402.0, 170.8}}
+                                            Other, 0x1164726c0, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x116472800, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Image, 0x116472940, {{-120.0, 731.0}, {642.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x116472a80, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x116472bc0, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Other, 0x116472d00, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x116472e40, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x116472f80, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Cell, 0x1164730c0, {{16.0, 53.0}, {370.0, 81.7}}
+                                        Other, 0x116473200, {{16.0, 53.0}, {370.0, 81.7}}
+                                          Other, 0x116473340, {{16.0, 53.0}, {370.0, 81.7}}
+                                        Other, 0x116473480, {{16.0, 53.0}, {370.0, 81.7}}
+                                          Other, 0x1164735c0, {{16.0, 53.0}, {370.0, 81.7}}
+                                            Other, 0x116473700, {{16.0, 53.0}, {370.0, 81.7}}
+                                              StaticText, 0x116473840, {{16.0, 53.0}, {370.0, 81.7}}, label: 'Photos (Add photos): DocBrief AI imports document, whiteboard, or receipt photos you choose so you can review type and field suggestions before saving a brief.'
+                                      Other, 0x116473980, {{32.0, 52.0}, {338.0, 1.0}}
+                                      Cell, 0x116473ac0, {{16.0, 134.7}, {370.0, 153.7}}
+                                        Other, 0x116473c00, {{16.0, 134.7}, {370.0, 153.7}}
+                                          Other, 0x116473d40, {{16.0, 134.7}, {370.0, 153.7}}
+                                        Other, 0x116473e80, {{16.0, 134.7}, {370.0, 153.7}}
+                                          Other, 0x1164c8000, {{16.0, 134.7}, {370.0, 153.7}}
+                                            Other, 0x1164c8140, {{16.0, 134.7}, {370.0, 153.7}}
+                                              StaticText, 0x1164c8280, {{16.0, 134.7}, {370.0, 153.7}}, label: 'Microphone and speech recognition (Voice supplement): DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard. On-device speech recognition turns your voice supplement into editable action or briefing text that you review with Save or Not this.'
+                                      Other, 0x1164c83c0, {{32.0, 133.7}, {338.0, 1.0}}
+                                      Cell, 0x1164c8500, {{16.0, 288.3}, {370.0, 76.3}}
+                                        Other, 0x1164c8640, {{16.0, 288.3}, {370.0, 76.3}}
+                                          Other, 0x1164c8780, {{16.0, 288.3}, {370.0, 76.3}}
+                                        Other, 0x1164c88c0, {{16.0, 288.3}, {370.0, 76.3}}
+                                          Other, 0x1164c8a00, {{16.0, 288.3}, {370.0, 76.3}}
+                                            Other, 0x1164c8b40, {{16.0, 288.3}, {370.0, 76.3}}
+                                              StaticText, 0x1164c8c80, {{16.0, 288.3}, {370.0, 76.3}}, label: 'These permissions support on-device capture and review only; they are not used to send data to AI without your separate consent above.'
+                                      Other, 0x1164c8dc0, {{32.0, 287.3}, {338.0, 1.0}}
+                                      Other, 0x1164c8f00, {{-16.0, 382.0}, {434.0, 267.3}}
+                                      Cell, 0x1164c9040, {{16.0, 382.0}, {370.0, 40.3}}
+                                        Other, 0x1164c9180, {{16.0, 382.0}, {370.0, 40.3}}
+                                        Other, 0x1164c92c0, {{16.0, 382.0}, {370.0, 40.3}}
+                                          Other, 0x1164c9400, {{16.0, 382.0}, {370.0, 40.3}}
+                                            Other, 0x1164c9540, {{16.0, 382.0}, {370.0, 40.3}}
+                                              StaticText, 0x1164c9680, {{16.0, 382.0}, {370.0, 40.3}}, label: 'Legal (local)'
+                                      Cell, 0x1164c97c0, {{16.0, 422.3}, {370.0, 52.3}}
+                                        Other, 0x1164c9900, {{16.0, 422.3}, {370.0, 52.3}}
+                                          Other, 0x1164c9a40, {{16.0, 422.3}, {370.0, 52.3}}
+                                        Other, 0x1164c9b80, {{16.0, 422.3}, {370.0, 52.3}}
+                                          Other, 0x1164c9cc0, {{16.0, 422.3}, {370.0, 52.3}}
+                                            Other, 0x1164c9e00, {{16.0, 422.3}, {370.0, 52.3}}
+                                              Button, 0x1164c9f40, {{16.0, 422.3}, {370.0, 52.3}}, label: 'Privacy'
+                                                StaticText, 0x1164ca080, {{32.0, 438.3}, {55.7, 20.3}}, label: 'Privacy'
+                                                Image, 0x1164ca1c0, {{360.7, 442.7}, {7.0, 12.0}}, identifier: 'chevron.forward'
+                                      Cell, 0x1164ca300, {{16.0, 474.7}, {370.0, 52.3}}
+                                        Other, 0x1164ca440, {{16.0, 474.7}, {370.0, 52.3}}
+                                          Other, 0x1164ca580, {{16.0, 474.7}, {370.0, 52.3}}
+                                        Other, 0x1164ca6c0, {{16.0, 474.7}, {370.0, 52.3}}
+                                          Other, 0x1164ca800, {{16.0, 474.7}, {370.0, 52.3}}
+                                            Other, 0x1164ca940, {{16.0, 474.7}, {370.0, 52.3}}
+                                              Button, 0x1164caa80, {{16.0, 474.7}, {370.0, 52.3}}, label: 'Terms'
+                                                StaticText, 0x1164cabc0, {{32.0, 490.7}, {47.0, 20.3}}, label: 'Terms'
+                                                Image, 0x1164cad00, {{360.7, 495.0}, {7.0, 12.0}}, identifier: 'chevron.forward'
+                                      Other, 0x1164cae40, {{32.0, 473.7}, {338.0, 1.0}}
+                                      Cell, 0x1164caf80, {{16.0, 527.0}, {370.0, 52.3}}
+                                        Other, 0x1164cb0c0, {{16.0, 527.0}, {370.0, 52.3}}
+                                          Other, 0x1164cb200, {{16.0, 527.0}, {370.0, 52.3}}
+                                        Other, 0x1164cb340, {{16.0, 527.0}, {370.0, 52.3}}
+                                          Other, 0x1164cb480, {{16.0, 527.0}, {370.0, 52.3}}
+                                            Other, 0x1164cb5c0, {{16.0, 527.0}, {370.0, 52.3}}
+                                              Button, 0x1164cb700, {{16.0, 527.0}, {370.0, 52.3}}, label: 'Support'
+                                                StaticText, 0x1164cb840, {{32.0, 543.0}, {61.7, 20.3}}, label: 'Support'
+                                                Image, 0x1164cb980, {{360.7, 547.3}, {7.0, 12.0}}, identifier: 'chevron.forward'
+                                      Other, 0x1164cbac0, {{32.0, 526.0}, {338.0, 1.0}}
+                                      Cell, 0x1164cbc00, {{16.0, 579.3}, {370.0, 52.3}}
+                                        Other, 0x1164cbd40, {{16.0, 579.3}, {370.0, 52.3}}
+                                          Other, 0x1164cbe80, {{16.0, 579.3}, {370.0, 52.3}}
+                                        Other, 0x1164cc000, {{16.0, 579.3}, {370.0, 52.3}}
+                                          Other, 0x1164cc140, {{16.0, 579.3}, {370.0, 52.3}}
+                                            Other, 0x1164cc280, {{16.0, 579.3}, {370.0, 52.3}}
+                                              Button, 0x1164cc3c0, {{16.0, 579.3}, {370.0, 52.3}}, label: 'Provider policy'
+                                                StaticText, 0x1164cc500, {{32.0, 595.3}, {113.0, 20.3}}, label: 'Provider policy'
+                                                Image, 0x1164cc640, {{360.7, 599.7}, {7.0, 12.0}}, identifier: 'chevron.forward'
+                                      Other, 0x1164cc780, {{32.0, 578.3}, {338.0, 1.0}}
+                                      Other, 0x1164cc8c0, {{-16.0, 649.3}, {434.0, 1890.0}}
+                                      Cell, 0x1164cca00, {{16.0, 649.3}, {370.0, 40.3}}
+                                        Other, 0x1164ccb40, {{16.0, 649.3}, {370.0, 40.3}}
+                                        Other, 0x1164ccc80, {{16.0, 649.3}, {370.0, 40.3}}
+                                          Other, 0x1164ccdc0, {{16.0, 649.3}, {370.0, 40.3}}
+                                            Other, 0x1164ccf00, {{16.0, 649.3}, {370.0, 40.3}}
+                                              StaticText, 0x1164cd040, {{16.0, 649.3}, {370.0, 40.3}}, label: 'Compliance'
+                                      Cell, 0x1164cd180, {{16.0, 689.3}, {370.0, 81.7}}
+                                        Other, 0x1164cd2c0, {{16.0, 689.3}, {370.0, 81.7}}
+                                          Other, 0x1164cd400, {{16.0, 689.3}, {370.0, 81.7}}
+                                        Other, 0x1164cd540, {{16.0, 689.3}, {370.0, 81.7}}
+                                          Other, 0x1164cd680, {{16.0, 689.3}, {370.0, 81.7}}
+                                            Other, 0x1164cd7c0, {{16.0, 689.3}, {370.0, 81.7}}
+                                              StaticText, 0x1164cd900, {{16.0, 689.3}, {370.0, 81.7}}, label: 'Recognition and suggestions are organization aids only — not financial, tax, or legal certification, and not official credentials.'
+                                      Other, 0x1164cda40, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 3 pages', value: 100%
+                                        Other, 0x1164cdb80, {{396.0, 434.0}, {3.0, 354.0}}
+                                      Other, 0x1164cdcc0, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 3 pages', value: 100%
+                                        Other, 0x1164cde00, {{396.0, 434.0}, {3.0, 354.0}}
+                            Other, 0x1164cdf40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1164ce080, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1164ce1c0, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1164ce300, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x1164ce440, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x1164ce580, {{60.0, 791.0}, {283.0, 62.0}}
+                        Other, 0x1164ce6c0, {{60.0, 791.0}, {97.0, 54.0}}
+                        Other, 0x1164ce800, {{60.0, 791.0}, {283.0, 62.0}}
+                          Button, 0x1164ce940, {{64.0, 795.0}, {97.0, 54.0}}, identifier: 'doc.text', label: 'Briefs'
+                            Image, 0x1164cea80, {{100.0, 800.7}, {25.3, 28.7}}, identifier: 'text.document.fill', label: 'text.document.fill'
+                          Button, 0x1164cebc0, {{153.0, 795.0}, {97.0, 54.0}}, identifier: 'checkmark.seal', label: 'Active brief'
+                            Image, 0x1164ced00, {{187.0, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x1164cee40, {{242.0, 795.0}, {97.0, 54.0}}, identifier: 'gearshape', label: 'Settings', Selected
+                            Image, 0x1164cef80, {{277.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1164cf0c0, {{242.0, 795.0}, {97.0, 54.0}}
+                          Other, 0x1164cf200, {{242.0, 795.0}, {97.0, 54.0}}
+                            Other, 0x1164cf340, {{242.0, 795.0}, {97.0, 54.0}}
+                            Other, 0x1164cf480, {{242.0, 795.0}, {97.0, 54.0}}
+                              Other, 0x1164cf5c0, {{242.0, 795.0}, {97.0, 54.0}}
+                                Other, 0x1164cf700, {{242.0, 795.0}, {97.0, 54.0}}
+                                  Other, 0x1164cf840, {{242.0, 795.0}, {97.0, 54.0}}
+                                Other, 0x1164cf980, {{242.0, 795.0}, {97.0, 54.0}}
+                              Other, 0x1164cfac0, {{242.0, 795.0}, {97.0, 54.0}}
+                  Other, 0x1164cfc00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1164cfd40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1164cfe80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1164d4000, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1164d4140, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1164d4280, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1164d43c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1164d4500, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x106e43340, pid: 81647, label: 'DocBrief AI'
+Query chain:
+ →Find: Application 'com.lingguang.docbrief'
+  Output: {
+    Application, 0x1164d4640, pid: 81647, label: 'DocBrief AI'
+  }
+)
+    t =    14.33s Waiting 2.0s for Any (First Match) to exist
+    t =    15.39s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    15.39s         Checking existence of `Any (First Match)`
+    t =    15.45s Find the Any (First Match)
+    t =    15.48s Tap "Privacy" Button
+    t =    15.48s     Wait for com.lingguang.docbrief to idle
+    t =    15.48s     Find the "Privacy" Button
+    t =    15.51s     Check for interrupting elements affecting "Privacy" Button
+    t =    15.54s     Synthesize event
+    t =    15.83s     Wait for com.lingguang.docbrief to idle
+    t =    17.89s Waiting 3.0s for Any (First Match) to exist
+    t =    18.96s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    18.96s         Checking existence of `Any (First Match)`
+    t =    19.01s Waiting 2.0s for "BackButton" Button to exist
+    t =    20.07s     Checking `Expect predicate `existsNoRetry == 1` for object "BackButton" Button`
+    t =    20.07s         Checking existence of `"BackButton" Button`
+    t =    20.12s Tap "BackButton" Button
+    t =    20.12s     Wait for com.lingguang.docbrief to idle
+    t =    20.12s     Find the "BackButton" Button
+    t =    20.14s     Check for interrupting elements affecting "BackButton" Button
+    t =    20.16s     Synthesize event
+    t =    20.45s     Wait for com.lingguang.docbrief to idle
+    t =    21.81s Swipe up Application 'com.lingguang.docbrief'
+    t =    21.81s     Wait for com.lingguang.docbrief to idle
+    t =    21.81s     Find the Application 'com.lingguang.docbrief'
+    t =    21.85s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    21.88s     Synthesize event
+    t =    22.29s     Wait for com.lingguang.docbrief to idle
+    t =    22.78s Swipe up Application 'com.lingguang.docbrief'
+    t =    22.78s     Wait for com.lingguang.docbrief to idle
+    t =    22.79s     Find the Application 'com.lingguang.docbrief'
+    t =    22.82s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    22.85s     Synthesize event
+    t =    23.26s     Wait for com.lingguang.docbrief to idle
+    t =    23.75s Waiting 2.0s for Any (First Match) to exist
+    t =    24.81s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    24.81s         Checking existence of `Any (First Match)`
+    t =    24.86s Find the Any (First Match)
+    t =    24.89s Tap "Terms" Button
+    t =    24.89s     Wait for com.lingguang.docbrief to idle
+    t =    24.99s     Find the "Terms" Button
+    t =    25.03s     Check for interrupting elements affecting "Terms" Button
+    t =    25.06s     Synthesize event
+    t =    25.34s     Wait for com.lingguang.docbrief to idle
+    t =    27.19s Waiting 3.0s for Any (First Match) to exist
+    t =    28.25s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    28.25s         Checking existence of `Any (First Match)`
+    t =    28.30s Waiting 2.0s for "BackButton" Button to exist
+    t =    29.34s     Checking `Expect predicate `existsNoRetry == 1` for object "BackButton" Button`
+    t =    29.34s         Checking existence of `"BackButton" Button`
+    t =    29.38s Tap "BackButton" Button
+    t =    29.38s     Wait for com.lingguang.docbrief to idle
+    t =    29.39s     Find the "BackButton" Button
+    t =    29.41s     Check for interrupting elements affecting "BackButton" Button
+    t =    29.42s     Synthesize event
+    t =    29.72s     Wait for com.lingguang.docbrief to idle
+    t =    31.06s Swipe up Application 'com.lingguang.docbrief'
+    t =    31.06s     Wait for com.lingguang.docbrief to idle
+    t =    31.06s     Find the Application 'com.lingguang.docbrief'
+    t =    31.10s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    31.13s     Synthesize event
+    t =    31.55s     Wait for com.lingguang.docbrief to idle
+    t =    32.03s Swipe up Application 'com.lingguang.docbrief'
+    t =    32.03s     Wait for com.lingguang.docbrief to idle
+    t =    32.04s     Find the Application 'com.lingguang.docbrief'
+    t =    32.07s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    32.10s     Synthesize event
+    t =    32.52s     Wait for com.lingguang.docbrief to idle
+    t =    33.00s Waiting 2.0s for Any (First Match) to exist
+    t =    34.04s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    34.05s         Checking existence of `Any (First Match)`
+    t =    34.10s Find the Any (First Match)
+    t =    34.13s Tap "These permissions support on-device capture and review only; they are not used to send data to AI without your separate consent above." StaticText
+    t =    34.13s     Wait for com.lingguang.docbrief to idle
+    t =    34.24s     Find the "These permissions support on-device capture and review only; they are not used to send data to AI without your separate consent above." StaticText
+    t =    34.28s     Check for interrupting elements affecting "These permissions support on-device capture and review only; they are not used to send data to AI without your separate consent above." StaticText
+    t =    34.31s     Synthesize event
+    t =    34.60s     Wait for com.lingguang.docbrief to idle
+    t =    35.61s Waiting 3.0s for Any (First Match) to exist
+    t =    36.68s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    36.68s         Checking existence of `Any (First Match)`
+    t =    36.72s Waiting 2.0s for "BackButton" Button to exist
+    t =    37.76s     Checking `Expect predicate `existsNoRetry == 1` for object "BackButton" Button`
+    t =    37.76s         Checking existence of `"BackButton" Button`
+    t =    37.79s         Capturing element debug description
+    t =    38.73s     Checking `Expect predicate `existsNoRetry == 1` for object "BackButton" Button`
+    t =    38.73s         Checking existence of `"BackButton" Button`
+    t =    38.76s         Capturing element debug description
+    t =    38.76s     Checking existence of `"BackButton" Button`
+    t =    38.79s Collecting debug information to assist test failure triage
+    t =    38.79s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    38.83s Checking existence of `Button (First Match)`
+    t =    38.85s Swipe down Application 'com.lingguang.docbrief'
+    t =    38.85s     Wait for com.lingguang.docbrief to idle
+    t =    38.86s     Find the Application 'com.lingguang.docbrief'
+    t =    38.87s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    38.89s     Synthesize event
+    t =    39.28s     Wait for com.lingguang.docbrief to idle
+    t =    42.49s Swipe up Application 'com.lingguang.docbrief'
+    t =    42.49s     Wait for com.lingguang.docbrief to idle
+    t =    42.73s     Find the Application 'com.lingguang.docbrief'
+    t =    42.75s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    42.78s     Synthesize event
+    t =    43.20s     Wait for com.lingguang.docbrief to idle
+    t =    45.31s Swipe up Application 'com.lingguang.docbrief'
+    t =    45.31s     Wait for com.lingguang.docbrief to idle
+    t =    45.32s     Find the Application 'com.lingguang.docbrief'
+    t =    45.36s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    45.39s     Synthesize event
+    t =    45.81s     Wait for com.lingguang.docbrief to idle
+    t =    46.28s Waiting 2.0s for Any (First Match) to exist
+    t =    47.34s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    47.34s         Checking existence of `Any (First Match)`
+    t =    47.40s Find the Any (First Match)
+    t =    47.43s Tap "Provider policy" Button
+    t =    47.43s     Wait for com.lingguang.docbrief to idle
+    t =    47.53s     Find the "Provider policy" Button
+    t =    47.56s     Check for interrupting elements affecting "Provider policy" Button
+    t =    47.59s     Synthesize event
+    t =    47.88s     Wait for com.lingguang.docbrief to idle
+    t =    49.73s Waiting 3.0s for Any (First Match) to exist
+    t =    50.77s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    50.77s         Checking existence of `Any (First Match)`
+    t =    50.81s Waiting 2.0s for "BackButton" Button to exist
+    t =    51.87s     Checking `Expect predicate `existsNoRetry == 1` for object "BackButton" Button`
+    t =    51.87s         Checking existence of `"BackButton" Button`
+    t =    51.91s Tap "BackButton" Button
+    t =    51.91s     Wait for com.lingguang.docbrief to idle
+    t =    51.91s     Find the "BackButton" Button
+    t =    51.93s     Check for interrupting elements affecting "BackButton" Button
+    t =    51.95s     Synthesize event
+    t =    52.24s     Wait for com.lingguang.docbrief to idle
+    t =    53.59s Swipe up Application 'com.lingguang.docbrief'
+    t =    53.59s     Wait for com.lingguang.docbrief to idle
+    t =    53.59s     Find the Application 'com.lingguang.docbrief'
+    t =    53.62s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    53.64s     Synthesize event
+    t =    54.06s     Wait for com.lingguang.docbrief to idle
+    t =    54.55s Swipe up Application 'com.lingguang.docbrief'
+    t =    54.55s     Wait for com.lingguang.docbrief to idle
+    t =    54.55s     Find the Application 'com.lingguang.docbrief'
+    t =    54.58s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    54.60s     Synthesize event
+    t =    55.02s     Wait for com.lingguang.docbrief to idle
+    t =    55.50s Waiting 2.0s for Any (First Match) to exist
+    t =    56.56s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    56.56s         Checking existence of `Any (First Match)`
+    t =    56.62s         Capturing element debug description
+    t =    57.51s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    57.51s         Checking existence of `Any (First Match)`
+    t =    57.56s         Capturing element debug description
+    t =    57.56s     Checking existence of `Any (First Match)`
+    t =    57.59s Collecting debug information to assist test failure triage
+    t =    57.59s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    57.64s Waiting 2.0s for Any (First Match) to exist
+    t =    58.69s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    58.69s         Checking existence of `Any (First Match)`
+    t =    58.75s         Capturing element debug description
+    t =    59.64s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    59.64s         Checking existence of `Any (First Match)`
+    t =    59.69s         Capturing element debug description
+    t =    59.69s     Checking existence of `Any (First Match)`
+    t =    59.71s Collecting debug information to assist test failure triage
+    t =    59.71s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    59.76s Waiting 2.0s for Any (First Match) to exist
+    t =    60.79s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    60.79s         Checking existence of `Any (First Match)`
+    t =    60.83s         Capturing element debug description
+    t =    61.77s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    61.77s         Checking existence of `Any (First Match)`
+    t =    61.81s         Capturing element debug description
+    t =    61.81s     Checking existence of `Any (First Match)`
+    t =    61.84s Collecting debug information to assist test failure triage
+    t =    61.84s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    61.88s Waiting 2.0s for Any (First Match) to exist
+    t =    62.91s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    62.91s         Checking existence of `Any (First Match)`
+    t =    62.97s         Capturing element debug description
+    t =    63.88s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    63.88s         Checking existence of `Any (First Match)`
+    t =    63.92s         Capturing element debug description
+    t =    63.92s     Checking existence of `Any (First Match)`
+    t =    63.95s Collecting debug information to assist test failure triage
+    t =    63.95s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    63.99s Waiting 2.0s for Any (First Match) to exist
+    t =    65.01s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    65.01s         Checking existence of `Any (First Match)`
+    t =    65.07s         Capturing element debug description
+    t =    66.00s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    66.00s         Checking existence of `Any (First Match)`
+    t =    66.05s         Capturing element debug description
+    t =    66.05s     Checking existence of `Any (First Match)`
+    t =    66.08s Collecting debug information to assist test failure triage
+    t =    66.08s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    66.12s Waiting 2.0s for Any (First Match) to exist
+    t =    67.16s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    67.16s         Checking existence of `Any (First Match)`
+    t =    67.20s         Capturing element debug description
+    t =    68.13s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    68.13s         Checking existence of `Any (First Match)`
+    t =    68.17s         Capturing element debug description
+    t =    68.17s     Checking existence of `Any (First Match)`
+    t =    68.19s Collecting debug information to assist test failure triage
+    t =    68.19s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    68.24s Waiting 4.0s for "revoke_ai_consent" Button to exist
+    t =    69.28s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    69.28s         Checking existence of `"revoke_ai_consent" Button`
+    t =    69.33s         Capturing element debug description
+    t =    70.27s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    70.27s         Checking existence of `"revoke_ai_consent" Button`
+    t =    70.31s         Capturing element debug description
+    t =    71.24s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    71.24s         Checking existence of `"revoke_ai_consent" Button`
+    t =    71.29s         Capturing element debug description
+    t =    72.24s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    72.24s         Checking existence of `"revoke_ai_consent" Button`
+    t =    72.29s         Capturing element debug description
+    t =    72.29s     Checking existence of `"revoke_ai_consent" Button`
+    t =    72.31s Collecting debug information to assist test failure triage
+    t =    72.31s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    72.35s Waiting 2.0s for Any (First Match) to exist
+    t =    73.38s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    73.38s         Checking existence of `Any (First Match)`
+    t =    73.41s         Capturing element debug description
+    t =    74.36s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    74.36s         Checking existence of `Any (First Match)`
+    t =    74.41s         Capturing element debug description
+    t =    74.41s     Checking existence of `Any (First Match)`
+    t =    74.44s Collecting debug information to assist test failure triage
+    t =    74.44s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    74.48s Waiting 2.0s for "revoke_ai_consent" Button to exist
+    t =    75.52s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    75.52s         Checking existence of `"revoke_ai_consent" Button`
+    t =    75.57s         Capturing element debug description
+    t =    76.48s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    76.48s         Checking existence of `"revoke_ai_consent" Button`
+    t =    76.52s         Capturing element debug description
+    t =    76.52s     Checking existence of `"revoke_ai_consent" Button`
+    t =    76.54s Collecting debug information to assist test failure triage
+    t =    76.54s     Requesting snapshot of accessibility hierarchy for app with pid 81647
+    t =    76.58s Tear Down
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke]' passed (77.001 seconds).
+Test Suite 'DocBriefAcceptUITests' passed at 2026-10-13 20:44:41.300.
+	 Executed 1 test, with 0 failures (0 unexpected) in 77.001 (77.003) seconds
+Test Suite 'FourPerm' started at 2026-10-13 20:44:41.301.
+Test Case '-[DocBriefAcceptUITests.FourPerm testFourPermissionEntryPoints]' started.
+    t =     0.00s Start Test at 2026-10-13 20:44:41.304
+    t =     0.02s Set Up
+    t =     0.03s     Open com.lingguang.docbrief
+    t =     0.03s         Launch com.lingguang.docbrief
+    t =     0.03s             Terminate com.lingguang.docbrief:81647
+    t =     1.21s             Setting up automation session
+    t =     1.63s             Wait for com.lingguang.docbrief to idle
+    t =     3.04s Waiting 3.0s for Button (Element at index 0) to exist
+    t =     4.09s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =     4.09s         Checking existence of `Button (Element at index 0)`
+    t =     4.18s         Capturing element debug description
+    t =     5.05s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =     5.05s         Checking existence of `Button (Element at index 0)`
+    t =     5.09s         Capturing element debug description
+    t =     6.05s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =     6.05s         Checking existence of `Button (Element at index 0)`
+    t =     6.08s         Capturing element debug description
+    t =     6.08s     Checking existence of `Button (Element at index 0)`
+    t =     6.10s Collecting debug information to assist test failure triage
+    t =     6.10s     Requesting snapshot of accessibility hierarchy for app with pid 82008
+    t =     6.13s Waiting 3.0s for Any (First Match) to exist
+    t =     7.17s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     7.17s         Checking existence of `Any (First Match)`
+    t =     7.19s Find the Any (First Match)
+    t =     7.20s Tap "checkmark.seal" Button
+    t =     7.20s     Wait for com.lingguang.docbrief to idle
+    t =     7.21s     Find the "checkmark.seal" Button
+    t =     7.21s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =     7.24s     Synthesize event
+    t =     7.53s     Wait for com.lingguang.docbrief to idle
+    t =     9.81s Waiting 4.0s for Any (First Match) to exist
+    t =    10.85s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    10.85s         Checking existence of `Any (First Match)`
+    t =    10.87s Find the Any (First Match)
+    t =    10.89s Tap "gearshape" Button
+    t =    10.89s     Wait for com.lingguang.docbrief to idle
+    t =    10.89s     Find the "gearshape" Button
+    t =    10.90s     Check for interrupting elements affecting "gearshape" Button
+    t =    10.93s     Synthesize event
+    t =    11.22s     Wait for com.lingguang.docbrief to idle
+    t =    13.70s Swipe up Application 'com.lingguang.docbrief'
+    t =    13.70s     Wait for com.lingguang.docbrief to idle
+    t =    13.71s     Find the Application 'com.lingguang.docbrief'
+    t =    13.76s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    13.78s     Synthesize event
+    t =    14.20s     Wait for com.lingguang.docbrief to idle
+    t =    16.31s Swipe up Application 'com.lingguang.docbrief'
+    t =    16.31s     Wait for com.lingguang.docbrief to idle
+    t =    16.31s     Find the Application 'com.lingguang.docbrief'
+    t =    16.36s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    16.38s     Synthesize event
+    t =    16.80s     Wait for com.lingguang.docbrief to idle
+    t =    17.28s Swipe up Application 'com.lingguang.docbrief'
+    t =    17.28s     Wait for com.lingguang.docbrief to idle
+    t =    17.29s     Find the Application 'com.lingguang.docbrief'
+    t =    17.32s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    17.35s     Synthesize event
+    t =    17.77s     Wait for com.lingguang.docbrief to idle
+    t =    18.26s Swipe up Application 'com.lingguang.docbrief'
+    t =    18.26s     Wait for com.lingguang.docbrief to idle
+    t =    18.26s     Find the Application 'com.lingguang.docbrief'
+    t =    18.30s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    18.32s     Synthesize event
+    t =    18.74s     Wait for com.lingguang.docbrief to idle
+    t =    19.23s Waiting 4.0s for Any (First Match) to exist
+    t =    20.29s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    20.29s         Checking existence of `Any (First Match)`
+    t =    20.34s Waiting 3.0s for Any (First Match) to exist
+    t =    21.39s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    21.39s         Checking existence of `Any (First Match)`
+    t =    21.44s         Capturing element debug description
+    t =    22.39s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    22.39s         Checking existence of `Any (First Match)`
+    t =    22.44s         Capturing element debug description
+    t =    23.34s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    23.34s         Checking existence of `Any (First Match)`
+    t =    23.39s         Capturing element debug description
+    t =    23.39s     Checking existence of `Any (First Match)`
+    t =    23.42s Collecting debug information to assist test failure triage
+    t =    23.42s     Requesting snapshot of accessibility hierarchy for app with pid 82008
+    t =    23.46s Waiting 2.0s for Any (First Match) to exist
+    t =    24.50s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    24.51s         Checking existence of `Any (First Match)`
+    t =    24.55s Waiting 3.0s for Any (First Match) to exist
+    t =    25.61s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    25.61s         Checking existence of `Any (First Match)`
+    t =    25.67s         Capturing element debug description
+    t =    26.61s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    26.61s         Checking existence of `Any (First Match)`
+    t =    26.66s         Capturing element debug description
+    t =    27.56s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    27.57s         Checking existence of `Any (First Match)`
+    t =    27.62s         Capturing element debug description
+    t =    27.62s     Checking existence of `Any (First Match)`
+    t =    27.65s Collecting debug information to assist test failure triage
+    t =    27.65s     Requesting snapshot of accessibility hierarchy for app with pid 82008
+    t =    27.69s Waiting 2.0s for Any (First Match) to exist
+    t =    28.74s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    28.74s         Checking existence of `Any (First Match)`
+    t =    28.79s Waiting 3.0s for Any (First Match) to exist
+    t =    29.84s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    29.84s         Checking existence of `Any (First Match)`
+    t =    29.89s Waiting 3.0s for "revoke_ai_consent" Button to exist
+    t =    30.92s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    30.92s         Checking existence of `"revoke_ai_consent" Button`
+    t =    30.97s         Capturing element debug description
+    t =    31.91s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    31.91s         Checking existence of `"revoke_ai_consent" Button`
+    t =    31.95s         Capturing element debug description
+    t =    32.89s     Checking `Expect predicate `existsNoRetry == 1` for object "revoke_ai_consent" Button`
+    t =    32.89s         Checking existence of `"revoke_ai_consent" Button`
+    t =    32.94s         Capturing element debug description
+    t =    32.94s     Checking existence of `"revoke_ai_consent" Button`
+    t =    32.97s Collecting debug information to assist test failure triage
+    t =    32.97s     Requesting snapshot of accessibility hierarchy for app with pid 82008
+    t =    33.00s Waiting 2.0s for Any (First Match) to exist
+    t =    34.04s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    34.04s         Checking existence of `Any (First Match)`
+    t =    34.10s         Capturing element debug description
+    t =    35.01s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    35.02s         Checking existence of `Any (First Match)`
+    t =    35.07s         Capturing element debug description
+    t =    35.07s     Checking existence of `Any (First Match)`
+    t =    35.10s Collecting debug information to assist test failure triage
+    t =    35.10s     Requesting snapshot of accessibility hierarchy for app with pid 82008
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAcceptUITests/FourPerm.swift:69: error: -[DocBriefAcceptUITests.FourPerm testFourPermissionEntryPoints] : XCTAssertTrue failed - Revoke AI consent control present
+    t =    35.19s Tear Down
+Test Case '-[DocBriefAcceptUITests.FourPerm testFourPermissionEntryPoints]' failed (35.486 seconds).
+Test Suite 'FourPerm' failed at 2026-10-13 20:45:16.790.
+	 Executed 1 test, with 1 failure (0 unexpected) in 35.486 (35.489) seconds
+Test Suite 'ScreenshotTour' started at 2026-10-13 20:45:16.791.
+Test Case '-[DocBriefAcceptUITests.ScreenshotTour testCaptureRuntimeFrames]' started.
+    t =     0.00s Start Test at 2026-10-13 20:45:16.792
+    t =     0.03s Set Up
+    t =     0.03s     Open com.lingguang.docbrief
+    t =     0.03s         Launch com.lingguang.docbrief
+    t =     0.03s             Terminate com.lingguang.docbrief:82008
+    t =     1.23s             Setting up automation session
+    t =     1.63s             Wait for com.lingguang.docbrief to idle
+    t =     2.99s Waiting 4.0s for Any (First Match) to exist
+    t =     4.05s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     4.05s         Checking existence of `Any (First Match)`
+    t =     4.11s         Capturing element debug description
+    t =     5.07s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     5.07s         Checking existence of `Any (First Match)`
+    t =     5.11s         Capturing element debug description
+    t =     6.05s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     6.05s         Checking existence of `Any (First Match)`
+    t =     6.09s         Capturing element debug description
+    t =     7.00s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     7.00s         Checking existence of `Any (First Match)`
+    t =     7.03s         Capturing element debug description
+    t =     7.03s     Checking existence of `Any (First Match)`
+    t =     7.05s Collecting debug information to assist test failure triage
+    t =     7.05s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+SHOT_WRITTEN runtime-home-empty bytes=155462
+    t =     8.23s Waiting 4.0s for Button (Element at index 0) to exist
+    t =     9.26s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =     9.26s         Checking existence of `Button (Element at index 0)`
+    t =     9.30s         Capturing element debug description
+    t =    10.27s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    10.27s         Checking existence of `Button (Element at index 0)`
+    t =    10.30s         Capturing element debug description
+    t =    11.25s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    11.25s         Checking existence of `Button (Element at index 0)`
+    t =    11.28s         Capturing element debug description
+    t =    12.23s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    12.23s         Checking existence of `Button (Element at index 0)`
+    t =    12.26s         Capturing element debug description
+    t =    12.26s     Checking existence of `Button (Element at index 0)`
+    t =    12.28s Collecting debug information to assist test failure triage
+    t =    12.28s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    12.31s Waiting 2.0s for Button (Element at index 0) to exist
+    t =    13.35s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    13.35s         Checking existence of `Button (Element at index 0)`
+    t =    13.39s Find the Button (Element at index 0)
+    t =    13.41s Tap "plus" Button
+    t =    13.41s     Wait for com.lingguang.docbrief to idle
+    t =    13.42s     Find the "plus" Button
+    t =    13.44s     Check for interrupting elements affecting "plus" Button
+    t =    13.45s     Synthesize event
+    t =    13.75s     Wait for com.lingguang.docbrief to idle
+    t =    14.59s Waiting 3.0s for TextField (First Match) to exist
+    t =    15.66s     Checking `Expect predicate `existsNoRetry == 1` for object TextField (First Match)`
+    t =    15.66s         Checking existence of `TextField (First Match)`
+    t =    15.71s Tap TextField (First Match)
+    t =    15.71s     Wait for com.lingguang.docbrief to idle
+    t =    15.71s     Find the TextField (First Match)
+    t =    15.73s     Check for interrupting elements affecting "Title" TextField
+    t =    15.75s     Synthesize event
+    t =    16.04s     Wait for com.lingguang.docbrief to idle
+    t =    16.26s Type 'Visual Tour Brief' into TextField (First Match)
+    t =    16.26s     Wait for com.lingguang.docbrief to idle
+    t =    16.65s     Find the TextField (First Match)
+    t =    16.71s     Check for interrupting elements affecting "Title" TextField
+    t =    16.73s     Synthesize event
+    t =    17.22s     Wait for com.lingguang.docbrief to idle
+    t =    17.23s Waiting 5.0s for Button (Element at index 0) to exist
+    t =    18.28s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    18.29s         Checking existence of `Button (Element at index 0)`
+    t =    18.34s Find the Button (Element at index 0)
+    t =    18.37s Tap "Create brief" Button
+    t =    18.37s     Wait for com.lingguang.docbrief to idle
+    t =    18.37s     Find the "Create brief" Button
+    t =    18.39s     Check for interrupting elements affecting "Create brief" Button
+    t =    18.41s     Synthesize event
+    t =    18.70s     Wait for com.lingguang.docbrief to idle
+    t =    19.99s Waiting 3.0s for Any (First Match) to exist
+    t =    21.05s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    21.05s         Checking existence of `Any (First Match)`
+    t =    21.07s Find the Any (First Match)
+    t =    21.09s Tap "checkmark.seal" Button
+    t =    21.09s     Wait for com.lingguang.docbrief to idle
+    t =    21.09s     Find the "checkmark.seal" Button
+    t =    21.10s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    21.12s     Synthesize event
+    t =    21.41s     Wait for com.lingguang.docbrief to idle
+    t =    22.17s Waiting 5.0s for Button (Element at index 0) to exist
+    t =    23.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    23.22s         Checking existence of `Button (Element at index 0)`
+    t =    23.24s Find the Button (Element at index 0)
+    t =    23.27s Tap "Add photos" Button
+    t =    23.27s     Wait for com.lingguang.docbrief to idle
+    t =    23.27s     Find the "Add photos" Button
+    t =    23.29s     Check for interrupting elements affecting "Add photos" Button
+    t =    23.30s     Synthesize event
+    t =    23.60s     Wait for com.lingguang.docbrief to idle
+    t =    24.44s Waiting 4.0s for Any (First Match) to exist
+    t =    25.50s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    25.50s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-capture-import bytes=215584
+    t =    26.66s Waiting 1.0s for "Cancel" Button to exist
+    t =    27.67s     Checking `Expect predicate `existsNoRetry == 1` for object "Cancel" Button`
+    t =    27.67s         Checking existence of `"Cancel" Button`
+    t =    27.72s         Capturing element debug description
+    t =    27.72s     Checking existence of `"Cancel" Button`
+    t =    27.73s Collecting debug information to assist test failure triage
+    t =    27.73s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    27.76s Waiting 1.0s for "Cancel" Button to exist
+    t =    28.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Cancel" Button`
+    t =    28.76s         Checking existence of `"Cancel" Button`
+    t =    28.80s         Capturing element debug description
+    t =    28.80s     Checking existence of `"Cancel" Button`
+    t =    28.82s Collecting debug information to assist test failure triage
+    t =    28.82s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    28.85s Waiting 1.0s for "Close" Button to exist
+    t =    29.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Close" Button`
+    t =    29.85s         Checking existence of `"Close" Button`
+    t =    29.88s         Capturing element debug description
+    t =    29.88s     Checking existence of `"Close" Button`
+    t =    29.90s Collecting debug information to assist test failure triage
+    t =    29.90s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    29.93s Waiting 1.0s for "Close" Button to exist
+    t =    30.94s     Checking `Expect predicate `existsNoRetry == 1` for object "Close" Button`
+    t =    30.94s         Checking existence of `"Close" Button`
+    t =    30.98s         Capturing element debug description
+    t =    30.98s     Checking existence of `"Close" Button`
+    t =    31.00s Collecting debug information to assist test failure triage
+    t =    31.00s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    31.02s Checking existence of `Button (First Match)`
+    t =    31.03s Tap Button (First Match)
+    t =    31.03s     Wait for com.lingguang.docbrief to idle
+    t =    31.03s     Find the Button (First Match)
+    t =    31.05s     Check for interrupting elements affecting "BackButton" Button
+    t =    31.06s     Synthesize event
+    t =    31.35s     Wait for com.lingguang.docbrief to idle
+    t =    31.84s Waiting 3.0s for Any (First Match) to exist
+    t =    32.88s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    32.89s         Checking existence of `Any (First Match)`
+    t =    32.90s Find the Any (First Match)
+    t =    32.93s Tap "checkmark.seal" Button
+    t =    32.93s     Wait for com.lingguang.docbrief to idle
+    t =    32.93s     Find the "checkmark.seal" Button
+    t =    32.94s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    32.96s     Synthesize event
+    t =    33.25s     Wait for com.lingguang.docbrief to idle
+    t =    34.01s Waiting 5.0s for Button (Element at index 0) to exist
+    t =    35.07s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    35.07s         Checking existence of `Button (Element at index 0)`
+    t =    35.10s         Capturing element debug description
+    t =    36.03s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    36.03s         Checking existence of `Button (Element at index 0)`
+    t =    36.06s         Capturing element debug description
+    t =    37.02s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    37.02s         Checking existence of `Button (Element at index 0)`
+    t =    37.05s         Capturing element debug description
+    t =    38.10s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    38.10s         Checking existence of `Button (Element at index 0)`
+    t =    38.14s         Capturing element debug description
+    t =    39.01s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    39.01s         Checking existence of `Button (Element at index 0)`
+    t =    39.05s         Capturing element debug description
+    t =    39.05s     Checking existence of `Button (Element at index 0)`
+    t =    39.06s Collecting debug information to assist test failure triage
+    t =    39.07s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    39.09s Waiting 3.0s for Button (Element at index 0) to exist
+    t =    40.16s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    40.16s         Checking existence of `Button (Element at index 0)`
+    t =    40.19s Find the Button (Element at index 0)
+    t =    40.21s Tap "Review recognition" Button
+    t =    40.21s     Wait for com.lingguang.docbrief to idle
+    t =    40.21s     Find the "Review recognition" Button
+    t =    40.22s     Check for interrupting elements affecting "Review recognition" Button
+    t =    40.24s     Synthesize event
+    t =    40.53s     Wait for com.lingguang.docbrief to idle
+    t =    41.32s Waiting 3.0s for Button (Element at index 0) to exist
+    t =    42.35s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    42.35s         Checking existence of `Button (Element at index 0)`
+    t =    42.39s         Capturing element debug description
+    t =    43.33s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    43.34s         Checking existence of `Button (Element at index 0)`
+    t =    43.37s         Capturing element debug description
+    t =    44.33s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    44.33s         Checking existence of `Button (Element at index 0)`
+    t =    44.37s         Capturing element debug description
+    t =    44.37s     Checking existence of `Button (Element at index 0)`
+    t =    44.39s Collecting debug information to assist test failure triage
+    t =    44.39s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    44.42s Waiting 2.0s for Button (Element at index 0) to exist
+    t =    45.48s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    45.48s         Checking existence of `Button (Element at index 0)`
+    t =    45.50s         Capturing element debug description
+    t =    46.42s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    46.43s         Checking existence of `Button (Element at index 0)`
+    t =    46.46s         Capturing element debug description
+    t =    46.46s     Checking existence of `Button (Element at index 0)`
+    t =    46.48s Collecting debug information to assist test failure triage
+    t =    46.48s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    46.51s Waiting 4.0s for Any (First Match) to exist
+    t =    47.53s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    47.53s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-fields-review bytes=223059
+    t =    48.69s Checking existence of `Button (First Match)`
+    t =    48.70s Tap Button (First Match)
+    t =    48.70s     Wait for com.lingguang.docbrief to idle
+    t =    48.70s     Find the Button (First Match)
+    t =    48.71s     Check for interrupting elements affecting "BackButton" Button
+    t =    48.72s     Synthesize event
+    t =    49.02s     Wait for com.lingguang.docbrief to idle
+    t =    49.51s Waiting 3.0s for Any (First Match) to exist
+    t =    50.57s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    50.58s         Checking existence of `Any (First Match)`
+    t =    50.60s Find the Any (First Match)
+    t =    50.62s Tap "checkmark.seal" Button
+    t =    50.62s     Wait for com.lingguang.docbrief to idle
+    t =    50.62s     Find the "checkmark.seal" Button
+    t =    50.63s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    50.65s     Synthesize event
+    t =    50.94s     Wait for com.lingguang.docbrief to idle
+    t =    51.69s Waiting 4.0s for Button (Element at index 0) to exist
+    t =    52.76s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    52.76s         Checking existence of `Button (Element at index 0)`
+    t =    52.77s         Capturing element debug description
+    t =    53.71s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    53.72s         Checking existence of `Button (Element at index 0)`
+    t =    53.75s         Capturing element debug description
+    t =    54.70s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    54.70s         Checking existence of `Button (Element at index 0)`
+    t =    54.73s         Capturing element debug description
+    t =    55.70s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    55.70s         Checking existence of `Button (Element at index 0)`
+    t =    55.72s         Capturing element debug description
+    t =    55.72s     Checking existence of `Button (Element at index 0)`
+    t =    55.73s Collecting debug information to assist test failure triage
+    t =    55.73s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    55.76s Waiting 2.0s for Button (Element at index 0) to exist
+    t =    56.81s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    56.81s         Checking existence of `Button (Element at index 0)`
+    t =    56.85s         Capturing element debug description
+    t =    57.76s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    57.76s         Checking existence of `Button (Element at index 0)`
+    t =    57.80s         Capturing element debug description
+    t =    57.80s     Checking existence of `Button (Element at index 0)`
+    t =    57.81s Collecting debug information to assist test failure triage
+    t =    57.81s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    57.84s Get number of matches for: Descendants matching type TextField
+    t =    57.85s Get number of matches for: Descendants matching type TextField
+    t =    57.86s Waiting 4.0s for Button (Element at index 0) to exist
+    t =    58.91s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    58.91s         Checking existence of `Button (Element at index 0)`
+    t =    58.95s         Capturing element debug description
+    t =    59.90s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    59.90s         Checking existence of `Button (Element at index 0)`
+    t =    59.93s         Capturing element debug description
+    t =    60.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    60.86s         Checking existence of `Button (Element at index 0)`
+    t =    60.89s         Capturing element debug description
+    t =    61.87s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    61.87s         Checking existence of `Button (Element at index 0)`
+    t =    61.90s         Capturing element debug description
+    t =    61.90s     Checking existence of `Button (Element at index 0)`
+    t =    61.92s Collecting debug information to assist test failure triage
+    t =    61.92s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    61.95s Waiting 3.0s for Any (First Match) to exist
+    t =    63.00s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    63.00s         Checking existence of `Any (First Match)`
+    t =    63.00s Find the Any (First Match)
+    t =    63.01s Tap "checkmark.seal" Button
+    t =    63.01s     Wait for com.lingguang.docbrief to idle
+    t =    63.02s     Find the "checkmark.seal" Button
+    t =    63.02s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    63.04s     Synthesize event
+    t =    63.33s     Wait for com.lingguang.docbrief to idle
+    t =    64.09s Waiting 4.0s for Any (First Match) to exist
+    t =    65.13s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    65.13s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-brief-detail-filled bytes=328682
+    t =    66.27s Waiting 6.0s for Button (Element at index 0) to exist
+    t =    67.32s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    67.32s         Checking existence of `Button (Element at index 0)`
+    t =    67.35s Find the Button (Element at index 0)
+    t =    67.38s Tap "Chat extract" Button
+    t =    67.38s     Wait for com.lingguang.docbrief to idle
+    t =    67.38s     Find the "Chat extract" Button
+    t =    67.39s     Check for interrupting elements affecting "Chat extract" Button
+    t =    67.41s     Synthesize event
+    t =    67.70s     Wait for com.lingguang.docbrief to idle
+    t =    68.57s Waiting 4.0s for Any (First Match) to exist
+    t =    69.63s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    69.63s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-chat-extract bytes=215851
+    t =    70.77s Checking existence of `Button (First Match)`
+    t =    70.78s Tap Button (First Match)
+    t =    70.78s     Wait for com.lingguang.docbrief to idle
+    t =    70.79s     Find the Button (First Match)
+    t =    70.80s     Check for interrupting elements affecting "BackButton" Button
+    t =    70.81s     Synthesize event
+    t =    71.11s     Wait for com.lingguang.docbrief to idle
+    t =    71.61s Waiting 3.0s for Any (First Match) to exist
+    t =    72.67s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    72.67s         Checking existence of `Any (First Match)`
+    t =    72.68s Find the Any (First Match)
+    t =    72.70s Tap "checkmark.seal" Button
+    t =    72.70s     Wait for com.lingguang.docbrief to idle
+    t =    72.70s     Find the "checkmark.seal" Button
+    t =    72.70s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    72.72s     Synthesize event
+    t =    73.01s     Wait for com.lingguang.docbrief to idle
+    t =    73.78s Waiting 5.0s for Button (Element at index 0) to exist
+    t =    74.81s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    74.81s         Checking existence of `Button (Element at index 0)`
+    t =    74.85s         Capturing element debug description
+    t =    75.81s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    75.81s         Checking existence of `Button (Element at index 0)`
+    t =    75.84s         Capturing element debug description
+    t =    76.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    76.78s         Checking existence of `Button (Element at index 0)`
+    t =    76.81s         Capturing element debug description
+    t =    77.85s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    77.85s         Checking existence of `Button (Element at index 0)`
+    t =    77.88s         Capturing element debug description
+    t =    78.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    78.78s         Checking existence of `Button (Element at index 0)`
+    t =    78.82s         Capturing element debug description
+    t =    78.82s     Checking existence of `Button (Element at index 0)`
+    t =    78.83s Collecting debug information to assist test failure triage
+    t =    78.83s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+    t =    78.86s Waiting 4.0s for Any (First Match) to exist
+    t =    79.90s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    79.91s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-summary-card bytes=328682
+    t =    81.06s Checking existence of `Button (First Match)`
+    t =    81.08s Waiting 3.0s for Any (First Match) to exist
+    t =    82.11s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    82.12s         Checking existence of `Any (First Match)`
+    t =    82.13s Find the Any (First Match)
+    t =    82.15s Tap "checkmark.seal" Button
+    t =    82.15s     Wait for com.lingguang.docbrief to idle
+    t =    82.16s     Find the "checkmark.seal" Button
+    t =    82.16s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    82.19s     Synthesize event
+    t =    82.48s     Wait for com.lingguang.docbrief to idle
+    t =    83.23s Waiting 5.0s for Button (Element at index 0) to exist
+    t =    84.26s     Checking `Expect predicate `existsNoRetry == 1` for object Button (Element at index 0)`
+    t =    84.26s         Checking existence of `Button (Element at index 0)`
+    t =    84.30s Find the Button (Element at index 0)
+    t =    84.32s Tap "Speak briefing" Button
+    t =    84.32s     Wait for com.lingguang.docbrief to idle
+    t =    84.32s     Find the "Speak briefing" Button
+    t =    84.34s     Check for interrupting elements affecting "Speak briefing" Button
+    t =    84.35s     Synthesize event
+    t =    84.64s     Wait for com.lingguang.docbrief to idle
+    t =    85.44s Waiting 4.0s for Any (First Match) to exist
+    t =    86.50s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    86.50s         Checking existence of `Any (First Match)`
+SHOT_WRITTEN runtime-tts-briefing bytes=218033
+    t =    87.63s Checking existence of `Button (First Match)`
+    t =    87.64s Tap Button (First Match)
+    t =    87.64s     Wait for com.lingguang.docbrief to idle
+    t =    87.64s     Find the Button (First Match)
+    t =    87.65s     Check for interrupting elements affecting "BackButton" Button
+    t =    87.67s     Synthesize event
+    t =    87.96s     Wait for com.lingguang.docbrief to idle
+    t =    88.46s Waiting 4.0s for Any (First Match) to exist
+    t =    89.50s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    89.50s         Checking existence of `Any (First Match)`
+    t =    89.52s Find the Any (First Match)
+    t =    89.54s Tap "gearshape" Button
+    t =    89.54s     Wait for com.lingguang.docbrief to idle
+    t =    89.54s     Find the "gearshape" Button
+    t =    89.55s     Check for interrupting elements affecting "gearshape" Button
+    t =    89.57s     Synthesize event
+    t =    89.86s     Wait for com.lingguang.docbrief to idle
+    t =    92.35s Swipe up Application 'com.lingguang.docbrief'
+    t =    92.35s     Wait for com.lingguang.docbrief to idle
+    t =    92.36s     Find the Application 'com.lingguang.docbrief'
+    t =    92.41s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    92.43s     Synthesize event
+    t =    92.85s     Wait for com.lingguang.docbrief to idle
+    t =    94.95s Swipe up Application 'com.lingguang.docbrief'
+    t =    94.95s     Wait for com.lingguang.docbrief to idle
+    t =    94.96s     Find the Application 'com.lingguang.docbrief'
+    t =    95.00s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    95.03s     Synthesize event
+    t =    95.45s     Wait for com.lingguang.docbrief to idle
+    t =    95.92s Swipe up Application 'com.lingguang.docbrief'
+    t =    95.92s     Wait for com.lingguang.docbrief to idle
+    t =    95.92s     Find the Application 'com.lingguang.docbrief'
+    t =    95.96s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    95.99s     Synthesize event
+    t =    96.40s     Wait for com.lingguang.docbrief to idle
+    t =    96.89s Waiting 4.0s for Any (First Match) to exist
+    t =    97.94s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    97.94s         Checking existence of `Any (First Match)`
+    t =    97.99s         Capturing element debug description
+    t =    98.93s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    98.94s         Checking existence of `Any (First Match)`
+    t =    98.99s         Capturing element debug description
+    t =    99.93s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    99.93s         Checking existence of `Any (First Match)`
+    t =    99.99s         Capturing element debug description
+    t =   100.90s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =   100.90s         Checking existence of `Any (First Match)`
+    t =   100.95s         Capturing element debug description
+    t =   100.95s     Checking existence of `Any (First Match)`
+    t =   100.98s Collecting debug information to assist test failure triage
+    t =   100.98s     Requesting snapshot of accessibility hierarchy for app with pid 82176
+SHOT_WRITTEN runtime-settings-privacy bytes=491081
+    t =   102.15s Tear Down
+Test Case '-[DocBriefAcceptUITests.ScreenshotTour testCaptureRuntimeFrames]' passed (102.482 seconds).
+Test Suite 'ScreenshotTour' passed at 2026-10-13 20:46:59.273.
+	 Executed 1 test, with 0 failures (0 unexpected) in 102.482 (102.482) seconds
+Test Suite 'DocBriefAcceptUITests.xctest' failed at 2026-10-13 20:46:59.273.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 214.969 (214.976) seconds
+Test Suite 'Selected tests' failed at 2026-10-13 20:46:59.274.
+	 Executed 3 tests, with 1 failure (0 unexpected) in 214.969 (214.977) seconds
+2026-10-13 20:47:13.296 xcodebuild[81627:4245660] [MT] IDETestOperationsObserverDebug: 230.541 elapsed -- Testing started completed.
+2026-10-13 20:47:13.296 xcodebuild[81627:4245660] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 20:47:13.296 xcodebuild[81627:4245660] [MT] IDETestOperationsObserverDebug: 230.541 sec, +230.541 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Logs/Test/Test-DocBriefAccept-2026.10.13_20-43-21-+0800.xcresult
+
+Failing tests:
+	FourPerm.testFourPermissionEntryPoints()
+
+** TEST FAILED **
+
+Testing started

@@ -1,0 +1,6 @@
+remote=xy-gty
+url=git@github.com:xy-gty/xy-gty.git
+branch=docbrief-ai-kf-20261013T095745Z-aa3ad9a0
+local_commit=09c4c0c3ca4b546b94253a7cd3d89f119e0b272b
+remote_tip=09c4c0c3ca4b546b94253a7cd3d89f119e0b272b
+main_ff_rejected=ad72eddb1b46077b63645d0ad9b5241f35179bcc

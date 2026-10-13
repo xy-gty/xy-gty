@@ -1,0 +1,22 @@
+appId: com.lingguang.docbrief
+---
+- launchApp:
+    clearState: true
+- assertVisible: "DocBrief AI"
+- assertVisible: "Start brief"
+- takeScreenshot: home-empty
+- tapOn: "Start brief"
+- extendedWaitUntil:
+    visible: "Create brief"
+    timeout: 8000
+- takeScreenshot: new-brief
+- tapOn: "Create brief"
+- extendedWaitUntil:
+    visible:
+      anyOf:
+        - "Add photos"
+        - "Brief created"
+        - "Import"
+        - "Active brief"
+    timeout: 10000
+- takeScreenshot: after-create-brief

@@ -1,0 +1,127 @@
+{
+  "schema": "appfactory.ultra_lite_preparation_consumed.v1",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "build_attempt": 2,
+  "dispatch_id": "37bf6106-5b86-4137-a6a7-fe06781a6818",
+  "seal_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/runtime/preparation/attempt-1/sealed.v1.json",
+  "seal_sha256": "bca0229e1f02e45f61cec0d5a058e1d963de05e9e2f8ad1caf894fbfdd7479c5",
+  "artifact_root": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/runtime/preparation/attempt-1/workspace",
+  "technical_contract_sha256": "1a685a427ccc34c95a8450a0cb87f3f75ae6086ee359b87652ea11fbf99d8aa0",
+  "imported_members": [
+    {
+      "ref": "DocBriefDomain/BriefingTTS.swift",
+      "sha256": "bb1a0414fe94a7d10dfd8554e65a4d11de70362ae191fa81a0b78114c339bfd8"
+    },
+    {
+      "ref": "DocBriefDomain/ConsentFacade.swift",
+      "sha256": "d1d01273b3ab69db153f936c75bdc1431646f9084b2ace2d07f592c8691c3817"
+    },
+    {
+      "ref": "DocBriefDomain/Entities.swift",
+      "sha256": "4a38e81e1601eb99a7de404a3982d12489b64784187c23bbf4333cef604d9598"
+    },
+    {
+      "ref": "DocBriefDomain/Identity.swift",
+      "sha256": "4ff9c486a3f5cf4a93d0fc9512e10dd3cbce2e046a48814f332d0abc6a9abf16"
+    },
+    {
+      "ref": "DocBriefDomain/Navigation.swift",
+      "sha256": "955d8e5c67b591fa0e6748e5ff9613bd35d775f4785857fb49e67257fba24b00"
+    },
+    {
+      "ref": "DocBriefDomain/OutboundAIBoundary.swift",
+      "sha256": "26d9a5ea97ac89cee66da0aa6db2266489289a1668a6e80bad772e80410a225d"
+    },
+    {
+      "ref": "DocBriefDomain/PhotoImportFacade.swift",
+      "sha256": "5ead46f1db9bc2671fb9e6dba1312de0b7b626918d8a5e1085d2d20b33408c45"
+    },
+    {
+      "ref": "DocBriefDomain/ReviewControls.swift",
+      "sha256": "00c1a67cef90ac7f288163422821435d49b44dc68fa755ce5e129b974fbf8090"
+    },
+    {
+      "ref": "DocBriefDomain/StorageFacades.swift",
+      "sha256": "6ce57d73b9f3974235995c0ac86e9c1a0e8ed772d262c530d449f23ae87f26e7"
+    },
+    {
+      "ref": "Package.swift",
+      "sha256": "0dbb22d2ec0b33113eb9b0f9caabe80658027ec2794c799607f4d6f99c5607c8"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    }
+  ],
+  "foundation_binding": {
+    "schema": "appfactory.ultra_lite_foundation.v1",
+    "version": "1.0.0",
+    "manifest_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/foundation.v1.json",
+    "manifest_sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/foundation.v1.json",
+        "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Package.swift",
+        "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+        "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+        "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+        "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+        "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+        "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+        "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+      }
+    ]
+  },
+  "reused_prior_consumption": true,
+  "prior_consume_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+  "prior_consume_sha256": "08a0ef544af7c3708af90dcbd2de42262cd8fd0b7e566cbff760db30a2eee51e"
+}

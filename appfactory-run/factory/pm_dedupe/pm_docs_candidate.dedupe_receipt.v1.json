@@ -1,0 +1,76 @@
+{
+  "blocker": "",
+  "bundle_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "3c64297003d0c2d435cfcf0465e7f0999f415ecbd8a062df7f2badbb25d989f5",
+  "candidate_fingerprint": "887a4e2084ba7d176fdf8b2bf4d4b1c674205f6c29f5fd10c00ca23adebddd92",
+  "created_at": "2026-10-13T18:43:03+08:00",
+  "owner_id": "kf-20261013T095745Z-aa3ad9a0",
+  "receipt_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_id": "b2aeb950f6904323e99afd55",
+  "reservation_status": "reserved",
+  "schema_version": "appfactory.pmagent-dedupe-receipt.v1",
+  "status": "PASS",
+  "task_id": "kf-20261013T095745Z-aa3ad9a0:pm_docs:map_dedupe",
+  "vector_query": {
+    "dimensions": 384,
+    "mode": "sqlite_feature_hash_cosine",
+    "nearest_neighbors": [
+      {
+        "identity": {
+          "diversity_key": "snagcue ai 做现场验收 整改跟进的施工 物业 独立巡检人员 需要结构化 punch list 与照片证据 且不能把 app 当作建筑规范认证工具 新建 audit 拍或导入 walkthrough 照片 导入现场巡检照片 ai 辅助识别缺陷 snag 并聊天补全 punch list 生成标注报告图 再用 tts 免提播报清单 本地可离线使用已保存的 audit 与 punchitem",
+          "product_fingerprint": "489b9795cc95fcea85be53d99bec55d1830fc4d98753d70f3ec00746c0f9101a",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T095600Z-1e00eb7a",
+        "product_name": "SnagCue AI",
+        "reservation_id": "64303a248d43023727fba3e1",
+        "similarity_score": 0.2439,
+        "status": "committed",
+        "task_id": "kf-20261013T095600Z-1e00eb7a:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "snagcue ai 做现场验收 整改跟进的施工 物业 独立巡检人员 需要结构化 punch list 与照片证据 且不能把 app 当作建筑规范认证工具 新建 audit 拍或导入 walkthrough 照片 导入现场巡检照片 ai 辅助识别缺陷 snag 并聊天补全 punch list 生成标注报告图 再用 tts 免提播报清单 本地可离线使用已保存的 audit 与 punchitem",
+          "product_fingerprint": "489b9795cc95fcea85be53d99bec55d1830fc4d98753d70f3ec00746c0f9101a",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:340f29041ab8854a25f9a0a0",
+        "product_name": "SnagCue AI",
+        "reservation_id": "legacy-340f29041ab8854a25f9a0a0",
+        "similarity_score": 0.1015,
+        "status": "committed",
+        "task_id": "legacy:340f29041ab8854a25f9a0a0"
+      },
+      {
+        "identity": {
+          "diversity_key": "pantrycue 会自己做饭 希望减少 打开冰箱却不知道做什么 的人 需要过敏 营养免责声明 且核心能力在无网时仍能读已保存内容 拍或导入冰箱 食材照片 确认识别出的食材清单 用冰箱 食材照片识别库存 和 ai 聊天规划菜谱与改写步骤 可生成摆盘预览 并用语音逐步指导烹饪 本地可离线使用已保存的橱柜与菜谱",
+          "product_fingerprint": "cc93b31c329de45b557a1cc718dfc800e0c2ec7f3d78d89bda4754adf7e8fe83",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T063311Z-0f7a54f0",
+        "product_name": "PantryCue",
+        "reservation_id": "5962785e9913e1b2cb320424",
+        "similarity_score": 0.0756,
+        "status": "committed",
+        "task_id": "kf-20261013T063311Z-0f7a54f0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "pantrycue 会自己做饭 希望减少 打开冰箱却不知道做什么 的人 需要过敏 营养免责声明 且核心能力在无网时仍能读已保存内容 拍或导入冰箱 食材照片 确认识别出的食材清单 用冰箱 食材照片识别库存 和 ai 聊天规划菜谱与改写步骤 可生成摆盘预览 并用语音逐步指导烹饪 本地可离线使用已保存的橱柜与菜谱",
+          "product_fingerprint": "cc93b31c329de45b557a1cc718dfc800e0c2ec7f3d78d89bda4754adf7e8fe83",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:c8d603e468208e65a78bd47e",
+        "product_name": "PantryCue",
+        "reservation_id": "legacy-c8d603e468208e65a78bd47e",
+        "similarity_score": 0.0,
+        "status": "committed",
+        "task_id": "legacy:c8d603e468208e65a78bd47e"
+      }
+    ],
+    "novelty_score": 0.7561,
+    "novelty_threshold": 0.35,
+    "store_path": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+    "top_k": 12
+  }
+}

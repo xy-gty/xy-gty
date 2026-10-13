@@ -1,0 +1,58 @@
+{
+  "batch_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/evidence/image-batch-r2-summary-retry.json",
+  "batch_sha256": "5a75bdd94e34f796be37fb60ce0456343671e40fe70d805a62f1968e82f3a041",
+  "completed": 1,
+  "ok": true,
+  "results": [
+    {
+      "exit_code": 0,
+      "image_id": "summary-card-r2",
+      "job_id": "job-0620248bfd0b",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png",
+      "output_sha256": "ec77d70da102388abab2a72aceb2771bb187b6b47f842dfc2c32eb312922f9a5",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-0620248bfd0b",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 480969,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png",
+        "output_sha256": "ec77d70da102388abab2a72aceb2771bb187b6b47f842dfc2c32eb312922f9a5",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/summary-card-r2.txt",
+        "prompt_sha256": "fabbad99563257f0a811cf8df43bf79365a141f80de6fe881b7a5c2ef6c43720",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1392,
+        "source_sha256": "ec77d70da102388abab2a72aceb2771bb187b6b47f842dfc2c32eb312922f9a5",
+        "source_size": "640x1392",
+        "source_width": 640,
+        "timestamp": "2026-10-13T10:32:34Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    }
+  ],
+  "schema": "appfactory.grokbot_image_batch_result.v1",
+  "status": "completed",
+  "submission_scope": "local_wrapper_tasks",
+  "submitted": 1
+}

@@ -1,0 +1,9 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI (iOS document/whiteboard/receipt briefing coach). Warm paper #F3EDE3 background, ink #1C2430 text, teal #1F6F6B brand, amber #D97706 CTA. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: brief-detail-filled — Filled brief detail (fields + actions)
+Nav "Cafe Luna receipt". Section Fields with 3 key values. Section Actions with two checklist rows including due dates (Expense submit by Friday; Follow up vendor Mon). Row of buttons "Chat extract", "Speak briefing", "Summary card". Bottom tab Active selected.
+DocBrief briefing workspace — never punch list / snag items.
+
+CRITICAL NEGATIVE: This is DocBrief AI only (document / whiteboard / receipt briefing). NEVER show SnagCue, SnagCue AI, Audits, Punch, punch list, walkthrough, snag, site inspection, rebar, Unit 4B, building-code, or construction chrome. Brand title must read DocBrief AI. Warm paper #F3EDE3, teal #1F6F6B, amber #D97706, ink #1C2430.

@@ -1,0 +1,9 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI (iOS document/whiteboard/receipt briefing coach). Warm paper #F3EDE3 background, ink #1C2430 text, teal #1F6F6B brand, amber #D97706 CTA. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: home-empty — Empty briefs home
+Top nav title "DocBrief AI". Empty state: document-with-sparkles icon, headline "No briefs yet", subcopy "Import a document, whiteboard, or receipt photo to start a brief". Primary amber button "Start brief". Bottom tabs: Briefs (selected) | Active | Settings.
+No paywall, coins, ATT, TurboScan, or SnagCue.
+
+CRITICAL NEGATIVE: This is DocBrief AI only (document / whiteboard / receipt briefing). NEVER show SnagCue, SnagCue AI, Audits, Punch, punch list, walkthrough, snag, site inspection, rebar, Unit 4B, building-code, or construction chrome. Brand title must read DocBrief AI. Warm paper #F3EDE3, teal #1F6F6B, amber #D97706, ink #1C2430.

@@ -1,0 +1,50 @@
+{
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "ai_app_build",
+  "attempt": 2,
+  "dispatch_id": "90b14fba-a602-4c94-8fc6-309e3a4a1f83",
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product",
+  "source_commit": "09c4c0c3ca4b546b94253a7cd3d89f119e0b272b",
+  "branch": "main",
+  "bundle_id": "com.lingguang.docbrief",
+  "app_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app",
+  "app_content_sha256": "7ce60dbd04e8816079811001e5f81ce9a0be85008b89c13491c3fbe46d757420",
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-4"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/install.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "com.lingguang.docbrief"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 72653,
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/launch.log",
+    "log_sha256": "dc516b8c680025baa9e9e7ad2fdd2c5e1d7340ca2a4628343c7ea3fb0858c00d"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/smoke.png",
+    "screenshot_sha256": "621cd6b0e5d19278804db077225c7951ead8b46c971cdd74c94dbde8239fb2bb"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-1afa35d947db",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 443234,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/brief-detail-filled-r2.png",
+  "output_sha256": "b0dba110b49b25e1159aefc5c9cf495334af83b418a3aab786da522bdb3170a7",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/brief-detail-filled-r2.txt",
+  "prompt_sha256": "c8d60cc8c7396e6c5752f24a3a3a88e4c198a612a625986f290c1cbf91a5bc1d",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "b0dba110b49b25e1159aefc5c9cf495334af83b418a3aab786da522bdb3170a7",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-13T10:24:19Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI. Warm paper workspace, teal navigation, amber CTAs. English UI. Large legible text.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: punchlist-filled — Filled brief detail (actions list)
+Nav "Cafe Luna receipt". Section Fields with 3 key values. Section Actions with two checklist rows including due dates. Row of tertiary buttons "Chat extract", "Speak briefing", "Summary card". Bottom tab Active selected.
+No TurboScan branding, no paywall/coins/ATT.

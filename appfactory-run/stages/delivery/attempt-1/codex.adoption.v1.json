@@ -1,0 +1,13 @@
+{
+  "dispatch_id": "82987770-6eed-49d7-9869-00351af2f17a",
+  "execution_seq": 1,
+  "transcript_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/delivery/attempt-1/codex.transcript.jsonl",
+  "transcript_sha256": "fb502c99be9907ac188d200bf3c61646e0e2c1dcf094de9f920ddf47d32d166f",
+  "events_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/delivery/attempt-1/stage.events.jsonl",
+  "events_sha256": "5cf18e335a349b06d96c2e2ba0f809c5c1a860093a7e7f2fa6fb83d5da7d58fa",
+  "transcript_snapshot_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/delivery/attempt-1/codex.transcript.execution-1.jsonl",
+  "events_snapshot_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/delivery/attempt-1/codex.events.execution-1.jsonl",
+  "coverage": "lifecycle_and_final",
+  "usage": null,
+  "usage_degraded": "package_usage_degraded:codex_native_unavailable"
+}

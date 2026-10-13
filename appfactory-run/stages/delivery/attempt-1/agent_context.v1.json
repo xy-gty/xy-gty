@@ -1,0 +1,40 @@
+{
+  "context_version": "v1",
+  "context_class": "contract",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "delivery",
+  "attempt": 1,
+  "principal": "DeliveryReporterAgent",
+  "route": "delivery",
+  "state_version": 14,
+  "goal_version": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product",
+  "upstream_refs": {
+    "upstream_map_pm_docs": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/MAP.md",
+    "upstream_map_ai_app_build": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/MAP.md",
+    "upstream_map_ai_app_accept": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/MAP.md"
+  },
+  "artifact_refs": {
+    "required_output_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/delivery/attempt-1/MAP.md"
+  },
+  "capability_ids": [
+    "route.delivery"
+  ],
+  "session_id": "",
+  "event_cursor": 29,
+  "knowledge_receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/memory/delivery-attempt-1.receipt.json",
+  "runtime_profile": {
+    "model_preset": "dev"
+  },
+  "contract_context": {
+    "run_id": "kf-20261013T095745Z-aa3ad9a0",
+    "stage": "delivery",
+    "attempt": 1,
+    "ai_profile": "ultra_lite"
+  },
+  "advisory_context": {
+    "knowledge_availability": "ready"
+  },
+  "advisory": {},
+  "sha256": "2603ac17c64ecccb4dda0f2f135206c9e1bfee13bde663b2960c4e7d474ec52b"
+}

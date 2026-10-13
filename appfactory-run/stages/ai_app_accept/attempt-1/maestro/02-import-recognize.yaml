@@ -1,0 +1,76 @@
+appId: com.lingguang.docbrief
+---
+- tapOn:
+    text: "Add photos"
+    optional: true
+- tapOn:
+    text: "Import"
+    optional: true
+- takeScreenshot: import-capture
+- tapOn:
+    text: "Photo Library"
+    optional: true
+- tapOn:
+    text: "Photos"
+    optional: true
+- tapOn:
+    text: "All Photos"
+    optional: true
+# Select first photo in picker if present
+- tapOn:
+    point: "25%,30%"
+    optional: true
+- tapOn:
+    text: "Add"
+    optional: true
+- tapOn:
+    text: "Done"
+    optional: true
+- tapOn:
+    text: "Choose"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      anyOf:
+        - "Recognize"
+        - "Recognize type & fields"
+        - "Photo imported"
+        - "Add field"
+        - "Review fields"
+    timeout: 15000
+- takeScreenshot: after-import
+- tapOn:
+    text: "Recognize type & fields"
+    optional: true
+- tapOn:
+    text: "Recognize"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      anyOf:
+        - "AI unavailable"
+        - "Save"
+        - "Not this"
+        - "Add field"
+        - "Review fields"
+        - "Allow"
+        - "local draft"
+    timeout: 15000
+- takeScreenshot: recognition-review
+- tapOn:
+    text: "Allow"
+    optional: true
+- tapOn:
+    text: "Allow AI"
+    optional: true
+- tapOn:
+    text: "Allow DeepSeek inference"
+    optional: true
+- takeScreenshot: after-consent-or-review
+- tapOn:
+    text: "Add field"
+    optional: true
+- tapOn:
+    text: "Add field manually"
+    optional: true
+- takeScreenshot: fields-manual

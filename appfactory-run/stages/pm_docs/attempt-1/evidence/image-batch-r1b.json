@@ -1,0 +1,40 @@
+{
+  "schema": "appfactory.grokbot_image_batch.v1",
+  "jobs": [
+    {
+      "image_id": "capture-import-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/capture-import-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/capture-import-r1.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/capture-import-r1.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "punchlist-filled-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/punchlist-filled-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/punchlist-filled-r1.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/punchlist-filled-r1.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "chat-fill-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/chat-fill-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/chat-fill-r1.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/chat-fill-r1.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "annotated-report-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/annotated-report-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/annotated-report-r1.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/annotated-report-r1.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "tts-coach-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/tts-coach-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/tts-coach-r1.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/tts-coach-r1.png.receipt.json",
+      "size": "640x1392"
+    }
+  ]
+}

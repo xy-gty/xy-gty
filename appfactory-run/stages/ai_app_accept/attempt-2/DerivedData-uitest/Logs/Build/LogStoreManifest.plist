@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>3C10E24F-F810-4CE6-B1E3-69342FDA5762</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3C10E24F-F810-4CE6-B1E3-69342FDA5762.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DocBriefAccept project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DocBriefAccept</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>timeStartedRecording</key>
+			<real>813588030.95546997</real>
+			<key>timeStoppedRecording</key>
+			<real>813588032.606341</real>
+			<key>title</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>uniqueIdentifier</key>
+			<string>3C10E24F-F810-4CE6-B1E3-69342FDA5762</string>
+		</dict>
+		<key>4C899888-13C1-48D3-90A8-CE799BA56CD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4C899888-13C1-48D3-90A8-CE799BA56CD4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DocBriefAccept project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DocBriefAccept</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>timeStartedRecording</key>
+			<real>813588009.94717896</real>
+			<key>timeStoppedRecording</key>
+			<real>813588012.05957997</real>
+			<key>title</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>uniqueIdentifier</key>
+			<string>4C899888-13C1-48D3-90A8-CE799BA56CD4</string>
+		</dict>
+		<key>CF879B4E-6791-4E5E-B174-260CC52B7302</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CF879B4E-6791-4E5E-B174-260CC52B7302.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DocBriefAccept project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DocBriefAccept</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>timeStartedRecording</key>
+			<real>813588485.076841</real>
+			<key>timeStoppedRecording</key>
+			<real>813588487.61618495</real>
+			<key>title</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>uniqueIdentifier</key>
+			<string>CF879B4E-6791-4E5E-B174-260CC52B7302</string>
+		</dict>
+		<key>E8004A0D-2A2E-4010-ADC1-6BDAD10B5704</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E8004A0D-2A2E-4010-ADC1-6BDAD10B5704.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DocBriefAccept project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DocBriefAccept</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>timeStartedRecording</key>
+			<real>813588201.40008199</real>
+			<key>timeStoppedRecording</key>
+			<real>813588202.75448203</real>
+			<key>title</key>
+			<string>Testing project DocBriefAccept with scheme DocBriefAccept</string>
+			<key>uniqueIdentifier</key>
+			<string>E8004A0D-2A2E-4010-ADC1-6BDAD10B5704</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

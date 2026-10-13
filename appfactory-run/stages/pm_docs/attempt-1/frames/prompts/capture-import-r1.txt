@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI (iOS document briefing coach). Warm paper background, teal brand, amber CTA, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: capture-import — Import document photos
+Nav title "New brief" with back chevron. Brief title field "Client kickoff notes". Large dashed import well showing a photo thumbnail of a whiteboard photo and an empty slot. Primary button "Add photos". Secondary text "Camera or photo library". Bottom safe area clear.
+No TurboScan branding, no scan perspective gimmicks, no paywall/coins/ATT.

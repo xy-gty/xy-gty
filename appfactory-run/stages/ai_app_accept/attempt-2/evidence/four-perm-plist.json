@@ -1,0 +1,23 @@
+{
+  "executable_sha256": "8d469e450c6ee5e044f72539cee16cfcd4898904564c909b7d8ea2e0694e8ea2",
+  "keys": {
+    "NSCameraUsageDescription": {
+      "present": true,
+      "value": "DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review."
+    },
+    "NSPhotoLibraryUsageDescription": {
+      "present": true,
+      "value": "DocBrief AI imports document, whiteboard, or receipt photos you choose so you can review type and field suggestions before saving a brief."
+    },
+    "NSMicrophoneUsageDescription": {
+      "present": true,
+      "value": "DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard."
+    },
+    "NSSpeechRecognitionUsageDescription": {
+      "present": true,
+      "value": "DocBrief AI uses on-device speech recognition to turn your voice supplement into editable action or briefing text that you review with Save or Not this."
+    }
+  },
+  "product_commit": "09c4c0c3ca4b546b94253a7cd3d89f119e0b272b",
+  "candidate": "09c4c0c3ca4b-7ce60dbd04e8"
+}

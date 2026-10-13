@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI. Warm paper UI, teal accents, amber primary buttons. English copy. Large legible text.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: recognition-review — Type and key fields review
+Nav "Review fields". Thumbnail of a receipt photo at top. Chip "Receipt". List of key-value rows: Merchant Cafe Luna, Total $42.80, Date Oct 12. Bottom review bar with primary "Save", secondary "Not this", tertiary "Edit fields".
+No TurboScan branding. No paywall. Disclaimer: "Guidance only—not a tax receipt certification".

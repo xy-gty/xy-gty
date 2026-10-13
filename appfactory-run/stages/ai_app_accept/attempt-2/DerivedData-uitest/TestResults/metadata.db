@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<integer>1</integer>
+	<key>Store</key>
+	<dict>
+		<key>DocBriefAcceptUITests</key>
+		<dict>
+			<key>DocBriefAcceptUITests</key>
+			<dict>
+				<key>testUL01_homeLaunch</key>
+				<dict>
+					<key>mrnet</key>
+					<real>3.9831140041351318</real>
+				</dict>
+				<key>testUL02_coreLocalFlows</key>
+				<dict>
+					<key>mrnet</key>
+					<real>137.21651709079742</real>
+				</dict>
+				<key>testUL04_relaunchPersistence</key>
+				<dict>
+					<key>mrnet</key>
+					<real>8.5434200763702393</real>
+				</dict>
+				<key>testUL06_privacyLegalAndRevoke</key>
+				<dict>
+					<key>mrnet</key>
+					<real>77.001151919364929</real>
+				</dict>
+			</dict>
+			<key>DumpSettings</key>
+			<dict>
+				<key>testDump</key>
+				<dict>
+					<key>mrnet</key>
+					<real>9.11496901512146</real>
+				</dict>
+			</dict>
+			<key>FourPerm</key>
+			<dict>
+				<key>testFourPermissionEntryPoints</key>
+				<dict>
+					<key>mrnet</key>
+					<real>53.622285962104797</real>
+				</dict>
+			</dict>
+			<key>ScreenshotTour</key>
+			<dict>
+				<key>testCaptureRuntimeFrames</key>
+				<dict>
+					<key>mrnet</key>
+					<real>102.48152208328247</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

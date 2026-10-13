@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'DocBriefAcceptUITests' in project 'DocBriefAccept'
+➜ Explicit dependency on target 'DocBriefAcceptHost' in project 'DocBriefAccept'
+Target 'DocBriefAcceptHost' in project 'DocBriefAccept' (no dependencies)

@@ -1,0 +1,1 @@
+Visible: TTS spoken briefing coach with Play / Next, highlighted current briefing segment, offline-capable local text.

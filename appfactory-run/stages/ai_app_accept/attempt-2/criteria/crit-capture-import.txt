@@ -1,0 +1,1 @@
+Visible: Import/capture for document/whiteboard/receipt photos, Add photos CTA, DocBrief AI identity, no SnagCue/audit/punch chrome.

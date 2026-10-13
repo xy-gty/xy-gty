@@ -1,0 +1,11 @@
+record_match_error=0
+feishu_row_not_yet_created
+config_mode=local_only
+ai_key=UNKNOWN
+privacy_url=UNKNOWN
+terms_url=UNKNOWN
+support_url=UNKNOWN
+cloudkit=UNKNOWN
+exit=0
+exit=0
+exit=0

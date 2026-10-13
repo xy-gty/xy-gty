@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "runtime-capture-import.receipt.json",
+  "verdict_sha256": "be6b8e718a319f5c42fdb68f195f33b9587f33715315a14a00324367951e7c34",
+  "written_at": "2026-10-13T12:55:19Z"
+}

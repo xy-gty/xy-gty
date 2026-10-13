@@ -1,0 +1,72 @@
+{
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "ai_app_build",
+  "attempt": 2,
+  "dispatch_id": "90b14fba-a602-4c94-8fc6-309e3a4a1f83",
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product",
+  "source_commit": "09c4c0c3ca4b546b94253a7cd3d89f119e0b272b",
+  "branch": "main",
+  "bundle_id": "com.lingguang.docbrief",
+  "app_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app",
+  "app_content_sha256": "7ce60dbd04e8816079811001e5f81ce9a0be85008b89c13491c3fbe46d757420",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "ImportCapture Take photo (camera / simulator synthetic DocumentPhoto) + PhotosPicker Add photos",
+    "Chat extract / TTS Voice supplement with Save/Not this human review",
+    "Info.plist NSCamera/NSPhotoLibrary/NSMicrophone/NSSpeechRecognition usage descriptions",
+    "Settings Revoke AI consent + device permissions disclosure",
+    "DocBriefDomain entities/storage/consent/navigation + AppRuntimeCore local dependency",
+    "Local-only AI path with honest unconfigured status when DeepSeek key absent"
+  ],
+  "unverified_items": [
+    "Independent eight-domain Acceptance not completed on this repair candidate",
+    "Per-frame runtime visual judgment deferred to ai_app_accept",
+    "Live outbound DeepSeek AI not exercised (ai_key_unavailable local_only gap)",
+    "Device camera hardware path known_issue on Simulator (synthetic capture used)",
+    "UL-07 soft visual mismatches may remain as known_issues"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "DocBrief.xcodeproj",
+      "-scheme",
+      "DocBrief",
+      "-destination",
+      "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData",
+      "-configuration",
+      "Debug",
+      "CODE_SIGNING_ALLOWED=YES",
+      "CODE_SIGN_IDENTITY=-",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/build.log",
+    "log_sha256": "64949d76233727702198f2c5bac846d3e8e2e0257be949a96bb0e2a796af7604"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "DocBrief.xcodeproj",
+        "-scheme",
+        "DocBrief",
+        "-destination",
+        "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData",
+        "-only-testing:DocBriefDomainTests",
+        "test"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-2/domain.log",
+      "log_sha256": "73410a214b57c959709c7a1bf127d470296de325345c9c987d96f0c13b9cecfa"
+    }
+  ]
+}

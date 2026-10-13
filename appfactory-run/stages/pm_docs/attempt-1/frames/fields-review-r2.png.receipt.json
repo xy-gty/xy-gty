@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-e1cdd3f1919d",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 824547,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/fields-review-r2.png",
+  "output_sha256": "c03383ed266bbb280bf7092b41a0b537fc7feae0757fa09709ce1d618704d2ee",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/fields-review-r2.txt",
+  "prompt_sha256": "e51396bbb9e983e011f77a896160a0e0b655433cdbfc9e7882f8e651dd02e42e",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "c03383ed266bbb280bf7092b41a0b537fc7feae0757fa09709ce1d618704d2ee",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-13T10:24:19Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

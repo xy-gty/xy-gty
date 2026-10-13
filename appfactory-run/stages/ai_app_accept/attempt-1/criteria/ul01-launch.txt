@@ -1,0 +1,1 @@
+Home empty shows DocBrief branding, empty briefs list or empty-state copy, and a primary Start brief CTA that is tappable without clipped layout.

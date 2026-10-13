@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI. Warm paper preview, teal card border accents, amber Use button. English UI. Large legible text.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: annotated-report — Visual summary card preview
+Nav "Summary card". Large preview card titled "Cafe Luna — Oct 12" with type Receipt, three fields, two actions, soft photo strip. Primary "Use", secondary "Discard". Footer disclaimer "Not a financial or legal certification".
+No TurboScan branding, no paywall/coins.

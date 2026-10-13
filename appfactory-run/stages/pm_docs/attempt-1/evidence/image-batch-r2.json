@@ -1,0 +1,61 @@
+{
+  "schema": "appfactory.grokbot_image_batch.v1",
+  "jobs": [
+    {
+      "image_id": "home-empty-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/home-empty-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/home-empty-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "capture-import-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/capture-import-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/capture-import-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/capture-import-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "fields-review-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/fields-review-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/fields-review-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/fields-review-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "brief-detail-filled-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/brief-detail-filled-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/brief-detail-filled-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/brief-detail-filled-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "chat-extract-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/chat-extract-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/chat-extract-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/chat-extract-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "summary-card-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/summary-card-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/summary-card-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "tts-briefing-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/tts-briefing-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/tts-briefing-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/tts-briefing-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "settings-privacy-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/prompts/settings-privacy-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/settings-privacy-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/settings-privacy-r2.png.receipt.json",
+      "size": "640x1392"
+    }
+  ]
+}

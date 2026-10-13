@@ -1,0 +1,50 @@
+{
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "0f296684-cbbc-4f69-98e3-ab957b89b8b0",
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product",
+  "source_commit": "0ddb3670393a1fe8ba4797f1682c19aa67f9b235",
+  "branch": "main",
+  "bundle_id": "com.lingguang.docbrief",
+  "app_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app",
+  "app_content_sha256": "f526913024b30076efa2ad3d1463cf25393f48aec238260e49f5e88c03ed3473",
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+    "runtime": "iOS-26.4.1"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+      "com.lingguang.docbrief"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 25367,
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/launch.log",
+    "log_sha256": "58b74811021b8eae5dbc0b9d4cde11fa5def4f48391726f3a83ee15921859c72"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_build/attempt-1/smoke.png",
+    "screenshot_sha256": "5284234c255dd3ef5e0867b40d2e1c0540e8caff4c536cfc778a3bc23c81a04a"
+  }
+}

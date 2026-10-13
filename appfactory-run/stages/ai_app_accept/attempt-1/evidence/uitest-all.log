@@ -1,0 +1,1004 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project DocBriefAccept.xcodeproj -scheme DocBriefAccept -destination "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A" -derivedDataPath /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest "-only-testing:DocBriefAcceptUITests" CODE_SIGNING_ALLOWED=YES CODE_SIGN_IDENTITY=-
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = -
+    CODE_SIGNING_ALLOWED = YES
+
+note: Using codesigning identity override: -
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'DocBriefAcceptUITests' in project 'DocBriefAccept'
+        ➜ Explicit dependency on target 'DocBriefAcceptHost' in project 'DocBriefAccept'
+    Target 'DocBriefAcceptHost' in project 'DocBriefAccept' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAccept.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+SwiftDriver DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ DocBriefAcceptUITests (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    
+
+SwiftCompile normal arm64 Compiling\ DocBriefAcceptUITests.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling DocBriefAcceptUITests.swift (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriver\ Compilation DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for DocBriefAcceptUITests (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+
+SwiftDriver\ Compilation\ Requirements DocBriefAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefAcceptUITests -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.abi.json (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftsourceinfo (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests normal (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests
+
+ExtractAppIntentsMetadata (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name DocBriefAcceptUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier accept.harness.docbrief.uitests --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests --dependency-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests_dependency_info.dat --stringsdata-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftFileList --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.DependencyMetadataFileList --static-metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/DocBriefAcceptUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/Objects-normal/arm64/DocBriefAcceptUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-13 19:20:51.572 appintentsmetadataprocessor[36573:4018232] Starting appintentsmetadataprocessor export
+2026-10-13 19:20:51.576 appintentsmetadataprocessor[36573:4018232] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/PlugIns --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/SystemExtensions --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app: replacing existing signature
+
+2026-10-13 19:20:52.724705+0800 DocBriefAcceptUITests-Runner[36578:4018321] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-10-13 19:20:53.697.
+Test Suite 'DocBriefAcceptUITests.xctest' started at 2026-10-13 19:20:53.697.
+Test Suite 'DocBriefAcceptUITests' started at 2026-10-13 19:20:53.697.
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL01_homeLaunch]' started.
+    t =     0.00s Start Test at 2026-10-13 19:20:53.698
+    t =     0.02s Set Up
+    t =     0.02s Open com.lingguang.docbrief
+    t =     0.02s     Launch com.lingguang.docbrief
+    t =     0.13s         Setting up automation session
+objc[36578]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23E254a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10ad98310) and /Library/Developer/CoreSimulator/Volumes/iOS_23E254a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.4.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a5d4398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     0.55s         Wait for com.lingguang.docbrief to idle
+    t =     1.93s Waiting 8.0s for "DocBrief AI" StaticText to exist
+    t =     3.01s     Checking `Expect predicate `existsNoRetry == 1` for object "DocBrief AI" StaticText`
+    t =     3.01s         Checking existence of `"DocBrief AI" StaticText`
+    t =     3.08s Waiting 8.0s for "Start brief" Button to exist
+    t =     4.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     4.15s         Checking existence of `"Start brief" Button`
+    t =     4.18s Find the "Start brief" Button
+    t =     4.20s Tear Down
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL01_homeLaunch]' passed (4.431 seconds).
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL02_coreLocalFlows]' started.
+    t =     0.00s Start Test at 2026-10-13 19:20:58.130
+    t =     0.02s Set Up
+    t =     0.02s Open com.lingguang.docbrief
+    t =     0.03s     Launch com.lingguang.docbrief
+    t =     0.03s         Terminate com.lingguang.docbrief:36585
+    t =     1.21s         Setting up automation session
+    t =     1.61s         Wait for com.lingguang.docbrief to idle
+    t =     2.99s Waiting 8.0s for "Start brief" Button to exist
+    t =     4.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     4.06s         Checking existence of `"Start brief" Button`
+    t =     4.13s Find the "Start brief" Button
+    t =     4.15s Tap "Start brief" Button
+    t =     4.15s     Wait for com.lingguang.docbrief to idle
+    t =     4.15s     Find the "Start brief" Button
+    t =     4.17s     Check for interrupting elements affecting "Start brief" Button
+    t =     4.21s     Synthesize event
+    t =     4.62s     Wait for com.lingguang.docbrief to idle
+    t =     5.61s Waiting 4.0s for TextField (First Match) to exist
+    t =     6.68s     Checking `Expect predicate `existsNoRetry == 1` for object TextField (First Match)`
+    t =     6.68s         Checking existence of `TextField (First Match)`
+    t =     6.72s Tap TextField (First Match)
+    t =     6.72s     Wait for com.lingguang.docbrief to idle
+    t =     6.73s     Find the TextField (First Match)
+    t =     6.74s     Check for interrupting elements affecting "Title" TextField
+    t =     6.77s     Synthesize event
+    t =     7.05s     Wait for com.lingguang.docbrief to idle
+    t =     7.87s Type 'Accept Sample Brief' into "Title" TextField
+    t =     7.87s     Wait for com.lingguang.docbrief to idle
+    t =     8.18s     Find the "Title" TextField
+    t =     8.23s     Check for interrupting elements affecting "Title" TextField
+    t =     8.26s     Synthesize event
+    t =     8.79s     Wait for com.lingguang.docbrief to idle
+    t =     8.79s Waiting 6.0s for "Create brief" Button to exist
+    t =     9.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Create brief" Button`
+    t =     9.86s         Checking existence of `"Create brief" Button`
+    t =     9.94s Find the "Create brief" Button
+    t =     9.97s Tap "Create brief" Button
+    t =     9.97s     Wait for com.lingguang.docbrief to idle
+    t =     9.97s     Find the "Create brief" Button
+    t =    10.00s     Check for interrupting elements affecting "Create brief" Button
+    t =    10.02s     Synthesize event
+    t =    10.30s     Wait for com.lingguang.docbrief to idle
+    t =    11.65s Waiting 8.0s for "Add photos" Button to exist
+    t =    12.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Add photos" Button`
+    t =    12.73s         Checking existence of `"Add photos" Button`
+    t =    12.75s Find the "Add photos" Button
+    t =    12.78s Tap "Add photos" Button
+    t =    12.78s     Wait for com.lingguang.docbrief to idle
+    t =    12.78s     Find the "Add photos" Button
+    t =    12.80s     Check for interrupting elements affecting "Add photos" Button
+    t =    12.82s     Synthesize event
+    t =    13.11s     Wait for com.lingguang.docbrief to idle
+    t =    13.93s Waiting 6.0s for "Photo Library" Button to exist
+    t =    15.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    15.01s         Checking existence of `"Photo Library" Button`
+    t =    15.03s         Capturing element debug description
+    t =    15.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    15.99s         Checking existence of `"Photo Library" Button`
+    t =    16.02s         Capturing element debug description
+    t =    16.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    16.99s         Checking existence of `"Photo Library" Button`
+    t =    17.01s         Capturing element debug description
+    t =    17.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    17.98s         Checking existence of `"Photo Library" Button`
+    t =    18.01s         Capturing element debug description
+    t =    18.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    18.98s         Checking existence of `"Photo Library" Button`
+    t =    19.00s         Capturing element debug description
+    t =    19.93s     Checking `Expect predicate `existsNoRetry == 1` for object "Photo Library" Button`
+    t =    19.93s         Checking existence of `"Photo Library" Button`
+    t =    19.96s         Capturing element debug description
+    t =    19.97s     Checking existence of `"Photo Library" Button`
+    t =    19.98s Collecting debug information to assist test failure triage
+    t =    19.98s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    20.01s Waiting 6.0s for "Photos" Button to exist
+    t =    21.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    21.08s         Checking existence of `"Photos" Button`
+    t =    21.11s         Capturing element debug description
+    t =    22.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    22.07s         Checking existence of `"Photos" Button`
+    t =    22.10s         Capturing element debug description
+    t =    23.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    23.07s         Checking existence of `"Photos" Button`
+    t =    23.10s         Capturing element debug description
+    t =    24.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    24.06s         Checking existence of `"Photos" Button`
+    t =    24.10s         Capturing element debug description
+    t =    25.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    25.07s         Checking existence of `"Photos" Button`
+    t =    25.10s         Capturing element debug description
+    t =    26.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Photos" Button`
+    t =    26.02s         Checking existence of `"Photos" Button`
+    t =    26.05s         Capturing element debug description
+    t =    26.05s     Checking existence of `"Photos" Button`
+    t =    26.06s Collecting debug information to assist test failure triage
+    t =    26.06s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    26.09s Waiting 6.0s for "Choose from Library" Button to exist
+    t =    27.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    27.15s         Checking existence of `"Choose from Library" Button`
+    t =    27.18s         Capturing element debug description
+    t =    28.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    28.15s         Checking existence of `"Choose from Library" Button`
+    t =    28.18s         Capturing element debug description
+    t =    29.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    29.13s         Checking existence of `"Choose from Library" Button`
+    t =    29.16s         Capturing element debug description
+    t =    30.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    30.11s         Checking existence of `"Choose from Library" Button`
+    t =    30.15s         Capturing element debug description
+    t =    31.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    31.11s         Checking existence of `"Choose from Library" Button`
+    t =    31.14s         Capturing element debug description
+    t =    32.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from Library" Button`
+    t =    32.10s         Checking existence of `"Choose from Library" Button`
+    t =    32.13s         Capturing element debug description
+    t =    32.13s     Checking existence of `"Choose from Library" Button`
+    t =    32.14s Collecting debug information to assist test failure triage
+    t =    32.14s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    32.17s Waiting 2.0s for "Allow Full Access" Button to exist
+    t =    33.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    33.24s         Checking existence of `"Allow Full Access" Button`
+    t =    33.39s         Capturing element debug description
+    t =    34.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    34.18s         Checking existence of `"Allow Full Access" Button`
+    t =    34.22s         Capturing element debug description
+    t =    34.22s     Checking existence of `"Allow Full Access" Button`
+    t =    34.24s Collecting debug information to assist test failure triage
+    t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    34.27s Waiting 1.0s for "Allow Full Access" Button to exist
+    t =    35.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    35.28s         Checking existence of `"Allow Full Access" Button`
+    t =    35.31s         Capturing element debug description
+    t =    35.31s     Checking existence of `"Allow Full Access" Button`
+    t =    35.33s Collecting debug information to assist test failure triage
+    t =    35.33s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    35.35s Waiting 2.0s for "Allow" Button to exist
+    t =    36.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    36.42s         Checking existence of `"Allow" Button`
+    t =    36.46s         Capturing element debug description
+    t =    37.36s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    37.36s         Checking existence of `"Allow" Button`
+    t =    37.39s         Capturing element debug description
+    t =    37.39s     Checking existence of `"Allow" Button`
+    t =    37.41s Collecting debug information to assist test failure triage
+    t =    37.41s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    37.44s Waiting 1.0s for "Allow" Button to exist
+    t =    38.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    38.44s         Checking existence of `"Allow" Button`
+    t =    38.48s         Capturing element debug description
+    t =    38.48s     Checking existence of `"Allow" Button`
+    t =    38.49s Collecting debug information to assist test failure triage
+    t =    38.49s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    38.52s Waiting 2.0s for "OK" Button to exist
+    t =    39.58s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    39.58s         Checking existence of `"OK" Button`
+    t =    39.61s         Capturing element debug description
+    t =    40.53s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    40.53s         Checking existence of `"OK" Button`
+    t =    40.56s         Capturing element debug description
+    t =    40.56s     Checking existence of `"OK" Button`
+    t =    40.58s Collecting debug information to assist test failure triage
+    t =    40.58s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    40.61s Waiting 1.0s for "OK" Button to exist
+    t =    41.62s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    41.62s         Checking existence of `"OK" Button`
+    t =    41.65s         Capturing element debug description
+    t =    41.65s     Checking existence of `"OK" Button`
+    t =    41.67s Collecting debug information to assist test failure triage
+    t =    41.67s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    41.70s Waiting 2.0s for "Continue" Button to exist
+    t =    42.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    42.76s         Checking existence of `"Continue" Button`
+    t =    42.80s         Capturing element debug description
+    t =    43.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    43.70s         Checking existence of `"Continue" Button`
+    t =    43.74s         Capturing element debug description
+    t =    43.74s     Checking existence of `"Continue" Button`
+    t =    43.76s Collecting debug information to assist test failure triage
+    t =    43.76s     Requesting snapshot of accessibility hierarchy for app with pid 23821
+    t =    43.79s Waiting 1.0s for "Continue" Button to exist
+    t =    44.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    44.80s         Checking existence of `"Continue" Button`
+    t =    44.82s         Capturing element debug description
+    t =    44.82s     Checking existence of `"Continue" Button`
+    t =    44.84s Collecting debug information to assist test failure triage
+    t =    44.84s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    44.87s Waiting 8.0s for CollectionView (First Match) to exist
+    t =    45.92s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    45.92s         Checking existence of `CollectionView (First Match)`
+    t =    45.96s         Capturing element debug description
+    t =    46.92s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    46.92s         Checking existence of `CollectionView (First Match)`
+    t =    46.96s         Capturing element debug description
+    t =    47.91s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    47.92s         Checking existence of `CollectionView (First Match)`
+    t =    47.95s         Capturing element debug description
+    t =    48.90s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    48.90s         Checking existence of `CollectionView (First Match)`
+    t =    48.93s         Capturing element debug description
+    t =    49.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    49.89s         Checking existence of `CollectionView (First Match)`
+    t =    49.93s         Capturing element debug description
+    t =    50.88s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    50.88s         Checking existence of `CollectionView (First Match)`
+    t =    50.91s         Capturing element debug description
+    t =    51.88s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    51.88s         Checking existence of `CollectionView (First Match)`
+    t =    51.91s         Capturing element debug description
+    t =    52.88s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    52.88s         Checking existence of `CollectionView (First Match)`
+    t =    52.91s         Capturing element debug description
+    t =    52.92s     Checking existence of `CollectionView (First Match)`
+    t =    52.93s Collecting debug information to assist test failure triage
+    t =    52.93s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    52.96s Waiting 4.0s for CollectionView (First Match) to exist
+    t =    54.02s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    54.02s         Checking existence of `CollectionView (First Match)`
+    t =    54.02s         Capturing element debug description
+    t =    54.98s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    54.98s         Checking existence of `CollectionView (First Match)`
+    t =    54.98s         Capturing element debug description
+    t =    56.03s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    56.03s         Checking existence of `CollectionView (First Match)`
+    t =    56.03s         Capturing element debug description
+    t =    56.97s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+    t =    56.97s         Checking existence of `CollectionView (First Match)`
+    t =    56.97s         Capturing element debug description
+    t =    56.97s     Checking existence of `CollectionView (First Match)`
+    t =    57.98s     Checking existence of `CollectionView (First Match)` (retry 1)
+    t =    58.99s     Checking existence of `CollectionView (First Match)` (retry 2)
+    t =    59.00s Collecting debug information to assist test failure triage
+    t =    59.00s Waiting 5.0s for "Add" Button to exist
+    t =    60.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =    60.07s         Checking existence of `"Add" Button`
+    t =    60.10s         Capturing element debug description
+    t =    61.05s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =    61.05s         Checking existence of `"Add" Button`
+    t =    61.08s         Capturing element debug description
+    t =    62.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =    62.03s         Checking existence of `"Add" Button`
+    t =    62.06s         Capturing element debug description
+    t =    63.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =    63.01s         Checking existence of `"Add" Button`
+    t =    63.04s         Capturing element debug description
+    t =    64.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =    64.01s         Checking existence of `"Add" Button`
+    t =    64.04s         Capturing element debug description
+    t =    64.04s     Checking existence of `"Add" Button`
+    t =    64.06s Collecting debug information to assist test failure triage
+    t =    64.06s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    64.08s Waiting 5.0s for "Done" Button to exist
+    t =    65.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    65.13s         Checking existence of `"Done" Button`
+    t =    65.16s         Capturing element debug description
+    t =    66.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    66.10s         Checking existence of `"Done" Button`
+    t =    66.13s         Capturing element debug description
+    t =    67.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    67.09s         Checking existence of `"Done" Button`
+    t =    67.12s         Capturing element debug description
+    t =    68.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    68.17s         Checking existence of `"Done" Button`
+    t =    68.20s         Capturing element debug description
+    t =    69.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =    69.09s         Checking existence of `"Done" Button`
+    t =    69.12s         Capturing element debug description
+    t =    69.12s     Checking existence of `"Done" Button`
+    t =    69.14s Collecting debug information to assist test failure triage
+    t =    69.14s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    69.16s Waiting 5.0s for "Choose" Button to exist
+    t =    70.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose" Button`
+    t =    70.21s         Checking existence of `"Choose" Button`
+    t =    70.24s         Capturing element debug description
+    t =    71.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose" Button`
+    t =    71.20s         Checking existence of `"Choose" Button`
+    t =    71.23s         Capturing element debug description
+    t =    72.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose" Button`
+    t =    72.18s         Checking existence of `"Choose" Button`
+    t =    72.20s         Capturing element debug description
+    t =    73.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose" Button`
+    t =    73.17s         Checking existence of `"Choose" Button`
+    t =    73.20s         Capturing element debug description
+    t =    74.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose" Button`
+    t =    74.17s         Checking existence of `"Choose" Button`
+    t =    74.20s         Capturing element debug description
+    t =    74.20s     Checking existence of `"Choose" Button`
+    t =    74.22s Collecting debug information to assist test failure triage
+    t =    74.22s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    74.24s Waiting 10.0s for "Recognize type & fields" Button to exist
+    t =    75.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Recognize type & fields" Button`
+    t =    75.30s         Checking existence of `"Recognize type & fields" Button`
+    t =    75.33s Find the "Recognize type & fields" Button
+    t =    75.35s Tap "Recognize type & fields" Button
+    t =    75.35s     Wait for com.lingguang.docbrief to idle
+    t =    75.36s     Find the "Recognize type & fields" Button
+    t =    75.37s     Check for interrupting elements affecting "Recognize type & fields" Button
+    t =    75.39s     Synthesize event
+    t =    75.68s     Wait for com.lingguang.docbrief to idle
+    t =    75.68s Waiting 5.0s for "Allow DeepSeek inference" Button to exist
+    t =    76.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Button`
+    t =    76.75s         Checking existence of `"Allow DeepSeek inference" Button`
+    t =    76.78s         Capturing element debug description
+    t =    77.74s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Button`
+    t =    77.74s         Checking existence of `"Allow DeepSeek inference" Button`
+    t =    77.77s         Capturing element debug description
+    t =    78.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Button`
+    t =    78.73s         Checking existence of `"Allow DeepSeek inference" Button`
+    t =    78.75s         Capturing element debug description
+    t =    79.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Button`
+    t =    79.71s         Checking existence of `"Allow DeepSeek inference" Button`
+    t =    79.73s         Capturing element debug description
+    t =    80.69s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Button`
+    t =    80.70s         Checking existence of `"Allow DeepSeek inference" Button`
+    t =    80.72s         Capturing element debug description
+    t =    80.72s     Checking existence of `"Allow DeepSeek inference" Button`
+    t =    80.74s Collecting debug information to assist test failure triage
+    t =    80.74s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    80.76s Waiting 5.0s for "Allow AI" Button to exist
+    t =    81.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow AI" Button`
+    t =    81.82s         Checking existence of `"Allow AI" Button`
+    t =    81.85s         Capturing element debug description
+    t =    82.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow AI" Button`
+    t =    82.81s         Checking existence of `"Allow AI" Button`
+    t =    82.82s         Capturing element debug description
+    t =    83.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow AI" Button`
+    t =    83.78s         Checking existence of `"Allow AI" Button`
+    t =    83.80s         Capturing element debug description
+    t =    84.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow AI" Button`
+    t =    84.77s         Checking existence of `"Allow AI" Button`
+    t =    84.80s         Capturing element debug description
+    t =    85.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow AI" Button`
+    t =    85.77s         Checking existence of `"Allow AI" Button`
+    t =    85.80s         Capturing element debug description
+    t =    85.80s     Checking existence of `"Allow AI" Button`
+    t =    85.82s Collecting debug information to assist test failure triage
+    t =    85.82s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    85.85s Waiting 5.0s for "Allow" Button to exist
+    t =    86.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    86.92s         Checking existence of `"Allow" Button`
+    t =    86.95s         Capturing element debug description
+    t =    87.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    87.92s         Checking existence of `"Allow" Button`
+    t =    87.94s         Capturing element debug description
+    t =    88.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    88.91s         Checking existence of `"Allow" Button`
+    t =    88.95s         Capturing element debug description
+    t =    89.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    89.90s         Checking existence of `"Allow" Button`
+    t =    89.93s         Capturing element debug description
+    t =    90.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    90.86s         Checking existence of `"Allow" Button`
+    t =    90.88s         Capturing element debug description
+    t =    90.89s     Checking existence of `"Allow" Button`
+    t =    90.90s Collecting debug information to assist test failure triage
+    t =    90.90s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =    90.93s Waiting 10.0s for StaticText (First Match) to exist
+    t =    91.99s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    91.99s         Checking existence of `StaticText (First Match)`
+    t =    92.02s         Capturing element debug description
+    t =    92.97s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    92.97s         Checking existence of `StaticText (First Match)`
+    t =    92.99s         Capturing element debug description
+    t =    93.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    93.94s         Checking existence of `StaticText (First Match)`
+    t =    93.97s         Capturing element debug description
+    t =    94.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    94.94s         Checking existence of `StaticText (First Match)`
+    t =    94.97s         Capturing element debug description
+    t =    95.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    95.94s         Checking existence of `StaticText (First Match)`
+    t =    95.97s         Capturing element debug description
+    t =    96.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    96.94s         Checking existence of `StaticText (First Match)`
+    t =    96.97s         Capturing element debug description
+    t =    97.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    97.94s         Checking existence of `StaticText (First Match)`
+    t =    97.97s         Capturing element debug description
+    t =    98.94s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    98.94s         Checking existence of `StaticText (First Match)`
+    t =    98.96s         Capturing element debug description
+    t =   100.02s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   100.02s         Checking existence of `StaticText (First Match)`
+    t =   100.05s         Capturing element debug description
+    t =   100.93s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   100.94s         Checking existence of `StaticText (First Match)`
+    t =   100.96s         Capturing element debug description
+    t =   100.96s     Checking existence of `StaticText (First Match)`
+    t =   100.98s Collecting debug information to assist test failure triage
+    t =   100.98s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   101.01s Waiting 1.0s for Button (First Match) to exist
+    t =   102.02s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   102.02s         Checking existence of `Button (First Match)`
+    t =   102.05s         Capturing element debug description
+    t =   102.05s     Checking existence of `Button (First Match)`
+    t =   102.07s Collecting debug information to assist test failure triage
+    t =   102.07s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   102.10s Waiting 2.0s for StaticText (First Match) to exist
+    t =   103.15s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   103.15s         Checking existence of `StaticText (First Match)`
+    t =   103.17s         Capturing element debug description
+    t =   104.10s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   104.11s         Checking existence of `StaticText (First Match)`
+    t =   104.14s         Capturing element debug description
+    t =   104.14s     Checking existence of `StaticText (First Match)`
+    t =   104.16s Collecting debug information to assist test failure triage
+    t =   104.16s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   104.18s Waiting 1.0s for Button (First Match) to exist
+    t =   105.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   105.19s         Checking existence of `Button (First Match)`
+    t =   105.23s         Capturing element debug description
+    t =   105.23s     Checking existence of `Button (First Match)`
+    t =   105.25s Collecting debug information to assist test failure triage
+    t =   105.25s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   105.27s Waiting 2.0s for StaticText (First Match) to exist
+    t =   106.31s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   106.31s         Checking existence of `StaticText (First Match)`
+    t =   106.34s         Capturing element debug description
+    t =   107.28s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   107.28s         Checking existence of `StaticText (First Match)`
+    t =   107.31s         Capturing element debug description
+    t =   107.31s     Checking existence of `StaticText (First Match)`
+    t =   107.33s Collecting debug information to assist test failure triage
+    t =   107.33s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   107.35s Waiting 1.0s for Button (First Match) to exist
+    t =   108.36s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   108.36s         Checking existence of `Button (First Match)`
+    t =   108.39s         Capturing element debug description
+    t =   108.39s     Checking existence of `Button (First Match)`
+    t =   108.41s Collecting debug information to assist test failure triage
+    t =   108.41s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   108.43s Waiting 2.0s for StaticText (First Match) to exist
+    t =   109.49s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   109.49s         Checking existence of `StaticText (First Match)`
+    t =   109.53s         Capturing element debug description
+    t =   110.44s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =   110.44s         Checking existence of `StaticText (First Match)`
+    t =   110.47s         Capturing element debug description
+    t =   110.47s     Checking existence of `StaticText (First Match)`
+    t =   110.49s Collecting debug information to assist test failure triage
+    t =   110.49s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   110.51s Waiting 1.0s for Button (First Match) to exist
+    t =   111.53s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   111.53s         Checking existence of `Button (First Match)`
+    t =   111.56s         Capturing element debug description
+    t =   111.56s     Checking existence of `Button (First Match)`
+    t =   111.58s Collecting debug information to assist test failure triage
+    t =   111.58s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   111.60s Checking existence of `"Add field" Button`
+    t =   111.61s Checking existence of `"Add field manually" Button`
+    t =   111.62s Checking existence of `"Save" Button`
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift:97: error: -[DocBriefAcceptUITests.DocBriefAcceptUITests testUL02_coreLocalFlows] : XCTAssertTrue failed - Expected AI unavailable honesty or local field path
+    t =   111.86s Waiting 4.0s for "Add field" Button to exist
+    t =   112.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field" Button`
+    t =   112.92s         Checking existence of `"Add field" Button`
+    t =   112.95s         Capturing element debug description
+    t =   113.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field" Button`
+    t =   113.92s         Checking existence of `"Add field" Button`
+    t =   113.95s         Capturing element debug description
+    t =   114.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field" Button`
+    t =   114.91s         Checking existence of `"Add field" Button`
+    t =   114.94s         Capturing element debug description
+    t =   115.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field" Button`
+    t =   115.87s         Checking existence of `"Add field" Button`
+    t =   115.91s         Capturing element debug description
+    t =   115.91s     Checking existence of `"Add field" Button`
+    t =   115.93s Collecting debug information to assist test failure triage
+    t =   115.93s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   115.95s Waiting 4.0s for "Add field manually" Button to exist
+    t =   117.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field manually" Button`
+    t =   117.02s         Checking existence of `"Add field manually" Button`
+    t =   117.04s         Capturing element debug description
+    t =   118.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field manually" Button`
+    t =   118.00s         Checking existence of `"Add field manually" Button`
+    t =   118.03s         Capturing element debug description
+    t =   118.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field manually" Button`
+    t =   118.99s         Checking existence of `"Add field manually" Button`
+    t =   119.02s         Capturing element debug description
+    t =   119.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Add field manually" Button`
+    t =   119.96s         Checking existence of `"Add field manually" Button`
+    t =   119.99s         Capturing element debug description
+    t =   119.99s     Checking existence of `"Add field manually" Button`
+    t =   120.01s Collecting debug information to assist test failure triage
+    t =   120.01s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   120.03s Get number of matches for: Descendants matching type TextField
+    t =   120.04s Get number of matches for: Descendants matching type TextField
+    t =   120.05s Waiting 4.0s for "Save" Button to exist
+    t =   121.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   121.12s         Checking existence of `"Save" Button`
+    t =   121.15s         Capturing element debug description
+    t =   122.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   122.12s         Checking existence of `"Save" Button`
+    t =   122.15s         Capturing element debug description
+    t =   123.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   123.11s         Checking existence of `"Save" Button`
+    t =   123.14s         Capturing element debug description
+    t =   124.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   124.06s         Checking existence of `"Save" Button`
+    t =   124.10s         Capturing element debug description
+    t =   124.10s     Checking existence of `"Save" Button`
+    t =   124.12s Collecting debug information to assist test failure triage
+    t =   124.12s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   124.14s Waiting 2.0s for "Not this" Button to exist
+    t =   125.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Not this" Button`
+    t =   125.20s         Checking existence of `"Not this" Button`
+    t =   125.23s         Capturing element debug description
+    t =   126.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Not this" Button`
+    t =   126.15s         Checking existence of `"Not this" Button`
+    t =   126.18s         Capturing element debug description
+    t =   126.18s     Checking existence of `"Not this" Button`
+    t =   126.20s Collecting debug information to assist test failure triage
+    t =   126.20s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   126.22s Waiting 6.0s for "Chat extract" Button to exist
+    t =   127.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   127.29s         Checking existence of `"Chat extract" Button`
+    t =   127.32s         Capturing element debug description
+    t =   128.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   128.29s         Checking existence of `"Chat extract" Button`
+    t =   128.32s         Capturing element debug description
+    t =   129.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   129.29s         Checking existence of `"Chat extract" Button`
+    t =   129.32s         Capturing element debug description
+    t =   130.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   130.29s         Checking existence of `"Chat extract" Button`
+    t =   130.32s         Capturing element debug description
+    t =   131.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   131.29s         Checking existence of `"Chat extract" Button`
+    t =   131.32s         Capturing element debug description
+    t =   132.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat extract" Button`
+    t =   132.23s         Checking existence of `"Chat extract" Button`
+    t =   132.27s         Capturing element debug description
+    t =   132.27s     Checking existence of `"Chat extract" Button`
+    t =   132.28s Collecting debug information to assist test failure triage
+    t =   132.28s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   132.31s Waiting 5.0s for "Generate summary card" Button to exist
+    t =   133.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate summary card" Button`
+    t =   133.37s         Checking existence of `"Generate summary card" Button`
+    t =   133.39s         Capturing element debug description
+    t =   134.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate summary card" Button`
+    t =   134.35s         Checking existence of `"Generate summary card" Button`
+    t =   134.38s         Capturing element debug description
+    t =   135.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate summary card" Button`
+    t =   135.34s         Checking existence of `"Generate summary card" Button`
+    t =   135.36s         Capturing element debug description
+    t =   136.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate summary card" Button`
+    t =   136.31s         Checking existence of `"Generate summary card" Button`
+    t =   136.34s         Capturing element debug description
+    t =   137.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate summary card" Button`
+    t =   137.32s         Checking existence of `"Generate summary card" Button`
+    t =   137.34s         Capturing element debug description
+    t =   137.34s     Checking existence of `"Generate summary card" Button`
+    t =   137.35s Collecting debug information to assist test failure triage
+    t =   137.36s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   137.38s Waiting 5.0s for "Speak briefing" Button to exist
+    t =   138.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Speak briefing" Button`
+    t =   138.41s         Checking existence of `"Speak briefing" Button`
+    t =   138.42s         Capturing element debug description
+2026-10-13 19:23:16.910384+0800 DocBriefAcceptUITests-Runner[36578:4018394] [default] LaunchServices: disconnect event interruption received for service com.apple.lsd.mapdb
+    t =   139.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Speak briefing" Button`
+    t =   139.40s         Checking existence of `"Speak briefing" Button`
+    t =   139.41s         Capturing element debug description
+    t =   140.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Speak briefing" Button`
+    t =   140.38s         Checking existence of `"Speak briefing" Button`
+    t =   140.39s         Capturing element debug description
+    t =   141.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Speak briefing" Button`
+    t =   141.46s         Checking existence of `"Speak briefing" Button`
+    t =   141.48s         Capturing element debug description
+    t =   142.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Speak briefing" Button`
+    t =   142.39s         Checking existence of `"Speak briefing" Button`
+    t =   142.40s         Capturing element debug description
+    t =   142.40s     Checking existence of `"Speak briefing" Button`
+    t =   142.42s Collecting debug information to assist test failure triage
+    t =   142.42s     Requesting snapshot of accessibility hierarchy for app with pid 36611
+    t =   142.49s Tear Down
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL02_coreLocalFlows]' failed (142.754 seconds).
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL04_relaunchPersistence]' started.
+    t =     0.01s Start Test at 2026-10-13 19:23:20.896
+    t =     0.04s Set Up
+    t =     0.04s Open com.lingguang.docbrief
+    t =     0.04s     Launch com.lingguang.docbrief
+    t =     0.05s         Terminate com.lingguang.docbrief:36611
+    t =     1.24s         Setting up automation session
+    t =     1.71s         Wait for com.lingguang.docbrief to idle
+    t =     3.14s Waiting 8.0s for "Start brief" Button to exist
+    t =     4.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     4.23s         Checking existence of `"Start brief" Button`
+    t =     4.28s         Capturing element debug description
+    t =     5.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     5.24s         Checking existence of `"Start brief" Button`
+    t =     5.26s         Capturing element debug description
+    t =     6.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     6.22s         Checking existence of `"Start brief" Button`
+    t =     6.23s         Capturing element debug description
+    t =     7.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     7.19s         Checking existence of `"Start brief" Button`
+    t =     7.20s         Capturing element debug description
+    t =     8.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     8.15s         Checking existence of `"Start brief" Button`
+    t =     8.17s         Capturing element debug description
+    t =     9.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =     9.22s         Checking existence of `"Start brief" Button`
+    t =     9.26s         Capturing element debug description
+    t =    10.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    10.21s         Checking existence of `"Start brief" Button`
+    t =    10.24s         Capturing element debug description
+    t =    11.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    11.15s         Checking existence of `"Start brief" Button`
+    t =    11.19s         Capturing element debug description
+    t =    11.19s     Checking existence of `"Start brief" Button`
+    t =    11.21s Collecting debug information to assist test failure triage
+    t =    11.21s     Requesting snapshot of accessibility hierarchy for app with pid 37719
+    t =    11.24s Waiting 4.0s for "Briefs" StaticText to exist
+    t =    12.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Briefs" StaticText`
+    t =    12.29s         Checking existence of `"Briefs" StaticText`
+    t =    12.33s Terminate com.lingguang.docbrief:37719
+    t =    13.42s Open com.lingguang.docbrief
+    t =    13.42s     Launch com.lingguang.docbrief
+    t =    13.55s         Setting up automation session
+    t =    13.95s         Wait for com.lingguang.docbrief to idle
+    t =    15.30s Waiting 8.0s for "Start brief" Button to exist
+    t =    16.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    16.35s         Checking existence of `"Start brief" Button`
+    t =    16.43s         Capturing element debug description
+    t =    17.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    17.38s         Checking existence of `"Start brief" Button`
+    t =    17.42s         Capturing element debug description
+    t =    18.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    18.38s         Checking existence of `"Start brief" Button`
+    t =    18.42s         Capturing element debug description
+    t =    19.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    19.37s         Checking existence of `"Start brief" Button`
+    t =    19.40s         Capturing element debug description
+    t =    20.36s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    20.36s         Checking existence of `"Start brief" Button`
+    t =    20.39s         Capturing element debug description
+    t =    21.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    21.34s         Checking existence of `"Start brief" Button`
+    t =    21.37s         Capturing element debug description
+    t =    22.33s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    22.33s         Checking existence of `"Start brief" Button`
+    t =    22.36s         Capturing element debug description
+    t =    23.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Start brief" Button`
+    t =    23.30s         Checking existence of `"Start brief" Button`
+    t =    23.33s         Capturing element debug description
+    t =    23.33s     Checking existence of `"Start brief" Button`
+    t =    23.34s Collecting debug information to assist test failure triage
+    t =    23.34s     Requesting snapshot of accessibility hierarchy for app with pid 37843
+    t =    23.37s Waiting 4.0s for "Briefs" StaticText to exist
+    t =    24.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Briefs" StaticText`
+    t =    24.42s         Checking existence of `"Briefs" StaticText`
+    t =    24.45s Tear Down
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL04_relaunchPersistence]' passed (24.714 seconds).
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke]' started.
+    t =     0.00s Start Test at 2026-10-13 19:23:45.600
+    t =     0.03s Set Up
+    t =     0.03s Open com.lingguang.docbrief
+    t =     0.03s     Launch com.lingguang.docbrief
+    t =     0.03s         Terminate com.lingguang.docbrief:37843
+    t =     1.23s         Setting up automation session
+    t =     1.63s         Wait for com.lingguang.docbrief to idle
+    t =     2.95s Waiting 5.0s for "Settings" Button to exist
+    t =     4.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Button`
+    t =     4.02s         Checking existence of `"Settings" Button`
+    t =     4.09s Find the "Settings" Button
+    t =     4.11s Tap "Settings" Button
+    t =     4.11s     Wait for com.lingguang.docbrief to idle
+    t =     4.11s     Find the "Settings" Button
+    t =     4.13s     Check for interrupting elements affecting "Settings" Button
+    t =     4.15s     Synthesize event
+    t =     4.44s     Wait for com.lingguang.docbrief to idle
+    t =     5.94s Waiting 3.0s for "Privacy" Button to exist
+    t =     7.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =     7.00s         Checking existence of `"Privacy" Button`
+    t =     7.07s Find the "Privacy" Button
+    t =     7.10s Tap "Privacy" Button
+    t =     7.10s     Wait for com.lingguang.docbrief to idle
+    t =     7.10s     Find the "Privacy" Button
+    t =     7.12s     Check for interrupting elements affecting "Privacy" Button
+    t =     7.14s     Synthesize event
+    t =     7.43s     Wait for com.lingguang.docbrief to idle
+    t =     8.41s Waiting 4.0s for StaticText (First Match) to exist
+    t =     9.47s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =     9.47s         Checking existence of `StaticText (First Match)`
+    t =     9.56s Checking existence of `Button (First Match)`
+    t =     9.57s Tap Button (First Match)
+    t =     9.57s     Wait for com.lingguang.docbrief to idle
+    t =     9.57s     Find the Button (First Match)
+    t =     9.59s     Check for interrupting elements affecting "BackButton" Button
+    t =     9.60s     Synthesize event
+    t =     9.90s     Wait for com.lingguang.docbrief to idle
+    t =    10.33s Waiting 3.0s for "Terms" Button to exist
+    t =    11.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    11.39s         Checking existence of `"Terms" Button`
+    t =    11.44s Find the "Terms" Button
+    t =    11.48s Tap "Terms" Button[0.50, 0.50]
+    t =    11.48s     Wait for com.lingguang.docbrief to idle
+    t =    11.48s     Find the "Terms" Button
+    t =    11.50s     Check for interrupting elements affecting "Terms" Button
+    t =    11.52s     Synthesize event
+    t =    11.52s         Find the "Terms" Button
+    t =    11.55s         Find the "Terms" Button
+    t =    11.57s         Find the "Terms" Button
+    t =    11.88s     Wait for com.lingguang.docbrief to idle
+    t =    13.09s Waiting 4.0s for StaticText (First Match) to exist
+    t =    14.16s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    14.16s         Checking existence of `StaticText (First Match)`
+    t =    14.20s         Capturing element debug description
+    t =    15.16s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    15.17s         Checking existence of `StaticText (First Match)`
+    t =    15.20s         Capturing element debug description
+    t =    16.16s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    16.16s         Checking existence of `StaticText (First Match)`
+    t =    16.20s         Capturing element debug description
+    t =    17.10s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    17.10s         Checking existence of `StaticText (First Match)`
+    t =    17.14s         Capturing element debug description
+    t =    17.14s     Checking existence of `StaticText (First Match)`
+    t =    17.16s Collecting debug information to assist test failure triage
+    t =    17.16s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    17.19s Waiting 1.0s for Button (First Match) to exist
+    t =    18.20s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    18.20s         Checking existence of `Button (First Match)`
+    t =    18.23s         Capturing element debug description
+    t =    18.23s     Checking existence of `Button (First Match)`
+    t =    18.25s Collecting debug information to assist test failure triage
+    t =    18.25s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    18.28s Waiting 2.0s for StaticText (First Match) to exist
+    t =    19.33s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    19.33s         Checking existence of `StaticText (First Match)`
+    t =    19.37s         Capturing element debug description
+    t =    20.29s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    20.29s         Checking existence of `StaticText (First Match)`
+    t =    20.32s         Capturing element debug description
+    t =    20.32s     Checking existence of `StaticText (First Match)`
+    t =    20.33s Collecting debug information to assist test failure triage
+    t =    20.33s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    20.35s Waiting 1.0s for Button (First Match) to exist
+    t =    21.36s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    21.36s         Checking existence of `Button (First Match)`
+    t =    21.40s         Capturing element debug description
+    t =    21.40s     Checking existence of `Button (First Match)`
+    t =    21.42s Collecting debug information to assist test failure triage
+    t =    21.42s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    21.44s Waiting 2.0s for StaticText (First Match) to exist
+    t =    22.51s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    22.51s         Checking existence of `StaticText (First Match)`
+    t =    22.54s         Capturing element debug description
+    t =    23.45s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    23.45s         Checking existence of `StaticText (First Match)`
+    t =    23.49s         Capturing element debug description
+    t =    23.49s     Checking existence of `StaticText (First Match)`
+    t =    23.51s Collecting debug information to assist test failure triage
+    t =    23.51s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    23.53s Waiting 1.0s for Button (First Match) to exist
+    t =    24.54s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    24.54s         Checking existence of `Button (First Match)`
+    t =    24.58s         Capturing element debug description
+    t =    24.58s     Checking existence of `Button (First Match)`
+    t =    24.60s Collecting debug information to assist test failure triage
+    t =    24.60s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    24.62s Waiting 2.0s for StaticText (First Match) to exist
+    t =    25.68s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    25.68s         Checking existence of `StaticText (First Match)`
+    t =    25.72s         Capturing element debug description
+    t =    26.63s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    26.63s         Checking existence of `StaticText (First Match)`
+    t =    26.67s         Capturing element debug description
+    t =    26.67s     Checking existence of `StaticText (First Match)`
+    t =    26.69s Collecting debug information to assist test failure triage
+    t =    26.69s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    26.72s Waiting 1.0s for Button (First Match) to exist
+    t =    27.72s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    27.72s         Checking existence of `Button (First Match)`
+    t =    27.76s         Capturing element debug description
+    t =    27.76s     Checking existence of `Button (First Match)`
+    t =    27.78s Collecting debug information to assist test failure triage
+    t =    27.78s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    27.80s Waiting 2.0s for StaticText (First Match) to exist
+    t =    28.86s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    28.86s         Checking existence of `StaticText (First Match)`
+    t =    28.89s         Capturing element debug description
+    t =    29.81s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    29.81s         Checking existence of `StaticText (First Match)`
+    t =    29.85s         Capturing element debug description
+    t =    29.85s     Checking existence of `StaticText (First Match)`
+    t =    29.87s Collecting debug information to assist test failure triage
+    t =    29.87s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    29.89s Waiting 1.0s for Button (First Match) to exist
+    t =    30.90s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    30.90s         Checking existence of `Button (First Match)`
+    t =    30.94s         Capturing element debug description
+    t =    30.94s     Checking existence of `Button (First Match)`
+    t =    30.96s Collecting debug information to assist test failure triage
+    t =    30.96s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift:203: error: -[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke] : XCTAssertTrue failed - Legal page Terms did not load readable content
+    t =    30.99s Checking existence of `Button (First Match)`
+    t =    31.00s Swipe down Application 'com.lingguang.docbrief'
+    t =    31.00s     Wait for com.lingguang.docbrief to idle
+    t =    31.00s     Find the Application 'com.lingguang.docbrief'
+    t =    31.01s     Check for interrupting elements affecting "DocBrief AI" Application
+    t =    31.02s     Synthesize event
+    t =    31.41s     Wait for com.lingguang.docbrief to idle
+    t =    32.01s Waiting 3.0s for "Support" Button to exist
+    t =    33.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    33.08s         Checking existence of `"Support" Button`
+    t =    33.12s         Capturing element debug description
+    t =    34.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    34.09s         Checking existence of `"Support" Button`
+    t =    34.12s         Capturing element debug description
+    t =    35.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    35.02s         Checking existence of `"Support" Button`
+    t =    35.05s         Capturing element debug description
+    t =    35.05s     Checking existence of `"Support" Button`
+    t =    35.07s Collecting debug information to assist test failure triage
+    t =    35.07s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    35.10s Waiting 3.0s for "Provider policy" Button to exist
+    t =    36.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =    36.15s         Checking existence of `"Provider policy" Button`
+    t =    36.18s         Capturing element debug description
+    t =    37.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =    37.13s         Checking existence of `"Provider policy" Button`
+    t =    37.16s         Capturing element debug description
+    t =    38.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =    38.10s         Checking existence of `"Provider policy" Button`
+    t =    38.12s         Capturing element debug description
+    t =    38.12s     Checking existence of `"Provider policy" Button`
+    t =    38.13s Collecting debug information to assist test failure triage
+    t =    38.13s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    38.15s Waiting 3.0s for "DeepSeek privacy policy" Button to exist
+    t =    39.22s     Checking `Expect predicate `existsNoRetry == 1` for object "DeepSeek privacy policy" Button`
+    t =    39.22s         Checking existence of `"DeepSeek privacy policy" Button`
+    t =    39.25s         Capturing element debug description
+    t =    40.20s     Checking `Expect predicate `existsNoRetry == 1` for object "DeepSeek privacy policy" Button`
+    t =    40.20s         Checking existence of `"DeepSeek privacy policy" Button`
+    t =    40.23s         Capturing element debug description
+    t =    41.16s     Checking `Expect predicate `existsNoRetry == 1` for object "DeepSeek privacy policy" Button`
+    t =    41.16s         Checking existence of `"DeepSeek privacy policy" Button`
+    t =    41.19s         Capturing element debug description
+    t =    41.19s     Checking existence of `"DeepSeek privacy policy" Button`
+    t =    41.21s Collecting debug information to assist test failure triage
+    t =    41.21s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/uitest-harness/DocBriefAcceptUITests/DocBriefAcceptUITests.swift:211: error: -[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke] : XCTAssertGreaterThanOrEqual failed: ("2") is less than ("3") - Expected Privacy/Terms/Support (and preferably provider policy)
+    t =    41.25s Waiting 4.0s for Button (First Match) to exist
+    t =    42.27s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    42.27s         Checking existence of `Button (First Match)`
+    t =    42.31s         Capturing element debug description
+    t =    43.27s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    43.27s         Checking existence of `Button (First Match)`
+    t =    43.31s         Capturing element debug description
+    t =    44.27s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    44.27s         Checking existence of `Button (First Match)`
+    t =    44.31s         Capturing element debug description
+    t =    45.26s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    45.26s         Checking existence of `Button (First Match)`
+    t =    45.29s         Capturing element debug description
+    t =    45.29s     Checking existence of `Button (First Match)`
+    t =    45.31s Collecting debug information to assist test failure triage
+    t =    45.31s     Requesting snapshot of accessibility hierarchy for app with pid 37911
+    t =    45.34s Tear Down
+Test Case '-[DocBriefAcceptUITests.DocBriefAcceptUITests testUL06_privacyLegalAndRevoke]' failed (45.618 seconds).
+Test Suite 'DocBriefAcceptUITests' failed at 2026-10-13 19:24:31.218.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 217.517 (217.521) seconds
+Test Suite 'DocBriefAcceptUITests.xctest' failed at 2026-10-13 19:24:31.219.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 217.517 (217.522) seconds
+Test Suite 'All tests' failed at 2026-10-13 19:24:31.220.
+	 Executed 4 tests, with 3 failures (0 unexpected) in 217.517 (217.523) seconds
+2026-10-13 19:24:46.093 xcodebuild[36554:4018031] [MT] IDETestOperationsObserverDebug: 234.391 elapsed -- Testing started completed.
+2026-10-13 19:24:46.093 xcodebuild[36554:4018031] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 19:24:46.093 xcodebuild[36554:4018031] [MT] IDETestOperationsObserverDebug: 234.391 sec, +234.391 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-1/DerivedData-uitest/Logs/Test/Test-DocBriefAccept-2026.10.13_19-20-49-+0800.xcresult
+
+Failing tests:
+	DocBriefAcceptUITests.testUL02_coreLocalFlows()
+	DocBriefAcceptUITests.testUL06_privacyLegalAndRevoke()
+	DocBriefAcceptUITests.testUL06_privacyLegalAndRevoke()
+
+** TEST FAILED **
+
+Testing started

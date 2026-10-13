@@ -1,0 +1,44 @@
+name: DocBriefAccept
+options:
+  bundleIdPrefix: accept.harness
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: accept.harness.docbrief
+schemes:
+  DocBriefAccept:
+    build:
+      targets:
+        DocBriefAcceptHost: all
+        DocBriefAcceptUITests: [test]
+    test:
+      targets:
+        - DocBriefAcceptUITests
+targets:
+  DocBriefAcceptHost:
+    type: application
+    platform: iOS
+    sources:
+      - Host
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: accept.harness.docbrief.host
+      TARGETED_DEVICE_FAMILY: "1"
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGNING_ALLOWED: YES
+      CODE_SIGN_IDENTITY: "-"
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+  DocBriefAcceptUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - DocBriefAcceptUITests
+    dependencies:
+      - target: DocBriefAcceptHost
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: accept.harness.docbrief.uitests
+      TARGETED_DEVICE_FAMILY: "1"
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGNING_ALLOWED: YES
+      CODE_SIGN_IDENTITY: "-"
+      TEST_TARGET_NAME: DocBriefAcceptHost

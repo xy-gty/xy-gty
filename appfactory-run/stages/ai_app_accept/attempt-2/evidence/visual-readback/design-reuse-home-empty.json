@@ -1,0 +1,41 @@
+{
+  "schema": "appfactory.ultra_lite_visual_readback.v1",
+  "side": "design",
+  "mode": "reused_design",
+  "key": {
+    "screenshot_sha256": "7088b117f3d5e1350c32856bbb8222f2dd8f6e2d289cc4f8124fb250c7f6dfaf",
+    "criterion": "Visible: DocBrief AI title, empty briefs state with Start brief CTA, Briefs tab selected, no paywall/coins/ATT, not SnagCue/TurboScan, no Audits/Punch/walkthrough wording.\n",
+    "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: DocBrief AI title, empty briefs state with Start brief CTA, Briefs tab selected, no paywall/coins/ATT, not SnagCue/TurboScan, no Audits/Punch/walkthrough wording.\n",
+    "model": "auto",
+    "reasoning_effort": "auto"
+  },
+  "pm_visual_manifest_sha256": "ce43e843fe336a5ad2098904dd7a7048610dfd94a8e0011242a20c00adbca1fc",
+  "origin": {
+    "key": {
+      "screenshot_sha256": "7088b117f3d5e1350c32856bbb8222f2dd8f6e2d289cc4f8124fb250c7f6dfaf",
+      "criterion": "Visible: DocBrief AI title, empty briefs state with Start brief CTA, Briefs tab selected, no paywall/coins/ATT, not SnagCue/TurboScan, no Audits/Punch/walkthrough wording.\n",
+      "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: DocBrief AI title, empty briefs state with Start brief CTA, Briefs tab selected, no paywall/coins/ATT, not SnagCue/TurboScan, no Audits/Punch/walkthrough wording.\n",
+      "model": "auto",
+      "reasoning_effort": "auto"
+    },
+    "origin_run_id": "kf-20261013T095745Z-aa3ad9a0",
+    "origin_pm_attempt": 1,
+    "frame_id": "home-empty",
+    "image_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+    "image_sha256": "7088b117f3d5e1350c32856bbb8222f2dd8f6e2d289cc4f8124fb250c7f6dfaf",
+    "receipt_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/evidence/visual-readback/home-empty-r2.receipt.json",
+    "receipt_sha256": "1a43ffa08e1a07cb5095edbc2062a7b18cfccc45df3634792e82ddbbaef9e082",
+    "raw_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/evidence/visual-readback/home-empty-r2.receipt.jsonl",
+    "raw_sha256": "65f8dc17772080ad1db5836c110f1070537e963d28024fec38ecd8dabe6af1f8",
+    "thread_id": "825095f0-2238-4aee-be11-0019cd816a84"
+  },
+  "index": {
+    "index_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/visual_readback_index.v1.json",
+    "index_sha256": "223bc6e9fe256c65390040b12f37e8f44e80aa11b7769240df2a4cff9970d56f",
+    "counts": {
+      "reused_design": 1,
+      "new_design_read": 0,
+      "new_runtime_read": 0
+    }
+  }
+}

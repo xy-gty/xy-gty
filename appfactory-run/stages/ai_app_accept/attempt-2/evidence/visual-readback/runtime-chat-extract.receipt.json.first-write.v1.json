@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "runtime-chat-extract.receipt.json",
+  "verdict_sha256": "e34ddfa7e015f9d21cd97ce4d5eadb76cdf005604f4cc1d6e5429db56b296151",
+  "written_at": "2026-10-13T13:00:08Z"
+}

@@ -1,0 +1,1 @@
+Visible: Brief detail with extracted fields and action items list, CTAs for Chat extract / Speak briefing / Summary card, DocBrief AI chrome.

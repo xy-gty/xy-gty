@@ -1,0 +1,14 @@
+Dispatch `90b14fba-…` finished **ready**.
+
+Repair attempt-2 delivered the four permission keys and four entry points, republished `candidate_unaccepted` `09c4c0c3ca4b-7ce60dbd04e8`, and finished via `cursor-package ultra-lite finish`.
+
+| Item | Result |
+|---|---|
+| Product commit | `09c4c0c3ca4b546b94253a7cd3d89f119e0b272b` |
+| Plist | Camera / Photos / Mic / Speech Recognition |
+| Entry points | Take photo · Add photos · Voice supplement (chat + TTS) |
+| Children | `ui_business` + `ai_privacy` validated |
+| Build / domain tests / smoke | succeeded (UDID `C83D64D9-…`) |
+| Candidate | `artifacts/candidates/09c4c0c3ca4b-7ce60dbd04e8/` |
+| MAP | `stages/ai_app_build/attempt-2/MAP.md` |
+| Finish | `status: ready`No follow-up needed. [child_ui_business](11f86132-050c-452d-adf8-b3df9cc9cbea) and [child_ai_privacy](1474b48c-54ac-49b0-881a-7dc2f3edb3ea) already landed in the repair commit; build/smoke/candidate and `finish ready` are done.

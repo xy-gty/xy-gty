@@ -1,0 +1,75 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project DocBriefAccept.xcodeproj -scheme DocBriefAccept -destination "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A" -derivedDataPath /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest "-only-testing:DocBriefAcceptUITests/DumpSettings/testDump" "-only-testing:DocBriefAcceptUITests/FourPerm/testFourPermissionEntryPoints" CODE_SIGNING_ALLOWED=YES CODE_SIGN_IDENTITY=-
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = -
+    CODE_SIGNING_ALLOWED = YES
+
+note: Using codesigning identity override: -
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'DocBriefAcceptUITests' in project 'DocBriefAccept'
+        ➜ Explicit dependency on target 'DocBriefAcceptHost' in project 'DocBriefAccept'
+    Target 'DocBriefAcceptHost' in project 'DocBriefAccept' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: a62c5fd625229bca3c60e2902c2fbbc2
+Build description path: /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/XCBuildData/a62c5fd625229bca3c60e2902c2fbbc2.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness/DocBriefAccept.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+ProcessInfoPlistFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/Info.plist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptHost.build/empty-DocBriefAcceptHost.plist (in target 'DocBriefAcceptHost' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-infoPlistUtility /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptHost.build/empty-DocBriefAcceptHost.plist -producttype com.apple.product-type.application -genpkginfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/Info.plist
+
+CopySwiftLibs /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app (in target 'DocBriefAcceptHost' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/DocBriefAcceptHost.debug.dylib --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/Frameworks --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/PlugIns --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/SystemExtensions --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptHost.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptHost.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ProcessInfoPlistFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Info.plist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/empty-DocBriefAcceptUITests.plist (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-infoPlistUtility /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/empty-DocBriefAcceptUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Info.plist
+
+CopySwiftLibs /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest (in target 'DocBriefAcceptUITests' from project 'DocBriefAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/uitest-harness
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/DocBriefAcceptUITests --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/PlugIns --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/SystemExtensions --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Products/Debug-iphonesimulator/DocBriefAcceptUITests-Runner.app/PlugIns/DocBriefAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Build/Intermediates.noindex/DocBriefAccept.build/Debug-iphonesimulator/DocBriefAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+2026-10-13 20:40:13.310027+0800 DocBriefAcceptUITests-Runner[80582:4235683] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 20:40:14.231.
+Test Suite 'DocBriefAcceptUITests.xctest' started at 2026-10-13 20:40:14.232.
+Test Suite 'DocBriefAcceptUITests.xctest' passed at 2026-10-13 20:40:14.232.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-13 20:40:14.232.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+2026-10-13 20:40:14.518 xcodebuild[80569:4235355] [MT] IDETestOperationsObserverDebug: 2.458 elapsed -- Testing started completed.
+2026-10-13 20:40:14.518 xcodebuild[80569:4235355] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 20:40:14.518 xcodebuild[80569:4235355] [MT] IDETestOperationsObserverDebug: 2.458 sec, +2.458 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/DerivedData-uitest/Logs/Test/Test-DocBriefAccept-2026.10.13_20-40-09-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

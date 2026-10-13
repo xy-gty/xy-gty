@@ -1,0 +1,13 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "d4714348-9bbd-4831-9094-ecf187facb74",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_d47143489bbd48319094ecf187facb74",
+    "prompt": "Dispatch d4714348-9bbd-4831-9094-ecf187facb74. Read /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/ai_app_accept/attempt-2/codex.launch.md SHA-256 4a7928bd7cd71660ee8fe8102e0f2a3b3a862099fc55b1ed22f66758f5948ab4. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-d4714348-accept",
+  "agent_name": "/root/pkg_d47143489bbd48319094ecf187facb74"
+}

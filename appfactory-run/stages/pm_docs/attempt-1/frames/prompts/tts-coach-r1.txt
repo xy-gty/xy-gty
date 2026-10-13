@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI. Warm paper coach screen, teal highlight on current segment, amber Play. English UI. Large legible text.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: tts-coach — Spoken briefing coach
+Nav "Speak briefing". Large waveform/play indicator. Current segment highlighted: "Action 1 of 2 — Submit expense by Friday". Controls Play, Pause, Next, Replay. List of upcoming segments below.
+Offline local text only; no TurboScan branding; no paywall.

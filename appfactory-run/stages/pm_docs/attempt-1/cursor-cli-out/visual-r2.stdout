@@ -1,0 +1,16 @@
+**8/8 DocBrief r2 frames pass.** No MAP/manifest freeze. SnagCue r1 seeds untouched.
+
+| Frame | Verdict | PNG | Vision receipt |
+|-------|---------|-----|----------------|
+| home-empty-r2 | pass | `.../frames/home-empty-r2.png` | `.../visual-readback/home-empty-r2.receipt.json` |
+| capture-import-r2 | pass | `.../frames/capture-import-r2.png` | `.../visual-readback/capture-import-r2.receipt.json` |
+| fields-review-r2 | pass | `.../frames/fields-review-r2.png` | `.../visual-readback/fields-review-r2.receipt.json` |
+| brief-detail-filled-r2 | pass | `.../frames/brief-detail-filled-r2.png` | `.../visual-readback/brief-detail-filled-r2.receipt.json` |
+| chat-extract-r2 | pass | `.../frames/chat-extract-r2.png` | `.../visual-readback/chat-extract-r2.receipt.json` |
+| summary-card-r2 | pass (1 regen) | `.../frames/summary-card-r2.png` | `.../visual-readback/summary-card-r2.receipt.json` |
+| tts-briefing-r2 | pass | `.../frames/tts-briefing-r2.png` | `.../visual-readback/tts-briefing-r2.receipt.json` |
+| settings-privacy-r2 | pass | `.../frames/settings-privacy-r2.png` | `.../visual-readback/settings-privacy-r2.receipt.json` |
+
+Base: `/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/stages/pm_docs/attempt-1/`
+
+Also written: `/Users/a2026/work/pm-visuals-image-mcp/drops/*-r2.png` and `seed/*-r2.png` (640×1392). GrokBot batch used `local_seed`. Status appended to `work/docbrief-progress.md`.Vision readback for all 8 DocBrief r2 frames finished successfully. Final score: **8/8 pass** (summary-card regenerated once for branding, then passed). Receipts are under `evidence/visual-readback/*-r2.receipt.json`.

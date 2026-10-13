@@ -1,0 +1,140 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "DocBrief AI",
+    "development_bundle_id": "com.lingguang.docbrief",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "document_whiteboard_receipt_photo_import_and_type_field_recognition_review",
+    "local_brief_and_action_item_persistence",
+    "ai_chat_action_deadline_extract_with_consent_gate",
+    "visual_summary_card_generation",
+    "tts_spoken_briefing",
+    "local_legal_pages_and_non_certification_disclaimer",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "Brief",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "DocumentPhoto",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "RecognitionDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ExtractedField",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ActionItem",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "SummaryCardDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    },
+    {
+      "name": "BriefingSession",
+      "persistence": "session_plus_step_index"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "RecognitionReviewBar",
+      "confirm": "Save",
+      "reject": "Not this",
+      "edit": "Edit fields"
+    },
+    {
+      "name": "ActionReview",
+      "confirm": "Save",
+      "reject": "Not this"
+    },
+    {
+      "name": "SummaryCardPreview",
+      "confirm": "Use",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "docbrief.consent.v1",
+      "fields": [
+        "document_photo_bytes",
+        "recognized_type",
+        "extracted_fields",
+        "chat_text",
+        "action_hints"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    },
+    {
+      "name": "BriefingTTS"
+    }
+  ],
+  "navigation": [
+    "HomeTab",
+    "NewBrief",
+    "ImportCapture",
+    "RecognitionReview",
+    "BriefDetail",
+    "ChatExtract",
+    "ActionReview",
+    "SummaryCard",
+    "TTSBriefing",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Save",
+    "reject": "Not this",
+    "edit": "Edit fields"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "a4797be8319c36eeb4a621b03ca21041ef686eef5ba3bf7636256097c3fbf0ab"
+    }
+  ],
+  "goal_sha256": "93372ec004c8f94f121b17dd7bdc1efef8b23f9950d98a379d749e9e43c11005",
+  "frozen_at": "2026-10-13T10:07:41Z"
+}

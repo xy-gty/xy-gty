@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "code": "ok",
+  "backend": "grok_bot_generate_image",
+  "mcp_root": "/Users/a2026/work/pm-visuals-image-mcp",
+  "webhook_url_configured": true,
+  "webhook_key_configured": true,
+  "wrapper": "/Users/a2026/work/factory-prod-2/skills/claude-gpt-image/scripts/generate_grokbot_image.py"
+}

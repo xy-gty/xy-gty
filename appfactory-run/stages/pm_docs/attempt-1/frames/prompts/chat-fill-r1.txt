@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI. Warm paper chat, teal bubbles secondary, amber Send. English UI. Large legible text.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: chat-fill — Extract actions via chat
+Nav "Chat extract". Bubble thread: user "Pull actions and deadlines", assistant proposing Action "Expense submit by Friday" with Save / Not this chips under the proposal. Composer at bottom with Send button, keyboard toolbar visible but not covering content.
+No TurboScan branding, no paywall.

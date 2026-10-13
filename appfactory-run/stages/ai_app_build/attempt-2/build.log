@@ -1,0 +1,1041 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project DocBrief.xcodeproj -scheme DocBrief -destination "platform=iOS Simulator,id=C83D64D9-AB8C-4908-B82B-53091BCC4F9A" -derivedDataPath /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData -configuration Debug CODE_SIGNING_ALLOWED=YES CODE_SIGN_IDENTITY=- build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = -
+    CODE_SIGNING_ALLOWED = YES
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  DocBriefDomain: /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+  AppRuntimeCore: /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+
+note: Using codesigning identity override: -
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'DocBrief' in project 'DocBrief'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'DocBriefDomain' in project 'DocBriefDomain'
+    Target 'DocBriefDomain' in project 'DocBriefDomain'
+        ➜ Explicit dependency on target 'DocBriefDomain' in project 'DocBriefDomain'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'DocBriefDomain' in project 'DocBriefDomain'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 7a910ddfb8faadcbf14c961ddb3d46b9
+Build description path: /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/XCBuildData/7a910ddfb8faadcbf14c961ddb3d46b9.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief-12fb613ccd118fbe845fba2018afbb92-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief-12fb613ccd118fbe845fba2018afbb92-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-create-build-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.modulemap (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.modulemap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyMetadataFileList (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyStaticMetadataFileList (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-OutputFileMap.json (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_const_extract_protocols.json (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.LinkFileList (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.LinkFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftConstValuesFileList (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/empty-DocBrief.plist (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/empty-DocBrief.plist
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftConstValuesFileList (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_const_extract_protocols.json (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_const_extract_protocols.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/DocBriefDomain.modulemap /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.modulemap (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.modulemap /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-OutputFileMap.json (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.LinkFileList (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.LinkFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyStaticMetadataFileList (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyMetadataFileList (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-project-headers.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-project-headers.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-own-target-headers.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-generated-files.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-generated-files.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-non-framework-target-headers.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-target-headers.hmap (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibPath-normal-arm64.txt (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibInstallName-normal-arm64.txt (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/Entitlements-Simulated.plist (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    write-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList
+
+MkDir /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /bin/mkdir -p /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore.modulemap /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+SwiftDriver AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdarg-B3MFHRJ1S0HHAR3T27J5KMRC5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftShims-37GB58LDZ3YXKPTW8CC7MH8KB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-7KMEG28FJN1O3J9FTWOPQ0MQT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ptrauth-CPNGCRA4THU4250J4664AGVPE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_float-ORBU2T7LHA2VQKTCKEENUDG0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_AvailabilityInternal-9W387O4513W0A9AA2K18OUXIU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stddef-6Q242FIFHCQ9J7TMUT046DJP4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdbool-EIDPYJJPC8VNP64D1EV56MO5C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-343P1M7E6JZVJFUBH4CIW33ZZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ptrcheck-9181IJS7NHVLM6YSHI1FJ2POV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation1-3RVLPA4ZD9YI4FH6K49AIH5CF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_limits-6KSH7CFZ8XGC0XYJ4HSZZU0PZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation2-8ZHMNZCP8UXW46B6FXMOMUGYK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ExtensionFoundation-XZ6SKSAT82CZRT5BDKJ9GYG6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdint-1Y9QPVWULDNZCER6NL5SYG296.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_tgmath-E0BW7II1C0EI2GHGR9DIMCQNS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/sys_types-ANT7OMB298EK8JWG1037T8CNY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-8BBG18FBR4H63939IZ38BUS5S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation3-9FGJZ2XONAU84D9KSJVVXJDWC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-3E45IPMG5HYPOS6RMS872GP04.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_inttypes-7OY0J43C6LRIYQPKU0GWRRNTF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Darwin-ANPI03KG27C1Z4UXRGTFW2BK7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/simd-DB3II5PH8JSE7LTY2HAPJQBEV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ObjectiveC-9G2NMT47AOXSXS9LP42VSO1KM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/MachO-7KOWNFYJHF2MGMFSGYHE4GYCJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os_object-5C9ABUZ6L4N9IO8ZVGWW44ZCR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os_workgroup-ASUACNH2I499MGXAYO6XU7UXH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Spatial-193GPP6MMI3LLWVVOV36JC30F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Dispatch-5O7IKFWS7MGZV50LFXNZ4XPBJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/XPC-DM4J72DGJD6QRZ9BNY55YS4DG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/dnssd-BR7WQREODDJANO7MYOUGVD82J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreFoundation-8KLQF798HFAAK9UL2X7LV5M3F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os-5QF7JK3PTMW2LG68TKRWTWWGM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreGraphics-6ESPJYZ0YSQIEGW4T0CK34Z89.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CFNetwork-ASGJY0DZ7UPDPCE1CIFQ1VJRK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Security-DKYSDC8ZH72GSSBARKEW8J05P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreAudioTypes-DGWXI27BUFE8I695VXLTTN4FB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreAudio-838CBZB3IJWN9Z0V6YHI6JVU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Foundation-5W76U0NJNCGG0HWCFC7515B5T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreText-BHFTJ3WAWXJF4GU800RDGEI6P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ImageIO-AJAVI1TJZOVK5WZQ4BYQQ4ZZE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/FileProvider-1OB7C2B8EP5LJRE8IFHVA1CDL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreData-2IN2X13AHHYW50Y8S1NVVBTHW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Network-908647HBJ7XG2V5M55I4WKEWK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/OSLog-A5PA38HYL5PYIL01JFWVSE5I4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/DataDetection-1GMOCXT18Y2HP0WUJKQ2WQ43E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreTransferable-2GH1LV79TBEHUPUMMCAQ38W4C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreMIDI-9IQBHM748BURWIMZSKSAFC6BS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/OpenGLES-7G6LL5CQSG8HMHXS56BE0BOTD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Symbols-U0NQ7EKYZ3YIJZFEJULS1F35.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UserNotifications-ESU2KZ4FE257XE04DS3FCIMI1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/IOSurface-96CI2PSNYNHPCQ1R5IWBLV9CS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_LocationEssentials-DXCH7BKN9001XXVVL7M5JPDCG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Accessibility-7M5JYMKJUQ0CQ00VF05731MIO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-5K24NCOZ4QA85NAJD0YDTB71G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UIUtilities-64OUTZE573L4LFZQE75ZW9ESU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AudioToolbox-8VJ4G8XTQBU46LH877HS6K6LN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVRouting-AZNSEZSBE2TZ5RRW1ZONKXZVJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreLocation-8ZPQBJ8CC6MKNQHAVMKGP14M3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Metal-DIOKYTY3V58JW8FWBFES07LW6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreVideo-DD78X5EGFD8O3RJ04AYBSG9NV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreImage-74Q6LCWZQ41MXU7EL6IJD1GUM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/QuartzCore-69RX0869D4XKP2R0JO71VGZPK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreMedia-3M9M44YKPC2KGLM6US9XG7CQE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftUICore-EDV8NJT97V8GEY85K736Z7UPZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/MediaToolbox-4QH2D2MNY5JHK9T2C9N7PJZES.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVFAudio-2R2MOLQUAVEVJSNHFBQ3VP67V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UIKit-62UXZH7D5GPXGTBNYPN93GIP7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVFoundation-2RDOSW0VBMQS084MRFQ94J3K5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Photos-6MS8KG4ELZW0WYWAC07OZNB6T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/PhotosUI-CD5T2TRJCUY3XHIPOMWEQI3Y6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftUI-8ZEZW3IXQY35JTG6JRQ1OJCPL.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+EmitSwiftModule normal arm64 (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AtomicCodableStore.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ RuntimeForm.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ PhotoImportSession.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AIConsentGate.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ TypedNavigationStore.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ KeychainCredentialStore.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriver\ Compilation\ Requirements AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-swiftHeaderTool -arch arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver DocBriefDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefDomain -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ ReviewControls.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/ReviewControls.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/ReviewControls.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ StorageFacades.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/StorageFacades.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/StorageFacades.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ DocBriefDomain (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+EmitSwiftModule normal arm64 (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Identity.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Identity.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Identity.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Navigation.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Navigation.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Navigation.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for DocBriefDomain (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriver\ Compilation\ Requirements DocBriefDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefDomain -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 Compiling\ PhotoImportFacade.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/PhotoImportFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/PhotoImportFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftMergeGeneratedHeaders /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/DocBriefDomain-Swift.h /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-Swift.h (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-swiftHeaderTool -arch arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-Swift.h -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/DocBriefDomain-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftdoc (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.abi.json (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftsourceinfo (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ ConsentFacade.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/ConsentFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/ConsentFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 Compiling\ Entities.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Entities.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/Entities.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ OutboundAIBoundary.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/OutboundAIBoundary.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/OutboundAIBoundary.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 Compiling\ BriefingTTS.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/BriefingTTS.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBriefDomain/BriefingTTS.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Identity.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+ProcessProductPackaging "" /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "8M69TZZ38Y.com.lingguang.docbrief";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReviewControls.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+ProcessProductPackagingDER /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent.der (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /usr/bin/derq query -f xml -i /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent.der --raw
+
+SwiftDriver DocBrief normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBrief -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief-12fb613ccd118fbe845fba2018afbb92-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling ConsentFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling PhotoImportFacade.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Navigation.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling OutboundAIBoundary.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling StorageFacades.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Entities.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-83MGF323ZD5QM0L11BD2AW1U8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stddef-D5Q1XHJ7O30EK0F4RLTZQI7D7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ptrauth-D6GSRS8Y5HD5QLYPLNM2WTGFC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdbool-IO2T5V30UL19S67BK30OW8UN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftShims-NQ12AHTIA358TLBI4TT0980K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdarg-36PNX2G39BEQ4JVL7A65JMM04.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_AvailabilityInternal-BIGETBIOOEUOX5UVAX9UMXPMS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ptrcheck-5BNMA96EOPX0TJZOPKU03G21Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-8NV7CHBHH3ODB41ITF5ODCKBT.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling BriefingTTS.swift (in target 'DocBriefDomain' from project 'DocBriefDomain')
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_float-27995K04PIHF1WI8CU3GVEPDM.pcm
+
+SwiftDriver\ Compilation DocBriefDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBriefDomain -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation1-8HJILJXH860ISNFPBDD8QQEP5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation2-78MWFOGLF5VRIJCU73JQG2VKU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_limits-8ING3INFMMIK9NH1SH99U7LMN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ExtensionFoundation-EGOCJUE2H2CKML4NGZNIV5YHQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_tgmath-D8QWI9RSWBSLYZN9ITJ8BSK1L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdint-8ZQP8G8ZGWWARDQ0DTN6UKCYI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/sys_types-DGSF5C00S2KULQCXO3AVB4ILF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_DarwinFoundation3-7DLS025IARHNS58H9WL04WGQ9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-A6J37N1ECM07IJZDRGHVOPO96.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-6XC68RVQG0X1Y8LP30BBD7U6N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_Builtin_inttypes-6X9MJYHAY74KGSNSCKAIJJDHO.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriver\ Compilation AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DocBrief.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o normal (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Darwin-A3I4FFUFMENK0U4T31WX8CVS9.pcm
+
+ExtractAppIntentsMetadata (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name AppRuntimeCore --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier appruntimecore.AppRuntimeCore --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o --dependency-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat --stringsdata-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList --static-metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList --swift-const-vals-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-13 20:23:30.949 appintentsmetadataprocessor[72072:4189582] Starting appintentsmetadataprocessor export
+2026-10-13 20:23:30.966 appintentsmetadataprocessor[72072:4189582] Extracted no relevant App Intents symbols, skipping writing output
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/simd-GXNLTKP901YR2EHNWLPF97H3.pcm
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/Vendor/AppRuntimeCore
+    builtin-RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o normal (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-linker-args.resp -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o
+
+ExtractAppIntentsMetadata (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name DocBriefDomain --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier product.DocBriefDomain --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o --dependency-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain_dependency_info.dat --stringsdata-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftFileList --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyMetadataFileList --static-metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/DocBriefDomain.DependencyStaticMetadataFileList --swift-const-vals-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-13 20:23:31.024 appintentsmetadataprocessor[72077:4189603] Starting appintentsmetadataprocessor export
+2026-10-13 20:23:31.030 appintentsmetadataprocessor[72077:4189603] Extracted no relevant App Intents symbols, skipping writing output
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o
+
+RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o (in target 'DocBriefDomain' from project 'DocBriefDomain')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBriefDomain.o
+
+CpResource /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/PrivacyInfo.xcprivacy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/PrivacyInfo.xcprivacy (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/PrivacyInfo.xcprivacy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+CpResource /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/terms.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/terms.html (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/terms.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/__preview.dylib normal (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -install_name @rpath/DocBrief.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/__preview.dylib
+
+ProcessInfoPlistFile /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Info.plist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/empty-DocBrief.plist (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-infoPlistUtility /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/empty-DocBrief.plist -producttype com.apple.product-type.application -genpkginfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Info.plist
+
+CpResource /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/privacy.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/privacy.html (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/privacy.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+CpResource /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/support.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/support.html (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Resources/Legal/support.html /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ObjectiveC-EJFKFJ4PH9RZCAFAMK4XXWR1Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/MachO-62VSRF3WI843PH3N2O2BDMJFB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os_object-5GTBG5Z6PC5VSIXKCFIGEBFYV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os_workgroup-CRT3CONFAJWVQO3BI42JCF5BT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Spatial-4N6MXMX04288IJMQQR3RT77VT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Dispatch-40OQT3FZIOH8K2RVR9UONWUG6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/dnssd-1ZEQ6INWCUKXYBLI83C1QKLEY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreFoundation-C2I1J1IRQ9LZFSVCYLNRLS81V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/XPC-39NRNFLRYP5NXVVMVFUH02SCX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/os-EYX59T6WZXWREJ2YO9K42UPG5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Security-F3K79FQ2QYZ7ZOD5FV5JF2JUM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreAudioTypes-A0RDU6D3FR74EKIV8WD04IINO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CFNetwork-9VFTUWTM4TK1GMAL19AYLDO22.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreGraphics-1CSC205A1VGMH5VFTTGP4ECAE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreAudio-AV2WB0V95T89FW0WZ7G99O44C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Foundation-PRQNILZ6IXD43CEIJJE9IIT8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/ImageIO-57RAHVZI9IIARS7IYIBRJS9ET.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreText-CRI6XCQTBWCGWVILX7MUIU8U5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Network-99RWWQ75F0TPO38FIEZ20OU88.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/OpenGLES-D9GMT9TRPG1OO81C1OMEKHUS4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreData-AV3PLJ5E2UK5DDAB1AN7A1NAF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/_LocationEssentials-BFFD2LHZYQA0ZI3XDG5EQ94HW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UserNotifications-234301GYWNVF6KPLXNCL56FYM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/IOSurface-C3XB1DBD5PWGC6U9UCQQR5D3C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreMIDI-3NGSVZXPWRJ6DOQROBWMBIE84.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/DataDetection-92807R50JFI0UDFFBSMPB83MS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/FileProvider-AJE71ZTG74VCGM4CZNUEC89W4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Accessibility-QD1F7JYGJ9DI649UKA872E7O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UIUtilities-DQZKZRTYMYGIIEV4QPD1AWL5M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreLocation-5PPCGAOUVJTQGEMLZ3IZ4KU17.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Symbols-BQIPYU37YBW2JPUDQD4UBGIWJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/OSLog-95TXDO416IWKJW6HHHECKE5CM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-ARZMB97RGH2ULF3134R54XCXQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Metal-CQSADZDNDBW8Z4CPJ2RUDOFOJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreTransferable-5UC7ELJG6MGG7YPENX9YW4M6Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVRouting-1BADVWQJLOTCMAA2781QPRYFI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AudioToolbox-8UFX1USK5AVRWGIZBRN2EZSH5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreVideo-1GXIYRT9EZHKTJH3X6S1D0007.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/QuartzCore-DNGAXLG5M4IX5AA7PZD9MXMPB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreImage-CPG890QI50JHZVR5FFDY3UDPD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/CoreMedia-2SORR3R77N3XWEDG28BL3YMG8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftUICore-BK7WD35HGAW3CKCSMK4YGESF7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/UIKit-3YKVTFFF8LIQS8O48POIUCS8H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/MediaToolbox-29UHP1G0E97C5H3TJ6X9SQK78.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVFAudio-DNXXF24G468JGBWIB5RHXT5IW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/AVFoundation-CN397FKO3KYYO5PX9KI9UA9F9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Speech-B3ZEZL55TT39YLSAMPAUYZWZ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Photos-6GBUWZV0VOQA7EK91QOHNWWWP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/WebKit-D0G4RUK9QV959A07LQ33EOWPQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/PhotosUI-4JZTCK8KRMQWT5UGQVNS2FTWW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/SwiftUI-CYEBSNG0QRF31VKEJ1RQO1H34.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ DocBrief (in target 'DocBrief' from project 'DocBrief')
+
+EmitSwiftModule normal arm64 (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ VoiceSupplementSession.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/VoiceSupplementSession.swift (in target 'DocBrief' from project 'DocBrief')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/VoiceSupplementSession.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/VoiceSupplementSession.swift:37:45: warning: 'requestRecordPermission' was deprecated in iOS 17.0: Please use AVAudioApplication requestRecordPermissionWithCompletionHandler
+            AVAudioSession.sharedInstance().requestRecordPermission { granted in
+                                            ^
+
+SwiftCompile normal arm64 Compiling\ SettingsPrivacyView.swift,\ SummaryCardView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/SettingsPrivacyView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/SummaryCardView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/SettingsPrivacyView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/SummaryCardView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ TTSBriefingView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/TTSBriefingView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/TTSBriefingView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ RecognitionReviewView.swift,\ RootTabView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/RecognitionReviewView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/RootTabView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/RecognitionReviewView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/RootTabView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ LocalLegalWebView.swift,\ NewBriefView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/LocalLegalWebView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/NewBriefView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/LocalLegalWebView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/NewBriefView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ CameraCapturePicker.swift,\ ChatExtractView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/CameraCapturePicker.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/ChatExtractView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/CameraCapturePicker.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/ChatExtractView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ HomeView.swift,\ ImportCaptureView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/HomeView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/ImportCaptureView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/HomeView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/ImportCaptureView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ ConsentSheet.swift,\ DeepSeekClient.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/ConsentSheet.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/DeepSeekClient.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/ConsentSheet.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/AI/DeepSeekClient.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ DocBriefApp.swift,\ DocBriefTheme.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/DocBriefApp.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/DocBriefTheme.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/DocBriefApp.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/DocBriefTheme.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftCompile normal arm64 Compiling\ AppModel.swift,\ BriefDetailView.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/BriefDetailView.swift (in target 'DocBrief' from project 'DocBrief')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift:161:13: warning: variable 'brief' was never mutated; consider changing to 'let' constant
+        var brief = Brief(title: title)
+        ~~~ ^
+        let
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift:269:17: warning: variable 'photo' was never mutated; consider changing to 'let' constant
+            var photo = DocumentPhoto(
+            ~~~ ^
+            let
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift:327:17: warning: variable 'item' was never mutated; consider changing to 'let' constant
+            var item = ActionItem(
+            ~~~ ^
+            let
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift:457:19: warning: variable 'draft' was never mutated; consider changing to 'let' constant
+        guard var draft = editingDraft ?? activeDraft else { return }
+              ~~~ ^
+              let
+/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/Services/AppModel.swift:582:16: warning: variable 'item' was never mutated; consider changing to 'let' constant
+        if var item = pendingActionDraft, let feedback,
+           ~~~ ^
+           let
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/App/UI/BriefDetailView.swift (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for DocBrief (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriver\ Compilation\ Requirements DocBrief normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBrief -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief-12fb613ccd118fbe845fba2018afbb92-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling TTSBriefingView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftMergeGeneratedHeaders /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/DocBrief-Swift.h /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-Swift.h (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-swiftHeaderTool -arch arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-Swift.h -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/DocBrief-Swift.h
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftdoc (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftdoc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+SwiftDriverJobDiscovery normal arm64 Compiling DocBriefApp.swift, DocBriefTheme.swift (in target 'DocBrief' from project 'DocBrief')
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.abi.json (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.abi.json /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftsourceinfo (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftsourceinfo /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CameraCapturePicker.swift, ChatExtractView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsPrivacyView.swift, SummaryCardView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RecognitionReviewView.swift, RootTabView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HomeView.swift, ImportCaptureView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ConsentSheet.swift, DeepSeekClient.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling LocalLegalWebView.swift, NewBriefView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling VoiceSupplementSession.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppModel.swift, BriefDetailView.swift (in target 'DocBrief' from project 'DocBrief')
+
+SwiftDriver\ Compilation DocBrief normal arm64 com.apple.xcode.tools.swift.compiler (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name DocBrief -Onone @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_const_extract_protocols.json -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-generated-files.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-own-target-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief-12fb613ccd118fbe845fba2018afbb92-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-project-headers.hmap -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources-normal/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources/arm64 -Xcc -I/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib normal (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -filelist /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.LinkFileList -install_name @rpath/DocBrief.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief-linker-args.resp -Wl,-no_warn_duplicate_libraries -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -Xlinker -add_ast_path -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain.swiftmodule @/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBriefDomain.build/Debug-iphonesimulator/DocBriefDomain.build/Objects-normal/arm64/DocBriefDomain-linker-args.resp
+
+ConstructStubExecutorLinkFileList /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-ExecutorLinkFileList-normal-arm64.txt (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    construct-stub-executor-link-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'DocBrief' from project 'DocBrief')
+
+Ld /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief normal (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.app-Simulated.xcent.der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib -Xlinker -no_adhoc_codesign -o /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief
+
+CopySwiftLibs /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Frameworks --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/PlugIns --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/SystemExtensions --scan-folder /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name DocBrief --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.lingguang.docbrief --output /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief --dependency-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief_dependency_info.dat --stringsdata-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftFileList --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyMetadataFileList --static-metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyStaticMetadataFileList --swift-const-vals-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/Objects-normal/arm64/DocBrief.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-13 20:23:33.890 appintentsmetadataprocessor[72155:4189846] Starting appintentsmetadataprocessor export
+2026-10-13 20:23:33.891 appintentsmetadataprocessor[72155:4189846] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Info.plist --temp-dir-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/ssu --bundle-id com.lingguang.docbrief --product-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app --extracted-metadata-path /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Metadata.appintents --metadata-file-list /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Intermediates.noindex/DocBrief.build/Debug-iphonesimulator/DocBrief.build/DocBrief.DependencyMetadataFileList --source-file /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/Info.plist --archive-ssu-assets
+2026-10-13 20:23:33.907 appintentsnltrainingprocessor[72156:4189848] Parsing options for appintentsnltrainingprocessor
+2026-10-13 20:23:33.907 appintentsnltrainingprocessor[72156:4189848] Starting AppIntents SSU YAML Generation
+2026-10-13 20:23:33.909 appintentsnltrainingprocessor[72156:4189848] No AppShortcuts found - Skipping.
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/DocBrief.debug.dylib
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/__preview.dylib (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app/__preview.dylib
+
+CodeSign /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-RegisterExecutionPolicyException /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+Validate /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    builtin-validationUtility /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app (in target 'DocBrief' from project 'DocBrief')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product
+    /usr/bin/touch -c /Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/product/DerivedData/Build/Products/Debug-iphonesimulator/DocBrief.app
+
+** BUILD SUCCEEDED **
+

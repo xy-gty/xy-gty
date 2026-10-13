@@ -1,0 +1,28 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "导入照片 → 人审类型/字段 → 聊天抽行动项 → 人审保存 → 摘要卡（可选）→ TTS 口述简报"
+  ],
+  "differentiation": {},
+  "diversity_key": "docbrief ai 需要把纸质 白板 收据材料快速整理成可跟进简报的自由职业者 小团队协调人 商务与行政人员 要的是 讲清楚下一步 不是又一个纯扫描器 新建 brief 拍或导入文档 白板 小票照片 导入文档 白板或小票照片 ai 辅助识别类型与关键字段 聊天抽取行动项与截止日期 生成视觉摘要卡 再用 tts 口述简报 本地可离线使用已保存的 brief",
+  "feature_blocks": [
+    "Brief：一次简报会话；含 title、sourcetypehint、createdat、status",
+    "DocumentPhoto：属于 Brief；本地文件路径 + 导入顺序",
+    "RecognitionDraft：AI 识别草稿（类型 + 字段）；未确认前不进 ExtractedField",
+    "ExtractedField：已确认字段；key、value、confidencehint",
+    "ActionItem：已确认行动项；title、duedate、ownerhint、status、sourcerefs",
+    "SummaryCardDraft：视觉摘要卡草稿；绑定 Brief + 选中字段/行动项",
+    "AIConsentRecord：同意版本 docbrief.consent.v1 + 撤销状态",
+    "BriefingSession：TTS 会话；当前段落/ActionItem 索引",
+    "关联：Brief 1—N DocumentPhoto / ExtractedField / ActionItem / SummaryCardDraft；RecognitionDraft →（确认）ExtractedField。"
+  ],
+  "product_fingerprint": "887a4e2084ba7d176fdf8b2bf4d4b1c674205f6c29f5fd10c00ca23adebddd92",
+  "product_name": "DocBrief AI",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "需要把纸质/白板/收据材料快速整理成可跟进简报的自由职业者、小团队协调人、商务与行政人员；要的是「讲清楚下一步」，不是又一个纯扫描器。",
+  "user_problem": "新建 Brief，拍或导入文档/白板/小票照片。",
+  "value_proposition": "导入文档、白板或小票照片，AI 辅助识别类型与关键字段，聊天抽取行动项与截止日期，生成视觉摘要卡，再用 TTS 口述简报——本地可离线使用已保存的 Brief。"
+}

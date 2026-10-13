@@ -1,0 +1,8 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for DocBrief AI (iOS document/whiteboard/receipt briefing coach). Warm paper #F3EDE3 background, ink #1C2430 text, teal #1F6F6B brand, amber #D97706 CTA. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: home-empty — Empty briefs home
+Top nav title DocBrief AI. Empty state: document-with-sparkles icon, headline "No briefs yet", subcopy "Import a document, whiteboard, or receipt photo to start", primary filled amber button "Start brief". Bottom tab bar Briefs selected, Active, Settings.
+No TurboScan branding. No paywall, no coin UI, no ATT prompt. Photoreal phone chrome only as thin bezel; UI must fill the tall column.
+Disclaimer strip at bottom of content: "Not a financial or legal certification".

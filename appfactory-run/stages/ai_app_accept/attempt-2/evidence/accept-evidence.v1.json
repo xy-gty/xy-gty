@@ -1,0 +1,116 @@
+{
+  "schema": "appfactory.ai_app_accept_evidence.v1",
+  "run_id": "kf-20261013T095745Z-aa3ad9a0",
+  "attempt": 2,
+  "product_commit": "09c4c0c3ca4b546b94253a7cd3d89f119e0b272b",
+  "candidate": "09c4c0c3ca4b-7ce60dbd04e8",
+  "executable_sha256": "8d469e450c6ee5e044f72539cee16cfcd4898904564c909b7d8ea2e0694e8ea2",
+  "pm_visual_manifest_sha256": "ce43e843fe336a5ad2098904dd7a7048610dfd94a8e0011242a20c00adbca1fc",
+  "simulator_udid": "C83D64D9-AB8C-4908-B82B-53091BCC4F9A",
+  "dispatch_id": "d4714348-9bbd-4831-9094-ecf187facb74",
+  "files": [
+    {
+      "ref": "evidence/four-perm-plist.json",
+      "sha256": "e2fe7613e6d5a1c6d8121e0341681610f088984151f9144f7b21fe8069c791a2",
+      "bytes": 1110
+    },
+    {
+      "ref": "evidence/uitest-core.log",
+      "sha256": "c7452a56db1fcbe3fd138fc9a1d0f4a40369c762293d6c8ccc20266652442c80",
+      "bytes": 233826
+    },
+    {
+      "ref": "evidence/uitest-fourperm3.log",
+      "sha256": "4d857d9a7854f662965fb5cb30765a557e9bec895a51aa00e872650f581aca43",
+      "bytes": 56031
+    },
+    {
+      "ref": "evidence/uitest-round2.log",
+      "sha256": "25180b31a801bc0d1da218009d1a50ca758cca97cb1087b52ccbb42934a8544b",
+      "bytes": 121411
+    },
+    {
+      "ref": "evidence/config-key.inspect.json",
+      "sha256": "4feb148da8ab5412bee27731fcc9fedee70e2b224072ddf3e72f012549d3fe74",
+      "bytes": 169
+    },
+    {
+      "ref": "evidence/config-audit.receipt.json",
+      "sha256": "344915135d1aa92d596a97b8744e6123629ec0f5362ce6e7b2787deaa4068044",
+      "bytes": 566
+    },
+    {
+      "ref": "evidence/screenshot-hashes.txt",
+      "sha256": "8d4dc0e54bad8318d3753153b3bdf6d92fc83d81555e8c0afeec535fbbb968cc",
+      "bytes": 822
+    },
+    {
+      "ref": "evidence/ul07-vision-extract.json",
+      "sha256": "5de172cbe4856e16f405d44b71451f835008eee68a6dc0d3304623327bbdc3d3",
+      "bytes": 13242
+    },
+    {
+      "ref": "evidence/design-reuse-summary.json",
+      "sha256": "be00d5281a25574122cf2f76c1ef5c64eb11e8ab21b11cbba1f28a17668438e7",
+      "bytes": 16101
+    },
+    {
+      "ref": "evidence/simulator-lease-release.json",
+      "sha256": "411a3fb5b00a3fee2d6dbedc3b3974108b731d832e58f27657b02727ba67219b",
+      "bytes": 67
+    },
+    {
+      "ref": "screenshots/ul01-launch.png",
+      "sha256": "f50ab0979ebb1a9c2edd40f27eb4dffe67036d9caf7f39082db07310f40c0540",
+      "bytes": 198911
+    },
+    {
+      "ref": "screenshots/runtime-home-empty.png",
+      "sha256": "4d4a7f1264aa79c70e41bafca0b6ea4bad3f5b294c0e5b813fe7e9776c3b6933",
+      "bytes": 155462
+    },
+    {
+      "ref": "screenshots/runtime-capture-import.png",
+      "sha256": "09c575ca9260794c775b86f473ed526f4cef7644a67c31854df0f8a8a19c67fc",
+      "bytes": 215584
+    },
+    {
+      "ref": "screenshots/runtime-fields-review.png",
+      "sha256": "b0cd826b2dc1a48d8dec617bbce690d4efd98b9c5f0901fbbcf62c054413f49a",
+      "bytes": 223059
+    },
+    {
+      "ref": "screenshots/runtime-brief-detail-filled.png",
+      "sha256": "5d2e691b1dff1f8a4dd562ee1168af61da6dd239b660932dca681ca1f274b7c7",
+      "bytes": 328682
+    },
+    {
+      "ref": "screenshots/runtime-chat-extract.png",
+      "sha256": "9a8461aec6f3d6ab524a2eb2282b292e4f218d62fd41770888857c8b29cd6ffe",
+      "bytes": 215851
+    },
+    {
+      "ref": "screenshots/runtime-summary-card.png",
+      "sha256": "5d2e691b1dff1f8a4dd562ee1168af61da6dd239b660932dca681ca1f274b7c7",
+      "bytes": 328682
+    },
+    {
+      "ref": "screenshots/runtime-tts-briefing.png",
+      "sha256": "5c623b7d8fe41c2adcb8860b9f834200238bde787d2edb17259ed41782b6828a",
+      "bytes": 218033
+    },
+    {
+      "ref": "screenshots/runtime-settings-privacy.png",
+      "sha256": "9a5a87735641e5b3abb7c144d67fecf472abe08c5846cf8dd5fdbc9c917a852a",
+      "bytes": 491081
+    }
+  ],
+  "uitest": {
+    "ul01": "pass",
+    "ul02": "pass",
+    "ul04": "pass",
+    "ul06": "pass",
+    "four_perm": "pass",
+    "screenshot_tour": "pass"
+  }
+}
