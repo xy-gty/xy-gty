@@ -1,0 +1,113 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/SnagCueUIDriver/SnagCueUIDriver.xcodeproj -scheme Host -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/SnagCueUIDriver-DD-a3 "-only-testing:SnagCueUIDriverUITests/AcceptAttempt3Tests/testAcceptanceAttempt3"
+
+2026-10-13 20:23:59.855504+0800 SnagCueUIDriverUITests-Runner[72379:4191176] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 20:24:01.240.
+Test Suite 'SnagCueUIDriverUITests.xctest' started at 2026-10-13 20:24:01.240.
+Test Suite 'AcceptAttempt3Tests' started at 2026-10-13 20:24:01.240.
+Test Case '-[SnagCueUIDriverUITests.AcceptAttempt3Tests testAcceptanceAttempt3]' started.
+    t =     0.00s Start Test at 2026-10-13 20:24:01.241
+    t =     0.05s Set Up
+    t =     0.05s Terminate com.lingguang.snagcue:0
+    t =     1.05s Open com.lingguang.snagcue
+    t =     1.06s     Launch com.lingguang.snagcue
+    t =     1.19s         Setting up automation session
+objc[72379]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a12c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a160398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.96s         Wait for com.lingguang.snagcue to idle
+    t =     3.74s Wait for com.lingguang.snagcue to become Running Foreground
+    t =     3.75s Waiting 4.0s for "Audits" Button to exist
+    t =     4.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Audits" Button`
+    t =     4.79s         Checking existence of `"Audits" Button`
+    t =     4.89s Tap "Audits" Button
+    t =     4.89s     Wait for com.lingguang.snagcue to idle
+    t =     4.89s     Find the "Audits" Button
+    t =     4.90s     Check for interrupting elements affecting "Audits" Button
+    t =     4.93s     Synthesize event
+    t =     5.23s     Wait for com.lingguang.snagcue to idle
+    t =     7.05s Requesting snapshot of accessibility hierarchy for app with pid 72442
+    t =     7.15s Requesting snapshot of accessibility hierarchy for app with pid 72442
+    t =     7.31s Waiting 3.0s for "Start audit" Button to exist
+    t =     8.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Start audit" Button`
+    t =     8.34s         Checking existence of `"Start audit" Button`
+    t =     8.37s Tap "Start audit" Button
+    t =     8.37s     Wait for com.lingguang.snagcue to idle
+    t =     8.37s     Find the "Start audit" Button
+    t =     8.39s     Check for interrupting elements affecting "Start audit" Button
+    t =     8.41s     Synthesize event
+    t =     8.70s     Wait for com.lingguang.snagcue to idle
+    t =    10.65s Requesting snapshot of accessibility hierarchy for app with pid 72442
+    t =    10.79s Requesting snapshot of accessibility hierarchy for app with pid 72442
+    t =    10.81s Waiting 3.0s for TextField (Element at index 0) to exist
+    t =    11.85s     Checking `Expect predicate `existsNoRetry == 1` for object TextField (Element at index 0)`
+    t =    11.85s         Checking existence of `TextField (Element at index 0)`
+    t =    11.88s Tap TextField (Element at index 0)
+    t =    11.88s     Wait for com.lingguang.snagcue to idle
+    t =    11.89s     Find the TextField (Element at index 0)
+    t =    11.91s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    11.92s     Synthesize event
+    t =    12.21s     Wait for com.lingguang.snagcue to idle
+    t =    12.51s Type 'Accept3 Walkthrough' into "Title e.g. Level 3 walkthrough" TextField
+    t =    12.51s     Wait for com.lingguang.snagcue to idle
+    t =    12.88s     Find the "Title e.g. Level 3 walkthrough" TextField
+    t =    12.94s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    12.96s     Synthesize event
+    t =    13.48s     Wait for com.lingguang.snagcue to idle
+    t =    13.49s Checking existence of `"New audit" StaticText`
+    t =    13.53s Tap "New audit" StaticText
+    t =    13.53s     Wait for com.lingguang.snagcue to idle
+    t =    13.53s     Find the "New audit" StaticText
+    t =    13.55s Requesting snapshot of accessibility hierarchy for app with pid 72442
+/tmp/SnagCueUIDriver/SnagCueUIDriverUITests/Journey3Tests.swift:132: error: -[SnagCueUIDriverUITests.AcceptAttempt3Tests testAcceptanceAttempt3] : Failed to tap "New audit" StaticText: Find single matching element. Multiple matching elements found for <XCUIElementQuery: 0x109d2b980>.
+Sparse tree of matches:
+→Application, pid: 72442, label: 'SnagCue AI'
+  ↳Window (Main)
+    ↳Other
+      ↳Other
+        ↳Other
+          ↳Other
+            ↳Other
+              ↳Other
+                ↳Other
+                  ↳Other
+                    ↳Other
+                      ↳Other
+                        ↳Other
+                          ↳NavigationBar, identifier: 'New audit'
+                          ⋅ ↳StaticText, label: 'New audit'
+                          ↳Other
+                            ↳Other
+                              ↳Other
+                                ↳Other
+                                  ↳ScrollView
+                                    ↳Other
+                                      ↳StaticText, label: 'New audit'
+Possibly caused by runtime issues:
+Automation type mismatch: computed Other from legacy attributes vs StaticText from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 48;
+    "XC_kAXXCAttributeElementBaseType" = UILabel;
+    "XC_kAXXCAttributeElementType" = UILabel;
+    "XC_kAXXCAttributeTraits" = 8590000128;
+}
+See test report attachments for more detail.
+    t =    13.65s Tear Down
+Test Case '-[SnagCueUIDriverUITests.AcceptAttempt3Tests testAcceptanceAttempt3]' failed (13.884 seconds).
+Test Suite 'AcceptAttempt3Tests' failed at 2026-10-13 20:24:15.126.
+	 Executed 1 test, with 1 failure (0 unexpected) in 13.884 (13.886) seconds
+Test Suite 'SnagCueUIDriverUITests.xctest' failed at 2026-10-13 20:24:15.126.
+	 Executed 1 test, with 1 failure (0 unexpected) in 13.884 (13.886) seconds
+Test Suite 'Selected tests' failed at 2026-10-13 20:24:15.127.
+	 Executed 1 test, with 1 failure (0 unexpected) in 13.884 (13.887) seconds
+2026-10-13 20:24:30.011 xcodebuild[72366:4190994] [MT] IDETestOperationsObserverDebug: 31.964 elapsed -- Testing started completed.
+2026-10-13 20:24:30.011 xcodebuild[72366:4190994] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 20:24:30.011 xcodebuild[72366:4190994] [MT] IDETestOperationsObserverDebug: 31.964 sec, +31.964 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/SnagCueUIDriver-DD-a3/Logs/Test/Test-Host-2026.10.13_20-23-57-+0800.xcresult
+
+Failing tests:
+	AcceptAttempt3Tests.testAcceptanceAttempt3()
+
+** TEST EXECUTE FAILED **
+
+Testing started

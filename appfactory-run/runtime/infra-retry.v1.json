@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_infra_retry.v1",
+  "retries": [
+    {
+      "dispatch_id": "a7bdfed3-2ab4-4e91-b223-835dd6c4cb3e",
+      "infra_class": "native_session_unrecoverable",
+      "action": "replace_lost_worker",
+      "consumes_budget": false,
+      "recorded_at": "2026-10-13T11:21:25Z"
+    }
+  ]
+}

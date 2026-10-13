@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: chat-fill — Chat to fill punch fields
+Nav title "Fill fields". Chat thread: user "Set assignee to GC for the outlet cover", AI reply proposing fields Location Hallway N, Severity High, Assignee GC, Due Fri. Confirmation card with Save and Not this. Bottom RuntimeForm text field with Send.
+No paywall. Thin bezel; UI fills tall column. Keyboard toolbar visible but not covering Send.

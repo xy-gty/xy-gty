@@ -1,0 +1,77 @@
+Attributes: Application, 0x1138c0780, pid: 23509, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x1138c0780, pid: 23509, label: 'SnagCue AI'
+    Window (Main), 0x1138c08c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1138c0a00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1138c0b40, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1138c0c80, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1138c0dc0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1138c0f00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1138c1040, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1138c1180, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1138c12c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1138c1400, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1138c1540, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1138c1680, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1138c17c0, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Privacy'
+                              Button, 0x1138c1900, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x1138c1a40, {{16.0, 119.7}, {117.3, 40.7}}, label: 'Privacy'
+                            Other, 0x1138c1b80, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1138c1cc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1138c1e00, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1138c1f40, {{0.0, 0.0}, {402.0, 874.0}}
+                                    SegmentedControl, 0x1138c2080, {{16.0, 184.0}, {370.0, 31.0}}
+                                      Button, 0x1138c21c0, {{16.0, 184.0}, {123.0, 32.0}}, label: 'Privacy', Selected
+                                      Button, 0x1138c2300, {{139.0, 184.0}, {123.0, 32.0}}, label: 'Terms'
+                                      Button, 0x1138c2440, {{262.0, 184.0}, {124.0, 32.0}}, label: 'Support'
+                                    WebView, 0x1138c2580, {{0.0, 231.0}, {402.0, 560.0}}
+                                      WebView, 0x1138c26c0, {{0.0, 231.0}, {402.0, 560.0}}
+                                        Other, 0x1138c2800, {{369.0, 231.0}, {30.0, 560.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1138c2940, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x1138c2a80, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1138c2bc0, {{392.0, 785.0}, {7.0, 3.0}}
+                                        Other, 0x1138c2d00, {{369.0, 231.0}, {30.0, 560.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1138c2e40, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x1138c2f80, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1138c30c0, {{392.0, 785.0}, {7.0, 3.0}}
+                            Other, 0x1138c3200, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1138c3340, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1138c3480, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1138c35c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x1138c3700, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x1138c3840, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x1138c3980, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x1138c3ac0, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x1138c3c00, {{53.0, 795.0}, {104.3, 54.0}}, identifier: 'list.bullet.rectangle', label: 'Audits'
+                            Image, 0x1138c3d40, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x1138c3e80, {{149.3, 795.0}, {104.3, 54.0}}, identifier: 'checkmark.seal', label: 'Active punch'
+                            Image, 0x1138d4000, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x1138d4140, {{245.7, 795.0}, {104.3, 54.0}}, identifier: 'gearshape', label: 'Settings', Selected
+                            Image, 0x1138d4280, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1138d43c0, {{245.7, 795.0}, {104.3, 54.0}}
+                          Other, 0x1138d4500, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x1138d4640, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x1138d4780, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x1138d48c0, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x1138d4a00, {{245.7, 795.0}, {104.3, 54.0}}
+                                  Other, 0x1138d4b40, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x1138d4c80, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x1138d4dc0, {{245.7, 795.0}, {104.3, 54.0}}
+                  Other, 0x1138d4f00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1138d5040, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1138d5180, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1138d52c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1138d5400, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1138d5540, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1138d5680, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1138d57c0, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x1138d5900, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1138d5a40, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1138d5b80, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x1138c0780, pid: 23509, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x1138d5cc0, pid: 23509, label: 'SnagCue AI'
+  }

@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-build-4d8a6e3cb616"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "Build attempt-1 ready. SnagCue AI (com.lingguang.snagcue) product_commit 9b7db33a… candidate eaa10b37… (candidate_unaccepted). Foundation AppRuntimeCore consumed; children ui_business+ai_privacy integrated. MAP ready finish reported (map_sha 197d9108…). Honest gaps: ai_key local_only, legal URLs, CloudKit, Feishu/pricing deferred."}]}, "session_id": "cursor-cli-build-4d8a6e3cb616"}

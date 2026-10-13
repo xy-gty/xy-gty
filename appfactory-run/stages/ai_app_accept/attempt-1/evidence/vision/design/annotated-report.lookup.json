@@ -1,0 +1,41 @@
+{
+  "schema": "appfactory.ultra_lite_visual_readback.v1",
+  "side": "design",
+  "mode": "reused_design",
+  "key": {
+    "screenshot_sha256": "e6737120be0f725f27d8579e6c649c9873ebc604c0d8adc2c173f6f8086fbbcf",
+    "criterion": "Visible: annotated report preview with Use and Discard, plus non-certification disclaimer text.\n",
+    "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: annotated report preview with Use and Discard, plus non-certification disclaimer text.\n",
+    "model": "auto",
+    "reasoning_effort": "auto"
+  },
+  "pm_visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276",
+  "origin": {
+    "key": {
+      "screenshot_sha256": "e6737120be0f725f27d8579e6c649c9873ebc604c0d8adc2c173f6f8086fbbcf",
+      "criterion": "Visible: annotated report preview with Use and Discard, plus non-certification disclaimer text.\n",
+      "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nVisible: annotated report preview with Use and Discard, plus non-certification disclaimer text.\n",
+      "model": "auto",
+      "reasoning_effort": "auto"
+    },
+    "origin_run_id": "kf-20261013T095600Z-1e00eb7a",
+    "origin_pm_attempt": 1,
+    "frame_id": "annotated-report",
+    "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/frames/annotated-report-r1.png",
+    "image_sha256": "e6737120be0f725f27d8579e6c649c9873ebc604c0d8adc2c173f6f8086fbbcf",
+    "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/evidence/visual-readback/annotated-report.receipt.json",
+    "receipt_sha256": "2944d15889d45fb3b8f76bc6fadcbb78e397e24c42adba7e4b143ceb02543b78",
+    "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/evidence/visual-readback/annotated-report.receipt.jsonl",
+    "raw_sha256": "cf280df4d51b8a7f9c3ae0490310ec00e5e6a493e1e26473b94255cd7edc24b5",
+    "thread_id": "18773f2f-40cf-4a9c-ad6c-aa64813fd53d"
+  },
+  "index": {
+    "index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+    "index_sha256": "4bc5ceb8465236ade020cb4d682cdb3f2f3f21877289a574b3db64936230f1f1",
+    "counts": {
+      "reused_design": 6,
+      "new_design_read": 0,
+      "new_runtime_read": 0
+    }
+  }
+}

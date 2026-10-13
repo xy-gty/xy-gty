@@ -1,0 +1,6 @@
+NSCameraUsageDescription=SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.
+NSPhotoLibraryUsageDescription=SnagCue AI imports walkthrough photos you choose so you can review snag suggestions before saving punch-list items.
+NSMicrophoneUsageDescription=SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.
+NSSpeechRecognitionUsageDescription=SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.
+CFBundleDisplayName=SnagCue AI
+CFBundleIdentifier=com.lingguang.snagcue

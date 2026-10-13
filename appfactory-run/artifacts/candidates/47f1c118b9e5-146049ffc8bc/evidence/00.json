@@ -1,0 +1,67 @@
+{
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "ai_app_build",
+  "attempt": 3,
+  "dispatch_id": "a6d0452b-c58d-46e9-9f9e-f4534c3dbe9e",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "source_commit": "47f1c118b9e5e460b0231de413df86d5ef6d8ae7",
+  "branch": "main",
+  "bundle_id": "com.lingguang.snagcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/DerivedData/Build/Products/Debug-iphonesimulator/SnagCue.app",
+  "app_content_sha256": "146049ffc8bc9660dad0dc37ff17041b5036e2976fe60a09ded20b3c4caab231",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "NSCameraUsageDescription + camera capture UI (Simulator: \u771f\u673a\u5f85\u6d4b; library path works)",
+    "NSPhotoLibraryUsageDescription + PhotosPicker import retained",
+    "NSMicrophoneUsageDescription + punch-item Voice note recorder (Simulator: \u771f\u673a\u5f85\u6d4b)",
+    "NSSpeechRecognitionUsageDescription + ChatFill speech-to-text (Simulator: \u771f\u673a\u5f85\u6d4b)",
+    "Active punch hub NavigationStack path binding preserved",
+    "AI consent / local legal / domain safety tests retained"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not yet run",
+    "Per-frame visual judgment deferred to ai_app_accept",
+    "Live DeepSeek outbound still local_only unconfigured",
+    "Physical device camera/mic/speech runtime matrix \u2192 \u771f\u673a\u5f85\u6d4b"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "SnagCue.xcodeproj",
+      "-scheme",
+      "SnagCue",
+      "-destination",
+      "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/DerivedData",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/candidate/build.log",
+    "log_sha256": "d3f13248567092b3f2b4d5b986158b4c30aca355b3625e0e217203e1fd46f089"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "SnagCue.xcodeproj",
+        "-scheme",
+        "SnagCue",
+        "-destination",
+        "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/DerivedData",
+        "-only-testing:SnagCueDomainTests",
+        "test"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/candidate/domain.log",
+      "log_sha256": "a9de5079915375b64de9bcc4ba9b5adfde7f184c43bad1f6a4f5a6247fb80cc1"
+    }
+  ]
+}

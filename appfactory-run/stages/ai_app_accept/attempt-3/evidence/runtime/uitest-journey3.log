@@ -1,0 +1,614 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/SnagCueUIDriver/SnagCueUIDriver.xcodeproj -scheme Host -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/SnagCueUIDriver-DD-a3 "-only-testing:SnagCueUIDriverUITests/AcceptAttempt3Tests/testAcceptanceAttempt3"
+
+2026-10-13 20:15:04.675814+0800 SnagCueUIDriverUITests-Runner[69622:4172929] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 20:15:05.597.
+Test Suite 'SnagCueUIDriverUITests.xctest' started at 2026-10-13 20:15:05.597.
+Test Suite 'AcceptAttempt3Tests' started at 2026-10-13 20:15:05.597.
+Test Case '-[SnagCueUIDriverUITests.AcceptAttempt3Tests testAcceptanceAttempt3]' started.
+    t =     0.00s Start Test at 2026-10-13 20:15:05.598
+    t =     0.06s Set Up
+    t =     0.07s Terminate com.lingguang.snagcue:0
+    t =     1.07s Open com.lingguang.snagcue
+    t =     1.08s     Launch com.lingguang.snagcue
+    t =     1.19s         Setting up automation session
+objc[69622]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10696c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10680c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.76s         Wait for com.lingguang.snagcue to idle
+    t =     3.58s Wait for com.lingguang.snagcue to become Running Foreground
+    t =     3.59s Waiting 4.0s for "Audits" Button to exist
+    t =     4.63s     Checking `Expect predicate `existsNoRetry == 1` for object "Audits" Button`
+    t =     4.65s         Checking existence of `"Audits" Button`
+    t =     5.07s Tap "Audits" Button
+    t =     5.07s     Wait for com.lingguang.snagcue to idle
+    t =     5.07s     Find the "Audits" Button
+    t =     5.09s     Check for interrupting elements affecting "list.bullet.rectangle" Button
+    t =     5.13s     Synthesize event
+    t =     5.44s     Wait for com.lingguang.snagcue to idle
+    t =     7.23s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =     7.33s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =     7.48s Waiting 3.0s for "Start audit" Button to exist
+    t =     8.51s     Checking `Expect predicate `existsNoRetry == 1` for object "Start audit" Button`
+    t =     8.51s         Checking existence of `"Start audit" Button`
+    t =     8.54s Tap "Start audit" Button
+    t =     8.54s     Wait for com.lingguang.snagcue to idle
+    t =     8.55s     Find the "Start audit" Button
+    t =     8.56s     Check for interrupting elements affecting "Start audit" Button
+    t =     8.58s     Synthesize event
+    t =     8.87s     Wait for com.lingguang.snagcue to idle
+    t =    10.79s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    10.92s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    10.94s Waiting 3.0s for "Title" TextField to exist
+    t =    11.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Title" TextField`
+    t =    11.98s         Checking existence of `"Title" TextField`
+    t =    12.01s         Capturing element debug description
+    t =    12.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Title" TextField`
+    t =    12.95s         Checking existence of `"Title" TextField`
+    t =    12.98s         Capturing element debug description
+    t =    13.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Title" TextField`
+    t =    13.95s         Checking existence of `"Title" TextField`
+    t =    13.98s         Capturing element debug description
+    t =    13.98s     Checking existence of `"Title" TextField`
+    t =    14.00s Collecting debug information to assist test failure triage
+    t =    14.00s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    14.03s Waiting 2.0s for TextField (Element at index 0) to exist
+    t =    15.06s     Checking `Expect predicate `existsNoRetry == 1` for object TextField (Element at index 0)`
+    t =    15.06s         Checking existence of `TextField (Element at index 0)`
+    t =    15.08s Checking existence of `"Title" TextField`
+    t =    15.09s Tap TextField (Element at index 0)
+    t =    15.09s     Wait for com.lingguang.snagcue to idle
+    t =    15.09s     Find the TextField (Element at index 0)
+    t =    15.10s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    15.12s     Synthesize event
+    t =    15.41s     Wait for com.lingguang.snagcue to idle
+    t =    15.66s Type 'Accept3 Walkthrough' into "Title e.g. Level 3 walkthrough" TextField
+    t =    15.66s     Wait for com.lingguang.snagcue to idle
+    t =    16.03s     Find the "Title e.g. Level 3 walkthrough" TextField
+    t =    16.08s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    16.11s     Synthesize event
+    t =    16.63s     Wait for com.lingguang.snagcue to idle
+    t =    16.63s Get number of matches for: Descendants matching type Keyboard
+    t =    16.66s Checking existence of `"Done" Button`
+    t =    16.70s Tap Application 'com.lingguang.snagcue'
+    t =    16.70s     Wait for com.lingguang.snagcue to idle
+    t =    16.70s     Find the Application 'com.lingguang.snagcue'
+    t =    16.72s     Check for interrupting elements affecting "SnagCue AI" Application
+    t =    16.74s     Synthesize event
+    t =    17.03s     Wait for com.lingguang.snagcue to idle
+    t =    18.56s Waiting 3.0s for "Create audit" Button to exist
+    t =    19.59s     Checking `Expect predicate `existsNoRetry == 1` for object "Create audit" Button`
+    t =    19.59s         Checking existence of `"Create audit" Button`
+    t =    19.62s         Capturing element debug description
+    t =    20.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Create audit" Button`
+    t =    20.66s         Checking existence of `"Create audit" Button`
+    t =    20.69s         Capturing element debug description
+    t =    21.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Create audit" Button`
+    t =    21.57s         Checking existence of `"Create audit" Button`
+    t =    21.60s         Capturing element debug description
+    t =    21.60s     Checking existence of `"Create audit" Button`
+    t =    21.62s Collecting debug information to assist test failure triage
+    t =    21.62s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    21.65s Waiting 1.0s for "Create" Button to exist
+    t =    22.65s     Checking `Expect predicate `existsNoRetry == 1` for object "Create" Button`
+    t =    22.65s         Checking existence of `"Create" Button`
+    t =    22.69s         Capturing element debug description
+    t =    22.69s     Checking existence of `"Create" Button`
+    t =    22.71s Collecting debug information to assist test failure triage
+    t =    22.71s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    22.74s Waiting 1.0s for "Save audit" Button to exist
+    t =    23.74s     Checking `Expect predicate `existsNoRetry == 1` for object "Save audit" Button`
+    t =    23.74s         Checking existence of `"Save audit" Button`
+    t =    23.77s         Capturing element debug description
+    t =    23.78s     Checking existence of `"Save audit" Button`
+    t =    23.79s Collecting debug information to assist test failure triage
+    t =    23.79s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    23.82s Waiting 1.0s for "Save" Button to exist
+    t =    24.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =    24.83s         Checking existence of `"Save" Button`
+    t =    24.85s         Capturing element debug description
+    t =    24.85s     Checking existence of `"Save" Button`
+    t =    24.86s Collecting debug information to assist test failure triage
+    t =    24.86s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    24.89s Waiting 1.0s for "Confirm" Button to exist
+    t =    25.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =    25.90s         Checking existence of `"Confirm" Button`
+    t =    25.93s         Capturing element debug description
+    t =    25.93s     Checking existence of `"Confirm" Button`
+    t =    25.95s Collecting debug information to assist test failure triage
+    t =    25.95s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    27.98s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    28.10s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    28.20s Checking existence of `"No active audit" StaticText`
+    t =    28.22s Checking existence of `"Start audit" Button`
+    t =    28.23s Waiting 3.0s for "Active punch" Button to exist
+    t =    29.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Active punch" Button`
+    t =    29.27s         Checking existence of `"Active punch" Button`
+    t =    29.31s Tap "Active punch" Button
+    t =    29.31s     Wait for com.lingguang.snagcue to idle
+    t =    29.31s     Find the "Active punch" Button
+    t =    29.33s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    29.34s     Synthesize event
+    t =    29.64s     Wait for com.lingguang.snagcue to idle
+    t =    31.41s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    31.62s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    31.74s Waiting 4.0s for "Add photos" Button to exist
+    t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Add photos" Button`
+    t =    32.78s         Checking existence of `"Add photos" Button`
+    t =    32.82s Tap "Add photos" Button
+    t =    32.82s     Wait for com.lingguang.snagcue to idle
+    t =    32.82s     Find the "Add photos" Button
+    t =    32.84s     Check for interrupting elements affecting "Add photos" Button
+    t =    32.89s     Synthesize event
+    t =    33.20s     Wait for com.lingguang.snagcue to idle
+    t =    35.33s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    35.43s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    35.45s Checking existence of `"Capture" NavigationBar`
+    t =    35.61s Checking existence of `StaticText (First Match)`
+    t =    35.62s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    35.71s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    35.81s Waiting 2.0s for "Add photos" Button to exist
+    t =    36.84s     Checking `Expect predicate `existsNoRetry == 1` for object "Add photos" Button`
+    t =    36.84s         Checking existence of `"Add photos" Button`
+    t =    36.88s Tap "Add photos" Button
+    t =    36.88s     Wait for com.lingguang.snagcue to idle
+    t =    36.88s     Find the "Add photos" Button
+    t =    36.90s     Check for interrupting elements affecting "Add photos" Button
+    t =    36.92s     Synthesize event
+    t =    37.21s     Wait for com.lingguang.snagcue to idle
+    t =    39.30s Waiting 1.0s for "Allow Full Access" Button to exist
+    t =    40.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    40.30s         Checking existence of `"Allow Full Access" Button`
+    t =    40.61s         Capturing element debug description
+    t =    40.61s     Checking existence of `"Allow Full Access" Button`
+    t =    40.93s Collecting debug information to assist test failure triage
+    t =    40.93s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    41.25s Waiting 0.5s for "Allow Access to All Photos" Button to exist
+    t =    41.75s     Checking existence of `"Allow Access to All Photos" Button`
+    t =    41.97s Collecting debug information to assist test failure triage
+    t =    41.97s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    42.26s Waiting 2.0s for Cell (Element at index 0) to exist
+    t =    43.29s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    43.29s         Checking existence of `Cell (Element at index 0)`
+    t =    43.45s         Capturing element debug description
+    t =    44.26s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    44.26s         Checking existence of `Cell (Element at index 0)`
+    t =    44.43s         Capturing element debug description
+    t =    44.43s     Checking existence of `Cell (Element at index 0)`
+    t =    44.55s Collecting debug information to assist test failure triage
+    t =    44.55s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    44.84s Waiting 1.0s for "Allow Full Access" Button to exist
+    t =    45.84s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    45.84s         Checking existence of `"Allow Full Access" Button`
+    t =    45.91s         Capturing element debug description
+    t =    45.91s     Checking existence of `"Allow Full Access" Button`
+    t =    45.93s Collecting debug information to assist test failure triage
+    t =    45.93s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    45.96s Waiting 0.5s for "Allow Access to All Photos" Button to exist
+    t =    46.46s     Checking existence of `"Allow Access to All Photos" Button`
+    t =    46.48s Collecting debug information to assist test failure triage
+    t =    46.48s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    46.52s Waiting 2.0s for Cell (Element at index 0) to exist
+    t =    47.53s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    47.53s         Checking existence of `Cell (Element at index 0)`
+    t =    47.56s         Capturing element debug description
+    t =    48.52s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    48.52s         Checking existence of `Cell (Element at index 0)`
+    t =    48.55s         Capturing element debug description
+    t =    48.55s     Checking existence of `Cell (Element at index 0)`
+    t =    48.57s Collecting debug information to assist test failure triage
+    t =    48.57s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    49.60s Checking existence of `"Add" Button`
+    t =    49.79s Checking existence of `"Done" Button`
+    t =    49.96s Checking existence of `"Choose" Button`
+    t =    50.11s Checking existence of `"Open" Button`
+    t =    50.26s Checking existence of `"Add" Button`
+    t =    50.27s Checking existence of `"Done" Button`
+    t =    50.28s Checking existence of `"Choose" Button`
+    t =    50.30s Checking existence of `"Open" Button`
+    t =    51.31s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    51.78s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    52.15s Checking existence of `"Active punch" Button`
+    t =    52.31s Tap "Active punch" Button
+    t =    52.31s     Wait for com.lingguang.snagcue to idle
+    t =    52.31s     Find the "Active punch" Button
+    t =    52.47s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    52.58s     Synthesize event
+    t =    52.59s         Scroll element to visible
+    t =    52.59s         Find the "checkmark.seal" Button
+    t =    52.75s         Computed hit point {-1, -1} after scrolling to visible
+    t =    53.04s     Wait for com.lingguang.snagcue to idle
+    t =    54.05s Waiting 4.0s for "Review snags" Button to exist
+    t =    55.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Review snags" Button`
+    t =    55.08s         Checking existence of `"Review snags" Button`
+    t =    55.27s         Capturing element debug description
+    t =    56.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Review snags" Button`
+    t =    56.09s         Checking existence of `"Review snags" Button`
+    t =    56.28s         Capturing element debug description
+    t =    57.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Review snags" Button`
+    t =    57.11s         Checking existence of `"Review snags" Button`
+    t =    57.28s         Capturing element debug description
+    t =    58.05s     Checking `Expect predicate `existsNoRetry == 1` for object "Review snags" Button`
+    t =    58.05s         Checking existence of `"Review snags" Button`
+    t =    58.25s         Capturing element debug description
+    t =    58.25s     Checking existence of `"Review snags" Button`
+    t =    58.41s Collecting debug information to assist test failure triage
+    t =    58.41s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    60.69s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    61.16s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    61.47s Checking existence of `"Snag review" NavigationBar`
+    t =    61.63s Checking existence of `"Review" NavigationBar`
+    t =    61.78s Checking existence of `"Recognition" NavigationBar`
+    t =    61.96s Checking existence of `"Snag recognition" NavigationBar`
+    t =    62.15s Checking existence of `"Snags" NavigationBar`
+    t =    62.59s Checking existence of `"Snag review" NavigationBar`
+    t =    62.77s Checking existence of `"Review" NavigationBar`
+    t =    62.93s Checking existence of `"Recognition" NavigationBar`
+    t =    63.08s Checking existence of `"Snag recognition" NavigationBar`
+    t =    63.23s Checking existence of `"Snags" NavigationBar`
+    t =    63.65s Checking existence of `"Snag review" NavigationBar`
+    t =    63.83s Checking existence of `"Review" NavigationBar`
+    t =    64.00s Checking existence of `"Recognition" NavigationBar`
+    t =    64.16s Checking existence of `"Snag recognition" NavigationBar`
+    t =    64.31s Checking existence of `"Snags" NavigationBar`
+    t =    64.72s Checking existence of `"Snag review" NavigationBar`
+    t =    64.90s Checking existence of `"Review" NavigationBar`
+    t =    65.06s Checking existence of `"Recognition" NavigationBar`
+    t =    65.23s Checking existence of `"Snag recognition" NavigationBar`
+    t =    65.39s Checking existence of `"Snags" NavigationBar`
+    t =    65.82s Checking existence of `"Snag review" NavigationBar`
+    t =    65.99s Checking existence of `"Review" NavigationBar`
+    t =    66.17s Checking existence of `"Recognition" NavigationBar`
+    t =    66.34s Checking existence of `"Snag recognition" NavigationBar`
+    t =    66.51s Checking existence of `"Snags" NavigationBar`
+    t =    66.92s Checking existence of `"Snag review" NavigationBar`
+    t =    67.11s Checking existence of `"Review" NavigationBar`
+    t =    67.28s Checking existence of `"Recognition" NavigationBar`
+    t =    67.45s Checking existence of `"Snag recognition" NavigationBar`
+    t =    67.61s Checking existence of `"Snags" NavigationBar`
+    t =    68.19s Waiting 2.0s for "Add snag" Button to exist
+    t =    69.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Add snag" Button`
+    t =    69.21s         Checking existence of `"Add snag" Button`
+    t =    69.41s         Capturing element debug description
+    t =    70.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Add snag" Button`
+    t =    70.19s         Checking existence of `"Add snag" Button`
+    t =    70.38s         Capturing element debug description
+    t =    70.38s     Checking existence of `"Add snag" Button`
+    t =    70.56s Collecting debug information to assist test failure triage
+    t =    70.56s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    70.86s Checking existence of `"Active punch" Button`
+    t =    71.03s Tap "Active punch" Button
+    t =    71.03s     Wait for com.lingguang.snagcue to idle
+    t =    71.03s     Find the "Active punch" Button
+    t =    71.22s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    71.37s     Synthesize event
+    t =    71.38s         Scroll element to visible
+    t =    71.38s         Find the "checkmark.seal" Button
+    t =    71.68s         Computed hit point {-1, -1} after scrolling to visible
+    t =    71.97s     Wait for com.lingguang.snagcue to idle
+    t =    72.98s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    73.51s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    74.07s Waiting 1.0s for "Voice note" Button to exist
+    t =    75.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Voice note" Button`
+    t =    75.08s         Checking existence of `"Voice note" Button`
+    t =    75.31s         Capturing element debug description
+    t =    75.31s     Checking existence of `"Voice note" Button`
+    t =    75.49s Collecting debug information to assist test failure triage
+    t =    75.49s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    75.78s Waiting 1.0s for "Add voice note" Button to exist
+    t =    76.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Add voice note" Button`
+    t =    76.78s         Checking existence of `"Add voice note" Button`
+    t =    77.02s         Capturing element debug description
+    t =    77.02s     Checking existence of `"Add voice note" Button`
+    t =    77.20s Collecting debug information to assist test failure triage
+    t =    77.20s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    77.53s Waiting 1.0s for "Record note" Button to exist
+    t =    78.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Record note" Button`
+    t =    78.53s         Checking existence of `"Record note" Button`
+    t =    78.75s         Capturing element debug description
+    t =    78.75s     Checking existence of `"Record note" Button`
+    t =    78.93s Collecting debug information to assist test failure triage
+    t =    78.93s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    79.21s Waiting 1.0s for "Microphone" Button to exist
+    t =    80.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Microphone" Button`
+    t =    80.21s         Checking existence of `"Microphone" Button`
+    t =    80.42s         Capturing element debug description
+    t =    80.42s     Checking existence of `"Microphone" Button`
+    t =    80.58s Collecting debug information to assist test failure triage
+    t =    80.58s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    80.86s Get number of matches for: Descendants matching type Cell
+    t =    80.98s Checking existence of `"Active punch" Button`
+    t =    81.17s Tap "Active punch" Button
+    t =    81.17s     Wait for com.lingguang.snagcue to idle
+    t =    81.17s     Find the "Active punch" Button
+    t =    81.34s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =    81.47s     Synthesize event
+    t =    81.48s         Scroll element to visible
+    t =    81.48s         Find the "checkmark.seal" Button
+    t =    81.67s         Computed hit point {-1, -1} after scrolling to visible
+    t =    81.96s     Wait for com.lingguang.snagcue to idle
+    t =    82.97s Waiting 4.0s for "Chat fill" Button to exist
+    t =    84.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =    84.00s         Checking existence of `"Chat fill" Button`
+    t =    84.23s         Capturing element debug description
+    t =    85.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =    85.06s         Checking existence of `"Chat fill" Button`
+    t =    85.29s         Capturing element debug description
+    t =    86.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =    86.01s         Checking existence of `"Chat fill" Button`
+    t =    86.19s         Capturing element debug description
+    t =    86.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =    86.98s         Checking existence of `"Chat fill" Button`
+    t =    87.17s         Capturing element debug description
+    t =    87.17s     Checking existence of `"Chat fill" Button`
+    t =    87.34s Collecting debug information to assist test failure triage
+    t =    87.34s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    89.64s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    90.13s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    90.41s Checking existence of `"Chat fill" NavigationBar`
+    t =    90.58s Checking existence of `"Chat" NavigationBar`
+    t =    90.74s Checking existence of `"Fill" NavigationBar`
+    t =    91.18s Checking existence of `"Chat fill" NavigationBar`
+    t =    91.41s Checking existence of `"Chat" NavigationBar`
+    t =    91.60s Checking existence of `"Fill" NavigationBar`
+    t =    92.02s Checking existence of `"Chat fill" NavigationBar`
+    t =    92.24s Checking existence of `"Chat" NavigationBar`
+    t =    92.40s Checking existence of `"Fill" NavigationBar`
+    t =    92.82s Checking existence of `"Chat fill" NavigationBar`
+    t =    93.02s Checking existence of `"Chat" NavigationBar`
+    t =    93.19s Checking existence of `"Fill" NavigationBar`
+    t =    93.61s Checking existence of `"Chat fill" NavigationBar`
+    t =    93.83s Checking existence of `"Chat" NavigationBar`
+    t =    94.00s Checking existence of `"Fill" NavigationBar`
+    t =    94.41s Checking existence of `"Chat fill" NavigationBar`
+    t =    94.61s Checking existence of `"Chat" NavigationBar`
+    t =    94.77s Checking existence of `"Fill" NavigationBar`
+    t =    95.18s Checking existence of `"Chat fill" NavigationBar`
+    t =    95.39s Checking existence of `"Chat" NavigationBar`
+    t =    95.57s Checking existence of `"Fill" NavigationBar`
+    t =    96.00s Checking existence of `"Chat fill" NavigationBar`
+    t =    96.21s Checking existence of `"Chat" NavigationBar`
+    t =    96.37s Checking existence of `"Fill" NavigationBar`
+    t =    96.92s Waiting 1.0s for "Speech to text" Button to exist
+    t =    97.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Speech to text" Button`
+    t =    97.92s         Checking existence of `"Speech to text" Button`
+    t =    98.11s         Capturing element debug description
+    t =    98.11s     Checking existence of `"Speech to text" Button`
+    t =    98.28s Collecting debug information to assist test failure triage
+    t =    98.28s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =    98.57s Waiting 1.0s for "Speech-to-text" Button to exist
+    t =    99.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Speech-to-text" Button`
+    t =    99.57s         Checking existence of `"Speech-to-text" Button`
+    t =    99.78s         Capturing element debug description
+    t =    99.78s     Checking existence of `"Speech-to-text" Button`
+    t =    99.95s Collecting debug information to assist test failure triage
+    t =    99.95s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   100.24s Waiting 1.0s for "Dictate" Button to exist
+    t =   101.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Dictate" Button`
+    t =   101.24s         Checking existence of `"Dictate" Button`
+    t =   101.45s         Capturing element debug description
+    t =   101.45s     Checking existence of `"Dictate" Button`
+    t =   101.62s Collecting debug information to assist test failure triage
+    t =   101.62s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   101.90s Waiting 1.0s for "Mic to text" Button to exist
+    t =   102.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Mic to text" Button`
+    t =   102.91s         Checking existence of `"Mic to text" Button`
+    t =   103.11s         Capturing element debug description
+    t =   103.11s     Checking existence of `"Mic to text" Button`
+    t =   103.28s Collecting debug information to assist test failure triage
+    t =   103.28s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   103.57s Waiting 1.0s for "Voice input" Button to exist
+    t =   104.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Voice input" Button`
+    t =   104.57s         Checking existence of `"Voice input" Button`
+    t =   104.78s         Capturing element debug description
+    t =   104.78s     Checking existence of `"Voice input" Button`
+    t =   104.95s Collecting debug information to assist test failure triage
+    t =   104.95s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   105.23s Get number of matches for: Descendants matching type TextField
+    t =   105.35s Get number of matches for: Descendants matching type TextView
+    t =   105.47s Checking existence of `"Active punch" Button`
+    t =   105.63s Tap "Active punch" Button
+    t =   105.63s     Wait for com.lingguang.snagcue to idle
+    t =   105.63s     Find the "Active punch" Button
+    t =   105.79s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =   105.91s     Synthesize event
+    t =   105.92s         Scroll element to visible
+    t =   105.92s         Find the "checkmark.seal" Button
+    t =   106.09s         Computed hit point {-1, -1} after scrolling to visible
+    t =   106.37s     Wait for com.lingguang.snagcue to idle
+    t =   107.37s Waiting 4.0s for "Annotate" Button to exist
+    t =   108.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Annotate" Button`
+    t =   108.41s         Checking existence of `"Annotate" Button`
+    t =   108.63s         Capturing element debug description
+    t =   109.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Annotate" Button`
+    t =   109.45s         Checking existence of `"Annotate" Button`
+    t =   109.64s         Capturing element debug description
+    t =   110.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Annotate" Button`
+    t =   110.46s         Checking existence of `"Annotate" Button`
+    t =   110.67s         Capturing element debug description
+    t =   111.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Annotate" Button`
+    t =   111.38s         Checking existence of `"Annotate" Button`
+    t =   111.57s         Capturing element debug description
+    t =   111.57s     Checking existence of `"Annotate" Button`
+    t =   111.73s Collecting debug information to assist test failure triage
+    t =   111.73s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   114.03s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   114.61s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   114.98s Checking existence of `"Annotated report" NavigationBar`
+    t =   115.17s Checking existence of `"Annotate" NavigationBar`
+    t =   115.34s Checking existence of `"Report" NavigationBar`
+    t =   115.75s Checking existence of `"Annotated report" NavigationBar`
+    t =   115.97s Checking existence of `"Annotate" NavigationBar`
+    t =   116.15s Checking existence of `"Report" NavigationBar`
+    t =   116.57s Checking existence of `"Annotated report" NavigationBar`
+    t =   116.73s Checking existence of `"Annotate" NavigationBar`
+    t =   116.90s Checking existence of `"Report" NavigationBar`
+    t =   117.31s Checking existence of `"Annotated report" NavigationBar`
+    t =   117.49s Checking existence of `"Annotate" NavigationBar`
+    t =   117.66s Checking existence of `"Report" NavigationBar`
+    t =   118.07s Checking existence of `"Annotated report" NavigationBar`
+    t =   118.25s Checking existence of `"Annotate" NavigationBar`
+    t =   118.41s Checking existence of `"Report" NavigationBar`
+    t =   118.83s Checking existence of `"Annotated report" NavigationBar`
+    t =   119.03s Checking existence of `"Annotate" NavigationBar`
+    t =   119.19s Checking existence of `"Report" NavigationBar`
+    t =   119.60s Checking existence of `"Annotated report" NavigationBar`
+    t =   119.81s Checking existence of `"Annotate" NavigationBar`
+    t =   119.97s Checking existence of `"Report" NavigationBar`
+    t =   120.38s Checking existence of `"Annotated report" NavigationBar`
+    t =   120.57s Checking existence of `"Annotate" NavigationBar`
+    t =   120.73s Checking existence of `"Report" NavigationBar`
+    t =   121.29s Checking existence of `"Active punch" Button`
+    t =   121.47s Tap "Active punch" Button
+    t =   121.47s     Wait for com.lingguang.snagcue to idle
+    t =   121.47s     Find the "Active punch" Button
+    t =   121.63s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =   121.75s     Synthesize event
+    t =   121.76s         Scroll element to visible
+    t =   121.76s         Find the "checkmark.seal" Button
+    t =   121.92s         Computed hit point {-1, -1} after scrolling to visible
+    t =   122.21s     Wait for com.lingguang.snagcue to idle
+    t =   123.22s Waiting 4.0s for "Read aloud" Button to exist
+    t =   124.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Read aloud" Button`
+    t =   124.24s         Checking existence of `"Read aloud" Button`
+    t =   124.45s         Capturing element debug description
+    t =   125.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Read aloud" Button`
+    t =   125.27s         Checking existence of `"Read aloud" Button`
+    t =   125.47s         Capturing element debug description
+    t =   126.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Read aloud" Button`
+    t =   126.29s         Checking existence of `"Read aloud" Button`
+    t =   126.48s         Capturing element debug description
+    t =   127.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Read aloud" Button`
+    t =   127.23s         Checking existence of `"Read aloud" Button`
+    t =   127.42s         Capturing element debug description
+    t =   127.42s     Checking existence of `"Read aloud" Button`
+    t =   127.59s Collecting debug information to assist test failure triage
+    t =   127.59s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   129.88s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   130.33s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   130.60s Checking existence of `"TTS coach" NavigationBar`
+    t =   130.77s Checking existence of `"Coach" NavigationBar`
+    t =   130.93s Checking existence of `"Read aloud" NavigationBar`
+    t =   131.10s Checking existence of `"TTS" NavigationBar`
+    t =   131.51s Checking existence of `"TTS coach" NavigationBar`
+    t =   131.70s Checking existence of `"Coach" NavigationBar`
+    t =   131.86s Checking existence of `"Read aloud" NavigationBar`
+    t =   132.02s Checking existence of `"TTS" NavigationBar`
+    t =   132.43s Checking existence of `"TTS coach" NavigationBar`
+    t =   132.62s Checking existence of `"Coach" NavigationBar`
+    t =   132.78s Checking existence of `"Read aloud" NavigationBar`
+    t =   132.94s Checking existence of `"TTS" NavigationBar`
+    t =   133.35s Checking existence of `"TTS coach" NavigationBar`
+    t =   133.55s Checking existence of `"Coach" NavigationBar`
+    t =   133.71s Checking existence of `"Read aloud" NavigationBar`
+    t =   133.86s Checking existence of `"TTS" NavigationBar`
+    t =   134.29s Checking existence of `"TTS coach" NavigationBar`
+    t =   134.49s Checking existence of `"Coach" NavigationBar`
+    t =   134.65s Checking existence of `"Read aloud" NavigationBar`
+    t =   134.81s Checking existence of `"TTS" NavigationBar`
+    t =   135.22s Checking existence of `"TTS coach" NavigationBar`
+    t =   135.41s Checking existence of `"Coach" NavigationBar`
+    t =   135.58s Checking existence of `"Read aloud" NavigationBar`
+    t =   135.74s Checking existence of `"TTS" NavigationBar`
+    t =   136.16s Checking existence of `"TTS coach" NavigationBar`
+    t =   136.35s Checking existence of `"Coach" NavigationBar`
+    t =   136.51s Checking existence of `"Read aloud" NavigationBar`
+    t =   136.66s Checking existence of `"TTS" NavigationBar`
+    t =   137.23s Tap "Settings" Button
+    t =   137.23s     Wait for com.lingguang.snagcue to idle
+    t =   137.24s     Find the "Settings" Button
+    t =   137.40s     Check for interrupting elements affecting "gearshape" Button
+    t =   137.52s     Synthesize event
+    t =   137.53s         Scroll element to visible
+    t =   137.53s         Find the "gearshape" Button
+    t =   137.70s         Computed hit point {-1, -1} after scrolling to visible
+    t =   137.99s     Wait for com.lingguang.snagcue to idle
+    t =   139.00s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   139.45s Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   139.84s Waiting 3.0s for "Allow DeepSeek inference" Switch to exist
+    t =   140.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Switch`
+    t =   140.87s         Checking existence of `"Allow DeepSeek inference" Switch`
+    t =   141.08s         Capturing element debug description
+    t =   141.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Switch`
+    t =   141.90s         Checking existence of `"Allow DeepSeek inference" Switch`
+    t =   142.10s         Capturing element debug description
+    t =   142.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Switch`
+    t =   142.85s         Checking existence of `"Allow DeepSeek inference" Switch`
+    t =   143.05s         Capturing element debug description
+    t =   143.05s     Checking existence of `"Allow DeepSeek inference" Switch`
+    t =   143.22s Collecting debug information to assist test failure triage
+    t =   143.22s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   143.52s Waiting 1.0s for "Privacy" Button to exist
+    t =   144.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =   144.52s         Checking existence of `"Privacy" Button`
+    t =   144.74s         Capturing element debug description
+    t =   144.75s     Checking existence of `"Privacy" Button`
+    t =   144.92s Collecting debug information to assist test failure triage
+    t =   144.92s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   145.21s Waiting 1.0s for "Privacy Policy" Button to exist
+    t =   146.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy Policy" Button`
+    t =   146.22s         Checking existence of `"Privacy Policy" Button`
+    t =   146.43s         Capturing element debug description
+    t =   146.43s     Checking existence of `"Privacy Policy" Button`
+    t =   146.60s Collecting debug information to assist test failure triage
+    t =   146.60s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   146.92s Waiting 1.0s for "Privacy policy" Button to exist
+    t =   147.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy policy" Button`
+    t =   147.92s         Checking existence of `"Privacy policy" Button`
+    t =   148.11s         Capturing element debug description
+    t =   148.11s     Checking existence of `"Privacy policy" Button`
+    t =   148.27s Collecting debug information to assist test failure triage
+    t =   148.27s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   148.55s Waiting 2.0s for "Provider policy" Button to exist
+    t =   149.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   149.57s         Checking existence of `"Provider policy" Button`
+    t =   149.78s         Capturing element debug description
+    t =   150.55s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   150.55s         Checking existence of `"Provider policy" Button`
+    t =   150.77s         Capturing element debug description
+    t =   150.77s     Checking existence of `"Provider policy" Button`
+    t =   150.98s Collecting debug information to assist test failure triage
+    t =   150.98s     Requesting snapshot of accessibility hierarchy for app with pid 69629
+    t =   151.26s Terminate com.lingguang.snagcue:69629
+    t =   153.33s Open com.lingguang.snagcue
+    t =   153.33s     Launch com.lingguang.snagcue
+    t =   153.58s         Setting up automation session
+    t =   154.53s         Wait for com.lingguang.snagcue to idle
+    t =   156.32s Wait for com.lingguang.snagcue to become Running Foreground
+    t =   157.34s Waiting 3.0s for "Audits" Button to exist
+    t =   158.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Audits" Button`
+    t =   158.37s         Checking existence of `"Audits" Button`
+    t =   158.46s Tap "Audits" Button
+    t =   158.46s     Wait for com.lingguang.snagcue to idle
+    t =   158.46s     Find the "Audits" Button
+    t =   158.47s     Check for interrupting elements affecting "Audits" Button
+    t =   158.49s     Synthesize event
+    t =   158.79s     Wait for com.lingguang.snagcue to idle
+    t =   160.60s Requesting snapshot of accessibility hierarchy for app with pid 70370
+    t =   160.71s Requesting snapshot of accessibility hierarchy for app with pid 70370
+    t =   160.81s Checking existence of `"Active punch" Button`
+    t =   160.82s Tap "Active punch" Button
+    t =   160.82s     Wait for com.lingguang.snagcue to idle
+    t =   160.82s     Find the "Active punch" Button
+    t =   160.84s     Check for interrupting elements affecting "Active punch" Button
+    t =   160.85s     Synthesize event
+    t =   161.14s     Wait for com.lingguang.snagcue to idle
+    t =   163.44s Requesting snapshot of accessibility hierarchy for app with pid 70370
+    t =   163.56s Requesting snapshot of accessibility hierarchy for app with pid 70370
+    t =   163.66s Tear Down
+Test Case '-[SnagCueUIDriverUITests.AcceptAttempt3Tests testAcceptanceAttempt3]' passed (163.934 seconds).
+Test Suite 'AcceptAttempt3Tests' passed at 2026-10-13 20:17:49.533.
+	 Executed 1 test, with 0 failures (0 unexpected) in 163.934 (163.936) seconds
+Test Suite 'SnagCueUIDriverUITests.xctest' passed at 2026-10-13 20:17:49.534.
+	 Executed 1 test, with 0 failures (0 unexpected) in 163.934 (163.937) seconds
+Test Suite 'Selected tests' passed at 2026-10-13 20:17:49.535.
+	 Executed 1 test, with 0 failures (0 unexpected) in 163.934 (163.938) seconds
+2026-10-13 20:17:49.891 xcodebuild[69590:4172764] [MT] IDETestOperationsObserverDebug: 166.816 elapsed -- Testing started completed.
+2026-10-13 20:17:49.891 xcodebuild[69590:4172764] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 20:17:49.891 xcodebuild[69590:4172764] [MT] IDETestOperationsObserverDebug: 166.816 sec, +166.816 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/SnagCueUIDriver-DD-a3/Logs/Test/Test-Host-2026.10.13_20-15-01-+0800.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

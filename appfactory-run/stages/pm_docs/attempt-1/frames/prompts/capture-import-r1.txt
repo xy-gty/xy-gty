@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: capture-import — Photo import for walkthrough
+Nav title "Unit 4B walkthrough" with Close. Large photo well showing a construction corridor photo placeholder thumbnail grid (2 imported). Primary button "Add photos", secondary "Detect snags". Caption "2 photos ready".
+No Site Audit Pro branding. No paywall. Thin bezel; UI fills tall column.

@@ -1,0 +1,18 @@
+Dispatch `a7bdfed3-…` finished. Launch hash verified; Acceptance ran and reported **blocked**.
+
+**Verdict:** `blocked` — Active punch hub CTAs (`Add photos` / `Review snags` / `Chat fill` / `Annotate` / `Read aloud`) do not navigate; destinations never reached.
+
+| Domain | Result |
+|--------|--------|
+| UL-01 build_launch | pass |
+| UL-02 core_flows | fail (hub navigation dead → `ai_build`) |
+| UL-03 live_ai | pass (`ai_key_unavailable` gap + honest Settings copy) |
+| UL-04 persistence | fail (audit persists; PunchItem save unproven) |
+| UL-05 feedback_reuse | fail (Chat unreachable) |
+| UL-06 privacy | pass (local Privacy WebView + disclosure) |
+| UL-07 ui | fail (2/8 pass: home + settings) |
+| UL-08 repo_evidence | pass |
+
+Finish receipt: `status=blocked`, MAP at `stages/ai_app_accept/attempt-1/MAP.md` (`map_sha256` `ccaa8354…`). Simulator lease released.Acceptance dispatch completed as **blocked**.
+
+Hub navigation from Active punch never reached Capture / Review / Chat / Annotate / TTS, so UL-02, UL-05, and most of UL-07 failed. Home launch, Settings/legal, and honest `ai_key_unavailable` messaging passed. MAP and `cursor-package ultra-lite finish` are already recorded for the controller.

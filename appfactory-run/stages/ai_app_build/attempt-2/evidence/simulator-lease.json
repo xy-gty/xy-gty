@@ -1,0 +1,11 @@
+{
+  "boot_error": "",
+  "boot_ok": true,
+  "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-17",
+  "fallback": false,
+  "fallback_reason": "",
+  "leased": true,
+  "name": "iPhone 17",
+  "ok": true,
+  "udid": "5E3A8993-F815-4738-8EED-EF032F75704F"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "a7bdfed3-2ab4-4e91-b223-835dd6c4cb3e",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_a7bdfed32ab44e91b223835dd6c4cb3e_e2",
+    "prompt": "Dispatch a7bdfed3-2ab4-4e91-b223-835dd6c4cb3e. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-1/codex.launch.e2.md SHA-256 4a7bc3f1079dc8bd77beacdf736349aab59e9b8b23893770946414c702692559. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-accept-a7bdfed32ab4",
+  "agent_name": "/root/pkg_a7bdfed32ab44e91b223835dd6c4cb3e",
+  "execution_seq": 2,
+  "note": "e2 bind for product-repair routing; MAP already blocked from e1"
+}

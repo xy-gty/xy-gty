@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: annotated-report — Annotated report preview
+Nav title "Annotated report". Large preview of a corridor photo with yellow callout boxes labeling "Paint scrape" and "Missing cover plate". Footer disclaimer "Guidance only — not a building-code certification". Buttons Use and Discard.
+No Site Audit Pro logo. No paywall. Thin bezel; UI fills tall column.

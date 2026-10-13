@@ -1,0 +1,12 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "ad7a1053-5d66-475c-a9c0-1fe7199a68ba",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-builder",
+    "model": "auto",
+    "description": "pkg_ad7a10535d66475ca9c01fe7199a68ba_e2",
+    "prompt": "Dispatch ad7a1053-5d66-475c-a9c0-1fe7199a68ba. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/codex.launch.e2.md SHA-256 0ad01b152b95d16c707534067dda8c8a119e4409154c55a0c4e2f10582f08702. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-build-ad7a10535d66-e2",
+  "agent_name": "/root/pkg_ad7a10535d66475ca9c01fe7199a68ba_e2"
+}

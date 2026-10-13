@@ -1,0 +1,44 @@
+{
+  "event": {
+    "source": "cursor_task_host",
+    "dispatch_id": "839fca32-c885-4769-b798-751bc0dad9ff",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-prep-839fca32c885",
+    "status": "completed",
+    "final_text": "Dispatch `839fca32-c885-4769-b798-751bc0dad9ff` complete.\n\n- Launch file SHA-256 verified\n- Bound source refs verified; AppRuntimeCore installed; preparation_cache **hit** (shared baseline not rebuilt)\n- Workspace scaffolding for SnagCue domain/entities/navigation/stores ready\n- `PREPARATION.md` Status: **ready**\n- `preparation finish --status ready` succeeded (private receipt written; controller seals separately)"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+    "session_id": "grokbot-packaging-kf-20261013T095600Z-1e00eb7a",
+    "session_kind": "interactive",
+    "observed_at": 1791886307.6195462,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_f4cb4aeec0614810b965411544ec1cf9",
+        "agent_id": "cursor-cli-pm-f4cb4aeec061",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_839fca32c8854769b798751bc0dad9ff",
+        "agent_id": "cursor-cli-prep-839fca32c885",
+        "agent_status": {
+          "completed": "Dispatch `839fca32-c885-4769-b798-751bc0dad9ff` complete.\n\n- Launch file SHA-256 verified\n- Bound source refs verified; AppRuntimeCore installed; preparation_cache **hit** (shared baseline not rebuilt)\n- Workspace scaffolding for SnagCue domain/entities/navigation/stores ready\n- `PREPARATION.md` Status: **ready**\n- `preparation finish --status ready` succeeded (private receipt written; controller seals separately)"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-13T10:11:47Z"
+}

@@ -1,0 +1,85 @@
+Attributes: Application, 0x1155017c0, pid: 73764, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x1155017c0, pid: 73764, label: 'SnagCue AI'
+    Window (Main), 0x115501400, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115501540, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115501180, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1155012c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x115500f00, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x115500780, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1155008c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x115500500, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x115500640, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x115500280, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1155003c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x115500000, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x115500140, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Provider policy'
+                              Button, 0x115524000, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x115524140, {{16.0, 119.7}, {234.7, 40.7}}, label: 'Provider policy'
+                            Other, 0x115524280, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1155243c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x115524500, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x115524640, {{0.0, 0.0}, {402.0, 874.0}}
+                                    WebView, 0x115524780, {{0.0, 168.0}, {402.0, 623.0}}
+                                      WebView, 0x1155248c0, {{0.0, 168.0}, {402.0, 623.0}}
+                                        WebView, 0x115524a00, {{0.0, 168.0}, {402.0, 623.0}}
+                                          Other, 0x115524b40, {{0.0, 0.0}, {402.0, 623.0}}
+                                            Other, 0x115524c80, {{0.0, 0.0}, {402.0, 623.0}}
+                                              Other, 0x115524dc0, {{0.0, 168.0}, {402.0, 623.0}}
+                                                Other, 0x115524f00, {{0.0, 168.0}, {402.0, 623.0}}, label: 'DeepSeek provider policy', Focused
+                                                  Other, 0x115525040, {{8.0, 189.0}, {386.0, 39.0}}, label: 'DeepSeek provider policy', value: 1, Focused
+                                                    StaticText, 0x115525180, {{8.0, 190.0}, {350.0, 37.0}}, label: 'DeepSeek provider policy', value: DeepSeek provider ..., Focused
+                                                  Other, 0x1155252c0, {{8.0, 248.0}, {386.0, 61.0}}, Focused
+                                                    StaticText, 0x115525400, {{8.0, 248.0}, {362.0, 60.0}}, label: 'SnagCue AI uses DeepSeek for optional cloud inference when an API key is configured and you allow AI data sharing.', value: SnagCue AI uses De..., Focused
+                                                  Other, 0x115525540, {{8.0, 324.0}, {386.0, 61.0}}, Focused
+                                                    StaticText, 0x115525680, {{8.0, 324.0}, {375.0, 60.0}}, label: 'External provider policy URL is not configured in this local_only delivery. No network request is sent before you tap Allow on the consent sheet.', value: External provider ..., Focused
+                                                  Other, 0x1155257c0, {{8.0, 400.0}, {386.0, 41.0}}, Focused
+                                                    StaticText, 0x115525900, {{8.0, 400.0}, {328.0, 40.0}}, label: 'Revoking consent in Settings stops outbound sends immediately, including in-flight requests.', value: Revoking consent i..., Focused
+                                                  Other, 0x115525a40, {{8.0, 456.0}, {386.0, 21.0}}, Focused
+                                                    StaticText, 0x115525b80, {{8.0, 456.0}, {380.0, 20.0}}, label: 'Guidance only — not a building-code or legal certification.', value: Guidance only — no..., Focused
+                                        Other, 0x115525cc0, {{369.0, 168.0}, {30.0, 623.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x115525e00, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x115525f40, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x115526080, {{392.0, 785.0}, {7.0, 3.0}}
+                                        Other, 0x1155261c0, {{369.0, 168.0}, {30.0, 623.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x115526300, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x115526440, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x115526580, {{392.0, 785.0}, {7.0, 3.0}}
+                            Other, 0x1155266c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115526800, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115526940, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x115526a80, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115526bc0, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115526d00, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x115526e40, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x115526f80, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x1155270c0, {{53.0, 795.0}, {104.3, 54.0}}, identifier: 'list.bullet.rectangle', label: 'Audits'
+                            Image, 0x115527200, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x115527340, {{149.3, 795.0}, {104.3, 54.0}}, identifier: 'checkmark.seal', label: 'Active punch'
+                            Image, 0x115527480, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x1155275c0, {{245.7, 795.0}, {104.3, 54.0}}, identifier: 'gearshape', label: 'Settings', Selected
+                            Image, 0x115527700, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115527840, {{245.7, 795.0}, {104.3, 54.0}}
+                          Other, 0x115527980, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x115527ac0, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x115527c00, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x115527d40, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x115527e80, {{245.7, 795.0}, {104.3, 54.0}}
+                                  Other, 0x11552c000, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x11552c140, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x11552c280, {{245.7, 795.0}, {104.3, 54.0}}
+                  Other, 0x11552c3c0, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x11552c500, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x11552c640, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11552c780, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11552c8c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x11552ca00, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11552cb40, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11552cc80, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x1155017c0, pid: 73764, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x11552cdc0, pid: 73764, label: 'SnagCue AI'
+  }

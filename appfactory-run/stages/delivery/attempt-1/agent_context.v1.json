@@ -1,0 +1,40 @@
+{
+  "context_version": "v1",
+  "context_class": "contract",
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "delivery",
+  "attempt": 1,
+  "principal": "DeliveryReporterAgent",
+  "route": "delivery",
+  "state_version": 18,
+  "goal_version": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "upstream_refs": {
+    "upstream_map_pm_docs": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/MAP.md",
+    "upstream_map_ai_app_build": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/MAP.md",
+    "upstream_map_ai_app_accept": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-3/MAP.md"
+  },
+  "artifact_refs": {
+    "required_output_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/delivery/attempt-1/MAP.md"
+  },
+  "capability_ids": [
+    "route.delivery"
+  ],
+  "session_id": "",
+  "event_cursor": 37,
+  "knowledge_receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/memory/delivery-attempt-1.receipt.json",
+  "runtime_profile": {
+    "model_preset": "dev"
+  },
+  "contract_context": {
+    "run_id": "kf-20261013T095600Z-1e00eb7a",
+    "stage": "delivery",
+    "attempt": 1,
+    "ai_profile": "ultra_lite"
+  },
+  "advisory_context": {
+    "knowledge_availability": "ready"
+  },
+  "advisory": {},
+  "sha256": "a15344145706639ebe847c83576679f6b06b0b35a2aa8432fcb97337204dd74e"
+}

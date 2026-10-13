@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-accept-a7bdfed32ab4"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "Accept attempt-1 blocked. UL-01/03/06/08 pass; UL-02/04/05/07 fail — Active punch hub CTAs (Add photos/Review snags/Chat fill/Annotate/Read aloud) do not navigate. MAP blocked finish reported (map_sha ccaa8354…). Simulator lease released. Recommend continue --repair for hub navigation."}]}, "session_id": "cursor-cli-accept-a7bdfed32ab4"}

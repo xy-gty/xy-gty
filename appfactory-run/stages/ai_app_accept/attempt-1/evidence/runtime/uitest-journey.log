@@ -1,0 +1,1340 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/SnagCueUIDriver/SnagCueUIDriver.xcodeproj -scheme Host -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/SnagCueUIDriver-DD "-only-testing:SnagCueUIDriverUITests/JourneyTests/testAcceptanceJourney"
+
+2026-10-13 18:58:14.037485+0800 SnagCueUIDriverUITests-Runner[23495:3960606] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 18:58:14.668.
+Test Suite 'SnagCueUIDriverUITests.xctest' started at 2026-10-13 18:58:14.669.
+Test Suite 'JourneyTests' started at 2026-10-13 18:58:14.669.
+Test Case '-[SnagCueUIDriverUITests.JourneyTests testAcceptanceJourney]' started.
+    t =     0.00s Start Test at 2026-10-13 18:58:14.669
+    t =     0.03s Set Up
+    t =     0.04s Terminate com.lingguang.snagcue:0
+    t =     1.04s Open com.lingguang.snagcue
+    t =     1.04s     Launch com.lingguang.snagcue
+    t =     1.15s         Setting up automation session
+objc[23495]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1069c4310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x105df0398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.66s         Wait for com.lingguang.snagcue to idle
+    t =     2.99s Wait for com.lingguang.snagcue to become Running Foreground
+    t =     2.99s Waiting 4.0s for "Audits" Button to exist
+    t =     4.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Audits" Button`
+    t =     4.03s         Checking existence of `"Audits" Button`
+    t =     4.11s Tap "Audits" Button
+    t =     4.11s     Wait for com.lingguang.snagcue to idle
+    t =     4.11s     Find the "Audits" Button
+    t =     4.12s     Check for interrupting elements affecting "Audits" Button
+    t =     4.17s     Synthesize event
+    t =     4.58s     Wait for com.lingguang.snagcue to idle
+    t =     6.35s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =     6.44s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =     6.59s Waiting 4.0s for "Start audit" Button to exist
+    t =     7.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Start audit" Button`
+    t =     7.62s         Checking existence of `"Start audit" Button`
+    t =     7.65s Waiting 3.0s for "Start audit" Button to exist
+    t =     8.68s     Checking `Expect predicate `existsNoRetry == 1` for object "Start audit" Button`
+    t =     8.68s         Checking existence of `"Start audit" Button`
+    t =     8.70s Tap "Start audit" Button
+    t =     8.70s     Wait for com.lingguang.snagcue to idle
+    t =     8.70s     Find the "Start audit" Button
+    t =     8.71s     Check for interrupting elements affecting "Start audit" Button
+    t =     8.73s     Synthesize event
+    t =     9.02s     Wait for com.lingguang.snagcue to idle
+    t =    10.95s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    11.08s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    11.10s Waiting 1.5s for "Title" TextField to exist
+    t =    12.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Title" TextField`
+    t =    12.14s         Checking existence of `"Title" TextField`
+    t =    12.17s         Capturing element debug description
+    t =    12.60s     Checking existence of `"Title" TextField`
+    t =    12.64s Collecting debug information to assist test failure triage
+    t =    12.64s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    12.67s Waiting 1.5s for "Audit title" TextField to exist
+    t =    13.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Audit title" TextField`
+    t =    13.70s         Checking existence of `"Audit title" TextField`
+    t =    13.73s         Capturing element debug description
+    t =    14.17s     Checking existence of `"Audit title" TextField`
+    t =    14.20s Collecting debug information to assist test failure triage
+    t =    14.21s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    14.24s Waiting 1.5s for "Site" TextField to exist
+    t =    15.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Site" TextField`
+    t =    15.27s         Checking existence of `"Site" TextField`
+    t =    15.31s         Capturing element debug description
+    t =    15.74s     Checking existence of `"Site" TextField`
+    t =    15.78s Collecting debug information to assist test failure triage
+    t =    15.78s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    15.81s Waiting 1.5s for "Site label" TextField to exist
+    t =    16.84s     Checking `Expect predicate `existsNoRetry == 1` for object "Site label" TextField`
+    t =    16.84s         Checking existence of `"Site label" TextField`
+    t =    16.87s         Capturing element debug description
+    t =    17.31s     Checking existence of `"Site label" TextField`
+    t =    17.35s Collecting debug information to assist test failure triage
+    t =    17.35s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    17.38s Waiting 1.5s for "Name" TextField to exist
+    t =    18.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Name" TextField`
+    t =    18.41s         Checking existence of `"Name" TextField`
+    t =    18.43s         Capturing element debug description
+    t =    18.88s     Checking existence of `"Name" TextField`
+    t =    18.90s Collecting debug information to assist test failure triage
+    t =    18.90s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    18.92s Get number of matches for: Descendants matching type TextField
+    t =    18.94s Waiting 1.0s for TextField (Element at index 0) to exist
+    t =    19.94s     Checking `Expect predicate `existsNoRetry == 1` for object TextField (Element at index 0)`
+    t =    19.94s         Checking existence of `TextField (Element at index 0)`
+    t =    19.97s     Checking existence of `TextField (Element at index 0)`
+    t =    19.99s Tap TextField (Element at index 0)
+    t =    19.99s     Wait for com.lingguang.snagcue to idle
+    t =    19.99s     Find the TextField (Element at index 0)
+    t =    20.01s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    20.02s     Synthesize event
+    t =    20.31s     Wait for com.lingguang.snagcue to idle
+    t =    20.89s Type 'Acceptance Walkthr...' into "Title e.g. Level 3 walkthrough" TextField
+    t =    20.89s     Wait for com.lingguang.snagcue to idle
+    t =    21.26s     Find the "Title e.g. Level 3 walkthrough" TextField
+    t =    21.31s     Check for interrupting elements affecting "Title e.g. Level 3 walkthrough" TextField
+    t =    21.33s     Synthesize event
+    t =    21.90s     Wait for com.lingguang.snagcue to idle
+    t =    21.90s Waiting 3.0s for "Continue" Button to exist
+    t =    22.94s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    22.94s         Checking existence of `"Continue" Button`
+    t =    22.99s         Capturing element debug description
+    t =    23.93s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    23.93s         Checking existence of `"Continue" Button`
+    t =    23.95s         Capturing element debug description
+    t =    24.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    24.90s         Checking existence of `"Continue" Button`
+    t =    24.95s         Capturing element debug description
+    t =    24.95s     Checking existence of `"Continue" Button`
+    t =    24.98s Collecting debug information to assist test failure triage
+    t =    24.98s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    25.03s Waiting 0.4s for "Continue" StaticText to exist
+    t =    25.43s     Checking existence of `"Continue" StaticText`
+    t =    25.47s Collecting debug information to assist test failure triage
+    t =    25.47s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    25.52s Waiting 0.3s for Any (First Match) to exist
+    t =    25.83s     Checking existence of `Any (First Match)`
+    t =    25.88s Collecting debug information to assist test failure triage
+    t =    25.88s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    25.93s Waiting 3.0s for "Next" Button to exist
+    t =    26.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =    26.96s         Checking existence of `"Next" Button`
+    t =    27.01s         Capturing element debug description
+    t =    27.94s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =    27.94s         Checking existence of `"Next" Button`
+    t =    27.99s         Capturing element debug description
+    t =    28.93s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =    28.93s         Checking existence of `"Next" Button`
+    t =    28.96s         Capturing element debug description
+    t =    28.96s     Checking existence of `"Next" Button`
+    t =    28.99s Collecting debug information to assist test failure triage
+    t =    28.99s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    29.03s Waiting 0.4s for "Next" StaticText to exist
+    t =    29.44s     Checking existence of `"Next" StaticText`
+    t =    29.48s Collecting debug information to assist test failure triage
+    t =    29.48s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    29.56s Waiting 0.3s for Any (First Match) to exist
+    t =    29.87s     Checking existence of `Any (First Match)`
+    t =    29.92s Collecting debug information to assist test failure triage
+    t =    29.92s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    29.99s Waiting 3.0s for "Create audit" Button to exist
+    t =    31.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Create audit" Button`
+    t =    31.03s         Checking existence of `"Create audit" Button`
+    t =    31.09s Tap "Create audit" Button
+    t =    31.09s     Wait for com.lingguang.snagcue to idle
+    t =    31.09s     Find the "Create audit" Button
+    t =    31.15s     Check for interrupting elements affecting "Create audit" Button
+    t =    31.19s     Synthesize event
+    t =    31.50s     Wait for com.lingguang.snagcue to idle
+    t =    33.07s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    33.47s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    33.53s Waiting 3.0s for "Import photos" Button to exist
+    t =    34.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Import photos" Button`
+    t =    34.56s         Checking existence of `"Import photos" Button`
+    t =    34.59s         Capturing element debug description
+    t =    35.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Import photos" Button`
+    t =    35.57s         Checking existence of `"Import photos" Button`
+    t =    35.59s         Capturing element debug description
+    t =    36.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Import photos" Button`
+    t =    36.48s         Checking existence of `"Import photos" Button`
+    t =    36.51s         Capturing element debug description
+    t =    36.51s     Checking existence of `"Import photos" Button`
+    t =    36.53s Collecting debug information to assist test failure triage
+    t =    36.53s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    36.57s Waiting 0.4s for "Import photos" StaticText to exist
+    t =    36.97s     Checking existence of `"Import photos" StaticText`
+    t =    37.00s Collecting debug information to assist test failure triage
+    t =    37.00s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    37.04s Waiting 0.3s for Any (First Match) to exist
+    t =    37.35s     Checking existence of `Any (First Match)`
+    t =    37.38s Collecting debug information to assist test failure triage
+    t =    37.38s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    37.42s Waiting 3.0s for "Choose from library" Button to exist
+    t =    38.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from library" Button`
+    t =    38.45s         Checking existence of `"Choose from library" Button`
+    t =    38.57s         Capturing element debug description
+    t =    39.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from library" Button`
+    t =    39.49s         Checking existence of `"Choose from library" Button`
+    t =    39.52s         Capturing element debug description
+    t =    40.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Choose from library" Button`
+    t =    40.42s         Checking existence of `"Choose from library" Button`
+    t =    40.45s         Capturing element debug description
+    t =    40.45s     Checking existence of `"Choose from library" Button`
+    t =    40.48s Collecting debug information to assist test failure triage
+    t =    40.48s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    40.52s Waiting 0.4s for "Choose from library" StaticText to exist
+    t =    40.92s     Checking existence of `"Choose from library" StaticText`
+    t =    40.95s Collecting debug information to assist test failure triage
+    t =    40.95s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    40.98s Waiting 0.3s for Any (First Match) to exist
+    t =    41.28s     Checking existence of `Any (First Match)`
+    t =    41.30s Collecting debug information to assist test failure triage
+    t =    41.30s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    41.33s Waiting 3.0s for "Add photos" Button to exist
+    t =    42.36s     Checking `Expect predicate `existsNoRetry == 1` for object "Add photos" Button`
+    t =    42.36s         Checking existence of `"Add photos" Button`
+    t =    42.40s Tap "Add photos" Button
+    t =    42.40s     Wait for com.lingguang.snagcue to idle
+    t =    42.40s     Find the "Add photos" Button
+    t =    42.42s     Check for interrupting elements affecting "Add photos" Button
+    t =    42.46s     Synthesize event
+    t =    42.78s     Wait for com.lingguang.snagcue to idle
+    t =    42.79s Waiting 1.2s for "Allow Full Access" Button to exist
+    t =    43.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    43.83s         Checking existence of `"Allow Full Access" Button`
+    t =    44.30s         Capturing element debug description
+    t =    44.31s     Checking existence of `"Allow Full Access" Button`
+    t =    44.32s Collecting debug information to assist test failure triage
+    t =    44.32s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    44.37s Waiting 1.2s for "Allow Access to All Photos" Button to exist
+    t =    45.40s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Access to All Photos" Button`
+    t =    45.40s         Checking existence of `"Allow Access to All Photos" Button`
+    t =    45.44s         Capturing element debug description
+    t =    45.57s     Checking existence of `"Allow Access to All Photos" Button`
+    t =    45.60s Collecting debug information to assist test failure triage
+    t =    45.60s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    45.63s Waiting 1.2s for "Allow" Button to exist
+    t =    46.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    46.66s         Checking existence of `"Allow" Button`
+    t =    46.71s         Capturing element debug description
+    t =    46.83s     Checking existence of `"Allow" Button`
+    t =    46.87s Collecting debug information to assist test failure triage
+    t =    46.87s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    46.90s Waiting 1.2s for "OK" Button to exist
+    t =    47.92s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    47.92s         Checking existence of `"OK" Button`
+    t =    47.95s         Capturing element debug description
+    t =    48.10s     Checking existence of `"OK" Button`
+    t =    48.13s Collecting debug information to assist test failure triage
+    t =    48.13s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    48.16s Waiting 1.2s for "Continue" Button to exist
+    t =    49.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    49.19s         Checking existence of `"Continue" Button`
+    t =    49.21s         Capturing element debug description
+    t =    49.37s     Checking existence of `"Continue" Button`
+    t =    49.39s Collecting debug information to assist test failure triage
+    t =    49.39s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    50.43s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    50.54s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    50.68s Waiting 3.0s for Any (First Match) to exist
+    t =    51.70s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    51.70s         Checking existence of `Any (First Match)`
+    t =    51.74s         Capturing element debug description
+    t =    52.78s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    52.78s         Checking existence of `Any (First Match)`
+    t =    52.82s         Capturing element debug description
+    t =    53.68s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    53.69s         Checking existence of `Any (First Match)`
+    t =    53.74s         Capturing element debug description
+    t =    53.74s     Checking existence of `Any (First Match)`
+    t =    53.77s Collecting debug information to assist test failure triage
+    t =    53.77s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    53.81s Waiting 3.0s for Any (First Match) to exist
+    t =    54.85s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    54.85s         Checking existence of `Any (First Match)`
+    t =    54.90s Tap Any (First Match)
+    t =    54.90s     Wait for com.lingguang.snagcue to idle
+    t =    54.91s     Find the Any (First Match)
+    t =    55.04s     Check for interrupting elements affecting "Audit created. Add walkthrough photos." StaticText
+    t =    55.11s     Synthesize event
+    t =    55.44s     Wait for com.lingguang.snagcue to idle
+    t =    57.46s Waiting 1.2s for "Allow Full Access" Button to exist
+    t =    58.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    58.50s         Checking existence of `"Allow Full Access" Button`
+    t =    58.60s         Capturing element debug description
+    t =    58.67s     Checking existence of `"Allow Full Access" Button`
+    t =    58.68s Collecting debug information to assist test failure triage
+    t =    58.68s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    58.74s Waiting 1.2s for "Allow Access to All Photos" Button to exist
+    t =    59.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Access to All Photos" Button`
+    t =    59.76s         Checking existence of `"Allow Access to All Photos" Button`
+    t =    59.80s         Capturing element debug description
+    t =    59.95s     Checking existence of `"Allow Access to All Photos" Button`
+    t =    60.02s Collecting debug information to assist test failure triage
+    t =    60.03s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    60.15s Waiting 1.2s for "Allow" Button to exist
+    t =    61.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    61.21s         Checking existence of `"Allow" Button`
+    t =    61.25s         Capturing element debug description
+    t =    61.37s     Checking existence of `"Allow" Button`
+    t =    61.44s Collecting debug information to assist test failure triage
+    t =    61.48s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    61.58s Waiting 1.2s for "OK" Button to exist
+    t =    62.60s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    62.60s         Checking existence of `"OK" Button`
+    t =    62.65s         Capturing element debug description
+    t =    62.78s     Checking existence of `"OK" Button`
+    t =    62.81s Collecting debug information to assist test failure triage
+    t =    62.81s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    62.87s Waiting 1.2s for "Continue" Button to exist
+    t =    63.88s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    63.89s         Checking existence of `"Continue" Button`
+    t =    63.93s         Capturing element debug description
+    t =    64.07s     Checking existence of `"Continue" Button`
+    t =    64.10s Collecting debug information to assist test failure triage
+    t =    64.10s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    65.17s Waiting 2.0s for Cell (Element at index 0) to exist
+    t =    66.21s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    66.21s         Checking existence of `Cell (Element at index 0)`
+    t =    66.36s         Capturing element debug description
+    t =    67.18s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (Element at index 0)`
+    t =    67.18s         Checking existence of `Cell (Element at index 0)`
+    t =    67.20s         Capturing element debug description
+    t =    67.20s     Checking existence of `Cell (Element at index 0)`
+    t =    67.22s Collecting debug information to assist test failure triage
+    t =    67.22s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    67.30s Get number of matches for: Descendants matching type Image
+    t =    67.32s Checking existence of `Image (Element at index 1)`
+    t =    67.34s Tap Image (Element at index 1)
+    t =    67.35s     Wait for com.lingguang.snagcue to idle
+    t =    67.35s     Find the Image (Element at index 1)
+    t =    67.38s     Check for interrupting elements affecting "checkmark.seal.fill" Image
+    t =    67.46s     Synthesize event
+    t =    67.89s     Wait for com.lingguang.snagcue to idle
+    t =    69.91s Checking existence of `"Add" Button`
+    t =    69.99s Checking existence of `"Done" Button`
+    t =    70.01s Checking existence of `"Choose" Button`
+    t =    70.03s Checking existence of `"Open" Button`
+    t =    70.06s Checking existence of `"Add" Button`
+    t =    70.12s Checking existence of `"Done" Button`
+    t =    70.14s Checking existence of `"Choose" Button`
+    t =    70.16s Checking existence of `"Open" Button`
+    t =    70.18s Waiting 1.2s for "Allow Full Access" Button to exist
+    t =    71.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Full Access" Button`
+    t =    71.22s         Checking existence of `"Allow Full Access" Button`
+    t =    71.24s         Capturing element debug description
+    t =    71.39s     Checking existence of `"Allow Full Access" Button`
+    t =    71.42s Collecting debug information to assist test failure triage
+    t =    71.42s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    71.51s Waiting 1.2s for "Allow Access to All Photos" Button to exist
+    t =    72.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Access to All Photos" Button`
+    t =    72.54s         Checking existence of `"Allow Access to All Photos" Button`
+    t =    72.57s         Capturing element debug description
+    t =    72.71s     Checking existence of `"Allow Access to All Photos" Button`
+    t =    72.74s Collecting debug information to assist test failure triage
+    t =    72.75s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    72.81s Waiting 1.2s for "Allow" Button to exist
+    t =    73.84s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    73.84s         Checking existence of `"Allow" Button`
+    t =    73.88s         Capturing element debug description
+    t =    74.02s     Checking existence of `"Allow" Button`
+    t =    74.04s Collecting debug information to assist test failure triage
+    t =    74.04s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    74.12s Waiting 1.2s for "OK" Button to exist
+    t =    75.14s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    75.14s         Checking existence of `"OK" Button`
+    t =    75.18s         Capturing element debug description
+    t =    75.32s     Checking existence of `"OK" Button`
+    t =    75.35s Collecting debug information to assist test failure triage
+    t =    75.35s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    75.40s Waiting 1.2s for "Continue" Button to exist
+    t =    76.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    76.42s         Checking existence of `"Continue" Button`
+    t =    76.45s         Capturing element debug description
+    t =    76.61s     Checking existence of `"Continue" Button`
+    t =    76.64s Collecting debug information to assist test failure triage
+    t =    76.64s     Requesting snapshot of accessibility hierarchy for app with pid 99222
+    t =    77.69s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    78.72s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    79.13s Waiting 3.0s for "Detect snags" Button to exist
+    t =    80.16s     Checking `Expect predicate `existsNoRetry == 1` for object "Detect snags" Button`
+    t =    80.16s         Checking existence of `"Detect snags" Button`
+    t =    80.20s         Capturing element debug description
+    t =    81.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Detect snags" Button`
+    t =    81.22s         Checking existence of `"Detect snags" Button`
+    t =    81.26s         Capturing element debug description
+    t =    82.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Detect snags" Button`
+    t =    82.14s         Checking existence of `"Detect snags" Button`
+    t =    82.17s         Capturing element debug description
+    t =    82.19s     Checking existence of `"Detect snags" Button`
+    t =    82.22s Collecting debug information to assist test failure triage
+    t =    82.22s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    82.28s Waiting 0.4s for "Detect snags" StaticText to exist
+    t =    82.68s     Checking existence of `"Detect snags" StaticText`
+    t =    82.72s Collecting debug information to assist test failure triage
+    t =    82.72s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    82.77s Waiting 0.3s for Any (First Match) to exist
+    t =    83.07s     Checking existence of `Any (First Match)`
+    t =    83.12s Collecting debug information to assist test failure triage
+    t =    83.12s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    83.16s Waiting 3.0s for "Run recognition" Button to exist
+    t =    84.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Run recognition" Button`
+    t =    84.19s         Checking existence of `"Run recognition" Button`
+    t =    84.23s         Capturing element debug description
+    t =    85.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Run recognition" Button`
+    t =    85.26s         Checking existence of `"Run recognition" Button`
+    t =    85.30s         Capturing element debug description
+    t =    86.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Run recognition" Button`
+    t =    86.17s         Checking existence of `"Run recognition" Button`
+    t =    86.18s         Capturing element debug description
+    t =    86.19s     Checking existence of `"Run recognition" Button`
+    t =    86.20s Collecting debug information to assist test failure triage
+    t =    86.20s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    86.23s Waiting 0.4s for "Run recognition" StaticText to exist
+    t =    86.64s     Checking existence of `"Run recognition" StaticText`
+    t =    86.65s Collecting debug information to assist test failure triage
+    t =    86.65s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    86.68s Waiting 0.3s for Any (First Match) to exist
+    t =    86.98s     Checking existence of `Any (First Match)`
+    t =    87.02s Collecting debug information to assist test failure triage
+    t =    87.02s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    87.07s Waiting 3.0s for "Recognize" Button to exist
+    t =    88.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Recognize" Button`
+    t =    88.10s         Checking existence of `"Recognize" Button`
+    t =    88.14s         Capturing element debug description
+    t =    89.16s     Checking `Expect predicate `existsNoRetry == 1` for object "Recognize" Button`
+    t =    89.16s         Checking existence of `"Recognize" Button`
+    t =    89.19s         Capturing element debug description
+    t =    90.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Recognize" Button`
+    t =    90.07s         Checking existence of `"Recognize" Button`
+    t =    90.10s         Capturing element debug description
+    t =    90.10s     Checking existence of `"Recognize" Button`
+    t =    90.12s Collecting debug information to assist test failure triage
+    t =    90.12s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    90.16s Waiting 0.4s for "Recognize" StaticText to exist
+    t =    90.57s     Checking existence of `"Recognize" StaticText`
+    t =    90.60s Collecting debug information to assist test failure triage
+    t =    90.60s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    90.65s Waiting 0.3s for Any (First Match) to exist
+    t =    90.96s     Checking existence of `Any (First Match)`
+    t =    90.99s Collecting debug information to assist test failure triage
+    t =    90.99s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    91.02s Waiting 3.0s for "Continue to review" Button to exist
+    t =    92.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue to review" Button`
+    t =    92.03s         Checking existence of `"Continue to review" Button`
+    t =    92.05s         Capturing element debug description
+    t =    93.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue to review" Button`
+    t =    93.08s         Checking existence of `"Continue to review" Button`
+    t =    93.11s         Capturing element debug description
+    t =    94.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue to review" Button`
+    t =    94.03s         Checking existence of `"Continue to review" Button`
+    t =    94.05s         Capturing element debug description
+    t =    94.05s     Checking existence of `"Continue to review" Button`
+    t =    94.07s Collecting debug information to assist test failure triage
+    t =    94.07s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    94.12s Waiting 0.4s for "Continue to review" StaticText to exist
+    t =    94.53s     Checking existence of `"Continue to review" StaticText`
+    t =    94.56s Collecting debug information to assist test failure triage
+    t =    94.56s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    94.60s Waiting 0.3s for Any (First Match) to exist
+    t =    94.91s     Checking existence of `Any (First Match)`
+    t =    94.94s Collecting debug information to assist test failure triage
+    t =    94.94s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    94.99s Waiting 3.0s for "Review snags" Button to exist
+    t =    96.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Review snags" Button`
+    t =    96.03s         Checking existence of `"Review snags" Button`
+    t =    96.07s Tap "Review snags" Button
+    t =    96.07s     Wait for com.lingguang.snagcue to idle
+    t =    96.07s     Find the "Review snags" Button
+    t =    96.11s     Check for interrupting elements affecting "Review snags" Button
+    t =    96.29s     Synthesize event
+    t =    96.67s     Wait for com.lingguang.snagcue to idle
+    t =    97.68s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    97.87s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =    98.06s Waiting 3.0s for "Save" Button to exist
+    t =    99.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =    99.06s         Checking existence of `"Save" Button`
+    t =    99.10s         Capturing element debug description
+    t =   100.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   100.14s         Checking existence of `"Save" Button`
+    t =   100.17s         Capturing element debug description
+    t =   101.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   101.06s         Checking existence of `"Save" Button`
+    t =   101.11s         Capturing element debug description
+    t =   101.11s     Checking existence of `"Save" Button`
+    t =   101.15s Collecting debug information to assist test failure triage
+    t =   101.15s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   101.22s Waiting 0.4s for "Save" StaticText to exist
+    t =   101.62s     Checking existence of `"Save" StaticText`
+    t =   101.66s Collecting debug information to assist test failure triage
+    t =   101.66s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   101.71s Waiting 0.3s for Any (First Match) to exist
+    t =   102.02s     Checking existence of `Any (First Match)`
+    t =   102.07s Collecting debug information to assist test failure triage
+    t =   102.07s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   102.12s Waiting 3.0s for "Save snag" Button to exist
+    t =   103.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Save snag" Button`
+    t =   103.15s         Checking existence of `"Save snag" Button`
+    t =   103.17s         Capturing element debug description
+    t =   104.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Save snag" Button`
+    t =   104.20s         Checking existence of `"Save snag" Button`
+    t =   104.23s         Capturing element debug description
+    t =   105.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Save snag" Button`
+    t =   105.13s         Checking existence of `"Save snag" Button`
+    t =   105.16s         Capturing element debug description
+    t =   105.16s     Checking existence of `"Save snag" Button`
+    t =   105.19s Collecting debug information to assist test failure triage
+    t =   105.19s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   105.23s Waiting 0.4s for "Save snag" StaticText to exist
+    t =   105.63s     Checking existence of `"Save snag" StaticText`
+    t =   105.67s Collecting debug information to assist test failure triage
+    t =   105.67s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   105.71s Waiting 0.3s for Any (First Match) to exist
+    t =   106.01s     Checking existence of `Any (First Match)`
+    t =   106.04s Collecting debug information to assist test failure triage
+    t =   106.04s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   106.08s Waiting 3.0s for "Confirm" Button to exist
+    t =   107.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   107.10s         Checking existence of `"Confirm" Button`
+    t =   107.12s         Capturing element debug description
+    t =   108.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   108.15s         Checking existence of `"Confirm" Button`
+    t =   108.18s         Capturing element debug description
+    t =   109.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   109.08s         Checking existence of `"Confirm" Button`
+    t =   109.11s         Capturing element debug description
+    t =   109.11s     Checking existence of `"Confirm" Button`
+    t =   109.12s Collecting debug information to assist test failure triage
+    t =   109.13s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   109.17s Waiting 0.4s for "Confirm" StaticText to exist
+    t =   109.58s     Checking existence of `"Confirm" StaticText`
+    t =   109.60s Collecting debug information to assist test failure triage
+    t =   109.60s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   109.64s Waiting 0.3s for Any (First Match) to exist
+    t =   109.95s     Checking existence of `Any (First Match)`
+    t =   109.97s Collecting debug information to assist test failure triage
+    t =   109.98s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   110.00s Waiting 3.0s for "Keep" Button to exist
+    t =   111.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   111.03s         Checking existence of `"Keep" Button`
+    t =   111.05s         Capturing element debug description
+    t =   112.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   112.09s         Checking existence of `"Keep" Button`
+    t =   112.10s         Capturing element debug description
+    t =   113.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   113.01s         Checking existence of `"Keep" Button`
+    t =   113.04s         Capturing element debug description
+    t =   113.04s     Checking existence of `"Keep" Button`
+    t =   113.06s Collecting debug information to assist test failure triage
+    t =   113.06s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   113.08s Waiting 0.4s for "Keep" StaticText to exist
+    t =   113.48s     Checking existence of `"Keep" StaticText`
+    t =   113.50s Collecting debug information to assist test failure triage
+    t =   113.50s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   113.52s Waiting 0.3s for Any (First Match) to exist
+    t =   113.83s     Checking existence of `Any (First Match)`
+    t =   113.86s Collecting debug information to assist test failure triage
+    t =   113.86s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   113.89s Waiting 3.0s for "Add snag" Button to exist
+    t =   114.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Add snag" Button`
+    t =   114.91s         Checking existence of `"Add snag" Button`
+    t =   114.93s Tap "Add snag" Button
+    t =   114.93s     Wait for com.lingguang.snagcue to idle
+    t =   114.93s     Find the "Add snag" Button
+    t =   114.95s     Check for interrupting elements affecting "Add snag" Button
+    t =   115.03s     Synthesize event
+    t =   115.37s     Wait for com.lingguang.snagcue to idle
+    t =   116.37s Waiting 1.5s for "Label" TextField to exist
+    t =   117.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Label" TextField`
+    t =   117.39s         Checking existence of `"Label" TextField`
+    t =   117.42s         Capturing element debug description
+    t =   117.88s     Checking existence of `"Label" TextField`
+    t =   117.91s Collecting debug information to assist test failure triage
+    t =   117.91s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   117.95s Waiting 1.5s for "Snag" TextField to exist
+    t =   118.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Snag" TextField`
+    t =   118.98s         Checking existence of `"Snag" TextField`
+    t =   119.01s         Capturing element debug description
+    t =   119.45s     Checking existence of `"Snag" TextField`
+    t =   119.48s Collecting debug information to assist test failure triage
+    t =   119.48s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   119.51s Waiting 1.5s for "Title" TextField to exist
+    t =   120.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Title" TextField`
+    t =   120.54s         Checking existence of `"Title" TextField`
+    t =   120.56s         Capturing element debug description
+    t =   121.01s     Checking existence of `"Title" TextField`
+    t =   121.04s Collecting debug information to assist test failure triage
+    t =   121.04s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   121.08s Waiting 1.5s for "Issue" TextField to exist
+    t =   122.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Issue" TextField`
+    t =   122.11s         Checking existence of `"Issue" TextField`
+    t =   122.14s         Capturing element debug description
+    t =   122.58s     Checking existence of `"Issue" TextField`
+    t =   122.62s Collecting debug information to assist test failure triage
+    t =   122.62s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   122.65s Get number of matches for: Descendants matching type TextField
+    t =   122.66s Waiting 3.0s for "Save" Button to exist
+    t =   123.69s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   123.69s         Checking existence of `"Save" Button`
+    t =   123.70s         Capturing element debug description
+    t =   124.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   124.73s         Checking existence of `"Save" Button`
+    t =   124.77s         Capturing element debug description
+    t =   125.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   125.66s         Checking existence of `"Save" Button`
+    t =   125.69s         Capturing element debug description
+    t =   125.69s     Checking existence of `"Save" Button`
+    t =   125.71s Collecting debug information to assist test failure triage
+    t =   125.71s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   125.74s Waiting 0.4s for "Save" StaticText to exist
+    t =   126.14s     Checking existence of `"Save" StaticText`
+    t =   126.17s Collecting debug information to assist test failure triage
+    t =   126.17s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   126.20s Waiting 0.3s for Any (First Match) to exist
+    t =   126.50s     Checking existence of `Any (First Match)`
+    t =   126.53s Collecting debug information to assist test failure triage
+    t =   126.53s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   126.56s Waiting 3.0s for "Add" Button to exist
+    t =   127.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =   127.58s         Checking existence of `"Add" Button`
+    t =   127.60s         Capturing element debug description
+    t =   128.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =   128.62s         Checking existence of `"Add" Button`
+    t =   128.66s         Capturing element debug description
+    t =   129.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Add" Button`
+    t =   129.56s         Checking existence of `"Add" Button`
+    t =   129.58s         Capturing element debug description
+    t =   129.58s     Checking existence of `"Add" Button`
+    t =   129.60s Collecting debug information to assist test failure triage
+    t =   129.60s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   129.62s Waiting 0.4s for "Add" StaticText to exist
+    t =   130.02s     Checking existence of `"Add" StaticText`
+    t =   130.05s Collecting debug information to assist test failure triage
+    t =   130.06s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   130.08s Waiting 0.3s for Any (First Match) to exist
+    t =   130.39s     Checking existence of `Any (First Match)`
+    t =   130.42s Collecting debug information to assist test failure triage
+    t =   130.42s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   130.44s Waiting 3.0s for "Done" Button to exist
+    t =   131.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   131.47s         Checking existence of `"Done" Button`
+    t =   131.50s         Capturing element debug description
+    t =   132.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   132.52s         Checking existence of `"Done" Button`
+    t =   132.55s         Capturing element debug description
+    t =   133.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Done" Button`
+    t =   133.44s         Checking existence of `"Done" Button`
+    t =   133.47s         Capturing element debug description
+    t =   133.48s     Checking existence of `"Done" Button`
+    t =   133.49s Collecting debug information to assist test failure triage
+    t =   133.49s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   133.52s Waiting 0.4s for "Done" StaticText to exist
+    t =   133.93s     Checking existence of `"Done" StaticText`
+    t =   133.94s Collecting debug information to assist test failure triage
+    t =   133.94s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   133.97s Waiting 0.3s for Any (First Match) to exist
+    t =   134.27s     Checking existence of `Any (First Match)`
+    t =   134.30s Collecting debug information to assist test failure triage
+    t =   134.30s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   134.33s Waiting 3.0s for "Confirm" Button to exist
+    t =   135.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   135.37s         Checking existence of `"Confirm" Button`
+    t =   135.40s         Capturing element debug description
+    t =   136.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   136.43s         Checking existence of `"Confirm" Button`
+    t =   136.46s         Capturing element debug description
+    t =   137.34s     Checking `Expect predicate `existsNoRetry == 1` for object "Confirm" Button`
+    t =   137.34s         Checking existence of `"Confirm" Button`
+    t =   137.37s         Capturing element debug description
+    t =   137.37s     Checking existence of `"Confirm" Button`
+    t =   137.39s Collecting debug information to assist test failure triage
+    t =   137.39s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   137.41s Waiting 0.4s for "Confirm" StaticText to exist
+    t =   137.82s     Checking existence of `"Confirm" StaticText`
+    t =   137.83s Collecting debug information to assist test failure triage
+    t =   137.83s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   137.86s Waiting 0.3s for Any (First Match) to exist
+    t =   138.16s     Checking existence of `Any (First Match)`
+    t =   138.19s Collecting debug information to assist test failure triage
+    t =   138.19s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   139.23s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   139.34s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   139.37s Waiting 4.0s for "Active punch" Button to exist
+    t =   140.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Active punch" Button`
+    t =   140.39s         Checking existence of `"Active punch" Button`
+    t =   140.42s Tap "Active punch" Button
+    t =   140.42s     Wait for com.lingguang.snagcue to idle
+    t =   140.42s     Find the "Active punch" Button
+    t =   140.44s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =   140.46s     Synthesize event
+    t =   140.75s     Wait for com.lingguang.snagcue to idle
+    t =   142.51s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   142.62s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   142.80s Waiting 3.0s for "Chat fill" Button to exist
+    t =   143.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =   143.82s         Checking existence of `"Chat fill" Button`
+    t =   143.85s Tap "Chat fill" Button
+    t =   143.85s     Wait for com.lingguang.snagcue to idle
+    t =   143.85s     Find the "Chat fill" Button
+    t =   143.87s     Check for interrupting elements affecting "Chat fill" Button
+    t =   143.89s     Synthesize event
+    t =   144.18s     Wait for com.lingguang.snagcue to idle
+    t =   145.19s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   145.30s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   145.41s Waiting 1.5s for "Message" TextField to exist
+    t =   146.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Message" TextField`
+    t =   146.43s         Checking existence of `"Message" TextField`
+    t =   146.46s         Capturing element debug description
+    t =   146.91s     Checking existence of `"Message" TextField`
+    t =   146.94s Collecting debug information to assist test failure triage
+    t =   146.94s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   146.97s Waiting 1.5s for "Ask" TextField to exist
+    t =   148.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" TextField`
+    t =   148.00s         Checking existence of `"Ask" TextField`
+    t =   148.01s         Capturing element debug description
+    t =   148.48s     Checking existence of `"Ask" TextField`
+    t =   148.51s Collecting debug information to assist test failure triage
+    t =   148.51s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   148.54s Waiting 1.5s for "Chat" TextField to exist
+    t =   149.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat" TextField`
+    t =   149.57s         Checking existence of `"Chat" TextField`
+    t =   149.60s         Capturing element debug description
+    t =   150.04s     Checking existence of `"Chat" TextField`
+    t =   150.06s Collecting debug information to assist test failure triage
+    t =   150.06s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   150.09s Get number of matches for: Descendants matching type TextField
+    t =   150.10s Waiting 3.0s for "Send" Button to exist
+    t =   151.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   151.13s         Checking existence of `"Send" Button`
+    t =   151.16s         Capturing element debug description
+    t =   152.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   152.18s         Checking existence of `"Send" Button`
+    t =   152.21s         Capturing element debug description
+    t =   153.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   153.10s         Checking existence of `"Send" Button`
+    t =   153.13s         Capturing element debug description
+    t =   153.13s     Checking existence of `"Send" Button`
+    t =   153.14s Collecting debug information to assist test failure triage
+    t =   153.14s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   153.17s Waiting 0.4s for "Send" StaticText to exist
+    t =   153.57s     Checking existence of `"Send" StaticText`
+    t =   153.59s Collecting debug information to assist test failure triage
+    t =   153.60s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   153.62s Waiting 0.3s for Any (First Match) to exist
+    t =   153.93s     Checking existence of `Any (First Match)`
+    t =   153.95s Collecting debug information to assist test failure triage
+    t =   153.95s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   153.98s Waiting 3.0s for "Ask" Button to exist
+    t =   155.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   155.01s         Checking existence of `"Ask" Button`
+    t =   155.04s         Capturing element debug description
+    t =   156.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   156.07s         Checking existence of `"Ask" Button`
+    t =   156.10s         Capturing element debug description
+    t =   156.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   156.98s         Checking existence of `"Ask" Button`
+    t =   157.00s         Capturing element debug description
+    t =   157.01s     Checking existence of `"Ask" Button`
+    t =   157.02s Collecting debug information to assist test failure triage
+    t =   157.02s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   157.04s Waiting 0.4s for "Ask" StaticText to exist
+    t =   157.45s     Checking existence of `"Ask" StaticText`
+    t =   157.47s Collecting debug information to assist test failure triage
+    t =   157.47s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   157.50s Waiting 0.3s for Any (First Match) to exist
+    t =   157.80s     Checking existence of `Any (First Match)`
+    t =   157.83s Collecting debug information to assist test failure triage
+    t =   157.83s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   157.85s Waiting 3.0s for "Submit" Button to exist
+    t =   158.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   158.89s         Checking existence of `"Submit" Button`
+    t =   158.92s         Capturing element debug description
+    t =   159.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   159.95s         Checking existence of `"Submit" Button`
+    t =   159.97s         Capturing element debug description
+    t =   160.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   160.86s         Checking existence of `"Submit" Button`
+    t =   160.88s         Capturing element debug description
+    t =   160.89s     Checking existence of `"Submit" Button`
+    t =   160.90s Collecting debug information to assist test failure triage
+    t =   160.90s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   160.92s Waiting 0.4s for "Submit" StaticText to exist
+    t =   161.33s     Checking existence of `"Submit" StaticText`
+    t =   161.36s Collecting debug information to assist test failure triage
+    t =   161.36s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   161.39s Waiting 0.3s for Any (First Match) to exist
+    t =   161.69s     Checking existence of `Any (First Match)`
+    t =   161.72s Collecting debug information to assist test failure triage
+    t =   161.72s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   162.76s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   162.87s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   162.96s Waiting 2.0s for "Allow" Button to exist
+    t =   163.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =   163.99s         Checking existence of `"Allow" Button`
+    t =   164.01s         Capturing element debug description
+    t =   164.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =   164.97s         Checking existence of `"Allow" Button`
+    t =   165.00s         Capturing element debug description
+    t =   165.00s     Checking existence of `"Allow" Button`
+    t =   165.02s Collecting debug information to assist test failure triage
+    t =   165.02s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   165.04s Checking existence of `StaticText (First Match)`
+    t =   165.06s Waiting 3.0s for "Save" Button to exist
+    t =   166.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   166.09s         Checking existence of `"Save" Button`
+    t =   166.12s         Capturing element debug description
+    t =   167.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   167.15s         Checking existence of `"Save" Button`
+    t =   167.17s         Capturing element debug description
+    t =   168.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =   168.06s         Checking existence of `"Save" Button`
+    t =   168.09s         Capturing element debug description
+    t =   168.09s     Checking existence of `"Save" Button`
+    t =   168.10s Collecting debug information to assist test failure triage
+    t =   168.10s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   168.13s Waiting 0.4s for "Save" StaticText to exist
+    t =   168.53s     Checking existence of `"Save" StaticText`
+    t =   168.55s Collecting debug information to assist test failure triage
+    t =   168.55s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   168.58s Waiting 0.3s for Any (First Match) to exist
+    t =   168.88s     Checking existence of `Any (First Match)`
+    t =   168.91s Collecting debug information to assist test failure triage
+    t =   168.91s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   168.95s Waiting 3.0s for "Use suggestion" Button to exist
+    t =   169.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Use suggestion" Button`
+    t =   169.97s         Checking existence of `"Use suggestion" Button`
+    t =   170.00s         Capturing element debug description
+    t =   171.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Use suggestion" Button`
+    t =   171.02s         Checking existence of `"Use suggestion" Button`
+    t =   171.04s         Capturing element debug description
+    t =   171.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Use suggestion" Button`
+    t =   171.95s         Checking existence of `"Use suggestion" Button`
+    t =   171.98s         Capturing element debug description
+    t =   171.98s     Checking existence of `"Use suggestion" Button`
+    t =   171.99s Collecting debug information to assist test failure triage
+    t =   171.99s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   172.02s Waiting 0.4s for "Use suggestion" StaticText to exist
+    t =   172.42s     Checking existence of `"Use suggestion" StaticText`
+    t =   172.45s Collecting debug information to assist test failure triage
+    t =   172.45s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   172.49s Waiting 0.3s for Any (First Match) to exist
+    t =   172.79s     Checking existence of `Any (First Match)`
+    t =   172.82s Collecting debug information to assist test failure triage
+    t =   172.82s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   172.84s Waiting 3.0s for "Apply" Button to exist
+    t =   173.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Apply" Button`
+    t =   173.87s         Checking existence of `"Apply" Button`
+    t =   173.89s         Capturing element debug description
+    t =   174.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Apply" Button`
+    t =   174.91s         Checking existence of `"Apply" Button`
+    t =   174.94s         Capturing element debug description
+    t =   175.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Apply" Button`
+    t =   175.85s         Checking existence of `"Apply" Button`
+    t =   175.87s         Capturing element debug description
+    t =   175.87s     Checking existence of `"Apply" Button`
+    t =   175.88s Collecting debug information to assist test failure triage
+    t =   175.88s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   175.91s Waiting 0.4s for "Apply" StaticText to exist
+    t =   176.31s     Checking existence of `"Apply" StaticText`
+    t =   176.34s Collecting debug information to assist test failure triage
+    t =   176.34s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   176.36s Waiting 0.3s for Any (First Match) to exist
+    t =   176.67s     Checking existence of `Any (First Match)`
+    t =   176.69s Collecting debug information to assist test failure triage
+    t =   176.69s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   176.72s Waiting 3.0s for "Keep" Button to exist
+    t =   177.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   177.75s         Checking existence of `"Keep" Button`
+    t =   177.78s         Capturing element debug description
+    t =   178.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   178.82s         Checking existence of `"Keep" Button`
+    t =   178.87s         Capturing element debug description
+    t =   179.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   179.73s         Checking existence of `"Keep" Button`
+    t =   179.75s         Capturing element debug description
+    t =   179.75s     Checking existence of `"Keep" Button`
+    t =   179.77s Collecting debug information to assist test failure triage
+    t =   179.77s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   179.79s Waiting 0.4s for "Keep" StaticText to exist
+    t =   180.20s     Checking existence of `"Keep" StaticText`
+    t =   180.23s Collecting debug information to assist test failure triage
+    t =   180.23s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   180.26s Waiting 0.3s for Any (First Match) to exist
+    t =   180.56s     Checking existence of `Any (First Match)`
+    t =   180.59s Collecting debug information to assist test failure triage
+    t =   180.59s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   181.62s Waiting 3.0s for "Chat fill" Button to exist
+    t =   182.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat fill" Button`
+    t =   182.66s         Checking existence of `"Chat fill" Button`
+    t =   182.69s Tap "Chat fill" Button
+    t =   182.69s     Wait for com.lingguang.snagcue to idle
+    t =   182.69s     Find the "Chat fill" Button
+    t =   182.71s     Check for interrupting elements affecting "Chat fill" Button
+    t =   182.80s     Synthesize event
+    t =   183.16s     Wait for com.lingguang.snagcue to idle
+    t =   184.17s Waiting 1.5s for "Message" TextField to exist
+    t =   185.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Message" TextField`
+    t =   185.19s         Checking existence of `"Message" TextField`
+    t =   185.22s         Capturing element debug description
+    t =   185.67s     Checking existence of `"Message" TextField`
+    t =   185.70s Collecting debug information to assist test failure triage
+    t =   185.70s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   185.73s Waiting 1.5s for "Ask" TextField to exist
+    t =   186.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" TextField`
+    t =   186.77s         Checking existence of `"Ask" TextField`
+    t =   186.80s         Capturing element debug description
+    t =   187.24s     Checking existence of `"Ask" TextField`
+    t =   187.26s Collecting debug information to assist test failure triage
+    t =   187.26s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   187.29s Waiting 1.5s for "Chat" TextField to exist
+    t =   188.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Chat" TextField`
+    t =   188.31s         Checking existence of `"Chat" TextField`
+    t =   188.34s         Capturing element debug description
+    t =   188.80s     Checking existence of `"Chat" TextField`
+    t =   188.81s Collecting debug information to assist test failure triage
+    t =   188.81s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   188.84s Get number of matches for: Descendants matching type TextField
+    t =   188.85s Waiting 3.0s for "Send" Button to exist
+    t =   189.88s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   189.88s         Checking existence of `"Send" Button`
+    t =   189.90s         Capturing element debug description
+    t =   190.93s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   190.94s         Checking existence of `"Send" Button`
+    t =   190.96s         Capturing element debug description
+    t =   191.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =   191.85s         Checking existence of `"Send" Button`
+    t =   191.88s         Capturing element debug description
+    t =   191.88s     Checking existence of `"Send" Button`
+    t =   191.89s Collecting debug information to assist test failure triage
+    t =   191.89s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   191.93s Waiting 0.4s for "Send" StaticText to exist
+    t =   192.34s     Checking existence of `"Send" StaticText`
+    t =   192.36s Collecting debug information to assist test failure triage
+    t =   192.36s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   192.39s Waiting 0.3s for Any (First Match) to exist
+    t =   192.70s     Checking existence of `Any (First Match)`
+    t =   192.73s Collecting debug information to assist test failure triage
+    t =   192.73s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   192.76s Waiting 3.0s for "Ask" Button to exist
+    t =   193.79s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   193.79s         Checking existence of `"Ask" Button`
+    t =   193.82s         Capturing element debug description
+    t =   194.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   194.85s         Checking existence of `"Ask" Button`
+    t =   194.86s         Capturing element debug description
+    t =   195.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Ask" Button`
+    t =   195.77s         Checking existence of `"Ask" Button`
+    t =   195.80s         Capturing element debug description
+    t =   195.80s     Checking existence of `"Ask" Button`
+    t =   195.82s Collecting debug information to assist test failure triage
+    t =   195.82s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   195.85s Waiting 0.4s for "Ask" StaticText to exist
+    t =   196.25s     Checking existence of `"Ask" StaticText`
+    t =   196.28s Collecting debug information to assist test failure triage
+    t =   196.28s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   196.31s Waiting 0.3s for Any (First Match) to exist
+    t =   196.61s     Checking existence of `Any (First Match)`
+    t =   196.64s Collecting debug information to assist test failure triage
+    t =   196.64s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   196.67s Waiting 3.0s for "Submit" Button to exist
+    t =   197.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   197.70s         Checking existence of `"Submit" Button`
+    t =   197.73s         Capturing element debug description
+    t =   198.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   198.76s         Checking existence of `"Submit" Button`
+    t =   198.79s         Capturing element debug description
+    t =   199.68s     Checking `Expect predicate `existsNoRetry == 1` for object "Submit" Button`
+    t =   199.68s         Checking existence of `"Submit" Button`
+    t =   199.71s         Capturing element debug description
+    t =   199.71s     Checking existence of `"Submit" Button`
+    t =   199.73s Collecting debug information to assist test failure triage
+    t =   199.73s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   199.75s Waiting 0.4s for "Submit" StaticText to exist
+    t =   200.16s     Checking existence of `"Submit" StaticText`
+    t =   200.19s Collecting debug information to assist test failure triage
+    t =   200.19s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   200.22s Waiting 0.3s for Any (First Match) to exist
+    t =   200.52s     Checking existence of `Any (First Match)`
+    t =   200.55s Collecting debug information to assist test failure triage
+    t =   200.55s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   201.59s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   201.70s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   201.79s Waiting 3.0s for "Generate annotated report" Button to exist
+    t =   202.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate annotated report" Button`
+    t =   202.82s         Checking existence of `"Generate annotated report" Button`
+    t =   202.85s         Capturing element debug description
+    t =   203.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate annotated report" Button`
+    t =   203.87s         Checking existence of `"Generate annotated report" Button`
+    t =   203.90s         Capturing element debug description
+    t =   204.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Generate annotated report" Button`
+    t =   204.80s         Checking existence of `"Generate annotated report" Button`
+    t =   204.83s         Capturing element debug description
+    t =   204.83s     Checking existence of `"Generate annotated report" Button`
+    t =   204.85s Collecting debug information to assist test failure triage
+    t =   204.85s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   204.87s Waiting 0.4s for "Generate annotated report" StaticText to exist
+    t =   205.28s     Checking existence of `"Generate annotated report" StaticText`
+    t =   205.30s Collecting debug information to assist test failure triage
+    t =   205.30s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   205.33s Waiting 0.3s for Any (First Match) to exist
+    t =   205.63s     Checking existence of `Any (First Match)`
+    t =   205.67s Collecting debug information to assist test failure triage
+    t =   205.67s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   205.70s Waiting 3.0s for "Annotate" Button to exist
+    t =   206.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Annotate" Button`
+    t =   206.72s         Checking existence of `"Annotate" Button`
+    t =   206.75s Tap "Annotate" Button
+    t =   206.75s     Wait for com.lingguang.snagcue to idle
+    t =   206.75s     Find the "Annotate" Button
+    t =   206.77s     Check for interrupting elements affecting "Annotate" Button
+    t =   206.79s     Synthesize event
+    t =   207.08s     Wait for com.lingguang.snagcue to idle
+    t =   208.09s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   208.20s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   208.30s Waiting 3.0s for "Use" Button to exist
+    t =   209.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Use" Button`
+    t =   209.32s         Checking existence of `"Use" Button`
+    t =   209.34s         Capturing element debug description
+    t =   210.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Use" Button`
+    t =   210.38s         Checking existence of `"Use" Button`
+    t =   210.41s         Capturing element debug description
+    t =   211.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Use" Button`
+    t =   211.30s         Checking existence of `"Use" Button`
+    t =   211.33s         Capturing element debug description
+    t =   211.33s     Checking existence of `"Use" Button`
+    t =   211.34s Collecting debug information to assist test failure triage
+    t =   211.34s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   211.37s Waiting 0.4s for "Use" StaticText to exist
+    t =   211.77s     Checking existence of `"Use" StaticText`
+    t =   211.80s Collecting debug information to assist test failure triage
+    t =   211.80s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   211.82s Waiting 0.3s for Any (First Match) to exist
+    t =   212.13s     Checking existence of `Any (First Match)`
+    t =   212.16s Collecting debug information to assist test failure triage
+    t =   212.16s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   212.18s Waiting 3.0s for "Save report" Button to exist
+    t =   213.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Save report" Button`
+    t =   213.20s         Checking existence of `"Save report" Button`
+    t =   213.23s         Capturing element debug description
+    t =   214.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Save report" Button`
+    t =   214.26s         Checking existence of `"Save report" Button`
+    t =   214.29s         Capturing element debug description
+    t =   215.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Save report" Button`
+    t =   215.18s         Checking existence of `"Save report" Button`
+    t =   215.20s         Capturing element debug description
+    t =   215.20s     Checking existence of `"Save report" Button`
+    t =   215.21s Collecting debug information to assist test failure triage
+    t =   215.21s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   215.24s Waiting 0.4s for "Save report" StaticText to exist
+    t =   215.64s     Checking existence of `"Save report" StaticText`
+    t =   215.67s Collecting debug information to assist test failure triage
+    t =   215.67s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   215.70s Waiting 0.3s for Any (First Match) to exist
+    t =   216.00s     Checking existence of `Any (First Match)`
+    t =   216.04s Collecting debug information to assist test failure triage
+    t =   216.04s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   216.07s Waiting 3.0s for "Keep" Button to exist
+    t =   217.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   217.10s         Checking existence of `"Keep" Button`
+    t =   217.14s         Capturing element debug description
+    t =   218.16s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   218.17s         Checking existence of `"Keep" Button`
+    t =   218.20s         Capturing element debug description
+    t =   219.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =   219.07s         Checking existence of `"Keep" Button`
+    t =   219.10s         Capturing element debug description
+    t =   219.10s     Checking existence of `"Keep" Button`
+    t =   219.12s Collecting debug information to assist test failure triage
+    t =   219.12s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   219.15s Waiting 0.4s for "Keep" StaticText to exist
+    t =   219.55s     Checking existence of `"Keep" StaticText`
+    t =   219.58s Collecting debug information to assist test failure triage
+    t =   219.58s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   219.61s Waiting 0.3s for Any (First Match) to exist
+    t =   219.92s     Checking existence of `Any (First Match)`
+    t =   219.95s Collecting debug information to assist test failure triage
+    t =   219.95s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   219.98s Waiting 3.0s for "Discard" Button to exist
+    t =   221.01s     Checking `Expect predicate `existsNoRetry == 1` for object "Discard" Button`
+    t =   221.01s         Checking existence of `"Discard" Button`
+    t =   221.04s         Capturing element debug description
+    t =   222.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Discard" Button`
+    t =   222.07s         Checking existence of `"Discard" Button`
+    t =   222.10s         Capturing element debug description
+    t =   222.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Discard" Button`
+    t =   222.98s         Checking existence of `"Discard" Button`
+    t =   223.01s         Capturing element debug description
+    t =   223.01s     Checking existence of `"Discard" Button`
+    t =   223.03s Collecting debug information to assist test failure triage
+    t =   223.03s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   223.06s Waiting 0.4s for "Discard" StaticText to exist
+    t =   223.46s     Checking existence of `"Discard" StaticText`
+    t =   223.49s Collecting debug information to assist test failure triage
+    t =   223.49s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   223.51s Waiting 0.3s for Any (First Match) to exist
+    t =   223.82s     Checking existence of `Any (First Match)`
+    t =   223.84s Collecting debug information to assist test failure triage
+    t =   223.85s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   224.88s Waiting 4.0s for "Active punch" Button to exist
+    t =   225.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Active punch" Button`
+    t =   225.92s         Checking existence of `"Active punch" Button`
+    t =   225.95s Tap "Active punch" Button
+    t =   225.95s     Wait for com.lingguang.snagcue to idle
+    t =   225.95s     Find the "Active punch" Button
+    t =   225.97s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =   225.98s     Synthesize event
+    t =   226.28s     Wait for com.lingguang.snagcue to idle
+    t =   227.05s Waiting 3.0s for "Read aloud" Button to exist
+    t =   228.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Read aloud" Button`
+    t =   228.08s         Checking existence of `"Read aloud" Button`
+    t =   228.12s Tap "Read aloud" Button
+    t =   228.12s     Wait for com.lingguang.snagcue to idle
+    t =   228.12s     Find the "Read aloud" Button
+    t =   228.14s     Check for interrupting elements affecting "Read aloud" Button
+    t =   228.16s     Synthesize event
+    t =   228.45s     Wait for com.lingguang.snagcue to idle
+    t =   229.46s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   229.55s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   229.64s Waiting 3.0s for "Next" Button to exist
+    t =   230.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =   230.66s         Checking existence of `"Next" Button`
+    t =   230.69s         Capturing element debug description
+    t =   231.72s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =   231.72s         Checking existence of `"Next" Button`
+    t =   231.75s         Capturing element debug description
+    t =   232.65s     Checking `Expect predicate `existsNoRetry == 1` for object "Next" Button`
+    t =   232.65s         Checking existence of `"Next" Button`
+    t =   232.67s         Capturing element debug description
+    t =   232.67s     Checking existence of `"Next" Button`
+    t =   232.69s Collecting debug information to assist test failure triage
+    t =   232.69s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   232.71s Waiting 0.4s for "Next" StaticText to exist
+    t =   233.11s     Checking existence of `"Next" StaticText`
+    t =   233.14s Collecting debug information to assist test failure triage
+    t =   233.14s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   233.17s Waiting 0.3s for Any (First Match) to exist
+    t =   233.48s     Checking existence of `Any (First Match)`
+    t =   233.51s Collecting debug information to assist test failure triage
+    t =   233.51s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   233.54s Waiting 3.0s for "Pause" Button to exist
+    t =   234.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause" Button`
+    t =   234.56s         Checking existence of `"Pause" Button`
+    t =   234.59s         Capturing element debug description
+    t =   235.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause" Button`
+    t =   235.62s         Checking existence of `"Pause" Button`
+    t =   235.64s         Capturing element debug description
+    t =   236.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Pause" Button`
+    t =   236.55s         Checking existence of `"Pause" Button`
+    t =   236.57s         Capturing element debug description
+    t =   236.57s     Checking existence of `"Pause" Button`
+    t =   236.59s Collecting debug information to assist test failure triage
+    t =   236.59s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   236.62s Waiting 0.4s for "Pause" StaticText to exist
+    t =   237.02s     Checking existence of `"Pause" StaticText`
+    t =   237.05s Collecting debug information to assist test failure triage
+    t =   237.05s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   237.08s Waiting 0.3s for Any (First Match) to exist
+    t =   237.38s     Checking existence of `Any (First Match)`
+    t =   237.42s Collecting debug information to assist test failure triage
+    t =   237.42s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   237.45s Waiting 3.0s for "Replay" Button to exist
+    t =   238.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Replay" Button`
+    t =   238.47s         Checking existence of `"Replay" Button`
+    t =   238.50s         Capturing element debug description
+    t =   239.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Replay" Button`
+    t =   239.54s         Checking existence of `"Replay" Button`
+    t =   239.55s         Capturing element debug description
+    t =   240.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Replay" Button`
+    t =   240.45s         Checking existence of `"Replay" Button`
+    t =   240.48s         Capturing element debug description
+    t =   240.48s     Checking existence of `"Replay" Button`
+    t =   240.50s Collecting debug information to assist test failure triage
+    t =   240.50s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   240.52s Waiting 0.4s for "Replay" StaticText to exist
+    t =   240.93s     Checking existence of `"Replay" StaticText`
+    t =   240.96s Collecting debug information to assist test failure triage
+    t =   240.96s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   240.99s Waiting 0.3s for Any (First Match) to exist
+    t =   241.29s     Checking existence of `Any (First Match)`
+    t =   241.32s Collecting debug information to assist test failure triage
+    t =   241.32s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   242.36s Waiting 4.0s for "Settings" Button to exist
+    t =   243.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Button`
+    t =   243.39s         Checking existence of `"Settings" Button`
+    t =   243.41s Tap "Settings" Button
+    t =   243.41s     Wait for com.lingguang.snagcue to idle
+    t =   243.41s     Find the "Settings" Button
+    t =   243.43s     Check for interrupting elements affecting "gearshape" Button
+    t =   243.44s     Synthesize event
+    t =   243.73s     Wait for com.lingguang.snagcue to idle
+    t =   246.73s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   247.01s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   247.13s Waiting 3.0s for "Privacy" Button to exist
+    t =   248.16s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =   248.16s         Checking existence of `"Privacy" Button`
+    t =   248.20s Tap "Privacy" Button
+    t =   248.20s     Wait for com.lingguang.snagcue to idle
+    t =   248.20s     Find the "Privacy" Button
+    t =   248.23s     Check for interrupting elements affecting "Privacy" Button
+    t =   248.25s     Synthesize event
+    t =   248.55s     Wait for com.lingguang.snagcue to idle
+    t =   249.83s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   249.98s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   250.08s Checking existence of `Button (Element at index 0)`
+    t =   250.10s Tap Button (Element at index 0)
+    t =   250.10s     Wait for com.lingguang.snagcue to idle
+    t =   250.10s     Find the Button (Element at index 0)
+    t =   250.12s     Check for interrupting elements affecting "BackButton" Button
+    t =   250.13s     Synthesize event
+    t =   250.44s     Wait for com.lingguang.snagcue to idle
+    t =   250.76s Waiting 3.0s for "Revoke AI access" Button to exist
+    t =   251.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke AI access" Button`
+    t =   251.79s         Checking existence of `"Revoke AI access" Button`
+    t =   251.83s         Capturing element debug description
+    t =   252.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke AI access" Button`
+    t =   252.76s         Checking existence of `"Revoke AI access" Button`
+    t =   252.80s         Capturing element debug description
+    t =   253.76s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke AI access" Button`
+    t =   253.76s         Checking existence of `"Revoke AI access" Button`
+    t =   253.80s         Capturing element debug description
+    t =   253.80s     Checking existence of `"Revoke AI access" Button`
+    t =   253.83s Collecting debug information to assist test failure triage
+    t =   253.83s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   253.87s Waiting 0.4s for "Revoke AI access" StaticText to exist
+    t =   254.28s     Checking existence of `"Revoke AI access" StaticText`
+    t =   254.32s Collecting debug information to assist test failure triage
+    t =   254.32s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   254.37s Waiting 0.3s for Any (First Match) to exist
+    t =   254.67s     Checking existence of `Any (First Match)`
+    t =   254.73s Collecting debug information to assist test failure triage
+    t =   254.73s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   254.78s Waiting 3.0s for "Revoke" Button to exist
+    t =   255.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke" Button`
+    t =   255.81s         Checking existence of `"Revoke" Button`
+    t =   255.86s         Capturing element debug description
+    t =   256.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke" Button`
+    t =   256.78s         Checking existence of `"Revoke" Button`
+    t =   256.83s         Capturing element debug description
+    t =   257.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke" Button`
+    t =   257.78s         Checking existence of `"Revoke" Button`
+    t =   257.81s         Capturing element debug description
+    t =   257.81s     Checking existence of `"Revoke" Button`
+    t =   257.84s Collecting debug information to assist test failure triage
+    t =   257.84s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   257.88s Waiting 0.4s for "Revoke" StaticText to exist
+    t =   258.29s     Checking existence of `"Revoke" StaticText`
+    t =   258.33s Collecting debug information to assist test failure triage
+    t =   258.33s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   258.38s Waiting 0.3s for Any (First Match) to exist
+    t =   258.68s     Checking existence of `Any (First Match)`
+    t =   258.73s Collecting debug information to assist test failure triage
+    t =   258.73s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   258.78s Waiting 3.0s for "Revoke consent" Button to exist
+    t =   259.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke consent" Button`
+    t =   259.82s         Checking existence of `"Revoke consent" Button`
+    t =   259.85s         Capturing element debug description
+    t =   260.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke consent" Button`
+    t =   260.79s         Checking existence of `"Revoke consent" Button`
+    t =   260.83s         Capturing element debug description
+    t =   261.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Revoke consent" Button`
+    t =   261.79s         Checking existence of `"Revoke consent" Button`
+    t =   261.83s         Capturing element debug description
+    t =   261.83s     Checking existence of `"Revoke consent" Button`
+    t =   261.86s Collecting debug information to assist test failure triage
+    t =   261.86s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   261.90s Waiting 0.4s for "Revoke consent" StaticText to exist
+    t =   262.31s     Checking existence of `"Revoke consent" StaticText`
+    t =   262.35s Collecting debug information to assist test failure triage
+    t =   262.35s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   262.39s Waiting 0.3s for Any (First Match) to exist
+    t =   262.70s     Checking existence of `Any (First Match)`
+    t =   262.75s Collecting debug information to assist test failure triage
+    t =   262.75s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   262.80s Waiting 3.0s for "Turn off AI sharing" Button to exist
+    t =   263.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Turn off AI sharing" Button`
+    t =   263.83s         Checking existence of `"Turn off AI sharing" Button`
+    t =   263.87s         Capturing element debug description
+    t =   264.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Turn off AI sharing" Button`
+    t =   264.81s         Checking existence of `"Turn off AI sharing" Button`
+    t =   264.85s         Capturing element debug description
+    t =   265.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Turn off AI sharing" Button`
+    t =   265.80s         Checking existence of `"Turn off AI sharing" Button`
+    t =   265.84s         Capturing element debug description
+    t =   265.84s     Checking existence of `"Turn off AI sharing" Button`
+    t =   265.87s Collecting debug information to assist test failure triage
+    t =   265.87s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   265.92s Waiting 0.4s for "Turn off AI sharing" StaticText to exist
+    t =   266.32s     Checking existence of `"Turn off AI sharing" StaticText`
+    t =   266.35s Collecting debug information to assist test failure triage
+    t =   266.35s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   266.39s Waiting 0.3s for Any (First Match) to exist
+    t =   266.70s     Checking existence of `Any (First Match)`
+    t =   266.75s Collecting debug information to assist test failure triage
+    t =   266.75s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   266.80s Waiting 3.0s for "Disable AI data sharing" Button to exist
+    t =   267.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Disable AI data sharing" Button`
+    t =   267.82s         Checking existence of `"Disable AI data sharing" Button`
+    t =   267.86s         Capturing element debug description
+    t =   268.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Disable AI data sharing" Button`
+    t =   268.89s         Checking existence of `"Disable AI data sharing" Button`
+    t =   268.94s         Capturing element debug description
+    t =   269.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Disable AI data sharing" Button`
+    t =   269.80s         Checking existence of `"Disable AI data sharing" Button`
+    t =   269.84s         Capturing element debug description
+    t =   269.84s     Checking existence of `"Disable AI data sharing" Button`
+    t =   269.87s Collecting debug information to assist test failure triage
+    t =   269.87s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   269.97s Waiting 0.4s for "Disable AI data sharing" StaticText to exist
+    t =   270.38s     Checking existence of `"Disable AI data sharing" StaticText`
+    t =   270.42s Collecting debug information to assist test failure triage
+    t =   270.42s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   270.47s Waiting 0.3s for Any (First Match) to exist
+    t =   270.77s     Checking existence of `Any (First Match)`
+    t =   270.82s Collecting debug information to assist test failure triage
+    t =   270.82s     Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   271.87s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   272.09s Requesting snapshot of accessibility hierarchy for app with pid 23509
+    t =   272.23s Terminate com.lingguang.snagcue:23509
+    t =   274.30s Open com.lingguang.snagcue
+    t =   274.30s     Launch com.lingguang.snagcue
+    t =   274.50s         Setting up automation session
+    t =   275.07s         Wait for com.lingguang.snagcue to idle
+    t =   276.81s Wait for com.lingguang.snagcue to become Running Foreground
+    t =   276.81s Waiting 4.0s for "Audits" Button to exist
+    t =   277.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Audits" Button`
+    t =   277.83s         Checking existence of `"Audits" Button`
+    t =   277.92s Tap "Audits" Button
+    t =   277.92s     Wait for com.lingguang.snagcue to idle
+    t =   277.92s     Find the "Audits" Button
+    t =   277.94s     Check for interrupting elements affecting "Audits" Button
+    t =   277.95s     Synthesize event
+    t =   278.24s     Wait for com.lingguang.snagcue to idle
+    t =   280.02s Requesting snapshot of accessibility hierarchy for app with pid 26196
+    t =   280.13s Requesting snapshot of accessibility hierarchy for app with pid 26196
+    t =   280.22s Waiting 4.0s for "Active punch" Button to exist
+    t =   281.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Active punch" Button`
+    t =   281.23s         Checking existence of `"Active punch" Button`
+    t =   281.26s Tap "Active punch" Button
+    t =   281.26s     Wait for com.lingguang.snagcue to idle
+    t =   281.26s     Find the "Active punch" Button
+    t =   281.28s     Check for interrupting elements affecting "checkmark.seal" Button
+    t =   281.29s     Synthesize event
+    t =   281.58s     Wait for com.lingguang.snagcue to idle
+    t =   283.88s Requesting snapshot of accessibility hierarchy for app with pid 26196
+    t =   283.99s Requesting snapshot of accessibility hierarchy for app with pid 26196
+    t =   284.08s Tear Down
+Test Case '-[SnagCueUIDriverUITests.JourneyTests testAcceptanceJourney]' passed (284.402 seconds).
+Test Suite 'JourneyTests' passed at 2026-10-13 19:02:59.073.
+	 Executed 1 test, with 0 failures (0 unexpected) in 284.402 (284.404) seconds
+Test Suite 'SnagCueUIDriverUITests.xctest' passed at 2026-10-13 19:02:59.073.
+	 Executed 1 test, with 0 failures (0 unexpected) in 284.402 (284.405) seconds
+Test Suite 'Selected tests' passed at 2026-10-13 19:02:59.074.
+	 Executed 1 test, with 0 failures (0 unexpected) in 284.402 (284.406) seconds
+2026-10-13 19:02:59.434 xcodebuild[23486:3960464] [MT] IDETestOperationsObserverDebug: 286.547 elapsed -- Testing started completed.
+2026-10-13 19:02:59.434 xcodebuild[23486:3960464] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 19:02:59.434 xcodebuild[23486:3960464] [MT] IDETestOperationsObserverDebug: 286.547 sec, +286.547 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/SnagCueUIDriver-DD/Logs/Test/Test-Host-2026.10.13_18-58-11-+0800.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

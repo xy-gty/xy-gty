@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-2b397553e7be",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 475304,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/frames/punchlist-filled-r1.png",
+  "output_sha256": "a4abb15d0d9ad16af0066d6b2eb8adc6f0a3fc3094bc1c9da21f7508122ff53a",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/frames/prompts/punchlist-filled-r1.txt",
+  "prompt_sha256": "c68b42ea3240860cc92a6c58b176b1bf6fe00d773970c6e97731f9d494b751dd",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "a4abb15d0d9ad16af0066d6b2eb8adc6f0a3fc3094bc1c9da21f7508122ff53a",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-13T10:07:45Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

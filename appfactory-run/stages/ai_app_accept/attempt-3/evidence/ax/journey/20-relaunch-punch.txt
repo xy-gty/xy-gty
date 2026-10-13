@@ -1,0 +1,95 @@
+Attributes: Application, 0x114c8fc00, pid: 73764, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x114c8fc00, pid: 73764, label: 'SnagCue AI'
+    Window (Main), 0x114c8dcc0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x114c8f480, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x114c8f840, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x114c8fd40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x114c8fe80, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x114c8de00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x114c8df40, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x114c8db80, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x114c8d180, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x114c8d2c0, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x114c8cf00, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x114c8d040, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x114c8cc80, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Active punch'
+                              StaticText, 0x114c8cdc0, {{16.0, 119.7}, {207.0, 40.7}}, label: 'Active punch'
+                            Other, 0x114c8cb40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x114c8c640, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x114c8c8c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x114c8ca00, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x115784140, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115785680, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x115784280, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x1157843c0, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x115784000, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115784a00, {{0.0, 168.0}, {402.0, 479.3}}
+                                        StaticText, 0x115784dc0, {{16.0, 184.0}, {223.7, 26.3}}, label: 'Accept3 Walkthrough'
+                                        StaticText, 0x115784780, {{16.0, 226.3}, {89.3, 20.3}}, label: 'Active audit'
+                                        Button, 0x1157848c0, {{16.0, 262.7}, {180.0, 58.3}}, label: 'Add photos'
+                                          Image, 0x115784500, {{47.7, 283.7}, {20.7, 16.0}}, identifier: 'camera.fill', label: 'Camera'
+                                          StaticText, 0x115784b40, {{16.0, 262.7}, {180.0, 58.3}}, label: 'Add photos'
+                                        Button, 0x115784c80, {{206.0, 262.7}, {180.0, 58.3}}, label: 'Review snags'
+                                          Image, 0x115784640, {{228.7, 284.7}, {23.0, 14.3}}, identifier: 'eye', label: 'Show'
+                                          StaticText, 0x115787480, {{206.0, 262.7}, {180.0, 58.3}}, label: 'Review snags'
+                                        Button, 0x115787e80, {{16.0, 337.3}, {180.0, 58.3}}, label: 'Chat fill'
+                                          Image, 0x115785400, {{64.0, 358.3}, {18.3, 17.3}}, identifier: 'text.bubble', label: 'Comment Lines'
+                                          StaticText, 0x115785540, {{16.0, 337.3}, {180.0, 58.3}}, label: 'Chat fill'
+                                        Button, 0x115785180, {{206.0, 337.0}, {180.0, 59.0}}, label: 'Annotate'
+                                          Image, 0x115787840, {{248.7, 357.0}, {18.0, 18.7}}, identifier: 'pencil.and.outline', label: 'Annotate'
+                                          StaticText, 0x115787980, {{206.0, 337.0}, {180.0, 59.0}}, label: 'Annotate'
+                                        Button, 0x1157852c0, {{16.0, 412.0}, {370.0, 62.3}}, label: 'Read aloud'
+                                          Image, 0x115787ac0, {{143.0, 435.7}, {20.0, 15.3}}, identifier: 'speaker.wave.2.fill', label: 'Volume High'
+                                          StaticText, 0x115785040, {{16.0, 412.0}, {370.0, 62.3}}, label: 'Read aloud'
+                                        StaticText, 0x115787700, {{32.0, 506.3}, {242.7, 20.3}}, label: 'Manual snagPaint touch-up L3'
+                                        StaticText, 0x115787d40, {{32.0, 534.7}, {162.3, 18.0}}, label: 'Location TBD · medium'
+                                        Button, 0x115787c00, {{32.0, 561.0}, {98.0, 32.7}}, label: 'Ask AI'
+                                          Image, 0x1157875c0, {{46.0, 569.7}, {16.7, 15.7}}, identifier: 'text.bubble', label: 'Comment Lines'
+                                          StaticText, 0x115784f00, {{32.0, 561.0}, {98.0, 32.7}}, label: 'Ask AI'
+                                        Button, 0x115020780, {{140.0, 560.7}, {123.0, 33.3}}, label: 'Voice note'
+                                          Image, 0x115020a00, {{154.0, 569.0}, {11.7, 16.7}}, identifier: 'mic.fill', label: 'Microphone'
+                                          StaticText, 0x115020640, {{140.0, 560.7}, {123.0, 33.3}}, label: 'Voice note'
+                                        StaticText, 0x115020c80, {{32.0, 602.0}, {170.0, 13.3}}, label: 'Microphone voice note: 真机待测'
+                                      Other, 0x115020000, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115020280, {{396.0, 262.7}, {3.0, 525.3}}
+                                      Other, 0x115020f00, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115020b40, {{396.0, 262.7}, {3.0, 525.3}}
+                            Other, 0x115020500, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x114c61040, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x114c60640, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x114c621c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x114c63e80, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x114c63340, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x114c61cc0, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x114c62d00, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x114c630c0, {{53.0, 795.0}, {104.3, 54.0}}, label: 'Audits'
+                            Image, 0x114c62f80, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x114c61180, {{149.3, 795.0}, {104.3, 54.0}}, label: 'Active punch', Selected
+                            Image, 0x114c61400, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x114c603c0, {{245.7, 795.0}, {104.3, 54.0}}, label: 'Settings'
+                            Image, 0x114c608c0, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x114c60280, {{149.3, 795.0}, {104.3, 54.0}}
+                          Other, 0x114c63200, {{149.3, 795.0}, {104.3, 54.0}}
+                            Other, 0x114c62bc0, {{149.3, 795.0}, {104.3, 54.0}}
+                            Other, 0x114c62440, {{149.3, 795.0}, {104.3, 54.0}}
+                              Other, 0x114c62580, {{149.3, 795.0}, {104.3, 54.0}}
+                                Other, 0x114c63d40, {{149.3, 795.0}, {104.3, 54.0}}
+                                  Other, 0x114c60b40, {{149.3, 795.0}, {104.3, 54.0}}
+                                Other, 0x114c63ac0, {{149.3, 795.0}, {104.3, 54.0}}
+                              Other, 0x114c62080, {{149.3, 795.0}, {104.3, 54.0}}
+                  Other, 0x114c61900, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x114c62800, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x114c63700, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x114c60000, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x114c63840, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x114c635c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x114c617c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x114c60500, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x114c8fc00, pid: 73764, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x114c612c0, pid: 73764, label: 'SnagCue AI'
+  }

@@ -1,0 +1,38 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /tmp/SnagCueUIDriver/SnagCueUIDriver.xcodeproj -scheme Host -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/SnagCueUIDriver-DD "-only-testing:SnagCueUIDriverUITests/DriveTests/testDumpHomeAX"
+
+2026-10-13 18:57:02.201792+0800 SnagCueUIDriverUITests-Runner[22993:3957823] [Default] Running tests...
+objc[22993]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x105fc0310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x105e20398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-13 18:57:04.923.
+Test Suite 'SnagCueUIDriverUITests.xctest' started at 2026-10-13 18:57:04.924.
+Test Suite 'DriveTests' started at 2026-10-13 18:57:04.924.
+Test Case '-[SnagCueUIDriverUITests.DriveTests testDumpHomeAX]' started.
+    t =     0.00s Start Test at 2026-10-13 18:57:04.925
+    t =     0.24s Set Up
+    t =     0.25s Terminate com.lingguang.snagcue:0
+    t =     1.25s Open com.lingguang.snagcue
+    t =     1.25s     Launch com.lingguang.snagcue
+    t =     1.37s         Setting up automation session
+    t =     1.92s         Wait for com.lingguang.snagcue to idle
+    t =     3.53s Wait for com.lingguang.snagcue to become Running Foreground
+    t =     5.54s Requesting snapshot of accessibility hierarchy for app with pid 23001
+    t =     5.71s Requesting snapshot of accessibility hierarchy for app with pid 23001
+    t =     5.82s Tear Down
+Test Case '-[SnagCueUIDriverUITests.DriveTests testDumpHomeAX]' passed (6.042 seconds).
+Test Suite 'DriveTests' passed at 2026-10-13 18:57:10.967.
+	 Executed 1 test, with 0 failures (0 unexpected) in 6.042 (6.043) seconds
+Test Suite 'SnagCueUIDriverUITests.xctest' passed at 2026-10-13 18:57:10.968.
+	 Executed 1 test, with 0 failures (0 unexpected) in 6.042 (6.044) seconds
+Test Suite 'Selected tests' passed at 2026-10-13 18:57:10.968.
+	 Executed 1 test, with 0 failures (0 unexpected) in 6.042 (6.045) seconds
+2026-10-13 18:57:11.276 xcodebuild[22987:3957645] [MT] IDETestOperationsObserverDebug: 10.205 elapsed -- Testing started completed.
+2026-10-13 18:57:11.276 xcodebuild[22987:3957645] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-13 18:57:11.276 xcodebuild[22987:3957645] [MT] IDETestOperationsObserverDebug: 10.205 sec, +10.205 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/SnagCueUIDriver-DD/Logs/Test/Test-Host-2026.10.13_18-56-59-+0800.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

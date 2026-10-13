@@ -1,0 +1,8 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI (iOS site-inspection punch-list coach). Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: home-empty — Empty audits home
+Top nav title SnagCue AI. Empty state: clipboard-with-wrench icon, headline "No audits yet", subcopy "Import walkthrough photos to start a punch list", primary filled button "Start audit". Bottom tab bar Audits selected, Punch, Settings.
+No Site Audit Pro branding. No paywall, no coin UI, no ATT prompt. Photoreal phone chrome only as thin bezel; UI must fill the tall column.
+Disclaimer strip at bottom of content: "Not a building-code certification".

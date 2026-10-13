@@ -1,0 +1,50 @@
+{
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "ai_app_build",
+  "attempt": 2,
+  "dispatch_id": "ad7a1053-5d66-475c-a9c0-1fe7199a68ba",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "source_commit": "b85a9124f0e88b8561133dc296d2cb64fce42060",
+  "branch": "main",
+  "bundle_id": "com.lingguang.snagcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/DerivedData/Build/Products/Debug-iphonesimulator/SnagCue.app",
+  "app_content_sha256": "0d5a33c59f35246bc02d1cd886a4fcf7ed57a1dc9d4562d0cb462a21b17c0653",
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "5E3A8993-F815-4738-8EED-EF032F75704F",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "5E3A8993-F815-4738-8EED-EF032F75704F",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/DerivedData/Build/Products/Debug-iphonesimulator/SnagCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/evidence/candidate/install.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "5E3A8993-F815-4738-8EED-EF032F75704F",
+      "com.lingguang.snagcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 43649,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/evidence/candidate/launch.log",
+    "log_sha256": "4018bf673c4719eaf61eafc912ab2bbb956b41cd7cd40290ac6ec890604aaf46"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/evidence/candidate/smoke.png",
+    "screenshot_sha256": "ef748c6573740aa57fb9a9683cabf16e267cffaaab93a2ecf71183423eff4548"
+  }
+}

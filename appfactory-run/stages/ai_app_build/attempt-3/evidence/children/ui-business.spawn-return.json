@@ -1,0 +1,20 @@
+{
+  "agent_id": "b9de0a7d-0964-44f2-a856-4c71a07c9eb8",
+  "agent_name": "/root/pkg_a6d0452bc58d46e99f9ef4534c3dbe9e/child_ui_business",
+  "session_id": "b9de0a7d-0964-44f2-a856-4c71a07c9eb8",
+  "thread_id": "b9de0a7d-0964-44f2-a856-4c71a07c9eb8",
+  "spawned_at": "2026-10-13T11:56:41Z",
+  "started_at": "2026-10-13T11:56:41Z",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "child_ui_business",
+    "prompt": "Dispatch a6d0452b-c58d-46e9-9f9e-f4534c3dbe9e. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/children/ui-business.launch.md SHA-256 7c64c6677589d8cdb4889e050c6587e0ac51aa7116b0dc336ccd797cc33fba0f. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "owned_files": [
+    "App/UI"
+  ],
+  "source": "cursor_task_host",
+  "launch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/children/ui-business.launch.md",
+  "launch_sha256": "7c64c6677589d8cdb4889e050c6587e0ac51aa7116b0dc336ccd797cc33fba0f"
+}

@@ -1,0 +1,21 @@
+tapped Add photos
+captureTitle=Add photos
+shot j2-capture
+tapped Review snags
+reviewTitle=nil
+shot j2-review
+shot j2-after-save-snag
+tapped Chat fill
+chatTitle=nil
+shot j2-chat
+shot j2-annotate
+annotateTitle=Annotate
+shot j2-tts
+ttsTitle=nil
+shot ul07-settings-privacy
+shot j2-consent-toggle
+shot ul06-after-revoke
+shot ul06-provider-policy
+shot ul04-relaunch-audits
+shot ul04-relaunch-punch
+journey2 complete

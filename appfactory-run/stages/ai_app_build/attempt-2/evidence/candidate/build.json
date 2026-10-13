@@ -1,0 +1,68 @@
+{
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "ai_app_build",
+  "attempt": 2,
+  "dispatch_id": "ad7a1053-5d66-475c-a9c0-1fe7199a68ba",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "source_commit": "b85a9124f0e88b8561133dc296d2cb64fce42060",
+  "branch": "main",
+  "bundle_id": "com.lingguang.snagcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/DerivedData/Build/Products/Debug-iphonesimulator/SnagCue.app",
+  "app_content_sha256": "0d5a33c59f35246bc02d1cd886a4fcf7ed57a1dc9d4562d0cb462a21b17c0653",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "Active punch hub NavigationStack(path:) bound so Add photos/Review snags/Chat fill/Annotate/Read aloud push destination screens",
+    "Annotated report navigation title distinct from hub CTA",
+    "Prior SnagCue AI audit/punch/AI consent/local legal surfaces retained",
+    "Domain safety tests: persist, consent gate, review labels, navigation cases, feedback notes"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not re-run in this Builder attempt",
+    "Runtime visual frame judgment deferred to ai_app_accept",
+    "Live DeepSeek outbound AI unconfigured (local_only ai_key_unavailable gap)",
+    "Full UI journey matrix (capture\u2192save punch\u2192chat reuse) deferred to acceptance"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "SnagCue.xcodeproj",
+      "-scheme",
+      "SnagCue",
+      "-destination",
+      "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/DerivedData",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/evidence/candidate/build.log",
+    "log_sha256": "f1f24831a439eac95855c28b629ceaeea3182fba049c8ffbbc53f605922b4d57"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "SnagCue.xcodeproj",
+        "-scheme",
+        "SnagCue",
+        "-destination",
+        "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/DerivedData",
+        "-configuration",
+        "Debug",
+        "test",
+        "-only-testing:SnagCueDomainTests",
+        "CODE_SIGNING_ALLOWED=NO"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-2/evidence/candidate/domain.log",
+      "log_sha256": "82b66adaf476f07506c4fb30e875f7c468f242af10301f447e6175ae9eb2e415"
+    }
+  ]
+}

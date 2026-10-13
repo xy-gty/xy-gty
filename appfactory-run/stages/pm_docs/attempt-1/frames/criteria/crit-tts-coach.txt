@@ -1,0 +1,1 @@
+Visible: TTS checklist coach showing current punch item and Play/Pause or Next controls.

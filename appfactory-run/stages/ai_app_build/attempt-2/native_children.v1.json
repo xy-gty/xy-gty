@@ -1,0 +1,33 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "parent_dispatch_id": "ad7a1053-5d66-475c-a9c0-1fe7199a68ba",
+  "parent_execution_seq": 2,
+  "children": [
+    {
+      "role": "ai_privacy",
+      "receipt_ref": "evidence/children/ai-privacy.spawn.json",
+      "receipt_sha256": "67c4ea3f6a35cf27fe7e6f41b13ee935d39454c56171d4685d7b9d8e501d9529",
+      "inherited_from": {
+        "parent_execution_seq": 1,
+        "source_parent_execution_seq": 1,
+        "receipt_ref": "evidence/children/ai-privacy.spawn.json",
+        "receipt_sha256": "67c4ea3f6a35cf27fe7e6f41b13ee935d39454c56171d4685d7b9d8e501d9529",
+        "candidate_inputs_sha256": "8d2ea770e941f280d89a724b3439546a371911ff58f4b1d589db73fa727a242d",
+        "source_parent_bound_at": "2026-10-13T11:25:08Z"
+      }
+    },
+    {
+      "role": "ui_business",
+      "receipt_ref": "evidence/children/ui-business.spawn.json",
+      "receipt_sha256": "50059087f080554cf408fca0ead640a8d5ee25226ee3915d6b37c97d13580526",
+      "inherited_from": {
+        "parent_execution_seq": 1,
+        "source_parent_execution_seq": 1,
+        "receipt_ref": "evidence/children/ui-business.spawn.json",
+        "receipt_sha256": "50059087f080554cf408fca0ead640a8d5ee25226ee3915d6b37c97d13580526",
+        "candidate_inputs_sha256": "8d2ea770e941f280d89a724b3439546a371911ff58f4b1d589db73fa727a242d",
+        "source_parent_bound_at": "2026-10-13T11:25:08Z"
+      }
+    }
+  ]
+}

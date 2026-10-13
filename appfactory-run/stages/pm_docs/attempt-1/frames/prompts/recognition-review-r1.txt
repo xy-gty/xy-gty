@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: recognition-review — Snag recognition review
+Nav title "Review snags". Photo thumbnail left, card list of 2 proposed snags: "Paint scrape — hallway" severity Medium, "Missing cover plate — outlet" severity High. Bottom review bar with buttons Save, Not this, Edit snag. Banner "AI suggestions — confirm before saving".
+No certification badges. No paywall. Thin bezel; UI fills tall column.

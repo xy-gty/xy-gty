@@ -1,0 +1,84 @@
+Attributes: Application, 0x114fbc640, pid: 72785, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x114fbc640, pid: 72785, label: 'SnagCue AI'
+    Window (Main), 0x114fbc780, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x114fbc8c0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x114fbca00, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x114fbcb40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x114fbcc80, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x114fbcdc0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x114fbcf00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x114fbd040, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x114fbd180, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x114fbd2c0, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x114fbd400, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x114fbd540, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x114fbd680, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Capture'
+                              Button, 0x114fbd7c0, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Active punch'
+                              StaticText, 0x114fbd900, {{16.0, 119.7}, {128.0, 40.7}}, label: 'Capture'
+                            Other, 0x114fbda40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x114fbdb80, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x114fbdcc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x114fbde00, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x114fbdf40, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x114fbe080, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x114fbe1c0, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x114fbe300, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x114fbe440, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x114fbe580, {{0.0, 168.0}, {402.0, 439.0}}
+                                        StaticText, 0x114fbe6c0, {{16.0, 184.0}, {199.3, 24.0}}, label: 'Accept3 Walkthrough'
+                                        StaticText, 0x114fbe800, {{16.0, 224.0}, {368.7, 64.3}}, label: 'Import walkthrough photos from library. Camera capture is available on device; Simulator uses photo library.'
+                                        StaticText, 0x114fbe940, {{28.0, 316.3}, {240.3, 15.7}}, label: 'Audit created. Add walkthrough photos.'
+                                        Button, 0x114fbea80, {{16.0, 360.0}, {370.0, 62.3}}, label: 'Add photos'
+                                          Image, 0x114fbebc0, {{142.7, 382.7}, {20.7, 17.0}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x114fbed00, {{16.0, 360.0}, {370.0, 62.3}}, label: 'Add photos'
+                                        StaticText, 0x114fbee40, {{16.0, 438.3}, {333.0, 26.3}}, label: 'Camera capture: 真机待测 (Simulator has no camera; use photo library here).'
+                                        Button, 0x114fbef80, {{16.0, 480.7}, {370.0, 64.0}}, label: 'Detect snags', Disabled
+                                          Image, 0x114fbf0c0, {{136.3, 503.0}, {16.0, 19.3}}, identifier: 'sparkles', label: 'Sparkle', Disabled
+                                          StaticText, 0x114fbf200, {{16.0, 480.7}, {370.0, 64.0}}, label: 'Detect snags', Disabled
+                                        StaticText, 0x114fbf340, {{16.0, 560.7}, {370.0, 30.3}}, label: 'Leaving this screen keeps imported photos for this audit. Discard only removes unsaved snag drafts from review.'
+                                      Other, 0x114fbf480, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x114fbf5c0, {{396.0, 303.0}, {3.0, 485.0}}
+                                      Other, 0x114fbf700, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x114fbf840, {{396.0, 303.0}, {3.0, 485.0}}
+                            Other, 0x114fbf980, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x114fbfac0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x114fbfc00, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x114fbfd40, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x114fbfe80, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115024000, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x115024140, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x115024280, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x1150243c0, {{53.0, 795.0}, {104.3, 54.0}}, identifier: 'list.bullet.rectangle', label: 'Audits'
+                            Image, 0x115024500, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x115024640, {{149.3, 795.0}, {104.3, 54.0}}, identifier: 'checkmark.seal', label: 'Active punch', Selected
+                            Image, 0x115024780, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x1150248c0, {{245.7, 795.0}, {104.3, 54.0}}, identifier: 'gearshape', label: 'Settings'
+                            Image, 0x115024a00, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115024b40, {{149.3, 795.0}, {104.3, 54.0}}
+                          Other, 0x115024c80, {{149.3, 795.0}, {104.3, 54.0}}
+                            Other, 0x115024dc0, {{149.3, 795.0}, {104.3, 54.0}}
+                            Other, 0x115024f00, {{149.3, 795.0}, {104.3, 54.0}}
+                              Other, 0x115025040, {{149.3, 795.0}, {104.3, 54.0}}
+                                Other, 0x115025180, {{149.3, 795.0}, {104.3, 54.0}}
+                                  Other, 0x1150252c0, {{149.3, 795.0}, {104.3, 54.0}}
+                                Other, 0x115025400, {{149.3, 795.0}, {104.3, 54.0}}
+                              Other, 0x115025540, {{149.3, 795.0}, {104.3, 54.0}}
+                  Other, 0x115025680, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1150257c0, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x115025900, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115025a40, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115025b80, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x115025cc0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115025e00, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115025f40, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x115026080, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1150261c0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115026300, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x114fbc640, pid: 72785, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x115026440, pid: 72785, label: 'SnagCue AI'
+  }

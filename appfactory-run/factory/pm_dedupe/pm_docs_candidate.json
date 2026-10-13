@@ -1,0 +1,27 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "导入照片 → 人审 snag → 聊天补字段 → 人审保存 → 标注报告（可选）→ TTS 清单教练"
+  ],
+  "differentiation": {},
+  "diversity_key": "snagcue ai 做现场验收 整改跟进的施工 物业 独立巡检人员 需要结构化 punch list 与照片证据 且不能把 app 当作建筑规范认证工具 新建 audit 拍或导入 walkthrough 照片 导入现场巡检照片 ai 辅助识别缺陷 snag 并聊天补全 punch list 生成标注报告图 再用 tts 免提播报清单 本地可离线使用已保存的 audit 与 punchitem",
+  "feature_blocks": [
+    "Audit：一次现场巡检；含 title、sitelabel、createdat、status",
+    "WalkthroughPhoto：属于 Audit；本地文件路径 + 拍摄顺序",
+    "SnagDraft：AI 识别草稿；未确认前不进 PunchItem",
+    "PunchItem：已确认缺陷项；location、severity、assignee、duedate、photorefs、notes、status",
+    "ReportDraft：标注报告图草稿；绑定 Audit + 选中 PunchItem",
+    "AIConsentRecord：同意版本 snagcue.consent.v1 + 撤销状态",
+    "CoachSession：TTS 会话；当前 PunchItem 索引",
+    "关联：Audit 1—N WalkthroughPhoto / PunchItem / ReportDraft；SnagDraft →（确认）PunchItem。"
+  ],
+  "product_fingerprint": "489b9795cc95fcea85be53d99bec55d1830fc4d98753d70f3ec00746c0f9101a",
+  "product_name": "SnagCue AI",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "做现场验收/整改跟进的施工、物业、独立巡检人员；需要结构化 punch-list 与照片证据，且不能把 App 当作建筑规范认证工具。",
+  "user_problem": "新建 Audit，拍或导入 walkthrough 照片。",
+  "value_proposition": "导入现场巡检照片，AI 辅助识别缺陷/snag 并聊天补全 punch-list，生成标注报告图，再用 TTS 免提播报清单——本地可离线使用已保存的 Audit 与 PunchItem。"
+}

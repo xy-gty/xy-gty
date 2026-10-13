@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-3/evidence/vision/runtime/capture-import.receipt.json",
+  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-3/evidence/vision/runtime/capture-import.receipt.jsonl",
+  "model": "auto"
+}

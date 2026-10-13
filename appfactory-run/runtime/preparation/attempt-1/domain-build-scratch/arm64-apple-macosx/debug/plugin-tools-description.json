@@ -1,0 +1,515 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.AppRuntimeCore-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/sources",
+      "importPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "AppRuntimeCore",
+      "moduleOutputPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules/AppRuntimeCore.swiftmodule",
+      "objects" : [
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/include/AppRuntimeCore-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "appruntimecore"
+      ],
+      "outputFileMapPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules/AppRuntimeCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift"
+      ],
+      "tempsPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SnagCueDomain-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/sources",
+      "importPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Entities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Navigation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/ReviewControls.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Stores.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules/AppRuntimeCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SnagCueDomain",
+      "moduleOutputPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules/SnagCueDomain.swiftmodule",
+      "objects" : [
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Entities.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Navigation.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/ReviewControls.swift.o",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Stores.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/include/SnagCueDomain-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "workspace"
+      ],
+      "outputFileMapPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Entities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Navigation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/ReviewControls.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/Stores.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules/SnagCueDomain.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Entities.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Navigation.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/ReviewControls.swift",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Stores.swift"
+      ],
+      "tempsPath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "AppRuntimeCore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "AppRuntimeCore",
+      "-package-name",
+      "appruntimecore",
+      "-c",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "-I",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/include/AppRuntimeCore-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "appruntimecore",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SnagCueDomain" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SnagCueDomain",
+      "-package-name",
+      "workspace",
+      "-c",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Entities.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Navigation.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/ReviewControls.swift",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Stores.swift",
+      "-I",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/include/SnagCueDomain-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "workspace",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "AppRuntimeCore" : [
+
+    ],
+    "SnagCueDomain" : [
+      "AppRuntimeCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/sources"
+    },
+    "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Entities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Navigation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/ReviewControls.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/workspace/Sources/SnagCueDomain/Stores.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/SnagCueDomain.build/sources"
+    },
+    "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

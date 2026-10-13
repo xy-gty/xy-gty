@@ -1,0 +1,3 @@
+Wired the gap [child_ai_privacy](cec1fe86-ee20-42c4-8be5-3b3e183d1b40) flagged: `AppModel` now sends via `AIPrivacyTransport` and mirrors consent with `AIConsentKeychainMirror`. UI work from [child_ui_business](6bb666c2-deb3-4a5e-8c5f-13eb433b09ce) left as-is.
+
+Build succeeded; product HEAD `9b7db33…`. Stage finish already reported ready — no re-finish.

@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: punchlist-filled — Punch list with items
+Nav title "Unit 4B — Punch list". List of 3 PunchItem rows with location, severity chips (High/Med), status Open. Top actions: Chat fill, Annotate, Read aloud. Floating or toolbar primary "Add snag".
+Bottom tab Punch selected. No paywall. Thin bezel; UI fills tall column.

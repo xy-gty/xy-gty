@@ -1,0 +1,65 @@
+foreground ok
+shot ul01-home-empty
+shot ul07-home-empty
+forceTap Create audit
+shot ul02-after-create-audit
+shot ul02-active-hub
+backToActive hub ready
+tapped Add photos
+Add photos title=Capture
+shot ul07-capture-import
+shot j3-capture
+camera CTA documented as 真机待测 on Capture
+shot ul02-camera-entry
+backToActive hub ready
+tapped Review snags
+Review snags title=Snag review
+shot ul07-recognition-review
+backToActive hub ready
+forceTap Edit Done
+forceTap Save
+shot ul04-after-save-snag
+backToActive hub ready
+shot ul07-punchlist-filled
+shot ul04-punch-list
+mic CTA Voice note
+shot ul02-mic-entry
+micEntry=true
+backToActive hub ready
+tapped Chat fill
+Chat fill title=Chat fill
+shot ul07-chat-fill
+speech CTA Speech to text
+shot ul02-speech-entry
+speechEntry=true
+forceTap Send1
+shot ul03-after-send
+shot ul06-consent-sheet
+shot ul06-consent-decline
+forceTap Send-retry
+allowed consent
+shot ul06-consent-allow
+forceTap Send2
+shot ul05-second-send
+backToActive hub ready
+tapped Annotate
+Annotate title=Annotated report
+shot ul07-annotated-report
+backToActive hub ready
+tapped Read aloud
+Read aloud title=TTS coach
+shot ul07-tts-coach
+backToActive hub ready
+library CTA Add photos (Capture)
+dismiss 取消
+pickPhoto cancelled/fallback
+shot ul02-after-library
+backToActive hub ready
+libraryEntry=true cameraEntry=true
+shot ul07-settings-privacy
+revoked
+shot ul06-after-revoke
+shot ul04-relaunch-audits
+shot ul04-relaunch-punch
+SUMMARY capture=Capture review=Snag review chat=Chat fill annotate=Annotated report tts=TTS coach library=true camera=true mic=true speech=true
+journey attempt-3 complete

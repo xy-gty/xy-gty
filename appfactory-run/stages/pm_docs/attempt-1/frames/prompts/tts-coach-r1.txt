@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: tts-coach — Hands-free checklist readout
+Nav title "Read aloud". Large current item card: "1 of 3 — Hallway N / Missing cover plate / High". Waveform or speaking indicator. Controls Play/Pause, Next, Replay. List of upcoming items dimmed below.
+No paywall. Thin bezel; UI fills tall column.

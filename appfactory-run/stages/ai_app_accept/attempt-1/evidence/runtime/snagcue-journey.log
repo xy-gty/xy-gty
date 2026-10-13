@@ -1,0 +1,40 @@
+shot ul01-home-empty
+shot ul07-home-empty
+tap button Start audit
+typed into first textField
+tap button Create audit
+tap button Add photos
+shot ul07-capture-import
+miss contains library
+tap contains Photos
+picked image
+shot ul02-after-import
+tap button Review snags
+shot ul07-recognition-review
+miss Save|Save snag|Confirm|Keep
+tap button Add snag
+miss Save|Add|Done|Confirm
+shot ul07-punchlist-filled
+shot ul02-punchlist
+tap button Chat fill
+shot ul07-chat-fill
+miss Send|Ask|Submit
+shot ul06-consent-or-local
+miss Save|Use suggestion|Apply|Keep
+tap button Chat fill
+miss Send|Ask|Submit
+shot ul05-second-ai
+tap button Annotate
+shot ul07-annotated-report
+miss Use|Save report|Keep|Discard
+tap button Read aloud
+shot ul07-tts-coach
+miss Next|Pause|Replay
+shot ul07-settings-privacy
+tap button Privacy
+shot ul06-legal
+miss Revoke AI access|Revoke|Revoke consent|Turn off AI sharing|Disable AI data sharing
+shot ul06-after-revoke
+shot ul04-relaunch-audits
+shot ul04-relaunch-punch
+journey complete

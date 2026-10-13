@@ -1,0 +1,238 @@
+{
+  "_control_event_cursor": 35,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-13T09:56:00Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 3,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-3/MAP.md",
+        "result_sha256": "511dc19a6ef1f67a28121f383c880d6f0fdf7bad5a690516577db695972aca25",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "052b1d96aa1fb18617a0a9849ed76d0946274ef92903114658176f9701fd74f2",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_accept/attempt-3/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "5c41e5dab02b41effe61e60fe8ee6252c9c7c9a01df5cde3b09511f0f3573d21"
+      },
+      "started_at": "2026-10-13T12:03:33Z",
+      "status": "validated",
+      "updated_at": "2026-10-13T12:51:26Z"
+    },
+    "ai_app_build": {
+      "attempts": 3,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "40014b638bc5ab9e7a4041b54ba60b5f9524b594107e879f11ed812f7f08e3b5",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "485cbaf64ac7aebf5512252eddf4bfd2882263595c616664f5e30b42724ca9db",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/MAP.md",
+        "result_sha256": "9fdebd5116802a8b02c209ef3d38e9476c07410c40a80df15ea63261f71ecfd1",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "052b1d96aa1fb18617a0a9849ed76d0946274ef92903114658176f9701fd74f2",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276"
+      },
+      "started_at": "2026-10-13T11:47:53Z",
+      "status": "validated",
+      "updated_at": "2026-10-13T12:03:19Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {},
+      "started_at": "2026-10-13T12:51:37Z",
+      "status": "active",
+      "updated_at": "2026-10-13T12:51:37Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/goal/goal.json",
+        "goal_sha256": "1482866893dd8c8e4493eb481f9f776bcd768b4b714e10f20ff950c713e1d0f3"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-13T09:56:00Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "e01101ea11aec999b47340cfea9c3a7cb2803994dd8a5c41739ead9dd5c0e7b9",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "052b1d96aa1fb18617a0a9849ed76d0946274ef92903114658176f9701fd74f2",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-13T09:56:38Z",
+      "status": "validated",
+      "updated_at": "2026-10-13T10:27:22Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# External idea (operator-selected)\n\n**Mode:** pure Cursor Ultra-lite (no Codex / hybrid)\n**App working title:** SnagCue AI\n**Positioning:** paid AI site-inspection punch-list coach\n**Reference:** Site Audit Pro / com.veamstudios.iaudit — category reference only; do NOT copy brand, UI, assets, or claim compliance certification\n\n## Idea\nBuild a paid AI site-inspection coach: import walkthrough photos, recognize defects/snags, chat to fill punch-list fields, generate annotated report images, and TTS hands-free checklist readouts—one-time unlock for unlimited audits.\n\n## Constraints\n- Allergy/compliance: do NOT claim legal/building-code certification; include appropriate disclaimers\n- Core features should work offline where practical\n- Product images via factory build-chain self-generation only\n- Prefer product delivery to git@github.com:xy-gty/xy-gty.git\n- Core sell-path must be runtime-tested; simulator-impossible items mark as 真机待测\n- Only core defects block delivery; non-core → known_issues; max 2 repair rounds\n- Feishu registration and delivery-card send deferred (controller)\n\n## Operator channel\n- Slot A continuous packaging\n- production_runtime: cursor (pure Cursor Ultra-lite, model auto)\n- worktree: /Users/a2026/work/factory-prod-1\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "report_status": "pending",
+  "requested_count": 1,
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "run_status": "active",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 2143.0,
+            "finished_at": "2026-10-13T11:24:15Z",
+            "started_at": "2026-10-13T10:48:32Z",
+            "status": "blocked",
+            "usage": null
+          },
+          {
+            "attempt": 2,
+            "duration_seconds": 79.0,
+            "finished_at": "2026-10-13T11:47:40Z",
+            "started_at": "2026-10-13T11:46:21Z",
+            "status": "blocked",
+            "usage": null
+          },
+          {
+            "attempt": 3,
+            "duration_seconds": 2873.0,
+            "finished_at": "2026-10-13T12:51:26Z",
+            "started_at": "2026-10-13T12:03:33Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1218.0,
+            "finished_at": "2026-10-13T10:47:52Z",
+            "started_at": "2026-10-13T10:27:34Z",
+            "status": "validated",
+            "usage": null
+          },
+          {
+            "attempt": 2,
+            "duration_seconds": 1292.0,
+            "finished_at": "2026-10-13T11:46:11Z",
+            "started_at": "2026-10-13T11:24:39Z",
+            "status": "validated",
+            "usage": null
+          },
+          {
+            "attempt": 3,
+            "duration_seconds": 926.0,
+            "finished_at": "2026-10-13T12:03:19Z",
+            "started_at": "2026-10-13T11:47:53Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": null,
+            "finished_at": null,
+            "started_at": "2026-10-13T12:51:37Z",
+            "status": "active",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1844.0,
+            "finished_at": "2026-10-13T10:27:22Z",
+            "started_at": "2026-10-13T09:56:38Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 18,
+  "ultra_lite_execution_revision": "p1"
+}

@@ -1,0 +1,5 @@
+Dispatch `ad7a1053-…` finished.
+
+- Launch file SHA-256 verified; UltraLite `ai_app_build` attempt-2 executed.
+- e1 already landed hub navigation fix at `b85a9124…`, published `candidate_unaccepted` `b85a9124f0e8-0d5a33c59f35`, then PING-timed out before MAP/finish.
+- e2 wrote MAP (`Status: ready`), released the simulator lease, and ran official finish — receipt ok, `map_sha256` `a2bf7e54…`.

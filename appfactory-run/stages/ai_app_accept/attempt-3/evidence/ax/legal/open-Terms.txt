@@ -1,0 +1,85 @@
+Attributes: Application, 0x11552ea80, pid: 73764, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x11552ea80, pid: 73764, label: 'SnagCue AI'
+    Window (Main), 0x11552c000, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x11552c140, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x11552c280, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x11552c500, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x11552ca00, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x11552ed00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x11552f480, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x11552f700, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x11552ef80, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x11552f0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x11552f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x11552f200, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x11552f340, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Terms'
+                              Button, 0x11552cb40, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x11552cc80, {{16.0, 119.7}, {96.7, 40.7}}, label: 'Terms'
+                            Other, 0x11552cdc0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x11552db80, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x11552dcc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x11552fc00, {{0.0, 0.0}, {402.0, 874.0}}
+                                    SegmentedControl, 0x11552ebc0, {{16.0, 184.0}, {370.0, 31.0}}
+                                      Button, 0x11552fd40, {{16.0, 184.0}, {123.0, 32.0}}, label: 'Privacy'
+                                      Button, 0x11552fac0, {{139.0, 184.0}, {123.0, 32.0}}, label: 'Terms', Selected
+                                      Button, 0x11552fe80, {{262.0, 184.0}, {124.0, 32.0}}, label: 'Support'
+                                    WebView, 0x11552f980, {{0.0, 231.0}, {402.0, 560.0}}
+                                      WebView, 0x11552f840, {{0.0, 231.0}, {402.0, 560.0}}
+                                        WebView, 0x11552d040, {{0.0, 231.0}, {402.0, 560.0}}
+                                          Other, 0x11552d900, {{0.0, 0.0}, {402.0, 560.0}}
+                                            Other, 0x11552da40, {{0.0, 0.0}, {402.0, 560.0}}
+                                              Other, 0x11552d400, {{0.0, 231.0}, {402.0, 560.0}}
+                                                Other, 0x11552d7c0, {{0.0, 231.0}, {402.0, 560.0}}, label: 'Terms', Focused
+                                                  Other, 0x11552d180, {{8.0, 252.0}, {386.0, 39.0}}, label: 'Terms', value: 1, Focused
+                                                    StaticText, 0x11552d2c0, {{8.0, 253.0}, {86.0, 37.0}}, label: 'Terms', value: Terms, Focused
+                                                  Other, 0x11552cf00, {{8.0, 311.0}, {386.0, 41.0}}, Focused
+                                                    StaticText, 0x11552c780, {{8.0, 311.0}, {326.0, 40.0}}, label: 'SnagCue AI — local legal page. External URL not configured in this local_only delivery.', value: SnagCue AI — local..., Focused
+                                                  Other, 0x11552c8c0, {{8.0, 367.0}, {386.0, 21.0}}, Focused
+                                                    StaticText, 0x11552c3c0, {{8.0, 367.0}, {380.0, 20.0}}, label: 'Guidance only — not a building-code or legal certification.', value: Guidance only — no..., Focused
+                                        Other, 0x11552c640, {{369.0, 231.0}, {30.0, 560.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x115527d40, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x115527e80, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x115526080, {{392.0, 785.0}, {7.0, 3.0}}
+                                        Other, 0x1155261c0, {{369.0, 231.0}, {30.0, 560.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x115526300, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x115526440, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x115526580, {{392.0, 785.0}, {7.0, 3.0}}
+                            Other, 0x1155266c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115526800, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115526940, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x115526a80, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115526bc0, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115526d00, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x115526e40, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x115526f80, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x1155270c0, {{53.0, 795.0}, {104.3, 54.0}}, identifier: 'list.bullet.rectangle', label: 'Audits'
+                            Image, 0x115527200, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x115527340, {{149.3, 795.0}, {104.3, 54.0}}, identifier: 'checkmark.seal', label: 'Active punch'
+                            Image, 0x115527480, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x1155275c0, {{245.7, 795.0}, {104.3, 54.0}}, identifier: 'gearshape', label: 'Settings', Selected
+                            Image, 0x115527700, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115527840, {{245.7, 795.0}, {104.3, 54.0}}
+                          Other, 0x115527980, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x115527ac0, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x115527c00, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x104e82bc0, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x104e83840, {{245.7, 795.0}, {104.3, 54.0}}
+                                  Other, 0x104e82f80, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x104e83340, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x104e83200, {{245.7, 795.0}, {104.3, 54.0}}
+                  Other, 0x104e82e40, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x104e82a80, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x104e82d00, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x104e83480, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x104e830c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x104e83700, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x104e835c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x104e83980, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x11552ea80, pid: 73764, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x115525680, pid: 73764, label: 'SnagCue AI'
+  }

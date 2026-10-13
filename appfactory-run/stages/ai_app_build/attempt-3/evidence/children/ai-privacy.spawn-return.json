@@ -1,0 +1,20 @@
+{
+  "agent_id": "ab1466cd-fe3b-48ea-a38c-74bc62ddc659",
+  "agent_name": "/root/pkg_a6d0452bc58d46e99f9ef4534c3dbe9e/child_ai_privacy",
+  "session_id": "ab1466cd-fe3b-48ea-a38c-74bc62ddc659",
+  "thread_id": "ab1466cd-fe3b-48ea-a38c-74bc62ddc659",
+  "spawned_at": "2026-10-13T11:56:41Z",
+  "started_at": "2026-10-13T11:56:41Z",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "child_ai_privacy",
+    "prompt": "Dispatch a6d0452b-c58d-46e9-9f9e-f4534c3dbe9e. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/children/ai-privacy.launch.md SHA-256 9371245be0f271c47584d9585225781118d9cf4c3f6e5035b2ba6252adf4ddd9. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "owned_files": [
+    "App/AI"
+  ],
+  "source": "cursor_task_host",
+  "launch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-3/evidence/children/ai-privacy.launch.md",
+  "launch_sha256": "9371245be0f271c47584d9585225781118d9cf4c3f6e5035b2ba6252adf4ddd9"
+}

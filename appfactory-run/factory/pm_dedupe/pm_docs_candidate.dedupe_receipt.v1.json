@@ -1,0 +1,50 @@
+{
+  "blocker": "",
+  "bundle_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "0412ef45cc1c30d31e7877637bcfa120865e5a939afc625ed4da8aaed7f494aa",
+  "candidate_fingerprint": "489b9795cc95fcea85be53d99bec55d1830fc4d98753d70f3ec00746c0f9101a",
+  "created_at": "2026-10-13T18:27:22+08:00",
+  "owner_id": "kf-20261013T095600Z-1e00eb7a",
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_id": "64303a248d43023727fba3e1",
+  "reservation_status": "reserved",
+  "schema_version": "appfactory.pmagent-dedupe-receipt.v1",
+  "status": "PASS",
+  "task_id": "kf-20261013T095600Z-1e00eb7a:pm_docs:map_dedupe",
+  "vector_query": {
+    "dimensions": 384,
+    "mode": "sqlite_feature_hash_cosine",
+    "nearest_neighbors": [
+      {
+        "identity": {
+          "diversity_key": "pantrycue 会自己做饭 希望减少 打开冰箱却不知道做什么 的人 需要过敏 营养免责声明 且核心能力在无网时仍能读已保存内容 拍或导入冰箱 食材照片 确认识别出的食材清单 用冰箱 食材照片识别库存 和 ai 聊天规划菜谱与改写步骤 可生成摆盘预览 并用语音逐步指导烹饪 本地可离线使用已保存的橱柜与菜谱",
+          "product_fingerprint": "cc93b31c329de45b557a1cc718dfc800e0c2ec7f3d78d89bda4754adf7e8fe83",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T063311Z-0f7a54f0",
+        "product_name": "PantryCue",
+        "reservation_id": "5962785e9913e1b2cb320424",
+        "similarity_score": 0.0482,
+        "status": "committed",
+        "task_id": "kf-20261013T063311Z-0f7a54f0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "pantrycue 会自己做饭 希望减少 打开冰箱却不知道做什么 的人 需要过敏 营养免责声明 且核心能力在无网时仍能读已保存内容 拍或导入冰箱 食材照片 确认识别出的食材清单 用冰箱 食材照片识别库存 和 ai 聊天规划菜谱与改写步骤 可生成摆盘预览 并用语音逐步指导烹饪 本地可离线使用已保存的橱柜与菜谱",
+          "product_fingerprint": "cc93b31c329de45b557a1cc718dfc800e0c2ec7f3d78d89bda4754adf7e8fe83",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:c8d603e468208e65a78bd47e",
+        "product_name": "PantryCue",
+        "reservation_id": "legacy-c8d603e468208e65a78bd47e",
+        "similarity_score": 0.0,
+        "status": "committed",
+        "task_id": "legacy:c8d603e468208e65a78bd47e"
+      }
+    ],
+    "novelty_score": 0.9518,
+    "novelty_threshold": 0.35,
+    "store_path": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+    "top_k": 12
+  }
+}

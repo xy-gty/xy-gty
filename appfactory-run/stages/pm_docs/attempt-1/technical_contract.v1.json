@@ -1,0 +1,135 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "SnagCue AI",
+    "development_bundle_id": "com.lingguang.snagcue",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "walkthrough_photo_import_and_snag_recognition_review",
+    "local_audit_and_punch_item_persistence",
+    "ai_chat_punch_field_fill_with_consent_gate",
+    "annotated_report_image_generation",
+    "tts_hands_free_checklist_readout",
+    "local_legal_pages_and_non_certification_disclaimer",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "Audit",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "WalkthroughPhoto",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "SnagDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "PunchItem",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ReportDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    },
+    {
+      "name": "CoachSession",
+      "persistence": "session_plus_step_index"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "SnagReviewBar",
+      "confirm": "Save",
+      "reject": "Not this",
+      "edit": "Edit snag"
+    },
+    {
+      "name": "PunchFieldReview",
+      "confirm": "Save",
+      "reject": "Not this"
+    },
+    {
+      "name": "AnnotatedReportPreview",
+      "confirm": "Use",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "snagcue.consent.v1",
+      "fields": [
+        "walkthrough_photo_bytes",
+        "punch_item_fields",
+        "chat_text",
+        "snag_labels"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    },
+    {
+      "name": "ChecklistTTS"
+    }
+  ],
+  "navigation": [
+    "HomeTab",
+    "NewAudit",
+    "Capture",
+    "SnagRecognitionReview",
+    "PunchList",
+    "ChatFill",
+    "FieldReview",
+    "AnnotatedReport",
+    "TTSCoach",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Save",
+    "reject": "Not this",
+    "edit": "Edit snag"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "c1a1289c54beff249d50409697700a8562171a201d31635d484c019e9fcd5e6f"
+    }
+  ],
+  "goal_sha256": "1482866893dd8c8e4493eb481f9f776bcd768b4b714e10f20ff950c713e1d0f3",
+  "frozen_at": "2026-10-13T10:04:19Z"
+}

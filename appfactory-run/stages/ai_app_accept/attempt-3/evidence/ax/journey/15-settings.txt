@@ -1,0 +1,170 @@
+Attributes: Application, 0x1153ed900, pid: 72785, label: 'SnagCue AI'
+Element subtree:
+ →Application, 0x1153ed900, pid: 72785, label: 'SnagCue AI'
+    Window (Main), 0x1153eda40, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1153edb80, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1153edcc0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1153ede00, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1153edf40, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1153ee080, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1153ee1c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1153ee300, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1153ee440, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1153ee580, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1153ee6c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1153ee800, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1153ee940, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Settings'
+                              StaticText, 0x1153eea80, {{16.0, 119.7}, {133.0, 40.7}}, label: 'Settings'
+                            Other, 0x1153ec640, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1153ec780, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1153ec8c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1153eca00, {{0.0, 0.0}, {402.0, 874.0}}
+                                    CollectionView, 0x1153ecb40, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1153ecc80, {{-16.0, -1580.0}, {434.0, 2096.7}}
+                                      Other, 0x1153ecdc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1153ecf00, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x1153ed040, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Image, 0x1153ed180, {{-120.0, 731.0}, {642.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x1153ed2c0, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1153ed400, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Other, 0x1153ed540, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1153ed680, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1153ed7c0, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Cell, 0x1153eebc0, {{16.0, 168.0}, {370.0, 40.3}}
+                                        Other, 0x1153eed00, {{16.0, 168.0}, {370.0, 40.3}}
+                                        Other, 0x1153eee40, {{16.0, 168.0}, {370.0, 40.3}}
+                                          Other, 0x1153eef80, {{16.0, 168.0}, {370.0, 40.3}}
+                                            Other, 0x1153ef0c0, {{16.0, 168.0}, {370.0, 40.3}}
+                                              StaticText, 0x1153ef200, {{16.0, 168.0}, {370.0, 40.3}}, label: 'Device permissions (site inspection)'
+                                      Cell, 0x1153ef340, {{16.0, 208.3}, {370.0, 81.7}}
+                                        Other, 0x1153ef480, {{16.0, 208.3}, {370.0, 81.7}}
+                                          Other, 0x1153ef5c0, {{16.0, 208.3}, {370.0, 81.7}}
+                                        Other, 0x1153ef700, {{16.0, 208.3}, {370.0, 81.7}}
+                                          Other, 0x1153ef840, {{16.0, 208.3}, {370.0, 81.7}}
+                                            Other, 0x1153ef980, {{16.0, 208.3}, {370.0, 81.7}}
+                                              StaticText, 0x1153efac0, {{16.0, 208.3}, {370.0, 81.7}}, label: 'Camera: capture walkthrough photos on site so you can run optional snag review before saving punch-list items.'
+                                      Cell, 0x1153efc00, {{16.0, 290.0}, {370.0, 63.7}}
+                                        Other, 0x1153efd40, {{16.0, 290.0}, {370.0, 63.7}}
+                                          Other, 0x1153efe80, {{16.0, 290.0}, {370.0, 63.7}}
+                                        Other, 0x1153e8000, {{16.0, 290.0}, {370.0, 63.7}}
+                                          Other, 0x1153e8140, {{16.0, 290.0}, {370.0, 63.7}}
+                                            Other, 0x1153e8280, {{16.0, 290.0}, {370.0, 63.7}}
+                                              StaticText, 0x1153e83c0, {{16.0, 290.0}, {370.0, 63.7}}, label: 'Photo library: import photos you choose for the same walkthrough and punch-list workflow.'
+                                      Other, 0x1153e8500, {{32.0, 289.0}, {338.0, 1.0}}
+                                      Cell, 0x1153e8640, {{16.0, 353.7}, {370.0, 63.7}}
+                                        Other, 0x1153e8780, {{16.0, 353.7}, {370.0, 63.7}}
+                                          Other, 0x1153e88c0, {{16.0, 353.7}, {370.0, 63.7}}
+                                        Other, 0x1153e8a00, {{16.0, 353.7}, {370.0, 63.7}}
+                                          Other, 0x1153e8b40, {{16.0, 353.7}, {370.0, 63.7}}
+                                            Other, 0x1153e8c80, {{16.0, 353.7}, {370.0, 63.7}}
+                                              StaticText, 0x1153e8dc0, {{16.0, 353.7}, {370.0, 63.7}}, label: 'Microphone: record short voice notes attached to punch-list items for hands-free field capture.'
+                                      Other, 0x1153e8f00, {{32.0, 352.7}, {338.0, 1.0}}
+                                      Cell, 0x1153e9040, {{16.0, 417.3}, {370.0, 81.7}}
+                                        Other, 0x1153e9180, {{16.0, 417.3}, {370.0, 81.7}}
+                                          Other, 0x1153e92c0, {{16.0, 417.3}, {370.0, 81.7}}
+                                        Other, 0x1153e9400, {{16.0, 417.3}, {370.0, 81.7}}
+                                          Other, 0x1153e9540, {{16.0, 417.3}, {370.0, 81.7}}
+                                            Other, 0x1153e9680, {{16.0, 417.3}, {370.0, 81.7}}
+                                              StaticText, 0x1153e97c0, {{16.0, 417.3}, {370.0, 81.7}}, label: 'Speech recognition: convert spoken words into text for the punch-list chat field on device; this path does not upload audio to SnagCue servers.'
+                                      Other, 0x1153e9900, {{32.0, 416.3}, {338.0, 1.0}}
+                                      Other, 0x1153e9a40, {{-16.0, 516.7}, {434.0, 487.7}}
+                                      Cell, 0x1153e9b80, {{16.0, 516.7}, {370.0, 40.3}}
+                                        Other, 0x1153e9cc0, {{16.0, 516.7}, {370.0, 40.3}}
+                                        Other, 0x1153e9e00, {{16.0, 516.7}, {370.0, 40.3}}
+                                          Other, 0x1153e9f40, {{16.0, 516.7}, {370.0, 40.3}}
+                                            Other, 0x1153ea080, {{16.0, 516.7}, {370.0, 40.3}}
+                                              StaticText, 0x1153ea1c0, {{16.0, 516.7}, {370.0, 40.3}}, label: 'AI data sharing'
+                                      Cell, 0x1153ea300, {{16.0, 557.0}, {370.0, 52.3}}
+                                        Other, 0x1153ea440, {{16.0, 557.0}, {370.0, 52.3}}
+                                          Other, 0x1153ea580, {{16.0, 557.0}, {370.0, 52.3}}
+                                        Other, 0x1153ea6c0, {{16.0, 557.0}, {370.0, 52.3}}
+                                          Other, 0x1153ea800, {{16.0, 557.0}, {370.0, 52.3}}
+                                            Other, 0x1153ea940, {{16.0, 557.0}, {370.0, 52.3}}
+                                              Switch, 0x1153eaa80, {{16.0, 557.0}, {370.0, 52.3}}, label: 'Allow DeepSeek inference', value: 1
+                                                StaticText, 0x1153eabc0, {{32.0, 573.0}, {198.7, 20.3}}, label: 'Allow DeepSeek inference'
+                                                Switch, 0x1153ead00, {{309.0, 569.3}, {63.0, 28.0}}, value: 1
+                                      Cell, 0x1153eae40, {{16.0, 609.3}, {370.0, 63.7}}
+                                        Other, 0x1153eaf80, {{16.0, 609.3}, {370.0, 63.7}}
+                                          Other, 0x1153eb0c0, {{16.0, 609.3}, {370.0, 63.7}}
+                                        Other, 0x1153eb200, {{16.0, 609.3}, {370.0, 63.7}}
+                                          Other, 0x1153eb340, {{16.0, 609.3}, {370.0, 63.7}}
+                                            Other, 0x1153eb480, {{16.0, 609.3}, {370.0, 63.7}}
+                                              StaticText, 0x1153eb5c0, {{16.0, 609.3}, {370.0, 63.7}}, label: 'AI unavailable: DeepSeek key not configured (local_only gap).'
+                                      Other, 0x1153eb700, {{32.0, 608.3}, {338.0, 1.0}}
+                                      Cell, 0x1153eb840, {{16.0, 673.0}, {370.0, 52.3}}
+                                        Other, 0x1153eb980, {{16.0, 673.0}, {370.0, 52.3}}
+                                          Other, 0x1153ebac0, {{16.0, 673.0}, {370.0, 52.3}}
+                                        Other, 0x1153ebc00, {{16.0, 673.0}, {370.0, 52.3}}
+                                          Other, 0x1153ebd40, {{16.0, 673.0}, {370.0, 52.3}}
+                                            Other, 0x1153ebe80, {{16.0, 673.0}, {370.0, 52.3}}
+                                              StaticText, 0x114c8c000, {{16.0, 673.0}, {370.0, 52.3}}, label: 'Provider: DeepSeek'
+                                      Other, 0x114c8c140, {{32.0, 672.0}, {338.0, 1.0}}
+                                      Cell, 0x114c8c280, {{16.0, 725.3}, {370.0, 52.3}}
+                                        Other, 0x114c8c3c0, {{16.0, 725.3}, {370.0, 52.3}}
+                                          Other, 0x114c8c500, {{16.0, 725.3}, {370.0, 52.3}}
+                                        Other, 0x114c8c640, {{16.0, 725.3}, {370.0, 52.3}}
+                                          Other, 0x114c8c780, {{16.0, 725.3}, {370.0, 52.3}}
+                                            Other, 0x114c8c8c0, {{16.0, 725.3}, {370.0, 52.3}}
+                                              StaticText, 0x114c8ca00, {{16.0, 725.3}, {370.0, 52.3}}, label: 'Disclosure: snagcue.consent.v1'
+                                      Other, 0x114c8cb40, {{32.0, 724.3}, {338.0, 1.0}}
+                                      Cell, 0x114c8cc80, {{16.0, 777.7}, {370.0, 52.3}}
+                                        Other, 0x114c8cdc0, {{16.0, 777.7}, {370.0, 52.3}}
+                                          Other, 0x114c8cf00, {{16.0, 777.7}, {370.0, 52.3}}
+                                        Other, 0x114c8d040, {{16.0, 777.7}, {370.0, 52.3}}
+                                          Other, 0x114c8d180, {{16.0, 777.7}, {370.0, 52.3}}
+                                            Other, 0x114c8d2c0, {{16.0, 777.7}, {370.0, 52.3}}
+                                              StaticText, 0x114c8d400, {{16.0, 777.7}, {370.0, 52.3}}, label: '• Walkthrough photo data'
+                                      Other, 0x114c8d540, {{32.0, 776.7}, {338.0, 1.0}}
+                                      Cell, 0x114c8d680, {{16.0, 829.7}, {370.0, 52.3}}
+                                        Other, 0x114c8d7c0, {{16.0, 829.7}, {370.0, 52.3}}
+                                          Other, 0x114c8d900, {{16.0, 829.7}, {370.0, 52.3}}
+                                        Other, 0x114c8da40, {{16.0, 829.7}, {370.0, 52.3}}
+                                          Other, 0x114c8db80, {{16.0, 829.7}, {370.0, 52.3}}
+                                            Other, 0x114c8dcc0, {{16.0, 829.7}, {370.0, 52.3}}
+                                              StaticText, 0x114c8de00, {{16.0, 829.7}, {370.0, 52.3}}, label: '• Punch-list field values'
+                                      Other, 0x114c8df40, {{32.0, 828.7}, {338.0, 1.0}}
+                                      Other, 0x114c8e080, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x114c8e1c0, {{396.0, 781.0}, {3.0, 7.0}}
+                                      Other, 0x114c8e300, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x114c8e440, {{396.0, 781.0}, {3.0, 7.0}}
+                            Other, 0x114c8e580, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x114c8e6c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x114c8e800, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x114c8e940, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x114c8ea80, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x114c8ebc0, {{49.0, 791.0}, {305.0, 62.0}}
+                        Other, 0x114c8ed00, {{49.0, 791.0}, {104.3, 54.0}}
+                        Other, 0x114c8ee40, {{49.0, 791.0}, {305.0, 62.0}}
+                          Button, 0x114c8ef80, {{53.0, 795.0}, {104.3, 54.0}}, identifier: 'list.bullet.rectangle', label: 'Audits'
+                            Image, 0x114c8f0c0, {{89.0, 802.3}, {33.0, 25.0}}, identifier: 'list.bullet.rectangle.fill', label: 'list.bullet.rectangle.fill'
+                          Button, 0x114c8f200, {{149.3, 795.0}, {104.3, 54.0}}, identifier: 'checkmark.seal', label: 'Active punch'
+                            Image, 0x114c8f340, {{186.3, 799.7}, {30.0, 30.7}}, identifier: 'checkmark.seal.fill', label: 'verified'
+                          Button, 0x114c8f480, {{245.7, 795.0}, {104.3, 54.0}}, identifier: 'gearshape', label: 'Settings', Selected
+                            Image, 0x114c8f5c0, {{283.7, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x114c8f700, {{245.7, 795.0}, {104.3, 54.0}}
+                          Other, 0x114c8f840, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x114c8f980, {{245.7, 795.0}, {104.3, 54.0}}
+                            Other, 0x114c8fac0, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x114c8fc00, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x114c8fd40, {{245.7, 795.0}, {104.3, 54.0}}
+                                  Other, 0x114c8fe80, {{245.7, 795.0}, {104.3, 54.0}}
+                                Other, 0x1158dc000, {{245.7, 795.0}, {104.3, 54.0}}
+                              Other, 0x1158dc140, {{245.7, 795.0}, {104.3, 54.0}}
+                  Other, 0x1158dc280, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1158dc3c0, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1158dc500, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1158dc640, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1158dc780, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1158dc8c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1158dca00, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1158dcb40, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x1158dcc80, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1158dcdc0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1158dcf00, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x1153ed900, pid: 72785, label: 'SnagCue AI'
+Query chain:
+ →Find: Application 'com.lingguang.snagcue'
+  Output: {
+    Application, 0x1158dd040, pid: 72785, label: 'SnagCue AI'
+  }

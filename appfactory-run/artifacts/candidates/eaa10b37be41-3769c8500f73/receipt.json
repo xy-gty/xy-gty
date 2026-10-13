@@ -1,0 +1,348 @@
+{
+  "schema": "appfactory.ultra_lite_candidate.v1",
+  "status": "candidate_unaccepted",
+  "package_acceptance": "pending",
+  "kind": "local_simulator_app",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "source_commit": "eaa10b37be41471ca881596b01881e00a4c311b9",
+  "branch": "main",
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "4d8a6e3c-b616-4e50-aca1-e22ca49fef6d",
+  "generation": 1,
+  "execution_seq": 1,
+  "dispatch_sha256": "df6e5bf670837740b3a438bb23dbd09ea5b8c9ddc4021a0f8f1fd44574dc0843",
+  "app_content_sha256": "3769c8500f73cd7e65f5a0c9b01538adcba99f9dcb8a2f067d85a6fe28c4bc03",
+  "pm_visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276",
+  "build_evidence_sha256": "43ca1eb5dc2453633d4b409be5f9024da0e05b5b5fec2a7ffcb729ee4a20579c",
+  "smoke_evidence_sha256": "34f39ed46f3d972355038c54ec86174be83e13350d9bf166db4b7a296eb63072",
+  "production_binding_sha256": "cf4451b03abc773bc57c92bbbec7006d168ccbd4c9078d91b12c2c130e3a0a1f",
+  "evidence_sha256": [
+    "43ca1eb5dc2453633d4b409be5f9024da0e05b5b5fec2a7ffcb729ee4a20579c",
+    "34f39ed46f3d972355038c54ec86174be83e13350d9bf166db4b7a296eb63072",
+    "67c3a12d11a5c7eac90660b3e9995b50a2936edd38e057b13504734d2f6fd63f",
+    "ac66b02524dce16ab77694ad6ed1beb3ee7b502b7c4309434673f11263f89d76",
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "e76f8a3b58bb38177215d351c3e284c744329702839b65dadc5409f8982d7374",
+    "adfd1292ec84b74290694692983299ae286793b264fa16a1907e943bf3491fa7",
+    "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276"
+  ],
+  "candidate_name": "eaa10b37be41-3769c8500f73",
+  "input_sha256": "cd8cf19fcd67f4b6060428589045ce6a82c08d71e15cf2a7a0f5edddb7cccda4",
+  "published_at": "2026-10-13T10:41:55Z",
+  "app": {
+    "bundle_id": "com.lingguang.snagcue",
+    "executable": "SnagCue",
+    "executable_sha256": "f04391da1a52a44f7975b6f4af4578b840ae7df52a6975c47f405ae76a4423a9",
+    "supported_platforms": [
+      "iPhoneSimulator"
+    ],
+    "app_name": "SnagCue.app"
+  },
+  "task_snapshot_sha256": "f8031414ee6f2ccd8005f02c6eded3727c527054b49688de8a22aecba54978d5",
+  "production_binding": {
+    "task_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/codex_task.v1.json",
+    "schema": "appfactory.codex-task.v1",
+    "run_id": "kf-20261013T095600Z-1e00eb7a",
+    "stage": "ai_app_build",
+    "attempt": 1,
+    "dispatch_id": "4d8a6e3c-b616-4e50-aca1-e22ca49fef6d",
+    "generation": 1,
+    "execution_seq": 1,
+    "controller_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+    "ownership_epoch": 1,
+    "agent_id": "cursor-cli-build-4d8a6e3cb616",
+    "repo_root": "/Users/a2026/work/factory-prod-1",
+    "runtime": "cursor_task",
+    "product_dir": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+    "dispatch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/codex_dispatch.md",
+    "dispatch_sha256": "df6e5bf670837740b3a438bb23dbd09ea5b8c9ddc4021a0f8f1fd44574dc0843",
+    "role_ref": "/Users/a2026/work/factory-prod-1/agents/AIAppBuilderAgent/prompt.core.md",
+    "role_sha256": "cec836729aca91c0f01085615434392b91b40e0b37000447a7375a47b1ea3846",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-builder/SKILL.md",
+        "sha256": "9ce8b9c93a277367b0ac8bc77f21c0816ae6a1cf70c62ea141d9e49ba9123bf8"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/SKILL.md",
+        "sha256": "29b7b15926dd9eda8d81b7e383cbb10f3df947c1e945d566a221be5510a99d8a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/SKILL.md",
+        "sha256": "38063e6053ea6f4f78a2a727736e7b3e07a5ad56d69b41415a7fb59818eeb3d2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ios-privacy-implementation/SKILL.md",
+        "sha256": "3198671ab9c5e8122a1c1a111c4af54e63ba436d2fe919264cc77160b23149b3"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ios_runtime_acceptance/SKILL.md",
+        "sha256": "da2c52298ca281ffb10f47ad150fe2ea80a9598772c6c7202e3df90d00640dee"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/swiftui-expert-skill/SKILL.md",
+        "sha256": "e18b8de61b3f8bae93b94efb70b874fcc854ad2831633ec5a57e5a64e2dfe36f"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_timing.py",
+        "sha256": "436618d05b65cf3e4a44881f47dcf249543b7433d7d864949339101701b4114a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_candidate.py",
+        "sha256": "c6abaaa0ba1c4138523366d8d75d97291f89aeabc329d6896a849a1e429f7ee1"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/codex_package/children.py",
+        "sha256": "74d2b9f292dbd6b92076e2072c0fe1c3bec486298da16203b812b8dc22c31246"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p0-execution.md",
+        "sha256": "66e8b2a09881e6f7d4fda47e02773250c53f7a09901a602cfbd38148205dc573"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/foundation.v1.json",
+        "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Package.swift",
+        "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+        "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+        "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+        "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+        "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+        "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+        "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_foundation.py",
+        "sha256": "d7b44b9d643e417e0eaa9588b8303ed0f6f61291d26ff25dd73d74b0c0da3da2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py",
+        "sha256": "8f1f39f0a185e6cf223d5a4365456ac94cfe9ffe7d46b8e2289f19da95a3762e"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_technical.py",
+        "sha256": "0ef72dc8e7663a36d17ed4f4adbf37adfae421c71bce323011195cde45f6c9dd"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/codex_package/preparation.py",
+        "sha256": "b0284fd1098562974b82bf6e0f8c1784eefa69c710e53519181a663e958241fa"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p1-execution.md",
+        "sha256": "8eafbe8424fd39b7057c79765b1828ca7b96fce60fe9c043a97a198e593ff1e6"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "sha256": "052b1d96aa1fb18617a0a9849ed76d0946274ef92903114658176f9701fd74f2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+        "sha256": "c4f22a65fff0788d6e334f2b5e4d82b748908136779f14231ebd0f83c06cd6af"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/technical/contract.md",
+        "sha256": "c1a1289c54beff249d50409697700a8562171a201d31635d484c019e9fcd5e6f"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/preparation/attempt-1/sealed.v1.json",
+        "sha256": "485cbaf64ac7aebf5512252eddf4bfd2882263595c616664f5e30b42724ca9db"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/cursor-execution.md",
+        "sha256": "6e9c1e46d9f94e08712ad285de54289db9bd9d577273083d9bd9cbdebfe7c529"
+      }
+    ],
+    "pm_visual_input": {
+      "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+      "visual_manifest_sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276",
+      "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1"
+    },
+    "ultra_lite_execution": {
+      "schema": "appfactory.ai_ultra_lite_execution.v1",
+      "revision": "p1",
+      "timing_schema": "appfactory.ultra_lite_timing.v1",
+      "child_slots": 2,
+      "candidate_publish": "local_simulator_app",
+      "foundation_version": "1.0.0",
+      "design_readback_reuse": "exact_key",
+      "private_engineering_preparation": true
+    },
+    "production_policy": {
+      "schema": "appfactory.ai_ultra_lite_production.v1",
+      "runtime": "cursor",
+      "model": "auto",
+      "stage_efforts": {
+        "pm_docs": "auto",
+        "ai_app_build": "auto",
+        "ai_app_accept": "auto",
+        "delivery": "auto"
+      },
+      "dispatch_effort": "auto",
+      "vision_effort": "auto",
+      "acceptance_runtime": "cursor_cloud",
+      "operator_override_reason": "operator_selected_cursor_ultra_lite_auto"
+    },
+    "requested_model": "auto",
+    "requested_reasoning_effort": "auto",
+    "spawn_kwargs_sha256": "88c64ade47def42db4bf5e7149369fa5b5e47abc41a0e4dc70de8d880d9cceb9",
+    "spawn_receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/runtime/native-spawn/cursor-spawn-receipt-5e9114119b9e.json",
+    "spawn_receipt_sha256": "5e9114119b9e96e0d7db28f44be4e223c1d5312c302ee73a8a244884698e3cd9"
+  },
+  "package_ref": "SnagCue.app.zip",
+  "package_sha256": "086a18aef01ea88abc9a1583bdcffd7cee387a05fa37d2f65392029e23665d70",
+  "package_bytes": 636110,
+  "app_entries": [
+    {
+      "ref": "Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 1112,
+      "sha256": "8ebf3e8ef4dd1779e5f1c5127f8bed9f2522211ebd97686484e37697b49be7f6"
+    },
+    {
+      "ref": "PkgInfo",
+      "mode": 420,
+      "kind": "file",
+      "size": 8,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "ref": "PrivacyInfo.xcprivacy",
+      "mode": 420,
+      "kind": "file",
+      "size": 815,
+      "sha256": "10e30c3a228307f4cf0eecf35997a7551e74924f326189391168e6142ff6a9f6"
+    },
+    {
+      "ref": "SnagCue",
+      "mode": 493,
+      "kind": "file",
+      "size": 40344,
+      "sha256": "f04391da1a52a44f7975b6f4af4578b840ae7df52a6975c47f405ae76a4423a9"
+    },
+    {
+      "ref": "SnagCue.debug.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 2490240,
+      "sha256": "3591d2c31fb8e878eba2245fe199877e8dcfa29b325eb092452c8132c2866f64"
+    },
+    {
+      "ref": "__preview.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 16752,
+      "sha256": "b07c1ba1a653533ec554b24ee31c1777b6a9bb0d8ab352a9566fbc2341da9892"
+    },
+    {
+      "ref": "privacy.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 617,
+      "sha256": "a5af95aacc4cd4ea20773c77113d0814958927c2d9d6a3c373f7ce8431d986c8"
+    },
+    {
+      "ref": "support.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 328,
+      "sha256": "c73eec357642094e2a5ac2fd90776d8c0809906449dc04066534a275a79a0b45"
+    },
+    {
+      "ref": "terms.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 424,
+      "sha256": "b2dec95df9051b47761166a4f07d7f0c5cd9e0903a95ecd86e4484f59cc8e96f"
+    }
+  ],
+  "frozen_evidence": [
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/build.json",
+      "ref": "evidence/00.json",
+      "sha256": "43ca1eb5dc2453633d4b409be5f9024da0e05b5b5fec2a7ffcb729ee4a20579c"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/smoke.json",
+      "ref": "evidence/01.json",
+      "sha256": "34f39ed46f3d972355038c54ec86174be83e13350d9bf166db4b7a296eb63072"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/build.log",
+      "ref": "evidence/02.log",
+      "sha256": "67c3a12d11a5c7eac90660b3e9995b50a2936edd38e057b13504734d2f6fd63f"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/domain.log",
+      "ref": "evidence/03.log",
+      "sha256": "ac66b02524dce16ab77694ad6ed1beb3ee7b502b7c4309434673f11263f89d76"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/install.log",
+      "ref": "evidence/04.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/launch.log",
+      "ref": "evidence/05.log",
+      "sha256": "e76f8a3b58bb38177215d351c3e284c744329702839b65dadc5409f8982d7374"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/smoke.png",
+      "ref": "evidence/06.png",
+      "sha256": "adfd1292ec84b74290694692983299ae286793b264fa16a1907e943bf3491fa7"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+      "ref": "evidence/07.json",
+      "sha256": "b12f70e36ee65f6d9063bdca1c80d51b61f439e1ad6a48adbc4fdb650b54d276"
+    }
+  ],
+  "implemented_scope": [
+    "Audit create + walkthrough photo import (PhotoImportSession)",
+    "Snag draft review Save/Not this/Edit snag → PunchItem persistence",
+    "Chat field fill with consent gate + feedback notes for second call",
+    "Annotated report preview Use/Discard (honest no-key path)",
+    "TTS checklist coach offline readout",
+    "Local legal pages + Settings revoke + PrivacyInfo",
+    "AppRuntimeCore foundation binding v1.0.0"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not completed",
+    "Per-frame visual acceptance pending ai_app_accept",
+    "Live DeepSeek outbound with real key pending (local_only ai_key UNKNOWN gap)",
+    "Camera capture on physical device (Simulator uses photo library)"
+  ],
+  "runtime_conditions": {
+    "simulator": {
+      "udid": "5E3A8993-F815-4738-8EED-EF032F75704F",
+      "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5"
+    },
+    "configuration_status": "unconfigured",
+    "target": "iOS Simulator; unzip and install the .app with simctl",
+    "credential_requirement": "Publisher copies no environment/configuration values; app-specific protected runtime input/Keychain may be required",
+    "independent_acceptance": "pending; local smoke is not the eight-domain acceptance"
+  }
+}

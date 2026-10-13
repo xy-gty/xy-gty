@@ -1,0 +1,74 @@
+{
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "4d8a6e3c-b616-4e50-aca1-e22ca49fef6d",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product",
+  "source_commit": "eaa10b37be41471ca881596b01881e00a4c311b9",
+  "branch": "main",
+  "bundle_id": "com.lingguang.snagcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/SnagCue.app",
+  "app_content_sha256": "3769c8500f73cd7e65f5a0c9b01538adcba99f9dcb8a2f067d85a6fe28c4bc03",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "Audit create + walkthrough photo import (PhotoImportSession)",
+    "Snag draft review Save/Not this/Edit snag \u2192 PunchItem persistence",
+    "Chat field fill with consent gate + feedback notes for second call",
+    "Annotated report preview Use/Discard (honest no-key path)",
+    "TTS checklist coach offline readout",
+    "Local legal pages + Settings revoke + PrivacyInfo",
+    "AppRuntimeCore foundation binding v1.0.0"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not completed",
+    "Per-frame visual acceptance pending ai_app_accept",
+    "Live DeepSeek outbound with real key pending (local_only ai_key UNKNOWN gap)",
+    "Camera capture on physical device (Simulator uses photo library)"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product/SnagCue.xcodeproj",
+      "-scheme",
+      "SnagCue",
+      "-configuration",
+      "Debug",
+      "-destination",
+      "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/DerivedData",
+      "build",
+      "CODE_SIGNING_ALLOWED=NO"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/build.log",
+    "log_sha256": "67c3a12d11a5c7eac90660b3e9995b50a2936edd38e057b13504734d2f6fd63f"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/product/SnagCue.xcodeproj",
+        "-scheme",
+        "SnagCue",
+        "-configuration",
+        "Debug",
+        "-destination",
+        "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/DerivedData",
+        "test",
+        "-only-testing:SnagCueDomainTests",
+        "CODE_SIGNING_ALLOWED=NO"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T095600Z-1e00eb7a/stages/ai_app_build/attempt-1/evidence/candidate/domain.log",
+      "log_sha256": "ac66b02524dce16ab77694ad6ed1beb3ee7b502b7c4309434673f11263f89d76"
+    }
+  ]
+}

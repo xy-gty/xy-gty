@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261013T095600Z-1e00eb7a",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "home-empty",
+      "page_id": "home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/home-empty-r1.txt",
+      "image_ref": "frames/home-empty-r1.png",
+      "receipt_ref": "frames/home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.jsonl",
+          "sha256": "135917e22016724016e6b6ca3d88f3987c1dd94603349aeedc86784a0b1aca56"
+        },
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.json",
+          "sha256": "620be16e2a4027d419bb2a53a5a2c6e443dba502095673561fe8899ffe87fd18"
+        }
+      ],
+      "prompt_sha256": "c698aad940fe2bccd4b1c2c871ee9e9233dde551f8dfd559a728c99e12f78b01",
+      "image_sha256": "670c40341b3ccef961c23f2711d794c21a90ed55dbda6a0bf424941e595c1efc",
+      "receipt_sha256": "bac763fe495161f88273dbffcfa66a61b83d74acfffa32ba584e9ddaf5bc1e5e",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "capture-import",
+      "page_id": "capture",
+      "state_id": "import",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/capture-import-r1.txt",
+      "image_ref": "frames/capture-import-r1.png",
+      "receipt_ref": "frames/capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.jsonl",
+          "sha256": "67d97547fdfbfcb83b891cd5d3cb5bfcf8d8970000516d9ea8d4878b38701bc0"
+        },
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.json",
+          "sha256": "73066e0963da19dab211956d2a0cb882d5e50cb5a564fb5da82712d890765e5f"
+        }
+      ],
+      "prompt_sha256": "7a6525b4b97129655f0b5626a6c16a06ab9d97c54dcb580a0201d46b1e9fe923",
+      "image_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+      "receipt_sha256": "9fbe695fc3cd2144791b6c2c09f305a132f77b8d32ab514a196cb850426481d3",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "recognition-review",
+      "page_id": "recognition",
+      "state_id": "review",
+      "criterion_ids": [
+        "crit-recognition-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/recognition-review-r1.txt",
+      "image_ref": "frames/recognition-review-r1.png",
+      "receipt_ref": "frames/recognition-review-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/recognition-review.receipt.jsonl",
+          "sha256": "c5b802dacb463eefe93233b60113d0da950320a29882ee7639f913c1bac328b8"
+        },
+        {
+          "ref": "evidence/visual-readback/recognition-review.receipt.json",
+          "sha256": "954aa66abe21b21c84185b79f74fcd0f9cef5e67a6c13fbe424637f796f2367f"
+        }
+      ],
+      "prompt_sha256": "1e97114b90c28102f160e31045b4954c3c49f74b7c44e473ff3a8e1c6e6062a1",
+      "image_sha256": "756d472d392ef9e6d54528509b6d141ef7b4313755c2e686babac19aa8d08b16",
+      "receipt_sha256": "1f50d242dbd5ecce6392ed24ac73b7af507f19cce5d3fd2b79fbda612a3641eb",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "punchlist-filled",
+      "page_id": "punchlist",
+      "state_id": "filled",
+      "criterion_ids": [
+        "crit-punchlist-filled"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/punchlist-filled-r1.txt",
+      "image_ref": "frames/punchlist-filled-r1.png",
+      "receipt_ref": "frames/punchlist-filled-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/punchlist-filled.receipt.jsonl",
+          "sha256": "9d7596ae90d1f657d2f2b88497040255901aa511e19a83e04e3e9bf7f051e91c"
+        },
+        {
+          "ref": "evidence/visual-readback/punchlist-filled.receipt.json",
+          "sha256": "ca320a5910bc262878f77eb5701e08a50123fffd293170cbf8793937fc3a0079"
+        }
+      ],
+      "prompt_sha256": "c68b42ea3240860cc92a6c58b176b1bf6fe00d773970c6e97731f9d494b751dd",
+      "image_sha256": "a4abb15d0d9ad16af0066d6b2eb8adc6f0a3fc3094bc1c9da21f7508122ff53a",
+      "receipt_sha256": "38011b7c0bec9f8552750af4aeed692d4aef28ee085306c0fd79c40d6fd47ada",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "chat-fill",
+      "page_id": "chat",
+      "state_id": "fill",
+      "criterion_ids": [
+        "crit-chat-fill"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/chat-fill-r1.txt",
+      "image_ref": "frames/chat-fill-r1.png",
+      "receipt_ref": "frames/chat-fill-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/chat-fill.receipt.jsonl",
+          "sha256": "926c02148853ba368da6c25ac8a1a4d125bf074c00ab054fbdb9ef7ba48d5713"
+        },
+        {
+          "ref": "evidence/visual-readback/chat-fill.receipt.json",
+          "sha256": "2f533862c911000e8f178009b57039e622021e89d3dc7b407f5e0d72dab93eaa"
+        }
+      ],
+      "prompt_sha256": "e0b88fbb5e85ec8f21c98f66ad2b81e3fd2ceaeb5ee43461fb1a0941651d057e",
+      "image_sha256": "08b7e417c1d28e300a000b401178e42ea0e10b79d4d4ebfd5d3f5e2e3213ba1a",
+      "receipt_sha256": "2f25614a7eeaf12d9bba41e61f7334708fde723f754ca11f0b8edd15adacc7a4",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "annotated-report",
+      "page_id": "report",
+      "state_id": "annotated",
+      "criterion_ids": [
+        "crit-annotated-report"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/annotated-report-r1.txt",
+      "image_ref": "frames/annotated-report-r1.png",
+      "receipt_ref": "frames/annotated-report-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/annotated-report.receipt.jsonl",
+          "sha256": "cf280df4d51b8a7f9c3ae0490310ec00e5e6a493e1e26473b94255cd7edc24b5"
+        },
+        {
+          "ref": "evidence/visual-readback/annotated-report.receipt.json",
+          "sha256": "2944d15889d45fb3b8f76bc6fadcbb78e397e24c42adba7e4b143ceb02543b78"
+        }
+      ],
+      "prompt_sha256": "ef3af7ac47eab6d92e9aa2636f3ffe393649e9b8e1d73309def076fe7274f413",
+      "image_sha256": "e6737120be0f725f27d8579e6c649c9873ebc604c0d8adc2c173f6f8086fbbcf",
+      "receipt_sha256": "ecf2cdf7657580c41d2c6eb7cd21fda9c8064f094002944b3bc393f8da45e188",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "tts-coach",
+      "page_id": "tts",
+      "state_id": "coach",
+      "criterion_ids": [
+        "crit-tts-coach"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/tts-coach-r1.txt",
+      "image_ref": "frames/tts-coach-r1.png",
+      "receipt_ref": "frames/tts-coach-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/tts-coach.receipt.jsonl",
+          "sha256": "e3e826789f452e734de2ad47553272c0d3865774afebcbad08619a0bbf121925"
+        },
+        {
+          "ref": "evidence/visual-readback/tts-coach.receipt.json",
+          "sha256": "77d89bf7d96070dd03279ac94a569937b46ddc85aed117478c366e2631a16990"
+        }
+      ],
+      "prompt_sha256": "17feb3510f31af3519d9fb2e52a8fb04dd275d49537716b3db49f2ba03b840f1",
+      "image_sha256": "11c11eb14fbcad89f74b7e73cdf6b05bde194f295f7794d02aa23e4c5a6b9014",
+      "receipt_sha256": "3f2c7796d009f29898b934ff8aeac94ecb2f7294d8e8f0ef81c54f71ab3dfc30",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "crit-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/settings-privacy-r1.txt",
+      "image_ref": "frames/settings-privacy-r1.png",
+      "receipt_ref": "frames/settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/settings-privacy.receipt.jsonl",
+          "sha256": "51ff6af1c15de5c36ab8738bdef2cad8d1743e360ba16b5afddccc62cfba666f"
+        },
+        {
+          "ref": "evidence/visual-readback/settings-privacy.receipt.json",
+          "sha256": "cfdcd48f102f7bd1e0731326f92bae9b7b176bbd9732c1e1ac641a56c1cdbaa0"
+        }
+      ],
+      "prompt_sha256": "42b69cfb9679e341d6dc8889eb0930e9ecd58c3c4100fa4fc517924341e80a26",
+      "image_sha256": "c0d0e606d0c15c1c18dd14025af93d9fba7138a9e08cd228b709688e00431ad1",
+      "receipt_sha256": "1a0af650299aa59d1cde8147aa63600c91a0095e15bccbbab5975111f63ce0ac",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "e0fa365b005fbfd9223dd87c5d5b240e6ad3196209d19e5d470a1a2fd9eb7f92"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "6823b3b64a72dd0783cabd5a0e848a817b1f54085476054900b94310b23ab88b"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "6bbf6f257028401e2bc82ac510b8fc7a758fceb8154d72dd410832a9c86cbef0"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "1007fe530f33f3d4b3b785c257b11506521b868d4a6227f319207403dd1a6797"
+    }
+  ],
+  "frozen_at": "2026-10-13T10:25:51Z"
+}

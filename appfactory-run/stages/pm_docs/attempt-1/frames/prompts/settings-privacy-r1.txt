@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for SnagCue AI. Cool concrete-gray palette, safety-yellow accents, steel-blue secondary, charcoal text. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: settings-privacy — Settings with AI consent and legal
+Nav title Settings. Sections: AI — "DeepSeek outbound" status Allowed, button "Revoke AI consent"; Legal — Privacy, Terms, Support, Provider policy (DeepSeek); About — "Not a building-code certification". Bottom tab Settings selected.
+No paywall, no ATT, no coin UI. Thin bezel; UI fills tall column.

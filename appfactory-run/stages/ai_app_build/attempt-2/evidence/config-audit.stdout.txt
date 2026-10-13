@@ -1,0 +1,9 @@
+ultra_lite_local_config audit (local_only)
+record_match_error=0
+feishu_row_not_yet_created
+privacy_url=UNKNOWN
+terms_url=UNKNOWN
+support_url=UNKNOWN
+ai_key=UNKNOWN
+cloudkit=UNKNOWN
+exit=0

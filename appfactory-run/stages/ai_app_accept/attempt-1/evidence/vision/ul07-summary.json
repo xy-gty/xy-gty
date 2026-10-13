@@ -1,0 +1,93 @@
+{
+  "schema": "appfactory.ul07_matrix.v1",
+  "frames": [
+    {
+      "frame_id": "home-empty",
+      "runtime_image": "evidence/screenshots/ul07-home-empty.png",
+      "runtime_sha256": "595fa175097515b95169ab23c60cbe8c13ae7ab59262ef9beed89baabbf51c19",
+      "runtime_receipt": "evidence/vision/runtime/home-empty.receipt.json",
+      "runtime_receipt_sha256": "2ea9620250884552ae09dd2016edd0ced747fa660a29305223255a59d354a36c",
+      "runtime_verdict": "pass",
+      "design_image_sha256": "670c40341b3ccef961c23f2711d794c21a90ed55dbda6a0bf424941e595c1efc",
+      "design_receipt_sha256": "620be16e2a4027d419bb2a53a5a2c6e443dba502095673561fe8899ffe87fd18",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "capture-import",
+      "runtime_image": "evidence/screenshots/ul07-capture-import.png",
+      "runtime_sha256": "c70e29354ff69702fbf4c29dce703452c8485e216b01b7a12e9a48f73b6209cb",
+      "runtime_receipt": "evidence/vision/runtime/capture-import.receipt.json",
+      "runtime_receipt_sha256": "214199bb4afdefe97737bdfd956105a01531fc71bee74671c8dddec5c2d946eb",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+      "design_receipt_sha256": "73066e0963da19dab211956d2a0cb882d5e50cb5a564fb5da82712d890765e5f",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "recognition-review",
+      "runtime_image": "evidence/screenshots/ul07-recognition-review.png",
+      "runtime_sha256": "c70e29354ff69702fbf4c29dce703452c8485e216b01b7a12e9a48f73b6209cb",
+      "runtime_receipt": "evidence/vision/runtime/recognition-review.receipt.json",
+      "runtime_receipt_sha256": "f7fca5a154e25cb910e8e54b67e68a7943e2d95654cee671eaa3fc4e23508588",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "756d472d392ef9e6d54528509b6d141ef7b4313755c2e686babac19aa8d08b16",
+      "design_receipt_sha256": "954aa66abe21b21c84185b79f74fcd0f9cef5e67a6c13fbe424637f796f2367f",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "punchlist-filled",
+      "runtime_image": "evidence/screenshots/ul07-punchlist-filled.png",
+      "runtime_sha256": "5f1dd962800051f4d318b5166febd881dc65531072579e1ccc26a4e3640dbec0",
+      "runtime_receipt": "evidence/vision/runtime/punchlist-filled.receipt.json",
+      "runtime_receipt_sha256": "18736565959e590240d42ed0e08c865b4dd35168dc9729901a9c3dd2aaff67bd",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "a4abb15d0d9ad16af0066d6b2eb8adc6f0a3fc3094bc1c9da21f7508122ff53a",
+      "design_receipt_sha256": "ca320a5910bc262878f77eb5701e08a50123fffd293170cbf8793937fc3a0079",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "chat-fill",
+      "runtime_image": "evidence/screenshots/ul07-chat-fill.png",
+      "runtime_sha256": "5f1dd962800051f4d318b5166febd881dc65531072579e1ccc26a4e3640dbec0",
+      "runtime_receipt": "evidence/vision/runtime/chat-fill.receipt.json",
+      "runtime_receipt_sha256": "b3cd5933660177cd8fa500f3d8575bdfb4ffb2d55915903d6af7ca731aea7b62",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "08b7e417c1d28e300a000b401178e42ea0e10b79d4d4ebfd5d3f5e2e3213ba1a",
+      "design_receipt_sha256": "2f533862c911000e8f178009b57039e622021e89d3dc7b407f5e0d72dab93eaa",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "annotated-report",
+      "runtime_image": "evidence/screenshots/ul07-annotated-report.png",
+      "runtime_sha256": "292620cb842b523a4339a67497067abc864a22feac0a8ffad77ea2cecf3457af",
+      "runtime_receipt": "evidence/vision/runtime/annotated-report.receipt.json",
+      "runtime_receipt_sha256": "fada98a1536c6830c25b971ce69b8d36845a61a162a226a835f5e8bc8025c7fd",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "e6737120be0f725f27d8579e6c649c9873ebc604c0d8adc2c173f6f8086fbbcf",
+      "design_receipt_sha256": "2944d15889d45fb3b8f76bc6fadcbb78e397e24c42adba7e4b143ceb02543b78",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "tts-coach",
+      "runtime_image": "evidence/screenshots/ul07-tts-coach.png",
+      "runtime_sha256": "fa743561ff91a934fdf18c78eaa2072b1ce7ef7a74239f34b2a6754a662093f2",
+      "runtime_receipt": "evidence/vision/runtime/tts-coach.receipt.json",
+      "runtime_receipt_sha256": "1a8c05e63c232df0b772f450fe70265ed196b7dc4135b77effb30584c51fba12",
+      "runtime_verdict": "fail",
+      "design_image_sha256": "11c11eb14fbcad89f74b7e73cdf6b05bde194f295f7794d02aa23e4c5a6b9014",
+      "design_receipt_sha256": "77d89bf7d96070dd03279ac94a569937b46ddc85aed117478c366e2631a16990",
+      "design_mode": "reused_design"
+    },
+    {
+      "frame_id": "settings-privacy",
+      "runtime_image": "evidence/screenshots/ul07-settings-privacy.png",
+      "runtime_sha256": "f018d5b24f61d5284d8815b30a5bc8493b92bf41ab3e1be946f46465f7bbcf2b",
+      "runtime_receipt": "evidence/vision/runtime/settings-privacy.receipt.json",
+      "runtime_receipt_sha256": "db524c09870f409ec41d05125bb032c8d60a62db7e70cd946937a80134b2a609",
+      "runtime_verdict": "pass",
+      "design_image_sha256": "c0d0e606d0c15c1c18dd14025af93d9fba7138a9e08cd228b709688e00431ad1",
+      "design_receipt_sha256": "cfdcd48f102f7bd1e0731326f92bae9b7b176bbd9732c1e1ac641a56c1cdbaa0",
+      "design_mode": "reused_design"
+    }
+  ]
+}

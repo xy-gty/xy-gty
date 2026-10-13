@@ -1,0 +1,11 @@
+Dispatch `a6d0452b-…` completed. Launch hash verified; attempt-3 repair is done.
+
+**Result:** `Status: ready` · product `47f1c118…` · candidate `47f1c118b9e5-146049ffc8bc` (`candidate_unaccepted`)
+
+**Repair landed**
+- All four Info.plist keys present in the built app
+- Camera capture + PhotosPicker; punch-item voice notes; chat speech-to-text
+- Hub `NavigationStack(path:)` kept
+- Camera / mic / speech: **真机待测** on Simulator (library path works)
+
+**Evidence:** BUILD/TEST SUCCEEDED · smoke pid `61052` · finish receipt `map_sha256 9fdebd51…`No follow-up needed. Work from [child_ui_business](b9de0a7d-0964-44f2-a856-4c71a07c9eb8) and [child_ai_privacy](ab1466cd-fe3b-48ea-a38c-74bc62ddc659) was already integrated, built, smoked, published, and finished as `ready`.

@@ -1,0 +1,18 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "parent_dispatch_id": "ad7a1053-5d66-475c-a9c0-1fe7199a68ba",
+  "parent_execution_seq": 1,
+  "children": [
+    {
+      "role": "ai_privacy",
+      "receipt_ref": "evidence/children/ai-privacy.spawn.json",
+      "receipt_sha256": "67c4ea3f6a35cf27fe7e6f41b13ee935d39454c56171d4685d7b9d8e501d9529"
+    },
+    {
+      "role": "ui_business",
+      "receipt_ref": "evidence/children/ui-business.spawn.json",
+      "receipt_sha256": "50059087f080554cf408fca0ead640a8d5ee25226ee3915d6b37c97d13580526"
+    }
+  ],
+  "parent_bound_at": "2026-10-13T11:25:08Z"
+}
