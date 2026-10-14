@@ -36,6 +36,8 @@ targets:
         INFOPLIST_KEY_NSMicrophoneUsageDescription: Record rehearsal or line voice notes for practice
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken lines into text for the AI scene partner
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"

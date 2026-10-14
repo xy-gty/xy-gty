@@ -18,6 +18,7 @@
 		30F08499208EDF6D1D1D914C /* CuePartnerDomain in Frameworks */ = {isa = PBXBuildFile; productRef = A501DF254E26B0CF47240110 /* CuePartnerDomain */; };
 		41DBE09816D8424540809D4D /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575D9D5C1E240D4BE360C247 /* LocalLegalWebView.swift */; };
 		4E4C30C5934C9E72C5039331 /* PartnerChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD00268A51295EBBE1F72D1 /* PartnerChatView.swift */; };
+		597E3795703932D4BC9CCFE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63E8904E64C115CB00C957E /* Assets.xcassets */; };
 		5B5516B237C6851C7ADD1092 /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C80D7165A6DC079F0E22615 /* VoiceNoteView.swift */; };
 		5F77AE88B19C9DE846E6B01F /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E534236188DA0063B3B8E9 /* DeepSeekClient.swift */; };
 		67F1902B081E0B651E3B579B /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 97F05023354CC83AFC7EFC28 /* terms.html */; };
@@ -81,6 +82,7 @@
 		97F05023354CC83AFC7EFC28 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
 		A0C54DC9B6ED3E7D54C0252A /* AmbiencePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiencePickerView.swift; sourceTree = "<group>"; };
 		C4612CC6B257348AACC40A1D /* ScriptOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptOCRService.swift; sourceTree = "<group>"; };
+		C63E8904E64C115CB00C957E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6F01E4B367F98B986AE7236 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
 		DAE6A58112852E611CFF28A3 /* OCRReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRReviewView.swift; sourceTree = "<group>"; };
 		E0610B8F0853F423B20ADBC9 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		CA7331E2FCE019E3497413B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C63E8904E64C115CB00C957E /* Assets.xcassets */,
 				1511D119324AC392A2C4C763 /* PrivacyInfo.xcprivacy */,
 				8AD471A1FE4D601776DD99E5 /* Legal */,
 			);
@@ -306,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597E3795703932D4BC9CCFE1 /* Assets.xcassets in Resources */,
 				AE147D526A0C232D71F7214F /* PrivacyInfo.xcprivacy in Resources */,
 				0C76EF301E3E9C3DB33929AA /* privacy.html in Resources */,
 				711A820AAC5E7E3C26EFA610 /* support.html in Resources */,
@@ -370,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "CuePartner AI";
@@ -469,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_KEY_CFBundleDisplayName = "CuePartner AI";
