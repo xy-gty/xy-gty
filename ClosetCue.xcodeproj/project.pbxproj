@@ -21,6 +21,7 @@
 		694F364F4BEE827E7C766AF8 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07E80BE05C4196F047FFDC /* DeepSeekClient.swift */; };
 		6DD7E6A6F85A3316ED83ABD4 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */; };
 		70E6519BA0405FCBBA99AB46 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629C29066549901C54B3EFA /* LocalLegalWebView.swift */; };
+		7962A39E203C21D07C237B63 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */; };
 		820E2073DC581869E633D22C /* FlatLayBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */; };
 		8785CE7BFEAB4A7CBB0D6CC6 /* ClosetShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */; };
 		9256596078BDA1540C33D105 /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */; };
@@ -71,6 +72,7 @@
 		A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
 		A629C29066549901C54B3EFA /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
 		BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D584C311C23B2913C037223B /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
 		DF683ABE21E4838ADBF11BBB /* StylistChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistChatView.swift; sourceTree = "<group>"; };
 		EB07E80BE05C4196F047FFDC /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		C2DF489D641A8E470689174B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */,
 				D6FA10CE639CE35FD6CD3F1B /* Legal */,
 			);
 			path = Resources;
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E2CDDF98A8E135A2D5ED58 /* Assets.xcassets in Resources */,
+				7962A39E203C21D07C237B63 /* PrivacyInfo.xcprivacy in Resources */,
 				9BF7D927CC9DFCAE05DE5F4E /* privacy.html in Resources */,
 				00BABDCB0B5F7D48560EADB8 /* support.html in Resources */,
 				2513E87C52CB9123658DA9A6 /* terms.html in Resources */,
