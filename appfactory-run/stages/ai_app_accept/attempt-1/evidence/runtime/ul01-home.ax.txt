@@ -1,0 +1,90 @@
+Optional(Attributes: Application, 0x115a58780, pid: 44240, label: 'PitchCue'
+Element subtree:
+ →Application, 0x115a58780, pid: 44240, label: 'PitchCue'
+    Window (Main), 0x115a588c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115a58a00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115a58b40, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x115a58c80, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x115a58dc0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x115a58f00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115a59040, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x115a59180, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x115a592c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x115a59400, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x115a59540, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x115a58000, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x115a58140, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Practice'
+                              StaticText, 0x115a58280, {{168.0, 73.7}, {65.7, 20.7}}, label: 'Practice'
+                            Other, 0x115a59680, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115a597c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x115a59900, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x115a59a40, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x115a59b80, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115a59cc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x115a59e00, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x115a59f40, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x115a5a080, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115a5a1c0, {{0.0, 116.0}, {402.0, 642.3}}
+                                        StaticText, 0x115a5a300, {{20.0, 136.0}, {145.3, 40.7}}, label: 'PitchCue'
+                                        StaticText, 0x115a5a440, {{20.0, 196.7}, {362.0, 38.0}}, label: 'AI practice coach — warm-ups, count-ins, and beds. Not a tuner clone.'
+                                        ScrollView, 0x115a5a580, {{20.0, 254.7}, {362.0, 69.3}}, label: 'Practice strip'
+                                          Other, 0x115a5a6c0, {{20.0, 254.7}, {612.0, 69.3}}
+                                            Button, 0x115a5a800, {{19.0, 257.7}, {146.0, 63.3}}, label: 'Step 1, Import a sheet'
+                                              StaticText, 0x115a5a940, {{32.0, 270.7}, {34.0, 13.3}}, label: 'Step 1'
+                                              StaticText, 0x115a5aa80, {{32.0, 290.0}, {103.7, 18.0}}, label: 'Import a sheet'
+                                            Button, 0x115a5abc0, {{176.0, 258.7}, {144.0, 61.3}}, label: 'Step 2, Ask coach'
+                                              StaticText, 0x115a5ad00, {{188.0, 270.7}, {35.3, 13.3}}, label: 'Step 2'
+                                              StaticText, 0x115a5ae40, {{188.0, 290.0}, {73.7, 18.0}}, label: 'Ask coach'
+                                            Button, 0x115a5af80, {{332.0, 258.7}, {144.0, 61.3}}, label: 'Step 3, Keep plan'
+                                              StaticText, 0x115a5b0c0, {{344.0, 270.7}, {35.7, 13.3}}, label: 'Step 3'
+                                              StaticText, 0x115a5b200, {{344.0, 290.0}, {70.7, 18.0}}, label: 'Keep plan'
+                                            Button, 0x115a5b340, {{488.0, 258.7}, {144.0, 61.3}}, label: 'Step 4, Count-in'
+                                              StaticText, 0x115a5b480, {{500.0, 270.7}, {36.0, 13.3}}, label: 'Step 4'
+                                              StaticText, 0x115a5b5c0, {{500.0, 290.0}, {63.0, 18.0}}, label: 'Count-in'
+                                        Other, 0x115a5b700, {{20.0, 344.0}, {362.0, 56.0}}, label: 'Continuous audio waveform'
+                                        StaticText, 0x115a5b840, {{123.5, 463.3}, {155.0, 91.7}}, label: 'No practice yet'
+                                        StaticText, 0x115a5b980, {{59.2, 558.0}, {283.7, 38.0}}, label: 'Start a session, import sheet music, then Keep an AI warm-up plan.'
+                                        Button, 0x115a5bac0, {{20.0, 676.0}, {362.0, 62.3}}, label: 'New practice'
+                                      Other, 0x115a5bc00, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115a5bd40, {{396.0, 151.7}, {3.0, 636.3}}
+                                      Other, 0x115a5be80, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x104a83340, {{396.0, 151.7}, {3.0, 636.3}}
+                            Other, 0x104a83480, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x104a835c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x104a83700, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x104a83840, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x104a83980, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x104a83ac0, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x104a83c00, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x104a83d40, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x104a83e80, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice', Selected
+                            Image, 0x115ac8000, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x115ac8140, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x115ac8280, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x115ac83c0, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x115ac8500, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115ac8640, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x115ac8780, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115ac88c0, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115ac8a00, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115ac8b40, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115ac8c80, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x115ac8dc0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115ac8f00, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115ac9040, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x115ac9180, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x115ac92c0, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x115ac9400, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115ac9540, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115ac9680, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x115ac97c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115ac9900, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115ac9a40, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x115a58780, pid: 44240, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x115ac9b80, pid: 44240, label: 'PitchCue'
+  }
+)

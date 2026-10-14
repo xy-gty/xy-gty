@@ -1,0 +1,8 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "c8ca2d4f-e11c-4b15-9411-2a9f77ebc775",
+  "execution_seq": 1,
+  "agent_id": "cursor-cli-pm-c8ca2d4fe11c",
+  "status": "completed",
+  "final_text": "Dispatch `c8ca2d4f-\u2026` complete. Launch file hash verified; `pm_docs` finished **ready**.\n\n**PitchCue** (UltraLite p1 / Cursor): technical contract + 4 build docs frozen; 7 design frames (r2, PitchCue-only after quarantining contaminated r1 seeds); vision readbacks pass; `visual_manifest` frozen; MAP written; `cursor-package ultra-lite finish` accepted.\n\n| Key | Value |\n|-----|--------|\n| technical_contract_sha256 | `025f0d83\u20262143c782` |\n| pm_visual_manifest_sha256 | `37f0534c\u20260ce0de22` |\n| map_sha256 | `96de548f\u2026f9635a06` |\n| Gaps (non-blocking) | free_app_only (paid packs deferred), no AppIcon/splash this round, Feishu skip, UNKNOWN legal/key/CloudKit |\n"
+}

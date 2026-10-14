@@ -1,0 +1,50 @@
+{
+  "run_id": "kf-20261014T073212Z-4039fa46",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "4179ae95-b51f-429c-859c-5eb174b28771",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/product",
+  "source_commit": "0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7",
+  "branch": "main",
+  "bundle_id": "com.lingguang.pitchcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/PitchCue.app",
+  "app_content_sha256": "529d64745e900d1e49d31f0b1f83b757c1c9d7740debd068cac8c6b21df76dc5",
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-4"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/PitchCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "efc64426b97d7ea103e0265606451934052b1354f26078125a0e237b7d5ccf7d"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+      "com.lingguang.pitchcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 38039,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/launch.log",
+    "log_sha256": "99422565a3c48259973cc554c8587e586b31f09b0b560302cbb270aebd23da8a"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/smoke-home.png",
+    "screenshot_sha256": "ac95751e45f5862921a1628de7b4afffa173ed16a726dd1874f083e77b7630c3"
+  }
+}

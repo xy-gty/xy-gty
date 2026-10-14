@@ -1,0 +1,84 @@
+Optional(Attributes: Application, 0x1173fa800, pid: 47062, label: 'PitchCue'
+Element subtree:
+ →Application, 0x1173fa800, pid: 47062, label: 'PitchCue'
+    Window (Main), 0x1173f97c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1173f9680, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1173fabc0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1173fb980, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1173fa6c0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1173fb200, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1173fb340, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1173f8c80, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1173fa080, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1173fb840, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1173faa80, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1173fa1c0, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1173f9540, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Terms of Use'
+                              Button, 0x1173f8500, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x1173f8a00, {{148.7, 73.7}, {104.7, 20.7}}, label: 'Terms of Use'
+                            Other, 0x1173f8640, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1173f8140, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1173f9b80, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1173fbe80, {{0.0, 0.0}, {402.0, 874.0}}
+                                    WebView, 0x1173f8f00, {{0.0, 116.0}, {402.0, 675.0}}
+                                      WebView, 0x1173f8b40, {{0.0, 116.0}, {402.0, 675.0}}
+                                        WebView, 0x1173f9f40, {{0.0, 116.0}, {402.0, 675.0}}
+                                          Other, 0x1173faf80, {{0.0, 0.0}, {402.0, 675.0}}
+                                            Other, 0x1173f8280, {{0.0, 0.0}, {402.0, 675.0}}
+                                              Other, 0x1173f8000, {{0.0, 116.0}, {402.0, 675.0}}
+                                                Other, 0x1173f8780, {{0.0, 116.0}, {402.0, 675.0}}, label: 'PitchCue Terms', Focused
+                                                  Other, 0x1173f9900, {{32.0, 169.0}, {338.0, 40.0}}, label: 'PitchCue Terms of Use', value: 1, Focused
+                                                    StaticText, 0x1173fa440, {{32.0, 169.0}, {337.0, 40.0}}, label: 'PitchCue Terms of Use', value: PitchCue Terms of ..., Focused
+                                                  Other, 0x1173f92c0, {{32.0, 229.0}, {338.0, 81.0}}, Focused
+                                                    StaticText, 0x1173fad00, {{32.0, 229.0}, {332.0, 81.0}}, label: 'PitchCue is a free practice coach. AI warm-up plans require your Keep before they become part of a session. Discard leaves storage unchanged.', value: PitchCue is a free..., Focused
+                                                  Other, 0x1173fbac0, {{32.0, 325.0}, {338.0, 61.0}}, Focused
+                                                    StaticText, 0x1173f9400, {{32.0, 325.0}, {319.0, 61.0}}, label: 'Audio beds and pitch feedback are local practice aids. Do not rely on them as clinical hearing tools or studio-grade tuners.', value: Audio beds and pit..., Focused
+                                                  Other, 0x1173fa300, {{32.0, 401.0}, {338.0, 41.0}}, Focused
+                                                    StaticText, 0x1173fa940, {{32.0, 401.0}, {313.0, 41.0}}, label: 'External terms URL is not configured in this local_only delivery (gap).', value: External terms URL..., Focused
+                                        Other, 0x1173f9040, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1173f8dc0, {{396.0, 119.0}, {3.0, 669.0}}
+                                        Other, 0x1173fbd40, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1173f83c0, {{3.0, 785.0}, {396.0, 3.0}}
+                                        Other, 0x1173fa580, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1173fae40, {{396.0, 119.0}, {3.0, 669.0}}
+                                        Other, 0x1173f9e00, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1173f9a40, {{3.0, 785.0}, {396.0, 3.0}}
+                            Other, 0x1173fb0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1173f88c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117ed48c0, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x117eec000, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x117eedf40, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x117f89540, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x117f8a080, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x117f8a1c0, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x117f8a440, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice'
+                            Image, 0x117f89680, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x117f89900, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x117f88640, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x117f89040, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings', Selected
+                            Image, 0x117f89a40, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x117f892c0, {{240.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x117f89400, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117f89180, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117f897c0, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117f88c80, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117f88500, {{240.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x117f89cc0, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117f88f00, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117f88a00, {{240.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x117f88780, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x117f88b40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x117f88dc0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117f89b80, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117f89f40, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117f883c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117f88280, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117f88000, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x1173fa800, pid: 47062, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x117f88140, pid: 47062, label: 'PitchCue'
+  }
+)

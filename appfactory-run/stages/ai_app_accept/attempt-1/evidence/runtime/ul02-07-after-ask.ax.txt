@@ -1,0 +1,179 @@
+Optional(Attributes: Application, 0x117ee8dc0, pid: 46221, label: 'PitchCue'
+Element subtree:
+ →Application, 0x117ee8dc0, pid: 46221, label: 'PitchCue'
+    Window (Main), 0x117ee8f00, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x117ee9040, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117ee9180, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x117ee92c0, {{-402.0, -874.0}, {1206.0, 2622.0}}
+          Other, 0x117ee9400, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x117ee9540, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x117ee9680, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117ee97c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x117ee9900, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x117ee9a40, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x117ee9b80, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x117ee9cc0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x117ee9e00, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x117ee9f40, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Capture / Import'
+                              Button, 0x117eea080, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'New session'
+                              StaticText, 0x117eea1c0, {{135.7, 73.7}, {130.3, 20.7}}, label: 'Capture / Import'
+                            Other, 0x117eea300, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117eea440, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x117eea580, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x117eea6c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x117eea800, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x117eea940, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x117eeaa80, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x117eeabc0, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x117eead00, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x117eeae40, {{0.0, 116.0}, {402.0, 270.7}}
+                                        StaticText, 0x117eeaf80, {{20.0, 136.0}, {316.7, 42.3}}, label: 'Capture or import sheet music / fingering photos for coaching.'
+                                        Button, 0x117eeb0c0, {{20.0, 194.3}, {362.0, 62.3}}, label: 'Photo library'
+                                          Image, 0x117eeb200, {{138.0, 217.0}, {20.7, 17.0}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x117eeb340, {{20.0, 194.3}, {362.0, 62.3}}, label: 'Photo library'
+                                        Button, 0x117eeb480, {{20.0, 272.7}, {362.0, 62.3}}, label: 'Camera'
+                                          Image, 0x117eeb5c0, {{157.0, 295.7}, {20.7, 16.0}}, identifier: 'camera', label: 'Camera'
+                                          StaticText, 0x117eeb700, {{20.0, 272.7}, {362.0, 62.3}}, label: 'Camera'
+                                        StaticText, 0x117eeb840, {{20.0, 351.0}, {302.3, 15.7}}, label: 'Session created. Capture or import a sheet photo.'
+                                      Other, 0x117eeb980, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x117eebac0, {{396.0, 523.3}, {3.0, 264.7}}
+                                      Other, 0x117eebc00, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x117eebd40, {{396.0, 523.3}, {3.0, 264.7}}
+                            Other, 0x117eebe80, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1173f8b40, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1173f8c80, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1173f8000, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x1173f8140, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x1173f8280, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x1173f83c0, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x1173f8500, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x1173f8640, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice', Selected
+                            Image, 0x1173f8780, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x1173f88c0, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x1173f8a00, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x1179f8500, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x1179f8a00, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1179f88c0, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x1179f8b40, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1179f8280, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1179f8640, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1179f8780, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1179f8c80, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x1179f8140, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1179f83c0, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1179f8000, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x1179f8f00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1179d7d40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1179d7c00, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1179d7ac0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1179d7e80, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117993840, {{0.0, 791.0}, {402.0, 83.0}}
+      Other, 0x117993ac0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117991900, {{-402.0, -874.0}, {1206.0, 2622.0}}
+        Other, 0x117990f00, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1179917c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x117993c00, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1179926c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1179908c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x117992d00, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x117991180, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x117992f80, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x117993200, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x117992300, {{0.0, 0.0}, {402.0, 874.0}}
+                            Other, 0x117993d40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117990780, {{0.0, 72.0}, {402.0, 802.0}}
+                                Image, 0x1179912c0, {{-150.0, -78.0}, {702.0, 1102.0}}
+                                Other, 0x117993340, {{0.0, 72.0}, {402.0, 802.0}}
+                                  Other, 0x117991540, {{0.0, 72.0}, {402.0, 802.0}}
+                                    Other, 0x117990140, {{0.0, 72.0}, {402.0, 802.0}}
+                                      Other, 0x1179930c0, {{0.0, 72.0}, {402.0, 802.0}}
+                                        Other, 0x1179903c0, {{0.0, 72.0}, {402.0, 802.0}}
+                                          Other, 0x117993e80, {{0.0, 72.0}, {402.0, 802.0}}
+                                            Other, 0x117990280, {{0.0, 72.0}, {402.0, 802.0}}
+                                              Other, 0x1179921c0, {{0.0, 72.0}, {402.0, 802.0}}
+                                                Other, 0x117993980, {{0.0, 72.0}, {402.0, 802.0}}
+                                                  NavigationBar, 0x117991cc0, {{0.0, 88.0}, {402.0, 62.0}}, identifier: '照片'
+                                                    Button, 0x117992800, {{20.0, 92.0}, {36.0, 36.0}}, identifier: 'Cancel', label: '取消'
+                                                    SegmentedControl, 0x117992bc0, {{138.0, 86.0}, {126.0, 48.0}}, label: '照片'
+                                                      Button, 0x117991a40, {{138.0, 86.0}, {63.0, 48.0}}, label: '照片', Selected
+                                                      Button, 0x117990000, {{201.0, 86.0}, {63.0, 48.0}}, label: '精选集'
+                                                  Other, 0x117992080, {{0.0, 72.0}, {402.0, 802.0}}
+                                                    Other, 0x117991680, {{0.0, 72.0}, {402.0, 802.0}}
+                                                      Other, 0x117991400, {{0.0, 72.0}, {402.0, 802.0}}
+                                                        Other, 0x117992a80, {{0.0, 72.0}, {402.0, 802.0}}, label: '照片'
+                                                          Other, 0x117990640, {{0.0, 72.0}, {402.0, 802.0}}
+                                                            ScrollView, 0x117990b40, {{0.0, 72.0}, {402.0, 802.0}}, identifier: 'photosView_content_scroll_view'
+                                                              Other, 0x1179935c0, {{0.0, 150.0}, {402.0, 544.3}}, identifier: 'photos_layout'
+                                                                Other, 0x117992580, {{0.0, 72.0}, {402.0, 802.0}}
+                                                                Other, 0x117992440, {{0.0, 72.0}, {402.0, 802.0}}
+                                                                Other, 0x117990dc0, {{0.0, 72.0}, {402.0, 802.0}}
+                                                                Other, 0x117993480, {{0.0, 150.0}, {402.0, 142.0}}, identifier: 'PXGSingleViewLayout-Group'
+                                                                  Other, 0x117990a00, {{0.0, 150.0}, {402.0, 142.0}}, identifier: 'PXGSingleViewContainerView_AX', label: '私密访问照片, 你的照片图库会在此处显示，但“PitchCue”仅可访问你选定的项目。'
+                                                                    Image, 0x117990c80, {{32.0, 160.0}, {38.0, 38.0}}, identifier: 'PickerOnboardingHeaderViewIcon'
+                                                                    Button, 0x117990500, {{350.0, 158.0}, {30.0, 22.0}}, label: '关闭'
+                                                                    Button, 0x117991b80, {{82.0, 247.7}, {97.7, 20.3}}, label: '进一步了解…'
+                                                                      StaticText, 0x117993700, {{82.0, 247.7}, {97.7, 20.3}}, label: '进一步了解…'
+                                                                Other, 0x117992940, {{0.0, 150.0}, {402.0, 142.0}}, label: '私密访问照片, 你的照片图库会在此处显示，但“PitchCue”仅可访问你选定的项目。'
+                                                                  Image, 0x117991e00, {{32.0, 160.0}, {38.0, 38.0}}, identifier: 'PickerOnboardingHeaderViewIcon'
+                                                                  Button, 0x117991040, {{350.0, 158.0}, {30.0, 22.0}}, label: '关闭'
+                                                                  Button, 0x117992e40, {{82.0, 247.7}, {97.7, 20.3}}, label: '进一步了解…'
+                                                                    StaticText, 0x1179a2080, {{82.0, 247.7}, {97.7, 20.3}}, label: '进一步了解…'
+                                                                Other, 0x11702f840, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'photos_sectioned_layout'
+                                                                  Other, 0x11702fd40, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'PXAssetsSectionLayout-Group'
+                                                                    Other, 0x11702e1c0, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'PXZoomablePhotosLayout-Group'
+                                                                      Other, 0x11702f700, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'PXGZoomLayout-Group'
+                                                                        Other, 0x11702e800, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'PXGDecoratingLayout-Group'
+                                                                          Other, 0x117ef26c0, {{0.0, 292.0}, {402.0, 402.3}}, identifier: 'PXGGridLayout-Group', label: '照片, 10月14日, 14:19, 照片, 10月14日, 14:19, 照片, 10月14日, 10:21, 照片, 2018年3月31日, 03:14, 照片, 2012年8月09日, 05:55, 照片, 2012年8月09日, 05:29, 照片, 2012年8月09日, 02:52, 照片, 2011年3月13日, 08:17, 照片, 2009年10月10日, 05:09'
+                                                                            Image, 0x1170817c0, {{0.0, 292.0}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 10月14日, 14:19'
+                                                                            Image, 0x117081900, {{134.6, 292.0}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 10月14日, 14:19'
+                                                                            Image, 0x117081a40, {{269.1, 292.0}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 10月14日, 10:21'
+                                                                            Image, 0x117081b80, {{0.0, 426.7}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2018年3月31日, 03:14'
+                                                                            Image, 0x117081f40, {{134.6, 426.7}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2012年8月09日, 05:55'
+                                                                            Image, 0x117080dc0, {{269.1, 426.7}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2012年8月09日, 05:29'
+                                                                            Image, 0x117080f00, {{0.0, 561.3}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2012年8月09日, 02:52'
+                                                                            Image, 0x117083e80, {{134.6, 561.3}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2011年3月13日, 08:17'
+                                                                            Image, 0x117083d40, {{269.1, 561.3}, {132.9, 133.0}}, identifier: 'PXGGridLayout-Info', label: '照片, 2009年10月10日, 05:09'
+                                                                      Other, 0x117082e40, {{0.0, 292.0}, {402.0, 0.0}}, identifier: 'PXZoomableInlineHeadersLayout-Group'
+                                                                Other, 0x1170830c0, {{369.0, 150.0}, {30.0, 638.0}}, label: '垂直滚动条, 1页', value: 0%
+                                                                  Other, 0x117083340, {{396.0, 246.7}, {3.0, 538.3}}
+                                                                Other, 0x117083200, {{56.0, 755.0}, {290.0, 30.0}}, label: '水平滚动条, 1页', value: 0%
+                                                                  Other, 0x1170808c0, {{59.0, 782.0}, {284.0, 3.0}}
+                                                              Other, 0x117080000, {{369.0, 150.0}, {30.0, 638.0}}, label: '垂直滚动条, 1页', value: 0%
+                                                                Other, 0x117080140, {{396.0, 246.7}, {3.0, 538.3}}
+                                                              Other, 0x117080500, {{56.0, 755.0}, {290.0, 30.0}}, label: '水平滚动条, 1页', value: 0%
+                                                                Other, 0x117080640, {{59.0, 782.0}, {284.0, 3.0}}
+                                                  Other, 0x1170821c0, {{0.0, 72.0}, {402.0, 802.0}}
+                                                    Other, 0x117081180, {{0.0, 72.0}, {402.0, 802.0}}
+                                                      Toolbar, 0x117083980, {{0.0, 788.0}, {402.0, 86.0}}, identifier: 'Toolbar', label: '工具栏'
+                                                        Other, 0x117081540, {{28.0, 798.0}, {346.0, 48.0}}
+                                                          Other, 0x1170812c0, {{28.0, 798.0}, {346.0, 48.0}}
+                                                            Other, 0x117083ac0, {{28.0, 798.0}, {0.0, 0.0}}
+                                                              Other, 0x117083c00, {{28.0, 798.0}, {48.0, 48.0}}
+                                                                Other, 0x117081040, {{28.0, 798.0}, {48.0, 48.0}}
+                                                                  Other, 0x117080b40, {{33.0, 803.0}, {38.0, 38.0}}
+                                                                    Other, 0x1170803c0, {{33.0, 803.0}, {38.0, 38.0}}
+                                                                      Button, 0x117080c80, {{33.0, 803.0}, {38.0, 38.0}}, identifier: 'Sort and Filter', label: '排序和筛选'
+                                                              Other, 0x117080280, {{326.0, 798.0}, {48.0, 48.0}}
+                                                                Other, 0x117082f80, {{326.0, 798.0}, {48.0, 48.0}}
+                                                                  Other, 0x117080a00, {{331.0, 803.0}, {38.0, 38.0}}
+                                                                    Other, 0x117080780, {{331.0, 803.0}, {38.0, 38.0}}
+                                                                      Button, 0x117081e00, {{331.0, 803.0}, {38.0, 38.0}}, label: '搜索'
+                                                          Other, 0x117a0c000, {{28.0, 798.0}, {346.0, 48.0}}
+                                                            Other, 0x117a0c140, {{28.0, 798.0}, {0.0, 0.0}}
+                                                              Other, 0x117a0c280, {{130.0, 798.0}, {142.0, 48.0}}
+                                                                Other, 0x117a0c3c0, {{130.0, 798.0}, {142.0, 48.0}}
+                                                                  Other, 0x117a0c500, {{135.0, 813.0}, {132.0, 18.0}}
+                                                                    Other, 0x117a0c640, {{135.0, 813.0}, {132.0, 18.0}}
+                                                                      Other, 0x117a0c780, {{135.0, 813.0}, {132.0, 18.0}}
+                                                                        Other, 0x117a0c8c0, {{135.0, 813.0}, {132.0, 18.0}}
+                                                                          StaticText, 0x117a0ca00, {{162.2, 813.0}, {77.7, 18.0}}, label: ' 包含位置'
+                                            Other, 0x117a0cb40, {{0.0, 72.0}, {402.0, 802.0}}
+                                              Other, 0x117a0cc80, {{0.0, 72.0}, {402.0, 802.0}}
+Path to element:
+ →Application, 0x117ee8dc0, pid: 46221, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x117a0cdc0, pid: 46221, label: 'PitchCue'
+  }
+)

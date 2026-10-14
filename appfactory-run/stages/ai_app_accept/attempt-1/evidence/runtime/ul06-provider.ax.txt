@@ -1,0 +1,84 @@
+Optional(Attributes: Application, 0x117a0d680, pid: 47062, label: 'PitchCue'
+Element subtree:
+ →Application, 0x117a0d680, pid: 47062, label: 'PitchCue'
+    Window (Main), 0x117a0db80, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x117a0dcc0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117a0ee40, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x117a0e1c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x117a0e440, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x117a0df40, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117a0f980, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x117a0c640, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x117a0de00, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x117a0fac0, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x117a0f700, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x117a0fd40, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x117a0e6c0, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'DeepSeek Provider Policy'
+                              Button, 0x117a0d2c0, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x117a0c280, {{99.0, 73.7}, {204.0, 20.7}}, label: 'DeepSeek Provider Policy'
+                            Other, 0x117a0ed00, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117a0d180, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x117a0d900, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x117a0f200, {{0.0, 0.0}, {402.0, 874.0}}
+                                    WebView, 0x117a0f5c0, {{0.0, 116.0}, {402.0, 675.0}}
+                                      WebView, 0x117a0e300, {{0.0, 116.0}, {402.0, 675.0}}
+                                        WebView, 0x117a0e800, {{0.0, 116.0}, {402.0, 675.0}}
+                                          Other, 0x117a0cf00, {{0.0, 0.0}, {402.0, 675.0}}
+                                            Other, 0x117a0e580, {{0.0, 0.0}, {402.0, 675.0}}
+                                              Other, 0x117a0f480, {{0.0, 116.0}, {402.0, 675.0}}
+                                                Other, 0x117a0fe80, {{0.0, 116.0}, {402.0, 675.0}}, label: 'DeepSeek Provider Policy', Focused
+                                                  Other, 0x117a0ebc0, {{32.0, 169.0}, {338.0, 79.0}}, label: 'DeepSeek Provider Policy (in-app)', value: 1, Focused
+                                                    StaticText, 0x117a0cdc0, {{32.0, 169.0}, {285.0, 79.0}}, label: 'DeepSeek Provider Policy (in-app)', value: DeepSeek Provider ..., Focused
+                                                  Other, 0x117a0e940, {{32.0, 268.0}, {338.0, 61.0}}, Focused
+                                                    StaticText, 0x117a0ea80, {{32.0, 268.0}, {323.0, 61.0}}, label: 'PitchCue’s outbound practice coaching uses DeepSeek when a key is configured and you grant consent (pitchcue.consent.v1).', value: PitchCue’s outboun..., Focused
+                                                  Other, 0x117a0d040, {{32.0, 344.0}, {338.0, 81.0}}, Focused
+                                                    StaticText, 0x117a0ef80, {{32.0, 344.0}, {316.0, 81.0}}, label: 'Fields that may be sent: sheet_photo_desc, instrument_label, user_goal, speech_transcript, prior_plan_steps, coach_question, user_feedback.', value: Fields that may be..., Focused
+                                                  Other, 0x117a0c3c0, {{32.0, 440.0}, {338.0, 81.0}}, Focused
+                                                    StaticText, 0x117a0da40, {{32.0, 440.0}, {301.0, 81.0}}, label: 'This page is independent of PitchCue’s product Privacy Policy. Revoke consent in Settings to stop sends immediately. Local practice features remain available.', value: This page is indep..., Focused
+                                        Other, 0x117a0fc00, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x117a0f840, {{396.0, 119.0}, {3.0, 669.0}}
+                                        Other, 0x117a0f0c0, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x117a0f340, {{3.0, 785.0}, {396.0, 3.0}}
+                                        Other, 0x117a0c500, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x117a0c140, {{396.0, 119.0}, {3.0, 669.0}}
+                                        Other, 0x117a0c000, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x117a0cc80, {{3.0, 785.0}, {396.0, 3.0}}
+                            Other, 0x117a0cb40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117a0c8c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117a0c780, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x117a0d7c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x117a0d400, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x117a0e080, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x117a0d540, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x117eec000, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x117eedf40, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice'
+                            Image, 0x117eef480, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x117eee080, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x117eefd40, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x117eed680, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings', Selected
+                            Image, 0x117eee6c0, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x117eef700, {{240.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x117eef840, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117eee800, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117eec780, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117f8a080, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117f88140, {{240.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x117f89e00, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117f888c0, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117ef0000, {{240.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x117ef0500, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x117ef0280, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x117ef0c80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117ef0a00, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117ef26c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117ef03c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117ef0780, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117ef0140, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x117a0d680, pid: 47062, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x117ef0b40, pid: 47062, label: 'PitchCue'
+  }
+)

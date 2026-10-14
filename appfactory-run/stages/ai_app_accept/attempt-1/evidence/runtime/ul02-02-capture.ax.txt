@@ -1,0 +1,79 @@
+Optional(Attributes: Application, 0x1173f8f00, pid: 46221, label: 'PitchCue'
+Element subtree:
+ →Application, 0x1173f8f00, pid: 46221, label: 'PitchCue'
+    Window (Main), 0x1173f9040, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1173f8c80, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1173f8dc0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1173f8b40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1173f8a00, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1173f88c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1173f8780, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1173f83c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1173f8640, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1173f8500, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1173f8000, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1173f8280, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1173f8140, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Capture / Import'
+                              Button, 0x1173fb480, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'New session'
+                              StaticText, 0x1173f9540, {{135.7, 73.7}, {130.3, 20.7}}, label: 'Capture / Import'
+                            Other, 0x1173f9680, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1173f97c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1173fa300, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1173fa440, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x1173fa6c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1173fad00, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x1173fa800, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x1173fabc0, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x1173fa940, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1173faa80, {{0.0, 116.0}, {402.0, 270.7}}
+                                        StaticText, 0x1173fa580, {{20.0, 136.0}, {316.7, 42.3}}, label: 'Capture or import sheet music / fingering photos for coaching.'
+                                        Button, 0x1173f9a40, {{20.0, 194.3}, {362.0, 62.3}}, label: 'Photo library'
+                                          Image, 0x1173fa080, {{138.0, 217.0}, {20.7, 17.0}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x1173fa1c0, {{20.0, 194.3}, {362.0, 62.3}}, label: 'Photo library'
+                                        Button, 0x1173f9e00, {{20.0, 272.7}, {362.0, 62.3}}, label: 'Camera'
+                                          Image, 0x1173f9f40, {{157.0, 295.7}, {20.7, 16.0}}, identifier: 'camera', label: 'Camera'
+                                          StaticText, 0x1173f9b80, {{20.0, 272.7}, {362.0, 62.3}}, label: 'Camera'
+                                        StaticText, 0x1173f9cc0, {{20.0, 351.0}, {302.3, 15.7}}, label: 'Session created. Capture or import a sheet photo.'
+                                      Other, 0x1173f9900, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x1173f9180, {{396.0, 523.3}, {3.0, 264.7}}
+                                      Other, 0x1173f92c0, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x117080000, {{396.0, 523.3}, {3.0, 264.7}}
+                            Other, 0x117080140, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117080280, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1170803c0, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x117080500, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x117080640, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x117080780, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x1170808c0, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x117080a00, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x117080b40, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice', Selected
+                            Image, 0x117080c80, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x117080dc0, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x117080f00, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x117081040, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x117081180, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1170812c0, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x117081400, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117081540, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117081680, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1170817c0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117081900, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x117081a40, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117081b80, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117081cc0, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x117081e00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x117081f40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x117082080, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1170821c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117082300, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117082440, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117082580, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1170826c0, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x1173f8f00, pid: 46221, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x117082800, pid: 46221, label: 'PitchCue'
+  }
+)

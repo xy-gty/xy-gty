@@ -1,0 +1,5 @@
+AppFactory UltraLite full-screen frame for PitchCue (AI practice coach for instrumentalists). iOS SwiftUI phone UI mock, English labels.
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+Screen: Practice Home empty state. Soft lilac (#F5F3FF) background, violet (#7C3AED) accents, mint (#10B981) highlights — NOT all-black.
+Top: PitchCue wordmark. Center: empty horizontal practice strip skeleton (rounded lilac track with faint step dots), short copy "No practice yet — import a sheet to start". Primary CTA button "New practice" in violet. Bottom tab bar: Practice | Sessions | Settings.
+Large legible text. No tuner dial dominating. No script timeline. No paywall. No App Store chrome.

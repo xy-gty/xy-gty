@@ -1,0 +1,26 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "导入乐谱图 → AI 热身计划（人审）→ TTS 倒数 → drone/metronome 陪练 → 可选 mic 音高反馈 → 保存会话"
+  ],
+  "differentiation": {},
+  "diversity_key": "pitchcue 需要结构化热身与陪练节奏的器乐练习者 弦乐 管乐 键盘等 要计划与反馈闭环 而不只是盯着调音针 新建练习会话 拍摄或导入乐谱 练习照片 导入乐谱或指法练习照片 用 ai 教练聊出热身计划 tts 倒数与提示 本地 drone metronome 床陪练 可选麦克风圆形调音盘反馈 定位练习教练 不是调音器克隆",
+  "feature_blocks": [
+    "入口：PracticeHome → New session → Capture / Import",
+    "操作：Camera 拍摄或 Photo library 选图（PhotoImportSession / CameraCapture）",
+    "结果：创建 SheetPhoto 绑定到新 PracticeSession",
+    "持久：AtomicCodableStore + 本地图片文件",
+    "空态：无图时主 CTA「Import sheet」；取消选择不建会话",
+    "错误：权限拒绝显示系统文案 + Settings 指引；导入失败可 Retry",
+    "重启：已导入照片与会话仍在"
+  ],
+  "product_fingerprint": "edbf8bb84e1cd825a7b5b4b04296cab206210538f08c40c58d76210eca8c2e54",
+  "product_name": "PitchCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "需要结构化热身与陪练节奏的器乐练习者（弦乐/管乐/键盘等）；要计划与反馈闭环，而不只是盯着调音针。",
+  "user_problem": "新建练习会话，拍摄或导入乐谱/练习照片。",
+  "value_proposition": "导入乐谱或指法练习照片，用 AI 教练聊出热身计划，TTS 倒数与提示，本地 drone/metronome 床陪练，可选麦克风圆形调音盘反馈——定位练习教练，不是调音器克隆。"
+}

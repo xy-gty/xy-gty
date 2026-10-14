@@ -1,0 +1,11 @@
+{
+  "schema": "appfactory.accept_product_freeze.v1",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/product",
+  "commit": "0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7",
+  "branch": "main",
+  "clean": true,
+  "status_porcelain": "",
+  "bundle_id": "com.lingguang.pitchcue",
+  "upstream_build_commit": "0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7",
+  "match_upstream": true
+}

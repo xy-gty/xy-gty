@@ -1,0 +1,5 @@
+AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+Screen: Capture / Import sheet photo. Lilac (#F5F3FF) surface, violet (#7C3AED) buttons, mint accents. NOT all-black.
+Title "Import sheet". Large dashed photo well showing a simple sheet-music thumbnail placeholder. Two big buttons: "Camera" and "Photo library". Secondary "Cancel". Bottom safe area clean.
+Large legible text. No CuePartner timeline. No paywall.

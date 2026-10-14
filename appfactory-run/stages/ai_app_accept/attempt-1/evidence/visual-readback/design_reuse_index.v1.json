@@ -1,0 +1,103 @@
+{
+  "schema": "appfactory.ultra_lite_visual_readback.v1",
+  "entries": [
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-home-empty",
+      "frame_id": "home-empty",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+      "image_sha256": "3015493991797cbd846d5df323db30ace74e918a7a28f483349e8e092478e6e0",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-home-empty.receipt.json",
+      "receipt_sha256": "33efc9d52e403891125b1d3bfe0a3f9a5e38be2f22ddf2745d3a5f064c847e1a",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-home-empty.raw.jsonl",
+      "raw_sha256": "dd645a39a975108349d11e6f040c225459bc5c6414a867deb7572c3d5904b4d2",
+      "conclusion": "pass",
+      "criterion": "Pass only if this still shows PitchCue practice home empty with lilac/violet palette, horizontal practice strip skeleton, and New practice CTA \u2014 not an all-black shell or script timeline.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-capture-import",
+      "frame_id": "capture-import",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/capture-import-r2.png",
+      "image_sha256": "4137681701dbf82e17dccfa3d539ddc4ef24ea66fc52b502fed5e8f492d7c5d0",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-capture-import.receipt.json",
+      "receipt_sha256": "bceb058b77a979a0cd06f96e3451ffac7ed68be0694b8dd6288f8cb4bd822c3c",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-capture-import.raw.jsonl",
+      "raw_sha256": "a3399440ae23acc9f4243f0a989f18d53d735874d47dd0a787b4edded3ab7c67",
+      "conclusion": "pass",
+      "criterion": "Pass only if this still shows Import sheet with Camera and Photo library actions on a light lilac surface \u2014 not a black tuner or timeline.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-coach-chat",
+      "frame_id": "coach-chat",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/coach-chat-r2.png",
+      "image_sha256": "6a185da6d5ae2569b2fc3104fab4fe5071af478ecf1a9a76aea91c8d99cb895d",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-coach-chat.receipt.json",
+      "receipt_sha256": "b0f9bd88ef81ced6b1b0a182d49caac510415da545cffcd71553c7fc8ce492b8",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-coach-chat.raw.jsonl",
+      "raw_sha256": "fca1aafd8e87aac44ed3ac83414de5eb0785c9e1502b7f56455db629cce546f7",
+      "conclusion": "I'll read that frame image and judge it only against the coach-chat / plan-steps / violet CTA standard you listed.**pass**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u4ecd\u662f Coach \u804a\u5929\u754c\u9762\uff08\u6807\u9898 \u201cCoach\u201d\u3001\u7528\u6237\u6c14\u6ce1\u4e0e Coach \u56de\u590d\u6c14\u6ce1\u3001\u5e95\u90e8\u8f93\u5165\u680f\uff09\u3002\n- Coach \u6c14\u6ce1\u5185\u6709\u7f16\u53f7\u8ba1\u5212\u6b65\u9aa4",
+      "criterion": "Pass only if this still shows coach chat with plan steps and Ask coach CTA in violet/lilac \u2014 not a full-screen dial-only tuner.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-plan-review",
+      "frame_id": "plan-review",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/plan-review-r2.png",
+      "image_sha256": "8b0affeee056fb94c947dbd7d31cca8ff4cdf94afe23f25bc509013067aba470",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-plan-review.receipt.json",
+      "receipt_sha256": "78094130a610f6ee6f291fc18fdc5049d9dac132a163c5ee33e130dcf03bfeff",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-plan-review.raw.jsonl",
+      "raw_sha256": "34a8b0386ea20a241700d10ac5d822a73f82189c8488b7bdc48e4e079fc6ae11",
+      "conclusion": "I'll read the image with the Read tool and judge it only against that plan-review standard.**pass**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u6807\u9898\u4e3a \u201cReview plan\u201d\uff0c\u5e76\u6709 \u201cAI draft\u201d \u6807\u8bc6\uff0c\u5c5e\u4e8e\u8ba1\u5212\u5ba1\u9605\u9875\u3002\n- \u5e95\u90e8\u63a7\u4ef6\u53ef\u89c1\u4e14\u53ef\u8fa8\uff1a`Edit`\u3001`Discard`\u3001`Keep`\u3002\n- \u201cPRACTIC",
+      "criterion": "Pass only if this still shows plan review with Keep / Discard / Edit controls and readable step list.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-practice-floor",
+      "frame_id": "practice-floor",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/practice-floor-r2.png",
+      "image_sha256": "bf2de76c021e780ac57d8c207a18492c4c760a5df9b9a379ff1f15e259ccb46e",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-practice-floor.receipt.json",
+      "receipt_sha256": "3b0f6e5051a9e38578934758e987862f8918f1ed15b7956528ba04f1395390ec",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-practice-floor.raw.jsonl",
+      "raw_sha256": "f16151db2d7a2635d772eac8a612b358edfc6f524736ef31d813c152a501cec6",
+      "conclusion": "I'll read that image with the Read tool and judge it only against the pass/fail standard you gave.**pass**\n\n\u53ef\u89c1\u4f9d\u636e\uff08\u4ec5\u672c\u56fe\uff09\uff1a\n- \u6709**\u6a2a\u5411**\u7ec3\u4e60\u6761\uff1a\u6b65\u9aa4 1\u20135\uff08Long tones \u2192 Review & play\uff09\u7531\u6c34\u5e73\u7ebf\u4e32\u8d77\uff0c\u4e0d\u662f\u7eb5\u5411\u811a\u672c\u65f6\u95f4\u8f74\u3002\n- \u6709**\u8fde\u7eed\u6a2a\u5411**\u6ce2\u5f62\uff0c\u5448 ",
+      "criterion": "Pass only if this still shows horizontal practice strip plus continuous waveform on lilac/mint/violet \u2014 not a CuePartner vertical script timeline or all-black UI.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-pitch-feedback",
+      "frame_id": "pitch-feedback",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/pitch-feedback-r2.png",
+      "image_sha256": "3b0f94432c7d0d7d86cb769cbc4dcec8dce8abdca56ef51c7b9ccbb9cd2c1c78",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-pitch-feedback.receipt.json",
+      "receipt_sha256": "4f9d34e88fb8e62bc11621667f2bb6dae8cb9d728a8fd50ee3cf6d118e3236c2",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-pitch-feedback.raw.jsonl",
+      "raw_sha256": "0e9714d60cf497822d81dd683741ff5c836b5a8a859530c1e3fbb9ca64311796",
+      "conclusion": "pass",
+      "criterion": "Pass only if this still shows a circular tuner dial as the pitch-feedback focus with coach context \u2014 not an all-black TonalEnergy clone chrome.\n"
+    },
+    {
+      "side": "design",
+      "mode": "reuse_design_read",
+      "check_id": "crit-settings-privacy",
+      "frame_id": "settings-privacy",
+      "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/frames/settings-privacy-r2.png",
+      "image_sha256": "1549b1e468023471396798ab4f02b8624a883dc82fbacd1ea0367ea4219f0959",
+      "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-settings-privacy.receipt.json",
+      "receipt_sha256": "4bf92601b0e6505bbeb9d19227cd14dd23b7e578bbe49f988ccea2b355bbe185",
+      "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/evidence/visual-readback/design-crit-settings-privacy.raw.jsonl",
+      "raw_sha256": "7c50590146108064eb61f9d8634e78d894cec0f14655962af0f7d33937b9bf1c",
+      "conclusion": "I'll read that frame image and judge it only against the Settings / revoke-consent / light-lilac list criterion you gave.**pass**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u9876\u680f\u4e3a `< Settings`\uff0c\u6574\u5c4f\u662f\u8bbe\u7f6e\u5217\u8868\uff0c\u4e0d\u662f\u4ed8\u8d39\u5899/\u8ba2\u9605\u9875\u3002\n- \u6709 **Revoke AI consent**",
+      "criterion": "Pass only if this still shows Settings with Revoke AI consent and legal/privacy rows on a light lilac list \u2014 not a paywall.\n"
+    }
+  ]
+}

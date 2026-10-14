@@ -1,0 +1,81 @@
+Optional(Attributes: Application, 0x112e3e580, pid: 47757, label: 'PitchCue'
+Element subtree:
+ →Application, 0x112e3e580, pid: 47757, label: 'PitchCue'
+    Window (Main), 0x112e3d180, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x112e3e440, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x112e3f700, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x112e3d540, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x112e3fe80, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x112e3ca00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x112e3c000, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x112e3c280, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x112e3df40, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x112e3e080, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x112e3f0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x112e3fd40, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x112e46940, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Plan review'
+                              Button, 0x112e443c0, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Coach chat'
+                              StaticText, 0x112e45e00, {{155.3, 73.7}, {91.0, 20.7}}, label: 'Plan review'
+                            Other, 0x112e45f40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x112e46080, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x112e46580, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x112e466c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x112e461c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x112e46300, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x112e46440, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x112e44500, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x112e44640, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x112e44780, {{0.0, 116.0}, {402.0, 440.3}}
+                                        StaticText, 0x112e452c0, {{36.0, 152.0}, {303.3, 42.3}}, label: 'AI is not configured — review this local draft, Edit, then Keep to practice offline.'
+                                        StaticText, 0x112e45400, {{20.0, 226.3}, {293.3, 18.0}}, label: 'Edit steps (one per line: title|seconds|tip)'
+                                        TextView, 0x112e45680, {{28.0, 268.3}, {346.0, 160.0}}, value: Long tones|90|Brea...
+                                          Other, 0x112e45cc0, {{341.0, 268.3}, {30.0, 160.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                            Other, 0x112e457c0, {{368.0, 326.3}, {3.0, 99.0}}
+                                        Other, 0x112e45b80, {{20.0, 452.3}, {222.0, 34.3}}
+                                          Button, 0x112e45900, {{20.0, 452.3}, {82.0, 34.3}}, label: 'Discard'
+                                          Button, 0x112e45a40, {{114.0, 452.3}, {53.3, 34.3}}, label: 'Edit'
+                                          Button, 0x112e45540, {{179.3, 452.3}, {62.7, 34.3}}, label: 'Keep'
+                                        StaticText, 0x112e44a00, {{20.0, 502.7}, {342.0, 33.7}}, label: 'AI unavailable: DeepSeek key not configured (local_only gap).'
+                                      Other, 0x112e45040, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x112e45180, {{396.0, 353.7}, {3.0, 434.3}}
+                                      Other, 0x112e44dc0, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x112e44f00, {{396.0, 353.7}, {3.0, 434.3}}
+                            Other, 0x112e44b40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x112e44c80, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x112e448c0, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x112e44140, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x112e44280, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x112e44000, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x112441040, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x112440b40, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x112442080, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Practice', Selected
+                            Image, 0x1124408c0, {{100.0, 801.7}, {29.3, 27.0}}, identifier: 'music.note.list', label: 'playlist'
+                          Button, 0x112440780, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Sessions'
+                            Image, 0x112440a00, {{186.7, 801.3}, {27.7, 27.3}}, identifier: 'clock.arrow.trianglehead.counterclockwise.rotate.90', label: 'clock.arrow.trianglehead.counterclockwise.rotate.90'
+                          Button, 0x112440000, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x112440f00, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x112441900, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x112442300, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x112441b80, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x112440500, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x112440280, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x112440140, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x1124403c0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x112440640, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1124417c0, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x112440c80, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x112440dc0, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1124412c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x112441f40, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x112441e00, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x112441cc0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x112441a40, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x112441180, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x112e3e580, pid: 47757, label: 'PitchCue'
+Query chain:
+ →Find: Application 'com.lingguang.pitchcue'
+  Output: {
+    Application, 0x112441540, pid: 47757, label: 'PitchCue'
+  }
+)

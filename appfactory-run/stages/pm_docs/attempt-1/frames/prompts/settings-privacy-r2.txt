@@ -1,0 +1,5 @@
+AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+Screen: Settings — privacy and AI consent. Lilac grouped list, violet toggles/links, mint status chip. NOT all-black.
+Sections: AI coaching (DeepSeek) with "Revoke AI consent" destructive text; Legal rows Privacy, Terms, Support, Provider policy; Permissions copy Camera / Photos / Microphone / Speech. Bundle hint com.lingguang.pitchcue subtle.
+Large legible text. No paywall. No timeline.

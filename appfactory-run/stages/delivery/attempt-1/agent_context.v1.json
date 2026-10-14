@@ -1,0 +1,40 @@
+{
+  "context_version": "v1",
+  "context_class": "contract",
+  "run_id": "kf-20261014T073212Z-4039fa46",
+  "stage": "delivery",
+  "attempt": 1,
+  "principal": "DeliveryReporterAgent",
+  "route": "delivery",
+  "state_version": 8,
+  "goal_version": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/product",
+  "upstream_refs": {
+    "upstream_map_pm_docs": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/pm_docs/attempt-1/MAP.md",
+    "upstream_map_ai_app_build": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_build/attempt-1/MAP.md",
+    "upstream_map_ai_app_accept": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/ai_app_accept/attempt-1/MAP.md"
+  },
+  "artifact_refs": {
+    "required_output_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/stages/delivery/attempt-1/MAP.md"
+  },
+  "capability_ids": [
+    "route.delivery"
+  ],
+  "session_id": "",
+  "event_cursor": 17,
+  "knowledge_receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T073212Z-4039fa46/memory/delivery-attempt-1.receipt.json",
+  "runtime_profile": {
+    "model_preset": "dev"
+  },
+  "contract_context": {
+    "run_id": "kf-20261014T073212Z-4039fa46",
+    "stage": "delivery",
+    "attempt": 1,
+    "ai_profile": "ultra_lite"
+  },
+  "advisory_context": {
+    "knowledge_availability": "ready"
+  },
+  "advisory": {},
+  "sha256": "896a968b9dd798b1cd70a044b866e856f9fe992d46080428bdfda4c9155d3938"
+}

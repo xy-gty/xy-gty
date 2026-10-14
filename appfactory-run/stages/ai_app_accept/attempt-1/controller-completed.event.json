@@ -1,0 +1,8 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "5d398972-e53d-4efd-98f2-8a3d730cbc3e",
+  "execution_seq": 1,
+  "agent_id": "cursor-cli-accept-5d398972e53d",
+  "status": "completed",
+  "final_text": "Dispatch `5d398972-e53d-4efd-98f2-8a3d730cbc3e` complete.\n\nLaunch hash verified. PitchCue `ai_app_accept` attempt-1 stamped **ready** on product commit `0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7` (iPhone 17 Pro lease `8843C141-\u2026`).\n\nUL-01..UL-08 all **pass**. P1 `local_only`: honest `ai_key_unavailable`, local legal + DeepSeek Provider Policy, Keep/Discard/Edit + practice strip/waveform/circular dial evidenced. UL-07: 6/7 visions pass; coach-chat same-frame plan-steps noted as known_issue (steps on Plan review after Ask).\n\nFinish: `cursor-package ultra-lite finish --status ready` \u2192 ok (`map_sha256` `8675cb38\u2026`). Simulator lease released.\n"
+}

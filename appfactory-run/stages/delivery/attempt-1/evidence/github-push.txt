@@ -1,0 +1,13 @@
+schema: appfactory.delivery_github_push.v1
+mode: lean_hard_force_push
+remote: git@github.com:xy-gty/xy-gty.git
+remote_alias: delivery-xygty
+refspec: HEAD:main
+force: true
+local_commit: 0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7
+remote_head: 0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7
+match: true
+pushed_at: 2026-10-14T09:12:49Z
+command: git push delivery-xygty HEAD:main --force
+repo_url: https://github.com/xy-gty/xy-gty
+note: Controller HARD PUSH after agent fetch stall; DimCue pattern lean overwrite; Feishu skipped

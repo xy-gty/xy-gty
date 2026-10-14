@@ -1,0 +1,44 @@
+{
+  "event": {
+    "source": "cursor_task_host",
+    "dispatch_id": "82c33e3d-bfa6-45df-85d7-7a3f66417839",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-prep-82c33e3dbfa6",
+    "status": "completed",
+    "final_text": "Dispatch `82c33e3d-bfa6-45df-85d7-7a3f66417839` completed.\n\n- Launch file hash verified\n- PitchCue preparation workspace scaffolded (entities / navigation / stores / review controls + AppRuntimeCore via controlled installer)\n- `preparation_cache ensure`: cache hit (shared baseline not recompiled)\n- Domain package compile OK (scratch outside workspace inventory)\n- `PREPARATION.md` Status: **ready**\n- `preparation finish` wrote private receipt (`ok: true`)\n\nController can observe stop and seal.\n"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "5cf415ee-4be7-474b-bcac-aa79da0fd6bf",
+    "session_id": "grokbot-packaging-kf-20261014T073212Z-4039fa46",
+    "session_kind": "interactive",
+    "observed_at": 1791963833.432692,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "5cf415ee-4be7-474b-bcac-aa79da0fd6bf",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_c8ca2d4fe11c4b1594112a9f77ebc775",
+        "agent_id": "cursor-cli-pm-c8ca2d4fe11c",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_82c33e3dbfa645df85d77a3f66417839",
+        "agent_id": "cursor-cli-prep-82c33e3dbfa6",
+        "agent_status": {
+          "completed": "Dispatch `82c33e3d-bfa6-45df-85d7-7a3f66417839` completed.\n\n- Launch file hash verified\n- PitchCue preparation workspace scaffolded (entities / navigation / stores / review controls + AppRuntimeCore via controlled installer)\n- `preparation_cache ensure`: cache hit (shared baseline not recompiled)\n- Domain package compile OK (scratch outside workspace inventory)\n- `PREPARATION.md` Status: **ready**\n- `preparation finish` wrote private receipt (`ok: true`)\n\nController can observe stop and seal.\n"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-14T07:43:54Z"
+}
