@@ -233,10 +233,10 @@ final class AppModel: ObservableObject {
         do {
             let permit = try consentGate.permit()
             try consentGate.validate(permit)
-            let client = DeepSeekClient(apiKey: key) { [weak self] in
-                guard let self else { throw DeepSeekClientError.notAuthorized }
-                _ = try self.consentGate.permit()
-            }
+            let gate = consentGate
+            let client = DeepSeekClient(apiKey: key, assertConsent: {
+                _ = try gate.permit()
+            })
             let url = storage.photoFileURL(for: draft)
             let recognized = try await client.recognizeDuctRun(photoURL: url)
             draft.proposedSizeTags = recognized.sizeTags
@@ -379,12 +379,13 @@ final class AppModel: ObservableObject {
         do {
             let permit = try consentGate.permit()
             try consentGate.validate(permit)
-            let client = DeepSeekClient(apiKey: key) { [weak self] in
-                guard let self else { throw DeepSeekClientError.notAuthorized }
-                _ = try self.consentGate.permit()
-            }
+            let gate = consentGate
+            let client = DeepSeekClient(apiKey: key, assertConsent: {
+                _ = try gate.permit()
+            })
             let runSummary = selectedRun.map {
-                "size=\($0.sizeTags.joined(separator: ",")); length=\($0.lengthFeet.map(String.init) ?? "?") ft"
+                let length = $0.lengthFeet.map { String($0) } ?? "?"
+                return "size=\($0.sizeTags.joined(separator: ",")); length=\(length) ft"
             } ?? "none"
             let response = try await client.coachSizing(
                 prompt: prompt,

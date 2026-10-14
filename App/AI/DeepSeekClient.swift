@@ -39,22 +39,27 @@ struct CoachSizingResponse: Sendable, Equatable {
 }
 
 /// URLSession client for DeepSeek chat/completions (`deepseek-chat`). Consent is enforced before every request.
-final class DeepSeekClient: @unchecked Sendable {
+final class DeepSeekClient {
     private static let endpoint = URL(string: "https://api.deepseek.com/chat/completions")!
     private static let modelName = "deepseek-chat"
 
     private let apiKey: String
-    private let assertConsent: @Sendable () throws -> Void
+    private let assertConsent: () throws -> Void
     private let session: URLSession
 
     init(
         apiKey: String,
-        assertConsent: @escaping @Sendable () throws -> Void,
+        assertConsent: @escaping () throws -> Void = {},
         session: URLSession = .shared
     ) {
         self.apiKey = apiKey
         self.assertConsent = assertConsent
         self.session = session
+    }
+
+    /// Trailing-closure convenience matching ClosetCue / AppModel call sites.
+    convenience init(apiKey: String, _ assertConsent: @escaping () throws -> Void) {
+        self.init(apiKey: apiKey, assertConsent: assertConsent)
     }
 
     func recognizeDuctRun(photoURL: URL) async throws -> DuctRunRecognition {
@@ -160,7 +165,7 @@ final class DeepSeekClient: @unchecked Sendable {
             let snippet = String(data: data, encoding: .utf8)?
                 .prefix(240)
                 .replacingOccurrences(of: apiKey, with: "[redacted]")
-            throw DeepSeekClientError.http(status: http.statusCode, detail: snippet.map(String.init))
+            throw DeepSeekClientError.http(status: http.statusCode, detail: snippet.map { String($0) })
         }
         return try parseAssistantContent(from: data)
     }
