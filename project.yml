@@ -22,6 +22,8 @@ targets:
       - path: App
     resources:
       - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
     dependencies:
       - package: AppRuntimeCore
       - package: DocBriefDomain
@@ -35,7 +37,7 @@ targets:
         INFOPLIST_KEY_NSCameraUsageDescription: DocBrief AI can capture a document, whiteboard, or receipt photo for optional recognition review.
         INFOPLIST_KEY_NSMicrophoneUsageDescription: DocBrief AI uses the microphone so you can dictate a voice supplement for action titles, due dates, or spoken briefing questions before you Save or discard.
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: DocBrief AI uses on-device speech recognition to turn your voice supplement into editable action or briefing text that you review with Save or Not this.
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
