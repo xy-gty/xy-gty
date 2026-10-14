@@ -20,13 +20,20 @@
   "dispatch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/delivery/attempt-1/codex_dispatch.md",
   "dispatch_sha256": "c017d0934cc63f2ad107821503ee4c9dd86aa56daf1c21ed01cc4c0fb1d2cd9d",
   "expected_map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/delivery/attempt-1/MAP.md",
-  "execution_status": "running",
+  "execution_status": "completed",
   "required_slots": 1,
   "requested_model": "auto",
   "observed_model": null,
   "usage": null,
   "usage_degraded": "package_usage_degraded:codex_native_unavailable",
-  "finish_receipt": null,
+  "finish_receipt": {
+    "dispatch_id": "6aefa9f4-d605-4dfb-b808-d7eb96cd7050",
+    "status": "ready",
+    "map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/delivery/attempt-1/MAP.md",
+    "map_sha256": "cbca193f8d97ae64390f5962e6a11ddecab7b3b36befab1de60a4ddde95b663b",
+    "reported_at": "2026-10-14T04:38:35Z",
+    "message_id": "msg-08ee4b5cb72a426cb594f4b1b322611a"
+  },
   "created_at": "2026-10-14T04:30:16Z",
   "production_policy": {
     "schema": "appfactory.ai_ultra_lite_production.v1",
@@ -174,5 +181,7 @@
   "launch_intent_at": "2026-10-14T04:30:23Z",
   "spawn_receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/native-spawn/cursor-spawn-receipt-cursor-cli-delivery-6aefa9f4d605.json",
   "spawn_receipt_sha256": "72ee0c3ec992177ad22247d9a12b64e327d1107048a21023266af180dff6889b",
-  "bound_at": "2026-10-14T04:30:58Z"
+  "bound_at": "2026-10-14T04:30:58Z",
+  "runtime_observed_at": "2026-10-14T04:46:56Z",
+  "business_submission": "submitting"
 }
