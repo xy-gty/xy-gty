@@ -15,6 +15,7 @@
 		1FFBFA4DE047E0EBDF23BA87 /* BendCoachDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 097CE0C480219778ADC5256B /* BendCoachDomain */; };
 		1FFF3DF8920CBB5755EED51B /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE09AC4A7EAEFA1C003D77BA /* CameraCapturePicker.swift */; };
 		3742DD00F5A0C33698F97EF3 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAE583271CA143E06E227 /* RootTabView.swift */; };
+		3896E21921899634CC3844EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A398FAD9B005ABF12D1AEC88 /* Assets.xcassets */; };
 		43E1147CCF244B3EC1901E82 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD57DB9182ADAECA002191 /* LocalLegalWebView.swift */; };
 		46F3D3577D0A7628595D3A88 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 4538E889BDA3EEC0381D2EC3 /* support.html */; };
 		55A9DB66096FB44A672FC455 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DC0579F0592FFBE865C5A /* HomeView.swift */; };
@@ -65,6 +66,8 @@
 		8878A32D8BEF8629F9732C55 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
 		97610F61F2E96EC9F652F63F /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
 		9EEF95C579FF0F7CA5BC08AA /* BendMathChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendMathChatView.swift; sourceTree = "<group>"; };
+		A398FAD9B005ABF12D1AEC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA51F6D980EB8DDDE5E19508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AFD3EFEB0460BA67BE4DB402 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B2205B9911598C69E0BF2657 /* BendCoachDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BendCoachDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA382FDF0034960ABAF0D2A3 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
@@ -129,7 +132,9 @@
 		3635861CCEBD5C9886DEB788 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A398FAD9B005ABF12D1AEC88 /* Assets.xcassets */,
 				5989FD66860C12FC9D336928 /* BendCoachApp.swift */,
+				AA51F6D980EB8DDDE5E19508 /* Info.plist */,
 				85A143054E31DE2C9F0C7562 /* AI */,
 				B0950474ED180D4ACC922668 /* Resources */,
 				2A23881238BCF41934E8B9C7 /* Services */,
@@ -288,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3896E21921899634CC3844EB /* Assets.xcassets in Resources */,
 				12FB6EC2DAF50F405B805A8E /* PrivacyInfo.xcprivacy in Resources */,
 				83EE3FEF75C81415FD4F6984 /* privacy.html in Resources */,
 				46F3D3577D0A7628595D3A88 /* support.html in Resources */,
@@ -364,12 +370,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BendCoach AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "BendCoach AI can capture a job-site bend or markup photo for optional recognition review.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "BendCoach AI uses the microphone so you can speak bend-math questions that fill the coach chat before you send.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BendCoach AI imports job-site conduit bend and markup photos you choose so you can review bend-type suggestions before saving marks to a job.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "BendCoach AI uses on-device speech recognition to turn spoken bend-math questions into editable chat text that you review before sending.";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,12 +395,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BendCoach AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "BendCoach AI can capture a job-site bend or markup photo for optional recognition review.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "BendCoach AI uses the microphone so you can speak bend-math questions that fill the coach chat before you send.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BendCoach AI imports job-site conduit bend and markup photos you choose so you can review bend-type suggestions before saving marks to a job.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "BendCoach AI uses on-device speech recognition to turn spoken bend-math questions into editable chat text that you review before sending.";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -22,6 +22,8 @@ targets:
       - path: App
     resources:
       - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
     dependencies:
       - package: AppRuntimeCore
       - package: BendCoachDomain
@@ -35,7 +37,7 @@ targets:
         INFOPLIST_KEY_NSCameraUsageDescription: BendCoach AI can capture a job-site bend or markup photo for optional recognition review.
         INFOPLIST_KEY_NSMicrophoneUsageDescription: BendCoach AI uses the microphone so you can speak bend-math questions that fill the coach chat before you send.
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: BendCoach AI uses on-device speech recognition to turn spoken bend-math questions into editable chat text that you review before sending.
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
