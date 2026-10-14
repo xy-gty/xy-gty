@@ -1,0 +1,62 @@
+{
+  "schema": "appfactory.accept_evidence.v1",
+  "product_commit": "009dea15a1ab2e106efcff66e16a15433ac01ba0",
+  "candidate": "009dea15a1ab-4c27f3a2b607",
+  "simulator_udid": "5E3A8993-F815-4738-8EED-EF032F75704F",
+  "items": [
+    {
+      "shot": "evidence/screenshots/ul01-launch.png",
+      "shot_sha256": "0f21db566225516d20706ef9082c8e7ee93652f926c6e2b0ab5b474c556595a1",
+      "receipt": "evidence/visual-readback/ul01-launch.r2.receipt.json",
+      "receipt_sha256": "151cdff6d2f0cd145677e1d2ce6c0c010152fabe2b9db1669e9d2ed4a6c0a721"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-home-empty.png",
+      "shot_sha256": "0f21db566225516d20706ef9082c8e7ee93652f926c6e2b0ab5b474c556595a1",
+      "receipt": "evidence/visual-readback/runtime-home-empty.r2.receipt.json",
+      "receipt_sha256": "7f7795eaa8d225e4ddcc4ea4ed789e1190e646aa58731f934bbbcfe74bd299f7"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-bend-math-chat.png",
+      "shot_sha256": "d871becfa8f0c68873bacf2ce808e3f6c4795a75ba087b422accf8c8c3c014ea",
+      "receipt": "evidence/visual-readback/runtime-bend-math-chat.receipt.json",
+      "receipt_sha256": "d5cc1f26f848008599fc1a50e062bf2e7803d37724bc93ce1299ffb9c2c8eab2"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-capture-import.png",
+      "shot_sha256": "1d5770f252178c01eaf390d6fe35e95cefb769d2d1947d37ea668b4e4cf6b944",
+      "receipt": "evidence/visual-readback/runtime-capture-import.r2.receipt.json",
+      "receipt_sha256": "7ddde0f102068e0442b1c461ed5964d92ad2ddbb502fa77da524240d54fe4a11"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-bend-review.png",
+      "shot_sha256": "c8cdf854d8350e9a05ecfacc857189b146976cde6b714e69ff33f16bffe55180",
+      "receipt": "evidence/visual-readback/runtime-bend-review.r2.receipt.json",
+      "receipt_sha256": "e24f580a139e91fc2f8d4021d4364f4c2bf82192bc93db42267e4f4754a073b6"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-job-detail-filled.png",
+      "shot_sha256": "b48cd83938c92e9de922e2a75034c10e905aebc70b294de8b3bf47a34eee0910",
+      "receipt": "evidence/visual-readback/runtime-job-detail-filled.receipt.json",
+      "receipt_sha256": "a99fc4a7aedf4df4417c47450c24f48cc33e9cd0e941c64dbb2f86a6190d44ed"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-diagram-overlay.png",
+      "shot_sha256": "a22d26cd33e7ad561cc1b3c036c1ac5d02a6dbd1f72b8138cd527c506d85de0a",
+      "receipt": "evidence/visual-readback/runtime-diagram-overlay.receipt.json",
+      "receipt_sha256": "e6a1c7a2df328ada23c7bd92d44d00b1573a66464f5e6709784919f341ec8fd2"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-tts-coaching.png",
+      "shot_sha256": "13417dfc2d2abd968f9913f01d9cbfd2932d9ee53b73d55eb4c6055ebb3b58ac",
+      "receipt": "evidence/visual-readback/runtime-tts-coaching.receipt.json",
+      "receipt_sha256": "b768408a84672b51aea97c62fb3e49dd0ab729f1867cd64c1abde82f2d53fd94"
+    },
+    {
+      "shot": "evidence/screenshots/runtime-settings-units-privacy.png",
+      "shot_sha256": "6ca80ec738c521045eb2aedf46605e02c47a2b5be0bd137d8b76ce9000d79345",
+      "receipt": "evidence/visual-readback/runtime-settings-units-privacy.receipt.json",
+      "receipt_sha256": "4e1a1dbd1d6cd4c3b2c6b3b728cbe4d5d866a5d05953086bc03511e5f6a4d2f8"
+    }
+  ]
+}

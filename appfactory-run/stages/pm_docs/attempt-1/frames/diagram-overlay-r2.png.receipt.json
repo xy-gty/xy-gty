@@ -1,0 +1,27 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 625298,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r2.png",
+  "output_sha256": "3ecdc321c154965c13b965b4f26d84a1137b92d94b44cf07fdeacd322e30b069",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/diagram-overlay-r2.txt",
+  "prompt_sha256": "adffa5b9c589afc0081f19af7be836251fb600bf0bb3f6b472b8a0060ba73e35",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "3ecdc321c154965c13b965b4f26d84a1137b92d94b44cf07fdeacd322e30b069",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T01:56:00Z",
+  "wake": "cursor_generate_image",
+  "width": 640,
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  }
+}

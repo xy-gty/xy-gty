@@ -1,0 +1,37 @@
+{
+  "event": {
+    "source": "cursor_task_host",
+    "dispatch_id": "314716df-0575-4244-b78d-38d05c5af901",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-314716df-prep",
+    "status": "completed",
+    "final_text": "Dispatch `314716df-0575-4244-b78d-38d05c5af901` complete.\n\n- Launch hash verified (`f5e38d62…`)\n- Preparation cache **hit** (key `56cc6f2b…`); AppRuntimeCore installed via controlled installer\n- Private workspace: BendCoach domain/interfaces/storage + Vendor/AppRuntimeCore (20 members); compile scratch outside inventory\n- `PREPARATION.md` → **Status: ready**\n- `preparation finish --status ready` → ok (private receipt written; controller seals separately)"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "ba4bd18e-e80b-4161-b939-a694b5631e8b",
+    "session_id": "grokbot-packaging-kf-20261013T132652Z-d15977ae",
+    "session_kind": "interactive",
+    "observed_at": 1791899462.327591,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "ba4bd18e-e80b-4161-b939-a694b5631e8b",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_314716df05754244b78d38d05c5af901",
+        "agent_id": "cursor-cli-314716df-prep",
+        "agent_status": "completed"
+      }
+    ]
+  },
+  "observed_at": "2026-10-13T13:51:02Z"
+}

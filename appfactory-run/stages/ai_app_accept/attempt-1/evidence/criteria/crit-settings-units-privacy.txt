@@ -1,0 +1,1 @@
+Pass if Settings shows unit system control and privacy/legal or AI consent controls for BendCoach AI. Fail if unlock paywall is the hero or QuickBend appears.

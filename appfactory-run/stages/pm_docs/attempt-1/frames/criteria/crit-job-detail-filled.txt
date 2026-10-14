@@ -1,0 +1,1 @@
+Pass if a filled job detail shows saved marks and paths to diagram and/or coaching. Fail if empty shell or paywall.

@@ -1,0 +1,3 @@
+module AppRuntimeCore {
+    header "/Users/a2026/work/factory-prod-2/runs/kf-20261013T095745Z-aa3ad9a0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCore.build/include/AppRuntimeCore-Swift.h"
+}

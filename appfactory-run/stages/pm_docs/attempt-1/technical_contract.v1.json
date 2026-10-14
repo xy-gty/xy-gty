@@ -1,0 +1,154 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "BendCoach AI",
+    "development_bundle_id": "com.lingguang.bendcoach",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "conduit_bend_math_chat_plain_english",
+    "field_photo_camera_library_import_and_bend_markup_recognition_review",
+    "diagram_overlay_generation_and_local_persist",
+    "tts_step_by_step_field_coaching",
+    "microphone_and_speech_recognition_into_bend_math_chat",
+    "imperial_metric_unit_system_ux",
+    "local_legal_pages_and_assistive_not_code_disclaimer",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "JobSession",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "BendQuery",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "FieldPhoto",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "BendRecognitionDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "BendMarkup",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "DiagramOverlay",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachingStep",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "UnitPreference",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    },
+    {
+      "name": "SpeechCaptureSession",
+      "persistence": "session_plus_transcript"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "BendReviewBar",
+      "confirm": "Save",
+      "reject": "Not this",
+      "edit": "Edit marks"
+    },
+    {
+      "name": "DiagramPreview",
+      "confirm": "Use",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "bendcoach.consent.v1",
+      "fields": [
+        "chat_text",
+        "unit_system",
+        "field_photo_bytes",
+        "recognized_bend_type",
+        "markup_hints",
+        "coaching_context"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechRecognitionBridge"
+    },
+    {
+      "name": "CoachingTTS"
+    },
+    {
+      "name": "UnitSystemControl"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "HomeTab",
+    "BendMathChat",
+    "CaptureImport",
+    "BendReview",
+    "JobDetail",
+    "DiagramOverlay",
+    "TTSCoaching",
+    "SpeechCapture",
+    "Settings",
+    "Units",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Save",
+    "reject": "Not this",
+    "edit": "Edit marks"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "9db7bad4c4c28dd0b05967750d2967f2a9bf43cca9e9d262d0a4837c07d11ab5"
+    }
+  ],
+  "goal_sha256": "5726df52814fcb893c528f8b23a57e31dcd3024fcbf15fdef18a1728afe65b7b",
+  "frozen_at": "2026-10-13T13:36:49Z"
+}

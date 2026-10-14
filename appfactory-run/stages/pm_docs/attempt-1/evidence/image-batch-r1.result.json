@@ -1,0 +1,338 @@
+{
+  "batch_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/evidence/image-batch-r1.json",
+  "batch_sha256": "2daa207b84a9af4634e58d1181b5d85aa4d47bf0e30a9412ac7b72fa759f6908",
+  "completed": 8,
+  "ok": false,
+  "results": [
+    {
+      "exit_code": 0,
+      "image_id": "home-empty-r1",
+      "job_id": "job-db220eec5862",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r1.png",
+      "output_sha256": "670c40341b3ccef961c23f2711d794c21a90ed55dbda6a0bf424941e595c1efc",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-db220eec5862",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 804304,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r1.png",
+        "output_sha256": "670c40341b3ccef961c23f2711d794c21a90ed55dbda6a0bf424941e595c1efc",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/home-empty-r1.txt",
+        "prompt_sha256": "8f8ac4ec75b5e1799ba5840b8cee37daace3e3dc5324c21f22c19052d11038e2",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1392,
+        "source_sha256": "670c40341b3ccef961c23f2711d794c21a90ed55dbda6a0bf424941e595c1efc",
+        "source_size": "640x1392",
+        "source_width": 640,
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "bend-math-chat-r1",
+      "job_id": "job-a57211b487d6",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for bend-math-chat-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/bend-math-chat-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-a57211b487d6.json",
+        "job_id": "job-a57211b487d6",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/bend-math-chat-r1.txt",
+        "prompt_sha256": "741110357fc73e2d62d268029abde081ef816a5e03d18ce262a0452cc9bb705c",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-a57211b487d6.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "image_id": "capture-import-r1",
+      "job_id": "job-b96287632c27",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/capture-import-r1.png",
+      "output_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/capture-import-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-b96287632c27",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 687522,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/capture-import-r1.png",
+        "output_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/capture-import-r1.txt",
+        "prompt_sha256": "5611e89ecb2c1b32c7627fa5b82d1e172b563b95fa642725130e24ca5fabee12",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/capture-import-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1392,
+        "source_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+        "source_size": "640x1392",
+        "source_width": 640,
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "bend-review-r1",
+      "job_id": "job-0ceb4e99e52b",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for bend-review-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/bend-review-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-0ceb4e99e52b.json",
+        "job_id": "job-0ceb4e99e52b",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/bend-review-r1.txt",
+        "prompt_sha256": "e49d9901f1ceb989b3ee9d0afde716d94f9d476c11223c11fcf06c5afd096ce3",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-0ceb4e99e52b.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "job-detail-filled-r1",
+      "job_id": "job-215421a7eb18",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/job-detail-filled-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/job-detail-filled-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for job-detail-filled-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/job-detail-filled-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-215421a7eb18.json",
+        "job_id": "job-215421a7eb18",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/job-detail-filled-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/job-detail-filled-r1.txt",
+        "prompt_sha256": "443033f387dde437eb0ca324aa2a6fbf560def1261dc4d34aa1eb10b4712d961",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/job-detail-filled-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-215421a7eb18.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "diagram-overlay-r1",
+      "job_id": "job-a307cc61cd6e",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for diagram-overlay-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/diagram-overlay-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-a307cc61cd6e.json",
+        "job_id": "job-a307cc61cd6e",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/diagram-overlay-r1.txt",
+        "prompt_sha256": "3a18954b8a50b4490cf0ab8a44b00a6cb5e6cd13c6d057ead498377f1ce96cb9",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-a307cc61cd6e.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "tts-coaching-r1",
+      "job_id": "job-514d0b190373",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/tts-coaching-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/tts-coaching-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for tts-coaching-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/tts-coaching-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-514d0b190373.json",
+        "job_id": "job-514d0b190373",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/tts-coaching-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/tts-coaching-r1.txt",
+        "prompt_sha256": "603f208cd44095bc508e678f7e7d3c582dd49dad07ca737babe98edb81ee3441",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/tts-coaching-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-514d0b190373.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "settings-units-privacy-r1",
+      "job_id": "job-c5ebb5f0949f",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for settings-units-privacy-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/settings-units-privacy-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-c5ebb5f0949f.json",
+        "job_id": "job-c5ebb5f0949f",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/settings-units-privacy-r1.txt",
+        "prompt_sha256": "8499ae58e135e31f5ca4a114867ee3d9a2ec10b6f063f8e24d3b59886616ef40",
+        "receipt_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-c5ebb5f0949f.json",
+        "timestamp": "2026-10-13T13:37:55Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    }
+  ],
+  "schema": "appfactory.grokbot_image_batch_result.v1",
+  "status": "completed",
+  "submission_scope": "local_wrapper_tasks",
+  "submitted": 8
+}

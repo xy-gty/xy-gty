@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-b13a996556cb",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 501638,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/tts-coaching-r1.png",
+  "output_sha256": "11c11eb14fbcad89f74b7e73cdf6b05bde194f295f7794d02aa23e4c5a6b9014",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/tts-coaching-r1.txt",
+  "prompt_sha256": "603f208cd44095bc508e678f7e7d3c582dd49dad07ca737babe98edb81ee3441",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "11c11eb14fbcad89f74b7e73cdf6b05bde194f295f7794d02aa23e4c5a6b9014",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-13T13:53:46Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

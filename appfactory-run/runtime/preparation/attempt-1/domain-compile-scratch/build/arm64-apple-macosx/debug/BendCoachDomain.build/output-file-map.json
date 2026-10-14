@@ -1,0 +1,82 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/CoachingTTS.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/CoachingTTS.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/CoachingTTS.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/CoachingTTS~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/CoachingTTS.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/CoachingTTS.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/ConsentFacade.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ConsentFacade.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ConsentFacade.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ConsentFacade~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ConsentFacade.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ConsentFacade.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/Entities.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Entities.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Entities.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Entities~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Entities.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Entities.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/Identity.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Identity.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Identity.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Identity~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Identity.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Identity.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/Navigation.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Navigation.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Navigation.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Navigation~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Navigation.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/Navigation.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/OutboundAIBoundary.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/OutboundAIBoundary.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/OutboundAIBoundary.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/OutboundAIBoundary~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/OutboundAIBoundary.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/OutboundAIBoundary.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/PhotoImportFacade.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/PhotoImportFacade.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/PhotoImportFacade.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/PhotoImportFacade~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/PhotoImportFacade.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/PhotoImportFacade.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/ReviewControls.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ReviewControls.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ReviewControls.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ReviewControls~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ReviewControls.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/ReviewControls.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/SpeechRecognitionBridge.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/SpeechRecognitionBridge.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/SpeechRecognitionBridge.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/SpeechRecognitionBridge~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/SpeechRecognitionBridge.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/SpeechRecognitionBridge.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/StorageFacades.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/StorageFacades.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/StorageFacades.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/StorageFacades~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/StorageFacades.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/StorageFacades.dia"
+  },
+  "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/workspace/BendCoachDomain/UnitSystemControl.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/UnitSystemControl.d",
+    "object": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/UnitSystemControl.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/UnitSystemControl~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/UnitSystemControl.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/domain-compile-scratch/build/arm64-apple-macosx/debug/BendCoachDomain.build/UnitSystemControl.dia"
+  }
+}

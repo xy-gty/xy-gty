@@ -1,0 +1,11 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for BendCoach AI (iOS conduit-bending field coach). Deep slate #1A2332 background, surface #243044, ink #F2F4F7, safety amber #E8A317 CTA, diagram blue #5B8DEF. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: diagram-overlay (revision r2 — regenerate; previous r1 wrongly showed SnagCue/punch — FIX) — Diagram overlay preview
+Title "Diagram overlay". Large preview: conduit diagram with blue overlay lines labeling take-up, shrink, mark points; numbers assistive. Buttons "Discard" and amber "Use". Footer assistive disclaimer.
+
+CRITICAL NEGATIVE: This is BendCoach AI only (conduit bending coach for electricians). NEVER show QuickBend, Bret Hardman, DocBrief, SnagCue, punch list, TurboScan, paywall, coins, ATT, or purple gradients. Brand title must read BendCoach AI. Palette: bg #1A2332, surface #243044, ink #F2F4F7, CTA #E8A317, diagram #5B8DEF. English UI. Assistive guidance footer visible where numbers appear.
+
+
+HARD BRAND LOCK (must obey): Top nav / title MUST literally show "BendCoach AI". Palette deep slate #1A2332 / amber CTA #E8A317. Domain = EMT/conduit bend math, field photo bend recognition, diagram overlay marks, TTS coach steps for electricians. FORBIDDEN UI: SnagCue, punch list, snag, assignee, audit, GC, walkthrough punch, Site Inspection, purple theme. If you drift to inspection/punch apps the image is wrong.

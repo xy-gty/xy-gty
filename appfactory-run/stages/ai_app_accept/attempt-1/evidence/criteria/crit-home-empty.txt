@@ -1,0 +1,1 @@
+Pass if the still shows BendCoach AI empty home with Start a bend job (or equivalent) CTA, unit badge or clear coach framing, and no QuickBend/paywall/coins. Fail if wrong brand or paywall.

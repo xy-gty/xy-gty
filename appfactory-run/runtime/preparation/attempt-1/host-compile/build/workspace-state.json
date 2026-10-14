@@ -1,0 +1,27 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "appruntimecore",
+          "kind" : "fileSystem",
+          "location" : "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore",
+          "name" : "AppRuntimeCore"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore"
+        },
+        "subpath" : "appruntimecore"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

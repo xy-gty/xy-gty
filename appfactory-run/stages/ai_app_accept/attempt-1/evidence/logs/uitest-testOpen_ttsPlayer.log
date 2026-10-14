@@ -1,0 +1,168 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project BendCoachAccept.xcodeproj -scheme BendCoachAccept -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae "-only-testing:BendCoachAcceptUITests/RetargetWrongShots/testOpen_ttsPlayer" test
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'BendCoachAcceptUITests' in project 'BendCoachAccept'
+        ➜ Explicit dependency on target 'BendCoachAcceptHost' in project 'BendCoachAccept'
+    Target 'BendCoachAcceptHost' in project 'BendCoachAccept' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness/BendCoachAccept.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+2026-10-14 11:35:06.119524+0800 BendCoachAcceptUITests-Runner[37372:5854339] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-14 11:35:06.561.
+Test Suite 'BendCoachAcceptUITests.xctest' started at 2026-10-14 11:35:06.562.
+Test Suite 'RetargetWrongShots' started at 2026-10-14 11:35:06.562.
+Test Case '-[BendCoachAcceptUITests.RetargetWrongShots testOpen_ttsPlayer]' started.
+    t =     0.00s Start Test at 2026-10-14 11:35:06.562
+    t =     0.02s Set Up
+    t =     0.02s     Open com.lingguang.bendcoach
+    t =     0.02s         Launch com.lingguang.bendcoach
+    t =     0.02s             Terminate com.lingguang.bendcoach:36433
+objc[37372]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108f7c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x1087a4398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.11s             Setting up automation session
+    t =     1.57s             Wait for com.lingguang.bendcoach to idle
+    t =     3.00s     Waiting 2.0s for "Continue" Button to exist
+    t =     4.04s         Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =     4.04s             Checking existence of `"Continue" Button`
+    t =     4.12s             Capturing element debug description
+    t =     5.01s         Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =     5.01s             Checking existence of `"Continue" Button`
+    t =     5.04s             Capturing element debug description
+    t =     5.04s         Checking existence of `"Continue" Button`
+    t =     5.06s     Collecting debug information to assist test failure triage
+    t =     5.06s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =     5.08s     Waiting 1.0s for Any (First Match) to exist
+    t =     6.09s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     6.09s             Checking existence of `Any (First Match)`
+    t =     6.12s             Capturing element debug description
+    t =     6.12s         Checking existence of `Any (First Match)`
+    t =     6.14s     Collecting debug information to assist test failure triage
+    t =     6.14s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =     6.16s     Waiting 2.0s for "Skip" Button to exist
+    t =     7.20s         Checking `Expect predicate `existsNoRetry == 1` for object "Skip" Button`
+    t =     7.20s             Checking existence of `"Skip" Button`
+    t =     7.23s             Capturing element debug description
+    t =     8.16s         Checking `Expect predicate `existsNoRetry == 1` for object "Skip" Button`
+    t =     8.16s             Checking existence of `"Skip" Button`
+    t =     8.20s             Capturing element debug description
+    t =     8.20s         Checking existence of `"Skip" Button`
+    t =     8.21s     Collecting debug information to assist test failure triage
+    t =     8.21s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =     8.24s     Waiting 1.0s for Any (First Match) to exist
+    t =     9.24s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     9.24s             Checking existence of `Any (First Match)`
+    t =     9.26s             Capturing element debug description
+    t =     9.26s         Checking existence of `Any (First Match)`
+    t =     9.27s     Collecting debug information to assist test failure triage
+    t =     9.27s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =    10.30s     Waiting 3.0s for "Job" Button to exist
+    t =    11.33s         Checking `Expect predicate `existsNoRetry == 1` for object "Job" Button`
+    t =    11.34s             Checking existence of `"Job" Button`
+    t =    11.37s     Tap "Job" Button
+    t =    11.37s         Wait for com.lingguang.bendcoach to idle
+    t =    11.37s         Find the "Job" Button
+    t =    11.39s         Check for interrupting elements affecting "checklist" Button
+    t =    11.40s         Synthesize event
+    t =    11.70s         Wait for com.lingguang.bendcoach to idle
+    t =    14.22s     Waiting 2.0s for "Field bend job, Oct 14, 2026 at 11:25" Button to exist
+    t =    15.26s         Checking `Expect predicate `existsNoRetry == 1` for object "Field bend job, Oct 14, 2026 at 11:25" Button`
+    t =    15.26s             Checking existence of `"Field bend job, Oct 14, 2026 at 11:25" Button`
+    t =    15.31s             Capturing element debug description
+    t =    16.23s         Checking `Expect predicate `existsNoRetry == 1` for object "Field bend job, Oct 14, 2026 at 11:25" Button`
+    t =    16.23s             Checking existence of `"Field bend job, Oct 14, 2026 at 11:25" Button`
+    t =    16.27s             Capturing element debug description
+    t =    16.27s         Checking existence of `"Field bend job, Oct 14, 2026 at 11:25" Button`
+    t =    16.29s     Collecting debug information to assist test failure triage
+    t =    16.29s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =    16.32s     Waiting 1.0s for Any (First Match) to exist
+    t =    17.33s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    17.33s             Checking existence of `Any (First Match)`
+    t =    17.37s             Capturing element debug description
+    t =    17.37s         Checking existence of `Any (First Match)`
+    t =    17.39s     Collecting debug information to assist test failure triage
+    t =    17.39s         Requesting snapshot of accessibility hierarchy for app with pid 37405
+    t =    17.43s     Waiting 4.0s for Any (First Match) to exist
+    t =    18.46s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    18.46s             Checking existence of `Any (First Match)`
+    t =    18.50s     Get number of matches for: Descendants matching type Button
+    t =    18.52s     Find the Button (Element at index 0)
+    t =    18.54s     Find the Button (Element at index 1)
+    t =    18.55s     Find the Button (Element at index 2)
+    t =    18.57s     Find the Button (Element at index 3)
+    t =    18.58s     Find the Button (Element at index 4)
+    t =    18.60s     Find the Button (Element at index 5)
+    t =    18.61s     Find the Button (Element at index 6)
+    t =    18.63s     Find the Button (Element at index 7)
+    t =    18.64s     Find the Button (Element at index 8)
+    t =    18.65s     Find the Button (Element at index 9)
+    t =    18.67s     Find the Button (Element at index 10)
+DUMP[hub] Home | Job | Settings | New job | Ask bend math | Capture / import photo | Review bend marks | Generate diagram | Diagram preview | Start coaching | TTS coaching player
+    t =    18.68s Waiting 5.0s for "TTS coaching player" Button to exist
+    t =    19.72s     Checking `Expect predicate `existsNoRetry == 1` for object "TTS coaching player" Button`
+    t =    19.72s         Checking existence of `"TTS coaching player" Button`
+    t =    19.76s Find the "TTS coaching player" Button
+    t =    19.79s Tap "TTS coaching player" Button
+    t =    19.79s     Wait for com.lingguang.bendcoach to idle
+    t =    19.79s     Find the "TTS coaching player" Button
+    t =    19.81s     Check for interrupting elements affecting "TTS coaching player" Button
+    t =    19.83s     Synthesize event
+    t =    20.12s     Wait for com.lingguang.bendcoach to idle
+    t =    24.15s Get number of matches for: Descendants matching type Button
+    t =    24.19s Find the Button (Element at index 0)
+    t =    24.21s Find the Button (Element at index 1)
+    t =    24.22s Find the Button (Element at index 2)
+    t =    24.24s Find the Button (Element at index 3)
+    t =    24.25s Find the Button (Element at index 4)
+    t =    24.26s Find the Button (Element at index 5)
+    t =    24.27s Find the Button (Element at index 6)
+DUMP[tts] Home | Job | Settings | Job | Pause | Replay | Next
+    t =    24.29s Waiting 8.0s for Any (First Match) to exist
+    t =    25.32s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    25.32s         Checking existence of `Any (First Match)`
+RETARGET_GATE runtime-tts-coaching require=Pause ok=true
+RETARGET_SHOT runtime-tts-coaching bytes=214132 gate=true
+    t =    26.47s Waiting 1.0s for Any (First Match) to exist
+    t =    27.48s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    27.48s         Checking existence of `Any (First Match)`
+    t =    27.51s     Checking existence of `Any (First Match)`
+    t =    27.53s Waiting 1.0s for Any (First Match) to exist
+    t =    28.53s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    28.53s         Checking existence of `Any (First Match)`
+    t =    28.57s     Checking existence of `Any (First Match)`
+    t =    28.58s Tear Down
+Test Case '-[BendCoachAcceptUITests.RetargetWrongShots testOpen_ttsPlayer]' passed (28.827 seconds).
+Test Suite 'RetargetWrongShots' passed at 2026-10-14 11:35:35.390.
+	 Executed 1 test, with 0 failures (0 unexpected) in 28.827 (28.828) seconds
+Test Suite 'BendCoachAcceptUITests.xctest' passed at 2026-10-14 11:35:35.391.
+	 Executed 1 test, with 0 failures (0 unexpected) in 28.827 (28.829) seconds
+Test Suite 'Selected tests' passed at 2026-10-14 11:35:35.391.
+	 Executed 1 test, with 0 failures (0 unexpected) in 28.827 (28.830) seconds
+2026-10-14 11:35:35.700 xcodebuild[37323:5854060] [MT] IDETestOperationsObserverDebug: 30.450 elapsed -- Testing started completed.
+2026-10-14 11:35:35.700 xcodebuild[37323:5854060] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-14 11:35:35.700 xcodebuild[37323:5854060] [MT] IDETestOperationsObserverDebug: 30.450 sec, +30.450 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Logs/Test/Test-BendCoachAccept-2026.10.14_11-35-04-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

@@ -1,0 +1,70 @@
+{
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "931836a9-a605-4fc8-9520-61b25a8bce75",
+  "product_repo": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/product",
+  "source_commit": "009dea15a1ab2e106efcff66e16a15433ac01ba0",
+  "branch": "main",
+  "bundle_id": "com.lingguang.bendcoach",
+  "app_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/product/DerivedData/Build/Products/Debug-iphonesimulator/BendCoach.app",
+  "app_content_sha256": "4c27f3a2b60750ac9f05761897925fbdd368becf744ad5d9f31c4c5706c59be1",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "bend_math_chat_demo_and_deepseek_path",
+    "camera_library_import_recognition_review",
+    "diagram_overlay_use_discard",
+    "tts_coaching_steps",
+    "mic_speech_into_chat",
+    "units_consent_local_legal",
+    "appruntimecore_bound_domain_persistence"
+  ],
+  "unverified_items": [
+    "independent_eight_domain_acceptance_pending",
+    "runtime_visual_frame_judgment_pending",
+    "live_ai_with_configured_key_pending",
+    "device_camera_speech_quality_\u771f\u673a\u5f85\u6d4b"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "BendCoach.xcodeproj",
+      "-scheme",
+      "BendCoach",
+      "-destination",
+      "generic/platform=iOS Simulator",
+      "-derivedDataPath",
+      "DerivedData",
+      "-configuration",
+      "Debug",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "e481d8b84443f203988bd513dc0fa23e66a0820b4abd73fe442f903025b0289c"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "BendCoach.xcodeproj",
+        "-scheme",
+        "BendCoach",
+        "-destination",
+        "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F",
+        "-derivedDataPath",
+        "DerivedData",
+        "test",
+        "-only-testing:BendCoachDomainTests"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "2fda253c28864ea3af4cabeedacd5448d8ca907ac87d9d8144609bbe4b6653ce"
+    }
+  ]
+}

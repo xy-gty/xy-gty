@@ -1,0 +1,18 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "弯管数学聊天 → 照片导入/识别 → 人审标记 → 示意图叠加 → TTS 逐步辅导"
+  ],
+  "differentiation": {},
+  "diversity_key": "bendcoach ai 在工地或厢式车旁需要快速核对 90 offset saddle 等弯管标记与步骤的电气安装工与学徒 要的是 敢下手弯 的可审阅辅导 不是又一个品牌计算器壳 打开教练首页 用文字或语音问弯管数学 当前单位制清晰可见 面向电工的导管弯曲现场教练 用英文聊天算弯管量 导入或拍摄工地照片识别弯型与标记 生成示意图叠加 再用 tts 逐步口述现场辅导 数值一律标注为辅助建议",
+  "feature_blocks": [],
+  "product_fingerprint": "158c7cf51016f34cda2110ae41a0e516b8e6403840aa7a046a9a2712502b712c",
+  "product_name": "BendCoach AI",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "在工地或厢式车旁需要快速核对 90° / offset / saddle 等弯管标记与步骤的电气安装工与学徒；要的是「敢下手弯」的可审阅辅导，不是又一个品牌计算器壳。",
+  "user_problem": "打开教练首页，用文字或语音问弯管数学（当前单位制清晰可见）。",
+  "value_proposition": "面向电工的导管弯曲现场教练：用英文聊天算弯管量，导入或拍摄工地照片识别弯型与标记，生成示意图叠加，再用 TTS 逐步口述现场辅导——数值一律标注为辅助建议。"
+}

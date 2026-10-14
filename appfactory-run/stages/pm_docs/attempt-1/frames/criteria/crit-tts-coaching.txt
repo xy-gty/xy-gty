@@ -1,0 +1,1 @@
+Pass if step coaching UI with play/pause or next and spoken-coaching framing. Fail if unrelated music player only.

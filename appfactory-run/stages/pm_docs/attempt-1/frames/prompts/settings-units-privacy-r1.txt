@@ -1,0 +1,8 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for BendCoach AI (iOS conduit-bending field coach). Deep slate #1A2332 background, surface #243044, ink #F2F4F7, safety amber #E8A317 CTA, diagram blue #5B8DEF. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: settings-units-privacy — Settings units and privacy
+Title "Settings". Rows: Units (Imperial selected / Metric), How units work, Privacy, Terms, Support, AI provider DeepSeek, "Revoke AI consent". App name BendCoach AI in header. No StoreKit or unlock paywall rows.
+
+CRITICAL NEGATIVE: This is BendCoach AI only (conduit bending coach for electricians). NEVER show QuickBend, Bret Hardman, DocBrief, SnagCue, punch list, TurboScan, paywall, coins, ATT, or purple gradients. Brand title must read BendCoach AI. Palette: bg #1A2332, surface #243044, ink #F2F4F7, CTA #E8A317, diagram #5B8DEF. English UI. Assistive guidance footer visible where numbers appear.

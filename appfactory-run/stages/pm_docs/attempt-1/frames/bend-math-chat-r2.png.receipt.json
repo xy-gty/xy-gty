@@ -1,0 +1,27 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 427310,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r2.png",
+  "output_sha256": "6b72c7ac7ed03f1344fe5179cb00685362f1181b1f76adcc4e6b2dbe12ab8d82",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/bend-math-chat-r2.txt",
+  "prompt_sha256": "19b2400fd1c284267e383268998c57b52c00a199fd4f031495fdf469beb3504d",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "6b72c7ac7ed03f1344fe5179cb00685362f1181b1f76adcc4e6b2dbe12ab8d82",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T01:56:00Z",
+  "wake": "cursor_generate_image",
+  "width": 640,
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  }
+}

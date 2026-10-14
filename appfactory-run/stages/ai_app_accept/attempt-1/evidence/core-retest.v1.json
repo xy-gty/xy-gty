@@ -1,0 +1,33 @@
+{
+  "schema": "appfactory.core_retest.v1",
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "source_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/build/product.md",
+  "source_sha256": "2a1f896c5836178977b1adf3ded44e2c6f3d7cfa86a98f9c74f2cf779256b275",
+  "items": [
+    {
+      "id": "visual-runtime-job-detail-filled",
+      "title": "runtime-verify job-detail-filled: Pass if a filled job detail shows saved marks and paths to diagram and/or coaching. Fail if empty shell or paywall.",
+      "source": "visual_runtime_required",
+      "frame_id": "job-detail-filled",
+      "criterion": "Pass if a filled job detail shows saved marks and paths to diagram and/or coaching. Fail if empty shell or paywall.",
+      "reason_class": "runtime_verification",
+      "requires_device": false,
+      "status": "pending",
+      "required": true
+    },
+    {
+      "id": "visual-runtime-diagram-overlay",
+      "title": "runtime-verify diagram-overlay: Pass if diagram overlay preview with Use/Discard (or equivalent) and assistive numbers. Fail if no overlay concept.",
+      "source": "visual_runtime_required",
+      "frame_id": "diagram-overlay",
+      "criterion": "Pass if diagram overlay preview with Use/Discard (or equivalent) and assistive numbers. Fail if no overlay concept.",
+      "reason_class": "runtime_verification",
+      "requires_device": false,
+      "status": "pending",
+      "required": true
+    }
+  ],
+  "known_issues": [],
+  "blocks_delivery": false,
+  "generated_at": "2026-10-14T04:01:40Z"
+}

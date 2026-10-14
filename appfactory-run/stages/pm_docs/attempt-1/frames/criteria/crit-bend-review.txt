@@ -1,0 +1,1 @@
+Pass if review UI shows bend draft marks with Save and reject/edit controls. Fail if no human review bar or wrong product brand.

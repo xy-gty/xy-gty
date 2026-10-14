@@ -1,0 +1,203 @@
+{
+  "schema": "appfactory.codex-task.v1",
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "dispatch_id": "08430494-8c4c-4f08-a087-c94aa743d86f",
+  "generation": 1,
+  "runtime": "cursor_task",
+  "controller_id": "ba4bd18e-e80b-4161-b939-a694b5631e8b",
+  "ownership_epoch": 1,
+  "execution_seq": 1,
+  "agent_id": "cursor-cli-08430494-accept",
+  "agent_name": "/root/pkg_084304948c4c4f08a087c94aa743d86f",
+  "thread_id": null,
+  "turn_id": null,
+  "expected_state_version": 6,
+  "repo_root": "/Users/a2026/work/factory-prod-2",
+  "role_ref": "/Users/a2026/work/factory-prod-2/agents/AIAppAcceptanceAgent/prompt.core.md",
+  "role_sha256": "f2ff0d8889207c468ca40eaebb02fdef46f0a380f57ce953bb368e59036516d7",
+  "dispatch_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/codex_dispatch.md",
+  "dispatch_sha256": "8f4fd9a5449b3281802ef8a5c237c65be0bb59f91f14aaf124cce968923a7630",
+  "expected_map_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/MAP.md",
+  "execution_status": "completed",
+  "required_slots": 1,
+  "requested_model": "auto",
+  "observed_model": null,
+  "usage": null,
+  "usage_degraded": "package_usage_degraded:codex_native_unavailable",
+  "finish_receipt": {
+    "dispatch_id": "08430494-8c4c-4f08-a087-c94aa743d86f",
+    "status": "blocked",
+    "map_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/MAP.md",
+    "map_sha256": "20755cab5504c164d225863881f04fa4f9eb2bcd395333b08f8db74e8ae41ba3",
+    "reported_at": "2026-10-14T03:55:25Z",
+    "message_id": "msg-1a543b9137fa4c328e91b33a66cbb5ee"
+  },
+  "created_at": "2026-10-14T02:50:43Z",
+  "production_policy": {
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "runtime": "cursor",
+    "model": "auto",
+    "stage_efforts": {
+      "pm_docs": "auto",
+      "ai_app_build": "auto",
+      "ai_app_accept": "auto",
+      "delivery": "auto"
+    },
+    "dispatch_effort": "auto",
+    "vision_effort": "auto",
+    "acceptance_runtime": "cursor_cloud",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto"
+  },
+  "ultra_lite_execution": {
+    "schema": "appfactory.ai_ultra_lite_execution.v1",
+    "revision": "p1",
+    "timing_schema": "appfactory.ultra_lite_timing.v1",
+    "child_slots": 0,
+    "candidate_publish": "local_simulator_app",
+    "foundation_version": "1.0.0",
+    "design_readback_reuse": "exact_key",
+    "private_engineering_preparation": true
+  },
+  "ultra_lite_execution_sha256": "67c372b6e753b33bf4bd02651bd1dbababe5f66fd9f25fef73b9390a9be5c761",
+  "pm_visual_input": {
+    "visual_manifest_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+    "visual_manifest_sha256": "46c33c0955e1c3fe98d4473026decc2e316148b4293d533c79853afa5ab8c950",
+    "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1"
+  },
+  "product_dir": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/product",
+  "agent_type": "ai-app-accept",
+  "role_binding_mode": "dispatch_prompt",
+  "requested_reasoning_effort": "auto",
+  "source_inputs": [
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ai-app-accept/SKILL.md",
+      "sha256": "c7598bb0575d8d7458cd6977ec880d7b7ac441b67451b8f230bd1632fb383276"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ai-app-ultra-lite/SKILL.md",
+      "sha256": "29b7b15926dd9eda8d81b7e383cbb10f3df947c1e945d566a221be5510a99d8a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ios-compliance-acceptance/SKILL.md",
+      "sha256": "b8548fccb5a17435b18982dad711edcf763b7ef165f6d885b67641f1579e12c2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ios_runtime_acceptance/SKILL.md",
+      "sha256": "da2c52298ca281ffb10f47ad150fe2ea80a9598772c6c7202e3df90d00640dee"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/screenshot-vision/SKILL.md",
+      "sha256": "b903e2fc2d069374d5b10714aec5e8dc5553e1afaf9c3b33baaa2dc161412abd"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/factory/ultra_lite_timing.py",
+      "sha256": "436618d05b65cf3e4a44881f47dcf249543b7433d7d864949339101701b4114a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/factory/ultra_lite_foundation.py",
+      "sha256": "d7b44b9d643e417e0eaa9588b8303ed0f6f61291d26ff25dd73d74b0c0da3da2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/factory/ultra_lite_visual_readback.py",
+      "sha256": "8f1f39f0a185e6cf223d5a4365456ac94cfe9ffe7d46b8e2289f19da95a3762e"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/factory/ultra_lite_technical.py",
+      "sha256": "0ef72dc8e7663a36d17ed4f4adbf37adfae421c71bce323011195cde45f6c9dd"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/codex_package/preparation.py",
+      "sha256": "b0284fd1098562974b82bf6e0f8c1784eefa69c710e53519181a663e958241fa"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ai-app-ultra-lite/references/p1-execution.md",
+      "sha256": "8eafbe8424fd39b7057c79765b1828ca7b96fce60fe9c043a97a198e593ff1e6"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.v1.json",
+      "sha256": "b43b4db81ea320561037660a574d8d0b620ca87f7d34a52fcece3c1fc6678d19"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+      "sha256": "b1e53306e5e93ac29990f3e982b82feb846973959c1b71cb8149038ca9d74aa4"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical/contract.md",
+      "sha256": "9db7bad4c4c28dd0b05967750d2967f2a9bf43cca9e9d262d0a4837c07d11ab5"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-2/skills/ai-app-ultra-lite/references/cursor-execution.md",
+      "sha256": "6e9c1e46d9f94e08712ad285de54289db9bd9d577273083d9bd9cbdebfe7c529"
+    }
+  ],
+  "technical_binding": {
+    "schema": "appfactory.ultra_lite_technical.v1",
+    "run_id": "kf-20261013T132652Z-d15977ae",
+    "producer_pm_attempt": 1,
+    "technical_contract_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.v1.json",
+    "technical_contract_sha256": "b43b4db81ea320561037660a574d8d0b620ca87f7d34a52fcece3c1fc6678d19",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "sha256": "b43b4db81ea320561037660a574d8d0b620ca87f7d34a52fcece3c1fc6678d19"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+        "sha256": "b1e53306e5e93ac29990f3e982b82feb846973959c1b71cb8149038ca9d74aa4"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical/contract.md",
+        "sha256": "9db7bad4c4c28dd0b05967750d2967f2a9bf43cca9e9d262d0a4837c07d11ab5"
+      }
+    ]
+  },
+  "launch_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/codex.launch.md",
+  "launch_sha256": "6da6fed55f2beb5b9a838fb34bda501b304e5c82ef7aee95536f1b803b53e001",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_084304948c4c4f08a087c94aa743d86f",
+    "prompt": "Dispatch 08430494-8c4c-4f08-a087-c94aa743d86f. Read /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/codex.launch.md SHA-256 6da6fed55f2beb5b9a838fb34bda501b304e5c82ef7aee95536f1b803b53e001. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "spawn_kwargs_sha256": "7c4c71e0bfe2adf36b05f60c3140a26b58b59f2bf7b766420dbb68043eb40872",
+  "launch_intent_at": "2026-10-14T02:50:59Z",
+  "spawn_receipt_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/native-spawn/cursor-spawn-receipt.json",
+  "spawn_receipt_sha256": "6554365ce80407f7799adb2cde3afabae0ae948a7838659fdd5f498eb5d26522",
+  "bound_at": "2026-10-14T02:51:07Z",
+  "runtime_observed_at": "2026-10-14T04:11:43Z"
+}

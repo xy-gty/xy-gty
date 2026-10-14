@@ -1,0 +1,277 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project BendCoachAccept.xcodeproj -scheme BendCoachAccept -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae "-only-testing:BendCoachAcceptUITests/RetargetWrongShots/testReviewWithSave" test
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'BendCoachAcceptUITests' in project 'BendCoachAccept'
+        ➜ Explicit dependency on target 'BendCoachAcceptHost' in project 'BendCoachAccept'
+    Target 'BendCoachAcceptHost' in project 'BendCoachAccept' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness/BendCoachAccept.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+SwiftDriver BendCoachAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BendCoachAcceptUITests -Onone @/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ RetargetWrongShots.swift /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness/BendCoachAcceptUITests/RetargetWrongShots.swift (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness/BendCoachAcceptUITests/RetargetWrongShots.swift (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BendCoachAcceptUITests (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+
+EmitSwiftModule normal arm64 (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling RetargetWrongShots.swift (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+
+SwiftDriver\ Compilation BendCoachAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BendCoachAcceptUITests -Onone @/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for BendCoachAcceptUITests (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+
+SwiftDriver\ Compilation\ Requirements BendCoachAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BendCoachAcceptUITests -Onone @/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Ld /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/BendCoachAcceptUITests normal (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftmodule @/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/BendCoachAcceptUITests
+
+Copy /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftdoc (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftdoc /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftsourceinfo (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.swiftsourceinfo /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.abi.json (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.abi.json /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+ExtractAppIntentsMetadata (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name BendCoachAcceptUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier accept.harness.bendcoach.uitests --output /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/BendCoachAcceptUITests --dependency-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests_dependency_info.dat --stringsdata-file /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.SwiftFileList --metadata-file-list /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/BendCoachAcceptUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/Objects-normal/arm64/BendCoachAcceptUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-14 11:37:25.645 appintentsmetadataprocessor[38926:5860379] Starting appintentsmetadataprocessor export
+2026-10-14 11:37:25.650 appintentsmetadataprocessor[38926:5860379] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/BendCoachAcceptUITests --scan-folder /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/Frameworks --scan-folder /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/PlugIns --scan-folder /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/SystemExtensions --scan-folder /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Intermediates.noindex/BendCoachAccept.build/Debug-iphonesimulator/BendCoachAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app/PlugIns/BendCoachAcceptUITests.xctest
+
+CodeSign /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app (in target 'BendCoachAcceptUITests' from project 'BendCoachAccept')
+    cd /Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_accept/attempt-1/uitest-harness
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app
+/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Build/Products/Debug-iphonesimulator/BendCoachAcceptUITests-Runner.app: replacing existing signature
+
+2026-10-14 11:37:26.824200+0800 BendCoachAcceptUITests-Runner[38929:5860564] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-14 11:37:27.316.
+Test Suite 'BendCoachAcceptUITests.xctest' started at 2026-10-14 11:37:27.317.
+Test Suite 'RetargetWrongShots' started at 2026-10-14 11:37:27.317.
+Test Case '-[BendCoachAcceptUITests.RetargetWrongShots testReviewWithSave]' started.
+    t =     0.00s Start Test at 2026-10-14 11:37:27.317
+    t =     0.02s Set Up
+    t =     0.02s     Open com.lingguang.bendcoach
+    t =     0.02s         Launch com.lingguang.bendcoach
+    t =     0.02s             Terminate com.lingguang.bendcoach:37724
+objc[38929]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1087bc310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x1057b4398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.12s             Setting up automation session
+    t =     1.56s             Wait for com.lingguang.bendcoach to idle
+    t =     3.11s     Waiting 2.0s for "Continue" Button to exist
+    t =     4.15s         Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =     4.15s             Checking existence of `"Continue" Button`
+    t =     4.24s             Capturing element debug description
+    t =     5.11s         Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =     5.11s             Checking existence of `"Continue" Button`
+    t =     5.12s             Capturing element debug description
+    t =     5.13s         Checking existence of `"Continue" Button`
+    t =     5.14s     Collecting debug information to assist test failure triage
+    t =     5.14s         Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =     5.16s     Waiting 1.0s for Any (First Match) to exist
+    t =     6.16s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     6.16s             Checking existence of `Any (First Match)`
+    t =     6.19s             Capturing element debug description
+    t =     6.20s         Checking existence of `Any (First Match)`
+    t =     6.22s     Collecting debug information to assist test failure triage
+    t =     6.22s         Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =     6.24s     Waiting 2.0s for "Skip" Button to exist
+    t =     7.28s         Checking `Expect predicate `existsNoRetry == 1` for object "Skip" Button`
+    t =     7.28s             Checking existence of `"Skip" Button`
+    t =     7.31s             Capturing element debug description
+    t =     8.24s         Checking `Expect predicate `existsNoRetry == 1` for object "Skip" Button`
+    t =     8.24s             Checking existence of `"Skip" Button`
+    t =     8.27s             Capturing element debug description
+    t =     8.28s         Checking existence of `"Skip" Button`
+    t =     8.29s     Collecting debug information to assist test failure triage
+    t =     8.29s         Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =     8.32s     Waiting 1.0s for Any (First Match) to exist
+    t =     9.32s         Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =     9.33s             Checking existence of `Any (First Match)`
+    t =     9.36s             Capturing element debug description
+    t =     9.36s         Checking existence of `Any (First Match)`
+    t =     9.38s     Collecting debug information to assist test failure triage
+    t =     9.38s         Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =    10.41s     Waiting 3.0s for "Job" Button to exist
+    t =    11.44s         Checking `Expect predicate `existsNoRetry == 1` for object "Job" Button`
+    t =    11.45s             Checking existence of `"Job" Button`
+    t =    11.48s     Tap "Job" Button
+    t =    11.48s         Wait for com.lingguang.bendcoach to idle
+    t =    11.48s         Find the "Job" Button
+    t =    11.50s         Check for interrupting elements affecting "checklist" Button
+    t =    11.52s         Synthesize event
+    t =    11.80s         Wait for com.lingguang.bendcoach to idle
+    t =    14.33s Waiting 6.0s for "Capture / import photo" Button to exist
+    t =    15.36s     Checking `Expect predicate `existsNoRetry == 1` for object "Capture / import photo" Button`
+    t =    15.36s         Checking existence of `"Capture / import photo" Button`
+    t =    15.39s Find the "Capture / import photo" Button
+    t =    15.41s Tap "Capture / import photo" Button
+    t =    15.41s     Wait for com.lingguang.bendcoach to idle
+    t =    15.41s     Find the "Capture / import photo" Button
+    t =    15.43s     Check for interrupting elements affecting "Capture / import photo" Button
+    t =    15.45s     Synthesize event
+    t =    15.74s     Wait for com.lingguang.bendcoach to idle
+    t =    18.74s Waiting 4.0s for "Simulator field capture" Button to exist
+    t =    19.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Simulator field capture" Button`
+    t =    19.79s         Checking existence of `"Simulator field capture" Button`
+    t =    19.82s         Capturing element debug description
+    t =    20.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Simulator field capture" Button`
+    t =    20.75s         Checking existence of `"Simulator field capture" Button`
+    t =    20.78s         Capturing element debug description
+    t =    21.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Simulator field capture" Button`
+    t =    21.82s         Checking existence of `"Simulator field capture" Button`
+    t =    21.85s         Capturing element debug description
+    t =    22.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Simulator field capture" Button`
+    t =    22.75s         Checking existence of `"Simulator field capture" Button`
+    t =    22.78s         Capturing element debug description
+    t =    22.78s     Checking existence of `"Simulator field capture" Button`
+    t =    22.80s Collecting debug information to assist test failure triage
+    t =    22.80s     Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =    22.83s Waiting 1.0s for Any (First Match) to exist
+    t =    23.83s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    23.83s         Checking existence of `Any (First Match)`
+    t =    23.87s         Capturing element debug description
+    t =    23.87s     Checking existence of `Any (First Match)`
+    t =    23.89s Collecting debug information to assist test failure triage
+    t =    23.89s     Requesting snapshot of accessibility hierarchy for app with pid 39011
+    t =    23.91s Waiting 4.0s for "Capture photo" Button to exist
+    t =    24.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Capture photo" Button`
+    t =    24.95s         Checking existence of `"Capture photo" Button`
+    t =    24.98s Find the "Capture photo" Button
+    t =    25.01s Tap "capture_photo" Button
+    t =    25.01s     Wait for com.lingguang.bendcoach to idle
+    t =    25.01s     Find the "capture_photo" Button
+    t =    25.02s     Check for interrupting elements affecting "capture_photo" Button
+    t =    25.04s     Synthesize event
+    t =    25.33s     Wait for com.lingguang.bendcoach to idle
+    t =    25.33s Waiting 1.0s for "Allow While Using App" Button to exist
+    t =    26.33s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow While Using App" Button`
+    t =    26.33s         Checking existence of `"Allow While Using App" Button`
+    t =    26.37s         Capturing element debug description
+    t =    26.37s     Checking existence of `"Allow While Using App" Button`
+    t =    26.39s Collecting debug information to assist test failure triage
+    t =    26.39s     Requesting snapshot of accessibility hierarchy for app with pid 8159
+    t =    26.42s Waiting 1.0s for "Allow" Button to exist
+    t =    27.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =    27.43s         Checking existence of `"Allow" Button`
+    t =    27.46s         Capturing element debug description
+    t =    27.47s     Checking existence of `"Allow" Button`
+    t =    27.48s Collecting debug information to assist test failure triage
+    t =    27.48s     Requesting snapshot of accessibility hierarchy for app with pid 8159
+    t =    27.51s Waiting 1.0s for "OK" Button to exist
+    t =    28.52s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =    28.52s         Checking existence of `"OK" Button`
+    t =    28.55s         Capturing element debug description
+    t =    28.55s     Checking existence of `"OK" Button`
+    t =    28.57s Collecting debug information to assist test failure triage
+    t =    28.57s     Requesting snapshot of accessibility hierarchy for app with pid 8159
+    t =    30.61s Waiting 4.0s for "Review bend draft" Button to exist
+    t =    31.64s     Checking `Expect predicate `existsNoRetry == 1` for object "Review bend draft" Button`
+    t =    31.64s         Checking existence of `"Review bend draft" Button`
+    t =    31.67s Find the "Review bend draft" Button
+    t =    31.70s Tap "Review bend draft" Button
+    t =    31.70s     Wait for com.lingguang.bendcoach to idle
+    t =    31.70s     Find the "Review bend draft" Button
+    t =    31.72s     Check for interrupting elements affecting "Review bend draft" Button
+    t =    31.73s     Synthesize event
+    t =    32.02s     Wait for com.lingguang.bendcoach to idle
+    t =    33.81s Get number of matches for: Descendants matching type Button
+    t =    33.84s Find the Button (Element at index 0)
+    t =    33.86s Find the Button (Element at index 1)
+    t =    33.87s Find the Button (Element at index 2)
+    t =    33.88s Find the Button (Element at index 3)
+    t =    33.89s Find the Button (Element at index 4)
+    t =    33.90s Find the Button (Element at index 5)
+    t =    33.91s Find the Button (Element at index 6)
+DUMP[review] Home | Job | Settings | Capture | Not this | Edit marks | Save
+    t =    33.92s Waiting 8.0s for Any (First Match) to exist
+    t =    34.96s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    34.96s         Checking existence of `Any (First Match)`
+RETARGET_GATE runtime-bend-review require=Save ok=true
+RETARGET_SHOT runtime-bend-review bytes=168469 gate=true
+    t =    36.12s Waiting 2.0s for Any (First Match) to exist
+    t =    37.15s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    37.15s         Checking existence of `Any (First Match)`
+    t =    37.18s Waiting 3.0s for "Save" Button to exist
+    t =    38.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Save" Button`
+    t =    38.21s         Checking existence of `"Save" Button`
+    t =    38.24s Find the "Save" Button
+    t =    38.26s Tap "save_marks" Button
+    t =    38.26s     Wait for com.lingguang.bendcoach to idle
+    t =    38.26s     Find the "save_marks" Button
+    t =    38.27s     Check for interrupting elements affecting "save_marks" Button
+    t =    38.29s     Synthesize event
+    t =    38.58s     Wait for com.lingguang.bendcoach to idle
+    t =    39.58s Tear Down
+Test Case '-[BendCoachAcceptUITests.RetargetWrongShots testReviewWithSave]' passed (39.819 seconds).
+Test Suite 'RetargetWrongShots' passed at 2026-10-14 11:38:07.137.
+	 Executed 1 test, with 0 failures (0 unexpected) in 39.819 (39.820) seconds
+Test Suite 'BendCoachAcceptUITests.xctest' passed at 2026-10-14 11:38:07.137.
+	 Executed 1 test, with 0 failures (0 unexpected) in 39.819 (39.820) seconds
+Test Suite 'Selected tests' passed at 2026-10-14 11:38:07.137.
+	 Executed 1 test, with 0 failures (0 unexpected) in 39.819 (39.821) seconds
+2026-10-14 11:38:07.430 xcodebuild[38914:5860176] [MT] IDETestOperationsObserverDebug: 41.648 elapsed -- Testing started completed.
+2026-10-14 11:38:07.430 xcodebuild[38914:5860176] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-14 11:38:07.430 xcodebuild[38914:5860176] [MT] IDETestOperationsObserverDebug: 41.648 sec, +41.648 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/appfactory-accept-uitest-kf-20261013T132652Z-d15977ae/Logs/Test/Test-BendCoachAccept-2026.10.14_11-37-22-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

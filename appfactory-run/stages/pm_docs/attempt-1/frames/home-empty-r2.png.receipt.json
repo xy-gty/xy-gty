@@ -1,0 +1,27 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 366592,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+  "output_sha256": "1f9c3386dc622898834961141cd239b0d3f9ec0c49551b4566ed73c2aaa63885",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/home-empty-r2.txt",
+  "prompt_sha256": "1f6705df33cc24f8226e6922377dba61a8098cf57d4b488f9249fc75dfb84534",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "1f9c3386dc622898834961141cd239b0d3f9ec0c49551b4566ed73c2aaa63885",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T01:56:00Z",
+  "wake": "cursor_generate_image",
+  "width": 640,
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  }
+}

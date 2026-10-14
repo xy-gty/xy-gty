@@ -1,0 +1,27 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 490469,
+  "output_path": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r2.png",
+  "output_sha256": "f291d5646214a3f111fd56d611f10f20e28c1248004c90552084edf615cbf277",
+  "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/settings-units-privacy-r2.txt",
+  "prompt_sha256": "19d74f0a6408abf53da2fdb681a4a794de64770d85ef2893f3472fa914652464",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "f291d5646214a3f111fd56d611f10f20e28c1248004c90552084edf615cbf277",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T01:56:00Z",
+  "wake": "cursor_generate_image",
+  "width": 640,
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  }
+}

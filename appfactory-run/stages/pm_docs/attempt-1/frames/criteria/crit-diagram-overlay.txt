@@ -1,0 +1,1 @@
+Pass if diagram overlay preview with Use/Discard (or equivalent) and assistive numbers. Fail if no overlay concept.

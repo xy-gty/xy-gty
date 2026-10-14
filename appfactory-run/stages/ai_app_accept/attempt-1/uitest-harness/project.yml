@@ -1,0 +1,44 @@
+name: BendCoachAccept
+options:
+  bundleIdPrefix: accept.harness
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: accept.harness.bendcoach
+schemes:
+  BendCoachAccept:
+    build:
+      targets:
+        BendCoachAcceptHost: all
+        BendCoachAcceptUITests: [test]
+    test:
+      targets:
+        - BendCoachAcceptUITests
+targets:
+  BendCoachAcceptHost:
+    type: application
+    platform: iOS
+    sources:
+      - Host
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: accept.harness.bendcoach.host
+      TARGETED_DEVICE_FAMILY: "1"
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGNING_ALLOWED: YES
+      CODE_SIGN_IDENTITY: "-"
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+  BendCoachAcceptUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - BendCoachAcceptUITests
+    dependencies:
+      - target: BendCoachAcceptHost
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: accept.harness.bendcoach.uitests
+      TARGETED_DEVICE_FAMILY: "1"
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGNING_ALLOWED: YES
+      CODE_SIGN_IDENTITY: "-"
+      TEST_TARGET_NAME: BendCoachAcceptHost

@@ -1,0 +1,1 @@
+Pass if capture/import screen offers camera and/or library for field photos. Fail if unrelated scanner brand or missing photo entry.

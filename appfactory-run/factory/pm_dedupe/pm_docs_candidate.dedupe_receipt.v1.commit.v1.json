@@ -1,0 +1,12 @@
+{
+  "bundle_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "9a887b99b574b1e3ac7573d749436017a4524d14aee5a510f848b05d3ea6c819",
+  "committed_at": "2026-10-14T10:34:25+08:00",
+  "jsonl_memory_deduped": false,
+  "reservation_id": "cf99f9610bb02b7f3dab397e",
+  "reservation_receipt_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_receipt_sha256": "fa6fa5ca432286eca1f9997cc74ec5668dbcfa8e0473e019623c95d4a2e676a4",
+  "result_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/MAP.md",
+  "schema_version": "appfactory.pmagent-dedupe-commit-receipt.v1",
+  "status": "PASS"
+}

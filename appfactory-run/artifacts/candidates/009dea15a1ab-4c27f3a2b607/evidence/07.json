@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "home-empty",
+      "page_id": "home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/home-empty-r2.txt",
+      "image_ref": "frames/home-empty-r2.png",
+      "receipt_ref": "frames/home-empty-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.jsonl",
+          "sha256": "020aeed0000251d8240ae804c12968c30490ec73481e6979e50f85581b690ca7"
+        },
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.json",
+          "sha256": "57290f9dfee6f14b266ab58b7d1060b6965b8bc1b302cbf4802655dd8a91467e"
+        }
+      ],
+      "prompt_sha256": "1f6705df33cc24f8226e6922377dba61a8098cf57d4b488f9249fc75dfb84534",
+      "image_sha256": "1f9c3386dc622898834961141cd239b0d3f9ec0c49551b4566ed73c2aaa63885",
+      "receipt_sha256": "8856026c2cacbc28222c03a4c2bd1503f58ba7e659949a000ef8d8adcfd1a6a9",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "bend-math-chat",
+      "page_id": "bend_math",
+      "state_id": "chat",
+      "criterion_ids": [
+        "crit-bend-math-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/bend-math-chat-r2.txt",
+      "image_ref": "frames/bend-math-chat-r2.png",
+      "receipt_ref": "frames/bend-math-chat-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/bend-math-chat-r2.receipt.jsonl",
+          "sha256": "64e413aff889f313c3a98fc3da0377bae11ea09d4c485894bd80e5474cd37273"
+        },
+        {
+          "ref": "evidence/visual-readback/bend-math-chat-r2.receipt.json",
+          "sha256": "b3cce2b48cfbdd7ee5f68f1bb1567240a4be4ddbca15f50cf31262cf8a111f0c"
+        }
+      ],
+      "prompt_sha256": "19b2400fd1c284267e383268998c57b52c00a199fd4f031495fdf469beb3504d",
+      "image_sha256": "6b72c7ac7ed03f1344fe5179cb00685362f1181b1f76adcc4e6b2dbe12ab8d82",
+      "receipt_sha256": "26e24c601bda0465e86e87f965d4f961cab065e0886a0a0bdf81a4875183141d",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "capture-import",
+      "page_id": "capture",
+      "state_id": "import",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/capture-import-r1.txt",
+      "image_ref": "frames/capture-import-r1.png",
+      "receipt_ref": "frames/capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.jsonl",
+          "sha256": "19fb6365c503b7d55bd7e5b1139c5eb4b34f73af462b29090a86bcaa793232b2"
+        },
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.json",
+          "sha256": "a18730a8b57027f39de478df4774deb0527761fa18f1e1288824a1f3c569bbf6"
+        }
+      ],
+      "prompt_sha256": "5611e89ecb2c1b32c7627fa5b82d1e172b563b95fa642725130e24ca5fabee12",
+      "image_sha256": "ff1b02f111fd5ed4aea4156f2f57c52599bb3494c35a2a815bdcd9234dfda526",
+      "receipt_sha256": "d335abb3f371794ddd3d21d026f056259d392460feb0a4b0437e9865b4668f12",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "bend-review",
+      "page_id": "bend",
+      "state_id": "review",
+      "criterion_ids": [
+        "crit-bend-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/bend-review-r2.txt",
+      "image_ref": "frames/bend-review-r2.png",
+      "receipt_ref": "frames/bend-review-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/bend-review-r2.receipt.jsonl",
+          "sha256": "a9a22102093540f867efb09ff0200e9d282ddb26b5e00c35cd97162a10bce6cb"
+        },
+        {
+          "ref": "evidence/visual-readback/bend-review-r2.receipt.json",
+          "sha256": "b3716acd2a0e85d4faef27dc87aa320bb7c5c7cea8e1757f915b56482c1165e0"
+        }
+      ],
+      "prompt_sha256": "1f2588b501ae1aa26094de176bcbfa8a31bb495a1adfb9b1f9d763002a23a7a9",
+      "image_sha256": "0a24fc5d218d8a55dc559acfdc1d993af8802d47523c33544f5c4fbef0c07b8b",
+      "receipt_sha256": "5b14742c8f76e5c42ce4f2cafe2b46dcfaa8c1bbfee90d60c5f219b9588c7031",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "job-detail-filled",
+      "page_id": "job",
+      "state_id": "detail_filled",
+      "criterion_ids": [
+        "crit-job-detail-filled"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/job-detail-filled-r1.txt",
+      "image_ref": "frames/job-detail-filled-r1.png",
+      "receipt_ref": "frames/job-detail-filled-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/job-detail-filled-r1.receipt.jsonl",
+          "sha256": "55667cfc5bc552460da226a366cc7f3b47bec547c8494d4c32de66a8a88fa1b4"
+        },
+        {
+          "ref": "evidence/visual-readback/job-detail-filled-r1.receipt.json",
+          "sha256": "471e12dfc27b15dd1ef22be3f0b1a41668e857e2bcc414720a886b367b8b10df"
+        }
+      ],
+      "prompt_sha256": "443033f387dde437eb0ca324aa2a6fbf560def1261dc4d34aa1eb10b4712d961",
+      "image_sha256": "a4abb15d0d9ad16af0066d6b2eb8adc6f0a3fc3094bc1c9da21f7508122ff53a",
+      "receipt_sha256": "1511e26a676ede4b142f9fac4958a1f775f4d53f5d4fe27d64b9ff0c8244beb1",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "diagram-overlay",
+      "page_id": "diagram",
+      "state_id": "overlay",
+      "criterion_ids": [
+        "crit-diagram-overlay"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/diagram-overlay-r2.txt",
+      "image_ref": "frames/diagram-overlay-r2.png",
+      "receipt_ref": "frames/diagram-overlay-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/diagram-overlay-r2.receipt.jsonl",
+          "sha256": "48cdec8d67cf5fa17827b29a989c0651a66194637a756df555c53354500cf3a2"
+        },
+        {
+          "ref": "evidence/visual-readback/diagram-overlay-r2.receipt.json",
+          "sha256": "b251b60c6ed9aa2fec7b3f3cd04851098de2c176c17cbb80f6d015b9bd8e6540"
+        }
+      ],
+      "prompt_sha256": "adffa5b9c589afc0081f19af7be836251fb600bf0bb3f6b472b8a0060ba73e35",
+      "image_sha256": "3ecdc321c154965c13b965b4f26d84a1137b92d94b44cf07fdeacd322e30b069",
+      "receipt_sha256": "831bf29c385dd858a7e3c5886499334bda3b97c3ab94d0bebbc6e0262ebbba45",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "tts-coaching",
+      "page_id": "tts",
+      "state_id": "coaching",
+      "criterion_ids": [
+        "crit-tts-coaching"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/tts-coaching-r1.txt",
+      "image_ref": "frames/tts-coaching-r1.png",
+      "receipt_ref": "frames/tts-coaching-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/tts-coaching-r1.receipt.jsonl",
+          "sha256": "b66cdebba5240830528ac238b935d6c42bfba5dda2aaff69a21a480312b0d17b"
+        },
+        {
+          "ref": "evidence/visual-readback/tts-coaching-r1.receipt.json",
+          "sha256": "99ff9f6edb0760194f4a3d5ff5439d0a95057ef3726ab33e975d046a2f68a796"
+        }
+      ],
+      "prompt_sha256": "603f208cd44095bc508e678f7e7d3c582dd49dad07ca737babe98edb81ee3441",
+      "image_sha256": "11c11eb14fbcad89f74b7e73cdf6b05bde194f295f7794d02aa23e4c5a6b9014",
+      "receipt_sha256": "a3bbd9f970810a981f7109131b00b1f538de063690b845e19abc1996bcc28d4b",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "settings-units-privacy",
+      "page_id": "settings",
+      "state_id": "units_privacy",
+      "criterion_ids": [
+        "crit-settings-units-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/settings-units-privacy-r2.txt",
+      "image_ref": "frames/settings-units-privacy-r2.png",
+      "receipt_ref": "frames/settings-units-privacy-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/settings-units-privacy-r2-retry1.receipt.jsonl",
+          "sha256": "149550cfaca85561bac3e6ac714f7005a7a4af16ac33599ba13c2a938e91d809"
+        },
+        {
+          "ref": "evidence/visual-readback/settings-units-privacy-r2-retry1.receipt.json",
+          "sha256": "f3aa2bc49cc8305a44ee22d739fd76936567e48ce6cfe7f437df5af04abc81ed"
+        }
+      ],
+      "prompt_sha256": "19d74f0a6408abf53da2fdb681a4a794de64770d85ef2893f3472fa914652464",
+      "image_sha256": "f291d5646214a3f111fd56d611f10f20e28c1248004c90552084edf615cbf277",
+      "receipt_sha256": "241109002ef3c6c6bead2afe232f1772b5feb7e127d0ab12d4781bca619f2ad8",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "2a1f896c5836178977b1adf3ded44e2c6f3d7cfa86a98f9c74f2cf779256b275"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "3901c78a11d367055d742aa3643690e469f6a8c21bedc2a94c1c34f6a29cad23"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "3508bc4ebf11abb2168568d29bf9fa53c871e13dc5477b80b413b02d403d8075"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "3e3ed8c4a88ae0183a11c726f4b2a41c0730a1cabdc06fc8e8ea1bc969572a3b"
+    }
+  ],
+  "frozen_at": "2026-10-14T02:33:11Z"
+}

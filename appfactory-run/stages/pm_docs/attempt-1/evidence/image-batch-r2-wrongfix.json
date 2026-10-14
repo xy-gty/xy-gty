@@ -1,0 +1,40 @@
+{
+  "schema": "appfactory.grokbot_image_batch.v1",
+  "jobs": [
+    {
+      "image_id": "home-empty-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/home-empty-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/home-empty-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "bend-math-chat-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/bend-math-chat-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-math-chat-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "bend-review-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/bend-review-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/bend-review-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "settings-units-privacy-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/settings-units-privacy-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/settings-units-privacy-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "diagram-overlay-r2",
+      "prompt_file": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/prompts/diagram-overlay-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/frames/diagram-overlay-r2.png.receipt.json",
+      "size": "640x1392"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for BendCoach AI (iOS conduit-bending field coach). Deep slate #1A2332 background, surface #243044, ink #F2F4F7, safety amber #E8A317 CTA, diagram blue #5B8DEF. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: tts-coaching — TTS step coaching
+Title "Field coaching". Step list: 1 Measure stub (playing, amber pulse), 2 Mark take-up, 3 Bend to 90°. Transport: Pause / Next. Waveform or speaker icon. Unit badge. Assistive footer.
+
+CRITICAL NEGATIVE: This is BendCoach AI only (conduit bending coach for electricians). NEVER show QuickBend, Bret Hardman, DocBrief, SnagCue, punch list, TurboScan, paywall, coins, ATT, or purple gradients. Brand title must read BendCoach AI. Palette: bg #1A2332, surface #243044, ink #F2F4F7, CTA #E8A317, diagram #5B8DEF. English UI. Assistive guidance footer visible where numbers appear.

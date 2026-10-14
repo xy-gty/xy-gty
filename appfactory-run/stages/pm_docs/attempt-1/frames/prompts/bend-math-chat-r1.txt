@@ -1,0 +1,8 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for BendCoach AI (iOS conduit-bending field coach). Deep slate #1A2332 background, surface #243044, ink #F2F4F7, safety amber #E8A317 CTA, diagram blue #5B8DEF. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: bend-math-chat — Bend math chat filled
+Full-screen chat titled "Bend math". Unit badge "in · imperial". User bubble: "90° stub-up on 3/4 EMT, 12 inch rise". Coach reply card with steps and take-up 6 5/16 in, stub mark callouts; footer "Assistive guidance only — not a substitute for code or engineer judgment.". Bottom input with text field, mic icon, send. Amber Send enabled.
+
+CRITICAL NEGATIVE: This is BendCoach AI only (conduit bending coach for electricians). NEVER show QuickBend, Bret Hardman, DocBrief, SnagCue, punch list, TurboScan, paywall, coins, ATT, or purple gradients. Brand title must read BendCoach AI. Palette: bg #1A2332, surface #243044, ink #F2F4F7, CTA #E8A317, diagram #5B8DEF. English UI. Assistive guidance footer visible where numbers appear.

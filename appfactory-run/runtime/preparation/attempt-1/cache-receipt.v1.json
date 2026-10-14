@@ -1,0 +1,11 @@
+{
+  "schema": "appfactory.ultra_lite_preparation_cache_receipt.v1",
+  "run_id": "kf-20261013T132652Z-d15977ae",
+  "attempt": 1,
+  "hit": true,
+  "key": "56cc6f2b80f2a7f17e52284ed171712d9d8aa28f02e1843d038537d75283a7ad",
+  "factory_version": "8.3.63",
+  "cache_ref": "/Users/a2026/.local/state/appfactory/ultra-lite-prep-cache/56cc6f2b80f2a7f17e52284ed171712d9d8aa28f02e1843d038537d75283a7ad/cache.v1.json",
+  "artifacts_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/runtime/preparation/attempt-1/host-compile",
+  "reused_at": "2026-10-13T13:39:38Z"
+}

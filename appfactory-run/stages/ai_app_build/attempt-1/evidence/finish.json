@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "finish_receipt": {
+    "dispatch_id": "931836a9-a605-4fc8-9520-61b25a8bce75",
+    "status": "ready",
+    "map_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/ai_app_build/attempt-1/MAP.md",
+    "map_sha256": "e8f2b2e105fdfedcea8b028790e5a09a7d8ace3eadc3943c1f33abf5a2c4a13b",
+    "reported_at": "2026-10-14T02:49:02Z",
+    "message_id": "msg-21330bc5de4840958196c82c4819a0bd"
+  },
+  "execution_status": "running"
+}

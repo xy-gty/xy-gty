@@ -1,0 +1,1 @@
+Pass if a bend-math chat shows user question and coach numeric guidance with assistive disclaimer and unit cue. Fail if calculator-only chrome without chat or QuickBend branding.
