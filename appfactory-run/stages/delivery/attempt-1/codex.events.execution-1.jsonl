@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-2ef15ce4-delivery"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "Dispatch 2ef15ce4… delivery attempt-1 ready.\nxy-gty branch bendcoach-ai-kf-20261013T132652Z-d15977ae tip 910346809338217e362d35beca657b7cefa3e3eb.\nFeishu deferred. package_acceptance=accepted. report_status=produced.\n"}]}, "session_id": "cursor-cli-2ef15ce4-delivery"}

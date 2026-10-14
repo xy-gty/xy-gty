@@ -1,5 +1,5 @@
 {
-  "_control_event_cursor": 15,
+  "_control_event_cursor": 17,
   "acceptance_policy": {
     "acceptance_policy": {
       "authorization": {
@@ -80,10 +80,18 @@
     "delivery": {
       "attempts": 1,
       "blockers": [],
-      "evidence_refs": {},
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/delivery/attempt-1/MAP.md",
+        "result_sha256": "de3ab85a781518b8b3489b186802f0e6bc13f01cfa3f461367a1348fb8a3c59a",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "b43b4db81ea320561037660a574d8d0b620ca87f7d34a52fcece3c1fc6678d19",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-2/runs/kf-20261013T132652Z-d15977ae/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "46c33c0955e1c3fe98d4473026decc2e316148b4293d533c79853afa5ab8c950"
+      },
       "started_at": "2026-10-14T04:10:24Z",
-      "status": "active",
-      "updated_at": "2026-10-14T04:10:24Z"
+      "status": "validated",
+      "updated_at": "2026-10-14T04:15:57Z"
     },
     "goal": {
       "attempts": 1,
@@ -142,9 +150,10 @@
     },
     "vision_effort": "auto"
   },
+  "report_status": "produced",
   "requested_count": 1,
   "run_id": "kf-20261013T132652Z-d15977ae",
-  "run_status": "active",
+  "run_status": "delivered",
   "schema_version": "claude-app-factory.run-state.v1",
   "self_evolution_cases": [],
   "stage_cost": {
@@ -178,10 +187,10 @@
         "attempts": [
           {
             "attempt": 1,
-            "duration_seconds": null,
-            "finished_at": null,
+            "duration_seconds": 333.0,
+            "finished_at": "2026-10-14T04:15:57Z",
             "started_at": "2026-10-14T04:10:24Z",
-            "status": "active",
+            "status": "validated",
             "usage": null
           }
         ]
@@ -200,6 +209,6 @@
       }
     }
   },
-  "state_version": 8,
+  "state_version": 9,
   "ultra_lite_execution_revision": "p1"
 }

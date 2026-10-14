@@ -6,12 +6,13 @@ report_status: produced
 package_acceptance: accepted
 
 pm_visual_manifest_sha256: 46c33c0955e1c3fe98d4473026decc2e316148b4293d533c79853afa5ab8c950  
+technical_contract_sha256: b43b4db81ea320561037660a574d8d0b620ca87f7d34a52fcece3c1fc6678d19  
 upstream_map_ai_app_accept: stages/ai_app_accept/attempt-1/MAP.md  
-product_commit: 009dea15a1ab2e106efcff66e16a15433ac01ba0  
+product_commit: 910346809338217e362d35beca657b7cefa3e3eb
 product_branch: main  
 xy_gty_branch: bendcoach-ai-kf-20261013T132652Z-d15977ae  
 xy_gty_remote: git@github.com:xy-gty/xy-gty.git  
-xy_gty_tip: 009dea15a1ab2e106efcff66e16a15433ac01ba0  
+xy_gty_tip: 910346809338217e362d35beca657b7cefa3e3eb
 bundle_id: com.lingguang.bendcoach  
 candidate: 009dea15a1ab-4c27f3a2b607  
 dispatch_id: 2ef15ce4-0fbb-4ee2-a74b-b030b2674e5f
@@ -25,7 +26,7 @@ BendCoach AI ultra_lite delivery. Accept attempt-1 validated (UL-01–06/08 pass
 - Accept MAP ready / package_acceptance=accepted  
 - `stages/ai_app_accept/attempt-1/evidence/known_issues.md`  
 - Build candidate `009dea15a1ab-4c27f3a2b607`  
-- xy-gty push log: `/tmp/bendcoach-accept/xy-gty-push-branch.log`
+- xy-gty push: branch `bendcoach-ai-kf-20261013T132652Z-d15977ae` tip `009dea15a1ab2e106efcff66e16a15433ac01ba0`
 
 ## Gaps / replace_before_submission
 
@@ -38,4 +39,4 @@ BendCoach AI ultra_lite delivery. Accept attempt-1 validated (UL-01–06/08 pass
 
 ## Stage cost
 
-Copied from factory status at delivery seal (seconds): goal=null; pm_docs=47176; ai_app_build=954; ai_app_accept=4775; delivery=in progress.
+goal=null; pm_docs=47176s; ai_app_build=954s; ai_app_accept=4775s; delivery=in progress at seal.
