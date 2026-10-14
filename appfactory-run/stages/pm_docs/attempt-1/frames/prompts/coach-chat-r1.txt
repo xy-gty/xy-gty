@@ -1,0 +1,5 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for ScoutCue (AI photo-scout / timing planner). Unique UI: soft scenery card stack + sky-arc ephemeris timeline. Palette primary #4338CA indigo, secondary #EEF2FF soft indigo wash, accent #FB7185 rose. Multi-color, nice-looking. Ban all-black shell. Ban DimCue measure-overlay twin. Ban KnotCue rope-path carousel twin. Do not draw AppIcon or splash.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Page: CoachChat. Title Timing coach. Chat bubbles: user asks When is golden hour on this ridge?; AI draft reply about 18:12–18:40 side light. Consent chip AI may send scene labels to DeepSeek visible. Review bar Keep / Discard under draft bubble. Soft card header with tiny scenery thumb and sky-arc. Indigo/rose accents, bright wash—no black shell.

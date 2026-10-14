@@ -1,0 +1,38 @@
+{
+  "context_version": "v1",
+  "context_class": "contract",
+  "run_id": "kf-20261014T091741Z-3d7b568c",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "principal": "AIAppBuilderAgent",
+  "route": "ai_app_build",
+  "state_version": 4,
+  "goal_version": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/product",
+  "upstream_refs": {
+    "upstream_map_pm_docs": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/MAP.md"
+  },
+  "artifact_refs": {
+    "required_output_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/MAP.md"
+  },
+  "capability_ids": [
+    "route.ai_app_build"
+  ],
+  "session_id": "",
+  "event_cursor": 9,
+  "knowledge_receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/memory/ai_app_build-attempt-1.receipt.json",
+  "runtime_profile": {
+    "model_preset": "dev"
+  },
+  "contract_context": {
+    "run_id": "kf-20261014T091741Z-3d7b568c",
+    "stage": "ai_app_build",
+    "attempt": 1,
+    "ai_profile": "ultra_lite"
+  },
+  "advisory_context": {
+    "knowledge_availability": "ready"
+  },
+  "advisory": {},
+  "sha256": "83ea32403cf5e38610b3d68069cf4a5cf3128124d1f16c20bf6604641fc305dc"
+}

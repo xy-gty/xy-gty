@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/HostStub-primary.dia",
+    "emit-module-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/HostStub-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/HostStub-primary-emit-module.dia",
+    "pch" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/HostStub-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/HostStub-primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/evidence/ui-harness/HostStub/App.swift" : {
+    "const-values" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.swiftconstvalues",
+    "dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.d",
+    "diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.dia",
+    "index-unit-output-path" : "/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.o",
+    "llvm-bc" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.bc",
+    "object" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.o",
+    "swift-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App.swiftdeps",
+    "swiftmodule" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-uitest/Build/Intermediates.noindex/ScoutCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/Objects-normal/arm64/App~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "exit_code": 0,
+  "usage_limit": false,
+  "keys_exhausted": false,
+  "key_slot": null,
+  "auth": "local_login",
+  "blocker": null,
+  "blocker_message": "",
+  "argv": [
+    "/Users/a2026/.local/bin/agent",
+    "--model",
+    "auto",
+    "--print",
+    "--force",
+    "--trust",
+    "--workspace",
+    "/Users/a2026/work/factory-prod-1",
+    "--output-format",
+    "text",
+    "CONTROLLER_FINISH / Option A HARD STOP: do NOT run screenshot-vision or regenerate frames. Read CONTROLLER_FINISH.md and CONTROLLER_OPTION_A.md under /Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/ first. Then: Dispatch d695be94-2db4-45bf-8680-2e6f3d788d87. Read /Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/codex.launch.e3.md SHA-256 8a0d8ef9a445700379d3d425050eb1ca282b493b869a3f79ecfeab48563d09ea. Verify the file hash, then execute that file focusing ONLY on writing MAP.md Status ready with known_issues for UL-07 scout-card/coach-chat/golden-overlay fails + dictate Errno17 + Settings/ai_key_unavailable, then run the exact UltraLite finish --status ready. No visual retries."
+  ]
+}

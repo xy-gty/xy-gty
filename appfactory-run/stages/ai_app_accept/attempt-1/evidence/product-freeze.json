@@ -1,0 +1,13 @@
+{
+  "schema": "appfactory.ultra_lite_product_freeze.v1",
+  "run_id": "kf-20261014T091741Z-3d7b568c",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/scoutcue",
+  "product_commit": "8d33ae437c6acc26021c90036c5f816a6f3d3033",
+  "product_branch": "main",
+  "dirty": false,
+  "status_short": [],
+  "expected_builder_commit": "8d33ae437c6acc26021c90036c5f816a6f3d3033",
+  "commit_matches_builder": true
+}

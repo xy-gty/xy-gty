@@ -1,0 +1,50 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "run_id": "kf-20261014T091741Z-3d7b568c",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "22a1a1aa-1764-426f-b90d-5d2d6166d6ab",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/product",
+  "source_commit": "8d33ae437c6acc26021c90036c5f816a6f3d3033",
+  "branch": "main",
+  "bundle_id": "com.lingguang.scoutcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/ScoutCue.app",
+  "app_content_sha256": "c57d1802c56562dd4964c13817bbbe6c40301dd21783375031d8d1b9a28db434",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+    "runtime": "iOS Simulator (iPhone 17 Pro)"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/ScoutCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "com.lingguang.scoutcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 31499,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/launch-pid.log",
+    "log_sha256": "b59b93ffbc5d289ada11865b3cfe49b16fe458da879806f35e7af6bf3705e5f8"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/smoke.png",
+    "screenshot_sha256": "9d1520b6ee8f3a44b214e6d608844b9839684f13fa3cde97281cdb6ff2d980d9"
+  }
+}

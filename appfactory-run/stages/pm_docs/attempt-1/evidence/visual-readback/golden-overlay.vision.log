@@ -1,0 +1,4 @@
+{
+  "ok": false,
+  "error": "Command '['/Users/a2026/work/factory-prod-1/bin/cursor-agent-entry', '--argv-file', '/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/evidence/visual-readback/golden-overlay.receipt.cursor-process/argv.json', '--output-dir', '/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/evidence/visual-readback/golden-overlay.receipt.cursor-process']' timed out after 300 seconds"
+}

@@ -1,0 +1,14 @@
+Dispatch **22a1a1aa-1764-426f-b90d-5d2d6166d6ab** finished **ready**.
+
+ScoutCue UltraLite P1 build is done: AppRuntimeCore-backed sky-arc scout planner with soft card stack, capture/import, scene Keep/Discard, coach+consent, golden overlay pins, TTS briefing, and dictate notes.
+
+| Item | Result |
+|------|--------|
+| Launch hash | verified `41c64486…994e63` |
+| Build / tests | succeeded · 8/8 domain tests |
+| Smoke | iPhone 17 Pro · launch pid 31499 · `smoke.png` |
+| Candidate | `8d33ae437c6a-c57d1802c565` · `candidate_unaccepted` |
+| Product commit | `8d33ae437c6acc26021c90036c5f816a6f3d3033` |
+| Finish | `ok: true` · map sha `d158e907…6c90` |
+
+Gaps left for Acceptance/Delivery: `ai_key_unavailable`, legal URL/CloudKit UNKNOWN, Feishu row not created, device camera/mic 真机待测. Controller advances the milestone.

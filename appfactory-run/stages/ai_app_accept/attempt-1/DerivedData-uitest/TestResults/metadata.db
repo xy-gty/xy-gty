@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<integer>1</integer>
+	<key>Store</key>
+	<dict>
+		<key>ScoutCueAcceptUITests</key>
+		<dict>
+			<key>JourneyTests</key>
+			<dict>
+				<key>testUL01HomeLaunch</key>
+				<dict>
+					<key>mrnet</key>
+					<real>8.2325080633163452</real>
+				</dict>
+				<key>testUL02CoreFlowsAndPrivacy</key>
+				<dict>
+					<key>mrnet</key>
+					<real>196.20618498325348</real>
+				</dict>
+				<key>testUL04RelaunchPersistence</key>
+				<dict>
+					<key>mrnet</key>
+					<real>12.793933987617493</real>
+				</dict>
+			</dict>
+			<key>LegalPagesOnly</key>
+			<dict>
+				<key>testOpenEachLegalPage</key>
+				<dict>
+					<key>mrnet</key>
+					<real>20.55971097946167</real>
+				</dict>
+			</dict>
+			<key>SettingsLegalTests</key>
+			<dict>
+				<key>testSettingsLegalAndPersistence</key>
+				<dict>
+					<key>mrnet</key>
+					<real>82.391466021537781</real>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

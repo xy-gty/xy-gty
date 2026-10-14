@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ScoutCueAcceptUITests' in project 'ScoutCueAcceptUI'
+➜ Explicit dependency on target 'HostStub' in project 'ScoutCueAcceptUI'
+Target 'HostStub' in project 'ScoutCueAcceptUI' (no dependencies)

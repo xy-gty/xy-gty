@@ -1,0 +1,44 @@
+{
+  "event": {
+    "source": "cursor_task_host",
+    "dispatch_id": "58186148-d41e-42fb-b0d9-dddd8f2a8704",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-prep-58186148d41e",
+    "status": "completed",
+    "final_text": "Dispatch `58186148-d41e-42fb-b0d9-dddd8f2a8704` complete.\n\n- Launch hash verified (`b504b47c…`)\n- ScoutCue private prep **Status: ready**\n- AppRuntimeCore installed; prep cache hit (shared baseline not recompiled)\n- Domain scaffold + foundation sealed via finish receipt; controller observes stop and seals"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "5cf415ee-4be7-474b-bcac-aa79da0fd6bf",
+    "session_id": "grokbot-packaging-kf-20261014T091741Z-3d7b568c",
+    "session_kind": "interactive",
+    "observed_at": 1791970461.945493,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "5cf415ee-4be7-474b-bcac-aa79da0fd6bf",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_a4b687aaf87448ffa831ec93fb02eab5",
+        "agent_id": "cursor-cli-pm-a4b687aaf874",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_58186148d41e42fbb0d9dddd8f2a8704",
+        "agent_id": "cursor-cli-prep-58186148d41e",
+        "agent_status": {
+          "completed": "Dispatch `58186148-d41e-42fb-b0d9-dddd8f2a8704` complete.\n\n- Launch hash verified (`b504b47c…`)\n- ScoutCue private prep **Status: ready**\n- AppRuntimeCore installed; prep cache hit (shared baseline not recompiled)\n- Domain scaffold + foundation sealed via finish receipt; controller observes stop and seals"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-14T09:34:22Z"
+}

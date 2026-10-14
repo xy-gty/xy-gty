@@ -1,0 +1,23 @@
+{
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/scoutcue/App/AI/DeepSeekClient.swift" : {
+    "const-values" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DeepSeekClient.swiftconstvalues",
+    "dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DeepSeekClient.d",
+    "diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DeepSeekClient.dia",
+    "object" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DeepSeekClient.o",
+    "swift-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DeepSeekClient.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/scoutcue/App/UI/DictateNoteView.swift" : {
+    "const-values" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DictateNoteView.swiftconstvalues",
+    "dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DictateNoteView.d",
+    "diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DictateNoteView.dia",
+    "object" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DictateNoteView.o",
+    "swift-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/DictateNoteView.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/scoutcue/App/UI/GoldenOverlayView.swift" : {
+    "const-values" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/GoldenOverlayView.swiftconstvalues",
+    "dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/GoldenOverlayView.d",
+    "diagnostics" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/GoldenOverlayView.dia",
+    "object" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/GoldenOverlayView.o",
+    "swift-dependencies" : "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/DerivedData-domain/Build/Intermediates.noindex/ScoutCue.build/Debug-iphonesimulator/ScoutCue.build/Objects-normal/arm64/GoldenOverlayView.swiftdeps"
+  }
+}

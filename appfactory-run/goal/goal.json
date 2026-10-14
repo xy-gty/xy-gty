@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-14T09:17:41Z",
+  "model_mode": "dev",
+  "objective": "# External idea (operator-selected)\n\n**Mode:** pure Cursor Ultra-lite (p1)\n**App name:** ScoutCue\n**Product dir:** `scoutcue/` (lowercase; never call it `product/`)\n**Delivery remote:** `git@github.com:xy-gty/xy-gty.git`\n**Delivery push:** prefer **independent branch** (do NOT blindly lean-force overwrite `main`)\n**Simulator:** iPhone 17 Pro ONLY (ban iPhone 17 and Pro Max `6C8C645A`)\n**Feishu delivery tracker:** skip / ignore (负责人自填 deferred)\n\n## Positioning\n\nPaid AI photo-scout planner. Import or shoot scenery, recognize scenes, chat sun/moon timing, golden-hour overlay annotations, TTS next-stop shoot briefings.\n\nPosition as **AI photo scout / timing planner**. Do **NOT** clone DimCue measure-overlay twin. Do **NOT** clone KnotCue rope-path carousel twin.\n\n## Core loops\n\n1. Shoot / import scenery photos (Camera + Photos)\n2. Scene recognition → scout cards\n3. Chat sun/moon / golden-hour timing with the coach\n4. Golden-hour overlay annotations on scenery\n5. TTS next-stop shoot briefings (Speech)\n6. Dictate shoot notes / intent (Microphone)\n7. Unlock paid scouting packs / windows (paid)\n\nPermission extras must not replace core scout/chat flows.\n\n## Four real permissions (required)\n\n| Key | Use |\n|---|---|\n| NSCameraUsageDescription | On-site composition capture + scene recognition for scouting |\n| NSPhotoLibraryUsageDescription | Import prior scouting shots; recompute best shoot windows |\n| NSMicrophoneUsageDescription | Dictate shoot notes and intent into the scout plan |\n| NSSpeechRecognitionUsageDescription | e.g. 「这山脊黄金时刻」 → timed plan + coach chat |\n\n## Unique UI (hard)\n\n- Sky-arc ephemeris timeline\n- Soft scenery card stack\n- Ban DimCue measure-overlay twin\n- Ban KnotCue rope-path carousel twin\n- Ban all-black shell\n\n## Palette (hard)\n\n- Primary: `#4338CA` indigo\n- Secondary: `#EEF2FF` soft indigo wash\n- Accent: `#FB7185` rose\n- Multi-color, nice-looking; ban all-black\n\n## Branding assets\n\n**Do NOT generate** AppIcon or LaunchScreen / splash images this round.\n\n## Acceptance / delivery notes\n\n- Ultra-lite Cursor p1\n- Deliver to xy-gty on an **independent branch** when possible\n- Skip Feishu tracker row\n- Non-core UL/AX fails with runtime evidence complete → Option A soft known_issues (no infinite retry)\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261014T091741Z-3d7b568c",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

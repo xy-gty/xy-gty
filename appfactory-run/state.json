@@ -1,0 +1,205 @@
+{
+  "_control_event_cursor": 15,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-14T09:17:41Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/MAP.md",
+        "result_sha256": "0d440feaa4e28ecd97935f25b623dcaf63066413f9cafbc6c1a871417f116d29",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "d3e76b0d232df6307e64e68865cfecf4d83f0a5cc8687d954fdb93efbcd2d801",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "8109b7525dc308cf4d9d0e4ef418350f42862f696df35c33940283b7b8794d4e",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "79ae80466f1db35347ee205b99a8c85ea0bbe974d69aa00c5264f90c1e29e31b"
+      },
+      "started_at": "2026-10-14T10:08:48Z",
+      "status": "validated",
+      "updated_at": "2026-10-14T11:24:04Z"
+    },
+    "ai_app_build": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "a570a0f624b2e7da0e5388af2677bae17555d84bebb924bc13f9b87fa4b699dc",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "9bee7a1ec0d03068742281addd7f16ae6fd961bc0c0eaa09b791e6cf836b9205",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/ai_app_build/attempt-1/MAP.md",
+        "result_sha256": "d158e907216e36d80d821ec0cb51d6cb3bc8c23ea285e00fca23757d3cc46c90",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "d3e76b0d232df6307e64e68865cfecf4d83f0a5cc8687d954fdb93efbcd2d801",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "8109b7525dc308cf4d9d0e4ef418350f42862f696df35c33940283b7b8794d4e"
+      },
+      "started_at": "2026-10-14T09:52:46Z",
+      "status": "validated",
+      "updated_at": "2026-10-14T10:08:31Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {},
+      "started_at": "2026-10-14T11:24:15Z",
+      "status": "active",
+      "updated_at": "2026-10-14T11:24:15Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/goal/goal.json",
+        "goal_sha256": "22f2ca24d22bfc3a0b5c59404c786d14e5a70b6bc778c750764982a1f19ef836"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-14T09:17:41Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "df3826559a44d1324974a1bcd08f48b32c20a7e5811a7171abadbc5b387d225b",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "d3e76b0d232df6307e64e68865cfecf4d83f0a5cc8687d954fdb93efbcd2d801",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "8109b7525dc308cf4d9d0e4ef418350f42862f696df35c33940283b7b8794d4e",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-14T09:17:51Z",
+      "status": "validated",
+      "updated_at": "2026-10-14T09:52:29Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# External idea (operator-selected)\n\n**Mode:** pure Cursor Ultra-lite (p1)\n**App name:** ScoutCue\n**Product dir:** `scoutcue/` (lowercase; never call it `product/`)\n**Delivery remote:** `git@github.com:xy-gty/xy-gty.git`\n**Delivery push:** prefer **independent branch** (do NOT blindly lean-force overwrite `main`)\n**Simulator:** iPhone 17 Pro ONLY (ban iPhone 17 and Pro Max `6C8C645A`)\n**Feishu delivery tracker:** skip / ignore (负责人自填 deferred)\n\n## Positioning\n\nPaid AI photo-scout planner. Import or shoot scenery, recognize scenes, chat sun/moon timing, golden-hour overlay annotations, TTS next-stop shoot briefings.\n\nPosition as **AI photo scout / timing planner**. Do **NOT** clone DimCue measure-overlay twin. Do **NOT** clone KnotCue rope-path carousel twin.\n\n## Core loops\n\n1. Shoot / import scenery photos (Camera + Photos)\n2. Scene recognition → scout cards\n3. Chat sun/moon / golden-hour timing with the coach\n4. Golden-hour overlay annotations on scenery\n5. TTS next-stop shoot briefings (Speech)\n6. Dictate shoot notes / intent (Microphone)\n7. Unlock paid scouting packs / windows (paid)\n\nPermission extras must not replace core scout/chat flows.\n\n## Four real permissions (required)\n\n| Key | Use |\n|---|---|\n| NSCameraUsageDescription | On-site composition capture + scene recognition for scouting |\n| NSPhotoLibraryUsageDescription | Import prior scouting shots; recompute best shoot windows |\n| NSMicrophoneUsageDescription | Dictate shoot notes and intent into the scout plan |\n| NSSpeechRecognitionUsageDescription | e.g. 「这山脊黄金时刻」 → timed plan + coach chat |\n\n## Unique UI (hard)\n\n- Sky-arc ephemeris timeline\n- Soft scenery card stack\n- Ban DimCue measure-overlay twin\n- Ban KnotCue rope-path carousel twin\n- Ban all-black shell\n\n## Palette (hard)\n\n- Primary: `#4338CA` indigo\n- Secondary: `#EEF2FF` soft indigo wash\n- Accent: `#FB7185` rose\n- Multi-color, nice-looking; ban all-black\n\n## Branding assets\n\n**Do NOT generate** AppIcon or LaunchScreen / splash images this round.\n\n## Acceptance / delivery notes\n\n- Ultra-lite Cursor p1\n- Deliver to xy-gty on an **independent branch** when possible\n- Skip Feishu tracker row\n- Non-core UL/AX fails with runtime evidence complete → Option A soft known_issues (no infinite retry)\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261014T091741Z-3d7b568c",
+  "run_status": "active",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 4516.0,
+            "finished_at": "2026-10-14T11:24:04Z",
+            "started_at": "2026-10-14T10:08:48Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 945.0,
+            "finished_at": "2026-10-14T10:08:31Z",
+            "started_at": "2026-10-14T09:52:46Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": null,
+            "finished_at": null,
+            "started_at": "2026-10-14T11:24:15Z",
+            "status": "active",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 2078.0,
+            "finished_at": "2026-10-14T09:52:29Z",
+            "started_at": "2026-10-14T09:17:51Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 8,
+  "ultra_lite_execution_revision": "p1"
+}

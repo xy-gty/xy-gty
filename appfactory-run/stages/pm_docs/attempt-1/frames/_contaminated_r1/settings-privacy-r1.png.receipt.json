@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-406ce8bf11d2",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 500005,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/settings-privacy-r1.png",
+  "output_sha256": "1ff6a829cfefbe300a302350e764adecdeb6d040eefa192918fd8c1bfe3e7cea",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/prompts/settings-privacy-r1.txt",
+  "prompt_sha256": "b4ec15bf638681ccfdd56b87ecd8a8b380bd0dbae66604d4843262e4c2278654",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "5838a9f9cd45fa86e20ff94e21a12b1429f409f46f22058a7da3fef895859317",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-14T09:24:29Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

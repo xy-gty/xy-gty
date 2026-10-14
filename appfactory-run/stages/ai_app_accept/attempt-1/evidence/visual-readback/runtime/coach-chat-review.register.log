@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py", line 325, in <module>
+    main()
+  File "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py", line 319, in main
+    result = record_new(state, args.stage, args.attempt, args.image_ref, args.receipt_ref,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py", line 135, in record_new
+    receipt_path = visuals._file(base, receipt_ref)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/a2026/work/factory-prod-1/factory/ai_ultra_lite_visuals.py", line 251, in _file
+    _fail(kind, f"missing_or_empty:{ref}")
+  File "/Users/a2026/work/factory-prod-1/factory/ai_ultra_lite_visuals.py", line 78, in _fail
+    raise ValueError(f"ultra_lite_visual_{kind}:{detail}")
+ValueError: ultra_lite_visual_artifact_invalid:missing_or_empty:evidence/visual-readback/runtime/coach-chat-review.receipt.json

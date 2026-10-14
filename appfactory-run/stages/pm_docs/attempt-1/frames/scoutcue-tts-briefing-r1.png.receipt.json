@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-cdc07929a7f7",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 535997,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/scoutcue-tts-briefing-r1.png",
+  "output_sha256": "3e918a2b7233ddb890050cbf84a5a68cf71dc00d4efef9f1007819c6be3119f9",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/prompts/scoutcue-tts-briefing-r1.txt",
+  "prompt_sha256": "9117fe9bd75442c465e0cfb3e41fa6497468fc7bc424dbf37808b1c740fad7ac",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "3e918a2b7233ddb890050cbf84a5a68cf71dc00d4efef9f1007819c6be3119f9",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T09:31:41Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

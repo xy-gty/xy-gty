@@ -1,0 +1,29 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "拍摄或导入风景",
+    "场景识别 → Scout 卡片（人审 Keep / Discard / Edit）",
+    "天空弧上浏览日/月与黄金窗",
+    "与向导聊 timing；确认后写入计划",
+    "在图上加黄金时段软叠标",
+    "TTS 播报下一站简报；麦克风口述备注进计划"
+  ],
+  "differentiation": {},
+  "diversity_key": "scoutcue 周末与旅行中想在黄金时段拍出可用风光的进阶爱好者与半职业外拍者 需要在现场快速决定 去哪 何时 怎么站 而不是测距工具或绳路径轮播 在外拍前 现场 把已有或刚拍的风景变成可执行的 timed scout plan 窗口 叠标 下一站口述简报 scoutcue 是 ai 外拍侦察与光位 timing 规划器 拍 导入风景 识别成 scout 卡 天空弧看日 月黄金窗 向导聊天与叠标 tts 下一站简报",
+  "feature_blocks": [
+    "ScoutShot 1—N SceneCard（识别草稿→确认）",
+    "SceneCard 1—1 ScoutPlan（窗口 + 备注）",
+    "ScoutPlan 1—N TimingWindow / OverlayMark / ShootNote / BriefingClip",
+    "CoachMessage（草稿）→ Keep → CoachTurn（历史）",
+    "AIConsentRecord（Keychain + 本地披露版本）"
+  ],
+  "product_fingerprint": "dd517a6bdc2daa0349c92a2bcdf87d7b5c0b045717157104d3dfcd3c9ece8147",
+  "product_name": "ScoutCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "周末与旅行中想在黄金时段拍出可用风光的进阶爱好者与半职业外拍者；需要在现场快速决定「去哪、何时、怎么站」，而不是测距工具或绳路径轮播。",
+  "user_problem": "在外拍前/现场，把已有或刚拍的风景变成可执行的 timed scout plan：窗口、叠标、下一站口述简报。",
+  "value_proposition": "ScoutCue 是 AI 外拍侦察与光位 timing 规划器：拍/导入风景 → 识别成 Scout 卡 → 天空弧看日/月黄金窗 → 向导聊天与叠标 → TTS 下一站简报。"
+}

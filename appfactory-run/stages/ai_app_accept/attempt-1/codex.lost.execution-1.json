@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_lost_session.v1",
+  "task": {
+    "dispatch_id": "d695be94-2db4-45bf-8680-2e6f3d788d87",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-accept-d695be942db4",
+    "agent_name": "/root/pkg_d695be942db445bf86802e6f3d788d87",
+    "execution_status": "running"
+  },
+  "reason": "codex_native_session_unrecoverable: CONTROLLER_STOP killed accept pid; operator resume Option A",
+  "quarantined_at": "2026-10-14T11:00:36Z"
+}

@@ -1,0 +1,137 @@
+Optional(Attributes: Application, 0x112ad1900, pid: 47779, label: 'ScoutCue'
+Element subtree:
+ →Application, 0x112ad1900, pid: 47779, label: 'ScoutCue'
+    Window (Main), 0x112ad2580, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x112ad2080, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x112ad21c0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x112ad2e40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x112ad26c0, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x112ad1e00, {{0.0, 0.0}, {402.0, 874.0}}
+                NavigationBar, 0x112ad1f40, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Coach'
+                  Button, 0x112ad0c80, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                  StaticText, 0x112ad0640, {{175.3, 73.7}, {51.0, 20.7}}, label: 'Coach'
+                Other, 0x112ad2bc0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x112ad3480, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x112ad2800, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x112ad3200, {{0.0, 0.0}, {402.0, 874.0}}
+                        ScrollView, 0x112ad0dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x112ad0000, {{0.0, 0.0}, {402.0, 874.0}}
+                            Other, 0x112ad08c0, {{0.0, 0.0}, {402.0, 170.8}}
+                          Other, 0x112ad0280, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x112ad3340, {{0.0, 116.0}, {402.0, 543.3}}
+                            StaticText, 0x112ad0500, {{20.0, 136.0}, {362.0, 42.3}}, label: 'Ask about sun, moon, or golden-hour timing for this scout.'
+                            StaticText, 0x112ad0a00, {{30.0, 202.3}, {319.7, 30.3}}, label: 'AI unavailable: DeepSeek key not configured (local_only gap).'
+                            StaticText, 0x112ad1cc0, {{32.0, 268.7}, {297.0, 86.3}}, label: 'Local timing (AI key gap): for Mountain meadow (East ridge silhouette), prefer Golden AM 06:40–07:30. Soft side-light favors Blue-hour hush.'
+                            StaticText, 0x112ad1540, {{104.3, 393.0}, {265.7, 20.3}}, label: 'When is golden hour for this ridge?'
+                            TextField, 0x112ad03c0, {{26.0, 443.3}, {350.0, 42.3}}, placeholderValue: 'When is the best golden-hour window?', Keyboard Focused
+                              Other, 0x112ad2440, {{26.0, 443.3}, {0.0, 0.0}}, identifier: '_UITextSelectionRangeAdjustmentContainerView'
+                                Other, 0x112ad0b40, {{26.0, 443.3}, {0.0, 0.0}}, identifier: 'com.apple.text.grabber.leading'
+                                  Other, 0x112ad2f80, {{18.8, 429.8}, {16.5, 16.5}}
+                                  Other, 0x112ad0f00, {{26.0, 443.3}, {2.0, 0.0}}
+                                Other, 0x112ad2d00, {{26.0, 443.3}, {0.0, 0.0}}, identifier: 'com.apple.text.grabber.leading'
+                                  Other, 0x112ad1a40, {{18.8, 429.8}, {16.5, 16.5}}
+                                  Other, 0x112ad17c0, {{26.0, 443.3}, {2.0, 0.0}}
+                              Other, 0x112ad3700, {{26.0, 461.5}, {350.0, 21.2}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                Other, 0x112ad1180, {{29.0, 479.7}, {344.0, 3.0}}
+                            TextField, 0x112ad1680, {{20.0, 503.7}, {362.0, 34.0}}, placeholderValue: 'Optional feedback for next call'
+                            Button, 0x112ad1040, {{20.0, 551.7}, {362.0, 59.3}}, label: 'Ask coach'
+                              Image, 0x102687200, {{149.7, 571.7}, {15.7, 19.0}}, identifier: 'sparkles', label: 'Sparkle'
+                              StaticText, 0x113c39f40, {{20.0, 551.7}, {362.0, 59.3}}, label: 'Ask coach'
+                            StaticText, 0x113c3aa80, {{20.0, 625.0}, {359.7, 14.3}}, label: 'First live send shows consent. Keep / Discard on the reply draft.'
+                          Other, 0x113c38b40, {{369.0, 116.0}, {30.0, 696.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                            Other, 0x113c38dc0, {{396.0, 482.3}, {3.0, 326.7}}
+                          Other, 0x113c3a080, {{369.0, 116.0}, {30.0, 696.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                            Other, 0x113c3a580, {{396.0, 482.3}, {3.0, 326.7}}
+                Other, 0x113c38f00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x113c4f700, {{0.0, 0.0}, {402.0, 874.0}}
+    Window, 0x113c4d400, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x113c4e580, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x113c4c500, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x113c4cc80, {{0.0, 539.0}, {402.0, 335.0}}
+          Other, 0x113c4e6c0, {{0.0, 539.0}, {402.0, 335.0}}, identifier: 'inputView'
+    Window, 0x113c4d2c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x113c4ed00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x113c4e800, {{0.0, 539.0}, {402.0, 335.0}}
+          Other, 0x113c4ef80, {{0.0, 539.0}, {402.0, 44.0}}, identifier: 'SystemInputAssistantView'
+            Other, 0x113c4c140, {{0.0, 539.0}, {402.0, 44.0}}
+              Other, 0x113c4f480, {{0.0, 539.0}, {402.0, 44.0}}, identifier: 'CenterPageView'
+                Other, 0x113c4e080, {{0.0, -61.0}, {402.0, 1244.0}}
+                  ScrollView, 0x113c4f5c0, {{0.0, 539.0}, {402.0, 44.0}}
+                Other, 0x113c4c8c0, {{0.0, 539.0}, {402.0, 44.0}}
+                  Other, 0x113c4f340, {{0.0, 539.0}, {402.0, 44.0}}, label: 'Typing Predictions'
+                    Other, 0x113c4e1c0, {{0.0, 539.0}, {402.0, 44.0}}
+                      Other, 0x113c4df40, {{0.0, 539.0}, {402.0, 44.0}}
+                        Other, 0x113c4db80, {{0.0, 539.0}, {134.0, 44.0}}, label: 'I'
+                        Other, 0x113c4fc00, {{134.0, 539.0}, {134.0, 44.0}}, label: 'The'
+                        Other, 0x113c4e440, {{268.0, 539.0}, {134.0, 44.0}}, label: 'I’m'
+          Other, 0x113c4d040, {{0.0, 539.0}, {402.0, 335.0}}
+            Other, 0x113c4ebc0, {{0.0, 539.0}, {402.0, 335.0}}
+              Other, 0x113c4da40, {{0.0, 539.0}, {402.0, 335.0}}
+          Other, 0x113c90000, {{0.0, 539.0}, {402.0, 335.0}}, identifier: 'UIContinuousPathIntroductionView'
+            Other, 0x113c90140, {{0.0, 539.0}, {402.0, 335.0}}
+            Other, 0x113c90280, {{41.0, 539.0}, {320.0, 301.0}}
+              Other, 0x113c903c0, {{41.0, 539.0}, {320.0, 253.0}}
+                ScrollView, 0x113c90500, {{41.0, 539.0}, {320.0, 253.0}}
+                  Other, 0x113c90640, {{41.0, 539.0}, {320.0, 250.7}}
+                    Other, 0x113c90780, {{97.7, 559.0}, {207.0, 158.3}}
+                      Other, 0x113c908c0, {{97.7, 593.0}, {207.0, 124.3}}
+                    StaticText, 0x113c90a00, {{41.0, 737.3}, {320.0, 46.3}}, label: 'Speed up your typing by sliding your finger across the letters to compose a word.'
+              Button, 0x113c90b40, {{89.0, 819.0}, {224.0, 21.0}}, label: 'Continue'
+                StaticText, 0x113c90c80, {{163.0, 818.3}, {76.0, 22.0}}, label: 'Continue'
+          Other, 0x113c90dc0, {{0.0, 583.0}, {402.0, 233.0}}
+            Keyboard, 0x113c90f00, {{0.0, 583.0}, {402.0, 233.0}}
+              Other, 0x113c91040, {{0.0, 583.0}, {402.0, 233.0}}
+                Other, 0x113c91180, {{0.0, 583.0}, {402.0, 233.0}}, identifier: 'UIKeyboardLayoutStar Preview'
+                  Key, 0x113c912c0, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x113c91400, {{4.7, 590.0}, {39.3, 54.0}}, label: 'Q'
+                  Key, 0x113c91540, {{44.0, 590.0}, {39.7, 54.0}}, label: 'W'
+                  Key, 0x113c91680, {{83.7, 590.0}, {39.3, 54.0}}, label: 'E'
+                  Key, 0x113c917c0, {{123.0, 590.0}, {39.7, 54.0}}, label: 'R'
+                  Key, 0x113c91900, {{162.7, 590.0}, {39.3, 54.0}}, label: 'T'
+                  Key, 0x113c91a40, {{202.0, 590.0}, {39.7, 54.0}}, label: 'Y'
+                  Key, 0x113c91b80, {{241.7, 590.0}, {39.3, 54.0}}, label: 'U'
+                  Key, 0x113c91cc0, {{281.0, 590.0}, {39.7, 54.0}}, label: 'I'
+                  Key, 0x113c91e00, {{320.7, 590.0}, {39.3, 54.0}}, label: 'O'
+                  Key, 0x113c91f40, {{360.0, 590.0}, {39.7, 54.0}}, label: 'P'
+                  Key, 0x113c92080, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Key, 0x113c921c0, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x113c92300, {{24.3, 644.0}, {39.3, 54.0}}, label: 'A'
+                  Key, 0x113c92440, {{63.7, 644.0}, {39.7, 54.0}}, label: 'S'
+                  Key, 0x113c92580, {{103.3, 644.0}, {39.3, 54.0}}, label: 'D'
+                  Key, 0x113c926c0, {{142.7, 644.0}, {39.7, 54.0}}, label: 'F'
+                  Key, 0x113c92800, {{182.3, 644.0}, {39.3, 54.0}}, label: 'G'
+                  Key, 0x113c92940, {{221.7, 644.0}, {39.7, 54.0}}, label: 'H'
+                  Key, 0x113c92a80, {{261.3, 644.0}, {39.3, 54.0}}, label: 'J'
+                  Key, 0x113c92bc0, {{300.7, 644.0}, {39.7, 54.0}}, label: 'K'
+                  Key, 0x113c92d00, {{340.3, 644.0}, {39.3, 54.0}}, label: 'L'
+                  Key, 0x113c92e40, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Button, 0x113c92f80, {{4.7, 698.0}, {51.3, 54.0}}, identifier: 'shift', label: 'shift', Selected
+                  Key, 0x113c930c0, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x113c93200, {{63.7, 698.0}, {39.7, 54.0}}, label: 'Z'
+                  Key, 0x113c93340, {{103.3, 698.0}, {39.3, 54.0}}, label: 'X'
+                  Key, 0x113c93480, {{142.7, 698.0}, {39.7, 54.0}}, label: 'C'
+                  Key, 0x113c935c0, {{182.3, 698.0}, {39.3, 54.0}}, label: 'V'
+                  Key, 0x113c93700, {{221.7, 698.0}, {39.7, 54.0}}, label: 'B'
+                  Key, 0x113c93840, {{261.3, 698.0}, {39.3, 54.0}}, label: 'N'
+                  Key, 0x113c93980, {{300.7, 698.0}, {39.7, 54.0}}, label: 'M'
+                  Key, 0x113c93ac0, {{0.0, 583.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Key, 0x113c93c00, {{348.0, 698.0}, {51.7, 54.0}}, identifier: 'delete', label: 'delete'
+                  Key, 0x113c93d40, {{4.7, 752.0}, {49.3, 54.0}}, identifier: 'more', label: 'numbers'
+                  Button, 0x113c93e80, {{54.0, 752.0}, {49.3, 54.0}}, identifier: 'emoji', label: 'Emoji'
+                  Key, 0x112a30000, {{103.3, 752.0}, {197.3, 54.0}}, identifier: 'space', label: ' '
+                  Button, 0x112a30140, {{300.7, 752.0}, {99.0, 54.0}}, identifier: 'Return', label: 'return'
+          Other, 0x112a30280, {{0.0, 583.0}, {402.0, 291.0}}
+            Button, 0x112a303c0, {{8.5, 805.7}, {68.1, 68.7}}, label: 'Next keyboard', value: 简体拼音
+              StaticText, 0x112a30500, {{8.5, 805.7}, {0.0, 0.0}}
+            Button, 0x112a30640, {{325.4, 805.4}, {68.1, 68.7}}, identifier: 'dictation', label: 'Dictate'
+              StaticText, 0x112a30780, {{325.4, 805.4}, {0.0, 0.0}}
+            Button, 0x112a308c0, {{325.4, 805.4}, {68.1, 68.7}}, identifier: 'dictation', label: 'Dictate'
+              StaticText, 0x112a30a00, {{325.4, 805.4}, {0.0, 0.0}}
+Path to element:
+ →Application, 0x112ad1900, pid: 47779, label: 'ScoutCue'
+Query chain:
+ →Find: Application 'com.lingguang.scoutcue'
+  Output: {
+    Application, 0x112a30b40, pid: 47779, label: 'ScoutCue'
+  }
+)

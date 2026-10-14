@@ -1,0 +1,4 @@
+module AppRuntimeCore {
+header "AppRuntimeCore-Swift.h"
+export *
+}

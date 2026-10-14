@@ -1,0 +1,11 @@
+Dispatch `a4b687aa-…` executed. Launch hash verified. **Status: ready.**
+
+**Done**
+- Product **ScoutCue** (`com.lingguang.scoutcue`) — `build/{product,features,design,acceptance}.md`
+- Technical contract frozen: `technical_contract_sha256: d3e76b0d232df6307e64e68865cfecf4d83f0a5cc8687d954fdb93efbcd2d801`
+- Mailbox: `technical_contract_ready`
+- 8-frame GrokBot batch (ScoutCue-prefixed stems after quarantining CuePartner `local_seed` collisions) + readbacks + `visual_manifest` freeze: `da707cf60ead9792181caf23e7be568bfbcc394084f881885a9c093cbd7400f5`
+- `finish --status ready` accepted
+
+**Gaps (non-blocking)**  
+Operator paid packs deferred under UltraLite `free_app_only`; legal URLs / AI key / CloudKit / Feishu row UNKNOWN.

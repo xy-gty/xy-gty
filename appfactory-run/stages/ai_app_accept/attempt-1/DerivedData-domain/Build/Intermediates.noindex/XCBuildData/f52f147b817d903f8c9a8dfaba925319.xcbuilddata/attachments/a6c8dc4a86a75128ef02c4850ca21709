@@ -1,0 +1,4 @@
+module ScoutCueDomain {
+header "ScoutCueDomain-Swift.h"
+export *
+}

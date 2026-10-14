@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-3f20153f6658",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 820794,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/scoutcue-golden-overlay-r1.png",
+  "output_sha256": "553ebf5f1b272b8bf69114cb38db5ccfb56ee7f515f06d94ebf11b5fdad51f98",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T091741Z-3d7b568c/stages/pm_docs/attempt-1/frames/prompts/scoutcue-golden-overlay-r1.txt",
+  "prompt_sha256": "bac43db37e8cc98fc2d2749a634b413d4e16e035fb8a71cd33806030bf334b6c",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "553ebf5f1b272b8bf69114cb38db5ccfb56ee7f515f06d94ebf11b5fdad51f98",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T09:31:41Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

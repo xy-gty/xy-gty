@@ -1,0 +1,43 @@
+Optional(Attributes: Application, 0x102687340, pid: 47431, label: 'ScoutCue'
+Element subtree:
+ →Application, 0x102687340, pid: 47431, label: 'ScoutCue'
+    Window (Main), 0x102687480, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1026875c0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x102687700, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x102687840, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x102687980, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x102687ac0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x102687c00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x102687d40, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x102687e80, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x112838000, {{0.0, 0.0}, {402.0, 874.0}}
+                        ScrollView, 0x112838140, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x112838280, {{0.0, 62.0}, {402.0, 559.3}}
+                            StaticText, 0x1128383c0, {{20.0, 82.0}, {157.0, 40.7}}, label: 'ScoutCue'
+                            Button, 0x112838500, {{341.7, 93.7}, {40.3, 39.7}}, identifier: 'gearshape.fill', label: 'Settings'
+                            StaticText, 0x112838640, {{20.0, 126.7}, {212.7, 18.0}}, label: 'AI photo scout · timing planner'
+                            StaticText, 0x112838780, {{20.0, 164.7}, {86.7, 14.3}}, label: 'Sky-arc timing'
+                            Button, 0x1128388c0, {{188.5, 190.3}, {25.0, 25.2}}, label: 'Golden PM'
+                            Button, 0x112838a00, {{108.0, 205.0}, {25.0, 25.2}}, label: 'Golden AM'
+                            Button, 0x112838b40, {{269.7, 205.0}, {23.7, 25.2}}, label: 'Blue hour'
+                            Button, 0x112838c80, {{28.5, 249.0}, {23.0, 25.5}}, label: 'Sunrise'
+                            Button, 0x112838dc0, {{347.0, 249.0}, {30.0, 25.5}}, label: 'Moonrise'
+                            Image, 0x112838f00, {{181.0, 372.3}, {40.3, 39.7}}, identifier: 'rectangle.stack', label: 'rectangle.stack'
+                            StaticText, 0x112839040, {{83.5, 422.2}, {235.0, 18.0}}, label: 'Capture or import your first scout'
+                            Button, 0x112839180, {{20.0, 535.0}, {362.0, 66.3}}, label: 'Capture / Import scenery'
+                              Image, 0x1128392c0, {{87.7, 560.0}, {20.7, 16.3}}, identifier: 'camera.fill', label: 'Camera'
+                              StaticText, 0x112839400, {{20.0, 535.0}, {362.0, 66.3}}, label: 'Capture / Import scenery'
+                          Other, 0x112839540, {{369.0, 62.0}, {30.0, 750.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                            Other, 0x112839680, {{396.0, 283.7}, {3.0, 525.3}}
+                          Other, 0x1128397c0, {{369.0, 62.0}, {30.0, 750.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                            Other, 0x112839900, {{396.0, 283.7}, {3.0, 525.3}}
+                Other, 0x112839a40, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x112839b80, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x102687340, pid: 47431, label: 'ScoutCue'
+Query chain:
+ →Find: Application 'com.lingguang.scoutcue'
+  Output: {
+    Application, 0x112839cc0, pid: 47431, label: 'ScoutCue'
+  }
+)

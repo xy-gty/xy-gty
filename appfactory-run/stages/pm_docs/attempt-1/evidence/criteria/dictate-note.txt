@@ -1,0 +1,1 @@
+Does this still show a dictate/shoot-note screen with mic affordance and transcript plus Save/Cancel?
