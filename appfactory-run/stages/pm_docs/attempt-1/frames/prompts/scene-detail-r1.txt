@@ -1,0 +1,7 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for CuePartner AI (iOS AI rehearsal partner for actors). Warm rehearsal-hall look: chalk paper surface #F4F0E6, stage-ink text #1B2430, amber cue accent #D97706, curtain-blue secondary #334155, soft-wood atmosphere #C4A484. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: scene-detail — Scene detail hub
+Nav title "Cold Open — Scene 1". Sections: Roles chips ALEX / JORDAN; Cue lines list with amber highlight on current line; row buttons Partner, Cue rehearsal, Voice note, Ambience. Status chip "Local scene · free". No unlock paywall.
+No LineLearner branding. No paywall, no coin UI, no ATT prompt. Photoreal phone chrome only as thin bezel; UI must fill the tall column. Do not letterbox inside the phone screen.

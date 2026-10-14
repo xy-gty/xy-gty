@@ -1,0 +1,602 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project CuePartnerUIDriver.xcodeproj -scheme Host -destination "platform=iOS Simulator,id=5E3A8993-F815-4738-8EED-EF032F75704F" -derivedDataPath /tmp/CuePartnerUIDriver-DD "-only-testing:CuePartnerUIDriverUITests/AcceptTests/testAcceptanceJourney"
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'CuePartnerUIDriverUITests' in project 'CuePartnerUIDriver'
+        ➜ Explicit dependency on target 'Host' in project 'CuePartnerUIDriver'
+    Target 'Host' in project 'CuePartnerUIDriver' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 46a14cb4512e02666624dac8d5984695
+Build description path: /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/XCBuildData/46a14cb4512e02666624dac8d5984695.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/CuePartnerUIDriver-DD/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /tmp/CuePartnerUIDriver/CuePartnerUIDriver.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/CuePartnerUIDriver-DD/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+ProcessInfoPlistFile /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/Host.app/Info.plist /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/Host.build/empty-Host.plist (in target 'Host' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-infoPlistUtility /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/Host.build/empty-Host.plist -producttype com.apple.product-type.application -genpkginfo /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/Host.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/Host.app/Info.plist
+
+SwiftDriver CuePartnerUIDriverUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CuePartnerUIDriverUITests -Onone @/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/CuePartnerUIDriver-DD/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/CuePartnerUIDriver-DD/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -sdk-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-generated-files.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-own-target-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-project-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-Swift.h -working-directory /tmp/CuePartnerUIDriver -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CuePartnerUIDriverUITests (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+
+SwiftCompile normal arm64 /tmp/CuePartnerUIDriver/CuePartnerUIDriverUITests/AcceptTests.swift (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    
+
+SwiftCompile normal arm64 Compiling\ AcceptTests.swift /tmp/CuePartnerUIDriver/CuePartnerUIDriverUITests/AcceptTests.swift (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+SwiftCompile normal arm64 /tmp/CuePartnerUIDriver/CuePartnerUIDriverUITests/AcceptTests.swift (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling AcceptTests.swift (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+
+SwiftDriver\ Compilation CuePartnerUIDriverUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CuePartnerUIDriverUITests -Onone @/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/CuePartnerUIDriver-DD/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/CuePartnerUIDriver-DD/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -sdk-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-generated-files.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-own-target-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-project-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-Swift.h -working-directory /tmp/CuePartnerUIDriver -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CuePartnerUIDriverUITests (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+
+SwiftDriver\ Compilation\ Requirements CuePartnerUIDriverUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CuePartnerUIDriverUITests -Onone @/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/CuePartnerUIDriver-DD/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/CuePartnerUIDriver-DD/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -sdk-module-cache-path /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/CuePartnerUIDriver-DD/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-generated-files.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-own-target-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests-project-headers.hmap -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources/arm64 -Xcc -I/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-Swift.h -working-directory /tmp/CuePartnerUIDriver -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.abi.json (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.abi.json /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftsourceinfo (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftsourceinfo /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Ld /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/CuePartnerUIDriverUITests normal (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.swiftmodule @/tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/CuePartnerUIDriverUITests
+
+ExtractAppIntentsMetadata (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CuePartnerUIDriverUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.appfactory.uidriver.uitests --output /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/CuePartnerUIDriverUITests --dependency-file /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests_dependency_info.dat --stringsdata-file /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.SwiftFileList --metadata-file-list /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/CuePartnerUIDriverUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/Objects-normal/arm64/CuePartnerUIDriverUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-14 12:03:56.187 appintentsmetadataprocessor[61848:5955181] Starting appintentsmetadataprocessor export
+2026-10-14 12:03:56.192 appintentsmetadataprocessor[61848:5955181] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+ProcessInfoPlistFile /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/Info.plist /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/empty-CuePartnerUIDriverUITests.plist (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-infoPlistUtility /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/empty-CuePartnerUIDriverUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/CuePartnerUIDriverUITests --scan-folder /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/Frameworks --scan-folder /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/PlugIns --scan-folder /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/SystemExtensions --scan-folder /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/CuePartnerUIDriver-DD/Build/Intermediates.noindex/CuePartnerUIDriver.build/Debug-iphonesimulator/CuePartnerUIDriverUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+CodeSign /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app/PlugIns/CuePartnerUIDriverUITests.xctest
+
+CodeSign /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app (in target 'CuePartnerUIDriverUITests' from project 'CuePartnerUIDriver')
+    cd /tmp/CuePartnerUIDriver
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app
+/tmp/CuePartnerUIDriver-DD/Build/Products/Debug-iphonesimulator/CuePartnerUIDriverUITests-Runner.app: replacing existing signature
+
+2026-10-14 12:03:58.148464+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-14 12:03:59.341.
+Test Suite 'CuePartnerUIDriverUITests.xctest' started at 2026-10-14 12:03:59.341.
+Test Suite 'AcceptTests' started at 2026-10-14 12:03:59.341.
+Test Case '-[CuePartnerUIDriverUITests.AcceptTests testAcceptanceJourney]' started.
+    t =     0.00s Start Test at 2026-10-14 12:03:59.342
+    t =     0.07s Set Up
+    t =     0.08s     Open com.lingguang.cuepartner
+    t =     0.08s         Launch com.lingguang.cuepartner
+    t =     0.36s             Setting up automation session
+objc[61851]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108c8c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x104b58398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.17s             Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:04.433829+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] foreground ok
+    t =     5.10s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =     5.26s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:04.702916+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul01-home-empty
+2026-10-14 12:04:04.776755+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-home-empty
+    t =     5.44s Waiting 2.0s for "cta-new-scene" Button to exist
+    t =     6.47s     Checking `Expect predicate `existsNoRetry == 1` for object "cta-new-scene" Button`
+    t =     6.47s         Checking existence of `"cta-new-scene" Button`
+    t =     6.50s Tap "cta-new-scene" Button
+    t =     6.50s     Wait for com.lingguang.cuepartner to idle
+    t =     6.51s     Find the "cta-new-scene" Button
+    t =     6.52s     Check for interrupting elements affecting "cta-new-scene" Button
+    t =     6.55s     Synthesize event
+    t =     6.85s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:07.078278+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap cta-new-scene
+    t =     8.74s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =     8.89s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =     8.92s Get number of matches for: Descendants matching type TextField
+    t =     8.93s Tap TextField (First Match)
+    t =     8.93s     Wait for com.lingguang.cuepartner to idle
+    t =     8.93s     Find the TextField (First Match)
+    t =     8.95s     Check for interrupting elements affecting "e.g. Act II kitchen" TextField
+    t =     8.97s     Synthesize event
+    t =     9.26s     Wait for com.lingguang.cuepartner to idle
+    t =     9.53s Type 'Act II kitchen' into "e.g. Act II kitchen" TextField
+    t =     9.53s     Wait for com.lingguang.cuepartner to idle
+    t =     9.88s     Find the "e.g. Act II kitchen" TextField
+    t =     9.94s     Check for interrupting elements affecting "e.g. Act II kitchen" TextField
+    t =     9.96s     Synthesize event
+    t =    10.40s     Wait for com.lingguang.cuepartner to idle
+    t =    10.41s Waiting 5.0s for "Create scene" Button to exist
+    t =    11.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Create scene" Button`
+    t =    11.47s         Checking existence of `"Create scene" Button`
+    t =    11.52s Find the "Create scene" Button
+    t =    11.55s Tap "Create scene" Button
+    t =    11.56s     Wait for com.lingguang.cuepartner to idle
+    t =    11.56s     Find the "Create scene" Button
+    t =    11.58s     Check for interrupting elements affecting "Create scene" Button
+    t =    11.61s     Synthesize event
+    t =    11.90s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:11.926959+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Create scene
+    t =    14.59s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    14.70s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:14.148294+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-import-script
+2026-10-14 12:04:14.223194+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-import
+    t =    14.88s Get number of matches for: Descendants matching type NavigationBar
+    t =    14.90s Find the NavigationBar (Element at index 0)
+2026-10-14 12:04:14.252238+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] import title=Import script
+    t =    14.91s Waiting 6.0s for "Camera" Button to exist
+    t =    15.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Camera" Button`
+    t =    15.95s         Checking existence of `"Camera" Button`
+    t =    15.98s Tap "Camera" Button
+    t =    15.98s     Wait for com.lingguang.cuepartner to idle
+    t =    15.98s     Find the "Camera" Button
+    t =    16.00s     Check for interrupting elements affecting "Camera" Button
+    t =    16.01s     Synthesize event
+    t =    16.30s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:17.129738+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-camera-entry
+2026-10-14 12:04:17.129865+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] cameraEntry=true
+    t =    17.79s Checking existence of `"Cancel" Button`
+    t =    18.23s Tap "Cancel" Button
+    t =    18.23s     Wait for com.lingguang.cuepartner to idle
+    t =    18.23s     Find the "Cancel" Button
+    t =    18.70s     Check for interrupting elements affecting "Cancel" Button
+    t =    18.85s     Synthesize event
+    t =    19.14s     Wait for com.lingguang.cuepartner to idle
+    t =    20.59s Waiting 5.0s for "Simulator test still" Button to exist
+    t =    21.63s     Checking `Expect predicate `existsNoRetry == 1` for object "Simulator test still" Button`
+    t =    21.63s         Checking existence of `"Simulator test still" Button`
+    t =    21.67s Find the "Simulator test still" Button
+    t =    21.69s Tap "Simulator test still" Button
+    t =    21.69s     Wait for com.lingguang.cuepartner to idle
+    t =    21.70s     Find the "Simulator test still" Button
+    t =    21.71s     Check for interrupting elements affecting "Simulator test still" Button
+    t =    21.73s     Synthesize event
+    t =    22.02s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:21.362549+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Simulator test still
+    t =    27.03s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    27.14s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:26.585331+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-ocr-review
+2026-10-14 12:04:26.655830+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-ocr-review
+    t =    27.31s Get number of matches for: Descendants matching type NavigationBar
+    t =    27.33s Find the NavigationBar (Element at index 0)
+2026-10-14 12:04:26.685991+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] ocr title=OCR review
+    t =    27.34s Waiting 5.0s for "Keep" Button to exist
+    t =    28.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Keep" Button`
+    t =    28.38s         Checking existence of `"Keep" Button`
+    t =    28.42s Find the "Keep" Button
+    t =    28.45s Tap "Keep" Button
+    t =    28.45s     Wait for com.lingguang.cuepartner to idle
+    t =    28.45s     Find the "Keep" Button
+    t =    28.47s     Check for interrupting elements affecting "Keep" Button
+    t =    28.49s     Synthesize event
+    t =    28.78s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:28.760941+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Keep
+    t =    31.42s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    31.64s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:31.098085+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-scene-detail
+2026-10-14 12:04:31.171341+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul04-after-keep-ocr
+    t =    31.83s Waiting 4.0s for "Rehearse" Button to exist
+    t =    32.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Rehearse" Button`
+    t =    32.86s         Checking existence of `"Rehearse" Button`
+    t =    32.91s Tap "Rehearse" Button
+    t =    32.91s     Wait for com.lingguang.cuepartner to idle
+    t =    32.91s     Find the "Rehearse" Button
+    t =    32.94s     Check for interrupting elements affecting "theatermasks" Button
+    t =    32.97s     Synthesize event
+    t =    33.26s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:34.059843+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] tab Rehearse
+    t =    35.72s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    35.97s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:35.417553+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-rehearse-hub
+    t =    36.08s Waiting 5.0s for "Partner chat" Button to exist
+    t =    37.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Partner chat" Button`
+    t =    37.10s         Checking existence of `"Partner chat" Button`
+    t =    37.14s Find the "Partner chat" Button
+    t =    37.17s Tap "Partner chat" Button
+    t =    37.17s     Wait for com.lingguang.cuepartner to idle
+    t =    37.17s     Find the "Partner chat" Button
+    t =    37.19s     Check for interrupting elements affecting "Partner chat" Button
+    t =    37.22s     Synthesize event
+    t =    37.51s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:37.676713+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Partner chat
+    t =    39.34s Get number of matches for: Descendants matching type NavigationBar
+    t =    39.38s Find the NavigationBar (Element at index 0)
+2026-10-14 12:04:38.733244+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] partner title=Partner
+    t =    39.39s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    39.50s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:38.944834+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-partner-chat
+    t =    39.60s Checking existence of `"Speak line" Button`
+2026-10-14 12:04:39.034912+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-speech-entry
+2026-10-14 12:04:39.035065+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] speechEntry=true
+    t =    39.69s Checking existence of `"Your line" TextField`
+    t =    39.71s Tap "Your line" TextField
+    t =    39.71s     Wait for com.lingguang.cuepartner to idle
+    t =    39.71s     Find the "Your line" TextField
+    t =    39.73s     Check for interrupting elements affecting "Your line" TextField
+    t =    39.75s     Synthesize event
+    t =    40.04s     Wait for com.lingguang.cuepartner to idle
+    t =    40.35s Type 'Cue me after the d...' into "Your line" TextField
+    t =    40.35s     Wait for com.lingguang.cuepartner to idle
+    t =    40.35s     Find the "Your line" TextField
+    t =    40.38s     Check for interrupting elements affecting "Your line" TextField
+    t =    40.40s     Synthesize event
+    t =    41.05s     Wait for com.lingguang.cuepartner to idle
+    t =    41.44s Waiting 5.0s for "Send" Button to exist
+    t =    42.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =    42.46s         Checking existence of `"Send" Button`
+    t =    42.50s Find the "Send" Button
+    t =    42.53s Tap "Send" Button
+    t =    42.53s     Wait for com.lingguang.cuepartner to idle
+    t =    42.54s     Find the "Send" Button
+    t =    42.57s     Check for interrupting elements affecting "Send" Button
+    t =    42.59s     Synthesize event
+    t =    42.88s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:42.227171+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Send
+2026-10-14 12:04:43.332597+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul03-after-send
+    t =    43.99s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    44.20s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    44.25s Waiting 5.0s for "Send" Button to exist
+    t =    45.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Send" Button`
+    t =    45.27s         Checking existence of `"Send" Button`
+    t =    45.31s Find the "Send" Button
+    t =    45.34s Tap "Send" Button
+    t =    45.34s     Wait for com.lingguang.cuepartner to idle
+    t =    45.35s     Find the "Send" Button
+    t =    45.37s     Check for interrupting elements affecting "Send" Button
+    t =    45.40s     Synthesize event
+    t =    45.69s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:45.035856+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Send
+2026-10-14 12:04:46.139746+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul05-second-send
+    t =    46.80s Checking existence of `NavigationBar (First Match)`
+    t =    46.82s Checking existence of `Button (Element at index 0)`
+    t =    46.84s Find the Button (Element at index 0)
+    t =    46.88s Tap "BackButton" Button
+    t =    46.88s     Wait for com.lingguang.cuepartner to idle
+    t =    46.88s     Find the "BackButton" Button
+    t =    46.91s     Check for interrupting elements affecting "BackButton" Button
+    t =    46.93s     Synthesize event
+    t =    47.24s     Wait for com.lingguang.cuepartner to idle
+    t =    49.69s Waiting 5.0s for "Cue rehearsal" Button to exist
+    t =    50.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Cue rehearsal" Button`
+    t =    50.73s         Checking existence of `"Cue rehearsal" Button`
+    t =    50.76s Find the "Cue rehearsal" Button
+    t =    50.80s Tap "Cue rehearsal" Button
+    t =    50.80s     Wait for com.lingguang.cuepartner to idle
+    t =    50.80s     Find the "Cue rehearsal" Button
+    t =    50.83s     Check for interrupting elements affecting "Cue rehearsal" Button
+    t =    50.86s     Synthesize event
+    t =    51.16s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:51.291490+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Cue rehearsal
+    t =    52.95s Get number of matches for: Descendants matching type NavigationBar
+    t =    52.97s Find the NavigationBar (Element at index 0)
+2026-10-14 12:04:52.319573+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] cues title=Cues
+    t =    52.98s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    53.07s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:04:52.501674+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-cue-rehearsal
+    t =    53.16s Checking existence of `"Play" Button`
+    t =    53.17s Waiting 5.0s for "Play" Button to exist
+    t =    54.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Play" Button`
+    t =    54.22s         Checking existence of `"Play" Button`
+    t =    54.24s Find the "Play" Button
+    t =    54.27s Tap "Play" Button
+    t =    54.27s     Wait for com.lingguang.cuepartner to idle
+    t =    54.27s     Find the "Play" Button
+    t =    54.29s     Check for interrupting elements affecting "Play" Button
+    t =    54.30s     Synthesize event
+    t =    54.59s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:04:53.934333+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Play
+2026-10-14 12:04:56.026144+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-cue-play
+    t =    56.69s Checking existence of `NavigationBar (First Match)`
+    t =    56.69s Checking existence of `Button (Element at index 0)`
+    t =    56.70s Find the Button (Element at index 0)
+    t =    56.72s Tap "BackButton" Button
+    t =    56.72s     Wait for com.lingguang.cuepartner to idle
+    t =    56.73s     Find the "BackButton" Button
+    t =    56.74s     Check for interrupting elements affecting "BackButton" Button
+    t =    56.76s     Synthesize event
+    t =    57.05s     Wait for com.lingguang.cuepartner to idle
+    t =    59.69s Waiting 5.0s for "Voice note" Button to exist
+    t =    60.73s     Checking `Expect predicate `existsNoRetry == 1` for object "Voice note" Button`
+    t =    60.73s         Checking existence of `"Voice note" Button`
+    t =    60.78s Find the "Voice note" Button
+    t =    60.82s Tap "Voice note" Button
+    t =    60.82s     Wait for com.lingguang.cuepartner to idle
+    t =    60.82s     Find the "Voice note" Button
+    t =    60.84s     Check for interrupting elements affecting "Voice note" Button
+    t =    60.86s     Synthesize event
+    t =    61.15s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:05:01.376262+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Voice note
+    t =    63.04s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    63.12s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:02.555463+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-voice-note
+2026-10-14 12:05:02.627361+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-mic-entry
+    t =    63.29s Checking existence of `"Record" Button`
+2026-10-14 12:05:02.640934+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] micEntry=true
+    t =    63.30s Checking existence of `NavigationBar (First Match)`
+    t =    63.31s Checking existence of `Button (Element at index 0)`
+    t =    63.32s Find the Button (Element at index 0)
+    t =    63.34s Tap "BackButton" Button
+    t =    63.34s     Wait for com.lingguang.cuepartner to idle
+    t =    63.34s     Find the "BackButton" Button
+    t =    63.35s     Check for interrupting elements affecting "BackButton" Button
+    t =    63.37s     Synthesize event
+    t =    63.66s     Wait for com.lingguang.cuepartner to idle
+    t =    66.19s Waiting 5.0s for "Ambience" Button to exist
+    t =    67.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Ambience" Button`
+    t =    67.22s         Checking existence of `"Ambience" Button`
+    t =    67.25s Find the "Ambience" Button
+    t =    67.28s Tap "Ambience" Button
+    t =    67.28s     Wait for com.lingguang.cuepartner to idle
+    t =    67.28s     Find the "Ambience" Button
+    t =    67.31s     Check for interrupting elements affecting "Ambience" Button
+    t =    67.33s     Synthesize event
+    t =    67.62s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:05:07.789799+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Ambience
+    t =    69.45s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    69.70s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:09.145417+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul02-ambience
+    t =    69.80s Checking existence of `"Use bed" Button`
+    t =    69.82s Waiting 5.0s for "Use bed" Button to exist
+    t =    70.83s     Checking `Expect predicate `existsNoRetry == 1` for object "Use bed" Button`
+    t =    70.83s         Checking existence of `"Use bed" Button`
+    t =    70.86s Find the "Use bed" Button
+    t =    70.88s Tap "Use bed" Button
+    t =    70.88s     Wait for com.lingguang.cuepartner to idle
+    t =    70.89s     Find the "Use bed" Button
+    t =    70.90s     Check for interrupting elements affecting "Use bed" Button
+    t =    70.92s     Synthesize event
+    t =    71.21s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:05:10.558694+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] forceTap Use bed
+    t =    71.22s Checking existence of `NavigationBar (First Match)`
+    t =    71.23s Checking existence of `Button (Element at index 0)`
+    t =    71.24s Find the Button (Element at index 0)
+    t =    71.26s Tap "BackButton" Button
+    t =    71.26s     Wait for com.lingguang.cuepartner to idle
+    t =    71.26s     Find the "BackButton" Button
+    t =    71.28s     Check for interrupting elements affecting "BackButton" Button
+    t =    71.30s     Synthesize event
+    t =    71.61s     Wait for com.lingguang.cuepartner to idle
+    t =    74.06s Waiting 4.0s for "Settings" Button to exist
+    t =    75.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Button`
+    t =    75.07s         Checking existence of `"Settings" Button`
+    t =    75.11s Tap "Settings" Button
+    t =    75.11s     Wait for com.lingguang.cuepartner to idle
+    t =    75.11s     Find the "Settings" Button
+    t =    75.13s     Check for interrupting elements affecting "gearshape" Button
+    t =    75.16s     Synthesize event
+    t =    75.45s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:05:16.240609+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] tab Settings
+    t =    77.90s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    78.15s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:17.618763+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul07-settings-privacy
+    t =    78.28s Waiting 4.0s for "Allow DeepSeek inference" Switch to exist
+    t =    79.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow DeepSeek inference" Switch`
+    t =    79.31s         Checking existence of `"Allow DeepSeek inference" Switch`
+    t =    79.34s Find the "Allow DeepSeek inference" Switch
+    t =    79.37s Tap "Allow DeepSeek inference" Switch
+    t =    79.37s     Wait for com.lingguang.cuepartner to idle
+    t =    79.37s     Find the "Allow DeepSeek inference" Switch
+    t =    79.39s     Check for interrupting elements affecting "Allow DeepSeek inference" Switch
+    t =    79.42s     Synthesize event
+    t =    79.71s     Wait for com.lingguang.cuepartner to idle
+    t =    80.72s Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    80.92s Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:20.374603+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul06-consent-sheet
+    t =    81.03s Checking existence of `"Not now" Button`
+    t =    81.06s Checking existence of `"Allow" Button`
+    t =    81.08s Waiting 6.0s for "Privacy" Button to exist
+    t =    82.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    82.10s         Checking existence of `"Privacy" Button`
+    t =    82.12s         Capturing element debug description
+    t =    83.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    83.15s         Checking existence of `"Privacy" Button`
+    t =    83.20s         Capturing element debug description
+    t =    84.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    84.12s         Checking existence of `"Privacy" Button`
+    t =    84.15s         Capturing element debug description
+    t =    85.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    85.17s         Checking existence of `"Privacy" Button`
+    t =    85.21s         Capturing element debug description
+    t =    86.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    86.14s         Checking existence of `"Privacy" Button`
+    t =    86.19s         Capturing element debug description
+    t =    87.08s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    87.08s         Checking existence of `"Privacy" Button`
+    t =    87.13s         Capturing element debug description
+    t =    87.13s     Checking existence of `"Privacy" Button`
+    t =    87.15s Collecting debug information to assist test failure triage
+    t =    87.16s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    87.20s Waiting 1.5s for "Privacy" Any to exist
+    t =    88.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Any`
+    t =    88.23s         Checking existence of `"Privacy" Any`
+    t =    88.28s         Capturing element debug description
+    t =    88.70s     Checking existence of `"Privacy" Any`
+    t =    88.75s Collecting debug information to assist test failure triage
+    t =    88.75s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:28.136472+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] MISSING legal Privacy
+    t =    88.80s Waiting 6.0s for "Terms" Button to exist
+    t =    89.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    89.83s         Checking existence of `"Terms" Button`
+    t =    89.86s         Capturing element debug description
+    t =    90.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    90.80s         Checking existence of `"Terms" Button`
+    t =    90.84s         Capturing element debug description
+    t =    91.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    91.87s         Checking existence of `"Terms" Button`
+    t =    91.90s         Capturing element debug description
+    t =    92.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    92.83s         Checking existence of `"Terms" Button`
+    t =    92.87s         Capturing element debug description
+    t =    93.88s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    93.88s         Checking existence of `"Terms" Button`
+    t =    93.92s         Capturing element debug description
+    t =    94.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    94.80s         Checking existence of `"Terms" Button`
+    t =    94.85s         Capturing element debug description
+    t =    94.85s     Checking existence of `"Terms" Button`
+    t =    94.87s Collecting debug information to assist test failure triage
+    t =    94.87s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =    94.92s Waiting 1.5s for "Terms" Any to exist
+    t =    95.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Any`
+    t =    95.95s         Checking existence of `"Terms" Any`
+    t =    95.99s         Capturing element debug description
+    t =    96.42s     Checking existence of `"Terms" Any`
+    t =    96.46s Collecting debug information to assist test failure triage
+    t =    96.46s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:35.843317+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] MISSING legal Terms
+    t =    96.50s Waiting 6.0s for "Support" Button to exist
+    t =    97.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    97.53s         Checking existence of `"Support" Button`
+    t =    97.57s         Capturing element debug description
+    t =    98.59s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    98.59s         Checking existence of `"Support" Button`
+    t =    98.63s         Capturing element debug description
+    t =    99.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =    99.56s         Checking existence of `"Support" Button`
+    t =    99.60s         Capturing element debug description
+    t =   100.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =   100.52s         Checking existence of `"Support" Button`
+    t =   100.55s         Capturing element debug description
+    t =   101.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =   101.57s         Checking existence of `"Support" Button`
+    t =   101.60s         Capturing element debug description
+    t =   102.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Button`
+    t =   102.50s         Checking existence of `"Support" Button`
+    t =   102.52s         Capturing element debug description
+    t =   102.53s     Checking existence of `"Support" Button`
+    t =   102.55s Collecting debug information to assist test failure triage
+    t =   102.55s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =   102.59s Waiting 1.5s for "Support" Any to exist
+    t =   103.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" Any`
+    t =   103.62s         Checking existence of `"Support" Any`
+    t =   103.66s         Capturing element debug description
+    t =   104.09s     Checking existence of `"Support" Any`
+    t =   104.14s Collecting debug information to assist test failure triage
+    t =   104.14s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:43.522745+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] MISSING legal Support
+    t =   104.18s Waiting 6.0s for "Provider policy" Button to exist
+    t =   105.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   105.20s         Checking existence of `"Provider policy" Button`
+    t =   105.24s         Capturing element debug description
+    t =   106.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   106.26s         Checking existence of `"Provider policy" Button`
+    t =   106.29s         Capturing element debug description
+    t =   107.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   107.23s         Checking existence of `"Provider policy" Button`
+    t =   107.27s         Capturing element debug description
+    t =   108.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   108.20s         Checking existence of `"Provider policy" Button`
+    t =   108.25s         Capturing element debug description
+    t =   109.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   109.23s         Checking existence of `"Provider policy" Button`
+    t =   109.28s         Capturing element debug description
+    t =   110.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Button`
+    t =   110.19s         Checking existence of `"Provider policy" Button`
+    t =   110.22s         Capturing element debug description
+    t =   110.22s     Checking existence of `"Provider policy" Button`
+    t =   110.25s Collecting debug information to assist test failure triage
+    t =   110.25s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+    t =   110.29s Waiting 1.5s for "Provider policy" Any to exist
+    t =   111.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" Any`
+    t =   111.31s         Checking existence of `"Provider policy" Any`
+    t =   111.34s         Capturing element debug description
+    t =   111.80s     Checking existence of `"Provider policy" Any`
+    t =   111.84s Collecting debug information to assist test failure triage
+    t =   111.84s     Requesting snapshot of accessibility hierarchy for app with pid 61861
+2026-10-14 12:05:51.231383+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] MISSING legal Provider policy
+    t =   111.89s Checking existence of `"Allow DeepSeek inference" Switch`
+    t =   111.91s Find the "Allow DeepSeek inference" Switch
+    t =   111.93s Terminate com.lingguang.cuepartner:61861
+    t =   114.02s Open com.lingguang.cuepartner
+    t =   114.02s     Launch com.lingguang.cuepartner
+    t =   114.26s         Setting up automation session
+    t =   115.23s         Wait for com.lingguang.cuepartner to idle
+    t =   118.87s Waiting 4.0s for "Scenes" Button to exist
+    t =   119.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Scenes" Button`
+    t =   119.89s         Checking existence of `"Scenes" Button`
+    t =   119.99s Tap "Scenes" Button
+    t =   119.99s     Wait for com.lingguang.cuepartner to idle
+    t =   120.00s     Find the "Scenes" Button
+    t =   120.02s     Check for interrupting elements affecting "Scenes" Button
+    t =   120.06s     Synthesize event
+    t =   120.36s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:06:00.506832+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] tab Scenes
+2026-10-14 12:06:01.634915+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul04-relaunch-scenes
+    t =   122.29s Requesting snapshot of accessibility hierarchy for app with pid 63221
+    t =   122.40s Requesting snapshot of accessibility hierarchy for app with pid 63221
+    t =   122.45s Waiting 4.0s for "Rehearse" Button to exist
+    t =   123.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Rehearse" Button`
+    t =   123.48s         Checking existence of `"Rehearse" Button`
+    t =   123.51s Tap "Rehearse" Button
+    t =   123.51s     Wait for com.lingguang.cuepartner to idle
+    t =   123.52s     Find the "Rehearse" Button
+    t =   123.53s     Check for interrupting elements affecting "Rehearse" Button
+    t =   123.56s     Synthesize event
+    t =   123.85s     Wait for com.lingguang.cuepartner to idle
+2026-10-14 12:06:04.707223+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] tab Rehearse
+2026-10-14 12:06:05.824991+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] shot ul04-relaunch-rehearse
+    t =   126.48s Get number of matches for: Descendants matching type NavigationBar
+    t =   126.51s Find the NavigationBar (Element at index 0)
+2026-10-14 12:06:05.871422+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] SUMMARY import=Scene partner=Partner cues=Cues voice=Voice note settings=Settings camera=true
+2026-10-14 12:06:05.871552+0800 CuePartnerUIDriverUITests-Runner[61851:5955347] journey attempt-1 complete
+    t =   126.53s Tear Down
+Test Case '-[CuePartnerUIDriverUITests.AcceptTests testAcceptanceJourney]' passed (126.940 seconds).
+Test Suite 'AcceptTests' passed at 2026-10-14 12:06:06.283.
+	 Executed 1 test, with 0 failures (0 unexpected) in 126.940 (126.942) seconds
+Test Suite 'CuePartnerUIDriverUITests.xctest' passed at 2026-10-14 12:06:06.284.
+	 Executed 1 test, with 0 failures (0 unexpected) in 126.940 (126.943) seconds
+Test Suite 'Selected tests' passed at 2026-10-14 12:06:06.285.
+	 Executed 1 test, with 0 failures (0 unexpected) in 126.940 (126.944) seconds
+2026-10-14 12:06:06.650 xcodebuild[61821:5954788] [MT] IDETestOperationsObserverDebug: 130.309 elapsed -- Testing started completed.
+2026-10-14 12:06:06.650 xcodebuild[61821:5954788] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-14 12:06:06.650 xcodebuild[61821:5954788] [MT] IDETestOperationsObserverDebug: 130.309 sec, +130.309 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/CuePartnerUIDriver-DD/Logs/Test/Test-Host-2026.10.14_12-03-52-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

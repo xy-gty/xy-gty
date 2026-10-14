@@ -1,0 +1,13 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "6aefa9f4-d605-4dfb-b808-d7eb96cd7050",
+  "spawn_kwargs": {
+    "subagent_type": "delivery-reporter-agent",
+    "model": "auto",
+    "description": "pkg_6aefa9f4d6054dfbb808d7eb96cd7050",
+    "prompt": "Dispatch 6aefa9f4-d605-4dfb-b808-d7eb96cd7050. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/delivery/attempt-1/codex.launch.md SHA-256 9cbc471aae7722814a83bec497f13aeb1fb5aa20652d42ef83c03985077ae11f. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-delivery-6aefa9f4d605",
+  "agent_name": "/root/pkg_6aefa9f4d6054dfbb808d7eb96cd7050"
+}

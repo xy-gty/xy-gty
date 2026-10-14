@@ -1,0 +1,11 @@
+Dispatch `78e0673c-1493-4cd0-bc46-930c77aa348d` complete.
+
+Launch file SHA-256 verified. Independent UltraLite acceptance for **CuePartner AI** stamped **ready** (all UL-01..UL-08).
+
+- Product commit `6ddd4fa98ed526cc1c73c57f6068fc2df9b3be5b`, candidate `6ddd4fa98ed5-a6ec645c0fcc`
+- Core journey: New scene → OCR Keep → Partner / Cues / Voice / Ambience; four privacy usage keys present
+- P1 `ai_key_unavailable` honest path; consent Allow + revoke; local Privacy/Terms/Support/Provider policy
+- UL-07: design reuse 8/8 + runtime Cursor vision 8/8 (structure/destination pass; design sample roles vs runtime PARTNER/ME noted as adaptation)
+- Finish receipt OK; simulator lease released
+
+MAP: `runs/kf-20261013T125947Z-a3157139/stages/ai_app_accept/attempt-1/MAP.md`

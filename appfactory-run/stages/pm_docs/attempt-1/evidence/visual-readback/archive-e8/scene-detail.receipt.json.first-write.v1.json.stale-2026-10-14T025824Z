@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "scene-detail.receipt.json",
+  "verdict_sha256": "8e82e52c8b89aae9ee803eab05831004e15d292918cacaafe3a5f99913b6d44c",
+  "written_at": "2026-10-14T02:58:24Z"
+}

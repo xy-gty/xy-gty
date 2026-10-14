@@ -1,0 +1,75 @@
+Optional(Attributes: Application, 0x11527fe80, pid: 61861, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x11527fe80, pid: 61861, label: 'CuePartner AI'
+    Window (Main), 0x115290000, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115290140, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115290280, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1152903c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x115290500, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x115290640, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115290780, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1152908c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x115290a00, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x115290b40, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x115290c80, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x115290dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x115290f00, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'New scene'
+                              Button, 0x115291040, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                              StaticText, 0x115291180, {{157.3, 73.7}, {87.3, 20.7}}, label: 'New scene'
+                            Other, 0x1152912c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115291400, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x115291540, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x115291680, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x1152917c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115291900, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x115291a40, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x115291b80, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x115291cc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x115291e00, {{0.0, 116.0}, {402.0, 158.0}}
+                                        StaticText, 0x115291f40, {{16.0, 132.0}, {169.7, 26.3}}, label: 'Name this scene'
+                                        TextField, 0x115292080, {{16.0, 174.3}, {370.0, 34.0}}, placeholderValue: 'e.g. Act II kitchen'
+                                        StaticText, 0x1152921c0, {{16.0, 224.3}, {360.0, 33.7}}, label: 'You will import your own script pages next. No copyrighted library is included.'
+                                      Other, 0x115292300, {{369.0, 116.0}, {30.0, 582.7}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115292440, {{396.0, 543.7}, {3.0, 152.0}}
+                                      Other, 0x115292580, {{369.0, 116.0}, {30.0, 582.7}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x1152926c0, {{396.0, 543.7}, {3.0, 152.0}}
+                                    Button, 0x115292800, {{16.0, 722.7}, {370.0, 52.3}}, label: 'Create scene'
+                            Other, 0x115292940, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115292a80, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115292bc0, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x115292d00, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115292e40, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115292f80, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x1152930c0, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x115293200, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x115293340, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Scenes', Selected
+                            Image, 0x115293480, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x1152935c0, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Rehearse'
+                            Image, 0x115293700, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x115293840, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x115293980, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115293ac0, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x115293c00, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115293d40, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115293e80, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1152e4000, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1152e4140, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x1152e4280, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1152e43c0, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1152e4500, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x1152e4640, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1152e4780, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1152e48c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1152e4a00, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1152e4b40, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1152e4c80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1152e4dc0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1152e4f00, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x11527fe80, pid: 61861, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x1152e5040, pid: 61861, label: 'CuePartner AI'
+  }
+)

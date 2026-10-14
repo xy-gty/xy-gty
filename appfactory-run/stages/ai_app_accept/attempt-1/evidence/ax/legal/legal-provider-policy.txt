@@ -1,0 +1,86 @@
+Optional(Attributes: Application, 0x117057ac0, pid: 64069, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x117057ac0, pid: 64069, label: 'CuePartner AI'
+    Window (Main), 0x117054b40, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1170543c0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1170548c0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x117055e00, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x117056300, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1170561c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117056440, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1170566c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x117054780, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x117057d40, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x117054dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x117054a00, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x117055040, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Provider policy'
+                              Button, 0x117054c80, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Settings'
+                              StaticText, 0x117057e80, {{16.0, 119.7}, {234.7, 40.7}}, label: 'Provider policy'
+                            Other, 0x1170557c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117057c00, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1177dc000, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1177dc140, {{0.0, 0.0}, {402.0, 874.0}}
+                                    WebView, 0x1177dc280, {{0.0, 168.0}, {402.0, 623.0}}
+                                      WebView, 0x1177dc3c0, {{0.0, 168.0}, {402.0, 623.0}}
+                                        WebView, 0x1177dc500, {{0.0, 168.0}, {402.0, 623.0}}
+                                          Other, 0x1177dc640, {{0.0, 0.0}, {402.0, 623.0}}
+                                            Other, 0x1177dc780, {{0.0, 0.0}, {402.0, 623.0}}
+                                              Other, 0x1177dc8c0, {{0.0, 168.0}, {402.0, 623.0}}
+                                                Other, 0x1177dca00, {{0.0, 168.0}, {402.0, 623.0}}, label: 'DeepSeek provider policy', Focused
+                                                  Other, 0x1177dcb40, {{8.0, 189.0}, {386.0, 39.0}}, label: 'DeepSeek provider policy', value: 1, Focused
+                                                    StaticText, 0x1177dcc80, {{8.0, 190.0}, {350.0, 37.0}}, label: 'DeepSeek provider policy', value: DeepSeek provider ..., Focused
+                                                  Other, 0x1177dcdc0, {{8.0, 248.0}, {386.0, 61.0}}, Focused
+                                                    StaticText, 0x1177dcf00, {{8.0, 248.0}, {376.0, 60.0}}, label: 'CuePartner AI uses DeepSeek for optional cloud inference when an API key is configured and you allow AI data sharing.', value: CuePartner AI uses..., Focused
+                                                  Other, 0x1177dd040, {{8.0, 324.0}, {386.0, 61.0}}, Focused
+                                                    StaticText, 0x1177dd180, {{8.0, 324.0}, {375.0, 60.0}}, label: 'External provider policy URL is not configured in this local_only delivery. No network request is sent before you tap Allow on the consent sheet.', value: External provider ..., Focused
+                                                  Other, 0x1177dd2c0, {{8.0, 400.0}, {386.0, 41.0}}, Focused
+                                                    StaticText, 0x1177dd400, {{8.0, 400.0}, {328.0, 40.0}}, label: 'Revoking consent in Settings stops outbound sends immediately, including in-flight requests.', value: Revoking consent i..., Focused
+                                                  Other, 0x1177dd540, {{8.0, 456.0}, {386.0, 21.0}}, Focused
+                                                    StaticText, 0x1177dd680, {{8.0, 456.0}, {380.0, 20.0}}, label: 'Practice drafts only — not professional acting certification.', value: Practice drafts on..., Focused
+                                        Other, 0x1177dd7c0, {{369.0, 168.0}, {30.0, 623.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1177dd900, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x1177dda40, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1177ddb80, {{392.0, 785.0}, {7.0, 3.0}}
+                                        Other, 0x1177ddcc0, {{369.0, 168.0}, {30.0, 623.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                          Other, 0x1177dde00, {{396.0, 781.0}, {3.0, 7.0}}
+                                        Other, 0x1177ddf40, {{0.0, 758.0}, {402.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                          Other, 0x1177de080, {{392.0, 785.0}, {7.0, 3.0}}
+                            Other, 0x1177de1c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1177de300, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1177de440, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1177de580, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x1177de6c0, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x1177de800, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x1177de940, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x1177dea80, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x1177debc0, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Scenes'
+                            Image, 0x1177ded00, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x1177dee40, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Rehearse'
+                            Image, 0x1177def80, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x1177df0c0, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings', Selected
+                            Image, 0x1177df200, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1177df340, {{240.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x1177df480, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1177df5c0, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1177df700, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1177df840, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1177df980, {{240.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x1177dfac0, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x1177dfc00, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1177dfd40, {{240.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x1177dfe80, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x1177d4000, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x1177d4140, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1177d4280, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1177d43c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1177d4500, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1177d4640, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1177d4780, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x117057ac0, pid: 64069, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x1177d48c0, pid: 64069, label: 'CuePartner AI'
+  }
+)

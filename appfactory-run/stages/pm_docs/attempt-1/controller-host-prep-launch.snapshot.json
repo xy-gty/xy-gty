@@ -1,0 +1,21 @@
+{
+  "schema": "appfactory.cursor-task-host.v1",
+  "controller_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+  "session_id": "grokbot-packaging-kf-20261013T125947Z-a3157139",
+  "session_kind": "interactive",
+  "observed_at": 1791948678.674429,
+  "capacity_total": 4,
+  "capabilities": [
+    "Task"
+  ],
+  "role_binding_mode": "dispatch_prompt",
+  "loaded_roles": {},
+  "controllers": [],
+  "agents": [
+    {
+      "agent_name": "/root",
+      "agent_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+      "agent_status": "running"
+    }
+  ]
+}

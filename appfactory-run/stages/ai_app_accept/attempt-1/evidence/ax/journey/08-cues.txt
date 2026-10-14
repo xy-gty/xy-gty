@@ -1,0 +1,70 @@
+Optional(Attributes: Application, 0x1154335c0, pid: 61861, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x1154335c0, pid: 61861, label: 'CuePartner AI'
+    Window (Main), 0x115433700, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115433840, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115433980, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x115433ac0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x115433c00, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x115433d40, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115433e80, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x115a64000, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x115a64140, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x115a64280, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x115a643c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x115a64500, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x115a64640, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Cues'
+                              Button, 0x115a64780, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Scene'
+                              StaticText, 0x115a648c0, {{16.0, 119.7}, {82.0, 40.7}}, label: 'Cues'
+                            Other, 0x115a64a00, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115a64b40, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x115a64c80, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x115a64dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                    StaticText, 0x115a64f00, {{130.0, 184.0}, {142.0, 26.3}}, label: 'Cue rehearsal'
+                                    StaticText, 0x115a65040, {{44.0, 236.3}, {57.7, 14.3}}, label: 'PARTNER'
+                                    StaticText, 0x115a65180, {{44.0, 254.7}, {264.3, 99.0}}, label: 'Did you lock the stage door? ME Not yet - hold for the cue. PARTNER Then take a breath. We go on my line.'
+                                    Button, 0x115a652c0, {{96.3, 379.7}, {55.7, 34.3}}, label: 'Play'
+                                    Button, 0x115a65400, {{164.0, 379.7}, {70.3, 34.3}}, label: 'Pause'
+                                    Button, 0x115a65540, {{246.3, 379.7}, {59.7, 34.3}}, label: 'Next'
+                            Other, 0x115a65680, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115a657c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115a65900, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x115a65a40, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115a65b80, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115a65cc0, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x115a65e00, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x115a65f40, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x115a66080, {{68.0, 795.0}, {94.0, 54.0}}, identifier: 'square.stack.3d.up', label: 'Scenes'
+                            Image, 0x115a661c0, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x115a66300, {{154.0, 795.0}, {94.0, 54.0}}, identifier: 'theatermasks', label: 'Rehearse', Selected
+                            Image, 0x115a66440, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x115a66580, {{240.0, 795.0}, {94.0, 54.0}}, identifier: 'gearshape', label: 'Settings'
+                            Image, 0x115a666c0, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115a66800, {{154.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x115a66940, {{154.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115a66a80, {{154.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115a66bc0, {{154.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115a66d00, {{154.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115a66e40, {{154.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x115a66f80, {{154.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115a670c0, {{154.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115a67200, {{154.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x115a67340, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x115a67480, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x115a675c0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115a67700, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115a67840, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x115a67980, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115a67ac0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115a67c00, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x115a67d40, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115a67e80, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x107fec000, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x1154335c0, pid: 61861, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x107fec140, pid: 61861, label: 'CuePartner AI'
+  }
+)

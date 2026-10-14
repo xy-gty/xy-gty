@@ -1,0 +1,28 @@
+{
+  "schema": "appfactory.cursor-task-host.v1",
+  "controller_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+  "session_id": "grokbot-packaging-kf-20261013T125947Z-a3157139",
+  "session_kind": "interactive",
+  "observed_at": 1791948650.290041,
+  "capacity_total": 4,
+  "capabilities": [
+    "Task"
+  ],
+  "role_binding_mode": "dispatch_prompt",
+  "loaded_roles": {},
+  "controllers": [],
+  "agents": [
+    {
+      "agent_name": "/root",
+      "agent_id": "3a961bf9-53e5-418f-8a9a-c18d7be3244e",
+      "agent_status": "running"
+    },
+    {
+      "agent_name": "/root/pkg_970d95966bef41a7be474153ae249ff6_e9",
+      "agent_id": "cursor-cli-pm-970d95966bef-e9",
+      "agent_status": {
+        "completed": "Dispatch `970d9596-6bef-41a7-be47-4153ae249ff6` complete — **pm_docs ready**.\n\nLaunch file hash verified. CuePartner AI design was already present; contaminated SnagCue `local_seed` frames (`home-empty`, `settings-privacy`) plus weak OCR/scene frames were replaced with CuePartner **r2** (GenerateImage → GrokBot seed). Eight frames read back **pass**; visual manifest frozen.\n\n| Item | Value |\n|------|--------|\n| Status | `ready` |\n| technical_contract_sha256 | `9cb9f54b37cdeb602be56fafdcba1dde4e963ad5cc2dc289efcb5abd4643aa2f` |\n| pm_visual_manifest_sha256 | `5f4a9df742b0a3c3d0282a524b5bade3ff4c3e8a5e55389e4b5d6fe738785875` |\n| finish | ok (`map_sha256` `664d7d2258b7a9ac…`) |\n\nController can adopt / advance; IAP unlock stays a documented free-app gap.\n"
+      }
+    }
+  ]
+}

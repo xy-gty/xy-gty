@@ -1,0 +1,82 @@
+Optional(Attributes: Application, 0x1152926c0, pid: 63221, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x1152926c0, pid: 63221, label: 'CuePartner AI'
+    Window (Main), 0x1152903c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x115290a00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x115290280, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x115290000, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x115290140, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x115290640, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115290780, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x115290dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1152908c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x115291540, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x115292a80, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x115292940, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x115291f40, {{0.0, 62.0}, {402.0, 54.0}}, identifier: '_TtGC7SwiftUI32NavigationStackHosting'
+                              Other, 0x115291e00, {{273.7, 66.0}, {108.3, 36.0}}, label: 'New scene'
+                                Other, 0x115290500, {{273.7, 66.0}, {108.3, 36.0}}
+                                  Button, 0x115290b40, {{273.7, 66.0}, {108.3, 36.0}}, label: 'New scene'
+                            Other, 0x115292bc0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115292800, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x115291180, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x115293700, {{0.0, 0.0}, {402.0, 874.0}}
+                                    StaticText, 0x107fee6c0, {{16.0, 132.0}, {221.3, 40.7}}, label: 'CuePartner AI'
+                                    StaticText, 0x107fee800, {{16.0, 176.7}, {134.3, 20.3}}, label: 'Your scenes shelf'
+                                    CollectionView, 0x107fee940, {{0.0, 213.0}, {402.0, 661.0}}
+                                      Other, 0x107feea80, {{-16.0, -1109.0}, {434.0, 2767.7}}
+                                      Other, 0x107feebc0, {{0.0, 213.0}, {402.0, 661.0}}
+                                        Other, 0x107feed00, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x107feee40, {{0.0, 213.0}, {402.0, 661.0}}
+                                      Cell, 0x11527e800, {{16.0, 248.0}, {370.0, 68.7}}
+                                        Other, 0x11527f840, {{16.0, 248.0}, {370.0, 68.7}}
+                                          Other, 0x115f4f980, {{16.0, 248.0}, {370.0, 68.7}}
+                                        Other, 0x115f4f480, {{16.0, 248.0}, {370.0, 68.7}}
+                                          Other, 0x115f4f5c0, {{16.0, 248.0}, {370.0, 68.7}}
+                                            Other, 0x115f4f700, {{16.0, 248.0}, {370.0, 68.7}}
+                                              Button, 0x115f4d040, {{16.0, 248.0}, {370.0, 68.7}}, label: 'Act II kitchen, PARTNER · Off'
+                                                StaticText, 0x115f4ea80, {{32.0, 263.0}, {103.3, 20.3}}, label: 'Act II kitchen'
+                                                StaticText, 0x115f4ebc0, {{32.0, 287.3}, {85.0, 14.3}}, label: 'PARTNER · Off'
+                                      Other, 0x115f4ed00, {{369.0, 241.0}, {30.0, 550.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115f4f200, {{396.0, 781.0}, {3.0, 7.0}}
+                                      Other, 0x115f4f340, {{369.0, 241.0}, {30.0, 550.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115f4ee40, {{396.0, 781.0}, {3.0, 7.0}}
+                            Other, 0x115f4ef80, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115f4f0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115f4d180, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x115f4d2c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115f4d400, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115f4df40, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x115f4e080, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x115f4e300, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x115f4e940, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Scenes', Selected
+                            Image, 0x115f4e440, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x115f4e800, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Rehearse'
+                            Image, 0x115f4e580, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x115f4e6c0, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x115f4e1c0, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115f4d680, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x115f4dcc0, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115f4de00, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115f4da40, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115f4db80, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115f4d7c0, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x115f4d900, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115f4d540, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115f4cdc0, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x115f4cf00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x115f4cb40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x115f4cc80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115f4c8c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115f4ca00, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x115f4c780, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x115f4c280, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x115f4c3c0, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x1152926c0, pid: 63221, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x115f4f840, pid: 63221, label: 'CuePartner AI'
+  }
+)

@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-68d0a98721a6",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 661892,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/cue-rehearsal-r1.png",
+  "output_sha256": "a9af5aa5d66b139486876b6cb531b2fe195240b3c39643d65674a47e2c371124",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/cue-rehearsal-r1.txt",
+  "prompt_sha256": "284e8885a85abbf6cc009d1abdd80a22e0b4baaf0484e4826ba867a6d3a06742",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "a9af5aa5d66b139486876b6cb531b2fe195240b3c39643d65674a47e2c371124",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-14T02:39:52Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

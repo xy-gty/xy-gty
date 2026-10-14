@@ -1,0 +1,1 @@
+Visible: Settings title, Revoke AI consent, Privacy/Terms/Support rows, Camera/Photos/Microphone/Speech permission explainers, Provider policy DeepSeek footer, no ATT toggle, no paywall/coins, not LineLearner branded.

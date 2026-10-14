@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_lost_session.v1",
+  "task": {
+    "dispatch_id": "970d9596-6bef-41a7-be47-4153ae249ff6",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-pm-970d95966bef",
+    "agent_name": "/root/pkg_970d95966bef41a7be474153ae249ff6",
+    "execution_status": "running"
+  },
+  "reason": "codex_native_session_unrecoverable: cursor agent connection lost (agentn.global.api5.cursor.sh) after 9m with 0% CPU and empty stdout",
+  "quarantined_at": "2026-10-13T13:10:01Z"
+}

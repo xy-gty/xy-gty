@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "ocr-review.receipt.json",
+  "verdict_sha256": "f85ca27146d260cc8fbd8b4e3506e6c3cf34dee374db4967c303d599649fe46a",
+  "written_at": "2026-10-14T03:12:16Z"
+}

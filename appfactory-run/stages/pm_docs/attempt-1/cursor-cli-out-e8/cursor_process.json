@@ -1,0 +1,12 @@
+{
+  "exit_code": 1,
+  "ok": false,
+  "usage_limit": false,
+  "keys_exhausted": false,
+  "key_slot": null,
+  "auth": "local_login",
+  "blocker": "cursor_agent_exit:1",
+  "blocker_message": "Cursor agent 进程退出码 1。",
+  "stdout": "",
+  "stderr": "Connection lost, reconnecting to https://agentn.global.api5.cursor.sh (attempt 1)...\nRetry attempt 1...\nConnection lost, reconnecting to https://agentn.global.api5.cursor.sh (attempt 2)...\nRetry attempt 2...\nRetriableError: Connection stalled repeatedly\n"
+}

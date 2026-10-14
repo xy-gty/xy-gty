@@ -1,0 +1,8 @@
+{
+  "schema": "appfactory.codex_adopt_skip.v1",
+  "dispatch_id": "970d9596-6bef-41a7-be47-4153ae249ff6",
+  "execution_seq": 8,
+  "status": "skipped",
+  "terminal_status": "errored",
+  "reason": "unadopted_errored_execution"
+}

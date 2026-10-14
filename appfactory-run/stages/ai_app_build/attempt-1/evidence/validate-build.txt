@@ -1,0 +1,15 @@
+{
+  "bundle_identity_scan": "ok",
+  "config_mode": "local_only",
+  "live_agent_scan_mode": "local_only_reverse",
+  "live_agent_source_scan": "ok",
+  "modality_source_scan": "ok",
+  "ok": true,
+  "operator_model_id": "",
+  "product_completeness_scan": "ok",
+  "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/MAP.md",
+  "review_confirm_words": "Accept,Confirm,Save,Use,Keep",
+  "review_control_source": "contract_or_design",
+  "review_reject_words": "Reject,Discard",
+  "undeclared_cloud_scan": "ok"
+}

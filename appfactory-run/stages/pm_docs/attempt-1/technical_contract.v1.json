@@ -1,0 +1,153 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261013T125947Z-a3157139",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "CuePartner AI",
+    "development_bundle_id": "com.lingguang.cuepartner",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "script_photo_import_camera_and_library_ocr_review",
+    "local_scene_script_cue_voicenote_persistence",
+    "ai_scene_partner_chat_with_role_switch_and_consent_gate",
+    "tts_cue_lines_with_timing",
+    "optional_local_stage_ambience_beds",
+    "microphone_voice_notes_and_speech_to_text_into_partner",
+    "local_legal_pages_user_owned_scripts_only",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "Scene",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ScriptPage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CueLine",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "PartnerTurn",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "RehearsalMessage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "VoiceNote",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AmbiencePreset",
+      "persistence": "local_bundle_catalog"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "OCRReviewBar",
+      "confirm": "Keep",
+      "reject": "Discard",
+      "edit": "Edit text"
+    },
+    {
+      "name": "TurnReview",
+      "confirm": "Keep",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "cuepartner.consent.v1",
+      "fields": [
+        "script_page_ocr_text",
+        "cue_lines",
+        "partner_role",
+        "user_line_text",
+        "voice_transcript",
+        "chat_text"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechLineCapture"
+    },
+    {
+      "name": "CueTTSPlayer"
+    },
+    {
+      "name": "AmbiencePlayer"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "ScenesHome",
+    "NewScene",
+    "ImportScript",
+    "OCRReview",
+    "SceneDetail",
+    "PartnerChat",
+    "TurnReview",
+    "CueRehearsal",
+    "VoiceNoteCapture",
+    "AmbiencePicker",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Keep",
+    "reject": "Discard",
+    "edit": "Edit text"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "privacy_usage_descriptions": {
+    "NSCameraUsageDescription": "Capture handwritten or printed script draft pages for OCR",
+    "NSPhotoLibraryUsageDescription": "Import script photos so CuePartner can OCR your own pages",
+    "NSMicrophoneUsageDescription": "Record rehearsal or line voice notes for practice",
+    "NSSpeechRecognitionUsageDescription": "Turn spoken lines into text for the AI scene partner"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "e787660c1b4cad812afeef422a582f36cb803841f8208b1af3ce96b7b12c79ee"
+    }
+  ],
+  "goal_sha256": "44cea7f2ed3986719fa79a2c1355f98f510f108958ebfc4a3f07b50124602c2d",
+  "frozen_at": "2026-10-13T13:06:21Z"
+}

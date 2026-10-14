@@ -1,0 +1,9 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job for CuePartner AI (iOS AI rehearsal partner for actors). Warm rehearsal-hall look: chalk paper surface #F4F0E6, stage-ink text #1B2430, amber cue accent #D97706, curtain-blue secondary #334155, soft-wood atmosphere #C4A484. Large legible native iOS UI. English UI copy.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Frame: settings-privacy — Settings privacy and consent
+Nav title Settings. Groups: AI consent status Allowed with button "Revoke AI consent"; Legal rows Privacy, Terms, Support; Permissions explainer rows Camera, Photos, Microphone, Speech. Footer "Provider policy — DeepSeek". No ATT tracking toggle.
+No LineLearner branding. No paywall, no coin UI, no ATT prompt. Photoreal phone chrome only as thin bezel; UI must fill the tall column. Do not letterbox inside the phone screen.
+
+MUST show CuePartner AI product only. Forbidden brands: SnagCue, LineLearner, BendCoach. Character labels ALEX and JORDAN must be fully visible where applicable.

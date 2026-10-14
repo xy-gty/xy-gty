@@ -1,0 +1,25 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "导入脚本页 → OCR 人审 → 对戏（角色切换）→ TTS 提词+时机 →（可选）音床 / Voice note → 确认写入历史"
+  ],
+  "differentiation": {},
+  "diversity_key": "cuepartner ai 需要私下对词 背词 排练的演员与戏剧学生 希望手机端有 对手演员 与提词器 而不是通用聊天壳 新建 scene 用相机拍或相册导入脚本页 ocr 后审阅保留 导入自有脚本照片做 ocr 与 ai 对戏伙伴按角色切换排练 用带节拍的 tts 提词 可选舞台音床 本地保存场景与台词 不附带版权剧本",
+  "feature_blocks": [
+    "入口： ScenesHome → New Scene → Import Script（Camera | Photo Library）",
+    "操作： 拍摄或选择脚本页 → 本地 OCR → OCRReview",
+    "结果： ScriptPage 草稿（图 + 文本）",
+    "持久： Keep 后写入 AtomicCodableStore；Discard 不写入；Edit text 保存编辑后文本",
+    "空/错/取消： 无页可导时空态；OCR 失败横幅 Retry；取消返回 Import",
+    "重启： 已 Keep 的 ScriptPage 仍在 SceneDetail"
+  ],
+  "product_fingerprint": "f040fab459125d95486b23756fcc2c2af15c134c0db4e33c7d74ba6c5d4b589e",
+  "product_name": "CuePartner AI",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "需要私下对词、背词、排练的演员与戏剧学生；希望手机端有「对手演员」与提词器，而不是通用聊天壳。",
+  "user_problem": "新建 Scene，用相机拍或相册导入脚本页，OCR 后审阅保留。",
+  "value_proposition": "导入自有脚本照片做 OCR，与 AI 对戏伙伴按角色切换排练，用带节拍的 TTS 提词，可选舞台音床——本地保存场景与台词，不附带版权剧本。"
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "parent_dispatch_id": "41eafa77-4725-4280-85b3-344f3798cf63",
+  "parent_execution_seq": 1,
+  "child_slots": 0,
+  "note": "Dispatch reserved 1 slot (parent only); no ui_business/ai_privacy children spawned.",
+  "children": []
+}

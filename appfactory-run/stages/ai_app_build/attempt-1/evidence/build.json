@@ -1,0 +1,72 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "run_id": "kf-20261013T125947Z-a3157139",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "41eafa77-4725-4280-85b3-344f3798cf63",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/product",
+  "source_commit": "6ddd4fa98ed526cc1c73c57f6068fc2df9b3be5b",
+  "branch": "main",
+  "bundle_id": "com.lingguang.cuepartner",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/CuePartner.app",
+  "app_content_sha256": "a6ec645c0fcced4ec6b7fe44792082244f9d28a527af109759aa6f51d7ee1cd2",
+  "implemented_scope": [
+    "Scenes home empty + New scene",
+    "Script import via camera/photo library/simulator still + on-device OCR review Keep/Discard/Edit",
+    "Scene detail with CueLines, Partner chat role switch, Turn review Keep/Discard",
+    "Cue TTS with pause_ms, ambience beds, voice note journey, Settings consent revoke + local legal",
+    "AppRuntimeCore AtomicCodableStore/AIConsentGate/PhotoImportSession/TypedNavigationStore/RuntimeForm/KeychainCredentialStore wiring"
+  ],
+  "unverified_items": [
+    "Independent eight-domain Acceptance not completed",
+    "Live DeepSeek partner replies require AI key (local_only gap ai_key_unavailable)",
+    "Per-frame visual judgment deferred to Acceptance",
+    "Device camera/long microphone recording marked \u771f\u673a\u5f85\u6d4b; Simulator journey covered"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "CuePartner.xcodeproj",
+      "-scheme",
+      "CuePartner",
+      "-destination",
+      "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/DerivedData",
+      "-configuration",
+      "Debug",
+      "CODE_SIGNING_ALLOWED=YES",
+      "CODE_SIGN_IDENTITY=-",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "bebc4b8e1ae8e3d14d269197872ad50b86ba0a0585de2618356b2d4eeda18cb9"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "CuePartner.xcodeproj",
+        "-scheme",
+        "CuePartner",
+        "-destination",
+        "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/DerivedData",
+        "-configuration",
+        "Debug",
+        "test",
+        "-only-testing:CuePartnerDomainTests"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "e98a87b179e5eb7043e32b5f986cc35dbc820c49298360088a24154755254bae"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+foreground ok
+shot ul01-home-empty
+shot ul07-home-empty
+forceTap cta-new-scene
+forceTap Create scene
+shot ul07-import-script
+shot ul02-import
+import title=Import script
+shot ul02-camera-entry
+cameraEntry=true
+forceTap Simulator test still
+shot ul07-ocr-review
+shot ul02-ocr-review
+ocr title=OCR review
+forceTap Keep
+shot ul07-scene-detail
+shot ul04-after-keep-ocr
+tab Rehearse
+shot ul02-rehearse-hub
+forceTap Partner chat
+partner title=Partner
+shot ul07-partner-chat
+shot ul02-speech-entry
+speechEntry=true
+forceTap Send
+shot ul03-after-send
+forceTap Send
+shot ul05-second-send
+forceTap Cue rehearsal
+cues title=Cues
+shot ul07-cue-rehearsal
+forceTap Play
+shot ul02-cue-play
+forceTap Voice note
+shot ul07-voice-note
+shot ul02-mic-entry
+micEntry=true
+forceTap Ambience
+shot ul02-ambience
+forceTap Use bed
+tab Settings
+shot ul07-settings-privacy
+shot ul06-consent-sheet
+MISSING legal Privacy
+MISSING legal Terms
+MISSING legal Support
+MISSING legal Provider policy
+tab Scenes
+shot ul04-relaunch-scenes
+tab Rehearse
+shot ul04-relaunch-rehearse
+SUMMARY import=Scene partner=Partner cues=Cues voice=Voice note settings=Settings camera=true
+journey attempt-1 complete

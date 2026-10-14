@@ -1,0 +1,27 @@
+tapped consent switch
+shot ul06-consent-sheet
+MISSING Not now
+tapped consent switch
+opened DeepSeek privacy policy
+shot ul06-provider-policy
+opened CuePartner Privacy
+shot ul06-privacy-from-consent
+forceTap Allow
+shot ul06-consent-allow
+shot ul07-settings-scrolled
+opened Privacy
+shot ul06-privacy
+legal title=Privacy page=Privacy
+opened Terms
+shot ul06-terms
+legal title=Terms page=Terms
+opened Support
+shot ul06-support
+legal title=Support page=Support
+opened Provider policy
+shot ul06-provider-policy
+legal title=Provider policy page=Provider policy
+tapped consent switch
+shot ul06-after-revoke
+revoked
+legal-probe complete

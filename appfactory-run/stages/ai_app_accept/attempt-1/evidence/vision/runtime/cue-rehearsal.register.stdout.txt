@@ -1,0 +1,14 @@
+usage: ultra_lite_visual_readback.py [-h] [--run RUN] [--frame-id FRAME_ID]
+                                     [--criterion-file CRITERION_FILE]
+                                     [--question-file QUESTION_FILE]
+                                     [--side {design,runtime}]
+                                     [--stage {pm_docs,ai_app_accept}]
+                                     [--attempt ATTEMPT]
+                                     [--image-ref IMAGE_REF]
+                                     [--receipt-ref RECEIPT_REF]
+                                     [--product-commit PRODUCT_COMMIT]
+                                     [--record-reuse] [--raw RAW]
+                                     [--image IMAGE] [--check-id CHECK_ID]
+                                     [--raw-ref RAW_REF] [--output OUTPUT]
+                                     {question,lookup,register-new,receipt-from-raw}
+ultra_lite_visual_readback.py: error: --stage --attempt --image-ref --receipt-ref required

@@ -1,0 +1,13 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "970d9596-6bef-41a7-be47-4153ae249ff6",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_970d95966bef41a7be474153ae249ff6_e7",
+    "prompt": "Dispatch 970d9596-6bef-41a7-be47-4153ae249ff6. Read /Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/codex.launch.e7.md SHA-256 3592cfb05b63ad51beb047b52b297138e6eebaa588c8e2fe9bc32bd165683330. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-pm-970d95966bef-e7",
+  "agent_name": "/root/pkg_970d95966bef41a7be474153ae249ff6_e7",
+  "execution_seq": 7
+}

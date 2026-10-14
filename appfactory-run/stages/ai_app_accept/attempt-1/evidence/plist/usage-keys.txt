@@ -1,0 +1,7 @@
+Capture handwritten or printed script draft pages for OCR
+NSPhotoLibraryUsageDescription=Import script photos so CuePartner can OCR your own pages
+NSMicrophoneUsageDescription=Record rehearsal or line voice notes for practice
+NSSpeechRecognitionUsageDescription=Turn spoken lines into text for the AI scene partner
+CFBundleIdentifier=com.lingguang.cuepartner
+CFBundleDisplayName=CuePartner AI
+CFBundleName=CuePartner

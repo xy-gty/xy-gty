@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/workspace/Sources/CuePartnerDomain/Entities.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Entities.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Entities.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Entities~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Entities.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Entities.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/workspace/Sources/CuePartnerDomain/Navigation.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Navigation.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Navigation.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Navigation~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Navigation.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Navigation.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/workspace/Sources/CuePartnerDomain/ReviewControls.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/ReviewControls.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/ReviewControls.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/ReviewControls~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/ReviewControls.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/ReviewControls.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/workspace/Sources/CuePartnerDomain/Stores.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Stores.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Stores.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Stores~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Stores.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/CuePartnerDomain.build/Stores.dia"
+  }
+}

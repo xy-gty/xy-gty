@@ -1,0 +1,16 @@
+{
+  "schema": "appfactory.ultra_lite_local_config.v1",
+  "status": "planned",
+  "code": "feishu_row_not_yet_created",
+  "blocker": false,
+  "operation": "create_identity_only",
+  "detail": "feishu_client_unavailable",
+  "identity_fields": [
+    "Run ID",
+    "应用名",
+    "正式包名",
+    "Bundle ID"
+  ],
+  "bundle_source": "technical_contract"
+}
+exit=0

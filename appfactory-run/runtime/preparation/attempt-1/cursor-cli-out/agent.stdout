@@ -1,0 +1,6 @@
+Dispatch `f6ceb2d1-7ab9-407b-b8f3-aadfb0e1e74b` finished **ready**.
+
+- Launch file hash verified (`8f75667e…e19c`)
+- CuePartner domain scaffolding + AppRuntimeCore installed under private `workspace/`
+- preparation_cache **hit** (shared baseline not rebuilt); domain compile scratch outside inventory
+- `PREPARATION.md` Status: ready; finish receipt written for controller seal

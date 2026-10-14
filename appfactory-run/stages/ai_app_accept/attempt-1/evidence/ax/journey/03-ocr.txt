@@ -1,0 +1,83 @@
+Optional(Attributes: Application, 0x1152e5cc0, pid: 61861, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x1152e5cc0, pid: 61861, label: 'CuePartner AI'
+    Window (Main), 0x1152e5e00, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1152e5f40, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1152e6080, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1152e61c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1152e6300, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1152e6a80, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1152e6440, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1152e7d40, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1152e66c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1152e6800, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1152e57c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1152e6580, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1152e6940, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'OCR review'
+                              Button, 0x1152e5a40, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                              StaticText, 0x1152e7e80, {{154.7, 73.7}, {92.3, 20.7}}, label: 'OCR review'
+                            Other, 0x1152e6bc0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1152e6d00, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1152e6e40, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1152e6f80, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x1152e70c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1152e7200, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x1152e7340, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x1152e7480, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x1152e75c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1152e7700, {{0.0, 116.0}, {402.0, 412.0}}
+                                        StaticText, 0x1152e7840, {{16.0, 132.0}, {119.3, 26.3}}, label: 'OCR review'
+                                        StaticText, 0x1152e7980, {{16.0, 170.3}, {356.3, 33.7}}, label: 'Edit the recognized text, then Keep to save the ScriptPage and seed CueLines.'
+                                        TextView, 0x1152e7ac0, {{24.0, 224.0}, {354.0, 280.0}}, value: PARTNER
+Did you lo...
+                                          Other, 0x1152e7c00, {{345.0, 224.0}, {30.0, 280.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                            Other, 0x1152e5540, {{372.0, 358.0}, {3.0, 143.0}}
+                                      Other, 0x1152e5680, {{369.0, 116.0}, {30.0, 600.7}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x1152e5900, {{396.0, 307.7}, {3.0, 406.0}}
+                                      Other, 0x1152e5b80, {{369.0, 116.0}, {30.0, 600.7}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x115438000, {{396.0, 307.7}, {3.0, 406.0}}
+                                    Button, 0x115438140, {{73.3, 740.7}, {82.0, 34.3}}, label: 'Discard'
+                                    Button, 0x115438280, {{167.3, 740.7}, {86.7, 34.3}}, label: 'Edit text'
+                                    Button, 0x1154383c0, {{266.0, 740.7}, {62.7, 34.3}}, label: 'Keep'
+                            Other, 0x115438500, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x115438640, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x115438780, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1154388c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x115438a00, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x115438b40, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x115438c80, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x115438dc0, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x115438f00, {{68.0, 795.0}, {94.0, 54.0}}, identifier: 'square.stack.3d.up', label: 'Scenes', Selected
+                            Image, 0x115439040, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x115439180, {{154.0, 795.0}, {94.0, 54.0}}, identifier: 'theatermasks', label: 'Rehearse'
+                            Image, 0x1154392c0, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x115439400, {{240.0, 795.0}, {94.0, 54.0}}, identifier: 'gearshape', label: 'Settings'
+                            Image, 0x115439540, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x115439680, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x1154397c0, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115439900, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x115439a40, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x115439b80, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115439cc0, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x115439e00, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x115439f40, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x11543a080, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x11543a1c0, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x11543a300, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x11543a440, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11543a580, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11543a6c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x11543a800, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11543a940, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11543aa80, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x11543abc0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x11543ad00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x11543ae40, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x1152e5cc0, pid: 61861, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x11543af80, pid: 61861, label: 'CuePartner AI'
+  }
+)

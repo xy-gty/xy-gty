@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-13T12:59:47Z",
+  "model_mode": "dev",
+  "objective": "# External idea (operator-selected)\n\n**Mode:** pure Cursor Ultra-lite (no Codex / hybrid)\n**App working title:** CuePartner AI\n**Positioning:** paid AI rehearsal partner for actors (line partner / cue coach)\n**Reference:** LineLearner / com.alldayapps.linelearner — category reference only; do NOT copy brand, UI, assets, or claim licensed scripts\n\n## Idea\nBuild a paid AI rehearsal partner for actors: import script photos for OCR, chat as scene partner with role switching, TTS cue lines with timing, optional stage ambience beds—unlock unlimited scenes and character voices.\n\n## Hard privacy capabilities (controller 2026-10-13 — MUST land in first build Info.plist + runtime-testable entries)\nThese EXTEND the core sell-path; they must NOT replace: script import/OCR → scene partner chat (role switch) → TTS cue lines with timing → optional ambience → unlock.\nSemantic glue required:\n- Camera: capture handwritten/print script draft pages\n- Photo library: import script photos for OCR\n- Microphone: record rehearsal / line Voice notes\n- Speech recognition: spoken lines → text fed into the AI scene partner\nSimulator: entry + journey testable; device camera/record may mark 真机待测\n\nInfo.plist must include app-specific copy for:\nNSCameraUsageDescription, NSPhotoLibraryUsageDescription, NSMicrophoneUsageDescription, NSSpeechRecognitionUsageDescription\n\n## Constraints\n- Do NOT ship copyrighted scripts; users bring their own text/photos\n- Do NOT copy LineLearner brand or UI\n- Core features should work offline where practical\n- Product images via factory build-chain self-generation only\n- Prefer product delivery to git@github.com:xy-gty/xy-gty.git\n- Core sell-path must be runtime-tested; simulator-impossible items mark as 真机待测\n- Only core defects block delivery; non-core → known_issues; max 2 repair rounds\n- Feishu registration and delivery-card send deferred (controller)\n\n## Operator channel\n- Slot A continuous packaging\n- production_runtime: cursor (pure Cursor Ultra-lite, model auto)\n- worktree: /Users/a2026/work/factory-prod-1",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261013T125947Z-a3157139",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

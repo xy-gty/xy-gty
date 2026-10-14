@@ -1,0 +1,215 @@
+Optional(Attributes: Application, 0x117057700, pid: 64069, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x117057700, pid: 64069, label: 'CuePartner AI'
+    Window (Main), 0x117057840, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x117057980, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117057ac0, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x117057c00, {{-402.0, -874.0}, {1206.0, 2622.0}}
+          Other, 0x117057d40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x117057e80, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1177f0000, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1177f0140, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1177f0280, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1177f03c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1177f0500, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1177f0640, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1177f0780, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1177f08c0, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Settings'
+                              StaticText, 0x1177f0a00, {{16.0, 119.7}, {133.0, 40.7}}, label: 'Settings'
+                            Other, 0x1177f0b40, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1177f0c80, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1177f0dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1177f0f00, {{0.0, 0.0}, {402.0, 874.0}}
+                                    CollectionView, 0x1177f1040, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1177f1180, {{-16.0, -1580.0}, {434.0, 2038.0}}
+                                      Other, 0x1177f12c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1177f1400, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x1177f1540, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Image, 0x1177f1680, {{-120.0, 731.0}, {642.0, 286.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x1177f17c0, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1177f1900, {{0.0, 726.2}, {402.0, 147.8}}
+                                          Other, 0x1177f1a40, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1177f1b80, {{0.0, 726.2}, {402.0, 147.8}}
+                                            Other, 0x1177f1cc0, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Cell, 0x1177f1e00, {{16.0, 168.0}, {370.0, 40.3}}
+                                        Other, 0x1177f1f40, {{16.0, 168.0}, {370.0, 40.3}}
+                                        Other, 0x1177f2080, {{16.0, 168.0}, {370.0, 40.3}}
+                                          Other, 0x1177f21c0, {{16.0, 168.0}, {370.0, 40.3}}
+                                            Other, 0x1177f2300, {{16.0, 168.0}, {370.0, 40.3}}
+                                              StaticText, 0x1177f2440, {{16.0, 168.0}, {370.0, 40.3}}, label: 'Device permissions (rehearsal)'
+                                      Cell, 0x1177f2580, {{16.0, 208.3}, {370.0, 63.7}}
+                                        Other, 0x1177f26c0, {{16.0, 208.3}, {370.0, 63.7}}
+                                          Other, 0x1177f2800, {{16.0, 208.3}, {370.0, 63.7}}
+                                        Other, 0x1177f2940, {{16.0, 208.3}, {370.0, 63.7}}
+                                          Other, 0x1177f2a80, {{16.0, 208.3}, {370.0, 63.7}}
+                                            Other, 0x1177f2bc0, {{16.0, 208.3}, {370.0, 63.7}}
+                                              StaticText, 0x1177f2d00, {{16.0, 208.3}, {370.0, 63.7}}, label: 'Capture handwritten or printed script draft pages for OCR'
+                                      Cell, 0x1177f2e40, {{16.0, 272.0}, {370.0, 63.7}}
+                                        Other, 0x1177f2f80, {{16.0, 272.0}, {370.0, 63.7}}
+                                          Other, 0x1177f30c0, {{16.0, 272.0}, {370.0, 63.7}}
+                                        Other, 0x1177f3200, {{16.0, 272.0}, {370.0, 63.7}}
+                                          Other, 0x1177f3340, {{16.0, 272.0}, {370.0, 63.7}}
+                                            Other, 0x1177f3480, {{16.0, 272.0}, {370.0, 63.7}}
+                                              StaticText, 0x1177f35c0, {{16.0, 272.0}, {370.0, 63.7}}, label: 'Import script photos so CuePartner can OCR your own pages'
+                                      Other, 0x1177f3700, {{32.0, 271.0}, {338.0, 1.0}}
+                                      Cell, 0x1177f3840, {{16.0, 335.7}, {370.0, 52.3}}
+                                        Other, 0x1177f3980, {{16.0, 335.7}, {370.0, 52.3}}
+                                          Other, 0x1177f3ac0, {{16.0, 335.7}, {370.0, 52.3}}
+                                        Other, 0x1177f3c00, {{16.0, 335.7}, {370.0, 52.3}}
+                                          Other, 0x1177f3d40, {{16.0, 335.7}, {370.0, 52.3}}
+                                            Other, 0x1177f3e80, {{16.0, 335.7}, {370.0, 52.3}}
+                                              StaticText, 0x1178a4000, {{16.0, 335.7}, {370.0, 52.3}}, label: 'Record rehearsal or line voice notes for practice'
+                                      Other, 0x1178a4140, {{32.0, 334.7}, {338.0, 1.0}}
+                                      Cell, 0x1178a4280, {{16.0, 388.0}, {370.0, 52.3}}
+                                        Other, 0x1178a43c0, {{16.0, 388.0}, {370.0, 52.3}}
+                                          Other, 0x1178a4500, {{16.0, 388.0}, {370.0, 52.3}}
+                                        Other, 0x1178a4640, {{16.0, 388.0}, {370.0, 52.3}}
+                                          Other, 0x1178a4780, {{16.0, 388.0}, {370.0, 52.3}}
+                                            Other, 0x1178a48c0, {{16.0, 388.0}, {370.0, 52.3}}
+                                              StaticText, 0x1178a4a00, {{16.0, 388.0}, {370.0, 52.3}}, label: 'Turn spoken lines into text for the AI scene partner'
+                                      Other, 0x1178a4b40, {{32.0, 387.0}, {338.0, 1.0}}
+                                      Other, 0x1178a4c80, {{-16.0, 458.0}, {434.0, 592.0}}
+                                      Cell, 0x1178a4dc0, {{16.0, 458.0}, {370.0, 40.3}}
+                                        Other, 0x1178a4f00, {{16.0, 458.0}, {370.0, 40.3}}
+                                        Other, 0x1178a5040, {{16.0, 458.0}, {370.0, 40.3}}
+                                          Other, 0x1178a5180, {{16.0, 458.0}, {370.0, 40.3}}
+                                            Other, 0x1178a52c0, {{16.0, 458.0}, {370.0, 40.3}}
+                                              StaticText, 0x1178a5400, {{16.0, 458.0}, {370.0, 40.3}}, label: 'AI data sharing'
+                                      Cell, 0x1178a5540, {{16.0, 498.0}, {370.0, 52.3}}
+                                        Other, 0x1178a5680, {{16.0, 498.0}, {370.0, 52.3}}
+                                          Other, 0x1178a57c0, {{16.0, 498.0}, {370.0, 52.3}}
+                                        Other, 0x1178a5900, {{16.0, 498.0}, {370.0, 52.3}}
+                                          Other, 0x1178a5a40, {{16.0, 498.0}, {370.0, 52.3}}
+                                            Other, 0x1178a5b80, {{16.0, 498.0}, {370.0, 52.3}}
+                                              Switch, 0x1178a5cc0, {{16.0, 498.0}, {370.0, 52.3}}, label: 'Allow DeepSeek inference', value: 0
+                                                StaticText, 0x1178a5e00, {{32.0, 514.0}, {198.7, 20.3}}, label: 'Allow DeepSeek inference'
+                                                Switch, 0x1178a5f40, {{309.0, 510.3}, {63.0, 28.0}}, value: 0
+                                      Cell, 0x1178a6080, {{16.0, 550.7}, {370.0, 63.7}}
+                                        Other, 0x1178a61c0, {{16.0, 550.7}, {370.0, 63.7}}
+                                          Other, 0x1178a6300, {{16.0, 550.7}, {370.0, 63.7}}
+                                        Other, 0x1178a6440, {{16.0, 550.7}, {370.0, 63.7}}
+                                          Other, 0x1178a6580, {{16.0, 550.7}, {370.0, 63.7}}
+                                            Other, 0x1178a66c0, {{16.0, 550.7}, {370.0, 63.7}}
+                                              StaticText, 0x1178a6800, {{16.0, 550.7}, {370.0, 63.7}}, label: 'AI unavailable: DeepSeek key not configured (local_only gap).'
+                                      Other, 0x1178a6940, {{32.0, 549.7}, {338.0, 1.0}}
+                                      Cell, 0x1178a6a80, {{16.0, 614.3}, {370.0, 52.3}}
+                                        Other, 0x1178a6bc0, {{16.0, 614.3}, {370.0, 52.3}}
+                                          Other, 0x1178a6d00, {{16.0, 614.3}, {370.0, 52.3}}
+                                        Other, 0x1178a6e40, {{16.0, 614.3}, {370.0, 52.3}}
+                                          Other, 0x1178a6f80, {{16.0, 614.3}, {370.0, 52.3}}
+                                            Other, 0x1178a70c0, {{16.0, 614.3}, {370.0, 52.3}}
+                                              StaticText, 0x1178a7200, {{16.0, 614.3}, {370.0, 52.3}}, label: 'Provider: DeepSeek'
+                                      Other, 0x1178a7340, {{32.0, 613.3}, {338.0, 1.0}}
+                                      Cell, 0x1178a7480, {{16.0, 666.7}, {370.0, 52.3}}
+                                        Other, 0x1178a75c0, {{16.0, 666.7}, {370.0, 52.3}}
+                                          Other, 0x1178a7700, {{16.0, 666.7}, {370.0, 52.3}}
+                                        Other, 0x1178a7840, {{16.0, 666.7}, {370.0, 52.3}}
+                                          Other, 0x1178a7980, {{16.0, 666.7}, {370.0, 52.3}}
+                                            Other, 0x1178a7ac0, {{16.0, 666.7}, {370.0, 52.3}}
+                                              StaticText, 0x1178a7c00, {{16.0, 666.7}, {370.0, 52.3}}, label: 'Disclosure: cuepartner.consent.v1'
+                                      Other, 0x1178a7d40, {{32.0, 665.7}, {338.0, 1.0}}
+                                      Cell, 0x1178a7e80, {{16.0, 718.7}, {370.0, 52.3}}
+                                        Other, 0x117c8c000, {{16.0, 718.7}, {370.0, 52.3}}
+                                          Other, 0x117c8c140, {{16.0, 718.7}, {370.0, 52.3}}
+                                        Other, 0x117c8c280, {{16.0, 718.7}, {370.0, 52.3}}
+                                          Other, 0x117c8c3c0, {{16.0, 718.7}, {370.0, 52.3}}
+                                            Other, 0x117c8c500, {{16.0, 718.7}, {370.0, 52.3}}
+                                              StaticText, 0x117c8c640, {{16.0, 718.7}, {370.0, 52.3}}, label: '• Script page OCR text'
+                                      Other, 0x117c8c780, {{32.0, 717.7}, {338.0, 1.0}}
+                                      Cell, 0x117c8c8c0, {{16.0, 771.3}, {370.0, 52.3}}
+                                        Other, 0x117c8ca00, {{16.0, 771.3}, {370.0, 52.3}}
+                                          Other, 0x117c8cb40, {{16.0, 771.3}, {370.0, 52.3}}
+                                        Other, 0x117c8cc80, {{16.0, 771.3}, {370.0, 52.3}}
+                                          Other, 0x117c8cdc0, {{16.0, 771.3}, {370.0, 52.3}}
+                                            Other, 0x117c8cf00, {{16.0, 771.3}, {370.0, 52.3}}
+                                              StaticText, 0x117c8d040, {{16.0, 771.3}, {370.0, 52.3}}, label: '• Cue lines for the scene'
+                                      Other, 0x117c8d180, {{32.0, 770.3}, {338.0, 1.0}}
+                                      Cell, 0x117c8d2c0, {{16.0, 823.7}, {370.0, 52.3}}
+                                        Other, 0x117c8d400, {{16.0, 823.7}, {370.0, 52.3}}
+                                          Other, 0x117c8d540, {{16.0, 823.7}, {370.0, 52.3}}
+                                        Other, 0x117c8d680, {{16.0, 823.7}, {370.0, 52.3}}
+                                          Other, 0x117c8d7c0, {{16.0, 823.7}, {370.0, 52.3}}
+                                            Other, 0x117c8d900, {{16.0, 823.7}, {370.0, 52.3}}
+                                              StaticText, 0x117c8da40, {{16.0, 823.7}, {370.0, 52.3}}, label: '• Partner role you selected'
+                                      Other, 0x117c8db80, {{32.0, 822.7}, {338.0, 1.0}}
+                                      Other, 0x117c8dcc0, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x117c8de00, {{396.0, 119.0}, {3.0, 399.0}}
+                                      Other, 0x117c8df40, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x117c8e080, {{396.0, 119.0}, {3.0, 399.0}}
+                            Other, 0x117c8e1c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x117c8e300, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x117c8e440, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x117c8e580, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x117c8e6c0, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x117c8e800, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x117c8e940, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x117c8ea80, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x117c8ebc0, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Scenes'
+                            Image, 0x117c8ed00, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x117c8ee40, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Rehearse'
+                            Image, 0x117c8ef80, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x117c8f0c0, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings', Selected
+                            Image, 0x117c8f200, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x117c8f340, {{240.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x117c8f480, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117c8f5c0, {{240.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x117c8f700, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117c8f840, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117c8f980, {{240.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x117c8fac0, {{240.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117c8fc00, {{240.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117c8fd40, {{240.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x117c8fe80, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x117c90000, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x117c90140, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117c90280, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117c903c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117c90500, {{0.0, 791.0}, {402.0, 83.0}}
+      Other, 0x117c90640, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117c90780, {{-402.0, -874.0}, {1206.0, 2622.0}}
+        Other, 0x117c908c0, {{0.0, 62.0}, {402.0, 812.0}}
+          Other, 0x117c90a00, {{0.0, 62.0}, {402.0, 812.0}}
+            Other, 0x117c90b40, {{0.0, 62.0}, {402.0, 812.0}}
+              Other, 0x117c90c80, {{0.0, 62.0}, {402.0, 812.0}}
+                Other, 0x117c90dc0, {{0.0, 62.0}, {402.0, 812.0}}
+                  Other, 0x117c90f00, {{0.0, 62.0}, {402.0, 812.0}}
+                    NavigationBar, 0x117c91040, {{0.0, 78.0}, {402.0, 106.0}}, identifier: 'Privacy'
+                      Button, 0x117c91180, {{16.0, 78.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Allow AI'
+                      StaticText, 0x117c912c0, {{16.0, 135.7}, {117.3, 40.7}}, label: 'Privacy'
+                    Other, 0x117c91400, {{0.0, 62.0}, {402.0, 812.0}}
+                      Other, 0x117c91540, {{0.0, 62.0}, {402.0, 812.0}}
+                        Other, 0x117c91680, {{0.0, 62.0}, {402.0, 812.0}}
+                          Other, 0x117c917c0, {{0.0, 62.0}, {402.0, 812.0}}
+                            SegmentedControl, 0x117c91900, {{16.0, 200.0}, {370.0, 31.0}}
+                              Button, 0x117c91a40, {{16.0, 200.0}, {123.0, 32.0}}, label: 'Privacy', Selected
+                              Button, 0x117c91b80, {{139.0, 200.0}, {123.0, 32.0}}, label: 'Terms'
+                              Button, 0x117c91cc0, {{262.0, 200.0}, {124.0, 32.0}}, label: 'Support'
+                            WebView, 0x117c91e00, {{0.0, 247.0}, {402.0, 593.0}}
+                              WebView, 0x117c91f40, {{0.0, 247.0}, {402.0, 593.0}}
+                                WebView, 0x117c92080, {{0.0, 247.0}, {402.0, 593.0}}
+                                  Other, 0x117c921c0, {{0.0, 0.0}, {402.0, 593.0}}
+                                    Other, 0x117c92300, {{0.0, 0.0}, {402.0, 593.0}}
+                                      Other, 0x117c92440, {{0.0, 247.0}, {402.0, 593.0}}
+                                        Other, 0x117c92580, {{0.0, 247.0}, {402.0, 593.0}}, label: 'CuePartner AI Privacy', Focused
+                                          Other, 0x117c926c0, {{8.0, 268.0}, {386.0, 39.0}}, label: 'CuePartner AI Privacy', value: 1, Focused
+                                            StaticText, 0x117c92800, {{8.0, 269.0}, {318.0, 37.0}}, label: 'CuePartner AI Privacy', value: CuePartner AI Priv..., Focused
+                                          Other, 0x117c92940, {{8.0, 327.0}, {386.0, 181.0}}, Focused
+                                            StaticText, 0x117c92a80, {{8.0, 327.0}, {384.0, 180.0}}, label: 'CuePartner AI stores scenes, script pages, cue lines, rehearsal messages, and voice notes on your device. Optional AI features may send script_page_ocr_text, cue_lines, partner_role, user_line_text, voice_transcript, and chat_text to DeepSeek only after you allow AI data sharing. Revoke consent in Settings to stop outbound sends immediately. You bring your own scripts — we do not ship copyrighted plays. External privacy URL is UNKNOWN in this local_only delivery.', value: CuePartner AI stor..., Focused
+                                Other, 0x117c92bc0, {{369.0, 247.0}, {30.0, 565.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                  Other, 0x117c92d00, {{396.0, 250.0}, {3.0, 559.0}}
+                                Other, 0x117c92e40, {{28.0, 807.0}, {346.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                  Other, 0x117c92f80, {{31.0, 834.0}, {340.0, 3.0}}
+                                Other, 0x117c930c0, {{369.0, 247.0}, {30.0, 565.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                  Other, 0x117c93200, {{396.0, 250.0}, {3.0, 559.0}}
+                                Other, 0x117c93340, {{28.0, 807.0}, {346.0, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                  Other, 0x117c93480, {{31.0, 834.0}, {340.0, 3.0}}
+                    Other, 0x117c935c0, {{0.0, 62.0}, {402.0, 812.0}}
+                      Other, 0x117c93700, {{0.0, 62.0}, {402.0, 812.0}}
+Path to element:
+ →Application, 0x117057700, pid: 64069, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x117c93840, pid: 64069, label: 'CuePartner AI'
+  }
+)

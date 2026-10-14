@@ -1,0 +1,33 @@
+{
+  "schema": "appfactory.grokbot_image_batch.v1",
+  "jobs": [
+    {
+      "image_id": "home-empty",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/home-empty-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/home-empty-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/home-empty-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "settings-privacy",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/settings-privacy-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/settings-privacy-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/settings-privacy-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "ocr-review",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/ocr-review-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/ocr-review-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/ocr-review-r2.png.receipt.json",
+      "size": "640x1392"
+    },
+    {
+      "image_id": "scene-detail",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/scene-detail-r2.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png.receipt.json",
+      "size": "640x1392"
+    }
+  ]
+}

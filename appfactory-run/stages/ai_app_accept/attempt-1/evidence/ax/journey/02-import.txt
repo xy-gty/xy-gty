@@ -1,0 +1,75 @@
+Optional(Attributes: Application, 0x11527f0c0, pid: 61861, label: 'CuePartner AI'
+Element subtree:
+ →Application, 0x11527f0c0, pid: 61861, label: 'CuePartner AI'
+    Window (Main), 0x11527ebc0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x11527ef80, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x11527ed00, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x11527ee40, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x11527e940, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x11527de00, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x11527e440, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x11527e580, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x11527e1c0, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x11527e300, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x11527df40, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x11527e080, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x11527dcc0, {{0.0, 62.0}, {402.0, 54.0}}, identifier: 'Import script'
+                              Button, 0x11527c000, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                              StaticText, 0x11527c140, {{149.3, 73.7}, {103.0, 20.7}}, label: 'Import script'
+                            Other, 0x11527d680, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x11527ca00, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x11527cb40, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x11527cc80, {{0.0, 0.0}, {402.0, 874.0}}
+                                    StaticText, 0x11527cdc0, {{98.0, 132.0}, {206.0, 26.3}}, label: 'Import a script page'
+                                    StaticText, 0x11527d400, {{34.7, 178.3}, {332.7, 64.3}}, label: 'Camera for handwritten/print drafts, or photo library for existing stills. OCR runs on device before review.'
+                                    Button, 0x11527d2c0, {{16.0, 262.7}, {370.0, 52.3}}, label: 'Photo library'
+                                      Image, 0x11527d180, {{135.3, 280.0}, {21.3, 17.7}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                      StaticText, 0x11527d040, {{16.0, 262.7}, {370.0, 52.3}}, label: 'Photo library'
+                                    Button, 0x11527cf00, {{16.0, 335.0}, {370.0, 52.3}}, label: 'Camera'
+                                      Image, 0x11527c500, {{155.7, 353.0}, {20.7, 16.3}}, identifier: 'camera', label: 'Camera'
+                                      StaticText, 0x11527c640, {{16.0, 335.0}, {370.0, 52.3}}, label: 'Camera'
+                                    Button, 0x11527c780, {{16.0, 407.3}, {370.0, 52.7}}, label: 'Simulator test still'
+                                      Image, 0x11527c8c0, {{116.3, 424.7}, {17.3, 17.3}}, identifier: 'wand.and.stars', label: 'wand.and.stars'
+                                      StaticText, 0x11527c280, {{16.0, 407.3}, {370.0, 52.7}}, label: 'Simulator test still'
+                            Other, 0x11527e6c0, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x11527e800, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x11527ea80, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x107fec000, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x107fec140, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x107fec280, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x107fec3c0, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x107fec500, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x107fec640, {{68.0, 795.0}, {94.0, 54.0}}, identifier: 'square.stack.3d.up', label: 'Scenes', Selected
+                            Image, 0x107fec780, {{101.0, 797.7}, {28.7, 32.0}}, identifier: 'square.stack.3d.up.fill', label: 'hdr'
+                          Button, 0x107fec8c0, {{154.0, 795.0}, {94.0, 54.0}}, identifier: 'theatermasks', label: 'Rehearse'
+                            Image, 0x107feca00, {{179.0, 797.7}, {44.7, 33.0}}, identifier: 'theatermasks.fill', label: 'theatermasks.fill'
+                          Button, 0x107fecb40, {{240.0, 795.0}, {94.0, 54.0}}, identifier: 'gearshape', label: 'Settings'
+                            Image, 0x107fecc80, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x107fecdc0, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x107fecf00, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x107fed040, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x107fed180, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x107fed2c0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x107fed400, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x107fed540, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x107fed680, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x107fed7c0, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x107fed900, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x107feda40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x107fedb80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x107fedcc0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x107fede00, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x107fedf40, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x107fee080, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x107fee1c0, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x107fee300, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x107fee440, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x107fee580, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x11527f0c0, pid: 61861, label: 'CuePartner AI'
+Query chain:
+ →Find: Application 'com.lingguang.cuepartner'
+  Output: {
+    Application, 0x107fee6c0, pid: 61861, label: 'CuePartner AI'
+  }
+)

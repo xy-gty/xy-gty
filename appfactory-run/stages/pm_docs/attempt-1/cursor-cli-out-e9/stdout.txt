@@ -1,0 +1,12 @@
+Dispatch `970d9596-6bef-41a7-be47-4153ae249ff6` complete — **pm_docs ready**.
+
+Launch file hash verified. CuePartner AI design was already present; contaminated SnagCue `local_seed` frames (`home-empty`, `settings-privacy`) plus weak OCR/scene frames were replaced with CuePartner **r2** (GenerateImage → GrokBot seed). Eight frames read back **pass**; visual manifest frozen.
+
+| Item | Value |
+|------|--------|
+| Status | `ready` |
+| technical_contract_sha256 | `9cb9f54b37cdeb602be56fafdcba1dde4e963ad5cc2dc289efcb5abd4643aa2f` |
+| pm_visual_manifest_sha256 | `5f4a9df742b0a3c3d0282a524b5bade3ff4c3e8a5e55389e4b5d6fe738785875` |
+| finish | ok (`map_sha256` `664d7d2258b7a9ac…`) |
+
+Controller can adopt / advance; IAP unlock stays a documented free-app gap.

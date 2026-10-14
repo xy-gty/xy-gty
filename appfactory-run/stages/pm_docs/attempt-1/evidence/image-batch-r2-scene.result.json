@@ -1,0 +1,42 @@
+{
+  "batch_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/evidence/image-batch-r2-scene.json",
+  "batch_sha256": "d64a7e1736f042f92bdde562c4cd37fde9ce94aef1f6798d138808af9ddfecdb",
+  "completed": 1,
+  "ok": false,
+  "results": [
+    {
+      "code": "grokbot_bad_response",
+      "exit_code": 1,
+      "image_id": "scene-detail",
+      "job_id": null,
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "grokbot_bad_response",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "Traceback (most recent call last):\n  File \"<string>\", line 16, in <module>\n  File \"/Users/a2026/work/pm-visuals-image-mcp/pm_visuals_image_mcp/bridge.py\", line 306, in generate_image\n    _atomic_write_bytes(out, data)\n  File \"/Users/a2026/work/pm-visuals-image-mcp/pm_visuals_image_mcp/bridge.py\", line 122, in _atomic_write_bytes\n    tmp.replace(path)\n  File \"/opt/homebrew/Cellar/python@3.12/3.12.15/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [Errno 1] Operation not permitted: '/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png.tmp-71459efe' -> '/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png'\n",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/prompts/scene-detail-r2.txt",
+        "prompt_sha256": "340dfa93c7383c46ca533563dc5924dfab471a4823a13d559d9b79558d2323d4",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T125947Z-a3157139/stages/pm_docs/attempt-1/frames/scene-detail-r2.png.receipt.json",
+        "requested_size": "640x1392",
+        "timestamp": "2026-10-14T03:25:14Z"
+      }
+    }
+  ],
+  "schema": "appfactory.grokbot_image_batch_result.v1",
+  "status": "completed",
+  "submission_scope": "local_wrapper_tasks",
+  "submitted": 1
+}
