@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104351E5BFF72D7022344CB0 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF04B723BCDCE4123D10DA /* SpeechCaptureHost.swift */; };
+		11041470E0F53D95B7E2CC5B /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A13EFF82E42A9F8CC60EF /* JobDetailView.swift */; };
+		1141134D7C7D52EE3E4886F9 /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE87CB9C34BD1C11184741 /* CaptureImportView.swift */; };
+		12FB6EC2DAF50F405B805A8E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AFD3EFEB0460BA67BE4DB402 /* PrivacyInfo.xcprivacy */; };
+		196E84B347F2F556A9CC0041 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53639B02A3948206657A8429 /* AppModel.swift */; };
+		1FFBFA4DE047E0EBDF23BA87 /* BendCoachDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 097CE0C480219778ADC5256B /* BendCoachDomain */; };
+		1FFF3DF8920CBB5755EED51B /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE09AC4A7EAEFA1C003D77BA /* CameraCapturePicker.swift */; };
+		3742DD00F5A0C33698F97EF3 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EAE583271CA143E06E227 /* RootTabView.swift */; };
+		43E1147CCF244B3EC1901E82 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD57DB9182ADAECA002191 /* LocalLegalWebView.swift */; };
+		46F3D3577D0A7628595D3A88 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 4538E889BDA3EEC0381D2EC3 /* support.html */; };
+		55A9DB66096FB44A672FC455 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742DC0579F0592FFBE865C5A /* HomeView.swift */; };
+		5CE5D7D4E22AE2FCB54B9BB0 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A8BD73364900C73B80766 /* ConsentSheet.swift */; };
+		74586B8178C4C43FF3FE8780 /* BendMathChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF95C579FF0F7CA5BC08AA /* BendMathChatView.swift */; };
+		81FBE6D3AAFEA7DC11C7E552 /* BendCoachTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F60B6022AA419A06F32E112 /* BendCoachTheme.swift */; };
+		83EE3FEF75C81415FD4F6984 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 068B63E0775D276342F27AD7 /* privacy.html */; };
+		874B0B59053E9E321ECE4685 /* BendCoachDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 99E89F83BE1C2994C84B283F /* BendCoachDomain */; };
+		8D0CB0A0015B0BA47FF41AF3 /* DiagramOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379A493E658C64535B78EDD /* DiagramOverlayView.swift */; };
+		D049B33ED8C69BB9440C356D /* BendCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5989FD66860C12FC9D336928 /* BendCoachApp.swift */; };
+		D1CD761B041447A83B79EC94 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8878A32D8BEF8629F9732C55 /* DeepSeekClient.swift */; };
+		D60DD442A8A7FD3D68312979 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0172E33AC464F76AAFCC17B2 /* AppRuntimeCore */; };
+		DB46E519837598EC4F9C9C67 /* BendReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538965CEAB68384FB9E7DF1F /* BendReviewView.swift */; };
+		DE903A98EA365C0C7CE1ABC3 /* BendCoachDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DD7165094E06148EA7CD37 /* BendCoachDomainTests.swift */; };
+		E47BB14B8ACD496CD93DE0C5 /* TTSCoachingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA523F8BD86EB8129E27598 /* TTSCoachingView.swift */; };
+		ED60F87FE0292348C69F76FB /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 97610F61F2E96EC9F652F63F /* terms.html */; };
+		F1CCE95B356573E9B03D7CC6 /* UnitsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA854578692F867739E7E21 /* UnitsSettingsView.swift */; };
+		FC5770E6B1C2C41B15307AFF /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E7B50A9176D80B1A7C63D /* SettingsPrivacyView.swift */; };
+		FEB0DF16CD8E33F6628B73F7 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 19405CF4F14E856A72BFC78B /* AppRuntimeCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		681A80E050E567481FE15DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6060C905B52F1C0F6064B36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11EE7B7D4D947BF1EA3BF576;
+			remoteInfo = BendCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042E7B50A9176D80B1A7C63D /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		068B63E0775D276342F27AD7 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		0F60B6022AA419A06F32E112 /* BendCoachTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendCoachTheme.swift; sourceTree = "<group>"; };
+		110A8BD73364900C73B80766 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		3379A493E658C64535B78EDD /* DiagramOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramOverlayView.swift; sourceTree = "<group>"; };
+		436EAE583271CA143E06E227 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		4538E889BDA3EEC0381D2EC3 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		53639B02A3948206657A8429 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		538965CEAB68384FB9E7DF1F /* BendReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendReviewView.swift; sourceTree = "<group>"; };
+		5989FD66860C12FC9D336928 /* BendCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendCoachApp.swift; sourceTree = "<group>"; };
+		67DF04B723BCDCE4123D10DA /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
+		6CA523F8BD86EB8129E27598 /* TTSCoachingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSCoachingView.swift; sourceTree = "<group>"; };
+		6CFE87CB9C34BD1C11184741 /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
+		742DC0579F0592FFBE865C5A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7EAD57DB9182ADAECA002191 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		8878A32D8BEF8629F9732C55 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		97610F61F2E96EC9F652F63F /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		9EEF95C579FF0F7CA5BC08AA /* BendMathChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendMathChatView.swift; sourceTree = "<group>"; };
+		AFD3EFEB0460BA67BE4DB402 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B2205B9911598C69E0BF2657 /* BendCoachDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BendCoachDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA382FDF0034960ABAF0D2A3 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		BDA854578692F867739E7E21 /* UnitsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsSettingsView.swift; sourceTree = "<group>"; };
+		C5DD7165094E06148EA7CD37 /* BendCoachDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BendCoachDomainTests.swift; sourceTree = "<group>"; };
+		D19A13EFF82E42A9F8CC60EF /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		D6587C138B684CF8A82437DD /* BendCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BendCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11F3D7C11DD05639233F178 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		FE09AC4A7EAEFA1C003D77BA /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE67B31FA2099662015195AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFBFA4DE047E0EBDF23BA87 /* BendCoachDomain in Frameworks */,
+				D60DD442A8A7FD3D68312979 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85A6EB8D464E4B263D5E029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB0DF16CD8E33F6628B73F7 /* AppRuntimeCore in Frameworks */,
+				874B0B59053E9E321ECE4685 /* BendCoachDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A23881238BCF41934E8B9C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				53639B02A3948206657A8429 /* AppModel.swift */,
+				FE09AC4A7EAEFA1C003D77BA /* CameraCapturePicker.swift */,
+				67DF04B723BCDCE4123D10DA /* SpeechCaptureHost.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A76FE5BEC07DCC8DC6B89B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6587C138B684CF8A82437DD /* BendCoach.app */,
+				B2205B9911598C69E0BF2657 /* BendCoachDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34AA63F8551375A521739417 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F11F3D7C11DD05639233F178 /* AppRuntimeCore */,
+				BA382FDF0034960ABAF0D2A3 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		3635861CCEBD5C9886DEB788 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5989FD66860C12FC9D336928 /* BendCoachApp.swift */,
+				85A143054E31DE2C9F0C7562 /* AI */,
+				B0950474ED180D4ACC922668 /* Resources */,
+				2A23881238BCF41934E8B9C7 /* Services */,
+				ED3210B7FFDDA4A45A8D0D0E /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E4799D883212A6E3D92B81F = {
+			isa = PBXGroup;
+			children = (
+				3635861CCEBD5C9886DEB788 /* App */,
+				34AA63F8551375A521739417 /* Packages */,
+				EF0E004634ABD6F3DED4F376 /* Tests */,
+				2A76FE5BEC07DCC8DC6B89B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85A143054E31DE2C9F0C7562 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				110A8BD73364900C73B80766 /* ConsentSheet.swift */,
+				8878A32D8BEF8629F9732C55 /* DeepSeekClient.swift */,
+				7EAD57DB9182ADAECA002191 /* LocalLegalWebView.swift */,
+				042E7B50A9176D80B1A7C63D /* SettingsPrivacyView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		949388BA278014E1C0F00D3B /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				068B63E0775D276342F27AD7 /* privacy.html */,
+				4538E889BDA3EEC0381D2EC3 /* support.html */,
+				97610F61F2E96EC9F652F63F /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		B0950474ED180D4ACC922668 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFD3EFEB0460BA67BE4DB402 /* PrivacyInfo.xcprivacy */,
+				949388BA278014E1C0F00D3B /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED3210B7FFDDA4A45A8D0D0E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0F60B6022AA419A06F32E112 /* BendCoachTheme.swift */,
+				9EEF95C579FF0F7CA5BC08AA /* BendMathChatView.swift */,
+				538965CEAB68384FB9E7DF1F /* BendReviewView.swift */,
+				6CFE87CB9C34BD1C11184741 /* CaptureImportView.swift */,
+				3379A493E658C64535B78EDD /* DiagramOverlayView.swift */,
+				742DC0579F0592FFBE865C5A /* HomeView.swift */,
+				D19A13EFF82E42A9F8CC60EF /* JobDetailView.swift */,
+				436EAE583271CA143E06E227 /* RootTabView.swift */,
+				6CA523F8BD86EB8129E27598 /* TTSCoachingView.swift */,
+				BDA854578692F867739E7E21 /* UnitsSettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EF0E004634ABD6F3DED4F376 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C5DD7165094E06148EA7CD37 /* BendCoachDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11EE7B7D4D947BF1EA3BF576 /* BendCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4987BECE7CF8845F1CBAF7C9 /* Build configuration list for PBXNativeTarget "BendCoach" */;
+			buildPhases = (
+				2978E05BA01B0198E28C4ADC /* Sources */,
+				A5E018CE16232BAA180554F0 /* Resources */,
+				D85A6EB8D464E4B263D5E029 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BendCoach;
+			packageProductDependencies = (
+				19405CF4F14E856A72BFC78B /* AppRuntimeCore */,
+				99E89F83BE1C2994C84B283F /* BendCoachDomain */,
+			);
+			productName = BendCoach;
+			productReference = D6587C138B684CF8A82437DD /* BendCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		509239B1FB0786153D530895 /* BendCoachDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB1B674E3038444A4017C85 /* Build configuration list for PBXNativeTarget "BendCoachDomainTests" */;
+			buildPhases = (
+				392CD26C0302ECCDE50EADAA /* Sources */,
+				AE67B31FA2099662015195AC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A48761DCAE2B7420E875844 /* PBXTargetDependency */,
+			);
+			name = BendCoachDomainTests;
+			packageProductDependencies = (
+				097CE0C480219778ADC5256B /* BendCoachDomain */,
+				0172E33AC464F76AAFCC17B2 /* AppRuntimeCore */,
+			);
+			productName = BendCoachDomainTests;
+			productReference = B2205B9911598C69E0BF2657 /* BendCoachDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6060C905B52F1C0F6064B36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 666258C0B952AEE007184E23 /* Build configuration list for PBXProject "BendCoach" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E4799D883212A6E3D92B81F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				604014F32C360C837DDF4390 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				4C343722D7B6FE0419DB3539 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2A76FE5BEC07DCC8DC6B89B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11EE7B7D4D947BF1EA3BF576 /* BendCoach */,
+				509239B1FB0786153D530895 /* BendCoachDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E018CE16232BAA180554F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FB6EC2DAF50F405B805A8E /* PrivacyInfo.xcprivacy in Resources */,
+				83EE3FEF75C81415FD4F6984 /* privacy.html in Resources */,
+				46F3D3577D0A7628595D3A88 /* support.html in Resources */,
+				ED60F87FE0292348C69F76FB /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2978E05BA01B0198E28C4ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196E84B347F2F556A9CC0041 /* AppModel.swift in Sources */,
+				D049B33ED8C69BB9440C356D /* BendCoachApp.swift in Sources */,
+				81FBE6D3AAFEA7DC11C7E552 /* BendCoachTheme.swift in Sources */,
+				74586B8178C4C43FF3FE8780 /* BendMathChatView.swift in Sources */,
+				DB46E519837598EC4F9C9C67 /* BendReviewView.swift in Sources */,
+				1FFF3DF8920CBB5755EED51B /* CameraCapturePicker.swift in Sources */,
+				1141134D7C7D52EE3E4886F9 /* CaptureImportView.swift in Sources */,
+				5CE5D7D4E22AE2FCB54B9BB0 /* ConsentSheet.swift in Sources */,
+				D1CD761B041447A83B79EC94 /* DeepSeekClient.swift in Sources */,
+				8D0CB0A0015B0BA47FF41AF3 /* DiagramOverlayView.swift in Sources */,
+				55A9DB66096FB44A672FC455 /* HomeView.swift in Sources */,
+				11041470E0F53D95B7E2CC5B /* JobDetailView.swift in Sources */,
+				43E1147CCF244B3EC1901E82 /* LocalLegalWebView.swift in Sources */,
+				3742DD00F5A0C33698F97EF3 /* RootTabView.swift in Sources */,
+				FC5770E6B1C2C41B15307AFF /* SettingsPrivacyView.swift in Sources */,
+				104351E5BFF72D7022344CB0 /* SpeechCaptureHost.swift in Sources */,
+				E47BB14B8ACD496CD93DE0C5 /* TTSCoachingView.swift in Sources */,
+				F1CCE95B356573E9B03D7CC6 /* UnitsSettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392CD26C0302ECCDE50EADAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE903A98EA365C0C7CE1ABC3 /* BendCoachDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A48761DCAE2B7420E875844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11EE7B7D4D947BF1EA3BF576 /* BendCoach */;
+			targetProxy = 681A80E050E567481FE15DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12DE07B371EFE682A7FFCB9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bendcoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BendCoach.app/BendCoach";
+			};
+			name = Release;
+		};
+		19E20A4D2D29D017567DF022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "BendCoach AI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BendCoach AI can capture a job-site bend or markup photo for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "BendCoach AI uses the microphone so you can speak bend-math questions that fill the coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BendCoach AI imports job-site conduit bend and markup photos you choose so you can review bend-type suggestions before saving marks to a job.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "BendCoach AI uses on-device speech recognition to turn spoken bend-math questions into editable chat text that you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bendcoach;
+				PRODUCT_NAME = BendCoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9CF6CC0E50858565D84B9E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "BendCoach AI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BendCoach AI can capture a job-site bend or markup photo for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "BendCoach AI uses the microphone so you can speak bend-math questions that fill the coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BendCoach AI imports job-site conduit bend and markup photos you choose so you can review bend-type suggestions before saving marks to a job.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "BendCoach AI uses on-device speech recognition to turn spoken bend-math questions into editable chat text that you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bendcoach;
+				PRODUCT_NAME = BendCoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A8049F245861D05ED8B496A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AD408CB9B7648C8ECAE00091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7B1EC92D57FBF1A3A02389F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bendcoach.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BendCoach.app/BendCoach";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4987BECE7CF8845F1CBAF7C9 /* Build configuration list for PBXNativeTarget "BendCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E20A4D2D29D017567DF022 /* Debug */,
+				9CF6CC0E50858565D84B9E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		666258C0B952AEE007184E23 /* Build configuration list for PBXProject "BendCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD408CB9B7648C8ECAE00091 /* Debug */,
+				A8049F245861D05ED8B496A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EDB1B674E3038444A4017C85 /* Build configuration list for PBXNativeTarget "BendCoachDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B1EC92D57FBF1A3A02389F /* Debug */,
+				12DE07B371EFE682A7FFCB9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4C343722D7B6FE0419DB3539 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		604014F32C360C837DDF4390 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0172E33AC464F76AAFCC17B2 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		097CE0C480219778ADC5256B /* BendCoachDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BendCoachDomain;
+		};
+		19405CF4F14E856A72BFC78B /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		99E89F83BE1C2994C84B283F /* BendCoachDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BendCoachDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F6060C905B52F1C0F6064B36 /* Project object */;
+}
