@@ -1,0 +1,67 @@
+name: DuctCue
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  DuctCueDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  DuctCue:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+    dependencies:
+      - package: AppRuntimeCore
+      - package: DuctCueDomain
+        product: DuctCueDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.ductcue
+        PRODUCT_NAME: DuctCue
+        INFOPLIST_KEY_CFBundleDisplayName: DuctCue
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.
+        INFOPLIST_KEY_NSCameraUsageDescription: DuctCue photographs ducts and registers on site for run recognition you review before saving.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+  DuctCueDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: DuctCueDomain
+        product: DuctCueDomain
+      - package: AppRuntimeCore
+      - target: DuctCue
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.ductcue.tests
+schemes:
+  DuctCue:
+    build:
+      targets:
+        DuctCue: all
+        DuctCueDomainTests: [test]
+    test:
+      targets:
+        - DuctCueDomainTests
+    run:
+      config: Debug

@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033B25F8CF23256529F2BC7E /* DuctCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = C540E4408CCF98A7E35F75F4 /* DuctCueDomain */; };
+		0B0BDD73FD8B2833C367B9F7 /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C222864C17AAFEDC8C855 /* SpeechCaptureView.swift */; };
+		1F5032FD2E98761D0A82C839 /* DuctCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 153A2C3E0DAF81301A5A012B /* DuctCueDomain */; };
+		22E3567056F25FF3014C59E4 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */; };
+		32D72E4E594D1B433FE5727C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */; };
+		33246092A1FA7F34CF1ADD72 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = FCA0A9A47FA7BF8034B17A05 /* support.html */; };
+		44C05D008EE96A7C364AB8F0 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = F06C8AC5E508D616BC65BC6F /* privacy.html */; };
+		4F1DE999A053B3E546650CA5 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2B15AC065F5AAB7135A969CD /* AppRuntimeCore */; };
+		50ED9123983591EF2E611F7D /* DuctCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */; };
+		5D1300599C910485BCE9F3D1 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DD93EEC5CDF403A399B88 /* SpeechCaptureHost.swift */; };
+		5F4A5BECB89C97A8C980BC34 /* FieldStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */; };
+		82A70357B1254A165AEE0C15 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EC3993A670713D4FD4FFB4 /* AppModel.swift */; };
+		A4CB0CDAEDDA634F7AB62E65 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6490BA0E135D20565A6BE6EC /* ConsentSheet.swift */; };
+		A6981327EB4BE81BF9DE1E7B /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBB79CEFC259C57386721F /* CameraCapturePicker.swift */; };
+		A92DBC9FCAE588AFD9F35FC3 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB314EE0C70D9447C126D85 /* DeepSeekClient.swift */; };
+		AEA5B2DFC85E3C2AF704CAF0 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4437E9458D59A03339F0AD /* RootTabView.swift */; };
+		B2248028314C1E6D160CF716 /* DuctCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */; };
+		B9E7AA080C48F3317604CFF1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4B29C965D63299F0535FD1FA /* PrivacyInfo.xcprivacy */; };
+		BEB443ABE2CD80E1B230039A /* DuctRunReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */; };
+		C64FA831FE7D6D52B84FFE19 /* DuctRunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */; };
+		CAC5A760E1219B1F11BC845D /* deepseek-privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 38707393F7D5EBAB96D96087 /* deepseek-privacy.html */; };
+		D9863EE9D0AD1AEE3AA300FA /* JobCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650C196A575EF794C7651CA /* JobCaptureView.swift */; };
+		DC77E47310FC9018B2A3E4D5 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B9A18356128AC6FCAE43C /* LocalLegalWebView.swift */; };
+		E31D9028E19944C2F4561AD2 /* DuctCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A499063B019EBA951207F /* DuctCueTheme.swift */; };
+		E9C999E693812F523FC3C281 /* SizeDiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0EBC6D62520E47897BEFC3 /* SizeDiagramView.swift */; };
+		EEBC616BFAD70FFEBE6716C2 /* JobsCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481B38176E79AB83A0165A0 /* JobsCanvasView.swift */; };
+		F1564DA19727181E700E1C9B /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86C65AC36ECEDE1F2DCE33 /* CoachChatView.swift */; };
+		F3690ED5C8E947BAA1F2B476 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = A3CC12EC48E9E62599B49D0E /* terms.html */; };
+		FEBCC476A29F8BD46EE11FE9 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA95DF38B72ADB0C49516 /* SettingsPrivacyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2658FB7BFB99CDE37C3DB163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5FEE0AE06687D34E1EA36E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E60259812C1F38EEBEC0CA;
+			remoteInfo = DuctCue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016C222864C17AAFEDC8C855 /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
+		15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctRunDetailView.swift; sourceTree = "<group>"; };
+		1717C35586EAF21AC2E95B89 /* DuctCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DuctCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DuctCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		251DD93EEC5CDF403A399B88 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
+		253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueDomainTests.swift; sourceTree = "<group>"; };
+		38707393F7D5EBAB96D96087 /* deepseek-privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "deepseek-privacy.html"; sourceTree = "<group>"; };
+		4B29C965D63299F0535FD1FA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		507A499063B019EBA951207F /* DuctCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueTheme.swift; sourceTree = "<group>"; };
+		51EC3993A670713D4FD4FFB4 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5481B38176E79AB83A0165A0 /* JobsCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCanvasView.swift; sourceTree = "<group>"; };
+		5537E444853B758C5E51DAED /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		6490BA0E135D20565A6BE6EC /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		69C627795431FA631D26D0E0 /* ductcue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ductcue; path = .; sourceTree = SOURCE_ROOT; };
+		6C0EBC6D62520E47897BEFC3 /* SizeDiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeDiagramView.swift; sourceTree = "<group>"; };
+		8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ACBA95DF38B72ADB0C49516 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		9C86C65AC36ECEDE1F2DCE33 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		A3CC12EC48E9E62599B49D0E /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		A650C196A575EF794C7651CA /* JobCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCaptureView.swift; sourceTree = "<group>"; };
+		AA4437E9458D59A03339F0AD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctRunReviewView.swift; sourceTree = "<group>"; };
+		BAFBB79CEFC259C57386721F /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
+		C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStepsView.swift; sourceTree = "<group>"; };
+		DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueApp.swift; sourceTree = "<group>"; };
+		E09B9A18356128AC6FCAE43C /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		E485717001D9A6AA96B6225A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F06C8AC5E508D616BC65BC6F /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		FCA0A9A47FA7BF8034B17A05 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		FDB314EE0C70D9447C126D85 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		765803EEA042951B5BD9D930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5032FD2E98761D0A82C839 /* DuctCueDomain in Frameworks */,
+				22E3567056F25FF3014C59E4 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72F28117E51480B57965C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1DE999A053B3E546650CA5 /* AppRuntimeCore in Frameworks */,
+				033B25F8CF23256529F2BC7E /* DuctCueDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB8E8FDD371A38F28F57167 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B29C965D63299F0535FD1FA /* PrivacyInfo.xcprivacy */,
+				1C2D60BA48FE40D0711578FC /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C2D60BA48FE40D0711578FC /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				38707393F7D5EBAB96D96087 /* deepseek-privacy.html */,
+				F06C8AC5E508D616BC65BC6F /* privacy.html */,
+				FCA0A9A47FA7BF8034B17A05 /* support.html */,
+				A3CC12EC48E9E62599B49D0E /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		1D0BF98A8B691307A0FD5E2B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5537E444853B758C5E51DAED /* AppRuntimeCore */,
+				69C627795431FA631D26D0E0 /* ductcue */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		41E2A7893D8AB13249D7CF9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1717C35586EAF21AC2E95B89 /* DuctCue.app */,
+				21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B8A7D3222594B2E7822133E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		60EA0334EDCC5399CE0891F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */,
+				DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */,
+				E485717001D9A6AA96B6225A /* Info.plist */,
+				6C584A1FC09524F925B71C31 /* AI */,
+				0EB8E8FDD371A38F28F57167 /* Resources */,
+				F4508894D8A410EAA3486B96 /* Services */,
+				7F444E073F1643D097839DB3 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C584A1FC09524F925B71C31 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				6490BA0E135D20565A6BE6EC /* ConsentSheet.swift */,
+				FDB314EE0C70D9447C126D85 /* DeepSeekClient.swift */,
+				E09B9A18356128AC6FCAE43C /* LocalLegalWebView.swift */,
+				9ACBA95DF38B72ADB0C49516 /* SettingsPrivacyView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		7F444E073F1643D097839DB3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9C86C65AC36ECEDE1F2DCE33 /* CoachChatView.swift */,
+				507A499063B019EBA951207F /* DuctCueTheme.swift */,
+				15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */,
+				B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */,
+				C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */,
+				A650C196A575EF794C7651CA /* JobCaptureView.swift */,
+				5481B38176E79AB83A0165A0 /* JobsCanvasView.swift */,
+				AA4437E9458D59A03339F0AD /* RootTabView.swift */,
+				6C0EBC6D62520E47897BEFC3 /* SizeDiagramView.swift */,
+				016C222864C17AAFEDC8C855 /* SpeechCaptureView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BA7F32FB5A59D1F28673D550 = {
+			isa = PBXGroup;
+			children = (
+				60EA0334EDCC5399CE0891F1 /* App */,
+				1D0BF98A8B691307A0FD5E2B /* Packages */,
+				4B8A7D3222594B2E7822133E /* Tests */,
+				41E2A7893D8AB13249D7CF9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4508894D8A410EAA3486B96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				51EC3993A670713D4FD4FFB4 /* AppModel.swift */,
+				BAFBB79CEFC259C57386721F /* CameraCapturePicker.swift */,
+				251DD93EEC5CDF403A399B88 /* SpeechCaptureHost.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5289676A5F4DE905F4419153 /* DuctCueDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "DuctCueDomainTests" */;
+			buildPhases = (
+				09D0822170275D359282D3E8 /* Sources */,
+				765803EEA042951B5BD9D930 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACED812B19232AA23FFEE545 /* PBXTargetDependency */,
+			);
+			name = DuctCueDomainTests;
+			packageProductDependencies = (
+				153A2C3E0DAF81301A5A012B /* DuctCueDomain */,
+				D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */,
+			);
+			productName = DuctCueDomainTests;
+			productReference = 21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84E60259812C1F38EEBEC0CA /* DuctCue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "DuctCue" */;
+			buildPhases = (
+				9A0FE8432E6BB8AF76FC7A15 /* Sources */,
+				3169D847CDC646AEF3564A3C /* Resources */,
+				D72F28117E51480B57965C74 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuctCue;
+			packageProductDependencies = (
+				2B15AC065F5AAB7135A969CD /* AppRuntimeCore */,
+				C540E4408CCF98A7E35F75F4 /* DuctCueDomain */,
+			);
+			productName = DuctCue;
+			productReference = 1717C35586EAF21AC2E95B89 /* DuctCue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5FEE0AE06687D34E1EA36E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "DuctCue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BA7F32FB5A59D1F28673D550;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				09571E2647F885129CE4109C /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				D3873FECAC784D8ED9D6A91C /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 41E2A7893D8AB13249D7CF9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E60259812C1F38EEBEC0CA /* DuctCue */,
+				5289676A5F4DE905F4419153 /* DuctCueDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3169D847CDC646AEF3564A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D72E4E594D1B433FE5727C /* Assets.xcassets in Resources */,
+				B9E7AA080C48F3317604CFF1 /* PrivacyInfo.xcprivacy in Resources */,
+				CAC5A760E1219B1F11BC845D /* deepseek-privacy.html in Resources */,
+				44C05D008EE96A7C364AB8F0 /* privacy.html in Resources */,
+				33246092A1FA7F34CF1ADD72 /* support.html in Resources */,
+				F3690ED5C8E947BAA1F2B476 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D0822170275D359282D3E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50ED9123983591EF2E611F7D /* DuctCueDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A0FE8432E6BB8AF76FC7A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A70357B1254A165AEE0C15 /* AppModel.swift in Sources */,
+				A6981327EB4BE81BF9DE1E7B /* CameraCapturePicker.swift in Sources */,
+				F1564DA19727181E700E1C9B /* CoachChatView.swift in Sources */,
+				A4CB0CDAEDDA634F7AB62E65 /* ConsentSheet.swift in Sources */,
+				A92DBC9FCAE588AFD9F35FC3 /* DeepSeekClient.swift in Sources */,
+				B2248028314C1E6D160CF716 /* DuctCueApp.swift in Sources */,
+				E31D9028E19944C2F4561AD2 /* DuctCueTheme.swift in Sources */,
+				C64FA831FE7D6D52B84FFE19 /* DuctRunDetailView.swift in Sources */,
+				BEB443ABE2CD80E1B230039A /* DuctRunReviewView.swift in Sources */,
+				5F4A5BECB89C97A8C980BC34 /* FieldStepsView.swift in Sources */,
+				D9863EE9D0AD1AEE3AA300FA /* JobCaptureView.swift in Sources */,
+				EEBC616BFAD70FFEBE6716C2 /* JobsCanvasView.swift in Sources */,
+				DC77E47310FC9018B2A3E4D5 /* LocalLegalWebView.swift in Sources */,
+				AEA5B2DFC85E3C2AF704CAF0 /* RootTabView.swift in Sources */,
+				FEBCC476A29F8BD46EE11FE9 /* SettingsPrivacyView.swift in Sources */,
+				E9C999E693812F523FC3C281 /* SizeDiagramView.swift in Sources */,
+				5D1300599C910485BCE9F3D1 /* SpeechCaptureHost.swift in Sources */,
+				0B0BDD73FD8B2833C367B9F7 /* SpeechCaptureView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACED812B19232AA23FFEE545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E60259812C1F38EEBEC0CA /* DuctCue */;
+			targetProxy = 2658FB7BFB99CDE37C3DB163 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A32771936D7F27126930EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuctCue.app/DuctCue";
+			};
+			name = Release;
+		};
+		21E64901D7453A12047A2128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3A21D39A5F36F7DE76D176A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55E21E6930EE550A1FAE5E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuctCue.app/DuctCue";
+			};
+			name = Debug;
+		};
+		A7A51D3A3FF1F91E0528B576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuctCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DuctCue photographs ducts and registers on site for run recognition you review before saving.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue;
+				PRODUCT_NAME = DuctCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DC5F128CF2C938AEF62E7509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuctCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "DuctCue photographs ducts and registers on site for run recognition you review before saving.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue;
+				PRODUCT_NAME = DuctCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "DuctCueDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E21E6930EE550A1FAE5E39 /* Debug */,
+				1A32771936D7F27126930EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "DuctCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5F128CF2C938AEF62E7509 /* Debug */,
+				A7A51D3A3FF1F91E0528B576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "DuctCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A21D39A5F36F7DE76D176A5 /* Debug */,
+				21E64901D7453A12047A2128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		09571E2647F885129CE4109C /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		D3873FECAC784D8ED9D6A91C /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153A2C3E0DAF81301A5A012B /* DuctCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DuctCueDomain;
+		};
+		2B15AC065F5AAB7135A969CD /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		C540E4408CCF98A7E35F75F4 /* DuctCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DuctCueDomain;
+		};
+		D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A5FEE0AE06687D34E1EA36E3 /* Project object */;
+}
