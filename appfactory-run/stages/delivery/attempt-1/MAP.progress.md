@@ -14,15 +14,9 @@ ai_profile: ultra_lite p1
 - product_commit: 8d33ae437c6acc26021c90036c5f816a6f3d3033
 - product_dir: scoutcue/ (product → symlink)
 
-## In progress
+## Done
 
-- Feishu: SKIP per operator goal / CONTROLLER_DELIVERY (feishu_row_not_yet_created gap)
-- Push: independent branch to git@github.com:xy-gty/xy-gty.git — do NOT force main
-- Branding: no AppIcon/LaunchScreen this round
-- timing evidence span: delivery_report started
-
-## Next
-
-- push independent branch + verify tip SHA
-- write MAP.md last
-- cursor-package ultra-lite finish
+- Feishu: SKIP (feishu_row_not_yet_created)
+- Push: `scoutcue-ai-kf-20261014T091741Z-3d7b568c` @ `993a2aa5f6b899d26b7bb26d724c88d980adf4cd`; main untouched (`0c9a469…`)
+- MAP.md written; `cursor-package ultra-lite finish --status ready` ok
+- timing: delivery_report 272.033s; stage_execution 567.337s

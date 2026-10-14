@@ -1,0 +1,13 @@
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File appfactory-run/stages/ai_app_accept/attempt-1/DerivedData-uitest/Logs/Test/Test-ScoutCueAcceptUI-2026.10.14_18-15-29-+0800.xcresult/Data/data.0~8XQvQJ62raLGsnmYqdBa5t-aIYmHhQZgZDuVGqXPQqYWWsgw7OGhOmwMqHTQYuTmcoIhxBkgrBJJ9GDGjjyLZw== is 74.16 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: 
+remote: Create a pull request for 'scoutcue-ai-kf-20261014T091741Z-3d7b568c' on GitHub by visiting:        
+remote:      https://github.com/xy-gty/xy-gty/pull/new/scoutcue-ai-kf-20261014T091741Z-3d7b568c        
+remote: 
+To github.com:xy-gty/xy-gty.git
+ * [new branch]      HEAD -> scoutcue-ai-kf-20261014T091741Z-3d7b568c
+branch 'scoutcue-ai-kf-20261014T091741Z-3d7b568c' set up to track 'origin/scoutcue-ai-kf-20261014T091741Z-3d7b568c'.
+993a2aa5f6b899d26b7bb26d724c88d980adf4cd	refs/heads/scoutcue-ai-kf-20261014T091741Z-3d7b568c
+993a2aa5f6b899d26b7bb26d724c88d980adf4cd
+0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7	refs/heads/main
