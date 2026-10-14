@@ -22,6 +22,8 @@ targets:
       - path: App
     resources:
       - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
     dependencies:
       - package: AppRuntimeCore
       - package: SnagCueDomain
@@ -35,7 +37,7 @@ targets:
         INFOPLIST_KEY_NSCameraUsageDescription: SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.
         INFOPLIST_KEY_NSMicrophoneUsageDescription: SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"

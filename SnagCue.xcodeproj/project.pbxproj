@@ -19,6 +19,7 @@
 		72D0B1518CD49893D9ECBFDE /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F07E09B1E9110D30934653 /* LocalLegalWebView.swift */; };
 		7EE58DB8B16F72B19A8DE666 /* ChecklistTTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E02B20CC9CBEB5B8E109F0 /* ChecklistTTS.swift */; };
 		87AA97BECE0A84E682845DE6 /* SnagTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559284AA8A59C6282387C3D /* SnagTheme.swift */; };
+		9A9CF251E29F4EA803668EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED9D863AB114DE97D95E3BB /* Assets.xcassets */; };
 		9AAEBD0E5BE25C9B7B9E8CCA /* ChatFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C237A968FD379710659A090 /* ChatFillView.swift */; };
 		A2744F4110C82AA5CD11C2FA /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97C1F7DE54ED67DD1C5923 /* ConsentSheet.swift */; };
 		A92718643A31FC8B2F8CF38D /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 563A5E6A97B976A8CFB07BF8 /* AppRuntimeCore */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		0D423A77F7C1E0169B0C2903 /* SnagCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SnagCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED9D863AB114DE97D95E3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317DB3728E823CD97A6B3023 /* AnnotatedReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedReportView.swift; sourceTree = "<group>"; };
 		3559284AA8A59C6282387C3D /* SnagTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnagTheme.swift; sourceTree = "<group>"; };
 		411AAA4628906CDE7B1AE554 /* AIConsentKeychainMirror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIConsentKeychainMirror.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		A067858D9244AA2CC2754B95 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		A360F93770D3AB1D66275961 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BDB348789F6207D21EF18CE2 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		BEDE6FB38D0F1FC3736C3F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C0AB12783448CD18926AC748 /* SnagCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SnagCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BB1EB8757670EDFD9C3FC8 /* SnagCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnagCueDomainTests.swift; sourceTree = "<group>"; };
 		C881B770C6C49BB68E422480 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 		8CCF3367039E52EC4D34B45B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2ED9D863AB114DE97D95E3BB /* Assets.xcassets */,
+				BEDE6FB38D0F1FC3736C3F64 /* Info.plist */,
 				92ACE4311DE209216D3A7320 /* SnagCueApp.swift */,
 				F2351C5904410370AF01E71C /* AI */,
 				DDF57C0565A10A7678E0E040 /* Resources */,
@@ -300,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9CF251E29F4EA803668EE6 /* Assets.xcassets in Resources */,
 				125B65BB0A05FE0E750C0D05 /* PrivacyInfo.xcprivacy in Resources */,
 				CF7C1E2C835D5DD8576CEF3C /* privacy.html in Resources */,
 				45744453BF73DE691F9BC370 /* support.html in Resources */,
@@ -364,12 +370,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SnagCue AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SnagCue AI imports walkthrough photos you choose so you can review snag suggestions before saving punch-list items.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,12 +395,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "SnagCue AI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "SnagCue AI captures a walkthrough photo on site so you can run optional snag recognition before saving punch-list items.";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SnagCue AI records a short voice note onto a punch-list item for hands-free field capture during site inspection.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SnagCue AI imports walkthrough photos you choose so you can review snag suggestions before saving punch-list items.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SnagCue AI converts your spoken words into text to fill punch-list chat fields during site inspection.";
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
