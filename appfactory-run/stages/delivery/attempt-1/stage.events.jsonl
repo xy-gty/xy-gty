@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-delivery-8a16ec6a4ec4"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "MixCue delivery MAP ready; branch mixcue/kf-20261015T162417Z-7519c0dc tip 5e418cc local=remote; Feishu skip; finish ready."}]}, "session_id": "cursor-cli-delivery-8a16ec6a4ec4"}

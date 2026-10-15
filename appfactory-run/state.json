@@ -1,0 +1,214 @@
+{
+  "_control_event_cursor": 17,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-15T16:24:17Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/MAP.md",
+        "result_sha256": "7a8f832bb878b4e28b0e8a824a62e741bf4cb81725192d12800d41f8b6355a82",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "a6a5c05c1334f671c59c636a25afe98e5c227a09bda4cd85692dcaed703fd7ac",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "ac86f75a0af01b38ef8acf96bd9877461ba04f5812cd31370b5d7eef010d46bf",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "7ab7ffa89e4916cb732d41885402aed2457b22756579a3eb6883f6a03118f3b5"
+      },
+      "started_at": "2026-10-15T17:00:27Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T17:32:34Z"
+    },
+    "ai_app_build": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "32a1bea94fb879f1c148c68db54ba13611cc1d1c1b7694c90c770b529dc7de81",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "bd32baadb2adae47b88a1eb2ab986452bc35ecdd62fb42a1b46f4bc3ebe87ba2",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/MAP.md",
+        "result_sha256": "9ef6ab840b44a17e06f53f1cadda0654d5fdd24787ab26f87af2b55fd2447322",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "a6a5c05c1334f671c59c636a25afe98e5c227a09bda4cd85692dcaed703fd7ac",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "ac86f75a0af01b38ef8acf96bd9877461ba04f5812cd31370b5d7eef010d46bf"
+      },
+      "started_at": "2026-10-15T16:45:06Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T17:00:06Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/delivery/attempt-1/MAP.md",
+        "result_sha256": "1f42607ae42b10986dd37b834c36b96401704122a490b978fb76954103619b74",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "a6a5c05c1334f671c59c636a25afe98e5c227a09bda4cd85692dcaed703fd7ac",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "ac86f75a0af01b38ef8acf96bd9877461ba04f5812cd31370b5d7eef010d46bf"
+      },
+      "started_at": "2026-10-15T17:32:53Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T17:37:24Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/goal/goal.json",
+        "goal_sha256": "013602588604d66ab7aa083ba729545b7c414f208c763076ead0d562e891c174"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-15T16:24:17Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "5c47f66b414b56a751dd261a378fafed0d30a25c5608c9bd8324c0dd9f37b0d2",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "a6a5c05c1334f671c59c636a25afe98e5c227a09bda4cd85692dcaed703fd7ac",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "ac86f75a0af01b38ef8acf96bd9877461ba04f5812cd31370b5d7eef010d46bf",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-15T16:24:31Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T16:44:44Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# MixCue\n\nPaid AI home bar cocktail coach (one-time unlock for unlimited mix packs; no coins).\n\nRemake vs Cocktail Party / Bevnap — differentiate: AI bottle/garnish ID + substitute + pour/garnish board with TTS shake steps, not just a static recipe catalog. Do NOT name competitors in App copy.\n\n## Core loop\nShoot or import bottle / label / garnish → AI base-spirit ID → chat for recipes and substitutes → pour method + garnish board → TTS hands-free shake/stir steps.\n\n## Hard operator rules\n- product_dir: mixcue/ (never leave as product/ only — symlink mixcue→product; do not use bare product/)\n- bundle_id suggestion: com.lingguang.mixcue\n- palette: primary #E11D48 · secondary #FFF1F2 · accent #CA8A04 (neon rose + blush + gold; must differ from WingCue teal/mint/terracotta, FrameCue purple/amber, RuleCue amber/cyan, StopCue green/pink, and other delivered apps; ban all-black/dark-gray clones)\n- UI: 竖向瓶架轨 + 大号下一步倒法卡 + 装饰 chip 行（must look clearly different from WingCue field-card stack, ClosetCue mosaic, FrameCue safe-frame/clapper, ScoutCue sky-arc, RuleCue table zone + turn step, StopCue film-sprocket — no twins）\n- Four permissions with real flows (extend core cocktail coach, do not bolt on awkwardly):\n  - Camera: capture bottle face / label / garnish for ID\n  - Photos: import bar-shelf album stills to complete ID\n  - Microphone: hands-free notes while both hands shake/stir\n  - Speech Recognition: spoken questions like \"what can I sub for Cointreau\" into coach chat\n- Selling points must be real: bottle/label/garnish photo → base spirit ID → recipe + substitute chat → pour/garnish board → TTS shake steps\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues for non-core UL fails (same FrameCue/WingCue); P1 non-blockers must not block delivery\n- When disk tight: clear unused DerivedData/simulator caches (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI home-bar cocktail coach: shoot or import bottles/labels/garnishes, AI base-spirit ID, chat for recipes and substitutes, pour method + garnish board, TTS hands-free shake/stir steps—unlock unlimited mix packs.\n\n## Positioning\nAI 家庭吧台调酒教练——识瓶、替酒、倒法与装饰一步到位。\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "report_status": "produced",
+  "requested_count": 1,
+  "run_id": "kf-20261015T162417Z-7519c0dc",
+  "run_status": "delivered",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1927.0,
+            "finished_at": "2026-10-15T17:32:34Z",
+            "started_at": "2026-10-15T17:00:27Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 900.0,
+            "finished_at": "2026-10-15T17:00:06Z",
+            "started_at": "2026-10-15T16:45:06Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 271.0,
+            "finished_at": "2026-10-15T17:37:24Z",
+            "started_at": "2026-10-15T17:32:53Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1213.0,
+            "finished_at": "2026-10-15T16:44:44Z",
+            "started_at": "2026-10-15T16:24:31Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 9,
+  "ultra_lite_execution_revision": "p1"
+}

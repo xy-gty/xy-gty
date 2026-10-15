@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-df8cccd26300",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 552927,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/frames/mixcue-pour-board-r1.png",
+  "output_sha256": "2da37cbaeb2c1c26b661ebafa7586c796fe50e566f63375270771fa86d31c37b",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/frames/prompts/mixcue-pour-board-r1.txt",
+  "prompt_sha256": "c40b4a21aa3b505c0f6d248644e2c8cdbfa5ed8a5e934cd3f1efc11a792dd1bf",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "adca6db2273a1db4a3e7ca3ffbb7b6f5959a0b31f52217184267efbbbce30593",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T16:35:34Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

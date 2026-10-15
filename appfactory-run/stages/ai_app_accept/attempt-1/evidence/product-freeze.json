@@ -1,0 +1,17 @@
+{
+  "schema": "appfactory.ultra_lite_product_freeze.v1",
+  "run_id": "kf-20261015T162417Z-7519c0dc",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "dispatch_id": "87175a47-371f-47a7-9ee8-3166b727994f",
+  "product_commit": "5e418cc1c0f00d290882f5b00d124df373c3734b",
+  "product_branch": "mixcue/kf-20261015T162417Z-7519c0dc",
+  "product_dir": "mixcue/",
+  "bundle_id": "com.lingguang.mixcue",
+  "remote": "git@github.com:xy-gty/xy-gty.git",
+  "worktree_clean": true,
+  "frozen_at": "2026-10-15T17:03:08.610181+00:00",
+  "simulator_udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+  "simulator_name": "iPhone 17 Pro",
+  "code_query": "code_query_blocked:codebase_memory_index_failed"
+}

@@ -1,0 +1,2 @@
+{"type": "system", "subtype": "init", "session_id": "cursor-cli-accept-87175a47371f"}
+{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "MixCue ai_app_accept MAP ready + Option A soft known_issues (UL02 harness soft / UL07 vision soft); UL01/UL02b/UL04/UL06 pass; finish ready; agent terminated after finish."}]}, "session_id": "cursor-cli-accept-87175a47371f"}

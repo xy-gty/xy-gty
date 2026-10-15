@@ -1,0 +1,50 @@
+{
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product",
+  "source_commit": "5e418cc1c0f00d290882f5b00d124df373c3734b",
+  "branch": "mixcue/kf-20261015T162417Z-7519c0dc",
+  "run_id": "kf-20261015T162417Z-7519c0dc",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "bf79b15b-a267-4435-a567-f9992c38d701",
+  "bundle_id": "com.lingguang.mixcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/MixCue.app",
+  "app_content_sha256": "43e6f75b7bb63cf95833a05c0ae8acb6af1b7e29912f0785ebaf0f2d489132cd",
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+    "runtime": "com.apple.CoreSimulator.SimRuntime.iOS-26-5"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/MixCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "b22f42ee58948181927f14b975b4ae4ad2f583c2d44254ee551665b08e3cc12d"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "com.lingguang.mixcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 75892,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/launch.log",
+    "log_sha256": "e0db59d80a339a1581b900c6000a1c5cc3260c9f382324f8a6a7441ae8c1e420"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/smoke.png",
+    "screenshot_sha256": "07767264f4c4e2d5c350ece35da09e29f2d561c9a7383892da0a1bc4297623a6"
+  }
+}

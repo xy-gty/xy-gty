@@ -1,0 +1,82 @@
+[
+  {
+    "frame_id": "mixcue-home-empty",
+    "criterion": "CR-HOME-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "fail",
+    "image_sha256": "8e4bb4897877aaffe107e3b0f5ac30cb3956de04a5d7dbd54e510fd7d9be0a02",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-capture-camera",
+    "criterion": "CR-CAM-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "fail",
+    "image_sha256": "e3eb03fec4939bf01e0778b2d270a7c155d04d4226ad6cd6ae74dd78e9fabac6",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-id-result",
+    "criterion": "CR-ID-COMBO",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "pass",
+    "image_sha256": "aa48fde3c5b1c2d741298797b195fe76c3f33875743a8f4ba151061804f5e869",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-recipe-chat",
+    "criterion": "CR-CHAT-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "pass",
+    "image_sha256": "5bf0bd5cbcdba70ea2641d8322764a5e10f50699cb1f03887803d398981be701",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-pour-board",
+    "criterion": "CR-POUR-COMBO",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "uncertain",
+    "image_sha256": "1c122f947b75a516ec6e18caa160d937f4a6892ac4d470d2e70b200e7c7ac34c",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-voice-note",
+    "criterion": "CR-MIC-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "pass",
+    "image_sha256": "62cf09f74e599f82509ea092607d945b358ee34732828b7b6ad456e6d917d90b",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-consent-ai",
+    "criterion": "CR-CONSENT-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "fail",
+    "image_sha256": "531d4b2b47ea30382f5a6fc6d55e8228021a606d63b7dbc7482c4ef69b2c94bb",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  },
+  {
+    "frame_id": "mixcue-settings-privacy",
+    "criterion": "CR-SET-01",
+    "vision_rc": 0,
+    "register_rc": 0,
+    "judgment": "uncertain",
+    "image_sha256": "91744e2c15c27a210535c733acc1540cd26f473dbd1755b992a41db4a7818f87",
+    "receipt_exists": true,
+    "final_agent_message": ""
+  }
+]

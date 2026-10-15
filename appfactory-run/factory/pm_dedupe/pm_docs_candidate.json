@@ -1,0 +1,30 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "Shoot (Camera) or import (Photos) a bottle / label / garnish still",
+    "AI returns ranked base-spirit candidates + label cues on the vertical bottle-rail",
+    "Chat (text/speech) for recipes and substitutes",
+    "Open pour board: large next-pour card + garnish chip row; TTS reads shake/stir steps",
+    "Save Mix → session persists; next ID/chat reuses confirmed spirits/feedback"
+  ],
+  "differentiation": {},
+  "diversity_key": "mixcue home bartenders who already photograph bottles and garnishes and need fast spirit id substitute advice and hands free pour shake coaching while both hands are busy app name mixcue",
+  "feature_blocks": [
+    "Entry: Bar Home → Shoot",
+    "Op: Request Camera if needed → capture bottle face / label / garnish → save via PhotoCaptureService",
+    "Result: New MixSession status=draft with photoLocalURL + subject",
+    "Persist: session + image file",
+    "Empty/deny: Show permission coaching; stay on Bar Home",
+    "Cancel: Discard draft capture; no session write",
+    "ACC-CAM-01: Denied camera still allows Photos import path"
+  ],
+  "product_fingerprint": "b6d323d81bc2f6f0f99cbca2baacbae362860a33409436d21249d3f02cc822d5",
+  "product_name": "MixCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "Home bartenders who already photograph bottles and garnishes and need fast spirit ID, substitute advice, and hands-free pour/shake coaching while both hands are busy.",
+  "user_problem": "",
+  "value_proposition": "App name: MixCue"
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261015T162417Z-7519c0dc",
+  "producer_pm_attempt": 1,
+  "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/technical_contract.v1.json",
+  "technical_contract_sha256": "a6a5c05c1334f671c59c636a25afe98e5c227a09bda4cd85692dcaed703fd7ac"
+}

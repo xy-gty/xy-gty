@@ -1,0 +1,34 @@
+{
+  "context_version": "v1",
+  "context_class": "contract",
+  "run_id": "kf-20261015T162417Z-7519c0dc",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "principal": "DeepSeekPMAgent",
+  "route": "pm_docs",
+  "state_version": 2,
+  "goal_version": 1,
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product",
+  "upstream_refs": {},
+  "artifact_refs": {
+    "required_output_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/MAP.md"
+  },
+  "capability_ids": [],
+  "session_id": "",
+  "event_cursor": 5,
+  "knowledge_receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/memory/pm_docs-attempt-1.receipt.json",
+  "runtime_profile": {
+    "model_preset": "dev"
+  },
+  "contract_context": {
+    "run_id": "kf-20261015T162417Z-7519c0dc",
+    "stage": "pm_docs",
+    "attempt": 1,
+    "ai_profile": "ultra_lite"
+  },
+  "advisory_context": {
+    "knowledge_availability": "ready"
+  },
+  "advisory": {},
+  "sha256": "a52348c3a09da1313b401c58478f320efc99b677e863bb7df7432244dce78b6f"
+}

@@ -1,0 +1,1 @@
+Voice note sheet shows recording control for hands-free notes while shaking.

@@ -1,0 +1,1137 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -scheme MixCue -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7" -derivedDataPath /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept build
+
+Build settings from command line:
+    SDKROOT = iphonesimulator26.5
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  MixCue: /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+  AppRuntimeCore: /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'MixCue' in project 'MixCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'MixCueDomain' in project 'MixCue'
+    Target 'MixCueDomain' in project 'MixCue'
+        ➜ Explicit dependency on target 'MixCueDomain' in project 'MixCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'MixCueDomain' in project 'MixCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 07d925affd93e5037d0add2817d92d79
+Build description path: /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/XCBuildData/07d925affd93e5037d0add2817d92d79.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue-14355eccd95641c8983bbef668e1b5b3-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue-14355eccd95641c8983bbef668e1b5b3-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyStaticMetadataFileList (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyMetadataFileList (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.modulemap (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.modulemap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.LinkFileList (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_const_extract_protocols.json (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftConstValuesFileList (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-OutputFileMap.json (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-OutputFileMap.json
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/MixCueDomain.modulemap /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.modulemap (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.modulemap /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.LinkFileList (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_const_extract_protocols.json (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftConstValuesFileList (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-OutputFileMap.json (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyStaticMetadataFileList (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyMetadataFileList (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-project-headers.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-own-target-headers.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-generated-files.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-target-headers.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-non-framework-target-headers.hmap (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibPath-normal-arm64.txt (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibInstallName-normal-arm64.txt (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/Entitlements-Simulated.plist (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList
+
+MkDir /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore.modulemap /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+SwiftDriver AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdarg-9PRJKL4TWC7VIFLX6M6LFUWOL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftShims-1CYA0BKMBE5GKS7080PEEMO36.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrcheck-1UYS43DJKWL4KFE2DRIQM3EEZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stddef-24Y3NQE2UES7SIASNF3WE3KAH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DeveloperToolsSupport-ENG7XEXCFDI6IIKXLM571LD72.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_SwiftConcurrencyShims-46DFYJGZBGMK2XVKJ6TSVR3Q0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_AvailabilityInternal-F3R1OVCX13X0VWWTSB66PPGWZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_float-8MTLVRV8T6IY3PWDN35IPFHQ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrauth-9T7AIEAD4RETE4S256AHHSAI9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdbool-9X3ME1XC1FJN5HM8M4VHZLBF0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation1-EBS66OFUO5ZEKNS0IZHE845Q0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_limits-1A94Z7L7HHLQHHX3F1GRGAJYC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ExtensionFoundation-CAE1URUQ8KY5M187AAJ26RJGZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation2-EABWQJ4PE5YIIDNO4Z3ZXRY4T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdint-BPWQQ7G8YIOJ9DH9KN29RHJM4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_tgmath-2PF7NN4P810UWEL78PZLN3PKK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/sys_types-3FK2S79L2LVA1PHTKTUHSEUEE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_intrinsics-DW0J0ZZTVKQRJQJLL9IR3ACXQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation3-2K0F2Q8AL3YO4OK8JT5LUJ8W3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdatomic-921XSTTUQR8BU7722RBVFASJ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_inttypes-2FSD9DM3CF6NXW1VSL8KILAXT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Darwin-A44YCNFZ0W1GJAHSL73F2MF25.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/simd-1O2B592UM8ACGYI3FXLKLZ445.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MachO-5T036JZWLCEJZVK75TJG5Z9A2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ObjectiveC-8Y0S61LJGPNP2LL6Q5DYCSE0V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_object-6022NOP3082JMYKQJLWG1HW2G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_workgroup-2F411IPEO2O66V54PT4FXG4X5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Spatial-1PT0A3OZ6XHPFD5OLM1JF9E8V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Dispatch-B4N831GN5KT04N3ENOXM2HRRP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/dnssd-WJ7I0J702SE43ZYA3FQFQNB1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/XPC-C9ERQQOIJ5H09NEQKWJYQVOCC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreFoundation-4L6PCVXGLSSU2YX87NQ7916KN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os-AEYXPRER2F6L8C3SGDFIY1DZ6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Security-6HNZ9L7XUFLFDVW1DKT1X25SW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreGraphics-AF0TNZBKB2SWSOE2HZRH6GTCQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudioTypes-3F2BG68SDS59QITD0LA2KLKX8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CFNetwork-BAF6RRF1WG82HLHC33WN9LHTI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudio-UTA88XSJV6D3XA3SIQ3S3UI5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Foundation-3Q16R73JFJXGMLBV2K62WS3JC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ImageIO-6ERGTRBI6S8D4F9M0MHN75P6O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreText-CL0WVUK75ZUZUNQVW0BXAREKW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIUtilities-CY0H6X78J1QNRK28OVM0UVPQ4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreTransferable-AX29B1O62XL9AF5BQUVP80XTN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OpenGLES-5A6XU7QGDPKXVBI2TG29G7EQ9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UniformTypeIdentifiers-805JI5FPR1MM69AEE64G2QLEK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMIDI-6NANNQ3QBCWGTTZ43VFQAC8KM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/FileProvider-BO8R8TLBPBXNOJM53E66X2B7R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/IOSurface-ENT042CSBQJKXFUR5F8NRQ35O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Network-5P39NQ81PNJZOH7EBFAQ6K6H0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UserNotifications-6DP5HUOIX0DT1YAV1PQ9WSTXV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Symbols-3V6175UCQ0E3FV0EEA5QN7FIW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Accessibility-296L3LOCNNKB0AZ3YRWRSIR2Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_LocationEssentials-4GNI7OGOQBGQ16ZI4NMPYJW8F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DataDetection-8NABGBMH0Z0PSQYWXG4NKNMXL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreData-3O8GVE7D494ULJ81M07G67EY9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OSLog-78E87UZEUK67WHDU6D8DZV6ID.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Metal-1E878BNVZ0314X58SDINL9QIS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AudioToolbox-6SNBNQZNMBLMBDBSPMS237S91.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreLocation-C3D6M7JDGVFSXDX2J5RBMFXJ6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVRouting-E4LWZRHJS5O49K0EOCRQ64LPE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreVideo-EL206PRC8VSAQ6EQL1WS1NDP7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreImage-CXT2LC1PKT1XPGPAN6NYJNNYA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/QuartzCore-5UD2CFEHA37K3VSG6V6ZJAZLN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMedia-3FRCRF6YY6PKL3AHJT9ZHLCBX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUICore-8IGI8FAG0ERGG4HAYLRYXEFMG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MediaToolbox-ET0693ZKW91DYNAJ5F4W5JODL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFAudio-5LPC1HLEYUC6RB7RK7R0JRRP4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIKit-16TKJ1FSFB1X1O8GVBOEVOC3I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFoundation-3EZVE05VB3T2GART1CWXPHWIS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Photos-8K4EFSFVO60FHFGB116H9HQY6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUI-7YQ08P33M7RDAE7JP9IPQGWJS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/PhotosUI-1TYRCSMBP3X6AMVGWMB0UQ3ZY.pcm
+
+SwiftCompile normal arm64 Compiling\ TypedNavigationStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AtomicCodableStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+EmitSwiftModule normal arm64 (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ RuntimeForm.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AIConsentGate.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ PhotoImportSession.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ KeychainCredentialStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriver\ Compilation\ Requirements AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver MixCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_SwiftConcurrencyShims-8RHL8VD60EA93FQGZDGB8WIIN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdbool-7KG1N7BTOEUKMKJ7TR277SCTQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_float-10NZXKPGNWUG4NA2BI3ZHK8BL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stddef-5WYRTHN5D4H8PMQ88FG9MSC1B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_AvailabilityInternal-A6HIPALR5SZ1Q3W74NM9UOF58.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrauth-5EZKP8XB2ZQJHL8GAM4JSP4N5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdarg-7MY1IRN5741J1CDC7LHQPBC98.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftShims-1E5GWET80B9DDOX0SSXP124JV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DeveloperToolsSupport-83NJ3DMAV2O2STMOPJQX0UZ6J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrcheck-HZSR7BRVLFMXPIYLX0AVG247.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation1-48O58VFYYMLZLZT216YQKWK09.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_limits-5KOAKEUFM2TGJL1QN7AAJAPGY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation2-1C1JOU7NSAJXBRFL0XLNLKGWM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ExtensionFoundation-52AA26UI7SX8TCQ1OZP3KE6YE.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdint-504U3N31AWAPOE5GT0BKZENMW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_tgmath-E6ZKBOP72AEMPYLGHXT5YFLOH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/sys_types-6EOU8PLGN93RKKQHM5CBT5ELC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdatomic-A4XH7DQVMT80WEMXX5OZVO5IS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_intrinsics-BN4Y2DNVB01HHAX6DOOUZ7X3B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation3-BAD3W4YSYG6RBH5FHYUAL1FL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_inttypes-1KT8Q14AC11NJWXP9LFEQMX9R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Darwin-DMPCZ9B4ZWY9TIXHJJ9CR82Y2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/simd-99QZQZ0IOU5JJI6ZAXYSC2Z4C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MachO-8DAS9PI41VQG4QQ9QD8244LSZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ObjectiveC-9TPWH8JMQSGEB7OQLK7N401KI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_object-7FVSE726I3PHQ09XNC7UEUM71.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_workgroup-EGQ637ABIKWNCUTJ9J2JJ3CU9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Spatial-1PFDTQ0W4W00Y59P57E0MAD7C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Dispatch-7O2NGFOLQD491D2FD8FWYD3ZD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreFoundation-9VEZLZQQCWK8NBMBCMP16DBIJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/dnssd-D7NN82QDF8BRUY8L5551IGKWP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/XPC-EG21VP7P7WJWGBLS5CBR19GUR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os-DLI6OLPEWCF9GB9P9XVYA9WXD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreGraphics-D3RK5UO1IONPOHBFCP7DQ53LZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudioTypes-1N95LR98ATDKZAQP9742VTSD1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Security-28PASW33YP0IPNDXNRBP2S2TZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CFNetwork-5E8GL8K17VESS26MVCUX49DZO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudio-DTNDGRLRNBW6YXS6LSD1EQGEC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Foundation-79BWNOI904EW4XI54EOYWXXGP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ImageIO-3U4Z2A38GQ48EXW3Y2DQM2E8G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreText-BSCAVC82STZZ46F7J3DMHN3XY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIUtilities-A0FXMNIY8AYKJ215CUKHW4QPL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Accessibility-CRMUFHCFE9HLMZCC2H369JQ3H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UserNotifications-3X0KLS51IX3926NVK3338TXWU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMIDI-91Z85XHIMLWZ8X8GG7P33Y633.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Network-4NXL2QVWE75AYCGXFT7PXHXTM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DataDetection-68UD95XNR3VYIVFR46LZC81HD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Symbols-9V1OL2KZF56743HD7W1LR4AD4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_LocationEssentials-2Y47YEV5CLRZRM0CQOK0R2ICZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/FileProvider-851LE13T1VHK3HU485UCIK45Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/IOSurface-BM2VCIHYLFXMOIDS29MMV0M5G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreData-RDZHDZVHKXQBZ7IVQGXB962V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreTransferable-6WVTOBZ50O948REVJPX3S78P6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreLocation-9F998R9W6EVBPYEQHUH25ZBH4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UniformTypeIdentifiers-6VY0CILBNDZQGFY6FQ8NV8F3E.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OSLog-9S3PBQYW3Z066IJ4V8BTCH4GH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OpenGLES-CEF2Z07GQXUE1186BVYE66CU3.pcm
+
+SwiftDriver\ Compilation AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o normal (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AudioToolbox-2C3KO46OIILFUTW0UZ203DDRT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVRouting-EWLQHAHXF8PR6RVHPB3MVXBN5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Metal-4A3Q14CVCF3MKW08KXJSIM46M.pcm
+
+ExtractAppIntentsMetadata (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name AppRuntimeCore --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier appruntimecore.AppRuntimeCore --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o --dependency-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-16 01:03:50.556 appintentsmetadataprocessor[79921:10190258] Starting appintentsmetadataprocessor export
+2026-10-16 01:03:50.576 appintentsmetadataprocessor[79921:10190258] Extracted no relevant App Intents symbols, skipping writing output
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Vendor/AppRuntimeCore
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreVideo-5XZYEPA15DHT0V23V18XAGT6H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/QuartzCore-DZE8QS66QHB59GX5Z0HESXZDW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMedia-EOBITMT2CTO13PVJNECHVOAUZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreImage-7NEVIRSWBOKD9K19AG55V5TCG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUICore-1F5CSATCV7M8PUIY0IWIX80WV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MediaToolbox-6IV3GJ570INEOD0HQF3TB1MBD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFAudio-CMEKCW7G6H9XQ0152OOD9Y6SC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIKit-54BETNIBGJF3VOBN3S5GFSWI6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFoundation-48WRSXPNR5QAF9R2PYOD47D4X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Photos-EZS6UNYYNYLFENGV4WOALITVH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUI-ADCD4D0Y5WZLLJPCUJBGS044A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/PhotosUI-4JWX7E6R0L24FCM15SKQ8NA8J.pcm
+
+SwiftCompile normal arm64 Compiling\ Entities.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Entities.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Entities.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MixCueDomain (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+EmitSwiftModule normal arm64 (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Stores.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Stores.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Stores.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ ReviewControls.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/ReviewControls.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/ReviewControls.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Navigation.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Navigation.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Sources/MixCueDomain/Navigation.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MixCueDomain (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftDriver\ Compilation\ Requirements MixCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/MixCueDomain-Swift.h /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-Swift.h (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-Swift.h -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/MixCueDomain-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.abi.json (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftdoc (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftsourceinfo (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+ProcessProductPackaging "" /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "8M69TZZ38Y.com.lingguang.mixcue";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent
+
+ProcessProductPackagingDER /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent.der (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /usr/bin/derq query -f xml -i /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent.der --raw
+
+GenerateAssetSymbols /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets --compile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_dependencies --output-partial-info-plist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator --bundle-identifier com.lingguang.mixcue --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+MkDir /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/thinned (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/thinned
+
+MkDir /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/unthinned (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/unthinned
+
+CompileAssetCatalogVariant thinned /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets --compile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist_thinned --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone18,1 --filter-for-device-os-version 26.5 --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist_thinned
+
+
+SwiftDriver MixCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCue -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue-14355eccd95641c8983bbef668e1b5b3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Navigation.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Stores.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReviewControls.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Entities.swift (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+
+SwiftDriver\ Compilation MixCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.o normal (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-linker-args.resp -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.o
+
+ExtractAppIntentsMetadata (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MixCueDomain --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier product.MixCueDomain --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.o --dependency-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/MixCueDomain.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-16 01:03:51.509 appintentsmetadataprocessor[79945:10190411] Starting appintentsmetadataprocessor export
+2026-10-16 01:03:51.518 appintentsmetadataprocessor[79945:10190411] Extracted no relevant App Intents symbols, skipping writing output
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.o (in target 'MixCueDomain' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCueDomain.o
+
+CpResource /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/provider-policy.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/provider-policy.html (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/provider-policy.html /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/privacy.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/privacy.html (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/privacy.html /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/support.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/support.html (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/support.html /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/__preview.dylib normal (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -install_name @rpath/MixCue.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/__preview.dylib
+
+CpResource /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/terms.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/terms.html (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Resources/Legal/terms.html /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/PrivacyInfo.xcprivacy /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/PrivacyInfo.xcprivacy (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/PrivacyInfo.xcprivacy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdarg-3J6AG7V6GWYD9I3L8BLCLC8TB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DeveloperToolsSupport-CPY726EF0RLG51EADB6Z8HR6U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_float-3KVIMK1EXLYZYB45UU5EBWV9S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrauth-BFS0CG9XIMMIKNX59MBTM9YGR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ptrcheck-EOQK37RMYC20MXY4XHDSY89FV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_SwiftConcurrencyShims-6VTD6RVUVJ3VT3TZU1CHGN38A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stddef-C0HQL4WWN10KIMD4GY2EUAXVA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftShims-A9DKNW5EM6MQENBUZYCJC78JK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdbool-AY2QBXOX3HI3T7V64CXVPM6AE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_AvailabilityInternal-E9O39KXR9W0PTM5XFHC4JYGNU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation1-55XNRNTIAP6BA6TNS7B182CDE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ExtensionFoundation-1APYNV3B13OZWO8ASISRQ8V7U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_limits-8ST9DUI64BRXQEX8M4W7VC1FA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation2-4M86M5E68HDYT2II9NYMUCF9K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_tgmath-A503DAA6AYR7FIXEGVBT4YVDM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdint-2VNVRUX11AIF8Y2WB8KRBEEA4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/sys_types-1HQKAUVSML993WOKRY6RZZ5OA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_intrinsics-7DLXYO32AR8C77NUKSNNAE8NC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_DarwinFoundation3-27KKNQVCG5X2MXWCI7S9YH4K9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_stdatomic-XXYS140MZNYY7A96OVLYG7RF.pcm
+
+LinkAssetCatalog /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Assets.xcassets (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-linkAssetCatalog --thinned /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/thinned --thinned-dependencies /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist_unthinned --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app --plist-output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist
+
+ProcessInfoPlistFile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Info.plist /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Info.plist (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-infoPlistUtility /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/assetcatalog_generated_info.plist -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_Builtin_inttypes-BYASUWDEHNX5R96IKGF04JASU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Darwin-7691XYWF68ESH30LTFV19J8J2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/simd-9X4AQV4PWCPH4RKDQRRZB7P2T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ObjectiveC-352KMWJB51KDP32TY3IJVEKEP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MachO-6D4R1NM51727KARGYC7ZZT5RD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_object-4F7CB2LQV0MQ74JLD0O98A988.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os_workgroup-BYDKOW2SDU0VBHQEMKQLJM0QH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Spatial-DJHEXMTA7ABVHOAO30UPE2V0R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Dispatch-CL5VMNPU54PSSNT7LTMCPEIZJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreFoundation-2P3ELINVH4YEOFNFJ75UI264K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/dnssd-BZLK2APBNYS5GFHUTDCW4XBRG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/XPC-7J0RL9MI1B4H0FH1CQLQCVUVN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/os-8GBFNL1O5FPQDNXODCKC4PCI6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudioTypes-HCXU2IN6YVJIDE8OANJ1TPN5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CFNetwork-DVG7M99MC13CHKWPF49NC2CE1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreGraphics-6FS8Y9CGWR3LAOB3SKBLYEV36.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Security-J6EUKYPF0AQH3FQQKJX8VRJF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreAudio-59ZRYA2PI5S4OSZI8S8M38QXI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Foundation-3B5OW6FKDVPMS5S26JRJNI39Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/ImageIO-BN08TIT5XDKVF3TQVFI0E14GJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreText-A8AZITKL9PTVHJWY8VI82VH26.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/DataDetection-C9HBZYLTINT0RMTLGDAU8YZJI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIUtilities-AVCOW6YR7JEYYK5BTYFDIDMRY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreTransferable-4VCCXUTSR1E6IK3D7Q9B3UEI8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Symbols-AR2DBZJOAYJ5XV5JHRN8LDO0L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreData-4JLQ1RKUIT3O1LFH7Y2KAIH0T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMIDI-86S3PM919E9NR5K32BC7XC1AR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UniformTypeIdentifiers-BURLZUJMMF59K86P7BHA57GIJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/IOSurface-8BU2MXTPCZV3T2A2H7SY4RF3J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Accessibility-8GD0XYTWQEGJHEP4GA1959RWI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Network-BKI76J4ZB8818H3M1300AY1A3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UserNotifications-ELU2ZAW2YD19XAQXL5J3CO02G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OpenGLES-EZF5L1KIEVK0QCAAOC9RPJI6E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/_LocationEssentials-C5F5JU72XISNYY6115AV4FL9E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/FileProvider-BPDDD9OJDZRX4SHYOV4O1H1IH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/OSLog-7B0FE4UNAQ4YHVD61JBSSHO6L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Metal-2DWCT9J6JSQERULOLVNR6ZP6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVRouting-1E0JS1I8W09LZ6GMT818IO9HN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AudioToolbox-94T5LLP14GPLY86575P79EIE4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreLocation-D6U3SZ620UF1TBDPQHOSB7S78.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreVideo-DULORRR0FAA18186KVNUCAE7E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreMedia-BP9TA0VA2ZMXOPUVP4AYQSI9O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/QuartzCore-EM2EXKN4Z0VXHYHEG9JV4740W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/CoreImage-1J06WBZTJNPTNM9D4T9F6AFIW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUICore-7JU3BNFTTY377KK8GNZVBS3BT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/UIKit-VYZ9ZP8XFA9L0O31MHY5C3IC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFAudio-95TUTRHJYCZ58EJH9STJKB59U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/MediaToolbox-78QQ5NYCHKJDIBQJTLTQPTTAN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/AVFoundation-89J9HWKTQGCUL69RSCUZBMBWX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Speech-1C3TBESVVIG19YY8NHZLDAJ0M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Photos-24DUOBECCCJJ7UXC3516LZMA1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/PhotosUI-F3NF0639ZSGAAP8OVSP83A723.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/SwiftUI-8TH0YTZHLR8X4M1WSFYZX894O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/WebKit-243TW0XEHGYFC14RVBXDJRUQ8.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MixCue (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+EmitSwiftModule normal arm64 (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ DeepSeekClient.swift,\ IDResultView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/DeepSeekClient.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/IDResultView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/DeepSeekClient.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/IDResultView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ MixCueTheme.swift,\ PourBoardView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/MixCueTheme.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/PourBoardView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/MixCueTheme.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/PourBoardView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ SettingsPrivacyView.swift,\ SpeechRecognitionService.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/SettingsPrivacyView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/SpeechRecognitionService.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/SettingsPrivacyView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/SpeechRecognitionService.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ RecipeChatView.swift,\ RootNavigationView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/RecipeChatView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/RootNavigationView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/RecipeChatView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/RootNavigationView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ TTSPlayer.swift,\ VoiceNoteRecorder.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/TTSPlayer.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/VoiceNoteRecorder.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/TTSPlayer.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/VoiceNoteRecorder.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ VoiceNoteView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/VoiceNoteView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/VoiceNoteView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ LocalLegalWebView.swift,\ MixCueApp.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/LocalLegalWebView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/MixCueApp.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/LocalLegalWebView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/MixCueApp.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ CameraPicker.swift,\ ConsentSheet.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/CameraPicker.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/ConsentSheet.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/CameraPicker.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/AI/ConsentSheet.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 Compiling\ AppModel.swift,\ BarHomeView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/AppModel.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/BarHomeView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/Services/AppModel.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/App/UI/BarHomeView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MixCue (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriver\ Compilation\ Requirements MixCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCue -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue-14355eccd95641c8983bbef668e1b5b3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/MixCue-Swift.h /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-Swift.h (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-Swift.h -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/MixCue-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftdoc (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftdoc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.abi.json (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftsourceinfo (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling VoiceNoteView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CameraPicker.swift, ConsentSheet.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RecipeChatView.swift, RootNavigationView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DeepSeekClient.swift, IDResultView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling MixCueTheme.swift, PourBoardView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling LocalLegalWebView.swift, MixCueApp.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling TTSPlayer.swift, VoiceNoteRecorder.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsPrivacyView.swift, SpeechRecognitionService.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppModel.swift, BarHomeView.swift (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+SwiftDriver\ Compilation MixCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCue -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue-14355eccd95641c8983bbef668e1b5b3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib normal (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -filelist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.LinkFileList -install_name @rpath/MixCue.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue-linker-args.resp -Wl,-no_warn_duplicate_libraries -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCueDomain.build/Objects-normal/arm64/MixCueDomain-linker-args.resp
+
+ConstructStubExecutorLinkFileList /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-ExecutorLinkFileList-normal-arm64.txt (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    construct-stub-executor-link-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue normal (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.app-Simulated.xcent.der /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib -Xlinker -no_adhoc_codesign -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue
+
+CopySwiftLibs /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Frameworks --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/PlugIns --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/SystemExtensions --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MixCue --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.lingguang.mixcue --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue --dependency-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/Objects-normal/arm64/MixCue.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-16 01:03:54.326 appintentsmetadataprocessor[80043:10190732] Starting appintentsmetadataprocessor export
+2026-10-16 01:03:54.327 appintentsmetadataprocessor[80043:10190732] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Info.plist --temp-dir-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/ssu --bundle-id com.lingguang.mixcue --product-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app --extracted-metadata-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Metadata.appintents --metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Intermediates.noindex/MixCue.build/Debug-iphonesimulator/MixCue.build/MixCue.DependencyMetadataFileList --source-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/Info.plist --archive-ssu-assets
+2026-10-16 01:03:54.342 appintentsnltrainingprocessor[80044:10190733] Parsing options for appintentsnltrainingprocessor
+2026-10-16 01:03:54.342 appintentsnltrainingprocessor[80044:10190733] Starting AppIntents SSU YAML Generation
+2026-10-16 01:03:54.345 appintentsnltrainingprocessor[80044:10190733] No AppShortcuts found - Skipping.
+
+CodeSign /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/MixCue.debug.dylib
+
+CodeSign /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/__preview.dylib (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app/__preview.dylib
+
+CodeSign /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+Validate /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    builtin-validationUtility /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app (in target 'MixCue' from project 'MixCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product/MixCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/product
+    /usr/bin/touch -c /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept/Build/Products/Debug-iphonesimulator/MixCue.app
+
+** BUILD SUCCEEDED **
+

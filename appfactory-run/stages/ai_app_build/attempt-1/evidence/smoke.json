@@ -1,0 +1,11 @@
+{
+  "schema": "appfactory.ultra_lite_smoke.v1",
+  "bundle_id": "com.lingguang.mixcue",
+  "udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+  "device": "iPhone 17 Pro",
+  "app_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/MixCue.app",
+  "launch": "simctl install+launch",
+  "screenshot_ref": "evidence/screenshots/bar-home-smoke.png",
+  "product_commit": "5e418cc1c0f00d290882f5b00d124df373c3734b",
+  "notes": "Bar Home empty: bottle-rail + next-pour card + Shoot/Import + coach bar; AI unconfigured honest banner"
+}

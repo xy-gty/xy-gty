@@ -1,0 +1,107 @@
+Optional(Attributes: Application, 0x114e8a080, pid: 81601, label: 'MixCue'
+Element subtree:
+ →Application, 0x114e8a080, pid: 81601, label: 'MixCue'
+    Window (Main), 0x114e8a1c0, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x114e8a300, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x114e8a440, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x114e8a580, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x114e8a6c0, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x114e8a800, {{0.0, 135.5}, {402.0, 603.0}}
+                NavigationBar, 0x114e8a940, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'Coach'
+                  Button, 0x114e8aa80, {{20.1, 213.4}, {55.3, 55.3}}, identifier: 'BackButton', label: 'Spirit ID'
+                  StaticText, 0x114e8abc0, {{168.8, 228.0}, {64.1, 26.0}}, label: 'Coach'
+                Other, 0x114e8ad00, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x114e8ae40, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x114e8af80, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x114e8b0c0, {{0.0, 135.5}, {402.0, 603.0}}
+                        ScrollView, 0x114e8b200, {{0.0, 135.5}, {402.0, 155.4}}, identifier: 'RecipeChat'
+                          Other, 0x114e8b340, {{0.0, 135.5}, {402.0, 155.4}}
+                            Other, 0x114e8b480, {{0.0, 135.5}, {402.0, 155.4}}
+                          Other, 0x114e8b5c0, {{0.0, 135.5}, {402.0, 155.4}}
+                          Other, 0x114e8b700, {{0.0, 281.2}, {402.0, 185.9}}
+                            StaticText, 0x114e8b840, {{20.1, 301.3}, {361.8, 52.8}}, identifier: 'StatusBanner', label: 'Bottle still captured.'
+                            StaticText, 0x114e8b980, {{20.1, 399.3}, {358.0, 47.7}}, label: 'Ask for a recipe or substitute — e.g. what can I sub for Cointreau.'
+                          Other, 0x114e8bac0, {{360.5, 281.2}, {37.7, 9.6}}, label: 'Vertical scroll bar, 20 pages', value: 0%
+                            Other, 0x114e8bc00, {{394.5, 430.3}, {3.8, 178.4}}
+                          Other, 0x114e8bd40, {{360.5, 281.2}, {37.7, 9.6}}, label: 'Vertical scroll bar, 20 pages', value: 0%
+                            Other, 0x114e8be80, {{394.5, 430.3}, {3.8, 178.4}}
+                        TextField, 0x114e3b5c0, {{15.1, 305.9}, {282.7, 42.7}}, identifier: 'RecipeChat', placeholderValue: 'Recipe or substitute question', value: what can I sub for..., Keyboard Focused
+                        Button, 0x114e38000, {{307.8, 307.2}, {41.0, 40.2}}, identifier: 'RecipeChat', label: 'Arrow Up Circle'
+                        Button, 0x114e38140, {{358.9, 311.0}, {28.1, 33.1}}, identifier: 'RecipeChat', label: 'Microphone'
+                        Button, 0x114e38280, {{104.7, 358.7}, {193.0, 43.1}}, identifier: 'RecipeChat', label: 'Open pour board'
+                Other, 0x114e3b340, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x114e3b200, {{0.0, 135.5}, {402.0, 603.0}}
+    Window, 0x114e3b0c0, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x114e3af80, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x114e3ae40, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x114e3ad00, {{0.0, 416.9}, {402.0, 321.6}}
+          Other, 0x114e3abc0, {{0.0, 416.9}, {402.0, 321.6}}, identifier: 'inputView'
+    Window, 0x114e3aa80, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x114e3a940, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x114e3a800, {{0.0, 416.9}, {402.0, 321.6}}
+          Other, 0x114e3a6c0, {{0.0, 416.9}, {402.0, 55.3}}, identifier: 'SystemInputAssistantView'
+            Other, 0x114e3a580, {{0.0, 416.9}, {402.0, 55.3}}
+              Other, 0x114e3a440, {{0.0, 416.9}, {402.0, 55.3}}, identifier: 'CenterPageView'
+                Other, 0x114e3a300, {{0.0, -376.0}, {320.0, 1244.0}}
+                  ScrollView, 0x114e3a1c0, {{0.0, 416.9}, {402.0, 55.3}}
+                Other, 0x114e3a080, {{0.0, 416.9}, {402.0, 55.3}}
+                  Other, 0x114e39f40, {{0.0, 416.9}, {402.0, 55.3}}, label: 'Typing Predictions'
+                    Other, 0x114e39e00, {{0.0, 416.9}, {402.0, 55.3}}
+                      Other, 0x114e39cc0, {{0.0, 416.9}, {402.0, 55.3}}
+                        Other, 0x114e39b80, {{0.0, 416.9}, {134.0, 55.3}}, label: '“w”'
+                        Other, 0x114e39a40, {{134.0, 416.9}, {134.0, 55.3}}, label: 'what'
+                        Other, 0x114e39900, {{268.0, 416.9}, {134.0, 55.3}}, label: 'we'
+          Other, 0x114e397c0, {{0.0, 416.9}, {402.0, 321.6}}
+            Other, 0x114e39680, {{0.0, 416.9}, {402.0, 321.6}}
+              Other, 0x114e39540, {{0.0, 416.9}, {402.0, 321.6}}
+          Other, 0x114e39400, {{0.0, 472.2}, {402.0, 266.3}}
+            Keyboard, 0x114e392c0, {{0.0, 472.2}, {402.0, 266.3}}
+              Other, 0x114e39180, {{0.0, 472.2}, {402.0, 266.3}}
+                Other, 0x114e39040, {{0.0, 472.2}, {402.0, 266.3}}, identifier: 'UIKeyboardLayoutStar Preview'
+                  Key, 0x114e38f00, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x114e38dc0, {{5.9, 481.0}, {38.9, 67.8}}, label: 'Q'
+                  Key, 0x114e38c80, {{44.8, 481.0}, {39.4, 67.8}}, label: 'W'
+                  Key, 0x114e38b40, {{84.2, 481.0}, {39.4, 67.8}}, label: 'E'
+                  Key, 0x114e38a00, {{123.5, 481.0}, {39.4, 67.8}}, label: 'R'
+                  Key, 0x114e388c0, {{162.9, 481.0}, {39.4, 67.8}}, label: 'T'
+                  Key, 0x114e38780, {{202.3, 481.0}, {39.4, 67.8}}, label: 'Y'
+                  Key, 0x114e38640, {{241.6, 481.0}, {39.4, 67.8}}, label: 'U'
+                  Key, 0x114e38500, {{281.0, 481.0}, {39.4, 67.8}}, label: 'I'
+                  Key, 0x114e383c0, {{320.3, 481.0}, {39.4, 67.8}}, label: 'O'
+                  Key, 0x114c5bac0, {{359.7, 481.0}, {39.4, 67.8}}, label: 'P'
+                  Key, 0x114c5a440, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Key, 0x114c5af80, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x114c5a6c0, {{25.1, 548.8}, {39.4, 67.8}}, label: 'A'
+                  Key, 0x114c5b980, {{64.5, 548.8}, {39.4, 67.8}}, label: 'S'
+                  Key, 0x114c5aa80, {{103.9, 548.8}, {39.4, 67.8}}, label: 'D'
+                  Key, 0x114c5ad00, {{143.2, 548.8}, {39.4, 67.8}}, label: 'F'
+                  Key, 0x114c5b700, {{182.6, 548.8}, {39.4, 67.8}}, label: 'G'
+                  Key, 0x114c5a800, {{221.9, 548.8}, {39.4, 67.8}}, label: 'H'
+                  Key, 0x114c5ae40, {{261.3, 548.8}, {39.4, 67.8}}, label: 'J'
+                  Key, 0x114c5abc0, {{300.7, 548.8}, {39.4, 67.8}}, label: 'K'
+                  Key, 0x114c5b0c0, {{340.0, 548.8}, {39.4, 67.8}}, label: 'L'
+                  Key, 0x114c5b5c0, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Button, 0x114c5b840, {{5.9, 616.6}, {51.1, 67.8}}, identifier: 'shift', label: 'shift', Selected
+                  Key, 0x114c59b80, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Left'
+                  Key, 0x114c5a1c0, {{64.5, 616.6}, {39.4, 67.8}}, label: 'Z'
+                  Key, 0x114c5b340, {{103.9, 616.6}, {39.4, 67.8}}, label: 'X'
+                  Key, 0x114c5bd40, {{143.2, 616.6}, {39.4, 67.8}}, label: 'C'
+                  Key, 0x114c5a940, {{182.6, 616.6}, {39.4, 67.8}}, label: 'V'
+                  Key, 0x114e28500, {{221.9, 616.6}, {39.4, 67.8}}, label: 'B'
+                  Key, 0x114e2b980, {{261.3, 616.6}, {39.4, 67.8}}, label: 'N'
+                  Key, 0x114e2bac0, {{300.7, 616.6}, {39.4, 67.8}}, label: 'M'
+                  Key, 0x114e2bd40, {{0.0, 268.0}, {0.0, 0.0}}, label: 'Padding-Right'
+                  Key, 0x114e2be80, {{347.6, 616.6}, {51.5, 67.8}}, identifier: 'delete', label: 'delete'
+                  Key, 0x114e2bc00, {{5.9, 684.5}, {38.9, 67.8}}, identifier: 'more', label: 'numbers'
+                  Button, 0x114e28140, {{44.8, 684.5}, {39.4, 67.8}}, identifier: 'emoji', label: 'Next keyboard', value: 简体拼音
+                  Button, 0x114e28280, {{84.2, 684.5}, {31.4, 67.8}}, identifier: 'dictation', label: 'Dictate'
+                  Key, 0x114e283c0, {{115.6, 684.5}, {204.8, 67.8}}, identifier: 'space', label: ' '
+                  Button, 0x114e297c0, {{320.3, 684.5}, {78.7, 67.8}}, identifier: 'Send', label: 'send'
+Path to element:
+ →Application, 0x114e8a080, pid: 81601, label: 'MixCue'
+Query chain:
+ →Find: Application 'com.lingguang.mixcue'
+  Output: {
+    Application, 0x114e28000, pid: 81601, label: 'MixCue'
+  }
+)

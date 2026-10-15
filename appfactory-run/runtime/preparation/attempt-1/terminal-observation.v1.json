@@ -1,0 +1,45 @@
+{
+  "event": {
+    "dispatch_id": "c62f28ea-0f50-4415-96b3-4d6e21f1cd34",
+    "agent_id": "cursor-cli-prep-c62f28ea0f50",
+    "execution_seq": 1,
+    "status": "completed",
+    "source": "cursor_task_host",
+    "kind": "execution_completed",
+    "final_text": "Dispatch `c62f28ea-0f50-4415-96b3-4d6e21f1cd34` complete.\n\n- Launch hash verified: `7761851718c2af213c82595cd0ea0525c2f88a25ec1807a28edb4b69ddd61a54`\n- AppRuntimeCore installed; preparation_cache **hit** (shared baseline not recompiled)\n- MixCue domain scaffolding written under `runtime/preparation/attempt-1/workspace/` (entities, navigation, stores, review/permission literals)\n- Domain package compile OK (scratch outside workspace)\n- `PREPARATION.md` → **Status: ready**\n- Finish receipt: `ok: true` / `status: ready`\n\nController can observe stop and seal.\n"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "observed_at": 1792082652.5388732,
+    "controller_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+    "session_id": "grokbot-packaging-kf-20261015T162417Z-7519c0dc",
+    "session_kind": "interactive",
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_95ccf612d562485daae161a1f54922a9",
+        "agent_id": "cursor-cli-pm-95ccf612d562",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_c62f28ea0f50441596b34d6e21f1cd34",
+        "agent_id": "cursor-cli-prep-c62f28ea0f50",
+        "agent_status": {
+          "completed": "CONTROLLER seal: PREPARATION ready + finish ready; agent exited"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-15T16:44:12Z"
+}

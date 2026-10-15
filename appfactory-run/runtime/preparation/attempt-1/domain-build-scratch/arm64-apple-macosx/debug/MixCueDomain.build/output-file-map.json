@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/workspace/Sources/MixCueDomain/Entities.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Entities.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Entities.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Entities~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Entities.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Entities.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/workspace/Sources/MixCueDomain/Navigation.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Navigation.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Navigation.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Navigation~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Navigation.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Navigation.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/workspace/Sources/MixCueDomain/ReviewControls.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/ReviewControls.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/ReviewControls.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/ReviewControls~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/ReviewControls.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/ReviewControls.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/workspace/Sources/MixCueDomain/Stores.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Stores.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Stores.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Stores~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Stores.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/MixCueDomain.build/Stores.dia"
+  }
+}

@@ -1,0 +1,559 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUI.xcodeproj -scheme MixCueAcceptUI -destination "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7" -derivedDataPath /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest "-only-testing:MixCueAcceptUITests/JourneyTests/testUL06SettingsPrivacy" "-only-testing:MixCueAcceptUITests/JourneyTests/testUL04RelaunchPersistence" test
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'MixCueAcceptUITests' in project 'MixCueAcceptUI'
+        ➜ Explicit dependency on target 'HostStub' in project 'MixCueAcceptUI'
+    Target 'HostStub' in project 'MixCueAcceptUI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUI.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+SwiftDriver MixCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MixCueAcceptUITests (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUITests/JourneyTests.swift (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    
+
+SwiftCompile normal arm64 Compiling\ JourneyTests.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUITests/JourneyTests.swift (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUITests/JourneyTests.swift (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling JourneyTests.swift (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+
+SwiftDriver\ Compilation MixCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MixCueAcceptUITests (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+
+SwiftDriver\ Compilation\ Requirements MixCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MixCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftsourceinfo (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.abi.json (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.abi.json /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Ld /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/MixCueAcceptUITests normal (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.swiftmodule @/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/MixCueAcceptUITests
+
+ExtractAppIntentsMetadata (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MixCueAcceptUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier xycoins.2027.test.mixcue.accept.uitests --output /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/MixCueAcceptUITests --dependency-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/MixCueAcceptUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/Objects-normal/arm64/MixCueAcceptUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-16 01:08:39.453 appintentsmetadataprocessor[81094:10203759] Starting appintentsmetadataprocessor export
+2026-10-16 01:08:39.457 appintentsmetadataprocessor[81094:10203759] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest (in target 'MixCueAcceptUITests' from project 'MixCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/MixCueAcceptUITests --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/Frameworks --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/PlugIns --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/SystemExtensions --scan-folder /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Products/Debug-iphonesimulator/MixCueAcceptUITests-Runner.app/PlugIns/MixCueAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Build/Intermediates.noindex/MixCueAcceptUI.build/Debug-iphonesimulator/MixCueAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+2026-10-16 01:08:40.618674+0800 MixCueAcceptUITests-Runner[81097:10203926] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-16 01:08:41.291.
+Test Suite 'MixCueAcceptUITests.xctest' started at 2026-10-16 01:08:41.291.
+Test Suite 'JourneyTests' started at 2026-10-16 01:08:41.291.
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL04RelaunchPersistence]' started.
+    t =     0.00s Start Test at 2026-10-16 01:08:41.292
+    t =     0.03s Set Up
+    t =     0.03s     Terminate com.lingguang.mixcue:80723
+objc[81097]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108264310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107f7c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.08s     Open com.lingguang.mixcue
+    t =     1.08s         Launch com.lingguang.mixcue
+    t =     1.17s             Setting up automation session
+    t =     1.59s             Wait for com.lingguang.mixcue to idle
+    t =     4.12s Terminate com.lingguang.mixcue:81101
+    t =     6.21s Open com.lingguang.mixcue
+    t =     6.21s     Launch com.lingguang.mixcue
+    t =     6.31s         Setting up automation session
+    t =     6.70s         Wait for com.lingguang.mixcue to idle
+    t =    10.30s Added attachment named 'ul04-relaunch-home.png'
+    t =    10.30s Requesting snapshot of accessibility hierarchy for app with pid 81105
+    t =    10.91s Requesting snapshot of accessibility hierarchy for app with pid 81105
+    t =    11.14s Waiting 4.0s for "Settings" Any to exist
+    t =    12.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Any`
+    t =    12.22s         Checking existence of `"Settings" Any`
+    t =    12.43s Checking existence of `"Settings" Any`
+    t =    12.60s Waiting 2.0s for "Back" Button to exist
+    t =    13.68s     Checking `Expect predicate `existsNoRetry == 1` for object "Back" Button`
+    t =    13.68s         Checking existence of `"Back" Button`
+    t =    13.85s         Capturing element debug description
+    t =    14.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Back" Button`
+    t =    14.60s         Checking existence of `"Back" Button`
+    t =    14.77s         Capturing element debug description
+    t =    14.77s     Checking existence of `"Back" Button`
+    t =    14.91s Collecting debug information to assist test failure triage
+    t =    14.91s     Requesting snapshot of accessibility hierarchy for app with pid 81105
+    t =    15.14s Waiting 1.0s for Button (First Match) to exist
+    t =    16.14s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    16.14s         Checking existence of `Button (First Match)`
+    t =    16.28s     Checking existence of `Button (First Match)`
+    t =    16.38s Tap Button (First Match)
+    t =    16.38s     Wait for com.lingguang.mixcue to idle
+    t =    16.38s     Find the Button (First Match)
+    t =    16.48s     Check for interrupting elements affecting "Cancel" Button
+    t =    16.59s     Synthesize event
+    t =    16.89s     Wait for com.lingguang.mixcue to idle
+    t =    18.49s Added attachment named 'ul04-after-back-home.png'
+    t =    18.49s Requesting snapshot of accessibility hierarchy for app with pid 81105
+    t =    18.55s Requesting snapshot of accessibility hierarchy for app with pid 81105
+    t =    18.56s Waiting 3.0s for "BarHome" Any to exist
+    t =    19.64s     Checking `Expect predicate `existsNoRetry == 1` for object "BarHome" Any`
+    t =    19.64s         Checking existence of `"BarHome" Any`
+    t =    19.68s Tear Down
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL04RelaunchPersistence]' passed (19.955 seconds).
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL06SettingsPrivacy]' started.
+    t =     0.00s Start Test at 2026-10-16 01:09:01.249
+    t =     0.03s Set Up
+    t =     0.03s     Terminate com.lingguang.mixcue:81105
+    t =     1.12s     Open com.lingguang.mixcue
+    t =     1.12s         Launch com.lingguang.mixcue
+    t =     1.23s             Setting up automation session
+    t =     1.63s             Wait for com.lingguang.mixcue to idle
+    t =     4.01s Waiting 1.0s for "Allow" Button to exist
+    t =     5.02s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow" Button`
+    t =     5.02s         Checking existence of `"Allow" Button`
+    t =     5.06s         Capturing element debug description
+    t =     5.06s     Checking existence of `"Allow" Button`
+    t =     5.08s Collecting debug information to assist test failure triage
+    t =     5.08s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =     5.11s Waiting 1.0s for "OK" Button to exist
+    t =     6.11s     Checking `Expect predicate `existsNoRetry == 1` for object "OK" Button`
+    t =     6.11s         Checking existence of `"OK" Button`
+    t =     6.15s         Capturing element debug description
+    t =     6.15s     Checking existence of `"OK" Button`
+    t =     6.16s Collecting debug information to assist test failure triage
+    t =     6.16s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =     6.19s Waiting 1.0s for "Allow Access to All Photos" Button to exist
+    t =     7.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Allow Access to All Photos" Button`
+    t =     7.20s         Checking existence of `"Allow Access to All Photos" Button`
+    t =     7.24s         Capturing element debug description
+    t =     7.24s     Checking existence of `"Allow Access to All Photos" Button`
+    t =     7.26s Collecting debug information to assist test failure triage
+    t =     7.26s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =     7.29s Waiting 1.0s for "Full Access" Button to exist
+    t =     8.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Full Access" Button`
+    t =     8.30s         Checking existence of `"Full Access" Button`
+    t =     8.33s         Capturing element debug description
+    t =     8.33s     Checking existence of `"Full Access" Button`
+    t =     8.35s Collecting debug information to assist test failure triage
+    t =     8.35s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =     8.38s Waiting 1.0s for "Continue" Button to exist
+    t =     9.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =     9.39s         Checking existence of `"Continue" Button`
+    t =     9.42s         Capturing element debug description
+    t =     9.42s     Checking existence of `"Continue" Button`
+    t =     9.44s Collecting debug information to assist test failure triage
+    t =     9.44s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =     9.47s Waiting 1.0s for "Don't Allow" Button to exist
+    t =    10.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Don't Allow" Button`
+    t =    10.48s         Checking existence of `"Don't Allow" Button`
+    t =    10.51s         Capturing element debug description
+    t =    10.51s     Checking existence of `"Don't Allow" Button`
+    t =    10.53s Collecting debug information to assist test failure triage
+    t =    10.53s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    10.56s Waiting 0.8s for "允许" Button to exist
+    t =    11.37s     Checking existence of `"允许" Button`
+    t =    11.41s Collecting debug information to assist test failure triage
+    t =    11.41s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    11.44s Waiting 0.8s for "好" Button to exist
+    t =    12.25s     Checking existence of `"好" Button`
+    t =    12.29s Collecting debug information to assist test failure triage
+    t =    12.29s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    12.32s Waiting 0.8s for "好的" Button to exist
+    t =    13.13s     Checking existence of `"好的" Button`
+    t =    13.16s Collecting debug information to assist test failure triage
+    t =    13.16s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    13.20s Waiting 0.8s for "允许访问所有照片" Button to exist
+    t =    14.01s     Checking existence of `"允许访问所有照片" Button`
+    t =    14.04s Collecting debug information to assist test failure triage
+    t =    14.04s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    14.08s Waiting 0.8s for "关闭" Button to exist
+    t =    14.89s     Checking existence of `"关闭" Button`
+    t =    14.92s Collecting debug information to assist test failure triage
+    t =    14.92s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    14.96s Waiting 0.8s for "不允许" Button to exist
+    t =    15.76s     Checking existence of `"不允许" Button`
+    t =    15.80s Collecting debug information to assist test failure triage
+    t =    15.80s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    15.83s Waiting 0.8s for "Allow" Button to exist
+    t =    16.64s     Checking existence of `"Allow" Button`
+    t =    16.67s Collecting debug information to assist test failure triage
+    t =    16.67s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    16.71s Waiting 0.8s for "OK" Button to exist
+    t =    17.52s     Checking existence of `"OK" Button`
+    t =    17.55s Collecting debug information to assist test failure triage
+    t =    17.55s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    17.58s Waiting 0.8s for "Don't Allow" Button to exist
+    t =    18.39s     Checking existence of `"Don't Allow" Button`
+    t =    18.41s Collecting debug information to assist test failure triage
+    t =    18.42s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    19.46s Waiting 0.8s for "允许" Button to exist
+    t =    20.27s     Checking existence of `"允许" Button`
+    t =    20.30s Collecting debug information to assist test failure triage
+    t =    20.30s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    20.34s Waiting 0.8s for "好" Button to exist
+    t =    21.14s     Checking existence of `"好" Button`
+    t =    21.18s Collecting debug information to assist test failure triage
+    t =    21.18s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    21.21s Waiting 0.8s for "好的" Button to exist
+    t =    22.02s     Checking existence of `"好的" Button`
+    t =    22.06s Collecting debug information to assist test failure triage
+    t =    22.06s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    22.09s Waiting 0.8s for "允许访问所有照片" Button to exist
+    t =    22.89s     Checking existence of `"允许访问所有照片" Button`
+    t =    22.92s Collecting debug information to assist test failure triage
+    t =    22.92s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    22.95s Waiting 0.8s for "关闭" Button to exist
+    t =    23.75s     Checking existence of `"关闭" Button`
+    t =    23.79s Collecting debug information to assist test failure triage
+    t =    23.79s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    23.83s Waiting 0.8s for "不允许" Button to exist
+    t =    24.64s     Checking existence of `"不允许" Button`
+    t =    24.67s Collecting debug information to assist test failure triage
+    t =    24.67s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    24.71s Waiting 0.8s for "Allow" Button to exist
+    t =    25.51s     Checking existence of `"Allow" Button`
+    t =    25.55s Collecting debug information to assist test failure triage
+    t =    25.55s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    25.59s Waiting 0.8s for "OK" Button to exist
+    t =    26.40s     Checking existence of `"OK" Button`
+    t =    26.43s Collecting debug information to assist test failure triage
+    t =    26.43s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    26.46s Waiting 0.8s for "Don't Allow" Button to exist
+    t =    27.27s     Checking existence of `"Don't Allow" Button`
+    t =    27.31s Collecting debug information to assist test failure triage
+    t =    27.31s     Requesting snapshot of accessibility hierarchy for app with pid 19697
+    t =    27.34s Waiting 3.0s for "Settings" Button to exist
+    t =    28.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Settings" Button`
+    t =    28.41s         Checking existence of `"Settings" Button`
+    t =    28.72s Checking existence of `"Settings" Button`
+    t =    28.86s Find the "Settings" Button
+    t =    29.00s Tap "BarHome" Button[0.50, 0.50]
+    t =    29.00s     Wait for com.lingguang.mixcue to idle
+    t =    29.00s     Find the "BarHome" Button
+    t =    29.14s     Check for interrupting elements affecting "BarHome" Button
+    t =    29.24s     Synthesize event
+    t =    29.24s         Find the "BarHome" Button
+    t =    29.38s         Find the "BarHome" Button
+    t =    29.51s         Find the "BarHome" Button
+    t =    29.94s     Wait for com.lingguang.mixcue to idle
+    t =    31.16s Added attachment named 'ul02-13-settings.png'
+    t =    31.32s Added attachment named 'rt-settings-privacy.png'
+    t =    31.32s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    31.68s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    31.90s Waiting 4.0s for Button (First Match) to exist
+    t =    32.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    32.97s         Checking existence of `Button (First Match)`
+    t =    33.15s         Capturing element debug description
+    t =    33.90s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    33.90s         Checking existence of `Button (First Match)`
+    t =    34.07s         Capturing element debug description
+    t =    34.93s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    34.93s         Checking existence of `Button (First Match)`
+    t =    35.10s         Capturing element debug description
+    t =    35.91s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    35.91s         Checking existence of `Button (First Match)`
+    t =    36.07s         Capturing element debug description
+    t =    36.08s     Checking existence of `Button (First Match)`
+    t =    36.21s Collecting debug information to assist test failure triage
+    t =    36.21s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    36.44s Waiting 0.8s for Other (First Match) to exist
+    t =    37.25s     Checking existence of `Other (First Match)`
+    t =    37.42s Collecting debug information to assist test failure triage
+    t =    37.42s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    37.65s Waiting 0.5s for StaticText (First Match) to exist
+    t =    38.16s     Checking existence of `StaticText (First Match)`
+    t =    38.33s Collecting debug information to assist test failure triage
+    t =    38.33s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    38.58s Waiting 4.0s for Button (First Match) to exist
+    t =    39.64s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    39.65s         Checking existence of `Button (First Match)`
+    t =    39.82s         Capturing element debug description
+    t =    40.66s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    40.66s         Checking existence of `Button (First Match)`
+    t =    40.83s         Capturing element debug description
+    t =    41.58s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    41.58s         Checking existence of `Button (First Match)`
+    t =    41.75s         Capturing element debug description
+    t =    42.58s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    42.58s         Checking existence of `Button (First Match)`
+    t =    42.75s         Capturing element debug description
+    t =    42.75s     Checking existence of `Button (First Match)`
+    t =    42.89s Collecting debug information to assist test failure triage
+    t =    42.89s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    43.11s Waiting 0.8s for Other (First Match) to exist
+    t =    43.92s     Checking existence of `Other (First Match)`
+    t =    44.10s Collecting debug information to assist test failure triage
+    t =    44.10s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    44.33s Waiting 0.5s for StaticText (First Match) to exist
+    t =    44.84s     Checking existence of `StaticText (First Match)`
+    t =    45.01s Collecting debug information to assist test failure triage
+    t =    45.01s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    45.24s Waiting 4.0s for Button (First Match) to exist
+    t =    46.30s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    46.30s         Checking existence of `Button (First Match)`
+    t =    46.47s         Capturing element debug description
+    t =    47.29s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    47.29s         Checking existence of `Button (First Match)`
+    t =    47.46s         Capturing element debug description
+    t =    48.30s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    48.31s         Checking existence of `Button (First Match)`
+    t =    48.47s         Capturing element debug description
+    t =    49.24s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    49.24s         Checking existence of `Button (First Match)`
+    t =    49.41s         Capturing element debug description
+    t =    49.41s     Checking existence of `Button (First Match)`
+    t =    49.55s Collecting debug information to assist test failure triage
+    t =    49.55s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    49.78s Waiting 0.8s for Other (First Match) to exist
+    t =    50.59s     Checking existence of `Other (First Match)`
+    t =    50.76s Collecting debug information to assist test failure triage
+    t =    50.76s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    50.99s Waiting 0.5s for StaticText (First Match) to exist
+    t =    51.49s     Checking existence of `StaticText (First Match)`
+    t =    51.66s Collecting debug information to assist test failure triage
+    t =    51.66s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    51.89s Waiting 4.0s for Button (First Match) to exist
+    t =    52.95s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    52.95s         Checking existence of `Button (First Match)`
+    t =    53.12s         Capturing element debug description
+    t =    53.95s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    53.96s         Checking existence of `Button (First Match)`
+    t =    54.12s         Capturing element debug description
+    t =    54.98s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    54.98s         Checking existence of `Button (First Match)`
+    t =    55.15s         Capturing element debug description
+    t =    55.89s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    55.89s         Checking existence of `Button (First Match)`
+    t =    56.06s         Capturing element debug description
+    t =    56.06s     Checking existence of `Button (First Match)`
+    t =    56.20s Collecting debug information to assist test failure triage
+    t =    56.20s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    56.42s Waiting 0.8s for Other (First Match) to exist
+    t =    57.22s     Checking existence of `Other (First Match)`
+    t =    57.40s Collecting debug information to assist test failure triage
+    t =    57.40s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    57.62s Waiting 0.5s for StaticText (First Match) to exist
+    t =    58.13s     Checking existence of `StaticText (First Match)`
+    t =    58.30s Collecting debug information to assist test failure triage
+    t =    58.30s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    58.53s Swipe up Application 'com.lingguang.mixcue'
+    t =    58.53s     Wait for com.lingguang.mixcue to idle
+    t =    58.53s     Find the Application 'com.lingguang.mixcue'
+    t =    58.63s     Check for interrupting elements affecting "MixCue" Application
+    t =    58.73s     Synthesize event
+    t =    59.15s     Wait for com.lingguang.mixcue to idle
+    t =    60.38s Added attachment named 'rt-settings-scrolled.png'
+    t =    60.38s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    60.91s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    61.17s Waiting 4.0s for Button (First Match) to exist
+    t =    62.17s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    62.17s         Checking existence of `Button (First Match)`
+    t =    62.35s         Capturing element debug description
+    t =    63.20s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    63.21s         Checking existence of `Button (First Match)`
+    t =    63.38s         Capturing element debug description
+    t =    64.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    64.22s         Checking existence of `Button (First Match)`
+    t =    64.39s         Capturing element debug description
+    t =    65.17s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    65.17s         Checking existence of `Button (First Match)`
+    t =    65.34s         Capturing element debug description
+    t =    65.35s     Checking existence of `Button (First Match)`
+    t =    65.48s Collecting debug information to assist test failure triage
+    t =    65.48s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    65.72s Waiting 0.8s for Other (First Match) to exist
+    t =    66.53s     Checking existence of `Other (First Match)`
+    t =    66.71s Collecting debug information to assist test failure triage
+    t =    66.71s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    66.95s Waiting 0.5s for StaticText (First Match) to exist
+    t =    67.46s     Checking existence of `StaticText (First Match)`
+    t =    67.63s Collecting debug information to assist test failure triage
+    t =    67.63s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    67.87s Waiting 4.0s for Button (First Match) to exist
+    t =    68.93s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    68.93s         Checking existence of `Button (First Match)`
+    t =    69.11s         Capturing element debug description
+    t =    69.87s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    69.87s         Checking existence of `Button (First Match)`
+    t =    70.04s         Capturing element debug description
+    t =    70.89s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    70.89s         Checking existence of `Button (First Match)`
+    t =    71.07s         Capturing element debug description
+    t =    71.87s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    71.87s         Checking existence of `Button (First Match)`
+    t =    72.04s         Capturing element debug description
+    t =    72.04s     Checking existence of `Button (First Match)`
+    t =    72.18s Collecting debug information to assist test failure triage
+    t =    72.18s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    72.42s Waiting 0.8s for Other (First Match) to exist
+    t =    73.23s     Checking existence of `Other (First Match)`
+    t =    73.41s Collecting debug information to assist test failure triage
+    t =    73.41s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    73.65s Waiting 0.5s for StaticText (First Match) to exist
+    t =    74.16s     Checking existence of `StaticText (First Match)`
+    t =    74.33s Collecting debug information to assist test failure triage
+    t =    74.33s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    74.56s Waiting 4.0s for Button (First Match) to exist
+    t =    75.60s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    75.61s         Checking existence of `Button (First Match)`
+    t =    75.78s         Capturing element debug description
+    t =    76.63s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    76.63s         Checking existence of `Button (First Match)`
+    t =    76.80s         Capturing element debug description
+    t =    77.65s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    77.65s         Checking existence of `Button (First Match)`
+    t =    77.82s         Capturing element debug description
+    t =    78.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    78.57s         Checking existence of `Button (First Match)`
+    t =    78.74s         Capturing element debug description
+    t =    78.74s     Checking existence of `Button (First Match)`
+    t =    78.88s Collecting debug information to assist test failure triage
+    t =    78.88s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    79.11s Waiting 0.8s for Other (First Match) to exist
+    t =    79.93s     Checking existence of `Other (First Match)`
+    t =    80.11s Collecting debug information to assist test failure triage
+    t =    80.11s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    80.35s Waiting 0.5s for StaticText (First Match) to exist
+    t =    80.86s     Checking existence of `StaticText (First Match)`
+    t =    81.03s Collecting debug information to assist test failure triage
+    t =    81.03s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    82.52s Added attachment named 'ul06-consent-action.png'
+    t =    82.72s Added attachment named 'rt-consent-ai.png'
+    t =    82.72s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    83.08s Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    83.31s Waiting 3.0s for Button (First Match) to exist
+    t =    84.37s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    84.37s         Checking existence of `Button (First Match)`
+    t =    84.55s         Capturing element debug description
+    t =    85.40s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    85.40s         Checking existence of `Button (First Match)`
+    t =    85.57s         Capturing element debug description
+    t =    86.31s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    86.31s         Checking existence of `Button (First Match)`
+    t =    86.48s         Capturing element debug description
+    t =    86.48s     Checking existence of `Button (First Match)`
+    t =    86.62s Collecting debug information to assist test failure triage
+    t =    86.62s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    86.86s Waiting 0.8s for Other (First Match) to exist
+    t =    87.67s     Checking existence of `Other (First Match)`
+    t =    87.85s Collecting debug information to assist test failure triage
+    t =    87.85s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    88.08s Waiting 0.5s for StaticText (First Match) to exist
+    t =    88.59s     Checking existence of `StaticText (First Match)`
+    t =    88.77s Collecting debug information to assist test failure triage
+    t =    88.77s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    89.00s Waiting 3.0s for Button (First Match) to exist
+    t =    90.04s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    90.04s         Checking existence of `Button (First Match)`
+    t =    90.21s         Capturing element debug description
+    t =    91.04s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    91.04s         Checking existence of `Button (First Match)`
+    t =    91.21s         Capturing element debug description
+    t =    92.01s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    92.01s         Checking existence of `Button (First Match)`
+    t =    92.19s         Capturing element debug description
+    t =    92.19s     Checking existence of `Button (First Match)`
+    t =    92.33s Collecting debug information to assist test failure triage
+    t =    92.33s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    92.57s Waiting 0.8s for Other (First Match) to exist
+    t =    93.38s     Checking existence of `Other (First Match)`
+    t =    93.55s Collecting debug information to assist test failure triage
+    t =    93.55s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    93.79s Waiting 0.5s for StaticText (First Match) to exist
+    t =    94.29s     Checking existence of `StaticText (First Match)`
+    t =    94.46s Collecting debug information to assist test failure triage
+    t =    94.46s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    94.70s Waiting 3.0s for Button (First Match) to exist
+    t =    95.75s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    95.75s         Checking existence of `Button (First Match)`
+    t =    95.92s         Capturing element debug description
+    t =    96.76s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    96.76s         Checking existence of `Button (First Match)`
+    t =    96.93s         Capturing element debug description
+    t =    97.71s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    97.71s         Checking existence of `Button (First Match)`
+    t =    97.88s         Capturing element debug description
+    t =    97.88s     Checking existence of `Button (First Match)`
+    t =    98.02s Collecting debug information to assist test failure triage
+    t =    98.02s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    98.25s Waiting 0.8s for Other (First Match) to exist
+    t =    99.06s     Checking existence of `Other (First Match)`
+    t =    99.24s Collecting debug information to assist test failure triage
+    t =    99.24s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =    99.48s Waiting 0.5s for StaticText (First Match) to exist
+    t =    99.99s     Checking existence of `StaticText (First Match)`
+    t =   100.15s Collecting debug information to assist test failure triage
+    t =   100.15s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =   100.39s Waiting 3.0s for Button (First Match) to exist
+    t =   101.45s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   101.45s         Checking existence of `Button (First Match)`
+    t =   101.62s         Capturing element debug description
+    t =   102.46s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   102.46s         Checking existence of `Button (First Match)`
+    t =   102.63s         Capturing element debug description
+    t =   103.40s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =   103.40s         Checking existence of `Button (First Match)`
+    t =   103.57s         Capturing element debug description
+    t =   103.57s     Checking existence of `Button (First Match)`
+    t =   103.71s Collecting debug information to assist test failure triage
+    t =   103.71s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =   103.95s Waiting 0.8s for Other (First Match) to exist
+    t =   104.76s     Checking existence of `Other (First Match)`
+    t =   104.94s Collecting debug information to assist test failure triage
+    t =   104.94s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =   105.18s Waiting 0.5s for StaticText (First Match) to exist
+    t =   105.69s     Checking existence of `StaticText (First Match)`
+    t =   105.86s Collecting debug information to assist test failure triage
+    t =   105.86s     Requesting snapshot of accessibility hierarchy for app with pid 81129
+    t =   106.10s Tear Down
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL06SettingsPrivacy]' passed (106.389 seconds).
+Test Suite 'JourneyTests' passed at 2026-10-16 01:10:47.638.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 126.344 (126.347) seconds
+Test Suite 'MixCueAcceptUITests.xctest' passed at 2026-10-16 01:10:47.640.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 126.344 (126.348) seconds
+Test Suite 'Selected tests' passed at 2026-10-16 01:10:47.640.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 126.344 (126.349) seconds
+2026-10-16 01:10:47.972 xcodebuild[81068:10203500] [MT] IDETestOperationsObserverDebug: 128.479 elapsed -- Testing started completed.
+2026-10-16 01:10:47.972 xcodebuild[81068:10203500] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-16 01:10:47.972 xcodebuild[81068:10203500] [MT] IDETestOperationsObserverDebug: 128.479 sec, +128.479 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest/Logs/Test/Test-MixCueAcceptUI-2026.10.16_01-08-36-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

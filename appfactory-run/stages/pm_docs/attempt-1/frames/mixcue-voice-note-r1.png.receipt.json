@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-e5daa2eec568",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 597495,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/frames/mixcue-voice-note-r1.png",
+  "output_sha256": "b23a29b20fd348b2eb704f32671b0e2ff93c440b9f00f276110a1e209330926a",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/pm_docs/attempt-1/frames/prompts/mixcue-voice-note-r1.txt",
+  "prompt_sha256": "666a4248c0ed642a500bf93cd70d0e1ece5ee8f6198902b5929b6387732d8234",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "42b04da014951ec0a5cc66face7a954bf05b3ef7050d38d3631444651db14b16",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T16:35:34Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

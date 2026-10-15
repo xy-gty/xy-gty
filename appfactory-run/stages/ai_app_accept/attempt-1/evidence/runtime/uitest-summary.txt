@@ -1,0 +1,29 @@
+=== UL01 ===
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL01HomeLaunch]' passed (7.072 seconds).
+Test Suite 'JourneyTests' passed at 2026-10-16 01:04:25.035.
+Test Suite 'MixCueAcceptUITests.xctest' passed at 2026-10-16 01:04:25.036.
+Test Suite 'Selected tests' passed at 2026-10-16 01:04:25.037.
+** TEST SUCCEEDED **
+=== UL02 (settings interruption; core shots captured) ===
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL02CoreFlowsAndPrivacy]' failed (161.420 seconds).
+Test Suite 'JourneyTests' failed at 2026-10-16 01:07:18.741.
+Test Suite 'MixCueAcceptUITests.xctest' failed at 2026-10-16 01:07:18.741.
+Test Suite 'Selected tests' failed at 2026-10-16 01:07:18.741.
+** TEST FAILED **
+=== UL02b sell ===
+Ignoring --strip-bitcode because --sign was not passed
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL02bSellCoachAndPour]' passed (94.555 seconds).
+/Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUITests/JourneyTests.swift:308: error: -[MixCueAcceptUITests.JourneyTests testUL06SettingsPrivacy] : XCTAssertTrue failed - Settings surface not reached (nav/permissions/revoke)
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL06SettingsPrivacy]' failed (108.253 seconds).
+Test Suite 'JourneyTests' failed at 2026-10-16 01:15:08.747.
+=== UL04 ===
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/a2026/work/factory-prod-1/runs/kf-20261015T162417Z-7519c0dc/stages/ai_app_accept/attempt-1/evidence/ui-harness/MixCueAcceptUI.xcodeproj -scheme MixCueAcceptUI -destination "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7" -derivedDataPath /tmp/appfactory-derived-kf-20261015T162417Z-7519c0dc-accept-uitest "-only-testing:MixCueAcceptUITests/JourneyTests/testUL06SettingsPrivacy" "-only-testing:MixCueAcceptUITests/JourneyTests/testUL04RelaunchPersistence" test
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL04RelaunchPersistence]' started.
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL04RelaunchPersistence]' passed (19.955 seconds).
+** TEST SUCCEEDED **
+=== UL06 ===
+Test Case '-[MixCueAcceptUITests.JourneyTests testUL06SettingsPrivacy]' passed (104.831 seconds).
+Test Suite 'JourneyTests' passed at 2026-10-16 01:20:40.097.
+Test Suite 'MixCueAcceptUITests.xctest' passed at 2026-10-16 01:20:40.098.
+Test Suite 'Selected tests' passed at 2026-10-16 01:20:40.099.
+** TEST SUCCEEDED **
