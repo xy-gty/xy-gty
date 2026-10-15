@@ -1,0 +1,2 @@
+Does this still show RuleCue Settings listing Camera, Photos, Microphone, and Speech Recognition as four separate rows, plus revoke/legal controls?
+Answer with pass or fail first, then brief evidence.

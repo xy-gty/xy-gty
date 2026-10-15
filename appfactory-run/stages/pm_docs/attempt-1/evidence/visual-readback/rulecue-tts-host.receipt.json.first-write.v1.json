@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "rulecue-tts-host.receipt.json",
+  "verdict_sha256": "913a2bd2c8408b0358971beb0b23553e474ea75cb5912cb389d89fbd2f2d63d2",
+  "written_at": "2026-10-15T11:21:50Z"
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "rulecue-capture-import.receipt.json",
+  "verdict_sha256": "5d8107e0e3f678fb3611262529dd0a22f9f1277b34b6dab5346c749d4cdff4f5",
+  "written_at": "2026-10-15T11:21:50Z"
+}

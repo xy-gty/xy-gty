@@ -1,0 +1,5 @@
+Query chain:
+ →Find: Application 'com.lingguang.rulecue'
+  ↪︎Find: Descendants matching type Any
+    ↪︎Find: Elements matching predicate 'label CONTAINS "10月" OR label CONTAINS "照片,"'
+      ↪︎Find: First Match

@@ -1,0 +1,214 @@
+{
+  "_control_event_cursor": 17,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-15T11:10:31Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/MAP.md",
+        "result_sha256": "3858efbc346fe6800c46dc2960e56ebbc64239d2a424e7116ff8552947c5d76d",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "2e94cde81ebc33f6145375c8056445109baadc138717f343888507412b484194"
+      },
+      "started_at": "2026-10-15T11:51:14Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T12:18:21Z"
+    },
+    "ai_app_build": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "658919f5c0419344198a49738e0796c54ca8fb46e177a97bf7c26545131295f1",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "795b7a8c42eb4c775c63c6cacc922f1ff422668805ba66e982223c7e457c64fa",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_build/attempt-1/MAP.md",
+        "result_sha256": "91309f8d103f78c04697a07ec1ba25fd7ca5dd6a0e5ee074e8f2cd9e4f3e475d",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900"
+      },
+      "started_at": "2026-10-15T11:31:42Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T11:51:06Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/delivery/attempt-1/MAP.md",
+        "result_sha256": "f098de62ccd865348b3035542e8ff4f3ad3df3098f41b90e6863f1b6cb0b72ec",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900"
+      },
+      "started_at": "2026-10-15T12:18:49Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T12:24:27Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/goal/goal.json",
+        "goal_sha256": "c3288b07cd5a22f8b175bb855fa5b4068808b77adbc577a487b0264fe5503232"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-15T11:10:31Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "a2fada465f543447924302ad8de161f29663784b902f5cb099f00874efcf1fa9",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-15T11:10:41Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T11:25:53Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# RuleCue\n\nPaid AI board-game rules & setup coach (one-time unlock for unlimited game packs; no coins).\n\nRemake vs Board Game Stats (nl.vissering.BoardGameStats) — differentiate: rules/setup coach, not play-stats.\n\n## Core loop\nSnap or import rulebook pages and table photos → recognize components/phases → chat for rulings and turn flow → generate annotated setup/zone overlays → TTS table-host cues.\n\n## Hard operator rules\n- product_dir: rulecue/ (never leave as product/ only — symlink rulecue→product)\n- palette: primary #854D0E · secondary #FEFCE8 · accent #0891B2 (must differ from StopCue #16A34A/#F0FDF4/#DB2777, NightCue #1E3A8A, and other delivered apps; ban all-black/dark-gray clones)\n- UI: 桌游桌面分区卡 + 回合步骤条（must look clearly different from StopCue film-sprocket timeline, NightCue night-frame rail, HiveCue/FormCue/YarnCue/ScoutCue — no twins）\n- Four permissions with real flows (extend core, do not replace):\n  - Camera: capture rulebook pages, component close-ups, current table layout\n  - Photos: import rulebook PDF pages / past-table photos for compare\n  - Microphone: hands-free ask while setting up (e.g. can I play this card)\n  - Speech Recognition: spoken rules questions written into coach chat and trigger next tip\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues for non-core UL fails; P1 non-blockers must not block delivery\n- When disk tight: clear unused DerivedData/simulator caches (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI board-game rules & setup coach: snap or import rulebook and table photos, recognize components and phases, chat for rulings, generate annotated setup overlays, TTS table-host cues—unlock unlimited game packs.\n\n## Positioning\n桌游规则与摆台 AI 教练——拍规则书/桌面，对话答疑，生成摆台标注图，TTS 边摆边讲。\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "report_status": "produced",
+  "requested_count": 1,
+  "run_id": "kf-20261015T111031Z-ed6f1861",
+  "run_status": "delivered",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1627.0,
+            "finished_at": "2026-10-15T12:18:21Z",
+            "started_at": "2026-10-15T11:51:14Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1164.0,
+            "finished_at": "2026-10-15T11:51:06Z",
+            "started_at": "2026-10-15T11:31:42Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 338.0,
+            "finished_at": "2026-10-15T12:24:27Z",
+            "started_at": "2026-10-15T12:18:49Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 912.0,
+            "finished_at": "2026-10-15T11:25:53Z",
+            "started_at": "2026-10-15T11:10:41Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 9,
+  "ultra_lite_execution_revision": "p1"
+}

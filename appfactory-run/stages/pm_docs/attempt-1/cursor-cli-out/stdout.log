@@ -1,0 +1,14 @@
+Dispatch `1df3c2d5-…` executed. Launch hash verified. **Status: ready.**
+
+**Done**
+- Product **RuleCue** (`com.lingguang.rulecue`) — `build/{product,features,design,acceptance}.md`
+- Technical contract frozen: `technical_contract_sha256: c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7`
+- Mailbox: `technical_contract_ready`
+- 8-frame GrokBot batch (RuleCue-prefixed local_seed) + readbacks + `visual_manifest` freeze: `803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900`
+- `finish --status ready` accepted (`map_sha256: a2fada465f543447924302ad8de161f29663784b902f5cb099f00874efcf1fa9`)
+- `rulecue → product` symlink intact
+
+**Hard rules locked:** palette `#854D0E/#FEFCE8/#0891B2`; UI = table zone cards + turn step bar; four permissions with real flows; no AppIcon/LaunchScreen; free app / no coins; Feishu CONTROLLER_DELIVERY skip.
+
+**Gaps (non-blocking)**  
+Operator paid packs deferred under UltraLite `free_app_only`; legal URLs / AI key / CloudKit / Feishu row UNKNOWN.

@@ -1,0 +1,4 @@
+{
+  "schema": "appfactory.codex_infra_retry.v1",
+  "retries": []
+}

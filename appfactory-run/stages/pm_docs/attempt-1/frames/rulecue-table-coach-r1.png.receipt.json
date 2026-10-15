@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-147e8a2701be",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 694404,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/frames/rulecue-table-coach-r1.png",
+  "output_sha256": "7cd4f97b8ad9d83d69363c70863ad009d2dead5e157a4948133b2cbd859f6f75",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/frames/prompts/rulecue-table-coach-r1.txt",
+  "prompt_sha256": "ee48bb66e12221ff4ee33ab7789db4151ac16159167ef68ebbc2280ca05ec892",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "e82fe497b883d5a2e3797bd6eb1e5f574b769dc94aa6b90dceefe3bddfff946e",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T11:18:04Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

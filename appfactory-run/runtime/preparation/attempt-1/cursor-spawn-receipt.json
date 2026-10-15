@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "af993f1f-effd-446a-9260-73fb080fbbd8",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "pkg_af993f1feffd446a926073fb080fbbd8",
+    "prompt": "Dispatch af993f1f-effd-446a-9260-73fb080fbbd8. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/runtime/preparation/attempt-1/codex.launch.md SHA-256 b839ba7f4e8b91cfbd5dc5ebeaa85ea72d109617557f450568177476c090a178. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-prep-af993f1feffd",
+  "agent_name": "/root/pkg_af993f1feffd446a926073fb080fbbd8",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T11:26:37Z",
+  "pid": 39061,
+  "note": "RuleCue preparation e1 local agent CLI start_new_session"
+}

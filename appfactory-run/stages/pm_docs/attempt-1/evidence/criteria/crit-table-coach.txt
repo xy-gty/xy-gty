@@ -1,0 +1,2 @@
+Does this still show RuleCue TableCoach with table zone cards (Deck/Board/Players) AND a horizontal turn step bar, #854D0E/#FEFCE8/#0891B2 palette, and NOT film-sprocket timeline or onion-skin overlay?
+Answer with pass or fail first, then brief evidence.

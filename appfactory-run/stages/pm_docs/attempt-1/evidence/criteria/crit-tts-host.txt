@@ -1,0 +1,2 @@
+Does this still show RuleCue Host TTS with Play/Pause and current cue text, with turn step bar visible?
+Answer with pass or fail first, then brief evidence.

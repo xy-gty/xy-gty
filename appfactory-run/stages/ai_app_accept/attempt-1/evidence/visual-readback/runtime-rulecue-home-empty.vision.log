@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-rulecue-home-empty.receipt.json",
+  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-rulecue-home-empty.receipt.jsonl",
+  "model": "auto"
+}
+{
+  "index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+  "index_sha256": "0b12a6390a831f8a10ea9abfd1e9fd5da5cf6c40653942bdb2cfe866fef411f3",
+  "counts": {
+    "reused_design": 8,
+    "new_design_read": 0,
+    "new_runtime_read": 1
+  }
+}

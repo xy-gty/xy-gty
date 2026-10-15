@@ -1,0 +1,2 @@
+Does this still show RuleCue Sessions empty state with table-zone-card silhouette (Deck/Board/Players), New session CTA, #854D0E/#FEFCE8/#0891B2 palette, and no StopCue film-sprocket / NightCue rail / HiveCue / FormCue / YarnCue / ScoutCue twins or all-black shell?
+Answer with pass or fail first, then brief evidence.

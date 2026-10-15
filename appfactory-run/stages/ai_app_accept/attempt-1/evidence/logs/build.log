@@ -1,0 +1,1123 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -scheme RuleCue -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7" -derivedDataPath /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1 CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator26.5
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  AppRuntimeCore: /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+  RuleCue: /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'RuleCue' in project 'RuleCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'RuleCueDomain' in project 'RuleCue'
+    Target 'RuleCueDomain' in project 'RuleCue'
+        ➜ Explicit dependency on target 'RuleCueDomain' in project 'RuleCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'RuleCueDomain' in project 'RuleCue'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore'
+        ➜ Explicit dependency on target 'AppRuntimeCore' in project 'AppRuntimeCore'
+    Target 'AppRuntimeCore' in project 'AppRuntimeCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 518c9d49f0501e38e2b3598279210d71
+Build description path: /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/XCBuildData/518c9d49f0501e38e2b3598279210d71.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue-b6334e532eb7d5f7efa5bd41229295e6-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue-b6334e532eb7d5f7efa5bd41229295e6-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-create-build-directory /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.modulemap (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.modulemap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyStaticMetadataFileList (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyMetadataFileList (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyStaticMetadataFileList (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyMetadataFileList (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_const_extract_protocols.json (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.LinkFileList (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftConstValuesFileList (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-OutputFileMap.json (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-project-headers.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-project-headers.hmap
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/RuleCueDomain.modulemap /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.modulemap (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.modulemap /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-own-target-headers.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-generated-files.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-target-headers.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-non-framework-target-headers.hmap (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibPath-normal-arm64.txt (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibInstallName-normal-arm64.txt (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_const_extract_protocols.json (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftConstValuesFileList (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.LinkFileList (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-OutputFileMap.json (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    write-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList
+
+MkDir /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore.modulemap /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.modulemap /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+SwiftDriver AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrcheck-4R1JA3NBUBT5QVAHZZDHZ2KG3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_float-9MNJIMU03YBEYGOX7D30SUXLX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_SwiftConcurrencyShims-4CXGWBUV8USOLNCN1JW514HTM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_AvailabilityInternal-OKCOBIHA1Z07QWLI3OC1GWWC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftShims-4J17E5PNXFYHVD5MZ9DGH775B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdbool-8YP4DQBYIDZQXTR51VWA9MF4C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdarg-18M8LNVSECMWY8BDIJX78WX9F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrauth-2GCG4WEQ20W624SU2D8QTJ84G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stddef-BQ92VEFEVDNW50SQU9MQ40T8N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DeveloperToolsSupport-1CR251U2Z683QV7N1ONFQHLRN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation1-DK4GIEDI72WG37963TP2UDS1O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ExtensionFoundation-20J27XW3MJVKIVDATRRH9NFNG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation2-FV27PDR6BW2LL5P54DT7HREP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_limits-AC09A4AOG589D8V5CO0U53018.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_tgmath-45Y3WAH0BGV9KDCTJX3JR8J7A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/sys_types-CK3NR9SPZAZHBANGPJ8LEHN85.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdint-ZOT8FJFQXC8V3FX3W7POXVLU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_intrinsics-7OII5OQSSRYPIX8ZZN1QACYWV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdatomic-2QF056BA4JE47SW5VO0EXJARI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation3-B2N003GCLR5309P3G13F8Z4W7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_inttypes-3C7SIZUCRPMUN0OUY3LCDFQOT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Darwin-61TNTU439AWV2X7V69DID6AHL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/simd-JCGEDWGF43VABBFJ7RDY697Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MachO-1UC0LYY2C50BORTX2WX8YMI6E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ObjectiveC-BA2OO6JVLHXRW2IVDOJKHALF9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_object-9O3LQV7N2GEAHL8FY54UWY8YM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_workgroup-9MM1J7T61FL5K8D7JONRW7UN9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Spatial-DDE0S8W5JXESDR2YJ1MIER57O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Dispatch-EDQG97LSZ36K374YLN9SWD75J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreFoundation-A7ZCTAKILBJAGXRA758SON8Y7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/dnssd-5BFR2Q9HVIKYLQ2D0O959TUG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/XPC-7VNO8BXYY9GWJC9VEXV92ZI4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os-B85QGS2T67L4FJ5HX6UE7DVSR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Security-8Y3FC6YVGRHB6842NQY2MSJK0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudioTypes-3Q4NFD5N47AY57H3QPF4KPPBW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CFNetwork-7RS84GEAX1LPZQM4LUKHKQKSG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreGraphics-6URKDUBT5TQ8GP2N7KSXUNT0T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudio-57ABDN43FGDAXKQYK5HBSDJBD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Foundation-40ODMH912CGLETVNAXK9JEGMY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ImageIO-3A1H51RRK7DNQJLABYUCVI2N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreText-71B4PWIS1BTGOJ2SVLUEQKWQB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UniformTypeIdentifiers-7Q98HWSHZIU5KTE1MCKAXPSJ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMIDI-ESMY916XTZ8OYJ4A9S3JVX98U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UserNotifications-4M86W2T9MQ9Y0SOEYYBYK79CR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreTransferable-3G9TL4OULKQN6R8R3NLZ16EAS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Accessibility-EZOLYDGZKLPAKF3HQZ9SPRSBF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIUtilities-ED2HJNJJGOE3Y2QL4U79BAR4V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreData-AGBLUMAAZEM49OT0TVQAA336A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Symbols-6QRF898EC1Q0TID663B4O7Z8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Network-8LIQFHN0PITQ13HKP3AIEM3U1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/FileProvider-EIGT5DSJP2TB4JPP3NWNVYBJR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OpenGLES-B8QDEGMXZ15JTOH116Q83IK3F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/IOSurface-DVM91AVC9FL02ZA8FBB02588H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OSLog-ETEWTSAM7MXDB0V4LQMC6JNSL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_LocationEssentials-8E3KR0BMCB9UTEG0C7YREECGN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DataDetection-7JLUCLV0KM8R1SS4TJHOBQCKL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AudioToolbox-EQQDOKTBBM5JIKRZWZ4PFZ5Q6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVRouting-5P5FY8MBGRNTBIWML39PCGRXD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Metal-AWFWDHEJFQKR5F84HEZJNPVHA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreLocation-5WQ7Z3EJG43SS0FJFF1QHFD26.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreVideo-101O2FUKLNBAUUFYKP8DTFHQH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/QuartzCore-2FUKO5XOO7RJMDMN6MC36T7RD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreImage-4DDWUGENHNBUXOB02HGLSJ1B1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMedia-E43K1NMZ0QQTK58D1O0YYF9H8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUICore-6OTK72Y6REUALY31HHQF3YM4G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIKit-BN5INM9YGH9JZLVM2BZV074CM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFAudio-4PIIX0JKMBB5ROREP29A5VCI8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MediaToolbox-98P7NT2ODLCYJKWZ0Z7G70XC1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFoundation-5TQHA2D2482J88MFMF95HLWEB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Photos-DFWIS7V0XYB2REFZD6PQWFG6T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/PhotosUI-6OQYQIA5D8FECF5AYAFMF78SK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUI-41F0X3E1ZQS7VB0ZML31X55XX.pcm
+
+SwiftCompile normal arm64 Compiling\ KeychainCredentialStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+EmitSwiftModule normal arm64 (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ TypedNavigationStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AtomicCodableStore.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ AIConsentGate.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ PhotoImportSession.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ RuntimeForm.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for AppRuntimeCore (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriver\ Compilation\ Requirements AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/AppRuntimeCore-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver RuleCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_float-4OPE4JJB4T0A6TM84QYK7HWWN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_SwiftConcurrencyShims-8J5DOEBGQVUKL8HZIHBYW0U8C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DeveloperToolsSupport-32B57G7PDZMVTKBRDNJXI1CEV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftShims-7141YWLE4IT6MQE1FDC9F8HUT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrcheck-16XGTJB48LV0BQEJYX6ASIYJ0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_AvailabilityInternal-1OR5LPFH1G0H54EL1GPCJI67X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrauth-9RVIYEXKGM07W57JXOY56ZAN5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdarg-4HYRAAAKH8AZAT67S8I3YSMD2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdbool-SLY8BCO2Q0POTN65A06C4GWR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stddef-8CDZA1JN6CKSK3PEZCQITY3U2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation1-DI8TLIST559CYZHO12JSZF6A0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_limits-DYC7BBS6DZXHP7112VXTV4J5O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ExtensionFoundation-CXRF3R4W7DDBUFDMOCU6NOH18.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation2-3N36YPK6ZSSJNWRFZB29QXPC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_tgmath-1XSYRV5YKM15Y1JVG4EUSH1UW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdint-E4MXZ6WMVEPVYAMXRQGBYD58T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/sys_types-49O4RZGF9E40V6ZVPI0Q9NZMG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdatomic-4JIIL2032DT87VNMNWRCYN56H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation3-CTWCUAL1L6SY3MRRRHZ8DBXSU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_intrinsics-1TOE3MUFCB31YYOF3LZH2ZEFT.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling TypedNavigationStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AtomicCodableStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling KeychainCredentialStore.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AIConsentGate.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling PhotoImportSession.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_inttypes-8Q7KITPCP3YV6TEUG7MMP59C6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Darwin-EZ961L4XO2FHLZQEWBE1V9WNJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/simd-49EMLY8GZKSHD7CGXAF0IK5B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MachO-AXMHVQVJ7EE0H4IH093ERJOCB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ObjectiveC-CHEOY0KZXB6LUP2LK3GG107WW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_object-56H989SGDG2XNLPXR4K02STQG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_workgroup-5S2I5O63IVZDFD4G3LXM5KQJG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Spatial-2J18BU8XV1P3BSD6DCQUDE99T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Dispatch-EFLTOKUB93MPJ5IB93LBUCGG0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/dnssd-1HJDG7TXUJUC0KJKI4YFI5ZSF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/XPC-GZECLCT3594UDSNHYMK55TZH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreFoundation-9RCTVGQD8I5XJ4S7SSOVHC811.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os-BVZ6JVJ5WDMF7WITFPO06GO49.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CFNetwork-3W8OIGRZNDYTVWB1VVPOI354M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudioTypes-AIYH7IYRL0Z0DUZFL1BX0HST.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreGraphics-E81WM624O7EK2F7TOK9W7WSXI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Security-CLZB45MI5QJFEFKZXFKMPR7D5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudio-EB49LS3TJLEQ7N61Z90BV2MX6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Foundation-DP5DERRDOP46HYRWLW9BQSVY9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreText-A7MN6OTDPMDXJ4PTCSTXDDT3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ImageIO-7AWKW944PJUXPL2LOSNEHM2L2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OSLog-IGG174WTIGNX1A4AP90DLOKK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Accessibility-5XG152YKO45VSWWQY4TTNH8ID.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/FileProvider-AMY70N8P5K202H86NWVZDHFJK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DataDetection-6HNGKOLMAOEDTQ0W0GYWET93E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UserNotifications-EI3R7M3UT5ENQ8GFP0W3O099F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreTransferable-EC0EZAQAYD1L64Z2AL48DKBQ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/IOSurface-CAQHZLMEGXRJQRWRP2XMTG35T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_LocationEssentials-BLJ13Q3USKZJIEIFCB75H4KRW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Symbols-6V8UMWFOPIRZRGFHORPBX8EMI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UniformTypeIdentifiers-1DA6C4JDUNSKJPNELU7L7ET3H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMIDI-9MDFCA8M24VOLY01M6NW87FP0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIUtilities-FVGR0M5ZGTTMYCRE3ZBDVT3F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Network-3M8JVJ0DHFR5201OWBBV8EZL2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreData-9J9U1HQIQ6P9AMYFWROU1CO2Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreLocation-8DZ8MVJTOFJ0AJ8D6K5B57SWR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Metal-TR3JIYFN8YKOB7KL59MD7E21.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OpenGLES-AD234SZWPQKDEEGNRX1PMQDRP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AudioToolbox-8BD3PPFUSI39O3O5U9B9CQKGG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVRouting-D4Q3PJ86RRNAKCXYR8ARC4BZW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreVideo-C9CA4OGSY8Z2UQP0FXKXFLGZ2.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling RuntimeForm.swift (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+
+SwiftDriver\ Compilation AppRuntimeCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AppRuntimeCore -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name appruntimecore -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o normal (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/QuartzCore-2L48MZAUTXR7SEUHSW3HJY9CX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreImage-9BUOWHE1BZJ3KVECGRMQVGQ8K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMedia-CED4J5JQ4IJGZFYV269COVUX8.pcm
+
+ExtractAppIntentsMetadata (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name AppRuntimeCore --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier appruntimecore.AppRuntimeCore --output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o --dependency-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/AppRuntimeCore.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-15 19:57:12.317 appintentsmetadataprocessor[57598:9615678] Starting appintentsmetadataprocessor export
+2026-10-15 19:57:12.338 appintentsmetadataprocessor[57598:9615678] Extracted no relevant App Intents symbols, skipping writing output
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o (in target 'AppRuntimeCore' from project 'AppRuntimeCore')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Vendor/AppRuntimeCore
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/AppRuntimeCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUICore-3CJDZJ2WM44FFJYPBAINQP5PF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MediaToolbox-D4HIFD9YBVKAV6A8NJ9LTN672.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFAudio-88TH0XLVBJBMRX8DEXE8K4H7U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIKit-8VQS2WC8G8PITR4K3XKD1M149.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFoundation-4TM66WDKAR2B2LQANZZ2I5MIF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Photos-CVLDXPYHLKXYAG8LRAE25NGZD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUI-5BJV0O8Z9A2ILWS50MFSVCVJR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/PhotosUI-1GV0CY6LIU3D3XG4XIL5D2ZR9.pcm
+
+SwiftCompile normal arm64 Compiling\ Entities.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Entities.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Entities.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ RuleCueDomain (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+EmitSwiftModule normal arm64 (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Stores.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Stores.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Stores.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Navigation.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Navigation.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/Navigation.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ ReviewControls.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/ReviewControls.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Sources/RuleCueDomain/ReviewControls.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for RuleCueDomain (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftDriver\ Compilation\ Requirements RuleCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/RuleCueDomain-Swift.h /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-Swift.h (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-Swift.h -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/RuleCueDomain-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftdoc (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.abi.json (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftsourceinfo (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+MkDir /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/thinned (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/thinned
+
+MkDir /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/unthinned (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /bin/mkdir -p /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/unthinned
+
+GenerateAssetSymbols /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets --compile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_dependencies --output-partial-info-plist /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator --bundle-identifier com.lingguang.rulecue --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets --compile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist_thinned --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone18,1 --filter-for-device-os-version 26.5 --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist_thinned
+
+
+LinkAssetCatalog /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Assets.xcassets (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-linkAssetCatalog --thinned /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/thinned --thinned-dependencies /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist_unthinned --output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app --plist-output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReviewControls.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Stores.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Navigation.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Entities.swift (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+
+SwiftDriver\ Compilation RuleCueDomain normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCueDomain -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -package-name product -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_const_extract_protocols.json -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.o normal (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-linker-args.resp -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.o
+
+ExtractAppIntentsMetadata (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name RuleCueDomain --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier product.RuleCueDomain --output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.o --dependency-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/RuleCueDomain.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-15 19:57:13.184 appintentsmetadataprocessor[57618:9615751] Starting appintentsmetadataprocessor export
+2026-10-15 19:57:13.189 appintentsmetadataprocessor[57618:9615751] Extracted no relevant App Intents symbols, skipping writing output
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.o (in target 'RuleCueDomain' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/Package.swift')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCueDomain.o
+
+CpResource /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/support.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/support.html (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/support.html /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+Ld /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/__preview.dylib normal (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -install_name @rpath/RuleCue.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_dependency_info.dat -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/__preview.dylib
+
+CpResource /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/terms.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/terms.html (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/terms.html /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/provider-policy.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/provider-policy.html (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/provider-policy.html /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/PrivacyInfo.xcprivacy /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/PrivacyInfo.xcprivacy (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/PrivacyInfo.xcprivacy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+CpResource /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/privacy.html /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/privacy.html (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Resources/Legal/privacy.html /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+ProcessInfoPlistFile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Info.plist /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Info.plist (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-infoPlistUtility /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/assetcatalog_generated_info.plist -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Info.plist
+
+SwiftDriver RuleCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCue -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue-b6334e532eb7d5f7efa5bd41229295e6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_AvailabilityInternal-8SCUWJ5CPSOVNYPQAA3CSABBC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_float-AWRLS2W3RW4XIICYZPDWX5JST.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrauth-61EIDK4548718SDYFXTTDYCEE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DeveloperToolsSupport-37XNVN84MV16F79ED3X27849J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdarg-AXBXXTMDGJWNIQYTB8GVPRH0L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdbool-PZZOCND8USWQCUWD9X66OZJ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftShims-EXIYXQXHDQNFLWTJX4FEBF4PA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_SwiftConcurrencyShims-3UVO1V1SY7ZVRCJTJUA9UZXA0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stddef-5FUC4NV21J1GE4EBJ9XYDSWIU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ptrcheck-6R5URAESSJT4LPTCS98INQM8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation1-4UP4WDPDVXS33OAMZ18DENWHL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation2-3A02YAHH30QUX7NBXQ186QEEM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_limits-1RQU96JCG88RCBOGRMFQIFUES.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ExtensionFoundation-20I9OEMQAHGS4YPUC0ZX3SXIO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdint-8153MKJTIBE9Q74JZQH2LRCU2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_tgmath-3JAF7ML7CZUBXVE9N8PT9UC4A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/sys_types-52ETTJBXBAMQ28BBNZZB26IBG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_DarwinFoundation3-D4EIJN09VZQKAYUPPH280JFGE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_intrinsics-8414HFEO0RB2BJNZUFHUCP8IL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_stdatomic-C087RAJ5B8DQ9XTVHNPJKMEED.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_Builtin_inttypes-M94UHOKLW72NTPY5UJ5HILZ7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Darwin-8HCRSNDPTO45X254VD5ACGK9G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/simd-RKMO98PVTZQ87TX3OZ27JE8N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MachO-63PIF8SLBEKCEP7XW8UYM0LCO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ObjectiveC-CW05ISHQAD8IMHRTFDDDJLEGG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_object-C90VZ7PYNTIAK7TG6UYY7EHQ4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os_workgroup-3R2Y2MELBE7T71GIYYZD117RK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Spatial-F27Q4ZG0LG1KY5KKRCO0696Q9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Dispatch-2ASQO8YVSD67X9E36AE822DRW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/XPC-AE62DLH4BHRYHTO7SIZ0RBE5G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/dnssd-1OUEPNQE55XB9XYSC2YT7O26V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreFoundation-31T8LYWZ05E21NQOJ1CKJ4V7S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/os-CJUDDGATQKF6X5V105DVH3D4T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudioTypes-ENOMA4ZSEDY9AVS0S0QKGEJEJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Security-E59R5PV4AAYBWBR159Z88793P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CFNetwork-ER34HBCEJSVAXVHX3VNPU7RUY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreGraphics-BSF879NFBQFJ3L9DL7YPIH8BX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreAudio-7DMKAS7D7QS6R5J4C9RCAK4R9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Foundation-JFET2WNYHP8MPH8JV2OHFT0B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreText-6Q8XMDM51PFS1XC25YUKJKNHK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/ImageIO-2S1DXPDLJJ9EOARW5VC0TPOHA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OpenGLES-2Z4MJM2FKOA782TKYPIHBUZ1K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreData-2DHK6RF8NKF7ZMWCAL9KAOCVY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UniformTypeIdentifiers-5OZ7X71STHWGX4IFS2D5NO717.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMIDI-9PJWLCQUAQZVMRR1L4RW89F39.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreTransferable-AEHQBT9VRFTKVXFZ7VD29J3EQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/DataDetection-EEDE2A67F5TTWTDW5ZSY5OEJE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/_LocationEssentials-65P17JC8JXKMRW3IC7D7AD4GI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/FileProvider-6OIG3UPDS5QF7C1N79OFRMKNA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Network-JD7SIQFCYY6ZDYYVHNFSRHFB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIUtilities-1UHEFAAIPI4707TKZCTUXU5S4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/IOSurface-11LPD5ECMYGBONUX9O9AXL6BI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UserNotifications-1MBRUNBLCFPKP1B7FV70NL3QY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/OSLog-6I3UDOYFKKZR5WOGOBGH3CHBG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreLocation-352DQZD5JZLDGZBLAZ580MAZX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Symbols-1Y95WEMQ53POUF85RKHYL0ROX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Accessibility-2DIOJWK6UNLMOTD5SVDC8SJWV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AudioToolbox-2PQQ68Q6YJWXCH3LJ5LUYN4PD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Metal-4A5B42NZNH9SPJ1VKWN8UIHLC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVRouting-64OLTWBSJH8NG8B7V4272RB07.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreVideo-DMTUT8L93PIOOTVB234UO9PHA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreImage-BZ7FOPE8PJUC9R9PP0PO1CUV4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/QuartzCore-6CS1DDUXW2ZXEXKGXZOXB0OF9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/CoreMedia-3DV3VEYSXDSCOPU1NRG2DX9Z3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUICore-A92AH2CSF0S3D0CZ6PNMCHTOA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/UIKit-2V9B0ZXTU9FIDUBKY3EF7VFZH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/MediaToolbox-7JVVQT73SC3GB62VH22JX819C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFAudio-41YGAYGRK384AHW339P2KTLZG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/AVFoundation-DK9IFDAZK61KJJ52C6O69N6UM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Photos-EX3XFFCF9HDMZXQWJYU4YIAZL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Speech-C7GWK8K42SJB6GIZJ6DF6GQ7A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/WebKit-3SU7Q8NOSJ7QVJ2XV5F3P42I4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/PhotosUI-9M9GCQOIW919UFB5TLSDH9CW1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/SwiftUI-7BZEDHMXG9Z6HUCZ44H7XG6B7.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ RuleCue (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+EmitSwiftModule normal arm64 (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ SpeechRecognitionService.swift,\ TableCoachView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/SpeechRecognitionService.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TableCoachView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/SpeechRecognitionService.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TableCoachView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ RuleCueTheme.swift,\ SessionsHomeView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/RuleCueTheme.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/SessionsHomeView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/RuleCueTheme.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/SessionsHomeView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ HostCueTTSPlayer.swift,\ HostTTSView.swift,\ LocalLegalWebView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/HostCueTTSPlayer.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/HostTTSView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/LocalLegalWebView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/HostCueTTSPlayer.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/HostTTSView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/LocalLegalWebView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ TurnStepBar.swift,\ GeneratedAssetSymbols.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TurnStepBar.swift /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TurnStepBar.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ SettingsPrivacyView.swift,\ SetupOverlayView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/SettingsPrivacyView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/SetupOverlayView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/SettingsPrivacyView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/SetupOverlayView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ RootNavigationView.swift,\ RuleCueApp.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/RootNavigationView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/RuleCueApp.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/RootNavigationView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/RuleCueApp.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ TableZoneCards.swift,\ TurnReviewView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TableZoneCards.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TurnReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TableZoneCards.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/TurnReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ ConsentSheet.swift,\ DeepSeekClient.swift,\ DictateRulesView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/ConsentSheet.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/DeepSeekClient.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/DictateRulesView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/ConsentSheet.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/AI/DeepSeekClient.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/DictateRulesView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ AppModel.swift,\ CameraPicker.swift,\ CaptureImportView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/AppModel.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CameraPicker.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CaptureImportView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/AppModel.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CameraPicker.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CaptureImportView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 Compiling\ CoachChatView.swift,\ ComponentRecognizer.swift,\ ComponentReviewView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CoachChatView.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/ComponentRecognizer.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/ComponentReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/CoachChatView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/Services/ComponentRecognizer.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/App/UI/ComponentReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for RuleCue (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriver\ Compilation\ Requirements RuleCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCue -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue-b6334e532eb7d5f7efa5bd41229295e6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling RootNavigationView.swift, RuleCueApp.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftMergeGeneratedHeaders /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/RuleCue-Swift.h /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-Swift.h (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-swiftHeaderTool -arch arm64 /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-Swift.h -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/RuleCue-Swift.h
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftdoc (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftdoc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.abi.json (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.abi.json /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftsourceinfo (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling TurnStepBar.swift, GeneratedAssetSymbols.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling TableZoneCards.swift, TurnReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsPrivacyView.swift, SetupOverlayView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ConsentSheet.swift, DeepSeekClient.swift, DictateRulesView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RuleCueTheme.swift, SessionsHomeView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CoachChatView.swift, ComponentRecognizer.swift, ComponentReviewView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SpeechRecognitionService.swift, TableCoachView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppModel.swift, CameraPicker.swift, CaptureImportView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HostCueTTSPlayer.swift, HostTTSView.swift, LocalLegalWebView.swift (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+SwiftDriver\ Compilation RuleCue normal arm64 com.apple.xcode.tools.swift.compiler (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name RuleCue -Onone @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue-b6334e532eb7d5f7efa5bd41229295e6-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue.debug.dylib normal (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -filelist /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.LinkFileList -install_name @rpath/RuleCue.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.swiftmodule @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue-linker-args.resp -Wl,-no_warn_duplicate_libraries -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue.debug.dylib -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore.swiftmodule @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/AppRuntimeCore.build/Debug-iphonesimulator/AppRuntimeCore.build/Objects-normal/arm64/AppRuntimeCore-linker-args.resp -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain.swiftmodule @/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCueDomain.build/Objects-normal/arm64/RuleCueDomain-linker-args.resp
+
+ConstructStubExecutorLinkFileList /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-ExecutorLinkFileList-normal-arm64.txt (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    construct-stub-executor-link-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+
+Ld /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue normal (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue-ExecutorLinkFileList-normal-arm64.txt /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue.debug.dylib -o /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue
+
+CopySwiftLibs /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue.debug.dylib --scan-folder /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Frameworks --scan-folder /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/PlugIns --scan-folder /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/SystemExtensions --scan-folder /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name RuleCue --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.lingguang.rulecue --output /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/RuleCue --dependency-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/Objects-normal/arm64/RuleCue.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-15 19:57:16.946 appintentsmetadataprocessor[57718:9616191] Starting appintentsmetadataprocessor export
+2026-10-15 19:57:16.947 appintentsmetadataprocessor[57718:9616191] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Info.plist --temp-dir-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/ssu --bundle-id com.lingguang.rulecue --product-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app --extracted-metadata-path /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Metadata.appintents --metadata-file-list /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Intermediates.noindex/RuleCue.build/Debug-iphonesimulator/RuleCue.build/RuleCue.DependencyMetadataFileList --source-file /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app/Info.plist --archive-ssu-assets
+2026-10-15 19:57:16.973 appintentsnltrainingprocessor[57719:9616192] Parsing options for appintentsnltrainingprocessor
+2026-10-15 19:57:16.973 appintentsnltrainingprocessor[57719:9616192] Starting AppIntents SSU YAML Generation
+2026-10-15 19:57:16.975 appintentsnltrainingprocessor[57719:9616192] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-RegisterExecutionPolicyException /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+Validate /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    builtin-validationUtility /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app (in target 'RuleCue' from project 'RuleCue' at path '/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product/RuleCue.xcodeproj')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/product
+    /usr/bin/touch -c /tmp/appfactory-derived-kf-20261015T111031Z-ed6f1861-accept-1/Build/Products/Debug-iphonesimulator/RuleCue.app
+
+** BUILD SUCCEEDED **
+

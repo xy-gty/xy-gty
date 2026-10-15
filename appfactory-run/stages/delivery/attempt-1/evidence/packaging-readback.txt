@@ -1,0 +1,11 @@
+HEAD=0ca4a31f94354b3456e1aa739e92496e5fbfb2bb
+branch=rulecue/kf-20261015T111031Z-ed6f1861
+remote=git@github.com:xy-gty/xy-gty.git
+0ca4a31f94354b3456e1aa739e92496e5fbfb2bb	refs/heads/rulecue/kf-20261015T111031Z-ed6f1861
+rulecue_symlink=product
+candidate=artifacts/candidates/0ca4a31f9435-9b8b99bc9e24
+candidate_zip=RuleCue.app.zip present
+receipt_sha256=7bf7d7be14a27f525a3a93e2fcf2f228d4d4cd68f6fbc3a925a5a4bc4424e22e
+feishu=CONTROLLER_DELIVERY_skip
+pro_max=untouched Booted left alone
+deriveddata=never_touched_in_run_or_pro_max

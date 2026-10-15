@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "6c42a648-0d63-44ac-8db4-c04fd78eda6d",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-builder",
+    "model": "auto",
+    "description": "pkg_6c42a6480d6344ac8db4c04fd78eda6d",
+    "prompt": "Dispatch 6c42a648-0d63-44ac-8db4-c04fd78eda6d. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_build/attempt-1/codex.launch.md SHA-256 51b2dcb658661ef17b346bcfc2b63eb105e63b2b0440694ca19b8fe88961f013. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-build-6c42a6480d63",
+  "agent_name": "/root/pkg_6c42a6480d6344ac8db4c04fd78eda6d",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T11:32:27Z",
+  "pid": 42259,
+  "note": "RuleCue ai_app_build e1 local agent CLI start_new_session"
+}

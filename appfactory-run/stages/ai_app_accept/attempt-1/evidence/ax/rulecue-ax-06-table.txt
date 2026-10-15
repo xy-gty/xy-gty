@@ -1,0 +1,90 @@
+Attributes: Application, 0x11285e300, pid: 61467, label: 'RuleCue'
+Element subtree:
+ →Application, 0x11285e300, pid: 61467, label: 'RuleCue'
+    Window (Main), 0x11285e440, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x11285e580, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x11285e6c0, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x11285e800, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x11285e940, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x11285ea80, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x11285ebc0, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x11285ed00, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x11285ee40, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x11285ef80, {{0.0, 135.5}, {402.0, 603.0}}
+                        Other, 0x11285f0c0, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x11285f200, {{0.0, 135.5}, {402.0, 603.0}}
+                            NavigationBar, 0x11285f340, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'Capture / Import'
+                              Button, 0x11285f480, {{20.1, 213.4}, {55.3, 55.3}}, identifier: 'BackButton', label: 'New session'
+                              StaticText, 0x11285f5c0, {{118.9, 228.0}, {163.7, 26.0}}, label: 'Capture / Import'
+                            Other, 0x11285f700, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x11285f840, {{0.0, 135.5}, {402.0, 603.0}}
+                                Other, 0x11285f980, {{0.0, 135.5}, {402.0, 603.0}}
+                                  Other, 0x11285fac0, {{0.0, 135.5}, {402.0, 603.0}}
+                                    ScrollView, 0x11285fc00, {{0.0, 135.5}, {402.0, 603.0}}
+                                      Other, 0x11285fd40, {{0.0, -25.3}, {320.0, 409.3}}
+                                        StaticText, 0x11285fe80, {{20.0, -5.3}, {182.0, 26.3}}, label: 'Capture or import'
+                                        StaticText, 0x102e77d40, {{25.1, 184.5}, {351.8, 80.8}}, label: 'Snap rulebook pages, component close-ups, or the current table layout — or import past table photos.'
+                                        StaticText, 0x102e76f80, {{25.1, 287.9}, {281.4, 42.3}}, label: 'Session opened — capture or import rulebook / table photos.'
+                                        Button, 0x102e77200, {{25.1, 352.8}, {351.8, 78.3}}, label: 'Capture page / table'
+                                          Image, 0x102e77480, {{81.7, 381.7}, {26.0, 20.5}}, identifier: 'camera.fill', label: 'Camera'
+                                          StaticText, 0x102e77e80, {{25.1, 352.8}, {351.8, 78.3}}, label: 'Capture page / table'
+                                        Button, 0x102e77c00, {{25.1, 453.8}, {351.8, 78.3}}, label: 'Import photos'
+                                          Image, 0x102e775c0, {{111.8, 481.8}, {26.8, 22.2}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x102e77700, {{25.1, 453.8}, {351.8, 78.3}}, label: 'Import photos'
+                                        StaticText, 0x102e76e40, {{25.1, 554.7}, {337.5, 38.1}}, label: 'Permission denied? You can still browse a local empty session and type questions later.'
+                                      Other, 0x102e770c0, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x102e77340, {{0.0, 135.5}, {402.0, 214.6}}
+                                        Other, 0x102e77840, {{0.0, 536.5}, {402.0, 202.0}}
+                                      Other, 0x112bcda40, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x112bcd180, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Image, 0x112bcdb80, {{-120.0, -166.0}, {560.0, 332.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x112bcea80, {{0.0, 135.5}, {402.0, 133.2}}
+                                          Other, 0x112bce580, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x112bcdcc0, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Other, 0x112bccb40, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x112bced00, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Other, 0x112bcd7c0, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x112bcd900, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x112bccc80, {{0.0, 135.5}, {402.0, 214.6}}
+                                      Other, 0x112bce6c0, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 2 pages', value: 100%
+                                        Other, 0x112bccdc0, {{394.5, 360.0}, {3.8, 254.2}}
+                                      Other, 0x112bce800, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 2 pages', value: 100%
+                                        Other, 0x112bcee40, {{394.5, 360.0}, {3.8, 254.2}}
+                            Other, 0x112bcebc0, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x112bce940, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x112bce1c0, {{0.0, 617.9}, {402.0, 120.6}}
+                  Other, 0x112bcdf40, {{0.0, 135.5}, {402.0, 603.0}}
+                    TabBar, 0x112bce300, {{0.0, 617.9}, {402.0, 120.6}}, label: 'Tab Bar'
+                      Other, 0x112bcde00, {{28.9, 617.9}, {344.2, 77.9}}
+                        Other, 0x112bce440, {{28.9, 617.9}, {118.1, 67.8}}
+                        Other, 0x112bcca00, {{28.9, 617.9}, {344.2, 77.9}}
+                          Button, 0x112bccf00, {{33.9, 622.9}, {118.1, 67.8}}, identifier: 'rectangle.grid.2x2.fill', label: 'Sessions', Selected
+                            Image, 0x112bcf340, {{72.9, 632.1}, {39.4, 31.4}}, identifier: 'rectangle.grid.2x2.fill', label: 'rectangle.grid.2x2.fill'
+                          Button, 0x112bcfd40, {{142.0, 622.9}, {118.1, 67.8}}, identifier: 'tablecells.fill', label: 'Table'
+                            Image, 0x112bcc140, {{180.9, 632.1}, {41.5, 31.4}}, identifier: 'tablecells.fill', label: 'table'
+                          Button, 0x112bcfc00, {{250.0, 622.9}, {118.1, 67.8}}, identifier: 'gearshape.fill', label: 'Settings'
+                            Image, 0x112bcc780, {{291.4, 630.5}, {35.2, 35.2}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x112bcc000, {{33.9, 622.9}, {118.1, 67.8}}
+                          Other, 0x112bcc500, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x112bcc280, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x112bcc8c0, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x112bcd2c0, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x112bcf200, {{33.9, 622.9}, {118.1, 67.8}}
+                                  Other, 0x112bcd540, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x112bcfe80, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x112bcf840, {{33.9, 622.9}, {118.1, 67.8}}
+                  Other, 0x112bce080, {{0.0, 617.9}, {402.0, 120.6}}
+                    Other, 0x112bcd400, {{0.0, 617.9}, {402.0, 120.6}}
+                      Other, 0x112bcd040, {{0.0, 617.9}, {402.0, 120.6}}
+                        Other, 0x112bcd680, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x112bcc3c0, {{0.0, 617.9}, {402.0, 120.6}}
+                            Other, 0x112bcf700, {{0.0, 617.9}, {402.0, 104.3}}
+                        Other, 0x112bcc640, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x112bcf480, {{0.0, 617.9}, {402.0, 104.3}}
+Path to element:
+ →Application, 0x11285e300, pid: 61467, label: 'RuleCue'
+Query chain:
+ →Find: Application 'com.lingguang.rulecue'
+  Output: {
+    Application, 0x112bcf5c0, pid: 61467, label: 'RuleCue'
+  }

@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261015T111031Z-ed6f1861",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "rulecue-home-empty",
+      "page_id": "sessions_home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-home-empty-r1.txt",
+      "image_ref": "frames/rulecue-home-empty-r1.png",
+      "receipt_ref": "frames/rulecue-home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-home-empty.receipt.jsonl",
+          "sha256": "84aee604b5c5f6624cab6123aeb042a716d62b14a9d9094e9e26f41950ac1ffb"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-home-empty.receipt.json",
+          "sha256": "cee1dcfb18d5aa113daa5d59ef86d2327fe70778a8b525e59e8933402d947629"
+        }
+      ],
+      "prompt_sha256": "0ab4cd38c80b486e67573ac5e018af62a60c7f43450676d3b05325bed5172bef",
+      "image_sha256": "2fd4f1711d01c64010bbc084336a26db337e4225572bf6aa984bfb363e937029",
+      "receipt_sha256": "8f117a7971f094893e47ef2d1612d57472b0605f482d3a5c563516628a546a87",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-capture-import",
+      "page_id": "capture_import",
+      "state_id": "ready",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-capture-import-r1.txt",
+      "image_ref": "frames/rulecue-capture-import-r1.png",
+      "receipt_ref": "frames/rulecue-capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-capture-import.receipt.jsonl",
+          "sha256": "424be65c5fab1fa58809e8794465978d3f16bb513fcebbde0ee5333fd7de73ac"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-capture-import.receipt.json",
+          "sha256": "25507b85def52f9c18c8a041d779e6144e0297f4c88914e3b726054bd15f56d6"
+        }
+      ],
+      "prompt_sha256": "ce68de8b603cd3a03bf8bcb36de5d5231f7fdf3bece466ab89fd42e86f4715a9",
+      "image_sha256": "684bc546bbcaa3ae61f533907771bdadeddeca00413871d2f776a72643cfd995",
+      "receipt_sha256": "fbbba8f229eeaba836a023c7e7acffc35ecbcf00fdcc7bf96cbf691f4bc28aa2",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-component-review",
+      "page_id": "component_review",
+      "state_id": "draft",
+      "criterion_ids": [
+        "crit-component-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-component-review-r1.txt",
+      "image_ref": "frames/rulecue-component-review-r1.png",
+      "receipt_ref": "frames/rulecue-component-review-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-component-review.receipt.jsonl",
+          "sha256": "ed39d96ecab3bb3d3c65802eb1e6deb43baf1de5072b645f94b27fda3a62d213"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-component-review.receipt.json",
+          "sha256": "2f165779d2a500f7534a1fa4c928e2c115ea146aeccde39d54d19645e4c6e499"
+        }
+      ],
+      "prompt_sha256": "f7b93991d21a932f4fc3ce46f2eeedb85367e14c878391a8788ccb27a8bc5dd2",
+      "image_sha256": "7c8268357deda6ef16e1fa4932c835225f63366498494e17e7aafc6b55433a9e",
+      "receipt_sha256": "2a1c9056635bcbea84c4e8e2524ab43fa540fe3ab1e025185bee08a4e59ab100",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-table-coach",
+      "page_id": "table_coach",
+      "state_id": "zones_steps",
+      "criterion_ids": [
+        "crit-table-coach"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-table-coach-r1.txt",
+      "image_ref": "frames/rulecue-table-coach-r1.png",
+      "receipt_ref": "frames/rulecue-table-coach-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-table-coach.receipt.jsonl",
+          "sha256": "d275c48cbe57356c0959b588761256664d2b102a06ae621cf3c4997d96ea9e89"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-table-coach.receipt.json",
+          "sha256": "1d3545142ba22ae00cf9c98f9e8a1cf1bbd70acf8eb50eeb938b49a7036862b0"
+        }
+      ],
+      "prompt_sha256": "ee48bb66e12221ff4ee33ab7789db4151ac16159167ef68ebbc2280ca05ec892",
+      "image_sha256": "7cd4f97b8ad9d83d69363c70863ad009d2dead5e157a4948133b2cbd859f6f75",
+      "receipt_sha256": "c7b1f385ee3ab5934b34c78fa0b4bd20e2ad3084ad9769f821a76c91f205361e",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-coach-chat",
+      "page_id": "coach_chat",
+      "state_id": "thread",
+      "criterion_ids": [
+        "crit-coach-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-coach-chat-r1.txt",
+      "image_ref": "frames/rulecue-coach-chat-r1.png",
+      "receipt_ref": "frames/rulecue-coach-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-coach-chat.receipt.jsonl",
+          "sha256": "15fcf490ba470313d0207746ba1c285f4c529c3308ff246456b0a90fd036b9ae"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-coach-chat.receipt.json",
+          "sha256": "47ae8024038598350485327187871ef280d2efc8264ce510af04af0d8aeec751"
+        }
+      ],
+      "prompt_sha256": "79e9489eaaaa265861c83356630ea2bba2640742ccc1c2d5f4f23ace8a007691",
+      "image_sha256": "ca5fe687c1cc64c91e7a589cf17017dd1abbb37220e708758e185fd773e964d8",
+      "receipt_sha256": "521e8e92ef2ed80d7554d8f304243ba6a00aef5524f280630215e7d2969c62ca",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-setup-overlay",
+      "page_id": "setup_overlay",
+      "state_id": "annotated",
+      "criterion_ids": [
+        "crit-setup-overlay"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-setup-overlay-r1.txt",
+      "image_ref": "frames/rulecue-setup-overlay-r1.png",
+      "receipt_ref": "frames/rulecue-setup-overlay-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-setup-overlay.receipt.jsonl",
+          "sha256": "1aa302aaaf9944b4d1e4fa62b0df2a92d226a50d0ef25e358e693e2ea69ad620"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-setup-overlay.receipt.json",
+          "sha256": "f8db9709253a722f2e14615385fb698fbf620a37031acefc6cfb678568db0ce5"
+        }
+      ],
+      "prompt_sha256": "ac957bb178d2037207adae2978cbfe8e3f48eb3ad52a2dc044670335e43a3ea4",
+      "image_sha256": "f034b0df63da0a8fb1566eb95ab90be3165461fbdbe30149c140ab9cbaa0de72",
+      "receipt_sha256": "b99d1d862710d2a6fc6c9d8f627b9eb5b9f4372b8e54e1b5db5eed13f0c11dcd",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-tts-host",
+      "page_id": "host_tts",
+      "state_id": "playing",
+      "criterion_ids": [
+        "crit-tts-host"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-tts-host-r1.txt",
+      "image_ref": "frames/rulecue-tts-host-r1.png",
+      "receipt_ref": "frames/rulecue-tts-host-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-tts-host.receipt.jsonl",
+          "sha256": "1af94510df5348e6de6189769e9ab9c2e05196e1ef2c07d5d3b1818f69b93a82"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-tts-host.receipt.json",
+          "sha256": "0be08edbc6c11db713670d604b866cee6118dac236541d671434eaa7ad561518"
+        }
+      ],
+      "prompt_sha256": "a4059ef25bb3bb3eb572a4f7655345cc59a4ab53dd0ba9e99c0d40fe92af7a54",
+      "image_sha256": "a8ef96a2a924a9c530d877db10e621f62e53d1c28ac081ea08c73ac36cafed8b",
+      "receipt_sha256": "b54a397680c05f04f81eab1878662ce25221826496084afa40c52aed51cdef47",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "rulecue-settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "crit-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/rulecue-settings-privacy-r1.txt",
+      "image_ref": "frames/rulecue-settings-privacy-r1.png",
+      "receipt_ref": "frames/rulecue-settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/rulecue-settings-privacy.receipt.jsonl",
+          "sha256": "3ff028fcfb8feb07efec89063220e967fb31c2f64208153e4fed1f0cd0973dbc"
+        },
+        {
+          "ref": "evidence/visual-readback/rulecue-settings-privacy.receipt.json",
+          "sha256": "d6310c48bf450933c21c94d5a689fe45fda68671557e4366c6a885d5a1d6cb34"
+        }
+      ],
+      "prompt_sha256": "f4f8778c77e0d20ba6abfdc3d9760f1ff02e5b3a4a58af076bc4ec359abe5737",
+      "image_sha256": "c08d3f42db42fe5b40e015f1ed3ca887d608ce04558a5fe19f9acff3bcc68173",
+      "receipt_sha256": "6687502c17c0476541b0d3f5b403ec705f7d32452367e4275017ae1417c093d4",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "6e4b8512a5c2ff0f28e637d507ee90b21ed0b3fff451bd5cb59fe7ad7c00d3a3"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "08795a229a9c541cb5e96ff4dee001a43871ad38e1530b4150d6b851cbf9adcc"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "129e1bf0521bfb74404ec35c906e65bf6f6932996046a680685a775ab3b3bfcf"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "6cdc8ea795172a7ba2362aba77defab7ed3bb7c6de687b6dd0c805d63d38a453"
+    }
+  ],
+  "frozen_at": "2026-10-15T11:21:50Z"
+}

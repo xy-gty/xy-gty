@@ -1,0 +1,9 @@
+**RuleCue `ai_app_build` ready** — dispatch `6c42a648-…` finished.
+
+- **Hash verified** for `codex.launch.md`; preparation consumed into `rulecue/` → `product`
+- **UI:** table zone cards + turn step bar; palette `#854D0E` / `#FEFCE8` / `#0891B2` (not StopCue/NightCue twins)
+- **Build/tests:** BUILD SUCCEEDED; 10/10 domain tests; smoke on **iPhone 17 Pro** `B14CC0EA-…` (Pro Max untouched)
+- **Git:** `rulecue/kf-20261015T111031Z-ed6f1861` @ `0ca4a31f9435…` → `git@github.com:xy-gty/xy-gty.git`
+- **Candidate:** `0ca4a31f9435-9b8b99bc9e24` (`candidate_unaccepted`)
+- **Finish:** status `ready`; simulator lease released
+- Soft gaps (Option A): AI key / legal URLs / CloudKit / Feishu row / no AppIcon

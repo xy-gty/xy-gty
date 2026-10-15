@@ -1,0 +1,9 @@
+Dispatch `09e73222-…` finished **ready**.
+
+**RuleCue `ai_app_accept` attempt-1** — Status/Verdict: **ready**
+- Launch hash verified (`6627573f…`)
+- Product commit frozen `0ca4a31…` on `rulecue/` · lease **B14CC0EA** (Pro Max untouched)
+- UL-01..08 stamped; Option A soft `known_issues` for non-core UL-07 vision/routing + `ai_key_unavailable` + legal WebView flakiness
+- Finish: `cursor-package ultra-lite finish … --status ready` ok · lease released
+
+MAP: `runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/MAP.md`

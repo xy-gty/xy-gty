@@ -1,0 +1,9 @@
+Dispatch `288af0d4…` done. Launch hash verified; delivery MAP finished **ready**.
+
+- **Gate:** accept Verdict ready + `package_acceptance=accepted`
+- **Product:** `rulecue/` @ `0ca4a31…` → `rulecue/kf-20261015T111031Z-ed6f1861` on xy-gty
+- **Packaging:** `artifacts/candidates/0ca4a31f9435-9b8b99bc9e24/RuleCue.app.zip` + receipt; remote tip matches
+- **Feishu:** CONTROLLER_DELIVERY skip (gap only)
+- **Finish:** `ok: true`, map_sha256 `f098de62…`
+
+Formal `delivered` is for controller complete/status readback — not claimed here.

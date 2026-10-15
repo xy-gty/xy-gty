@@ -1,0 +1,17 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "09e73222-b1a8-4b94-9039-940edaed62fb",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_09e73222b1a84b949039940edaed62fb_e2",
+    "prompt": "Dispatch 09e73222-b1a8-4b94-9039-940edaed62fb. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/ai_app_accept/attempt-1/codex.launch.e2.md SHA-256 6627573f324111b3cc8a10987eaa1e461607e1dd5e5f29788cd3f245e20a24da. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-accept-09e73222b1a8",
+  "agent_name": "/root/pkg_09e73222b1a84b949039940edaed62fb",
+  "execution_seq": 2,
+  "spawned_at": "2026-10-15T11:53:03Z",
+  "pid": 50543,
+  "note": "RuleCue ai_app_accept e2 local CLI after CONTROLLER_STOP recover"
+}

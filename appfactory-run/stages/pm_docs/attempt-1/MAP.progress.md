@@ -1,0 +1,5 @@
+# RuleCue — pm_docs progress
+Status: ready
+Finish receipt ok; MAP written last.
+technical_contract_sha256: c66fef8e4c822efd842ef91b6009b49826b7a9f871f3e6e9f6acb096fe8185c7
+pm_visual_manifest_sha256: 803064a4db0d8bdaf7bd875cbd21bbcf0a8834a75676d4550391c6576d5da900

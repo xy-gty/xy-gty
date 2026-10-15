@@ -1,0 +1,35 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job.
+
+Always include this composition line verbatim. Codex may return a native
+portrait at the requested size; GrokBot returns landscape (1024x576 /
+1280x720). This line keeps the phone UI as a croppable vertical strip so the
+factory wrapper can produce 640x1392 without losing content when the source
+is landscape:
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+If Codex writes the requested portrait size directly, skip postprocess.
+Factory postprocess (official, wrapper-owned, landscape sources only):
+- fit_pad: crop the vertical UI strip, uniform scale, center on the target
+  canvas, solid sampled-color padding. No drawn UI.
+- crop_scale: crop the vertical UI strip, then uniform scale to the target.
+
+Do not ask the image model to letterbox, overlay, or recompose after the fact.
+Do not draw, redraw, or overlay UI with PIL. The wrapper records generator,
+postprocess, source sha256/size, prompt_file, and crop_box on the receipt.
+
+Then describe this exact page/state: chrome, hierarchy, copy, and example data.
+
+
+App: RuleCue — AI board-game rules and setup coach.
+Palette: primary #854D0E table amber, secondary #FEFCE8 parchment wash, accent #0891B2 cue cyan, ink #422006 on light surfaces. Ban all-black shell. Ban StopCue #16A34A/#F0FDF4/#DB2777 film-sprocket timeline + onion-skin overlays. Ban NightCue #1E3A8A night-frame rail. Ban CuePartner script axis, HiveCue hex comb, FormCue chip rail, YarnCue yarn-ball strip, ScoutCue solar/ephemeris scouting shell.
+Large legible English UI text. Native iOS SwiftUI look.
+Signature chrome: table zone cards (rounded parchment cards for Deck / Board / Player areas arranged like a board-game table) + horizontal turn step bar (numbered Setup → Deal → Main → End steps with cyan #0891B2 current-step highlight). NOT film sprockets, NOT onion-skin, NOT night rail, NOT honeycomb, NOT yarn ball, NOT solar chart.
+
+Page: Host TTS playing.
+Large Play/Pause control, Now playing: Place starter tiles on Board zone.
+Next cue preview text.
+Turn step bar still visible at top with Setup current.
+Cyan accent controls on parchment wash.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)

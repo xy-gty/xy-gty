@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_controller_stop.v1",
+  "action": "CONTROLLER_STOP",
+  "run_id": "kf-20261015T111031Z-ed6f1861",
+  "controller_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+  "reason": "infra_retry_exhausted:codex_native_session_unrecoverable:accept_launch_outcome_unknown_no_spawn",
+  "infra_class": "native_session_unrecoverable",
+  "session_id": "grokbot-packaging-kf-20261015T111031Z-ed6f1861",
+  "resume": "agent --model auto --resume grokbot-packaging-kf-20261015T111031Z-ed6f1861",
+  "consumes_budget": false,
+  "stopped_at": "2026-10-15T11:52:10Z"
+}

@@ -1,0 +1,180 @@
+{
+  "blocker": "",
+  "bundle_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "8c2e43b26f36fed511c12710f71a0956bf3197ae1a420e291fc51ec019f38b5b",
+  "candidate_fingerprint": "e55c9a270390866bce3491749868d051265ee50c3b5908e258ec7c40825b3cdc",
+  "created_at": "2026-10-15T19:25:53+08:00",
+  "owner_id": "kf-20261015T111031Z-ed6f1861",
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_id": "65eda2a2afc293e994d63b15",
+  "reservation_status": "reserved",
+  "schema_version": "appfactory.pmagent-dedupe-receipt.v1",
+  "status": "PASS",
+  "task_id": "kf-20261015T111031Z-ed6f1861:pm_docs:map_dedupe",
+  "vector_query": {
+    "dimensions": 384,
+    "mode": "sqlite_feature_hash_cosine",
+    "nearest_neighbors": [
+      {
+        "identity": {
+          "diversity_key": "stopcue 用 iphone 做定格动画 需要现场分镜建议与拍摄节拍提示的创作者 双手常扶相机 桌面布景 定格现场拍 导入一串帧 ai 给出分镜与间隔草稿 keep 落成 timingcue onionskinguide 同一项目里用胶片齿孔时间轴推进各帧 需要时聊天问分镜 在洋葱皮叠层上确认标注 tts 倒计时口令 拍摄中可口述间隔 口令字段 stopcue is an ai stop motion coach capture or import frame seque",
+          "product_fingerprint": "027ccda127858f296f650487085df52ba3c732172d330e0beb2f835330988a44",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T093242Z-0f4256a0",
+        "product_name": "StopCue",
+        "reservation_id": "7d4f03b58b01dc7e1c1f86b7",
+        "similarity_score": 0.5253,
+        "status": "committed",
+        "task_id": "kf-20261015T093242Z-0f4256a0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "pantrycue 会自己做饭 希望减少 打开冰箱却不知道做什么 的人 需要过敏 营养免责声明 且核心能力在无网时仍能读已保存内容 拍或导入冰箱 食材照片 确认识别出的食材清单 用冰箱 食材照片识别库存 和 ai 聊天规划菜谱与改写步骤 可生成摆盘预览 并用语音逐步指导烹饪 本地可离线使用已保存的橱柜与菜谱",
+          "product_fingerprint": "cc93b31c329de45b557a1cc718dfc800e0c2ec7f3d78d89bda4754adf7e8fe83",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T063311Z-0f7a54f0",
+        "product_name": "PantryCue",
+        "reservation_id": "5962785e9913e1b2cb320424",
+        "similarity_score": 0.2316,
+        "status": "committed",
+        "task_id": "kf-20261013T063311Z-0f7a54f0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "pitchcue 需要结构化热身与陪练节奏的器乐练习者 弦乐 管乐 键盘等 要计划与反馈闭环 而不只是盯着调音针 新建练习会话 拍摄或导入乐谱 练习照片 导入乐谱或指法练习照片 用 ai 教练聊出热身计划 tts 倒数与提示 本地 drone metronome 床陪练 可选麦克风圆形调音盘反馈 定位练习教练 不是调音器克隆",
+          "product_fingerprint": "edbf8bb84e1cd825a7b5b4b04296cab206210538f08c40c58d76210eca8c2e54",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T073212Z-4039fa46",
+        "product_name": "PitchCue",
+        "reservation_id": "53eea6ab1c84c01260c2dfa6",
+        "similarity_score": 0.2101,
+        "status": "committed",
+        "task_id": "kf-20261014T073212Z-4039fa46:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "hivecue 管理少量至中等规模蜂箱 需要箱旁快速记录与 ai 下一步建议的 iphone 养蜂人 双手常戴手套 穿蜂衣 掀盖看脾时拍一张巢脾 ai 给出蜂子 储蜜 虫害草稿 keep 落成 finding 同一巡检里用蜂巢网格与巡检轨推进各脾位 需要时聊天问下一步 在热力叠图上确认标注 tts 免提念笔记 戴手套时可口述巡检字段 hivecue is an ai hive inspection coach snap brood frames keep reviewed b",
+          "product_fingerprint": "ef269348815a603ee2d939f79a0aeb39714a49fc8ba5ea66a40bc96d3fa459ab",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T053908Z-ea6ff1de",
+        "product_name": "HiveCue",
+        "reservation_id": "4aea7d667b13d6ab1743373a",
+        "similarity_score": 0.2099,
+        "status": "committed",
+        "task_id": "kf-20261015T053908Z-ea6ff1de:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "knotcue 练绳结的水手 户外与救援练习者 英文 ui en us knotcue is a local first ai knot coach snap or import rope knot photos to recognize stage chat next haul guidance overlay step annotations and hear tts hands free coaching without cloning bendcoach or duc",
+          "product_fingerprint": "1362212ab7fbe8332f49cb0a0d079a227f988f89ea29c51adbf7f126c3e759d2",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T091503Z-ed8b60be",
+        "product_name": "KnotCue",
+        "reservation_id": "65b55abb55044dda574d0782",
+        "similarity_score": 0.2043,
+        "status": "committed",
+        "task_id": "kf-20261014T091503Z-ed8b60be:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "dimcue 需要现场估尺寸 留测量记录的装修 diy 仓储与空间规划者 希望手机端有 看图量一量 辅导 而不是纯 cad 或纯聊天 新建 measuresession 用相机拍或相册导入场景照片 拍下或导入真实场景照片 在图上标点与边 获得 ai 辅助尺寸估计与测量辅导 并把会话与备注本地保存 卷尺助手 不是通用聊天壳",
+          "product_fingerprint": "e99d8a85c97dbcf844a9d46e1609077bc46c1ec9200237c11f161e43fe4df238",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T044925Z-2ecf35a4",
+        "product_name": "DimCue",
+        "reservation_id": "d65e404c9c19033193eea139",
+        "similarity_score": 0.1945,
+        "status": "committed",
+        "task_id": "kf-20261014T044925Z-2ecf35a4:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "formcue 在家或健身房做 hiit 间歇训练 需要姿势反馈与免提节拍的 iphone 用户 双手常占器械或地面支撑 中组姿势拍一张 ai 给出纠姿草稿 keep 落成纠正要点 同一会话里用横向间歇 chip 轨与大休息环跑 hiit 需要时聊天改计划 在拍立得条上叠标注 tts 免提喊节拍 双手忙时可口述跳过休息 formcue is an ai hiit form coach snap mid set posture keep reviewed corrections",
+          "product_fingerprint": "082b7fc717103eb3e3195a43084df7616b403371d4e79724c1a700c4118323f0",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T033447Z-525237ba",
+        "product_name": "FormCue",
+        "reservation_id": "cef1c79ee1657c0362d179da",
+        "similarity_score": 0.188,
+        "status": "committed",
+        "task_id": "kf-20261015T033447Z-525237ba:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "nightcue 在城市天际线 星空 光轨等场景做长曝光 需要现场快速诊断与参数建议的 iphone 夜拍爱好者 双手常扶三脚架 遥控器 夜拍现场拍一张试片 ai 给出曝光 噪点 拖影草稿 keep 落成 diagnosisfinding 同一会话里用夜景帧轨推进各试片 需要时聊天问参数 在曝光诊断叠层上确认标注 tts 现场口令 手持三脚架时可口述曝光字段 nightcue is an ai night long exposure coach shoot or import",
+          "product_fingerprint": "e950103bff09d095ee2b1fc959f191cfe3cb21b48c2a128255af1af093de19db",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T075333Z-d3a0d226",
+        "product_name": "NightCue",
+        "reservation_id": "42b4c89a9a2886cc69acb12b",
+        "similarity_score": 0.1682,
+        "status": "committed",
+        "task_id": "kf-20261015T075333Z-d3a0d226:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "docbrief ai 需要把纸质 白板 收据材料快速整理成可跟进简报的自由职业者 小团队协调人 商务与行政人员 要的是 讲清楚下一步 不是又一个纯扫描器 新建 brief 拍或导入文档 白板 小票照片 导入文档 白板或小票照片 ai 辅助识别类型与关键字段 聊天抽取行动项与截止日期 生成视觉摘要卡 再用 tts 口述简报 本地可离线使用已保存的 brief",
+          "product_fingerprint": "887a4e2084ba7d176fdf8b2bf4d4b1c674205f6c29f5fd10c00ca23adebddd92",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T095745Z-aa3ad9a0",
+        "product_name": "DocBrief AI",
+        "reservation_id": "b2aeb950f6904323e99afd55",
+        "similarity_score": 0.1455,
+        "status": "committed",
+        "task_id": "kf-20261013T095745Z-aa3ad9a0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "scoutcue 周末与旅行中想在黄金时段拍出可用风光的进阶爱好者与半职业外拍者 需要在现场快速决定 去哪 何时 怎么站 而不是测距工具或绳路径轮播 在外拍前 现场 把已有或刚拍的风景变成可执行的 timed scout plan 窗口 叠标 下一站口述简报 scoutcue 是 ai 外拍侦察与光位 timing 规划器 拍 导入风景 识别成 scout 卡 天空弧看日 月黄金窗 向导聊天与叠标 tts 下一站简报",
+          "product_fingerprint": "dd517a6bdc2daa0349c92a2bcdf87d7b5c0b045717157104d3dfcd3c9ece8147",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T091741Z-3d7b568c",
+        "product_name": "ScoutCue",
+        "reservation_id": "9dc8acdfac0643b77c701b86",
+        "similarity_score": 0.1427,
+        "status": "committed",
+        "task_id": "kf-20261014T091741Z-3d7b568c:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "yarncue 正在编织或钩针 需要边做边问 下一行怎么织 的爱好者 双手常占着针 需要口述备注与语音播报 把 看不清 wip 猜下一针 变成 照片 识别审阅 横向下一行步骤 教练聊天 标注图 tts yarncue 是免费的 ai 编织 钩针教练 拍或导入纱线与 wip 照片 识别针法与行 用 weave coach 聊 下一行 在 wip 上标注示意 并用 tts 免提播报 双手可继续握针",
+          "product_fingerprint": "e525675162146561adbf27a4cecac518490c351ef17282a7a36b6ee0687de2fc",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T130415Z-f3114989",
+        "product_name": "YarnCue",
+        "reservation_id": "27e9511f53b64e662c6334d8",
+        "similarity_score": 0.1361,
+        "status": "committed",
+        "task_id": "kf-20261014T130415Z-f3114989:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "ductcue hvac 安装 风管选型现场技工 英文 ui en us ductcue is a local first ai hvac duct sizing coach chat cfm friction and velocity with cited formulas import job photos to recognize duct runs save isometric size diagrams and hear tts field steps withou",
+          "product_fingerprint": "0715a9fbade1603a5c2a2b8fff978c63cc16518cf4db02a2e618dd2f1ab7d72c",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T071447Z-cd5a5831",
+        "product_name": "DuctCue",
+        "reservation_id": "6ecb8fbdadcdc84cf4168f20",
+        "similarity_score": 0.1298,
+        "status": "committed",
+        "task_id": "kf-20261014T071447Z-cd5a5831:pm_docs:map_dedupe"
+      }
+    ],
+    "novelty_score": 0.4747,
+    "novelty_threshold": 0.35,
+    "store_path": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+    "top_k": 12
+  }
+}

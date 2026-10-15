@@ -1,0 +1,1 @@
+Describe the current iOS screen: page title, main visible controls with approximate positions (top/middle/bottom, leading/trailing), empty/error states, and the single best next tap target to continue creating a new game session / capture flow for a board-game rules coach app named RuleCue. List exact visible button labels.

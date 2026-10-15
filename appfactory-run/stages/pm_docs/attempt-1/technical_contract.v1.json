@@ -1,0 +1,177 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261015T111031Z-ed6f1861",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "RuleCue",
+    "development_bundle_id": "com.lingguang.rulecue",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "rulebook_and_table_camera_and_library_import",
+    "component_phase_draft_review_persist",
+    "ai_rules_setup_coach_chat_with_consent_gate",
+    "annotated_setup_zone_overlays",
+    "tts_table_host_cues_while_setup",
+    "microphone_speech_rules_questions_into_chat",
+    "table_zone_cards_and_turn_step_bar",
+    "local_legal_pages_user_owned_photos_only",
+    "free_app_only_no_storekit_paywall_coins_att",
+    "not_stopcue_film_sprocket_onion_skin",
+    "not_nightcue_night_frame_rail",
+    "not_hivecue_formcue_yarncue_scoutcue_twins"
+  ],
+  "entities": [
+    {
+      "name": "GameSession",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "TablePhoto",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ComponentDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ComponentMap",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "PhaseStep",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "SetupOverlay",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachTurn",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachMessage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "HostCue",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "SpokenQuestion",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "ComponentReviewBar",
+      "confirm": "Keep",
+      "reject": "Discard",
+      "edit": "Edit"
+    },
+    {
+      "name": "TurnReview",
+      "confirm": "Keep",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "rulecue.consent.v1",
+      "fields": [
+        "game_session_summary",
+        "component_map_summary",
+        "phase_steps_summary",
+        "setup_overlay_notes",
+        "current_zone_label",
+        "chat_text",
+        "voice_transcript",
+        "spoken_question"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechRulesCapture"
+    },
+    {
+      "name": "HostCueTTSPlayer"
+    },
+    {
+      "name": "TableZoneCards"
+    },
+    {
+      "name": "TurnStepBar"
+    },
+    {
+      "name": "SetupOverlayEditor"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "SessionsHome",
+    "NewSession",
+    "CaptureImport",
+    "ComponentReview",
+    "TableCoach",
+    "CoachChat",
+    "TurnReview",
+    "SetupOverlay",
+    "HostTTS",
+    "DictateRules",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Keep",
+    "reject": "Discard",
+    "edit": "Edit"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "privacy_usage_descriptions": {
+    "NSCameraUsageDescription": "Capture rulebook pages, component close-ups, and current table layout for AI setup coaching",
+    "NSPhotoLibraryUsageDescription": "Import rulebook page images or past table photos to compare setups",
+    "NSMicrophoneUsageDescription": "Hands-free rules questions while setting up the table",
+    "NSSpeechRecognitionUsageDescription": "Write spoken rules questions into the coach chat and trigger the next tip"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "488204a39e0727b9e6c7e47d0db7a07dca1c572edffd0d9a2b06d63c9fb0092a"
+    }
+  ],
+  "goal_sha256": "c3288b07cd5a22f8b175bb855fa5b4068808b77adbc577a487b0264fe5503232",
+  "frozen_at": "2026-10-15T11:14:08Z"
+}

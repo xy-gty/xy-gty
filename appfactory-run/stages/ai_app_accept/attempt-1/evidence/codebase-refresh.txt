@@ -1,0 +1,5 @@
+{
+  "blocker": "code_query_blocked:codebase_memory_index_failed:FileNotFoundError:[Errno 2] No such file or directory: 'codebase-memory-mcp'",
+  "ok": false,
+  "status": "blocked"
+}

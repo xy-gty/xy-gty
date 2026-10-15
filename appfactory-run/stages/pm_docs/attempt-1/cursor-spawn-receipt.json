@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "1df3c2d5-4682-41b9-8503-42322eed9ace",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_1df3c2d5468241b9850342322eed9ace",
+    "prompt": "Dispatch 1df3c2d5-4682-41b9-8503-42322eed9ace. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/codex.launch.md SHA-256 1eb27125acbd09aef2add39d69db58ade0c04112cf1fc3ad06c8b664e4a37ed4. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-pm-1df3c2d54682",
+  "agent_name": "/root/pkg_1df3c2d5468241b9850342322eed9ace",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T11:11:20Z",
+  "pid": 31698,
+  "note": "RuleCue pm_docs e1 local agent CLI start_new_session"
+}
