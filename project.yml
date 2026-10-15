@@ -1,0 +1,84 @@
+name: CellarCue
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  CellarCueDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  CellarCue:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: CellarCueDomain
+        product: CellarCueDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue
+        PRODUCT_NAME: CellarCue
+        INFOPLIST_KEY_CFBundleDisplayName: CellarCue
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture wine label, cork, and bin-tag stills so CellarCue can place bottles in your cellar grid
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import cellar photos to complete label OCR and bin placement in CellarCue
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free bin notes while carrying bottles
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken drinking-window and pairing questions into coach chat text
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+  CellarCueDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: CellarCueDomain
+        product: CellarCueDomain
+      - package: AppRuntimeCore
+      - target: CellarCue
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue.tests
+
+  CellarCueUISmokeTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: CellarCue
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue.uitests
+        TEST_TARGET_NAME: CellarCue
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  CellarCue:
+    build:
+      targets:
+        CellarCue: all
+        CellarCueDomainTests: [test]
+        CellarCueUISmokeTests: [test]
+    test:
+      targets:
+        - CellarCueDomainTests
+        - CellarCueUISmokeTests
+    run:
+      config: Debug
