@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "5c0b80d2-15a9-4130-add4-280d2d487ffc",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_5c0b80d215a94130add4280d2d487ffc_e2",
+    "prompt": "Dispatch 5c0b80d2-15a9-4130-add4-280d2d487ffc. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/pm_docs/attempt-1/codex.launch.e2.md SHA-256 896e9711908dccf96d323371863a2bd7cdf64780172327987c582a43c10751af. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-pm-5c0b80d215a9",
+  "agent_name": "/root/pkg_5c0b80d215a94130add4280d2d487ffc",
+  "execution_seq": 2,
+  "spawned_at": "2026-10-15T06:15:18Z",
+  "pid": 96543,
+  "note": "HiveCue pm_docs e2 replace_lost_worker"
+}

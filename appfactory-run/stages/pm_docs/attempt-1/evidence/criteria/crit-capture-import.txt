@@ -1,0 +1,1 @@
+Pass if the still shows a Capture/import screen with Camera and Photo library actions for brood-frame photos, readable English chrome, wine/green HiveCue palette, and not a chat-only or all-black shell.

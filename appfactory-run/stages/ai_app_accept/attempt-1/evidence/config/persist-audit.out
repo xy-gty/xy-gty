@@ -1,0 +1,16 @@
+{
+  "schema": "appfactory.ultra_lite_local_config.v1",
+  "app": "HiveCue",
+  "stdout_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/ai_app_accept/attempt-1/evidence/config-audit.stdout.txt",
+  "stdout_sha256": "ccd58cc3b16c1cac3dcb11f720642ac9bb01059fb4f693395cf9e4d38a899a06",
+  "classification": {
+    "schema": "appfactory.ultra_lite_local_config.v1",
+    "kind": "gap",
+    "code": "feishu_row_not_yet_created",
+    "blocker": false,
+    "detail": "row not yet created",
+    "literal": "record_match_error=0 app=HiveCue"
+  },
+  "blocker": false,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/ai_app_accept/attempt-1/evidence/config-audit.receipt.json"
+}

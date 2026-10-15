@@ -1,0 +1,180 @@
+{
+  "blocker": "",
+  "bundle_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "9f68d2edc87a16eda6c48bbe4cb38b1902db53d9b03af7ed6a908f41428ea56c",
+  "candidate_fingerprint": "ef269348815a603ee2d939f79a0aeb39714a49fc8ba5ea66a40bc96d3fa459ab",
+  "created_at": "2026-10-15T14:19:04+08:00",
+  "owner_id": "kf-20261015T053908Z-ea6ff1de",
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_id": "4aea7d667b13d6ab1743373a",
+  "reservation_status": "reserved",
+  "schema_version": "appfactory.pmagent-dedupe-receipt.v1",
+  "status": "PASS",
+  "task_id": "kf-20261015T053908Z-ea6ff1de:pm_docs:map_dedupe",
+  "vector_query": {
+    "dimensions": 384,
+    "mode": "sqlite_feature_hash_cosine",
+    "nearest_neighbors": [
+      {
+        "identity": {
+          "diversity_key": "formcue 在家或健身房做 hiit 间歇训练 需要姿势反馈与免提节拍的 iphone 用户 双手常占器械或地面支撑 中组姿势拍一张 ai 给出纠姿草稿 keep 落成纠正要点 同一会话里用横向间歇 chip 轨与大休息环跑 hiit 需要时聊天改计划 在拍立得条上叠标注 tts 免提喊节拍 双手忙时可口述跳过休息 formcue is an ai hiit form coach snap mid set posture keep reviewed corrections",
+          "product_fingerprint": "082b7fc717103eb3e3195a43084df7616b403371d4e79724c1a700c4118323f0",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T033447Z-525237ba",
+        "product_name": "FormCue",
+        "reservation_id": "cef1c79ee1657c0362d179da",
+        "similarity_score": 0.3427,
+        "status": "committed",
+        "task_id": "kf-20261015T033447Z-525237ba:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "pitchcue 需要结构化热身与陪练节奏的器乐练习者 弦乐 管乐 键盘等 要计划与反馈闭环 而不只是盯着调音针 新建练习会话 拍摄或导入乐谱 练习照片 导入乐谱或指法练习照片 用 ai 教练聊出热身计划 tts 倒数与提示 本地 drone metronome 床陪练 可选麦克风圆形调音盘反馈 定位练习教练 不是调音器克隆",
+          "product_fingerprint": "edbf8bb84e1cd825a7b5b4b04296cab206210538f08c40c58d76210eca8c2e54",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T073212Z-4039fa46",
+        "product_name": "PitchCue",
+        "reservation_id": "53eea6ab1c84c01260c2dfa6",
+        "similarity_score": 0.2518,
+        "status": "committed",
+        "task_id": "kf-20261014T073212Z-4039fa46:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "knotcue 练绳结的水手 户外与救援练习者 英文 ui en us knotcue is a local first ai knot coach snap or import rope knot photos to recognize stage chat next haul guidance overlay step annotations and hear tts hands free coaching without cloning bendcoach or duc",
+          "product_fingerprint": "1362212ab7fbe8332f49cb0a0d079a227f988f89ea29c51adbf7f126c3e759d2",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T091503Z-ed8b60be",
+        "product_name": "KnotCue",
+        "reservation_id": "65b55abb55044dda574d0782",
+        "similarity_score": 0.242,
+        "status": "committed",
+        "task_id": "kf-20261014T091503Z-ed8b60be:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "docbrief ai 需要把纸质 白板 收据材料快速整理成可跟进简报的自由职业者 小团队协调人 商务与行政人员 要的是 讲清楚下一步 不是又一个纯扫描器 新建 brief 拍或导入文档 白板 小票照片 导入文档 白板或小票照片 ai 辅助识别类型与关键字段 聊天抽取行动项与截止日期 生成视觉摘要卡 再用 tts 口述简报 本地可离线使用已保存的 brief",
+          "product_fingerprint": "887a4e2084ba7d176fdf8b2bf4d4b1c674205f6c29f5fd10c00ca23adebddd92",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:60604f49baaead7037c2c969",
+        "product_name": "DocBrief AI",
+        "reservation_id": "legacy-60604f49baaead7037c2c969",
+        "similarity_score": 0.2059,
+        "status": "committed",
+        "task_id": "legacy:60604f49baaead7037c2c969"
+      },
+      {
+        "identity": {
+          "diversity_key": "cuepartner ai 需要私下对词 背词 排练的演员与戏剧学生 希望手机端有 对手演员 与提词器 而不是通用聊天壳 新建 scene 用相机拍或相册导入脚本页 ocr 后审阅保留 导入自有脚本照片做 ocr 与 ai 对戏伙伴按角色切换排练 用带节拍的 tts 提词 可选舞台音床 本地保存场景与台词 不附带版权剧本",
+          "product_fingerprint": "f040fab459125d95486b23756fcc2c2af15c134c0db4e33c7d74ba6c5d4b589e",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:23d97269fd32b95440c916f6",
+        "product_name": "CuePartner AI",
+        "reservation_id": "legacy-23d97269fd32b95440c916f6",
+        "similarity_score": 0.1716,
+        "status": "committed",
+        "task_id": "legacy:23d97269fd32b95440c916f6"
+      },
+      {
+        "identity": {
+          "diversity_key": "cuepartner ai 需要私下对词 背词 排练的演员与戏剧学生 希望手机端有 对手演员 与提词器 而不是通用聊天壳 新建 scene 用相机拍或相册导入脚本页 ocr 后审阅保留 导入自有脚本照片做 ocr 与 ai 对戏伙伴按角色切换排练 用带节拍的 tts 提词 可选舞台音床 本地保存场景与台词 不附带版权剧本",
+          "product_fingerprint": "f040fab459125d95486b23756fcc2c2af15c134c0db4e33c7d74ba6c5d4b589e",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T125947Z-a3157139",
+        "product_name": "CuePartner AI",
+        "reservation_id": "29e6ee9d0f6fae711a0d1c12",
+        "similarity_score": 0.1626,
+        "status": "committed",
+        "task_id": "kf-20261013T125947Z-a3157139:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "snagcue ai 做现场验收 整改跟进的施工 物业 独立巡检人员 需要结构化 punch list 与照片证据 且不能把 app 当作建筑规范认证工具 新建 audit 拍或导入 walkthrough 照片 导入现场巡检照片 ai 辅助识别缺陷 snag 并聊天补全 punch list 生成标注报告图 再用 tts 免提播报清单 本地可离线使用已保存的 audit 与 punchitem",
+          "product_fingerprint": "489b9795cc95fcea85be53d99bec55d1830fc4d98753d70f3ec00746c0f9101a",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:340f29041ab8854a25f9a0a0",
+        "product_name": "SnagCue AI",
+        "reservation_id": "legacy-340f29041ab8854a25f9a0a0",
+        "similarity_score": 0.1373,
+        "status": "committed",
+        "task_id": "legacy:340f29041ab8854a25f9a0a0"
+      },
+      {
+        "identity": {
+          "diversity_key": "ductcue hvac 安装 风管选型现场技工 英文 ui en us ductcue is a local first ai hvac duct sizing coach chat cfm friction and velocity with cited formulas import job photos to recognize duct runs save isometric size diagrams and hear tts field steps withou",
+          "product_fingerprint": "0715a9fbade1603a5c2a2b8fff978c63cc16518cf4db02a2e618dd2f1ab7d72c",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:f3a230a411fd7387308e2322",
+        "product_name": "DuctCue",
+        "reservation_id": "legacy-f3a230a411fd7387308e2322",
+        "similarity_score": 0.1189,
+        "status": "committed",
+        "task_id": "legacy:f3a230a411fd7387308e2322"
+      },
+      {
+        "identity": {
+          "diversity_key": "bendcoach ai 在工地或厢式车旁需要快速核对 90 offset saddle 等弯管标记与步骤的电气安装工与学徒 要的是 敢下手弯 的可审阅辅导 不是又一个品牌计算器壳 打开教练首页 用文字或语音问弯管数学 当前单位制清晰可见 面向电工的导管弯曲现场教练 用英文聊天算弯管量 导入或拍摄工地照片识别弯型与标记 生成示意图叠加 再用 tts 逐步口述现场辅导 数值一律标注为辅助建议",
+          "product_fingerprint": "158c7cf51016f34cda2110ae41a0e516b8e6403840aa7a046a9a2712502b712c",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T132652Z-d15977ae",
+        "product_name": "BendCoach AI",
+        "reservation_id": "cf99f9610bb02b7f3dab397e",
+        "similarity_score": 0.1122,
+        "status": "committed",
+        "task_id": "kf-20261013T132652Z-d15977ae:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "ductcue hvac 安装 风管选型现场技工 英文 ui en us ductcue is a local first ai hvac duct sizing coach chat cfm friction and velocity with cited formulas import job photos to recognize duct runs save isometric size diagrams and hear tts field steps withou",
+          "product_fingerprint": "0715a9fbade1603a5c2a2b8fff978c63cc16518cf4db02a2e618dd2f1ab7d72c",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T071447Z-cd5a5831",
+        "product_name": "DuctCue",
+        "reservation_id": "6ecb8fbdadcdc84cf4168f20",
+        "similarity_score": 0.1049,
+        "status": "committed",
+        "task_id": "kf-20261014T071447Z-cd5a5831:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "dimcue 需要现场估尺寸 留测量记录的装修 diy 仓储与空间规划者 希望手机端有 看图量一量 辅导 而不是纯 cad 或纯聊天 新建 measuresession 用相机拍或相册导入场景照片 拍下或导入真实场景照片 在图上标点与边 获得 ai 辅助尺寸估计与测量辅导 并把会话与备注本地保存 卷尺助手 不是通用聊天壳",
+          "product_fingerprint": "e99d8a85c97dbcf844a9d46e1609077bc46c1ec9200237c11f161e43fe4df238",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T044925Z-2ecf35a4",
+        "product_name": "DimCue",
+        "reservation_id": "d65e404c9c19033193eea139",
+        "similarity_score": 0.1031,
+        "status": "committed",
+        "task_id": "kf-20261014T044925Z-2ecf35a4:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "bendcoach ai 在工地或厢式车旁需要快速核对 90 offset saddle 等弯管标记与步骤的电气安装工与学徒 要的是 敢下手弯 的可审阅辅导 不是又一个品牌计算器壳 打开教练首页 用文字或语音问弯管数学 当前单位制清晰可见 面向电工的导管弯曲现场教练 用英文聊天算弯管量 导入或拍摄工地照片识别弯型与标记 生成示意图叠加 再用 tts 逐步口述现场辅导 数值一律标注为辅助建议",
+          "product_fingerprint": "158c7cf51016f34cda2110ae41a0e516b8e6403840aa7a046a9a2712502b712c",
+          "reference_url": ""
+        },
+        "owner_id": "legacy:4e39b902742fe774761ffe50",
+        "product_name": "BendCoach AI",
+        "reservation_id": "legacy-4e39b902742fe774761ffe50",
+        "similarity_score": 0.103,
+        "status": "committed",
+        "task_id": "legacy:4e39b902742fe774761ffe50"
+      }
+    ],
+    "novelty_score": 0.6573,
+    "novelty_threshold": 0.35,
+    "store_path": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+    "top_k": 12
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-6d117be650ee",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 443040,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/pm_docs/attempt-1/frames/hivecue-coach-chat-r1.png",
+  "output_sha256": "c32fee51d74a832daef0081073b42a6ba3a4b10d5899e571ba4e1b3df4b0a968",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/pm_docs/attempt-1/frames/prompts/hivecue-coach-chat-r1.txt",
+  "prompt_sha256": "7eae5f097101849f86fde6da4058a5136f4574722081d59970398ec97b3ee282",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "c32fee51d74a832daef0081073b42a6ba3a4b10d5899e571ba4e1b3df4b0a968",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-15T05:54:27Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

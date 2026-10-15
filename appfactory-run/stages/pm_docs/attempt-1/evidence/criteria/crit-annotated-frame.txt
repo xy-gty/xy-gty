@@ -1,0 +1,1 @@
+Pass if the still shows a brood-frame photo with heat-overlay regions and Keep marks / Discard marks controls; must read as heat overlay, not FormCue polaroid strip.

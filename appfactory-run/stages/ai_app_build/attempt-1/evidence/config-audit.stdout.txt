@@ -1,0 +1,6 @@
+usage: ultra_lite_local_config.py persist-audit [-h] --attempt-dir ATTEMPT_DIR
+                                                --stdout-file STDOUT_FILE
+                                                [--stderr-file STDERR_FILE]
+                                                [--app APP]
+                                                [--exit-code EXIT_CODE]
+ultra_lite_local_config.py persist-audit: error: the following arguments are required: --stdout-file

@@ -1,0 +1,41 @@
+name: HiveCueAcceptUITest
+options:
+  bundleIdPrefix: com.appfactory.accept
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  BASE:
+    TARGETED_DEVICE_FAMILY: "1"
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGNING_REQUIRED: NO
+targets:
+  Host:
+    type: application
+    platform: iOS
+    sources: [Host]
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.appfactory.accept.host
+      GENERATE_INFOPLIST_FILE: YES
+      PRODUCT_NAME: Host
+  HiveCueAcceptUITestUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [HiveCueAcceptUITestUITests]
+    dependencies:
+      - target: Host
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.appfactory.accept.HiveCueAcceptUITests
+      GENERATE_INFOPLIST_FILE: YES
+      TEST_HOST: ""
+      BUNDLE_LOADER: ""
+
+schemes:
+  HiveCueAcceptUITest:
+    build:
+      targets:
+        Host: all
+        HiveCueAcceptUITestUITests: [test]
+    test:
+      targets:
+        - HiveCueAcceptUITestUITests

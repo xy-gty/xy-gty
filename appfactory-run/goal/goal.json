@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-15T05:39:08Z",
+  "model_mode": "dev",
+  "objective": "# HiveCue\n\nPaid AI hive-inspection coach (one-time unlock for apiary packs; no coins).\n\nRemake vs BeePlus Beekeeping Manager (uk.co.omnichrome.beeplus).\n\n## Core loop\nSnap or import brood-frame photos → recognize brood / stores / pest signs → chat for next actions → annotated frame overlays → TTS hands-free notes while suited → dictate inspection fields.\n\n## Hard operator rules\n- product_dir: hivecue/ (never leave as product/ only — symlink hivecue→product)\n- palette: primary #9F1239 · secondary #FDF2F8 · accent #4D7C0F\n- UI: hexagonal comb grid + inspection rail + heat overlay; must look clearly different from FormCue/YarnCue (no twins / all-black)\n- Four permissions with real flows (extend core, do not replace): Camera (frame photos), Photos (history compare), Microphone (hands-free while gloved), Speech Recognition (write inspection fields)\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only; never shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial\n\n## Positioning\nAI 蜂箱巡检教练——拍巢脾识蜂子/蜜/虫害，对话下一步，标注叠图，戴手套免提口述日志。\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261015T053908Z-ea6ff1de",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

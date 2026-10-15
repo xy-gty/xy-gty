@@ -1,0 +1,17 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "84bc37a9-9ef4-448c-a1ba-d2149f68b49b",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_84bc37a99ef4448ca1bad2149f68b49b",
+    "prompt": "Dispatch 84bc37a9-9ef4-448c-a1ba-d2149f68b49b. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/ai_app_accept/attempt-1/codex.launch.md SHA-256 d764ffc7f278afeead071f06ce266e71f5d0e2bf81b505807618fa04d4f664d0. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-accept-84bc37a99ef4",
+  "agent_name": "/root/pkg_84bc37a99ef4448ca1bad2149f68b49b",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T06:45:37Z",
+  "pid": 12176,
+  "note": "HiveCue ai_app_accept e1"
+}

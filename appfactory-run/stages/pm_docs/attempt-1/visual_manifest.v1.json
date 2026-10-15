@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261015T053908Z-ea6ff1de",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "hivecue-home-empty",
+      "page_id": "home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-home-empty-r1.txt",
+      "image_ref": "frames/hivecue-home-empty-r1.png",
+      "receipt_ref": "frames/hivecue-home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-home-empty.receipt.jsonl",
+          "sha256": "6a01ed831c84cfac973adf901155eebd7f012e6de26a4ab32b453b09f6dce22e"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-home-empty.receipt.json",
+          "sha256": "94d3e5547998434fcd3a8aa4d3c7cb019178bec5f8ee511acb40630a2b874dc0"
+        }
+      ],
+      "prompt_sha256": "1c8e29e741d75cace000d0164d52580d732ae63a1775068b9f92b6ec6678af5a",
+      "image_sha256": "3cff5797866245d19e3e9238334c95f23fe95d251e28daf8d5f580463315136e",
+      "receipt_sha256": "95a245fb0e082f61d1df3f7a860fa48789ce78ca17df40397c2d10c90a939c5c",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-capture-import",
+      "page_id": "capture",
+      "state_id": "import",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-capture-import-r1.txt",
+      "image_ref": "frames/hivecue-capture-import-r1.png",
+      "receipt_ref": "frames/hivecue-capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-capture-import.receipt.jsonl",
+          "sha256": "e592fa342ba1849e2787a567e13cb537a633638dd4d27ebb92b58e74a5199a6f"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-capture-import.receipt.json",
+          "sha256": "9ba41a2d6f6dd746e4568aa4dee7dd9e5e48bd8dd986e73901f5aecfcc23a4f6"
+        }
+      ],
+      "prompt_sha256": "259b73c0bd8391a759cccf634ddd79c621e4a6b3d8dfb89525567ba0cd162f56",
+      "image_sha256": "cad3d3428b03d2baeccbf8ad0a1ae7bad6cadc88b41ee2f68df0279b309746eb",
+      "receipt_sha256": "6453a3b34baf37b10693cfbaa9fd8d55bf53157a265c42cee4471cc050bb3bd1",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-brood-review",
+      "page_id": "brood_review",
+      "state_id": "review",
+      "criterion_ids": [
+        "crit-brood-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-brood-review-r1.txt",
+      "image_ref": "frames/hivecue-brood-review-r1.png",
+      "receipt_ref": "frames/hivecue-brood-review-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-brood-review.receipt.jsonl",
+          "sha256": "afea1d2116057629e1beaafc673bf8f4a110ad41c4297ed896ba89ad59a39107"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-brood-review.receipt.json",
+          "sha256": "109045faa5869cf265b440e514486a28a86401e9548121659277b01d1957777f"
+        }
+      ],
+      "prompt_sha256": "ba8c6b832f6194085a110eab2249636b7ec3f0e7c87a36b02d4420fc14cd135b",
+      "image_sha256": "871a392a21e7a4397b453929dd29d20d6c245a2a69b2ecb4b748ad86fdf17c64",
+      "receipt_sha256": "51463b1fb759a2a53d45c39a01372d1d896583dee7c589da23466a24e3959f1b",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-inspection-coach",
+      "page_id": "inspection_coach",
+      "state_id": "hex_rail_heat",
+      "criterion_ids": [
+        "crit-inspection-coach"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-inspection-coach-r1.txt",
+      "image_ref": "frames/hivecue-inspection-coach-r1.png",
+      "receipt_ref": "frames/hivecue-inspection-coach-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-inspection-coach.receipt.jsonl",
+          "sha256": "34aaef578fc0dcb83345b4fc04caa045307f13c79542a7719d6625194e13a5b5"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-inspection-coach.receipt.json",
+          "sha256": "5f44bd6c5a189702b4bd3f9f1c157eb9ecf896045ad5f6d37bf1b9afd2bfeaa5"
+        }
+      ],
+      "prompt_sha256": "f0f5e7a96dcb75e7f4f903b7f7b0ed98eca7e84b59b8f6fccc8284f38fcef485",
+      "image_sha256": "1a652cfc41d471e2a4ca8697c9932a57cb646d6a366fff53dc4892c216a0367d",
+      "receipt_sha256": "87b654e537e048494c254da7a815d4ed20d44eed2f553796ef5da96bed7a146e",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-coach-chat",
+      "page_id": "coach",
+      "state_id": "chat",
+      "criterion_ids": [
+        "crit-coach-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-coach-chat-r1.txt",
+      "image_ref": "frames/hivecue-coach-chat-r1.png",
+      "receipt_ref": "frames/hivecue-coach-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-coach-chat.receipt.jsonl",
+          "sha256": "c315a661b51f488d00d66fff193267ab7fdd86654ebf145ad59dd2b75e54ca87"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-coach-chat.receipt.json",
+          "sha256": "6ccdca041432cf751c3fa8426ec12e638e49f0a02598c4f01eed70507b136772"
+        }
+      ],
+      "prompt_sha256": "7eae5f097101849f86fde6da4058a5136f4574722081d59970398ec97b3ee282",
+      "image_sha256": "c32fee51d74a832daef0081073b42a6ba3a4b10d5899e571ba4e1b3df4b0a968",
+      "receipt_sha256": "0dcd4530e1412cae6aa595ab0773be33da632de47c90cf5b22f983fc3b7d1995",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-annotated-frame",
+      "page_id": "annotated_frame",
+      "state_id": "heat_overlay",
+      "criterion_ids": [
+        "crit-annotated-frame"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-annotated-frame-r1.txt",
+      "image_ref": "frames/hivecue-annotated-frame-r1.png",
+      "receipt_ref": "frames/hivecue-annotated-frame-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-annotated-frame.e2.receipt.jsonl",
+          "sha256": "68227cc4e068d2101bbab9c212ed80fbf536507bc9cb1ae2264880f298560491"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-annotated-frame.e2.receipt.json",
+          "sha256": "3867e3a9d8c437c19c6c79a64ca1a1099d6cd816793160a85c02c37881df5dd6"
+        }
+      ],
+      "prompt_sha256": "97af61e482af7d4282383b16dd8702d02721c75cf5800b0494d2a896fa3dec6b",
+      "image_sha256": "18c7a239d84f3f88a6c9b188dd2e8cb0501fb55cdaea94e388fe95c185440f85",
+      "receipt_sha256": "f7541d385ef35c132ef42d50b45841800b3db3c2bd3ac9bad2611112ff6716da",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-hands-free-tts",
+      "page_id": "hands_free",
+      "state_id": "tts",
+      "criterion_ids": [
+        "crit-hands-free-tts"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-hands-free-tts-r1.txt",
+      "image_ref": "frames/hivecue-hands-free-tts-r1.png",
+      "receipt_ref": "frames/hivecue-hands-free-tts-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-hands-free-tts.receipt.jsonl",
+          "sha256": "3c29096437073821cc1d845db08ab5f920acdf3f5dcd34f04d6e66f121337066"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-hands-free-tts.receipt.json",
+          "sha256": "c6d9b177de7d3e57107c09c23cc1907f7fba376327b33aabe2607fc8888454b6"
+        }
+      ],
+      "prompt_sha256": "a00bbe9dbb899c215fb485f70fcd47dc3d7d3755dde11b5465b7148edf0a4dbc",
+      "image_sha256": "e4d88390484f5221ac86659272bea9d40c62c50e68d2b33dd70b2e662a72e4c3",
+      "receipt_sha256": "4296672015c3f694acf2162441ecc78a48f97e6ebdca80251f12e12566835868",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hivecue-settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "crit-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hivecue-settings-privacy-r1.txt",
+      "image_ref": "frames/hivecue-settings-privacy-r1.png",
+      "receipt_ref": "frames/hivecue-settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hivecue-settings-privacy.receipt.jsonl",
+          "sha256": "fa0b3d9b134129e67bea27de662d196a05017f6f0ceb121c5baae195272ce483"
+        },
+        {
+          "ref": "evidence/visual-readback/hivecue-settings-privacy.receipt.json",
+          "sha256": "e79defe5f1a2dbe046620df23ad43d30d66b313d0dbb3125f26fa1985e9dedce"
+        }
+      ],
+      "prompt_sha256": "14d67e4ccb2d0dc4513029c48e0f12a9d43614defcbbca9c09755314b07b42de",
+      "image_sha256": "d235defc1f7fc3e547c24f7f525f4cac3e28c70c45c1d1dd24a82847459a7ca1",
+      "receipt_sha256": "5330a92393bc6d7bba03289c280a5bad7d5c66160562e8b8dc34429957183396",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "38cfa3366d7832b76d2ec521646c03f366da0be9f5575693cbd60bdbc7cedbea"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "84c57900355a6780ce4d3b893c5036036c9ad8130282a6b94fdb18eac338105f"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "feabca853def80950455bc241d0fa54a54125da5c8841115951df0c36d08e57b"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "eeabc12b12ecc99c62402ef99059dec294e0825bc240b732c0e90ccffbab0b97"
+    }
+  ],
+  "frozen_at": "2026-10-15T06:17:23Z"
+}

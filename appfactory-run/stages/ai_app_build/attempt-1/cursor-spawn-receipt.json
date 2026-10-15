@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "d9d1537a-2dda-41a4-96ee-8582fcd08068",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-builder",
+    "model": "auto",
+    "description": "pkg_d9d1537a2dda41a496ee8582fcd08068",
+    "prompt": "Dispatch d9d1537a-2dda-41a4-96ee-8582fcd08068. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T053908Z-ea6ff1de/stages/ai_app_build/attempt-1/codex.launch.md SHA-256 830a74872233fcf8588641538c72face3b6c6a97d2e11915f98c95ee581ef4be. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-build-d9d1537a2dda",
+  "agent_name": "/root/pkg_d9d1537a2dda41a496ee8582fcd08068",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T06:19:44Z",
+  "pid": 99125,
+  "note": "HiveCue ai_app_build e1"
+}

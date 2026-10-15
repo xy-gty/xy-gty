@@ -1,0 +1,1 @@
+Pass if the still shows hands-free TTS controls (Play/Pause/Next) for inspection notes with large glove-friendly buttons and rail/context of current frame; not a giant FormCue rest ring.

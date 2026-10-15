@@ -1,0 +1,174 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261015T053908Z-ea6ff1de",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "HiveCue",
+    "development_bundle_id": "com.lingguang.hivecue",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "brood_frame_photo_camera_and_library_import",
+    "brood_stores_pest_recognition_review_persist",
+    "ai_hive_inspection_coach_chat_with_consent_gate",
+    "annotated_frame_heat_overlays",
+    "tts_hands_free_inspection_notes_while_suited",
+    "microphone_dictate_inspection_fields",
+    "hex_comb_grid_and_inspection_rail_and_heat_overlay",
+    "local_legal_pages_user_owned_frame_photos_only",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "Inspection",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "FrameShot",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "BroodDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "Finding",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AnnotatedOverlay",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachTurn",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachMessage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "VoiceNote",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "DictatedField",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "BroodReviewBar",
+      "confirm": "Keep",
+      "reject": "Discard",
+      "edit": "Edit"
+    },
+    {
+      "name": "TurnReview",
+      "confirm": "Keep",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "hivecue.consent.v1",
+      "fields": [
+        "frame_photo_descriptor",
+        "brood_summary",
+        "stores_summary",
+        "pest_signs",
+        "inspection_plan_summary",
+        "current_frame_label",
+        "chat_text",
+        "voice_transcript",
+        "dictated_fields"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechFieldCapture"
+    },
+    {
+      "name": "HandsFreeTTSPlayer"
+    },
+    {
+      "name": "HexCombGrid"
+    },
+    {
+      "name": "InspectionRail"
+    },
+    {
+      "name": "HeatOverlayCanvas"
+    },
+    {
+      "name": "AnnotatedFrameEditor"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "InspectionsHome",
+    "NewInspection",
+    "CaptureImport",
+    "BroodReview",
+    "InspectionCoach",
+    "CoachChat",
+    "TurnReview",
+    "AnnotatedFrame",
+    "HandsFreeTTS",
+    "DictateFields",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Keep",
+    "reject": "Discard",
+    "edit": "Edit"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "privacy_usage_descriptions": {
+    "NSCameraUsageDescription": "Capture brood-frame photos for AI hive inspection",
+    "NSPhotoLibraryUsageDescription": "Import past frame photos to compare brood / stores / pests",
+    "NSMicrophoneUsageDescription": "Hands-free inspection notes while suited and gloved",
+    "NSSpeechRecognitionUsageDescription": "Dictate inspection fields (queen seen, temperament, notes) into the log"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "582749df13123c9b845a413c31f3c0d005e30c73ee1c12dc7ad3c9177ce6ef51"
+    }
+  ],
+  "goal_sha256": "734244d01548cf8f485353f79d0dbb7587d95a0f8cc0051da486c98197907e64",
+  "frozen_at": "2026-10-15T05:45:46Z"
+}

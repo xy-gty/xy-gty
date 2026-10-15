@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "hivecue-annotated-frame.runtime.receipt.json",
+  "verdict_sha256": "59b3cd959c09207b514c6edca02c94f862d4fc303ce2da5cc3bd78745028a6f4",
+  "written_at": "2026-10-15T07:39:20Z"
+}

@@ -1,0 +1,12 @@
+HiveCue `pm_docs` e2 resume is done — **Status: ready**.
+
+Verified launch SHA `896e9711…51af`, reused technical freeze / frames / readbacks, bound annotated-frame to the e2 pass receipt, froze visuals, wrote MAP, and finished.
+
+| Item | Value |
+|------|--------|
+| `technical_contract_sha256` | `5bda6a4efb122c94a7fcd682191fc44da554b26267bb7948618b47e67403a167` |
+| `pm_visual_manifest_sha256` | `4558114f089b150a156c6a189d7fdc42ee43c164ab00463cc94679548a66a7e7` |
+| Frames | 8/8 GrokBot + readback pass |
+| Finish | `ready` · message_id `msg-69d7f1b691b541478e4968f7265d0196` · MAP sha `01cf4547…24b045` |
+
+Controller can record-event / adopt next. Gaps left honest: legal URLs / AI key / CloudKit UNKNOWN; Feishu skip; no AppIcon/Launch; free_app_only.
