@@ -1,0 +1,4 @@
+CONTROLLER_DELIVERY skip
+record_id: n/a
+blocker: false
+reason: operator CONTROLLER hard rule — Feishu delivery writeback skipped for CellarCue UltraLite p1

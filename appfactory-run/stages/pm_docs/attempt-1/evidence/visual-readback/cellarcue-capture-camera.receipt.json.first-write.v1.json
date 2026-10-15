@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "cellarcue-capture-camera.receipt.json",
+  "verdict_sha256": "83e56f28269c6ed0cd464967aa646d1f38de4adf4669c4b77c4e55e2df011431",
+  "written_at": "2026-10-15T19:07:44Z"
+}

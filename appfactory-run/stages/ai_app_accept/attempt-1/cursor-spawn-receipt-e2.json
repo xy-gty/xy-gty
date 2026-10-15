@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "a3ec4bbf-acbb-47e3-8b1a-f89fa042b107",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_a3ec4bbfacbb47e38b1af89fa042b107",
+    "prompt": "Continue dispatch a3ec4bbf-acbb-47e3-8b1a-f89fa042b107. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_accept/attempt-1/codex_dispatch.md. Host agent was interrupted. Freeze current frames if needed, write MAP last, and finish. Preserve all product work. Do not advance factory state. CONTROLLER hard rules: product_dir cellarcue/; palette #3730A3/#EEF2FF/#EA580C; UI cellar row/bin grid + label-OCR hero + drinking-window timeline; COMPLIANCE \u975e\u4f8d\u9152\u8ba4\u8bc1 / not a sommelier certification; \u975e\u6295\u8d44\u5efa\u8bae / not investment advice; 21+; four permissions; NO AppIcon/LaunchScreen; no Vinocell; iPhone 17 Pro B14CC0EA ONLY \u2014 NEVER Pro Max; Feishu skip; Option A soft known_issues \u2014 do NOT hard-block non-core UL vision/UITest; core selling-point flows must be actually tested; Ultra-lite p1; deliver xy-gty cellarcue/ branch."
+  },
+  "agent_id": "cursor-cli-accept-a3ec4bbfacbb-e2",
+  "agent_name": "/root/pkg_a3ec4bbfacbb47e38b1af89fa042b107_e2",
+  "execution_seq": 2,
+  "spawned_at": "2026-10-15T19:34:49Z",
+  "pid": 36240,
+  "note": "CellarCue accept e2 replace_lost start_new_session Option A"
+}

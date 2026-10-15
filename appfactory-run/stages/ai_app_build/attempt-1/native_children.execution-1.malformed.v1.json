@@ -1,0 +1,10 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "run_id": "kf-20261015T185351Z-25a1f937",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "ea9561c5-a302-4756-b384-5b5c291a5881",
+  "child_slots_reserved": 0,
+  "children": [],
+  "note": "Reserved native agent slots including parent: 1; child_slots=0; parent-only implementation."
+}

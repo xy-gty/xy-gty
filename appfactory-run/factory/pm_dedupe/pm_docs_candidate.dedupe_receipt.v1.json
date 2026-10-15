@@ -1,0 +1,180 @@
+{
+  "blocker": "",
+  "bundle_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/factory/pm_dedupe/pm_docs_candidate.json",
+  "bundle_sha256": "f1904da1783c9c801b7a118b2e95188f26d538675b747f79428b93456a1ccf2a",
+  "candidate_fingerprint": "c668f25d0426441ea02ef63b0953add2c91ae88451f6e0226e74ebe3894b2a8b",
+  "created_at": "2026-10-16T03:11:30+08:00",
+  "owner_id": "kf-20261015T185351Z-25a1f937",
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json",
+  "reservation_id": "bd1dbce5f1790b6dadb452a4",
+  "reservation_status": "reserved",
+  "schema_version": "appfactory.pmagent-dedupe-receipt.v1",
+  "status": "PASS",
+  "task_id": "kf-20261015T185351Z-25a1f937:pm_docs:map_dedupe",
+  "vector_query": {
+    "dimensions": 384,
+    "mode": "sqlite_feature_hash_cosine",
+    "nearest_neighbors": [
+      {
+        "identity": {
+          "diversity_key": "mixcue home bartenders who already photograph bottles and garnishes and need fast spirit id substitute advice and hands free pour shake coaching while both hands are busy app name mixcue",
+          "product_fingerprint": "b6d323d81bc2f6f0f99cbca2baacbae362860a33409436d21249d3f02cc822d5",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T162417Z-7519c0dc",
+        "product_name": "MixCue",
+        "reservation_id": "522c5bef0902c00c99dc477a",
+        "similarity_score": 0.417,
+        "status": "committed",
+        "task_id": "kf-20261015T162417Z-7519c0dc:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "sporecue foragers and nature walkers who already photograph mushrooms in the field and need fast morphology aware species hypotheses lookalike contrast and hands free notes while never treating the app as food safety certification app name",
+          "product_fingerprint": "e0f28cd5cf10ea6bd90b492a664d8c513299c3a649125739250627812a341d40",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T174239Z-859f7eed",
+        "product_name": "SporeCue",
+        "reservation_id": "bb0aafc806cb3b2ab28674ef",
+        "similarity_score": 0.3805,
+        "status": "committed",
+        "task_id": "kf-20261015T174239Z-859f7eed:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "wingcue birders and casual nature walkers who already photograph birds and need fast mark based id help in the field one handed binoculars up app name wingcue",
+          "product_fingerprint": "b711f5a3ab005724dce3cda7adfa257dfb43f8db688061d6c36fc09a9b1490e4",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T135733Z-fecade9e",
+        "product_name": "WingCue",
+        "reservation_id": "8bf36e5c4e659d4e253b19dc",
+        "similarity_score": 0.312,
+        "status": "committed",
+        "task_id": "kf-20261015T135733Z-fecade9e:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "framecue 独立导演 摄像助理 短片创作者 片场或勘景时需要快速景别与构图反馈 而不是只看专业相机画幅预览器 拍或导入一张静帧 ai 指出构图问题草稿 keep 落成构图要点 同一会话里在场记板画幅框内看画面 底部景别芯片切换 ecu cu ms ws 聊天景别 画幅 焦段 生成安全框与三分法叠图 tts 现场口令 双手持机时可口述 切中景 framecue is an ai director framing coach shoot or import stills k",
+          "product_fingerprint": "0e3abf03086304099d251b14e0113ef8ba35d1aacfb34868ec6e0d61d4ea36d7",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T123049Z-789bf0d3",
+        "product_name": "FrameCue",
+        "reservation_id": "c721a7f4ae5c18b6c6abe7c4",
+        "similarity_score": 0.1632,
+        "status": "committed",
+        "task_id": "kf-20261015T123049Z-789bf0d3:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "nightcue 在城市天际线 星空 光轨等场景做长曝光 需要现场快速诊断与参数建议的 iphone 夜拍爱好者 双手常扶三脚架 遥控器 夜拍现场拍一张试片 ai 给出曝光 噪点 拖影草稿 keep 落成 diagnosisfinding 同一会话里用夜景帧轨推进各试片 需要时聊天问参数 在曝光诊断叠层上确认标注 tts 现场口令 手持三脚架时可口述曝光字段 nightcue is an ai night long exposure coach shoot or import",
+          "product_fingerprint": "e950103bff09d095ee2b1fc959f191cfe3cb21b48c2a128255af1af093de19db",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T075333Z-d3a0d226",
+        "product_name": "NightCue",
+        "reservation_id": "42b4c89a9a2886cc69acb12b",
+        "similarity_score": 0.1522,
+        "status": "committed",
+        "task_id": "kf-20261015T075333Z-d3a0d226:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "knotcue 练绳结的水手 户外与救援练习者 英文 ui en us knotcue is a local first ai knot coach snap or import rope knot photos to recognize stage chat next haul guidance overlay step annotations and hear tts hands free coaching without cloning bendcoach or duc",
+          "product_fingerprint": "1362212ab7fbe8332f49cb0a0d079a227f988f89ea29c51adbf7f126c3e759d2",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T091503Z-ed8b60be",
+        "product_name": "KnotCue",
+        "reservation_id": "65b55abb55044dda574d0782",
+        "similarity_score": 0.1494,
+        "status": "committed",
+        "task_id": "kf-20261014T091503Z-ed8b60be:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "docbrief ai 需要把纸质 白板 收据材料快速整理成可跟进简报的自由职业者 小团队协调人 商务与行政人员 要的是 讲清楚下一步 不是又一个纯扫描器 新建 brief 拍或导入文档 白板 小票照片 导入文档 白板或小票照片 ai 辅助识别类型与关键字段 聊天抽取行动项与截止日期 生成视觉摘要卡 再用 tts 口述简报 本地可离线使用已保存的 brief",
+          "product_fingerprint": "887a4e2084ba7d176fdf8b2bf4d4b1c674205f6c29f5fd10c00ca23adebddd92",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T095745Z-aa3ad9a0",
+        "product_name": "DocBrief AI",
+        "reservation_id": "b2aeb950f6904323e99afd55",
+        "similarity_score": 0.1028,
+        "status": "committed",
+        "task_id": "kf-20261013T095745Z-aa3ad9a0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "rulecue 用 iphone 在实体桌边摆台 需要规则裁决与摆台步骤提示的桌游玩家 桌主 双手常扶组件与规则书 桌游开局前拍 导入规则书与桌面 ai 识别组件与回合阶段草稿 keep 落成 componentmap phasestep setupoverlay 同一局里用桌面分区卡与回合步骤条推进 需要时聊天问裁决 在分区叠图上确认标注 tts 边摆边讲 双手摆台时可口述规则问题写入教练会话 rulecue is an ai board game rules and se",
+          "product_fingerprint": "e55c9a270390866bce3491749868d051265ee50c3b5908e258ec7c40825b3cdc",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T111031Z-ed6f1861",
+        "product_name": "RuleCue",
+        "reservation_id": "65eda2a2afc293e994d63b15",
+        "similarity_score": 0.0956,
+        "status": "committed",
+        "task_id": "kf-20261015T111031Z-ed6f1861:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "cuepartner ai 需要私下对词 背词 排练的演员与戏剧学生 希望手机端有 对手演员 与提词器 而不是通用聊天壳 新建 scene 用相机拍或相册导入脚本页 ocr 后审阅保留 导入自有脚本照片做 ocr 与 ai 对戏伙伴按角色切换排练 用带节拍的 tts 提词 可选舞台音床 本地保存场景与台词 不附带版权剧本",
+          "product_fingerprint": "f040fab459125d95486b23756fcc2c2af15c134c0db4e33c7d74ba6c5d4b589e",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261013T125947Z-a3157139",
+        "product_name": "CuePartner AI",
+        "reservation_id": "29e6ee9d0f6fae711a0d1c12",
+        "similarity_score": 0.0856,
+        "status": "committed",
+        "task_id": "kf-20261013T125947Z-a3157139:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "dimcue 需要现场估尺寸 留测量记录的装修 diy 仓储与空间规划者 希望手机端有 看图量一量 辅导 而不是纯 cad 或纯聊天 新建 measuresession 用相机拍或相册导入场景照片 拍下或导入真实场景照片 在图上标点与边 获得 ai 辅助尺寸估计与测量辅导 并把会话与备注本地保存 卷尺助手 不是通用聊天壳",
+          "product_fingerprint": "e99d8a85c97dbcf844a9d46e1609077bc46c1ec9200237c11f161e43fe4df238",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T044925Z-2ecf35a4",
+        "product_name": "DimCue",
+        "reservation_id": "d65e404c9c19033193eea139",
+        "similarity_score": 0.0815,
+        "status": "committed",
+        "task_id": "kf-20261014T044925Z-2ecf35a4:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "stopcue 用 iphone 做定格动画 需要现场分镜建议与拍摄节拍提示的创作者 双手常扶相机 桌面布景 定格现场拍 导入一串帧 ai 给出分镜与间隔草稿 keep 落成 timingcue onionskinguide 同一项目里用胶片齿孔时间轴推进各帧 需要时聊天问分镜 在洋葱皮叠层上确认标注 tts 倒计时口令 拍摄中可口述间隔 口令字段 stopcue is an ai stop motion coach capture or import frame seque",
+          "product_fingerprint": "027ccda127858f296f650487085df52ba3c732172d330e0beb2f835330988a44",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261015T093242Z-0f4256a0",
+        "product_name": "StopCue",
+        "reservation_id": "7d4f03b58b01dc7e1c1f86b7",
+        "similarity_score": 0.0683,
+        "status": "committed",
+        "task_id": "kf-20261015T093242Z-0f4256a0:pm_docs:map_dedupe"
+      },
+      {
+        "identity": {
+          "diversity_key": "closetcue 自己搭衣服的日常穿搭用户 英文 ui en us closetcue is a local first ai closet stylist catalog garments by camera or library chat for weather occasion outfits save flat lay boards and hear a morning wear briefing without cloning stylebook",
+          "product_fingerprint": "bfba24cff9e2cd6ad5f6f4bdf4373100dfb87285c6c87939398a0b4c82ec3c2a",
+          "reference_url": ""
+        },
+        "owner_id": "kf-20261014T042235Z-71bce4de",
+        "product_name": "ClosetCue",
+        "reservation_id": "d9e2cc3ab24f28e36778ef19",
+        "similarity_score": 0.0628,
+        "status": "committed",
+        "task_id": "kf-20261014T042235Z-71bce4de:pm_docs:map_dedupe"
+      }
+    ],
+    "novelty_score": 0.583,
+    "novelty_threshold": 0.35,
+    "store_path": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+    "top_k": 12
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-fd568e71bf26",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 484877,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/cellarcue-rack-card-r2.png",
+  "output_sha256": "6576de6df427dcafbd7a5964ddb5ff20874ab858144ec4f16eb8c9689ae16a95",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/prompts/cellarcue-rack-card-r2.txt",
+  "prompt_sha256": "909a0c1c52c0ddea1cdaab1810b183fe1432f6f3d29dbebeeb4bba91df890154",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "6576de6df427dcafbd7a5964ddb5ff20874ab858144ec4f16eb8c9689ae16a95",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-15T19:06:12Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

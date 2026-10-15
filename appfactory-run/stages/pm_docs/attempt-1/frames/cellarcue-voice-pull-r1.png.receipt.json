@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-aaf0c6a9b0a0",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 659261,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/cellarcue-voice-pull-r1.png",
+  "output_sha256": "07d829073f8d23cefc5187821a5a9b6528bd0eee1280f592418a240283803dbf",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/prompts/cellarcue-voice-pull-r1.txt",
+  "prompt_sha256": "1e997c4ea609084503c7a67bee6fcb954b0b70b58fe217650038c09d7eaa5fc7",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "07d829073f8d23cefc5187821a5a9b6528bd0eee1280f592418a240283803dbf",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-15T19:02:05Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

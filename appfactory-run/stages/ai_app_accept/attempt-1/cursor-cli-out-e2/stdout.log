@@ -1,0 +1,12 @@
+Dispatch **a3ec4bbf** (`ai_app_accept` attempt-1 e2) finished.
+
+**Verdict:** `ready` — finish exit 0  
+**Product:** untouched at `eded2779` on `cellarcue`  
+**Sim:** iPhone 17 Pro `B14CC0EA` only; lease released  
+
+**Stamp:** UL-01..UL-08 all pass (UL-03 with `ai_key_unavailable` gap; UL-07 Option A soft for below-fold home vision). Core flows exercised: capture→label, coach, rack card, TTS, voice note, consent, local legal.
+
+**Gaps (non-blocking):** `ai_key_unavailable`, remote legal URLs, CloudKit, Feishu row, pricing deferred.
+
+MAP: `runs/kf-20261015T185351Z-25a1f937/stages/ai_app_accept/attempt-1/MAP.md`  
+Factory state not advanced — controller can adopt/next.

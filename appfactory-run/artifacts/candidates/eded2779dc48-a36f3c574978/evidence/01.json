@@ -1,0 +1,50 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "run_id": "kf-20261015T185351Z-25a1f937",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "ea9561c5-a302-4756-b384-5b5c291a5881",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/product",
+  "source_commit": "eded2779dc48944bf1cc943f255e972d423701ed",
+  "branch": "cellarcue",
+  "bundle_id": "com.lingguang.cellarcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_build/attempt-1/CandidateApp/CellarCue.app",
+  "app_content_sha256": "a36f3c574978637645fcbb29f8a9f6d7f3f66cd39820deae543bffa292390d17",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+    "runtime": "iOS Simulator iPhone 17 Pro"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_build/attempt-1/CandidateApp/CellarCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "com.lingguang.cellarcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 33463,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_build/attempt-1/launch.log",
+    "log_sha256": "bf983ad47cc178f0a63c107a6516bde7b549e0929a104055cdbccf2b5f31a51a"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/ai_app_build/attempt-1/smoke-home.png",
+    "screenshot_sha256": "cf1551d05df676b36bf7f115b670b727a370315d34c8bb475719731f0b71d949"
+  }
+}

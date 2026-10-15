@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "91d6163e-c9b2-45ff-b216-14d36e07a45e",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "pkg_91d6163ec9b245ffb21614d36e07a45e",
+    "prompt": "Dispatch 91d6163e-c9b2-45ff-b216-14d36e07a45e. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/runtime/preparation/attempt-1/codex.launch.md SHA-256 b7d667e6b7852ae8ccca9056bcd7a4409ef406d396618edbd708de8f9efeec8f. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-prep-91d6163ec9b2",
+  "agent_name": "/root/pkg_91d6163ec9b245ffb21614d36e07a45e",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T19:12:12Z",
+  "pid": 28260,
+  "note": "CellarCue prep e1 local agent CLI start_new_session"
+}

@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-15T18:53:51Z",
+  "model_mode": "dev",
+  "objective": "# CellarCue\n\nPaid AI wine cellar label ID & drinking-window coach (one-time unlock for unlimited cellar packs; no coins).\n\nRemake vs Vinocell – Wine cellar manager — differentiate: AI label OCR + bin placement + drinking-window/food-pairing chat + annotated cellar cards + TTS pull brief, not just a static cellar inventory. Do NOT name competitors in App copy.\n\n## Hard compliance (non-negotiable)\n- State clearly: 非侍酒认证 / not a sommelier certification; 非投资建议 / not investment advice\n- 21+ related wording must land in product surfaces that touch alcohol recommendations\n- Never claim certified tasting advice or guaranteed investment returns\n\n## Core loop\nShoot or import wine labels → AI ID + write to bin/slot → chat drinking window & food pairing → generate annotated cellar-rack cards → TTS pull/pour brief.\n\n## Hard operator rules\n- product_dir: cellarcue/ (never leave as product/ only — symlink cellarcue→product; deliver directory/branch name = cellarcue, not product)\n- palette: primary #3730A3 · secondary #EEF2FF · accent #EA580C (indigo + lavender mist + burnt orange; must differ from SporeCue russet/cream/sky, MixCue rose/gold, WingCue teal/mint/terracotta, FrameCue purple/amber, RuleCue amber/cyan, StopCue green/pink, and other delivered apps; ban all-black/dark-gray clones)\n- UI: 酒架 row/bin 网格 + 大号酒标 OCR 主卡 + 饮用窗陈年时间轴（must look clearly different from MixCue vertical bottle-rail, SporeCue confidence stack, WingCue field-card stack, ClosetCue mosaic, FrameCue safe-frame/clapper, ScoutCue sky-arc, RuleCue table zone, StopCue film-sprocket — no twins）\n- Four permissions with real flows (extend core cellar coach, do not bolt on awkwardly / replace core loop):\n  - Camera: capture wine label / cork / bin tag for ID & placement\n  - Photos: import label album stills into cellar\n  - Microphone: hands-free bin notes / pull brief while carrying bottles\n  - Speech Recognition: spoken questions like \"where is the 2015 Barolo\" / \"pair with lamb?\" into coach chat\n- Selling points must be real: photo/import label → ID + write bin → drinking-window & pairing chat → annotated rack card → TTS pull brief\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues for non-core UL fails; P1 non-blockers must not block delivery\n- Low-risk closed-loop product; pure Cursor Ultra-lite\n- When disk tight: clear unused DerivedData/simulator caches (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI wine-cellar coach: shoot or import labels, AI ID into bin slots, chat drinking windows and pairings, annotated rack cards, TTS pull briefs—unlock unlimited cellar packs. Disclose not a sommelier certification and not investment advice; 21+ where alcohol advice appears.\n\n## Positioning\nAI 酒窖标签识别与陈年饮用窗教练——扫瓶贴、记仓位、语音问搭配。\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261015T185351Z-25a1f937",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

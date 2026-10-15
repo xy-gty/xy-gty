@@ -1,0 +1,1 @@
+{"generator":"grokbot","backend":"grok_bot_generate_image","wake":"local_seed","batch":"evidence/image-batch-r1.result.json","ok":true,"note":"Cursor GenerateImage seeds via local_seed bridge"}

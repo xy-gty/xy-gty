@@ -1,0 +1,246 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261015T185351Z-25a1f937",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "cellarcue-home-empty",
+      "page_id": "cellarHome",
+      "state_id": "empty",
+      "criterion_ids": [
+        "CR-HOME-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-home-empty-r1.txt",
+      "image_ref": "frames/cellarcue-home-empty-r1.png",
+      "receipt_ref": "frames/cellarcue-home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-home-empty.receipt.jsonl",
+          "sha256": "2a95e5cd5a8278942012817e1e0014cee9c9a857ac4f44386ee1aab35df07619"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-home-empty.receipt.json",
+          "sha256": "37233b0572889326d4fd9026bda79a6a54539ec4d73576445f00a2e74fcb4490"
+        }
+      ],
+      "prompt_sha256": "0c7df58e52d694f72523b56b392e9cab58e22a51b3c8b7f86732dc2e43245bea",
+      "image_sha256": "e276495d72f5f7be1dc946fe71835197d0288292e1086dcac869f4f846f34734",
+      "receipt_sha256": "3d0221de21b63122bddecdb345a9a8760f08d8e046506819c0634200fbd03a78",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-capture-camera",
+      "page_id": "cameraCapture",
+      "state_id": "live",
+      "criterion_ids": [
+        "CR-CAM-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-capture-camera-r1.txt",
+      "image_ref": "frames/cellarcue-capture-camera-r1.png",
+      "receipt_ref": "frames/cellarcue-capture-camera-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-capture-camera.receipt.jsonl",
+          "sha256": "9ff55da808ef24a1190ddab4847f5e70987807e1199752b429558a2dcd926f24"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-capture-camera.receipt.json",
+          "sha256": "0bfe23c71c09daf4eb8c2746a3b82f173e5fe3dedd2ff91fd31562d21d67bb83"
+        }
+      ],
+      "prompt_sha256": "8c0c4a3be68c69f2fa54ef7e6669f7460e234aec72dceb7f8a1e7722e55af869",
+      "image_sha256": "002f53aceaca0634e7de1eb5e806e25a8f8587f579bcad887bf64d0de3527f49",
+      "receipt_sha256": "ce96287aa16a36296d6dc990d134d00f669ba52b8e4e77f534935c66fbbe0c3c",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-label-ocr",
+      "page_id": "labelResult",
+      "state_id": "identified",
+      "criterion_ids": [
+        "CR-OCR-01",
+        "CR-OCR-02",
+        "CR-OCR-03"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-label-ocr-r1.txt",
+      "image_ref": "frames/cellarcue-label-ocr-r1.png",
+      "receipt_ref": "frames/cellarcue-label-ocr-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-label-ocr.receipt.jsonl",
+          "sha256": "714a160abec752c0e344e050e5b278c18b1758488f91ded8a034da08ead4369f"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-label-ocr.receipt.json",
+          "sha256": "c97815a5adfd34a5197eb28e8a591d41093ef7f505a3d88665268359d5e77360"
+        }
+      ],
+      "prompt_sha256": "674166657261ffc30656d04cb0a1356bcc399b9b3fa83cf49b7d969d289c0780",
+      "image_sha256": "28609ee926eeaa52c07fb55d5db376103ec7e739f5b85f0e4cc37bb9e7653057",
+      "receipt_sha256": "4f14aaa644f31b8fe1d94d46d07eac34164003ae5f330e54f75ac742e8a84ed9",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-window-chat",
+      "page_id": "windowChat",
+      "state_id": "chatting",
+      "criterion_ids": [
+        "CR-CHAT-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-window-chat-r1.txt",
+      "image_ref": "frames/cellarcue-window-chat-r1.png",
+      "receipt_ref": "frames/cellarcue-window-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-window-chat.receipt.jsonl",
+          "sha256": "947fcc8db51e1cb54264e5063e99a0bdb987f5495da66c63d81abc1e8c3d6fec"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-window-chat.receipt.json",
+          "sha256": "e96d801e2a75946cb65b39682142b66ae7dee929f1a96719c103fe62f93ef4d9"
+        }
+      ],
+      "prompt_sha256": "dfb5d2ab10210f5afbff13391643edbac78d9e423c96a508ed67cb1a73b832e2",
+      "image_sha256": "9ed7663c366517a72756af25bfe282a4dcb57c24040e7fa5b9e45e2abf06b082",
+      "receipt_sha256": "4301d395c7c35b4672a5518bf6ace3f7f703ef5e1d7a661fe0ef779f59161aa9",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-rack-card",
+      "page_id": "rackCard",
+      "state_id": "annotated",
+      "criterion_ids": [
+        "CR-RACK-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-rack-card-r2.txt",
+      "image_ref": "frames/cellarcue-rack-card-r2.png",
+      "receipt_ref": "frames/cellarcue-rack-card-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-rack-card-r2.receipt.jsonl",
+          "sha256": "68b3a443c0ed305d70c7f1ea9e994e583f5c066db75615ad1fd1d9ec53ce8999"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-rack-card-r2.receipt.json",
+          "sha256": "5e622f8e6dbd2116cfaa674190ee0df197b4c7abd0e3f79a9681e2d7f98946c7"
+        }
+      ],
+      "prompt_sha256": "909a0c1c52c0ddea1cdaab1810b183fe1432f6f3d29dbebeeb4bba91df890154",
+      "image_sha256": "6576de6df427dcafbd7a5964ddb5ff20874ab858144ec4f16eb8c9689ae16a95",
+      "receipt_sha256": "5e9b1b37bee1a3a959d3e3cac0c2d3d82613aca8159467357e08327428940d44",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-voice-pull",
+      "page_id": "pullBrief",
+      "state_id": "voice",
+      "criterion_ids": [
+        "CR-MIC-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-voice-pull-r1.txt",
+      "image_ref": "frames/cellarcue-voice-pull-r1.png",
+      "receipt_ref": "frames/cellarcue-voice-pull-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-voice-pull.receipt.jsonl",
+          "sha256": "6d0a081c04c19b980c2abfc4a9c89f6ef37a8c010c445518f07b336a2fcf52a9"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-voice-pull.receipt.json",
+          "sha256": "15cbae45703b5fd5a80f1a6215017e7b7a300cfb04763c3552ba7868f68d08c4"
+        }
+      ],
+      "prompt_sha256": "1e997c4ea609084503c7a67bee6fcb954b0b70b58fe217650038c09d7eaa5fc7",
+      "image_sha256": "07d829073f8d23cefc5187821a5a9b6528bd0eee1280f592418a240283803dbf",
+      "receipt_sha256": "b282966a26777faa7f10596a06924e9cb086e7bbbf86fed8701e35411d49b3fb",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-consent-ai",
+      "page_id": "aiConsent",
+      "state_id": "prompt",
+      "criterion_ids": [
+        "CR-CONSENT-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-consent-ai-r1.txt",
+      "image_ref": "frames/cellarcue-consent-ai-r1.png",
+      "receipt_ref": "frames/cellarcue-consent-ai-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-consent-ai.receipt.jsonl",
+          "sha256": "e13a239c33e6a90c5d243c7451f280a41e660e68d84d30a0450a055bfaba801d"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-consent-ai.receipt.json",
+          "sha256": "fbc14d7495b9dddef9ac8904f328dc33c605d37a34d6e8f54f7118a5298c8dc3"
+        }
+      ],
+      "prompt_sha256": "44566bbe94fac51ee23f3e599a2599184990d37894ec3b1323b27608c2eeb32a",
+      "image_sha256": "fbbd9d43fe5f70a73514d29e2eb6eac15a8f03c4a73c27493349c266274f0af7",
+      "receipt_sha256": "be082988d599bb682ab579eebbd00f4a076277c470f5de0ed20f9ee2a9bb1f19",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "cellarcue-settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "CR-SET-01"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/cellarcue-settings-privacy-r1.txt",
+      "image_ref": "frames/cellarcue-settings-privacy-r1.png",
+      "receipt_ref": "frames/cellarcue-settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/cellarcue-settings-privacy.receipt.jsonl",
+          "sha256": "9aa3933266f94680fc51301f6c362eba72506b4222731d8b99a336c4feadd00d"
+        },
+        {
+          "ref": "evidence/visual-readback/cellarcue-settings-privacy.receipt.json",
+          "sha256": "de3e2b73e069a608242354b5e993aa8ddcdbe4f13d497f71674b9c316313f25a"
+        }
+      ],
+      "prompt_sha256": "a81977d5399cb0da7414d14e0d39a66b72478c865a1a47dc4432b393f274d563",
+      "image_sha256": "fcb45b9063fec61832c3e787d9275e0de0d2a3051cfe386bab002a89a121a0ef",
+      "receipt_sha256": "bb3d6a6daa7e0eaf6a475b2f51c009daa52f62d8f979be37865a2dedf965140f",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "71a37e6d71eec57b1caca04e92d9ffe3ff9846691c37119d7c5eab291b7a4f53"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "5c04bc14615794a5c7ededcf51efa8418668c2d137b784ab2c4465b779f839d1"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "d867812dd8638f0ed51168e22140bdedd3df1b806ca5fe4d105944a833ee553d"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "996143cebe2f3a3ed92adc100c85bceaea7cca9dfe7395432ebe91e173ab5a52"
+    }
+  ],
+  "frozen_at": "2026-10-15T19:10:01Z"
+}

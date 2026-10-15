@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-e8283ee88bbd",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 685618,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/cellarcue-capture-camera-r1.png",
+  "output_sha256": "002f53aceaca0634e7de1eb5e806e25a8f8587f579bcad887bf64d0de3527f49",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T185351Z-25a1f937/stages/pm_docs/attempt-1/frames/prompts/cellarcue-capture-camera-r1.txt",
+  "prompt_sha256": "8c0c4a3be68c69f2fa54ef7e6669f7460e234aec72dceb7f8a1e7722e55af869",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "002f53aceaca0634e7de1eb5e806e25a8f8587f579bcad887bf64d0de3527f49",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-15T19:02:05Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}
