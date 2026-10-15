@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D81B6EC6012461EEA35137E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008585CCE9F4B8C29DD34E9D /* AppModel.swift */; };
+		2212BEFD684455A68E3E8F0C /* FieldBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082543CD0CC616875DB6273 /* FieldBriefView.swift */; };
+		2472DF5A0FA7FB8A95691471 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066719D62941E6A59EFA4A4 /* CameraPicker.swift */; };
+		248E9BFA45FDD37C468B3EDA /* SignatureComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C645B167B44B702F3EA18C /* SignatureComponents.swift */; };
+		284E08362AD95DFB01DB64B2 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = F10B9EDC5AFF0884DDCCF85F /* privacy.html */; };
+		2F5CA3F17C18E4F14C51CF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6BC0EE7192F037D979D1F0 /* Assets.xcassets */; };
+		391D427F8EDDB36B0F74AD02 /* FieldHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E895487CDB50EFBA7F74412 /* FieldHomeView.swift */; };
+		3955C8A189FA7E6ECE44483E /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A49F0182DDD911447EBB81 /* LocalLegalWebView.swift */; };
+		3E404E2D81AB60E56D91E291 /* SporeCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 488E5FE3284F992A6EC155C9 /* SporeCueDomain */; };
+		4FC9534FA119CDF6B786C1C3 /* SporeCueUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CDDC6C7B1F96A560BA046 /* SporeCueUISmokeTests.swift */; };
+		567E522CEC55E93F02656553 /* IDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E22C9995BF5B414B27073D /* IDResultView.swift */; };
+		579C7FA9BD35CB41561E90CE /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E79483DAF50BF6FE70C60 /* VoiceNoteRecorder.swift */; };
+		62177309F659EBAC76D2A466 /* SporeCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3DEEFF57E49C347D7DB3D9 /* SporeCueApp.swift */; };
+		63F82EEB6617BB9197250986 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C750497AE4A7CFAFDD64ED /* SettingsPrivacyView.swift */; };
+		75233268C5543CC2AB5233CD /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = CCBC2AF7A4C562A4955D2922 /* support.html */; };
+		829F3254AD193BC2FC55795A /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC746A4570878F291054AC7 /* ConsentSheet.swift */; };
+		83F996DFB1BFED3C7205B4BC /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067DABCB54AE849B006E467 /* TTSPlayer.swift */; };
+		8D25911E2DF492E668D4C34F /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = B75FA88E7370BC840426E967 /* AppRuntimeCore */; };
+		A6B6163A57FA31E2BCF0D986 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C42E07A58A679E560B4C1159 /* PrivacyInfo.xcprivacy */; };
+		BCFF31464AFD2F5068494842 /* SporeCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BF07D0D0CF6CCAD53232117A /* SporeCueDomain */; };
+		C8C13653C0476BE81E39C055 /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = DE555F1BB360B6FEF65A68D2 /* provider-policy.html */; };
+		C9CD79B922E6C43A110BB7DF /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCFF48AA19301CC5E0CBD1 /* SpeechRecognitionService.swift */; };
+		CA90C30BF2192D537D865599 /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9BBBDB8766F19F7355298 /* VoiceNoteView.swift */; };
+		D29D663C131EC7C7A0AD5293 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2A68493DEBA4D24507DB0 /* terms.html */; };
+		D3D79E43356756472E92FF56 /* OverlayAnnotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7053BA81D09E188C9758C07 /* OverlayAnnotateView.swift */; };
+		EA1D45B662EED5972BD8C434 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E914257F6198374A1277593 /* DeepSeekClient.swift */; };
+		ED4A70947C21A96C5F778857 /* SporeCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A61DCEEFD107D3A9D6649D /* SporeCueDomainTests.swift */; };
+		F264C7EE37F7E4CA0B7A72DC /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C668CCB9CD015E84C3643A8 /* RootNavigationView.swift */; };
+		F618AE5A57094C1413860CB8 /* SporeCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C803BCFA6461A970D6AFB /* SporeCueTheme.swift */; };
+		F624C884FD5EB7B4F85CEF9A /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = B5C9C276FCBEA77228C32DAB /* AppRuntimeCore */; };
+		F7BE4D707A9D4F73918A86E6 /* LookalikeChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ED45FFD5F763FA450AFDE1 /* LookalikeChatView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC99CF419F2DD0E6759FB604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ABC5EF16680FA05B9A2E852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9778020E098397A5ED868B6C;
+			remoteInfo = SporeCue;
+		};
+		BEAFF1F9B939BDA33D2FF996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ABC5EF16680FA05B9A2E852 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9778020E098397A5ED868B6C;
+			remoteInfo = SporeCue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008585CCE9F4B8C29DD34E9D /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		1E914257F6198374A1277593 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		1F3E79483DAF50BF6FE70C60 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		200CDDC6C7B1F96A560BA046 /* SporeCueUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SporeCueUISmokeTests.swift; sourceTree = "<group>"; };
+		22A9BBBDB8766F19F7355298 /* VoiceNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteView.swift; sourceTree = "<group>"; };
+		264D789E3CFDFA9900B4CBC6 /* SporeCueUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SporeCueUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38206458F0ACB547C255D5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47A61DCEEFD107D3A9D6649D /* SporeCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SporeCueDomainTests.swift; sourceTree = "<group>"; };
+		4C668CCB9CD015E84C3643A8 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		5067DABCB54AE849B006E467 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
+		5AFBD2E528C0F40F28CA300E /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		62ED45FFD5F763FA450AFDE1 /* LookalikeChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookalikeChatView.swift; sourceTree = "<group>"; };
+		64C645B167B44B702F3EA18C /* SignatureComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureComponents.swift; sourceTree = "<group>"; };
+		6B6BC0EE7192F037D979D1F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E895487CDB50EFBA7F74412 /* FieldHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldHomeView.swift; sourceTree = "<group>"; };
+		7D3DEEFF57E49C347D7DB3D9 /* SporeCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SporeCueApp.swift; sourceTree = "<group>"; };
+		8066719D62941E6A59EFA4A4 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		87F80C2CA6332991A30C4A3B /* SporeCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SporeCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		949C803BCFA6461A970D6AFB /* SporeCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SporeCueTheme.swift; sourceTree = "<group>"; };
+		94C750497AE4A7CFAFDD64ED /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		99A49F0182DDD911447EBB81 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		9DC2A68493DEBA4D24507DB0 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		9FC746A4570878F291054AC7 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		A082543CD0CC616875DB6273 /* FieldBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldBriefView.swift; sourceTree = "<group>"; };
+		A6E22C9995BF5B414B27073D /* IDResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResultView.swift; sourceTree = "<group>"; };
+		B088E1C28E940EE726ED58C9 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		C42E07A58A679E560B4C1159 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CCBC2AF7A4C562A4955D2922 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		DE555F1BB360B6FEF65A68D2 /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		DEC50FF25AE88AC5568FB3B2 /* SporeCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SporeCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7053BA81D09E188C9758C07 /* OverlayAnnotateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayAnnotateView.swift; sourceTree = "<group>"; };
+		F10B9EDC5AFF0884DDCCF85F /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		F4DCFF48AA19301CC5E0CBD1 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03D645D4CF35107797958301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E404E2D81AB60E56D91E291 /* SporeCueDomain in Frameworks */,
+				F624C884FD5EB7B4F85CEF9A /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958C7FD16C4C059C59B54C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D25911E2DF492E668D4C34F /* AppRuntimeCore in Frameworks */,
+				BCFF31464AFD2F5068494842 /* SporeCueDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FA63CE8F60EC96C61269DA /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				F10B9EDC5AFF0884DDCCF85F /* privacy.html */,
+				DE555F1BB360B6FEF65A68D2 /* provider-policy.html */,
+				CCBC2AF7A4C562A4955D2922 /* support.html */,
+				9DC2A68493DEBA4D24507DB0 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		1D4EE07537D60A726A1743AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02FA63CE8F60EC96C61269DA /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CB25D4BAA02A666B63938CB = {
+			isa = PBXGroup;
+			children = (
+				F2632A2371EBBE8730A2F379 /* App */,
+				43B1518FF33663E2CDA5D17B /* Packages */,
+				C68B67DFAB3DED012715580B /* Tests */,
+				8B032505DA1A3242E51825BF /* UITests */,
+				75ED4E66AA19C8A074CC885B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B1518FF33663E2CDA5D17B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				5AFBD2E528C0F40F28CA300E /* AppRuntimeCore */,
+				B088E1C28E940EE726ED58C9 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5B376EC82B0FC07A71103AFB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8066719D62941E6A59EFA4A4 /* CameraPicker.swift */,
+				A082543CD0CC616875DB6273 /* FieldBriefView.swift */,
+				6E895487CDB50EFBA7F74412 /* FieldHomeView.swift */,
+				A6E22C9995BF5B414B27073D /* IDResultView.swift */,
+				62ED45FFD5F763FA450AFDE1 /* LookalikeChatView.swift */,
+				E7053BA81D09E188C9758C07 /* OverlayAnnotateView.swift */,
+				4C668CCB9CD015E84C3643A8 /* RootNavigationView.swift */,
+				64C645B167B44B702F3EA18C /* SignatureComponents.swift */,
+				949C803BCFA6461A970D6AFB /* SporeCueTheme.swift */,
+				22A9BBBDB8766F19F7355298 /* VoiceNoteView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		75ED4E66AA19C8A074CC885B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEC50FF25AE88AC5568FB3B2 /* SporeCue.app */,
+				87F80C2CA6332991A30C4A3B /* SporeCueDomainTests.xctest */,
+				264D789E3CFDFA9900B4CBC6 /* SporeCueUISmokeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B032505DA1A3242E51825BF /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				200CDDC6C7B1F96A560BA046 /* SporeCueUISmokeTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		957788DAD15ADEF5A02060CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				008585CCE9F4B8C29DD34E9D /* AppModel.swift */,
+				5067DABCB54AE849B006E467 /* TTSPlayer.swift */,
+				1F3E79483DAF50BF6FE70C60 /* VoiceNoteRecorder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4C8E4ABDA8DD65ECE8BC552 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				9FC746A4570878F291054AC7 /* ConsentSheet.swift */,
+				1E914257F6198374A1277593 /* DeepSeekClient.swift */,
+				99A49F0182DDD911447EBB81 /* LocalLegalWebView.swift */,
+				94C750497AE4A7CFAFDD64ED /* SettingsPrivacyView.swift */,
+				F4DCFF48AA19301CC5E0CBD1 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		C68B67DFAB3DED012715580B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				47A61DCEEFD107D3A9D6649D /* SporeCueDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F2632A2371EBBE8730A2F379 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6B6BC0EE7192F037D979D1F0 /* Assets.xcassets */,
+				38206458F0ACB547C255D5F1 /* Info.plist */,
+				C42E07A58A679E560B4C1159 /* PrivacyInfo.xcprivacy */,
+				7D3DEEFF57E49C347D7DB3D9 /* SporeCueApp.swift */,
+				A4C8E4ABDA8DD65ECE8BC552 /* AI */,
+				1D4EE07537D60A726A1743AB /* Resources */,
+				957788DAD15ADEF5A02060CC /* Services */,
+				5B376EC82B0FC07A71103AFB /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D353AA8A20B952A02C0C4F /* SporeCueUISmokeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F38E01CADD7C494CB85C929 /* Build configuration list for PBXNativeTarget "SporeCueUISmokeTests" */;
+			buildPhases = (
+				5EA17970C7FDDEA252D90B54 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B7E30C3C316C0F24052BEB /* PBXTargetDependency */,
+			);
+			name = SporeCueUISmokeTests;
+			packageProductDependencies = (
+			);
+			productName = SporeCueUISmokeTests;
+			productReference = 264D789E3CFDFA9900B4CBC6 /* SporeCueUISmokeTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		96DBF85E47D52A1F11B4E98A /* SporeCueDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74729A8C60CC1B19F592545C /* Build configuration list for PBXNativeTarget "SporeCueDomainTests" */;
+			buildPhases = (
+				FA40ED4E06290B14C2D1ADCA /* Sources */,
+				03D645D4CF35107797958301 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B43484558F593BD8C5B2D282 /* PBXTargetDependency */,
+			);
+			name = SporeCueDomainTests;
+			packageProductDependencies = (
+				488E5FE3284F992A6EC155C9 /* SporeCueDomain */,
+				B5C9C276FCBEA77228C32DAB /* AppRuntimeCore */,
+			);
+			productName = SporeCueDomainTests;
+			productReference = 87F80C2CA6332991A30C4A3B /* SporeCueDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9778020E098397A5ED868B6C /* SporeCue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A5793892B6DF7173774375 /* Build configuration list for PBXNativeTarget "SporeCue" */;
+			buildPhases = (
+				3CBDA457E81F15AE9571BF16 /* Sources */,
+				63E059C4BBEAF96B4D58B9FD /* Resources */,
+				958C7FD16C4C059C59B54C2D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SporeCue;
+			packageProductDependencies = (
+				B75FA88E7370BC840426E967 /* AppRuntimeCore */,
+				BF07D0D0CF6CCAD53232117A /* SporeCueDomain */,
+			);
+			productName = SporeCue;
+			productReference = DEC50FF25AE88AC5568FB3B2 /* SporeCue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ABC5EF16680FA05B9A2E852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					79D353AA8A20B952A02C0C4F = {
+						TestTargetID = 9778020E098397A5ED868B6C;
+					};
+				};
+			};
+			buildConfigurationList = 89D4212FEBC6AD8E8145DA77 /* Build configuration list for PBXProject "SporeCue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2CB25D4BAA02A666B63938CB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C6C9E9280B163208AA0DFB68 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				D3730CB7F4E3838703325472 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 75ED4E66AA19C8A074CC885B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9778020E098397A5ED868B6C /* SporeCue */,
+				96DBF85E47D52A1F11B4E98A /* SporeCueDomainTests */,
+				79D353AA8A20B952A02C0C4F /* SporeCueUISmokeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E059C4BBEAF96B4D58B9FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5CA3F17C18E4F14C51CF41 /* Assets.xcassets in Resources */,
+				A6B6163A57FA31E2BCF0D986 /* PrivacyInfo.xcprivacy in Resources */,
+				284E08362AD95DFB01DB64B2 /* privacy.html in Resources */,
+				C8C13653C0476BE81E39C055 /* provider-policy.html in Resources */,
+				75233268C5543CC2AB5233CD /* support.html in Resources */,
+				D29D663C131EC7C7A0AD5293 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CBDA457E81F15AE9571BF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D81B6EC6012461EEA35137E /* AppModel.swift in Sources */,
+				2472DF5A0FA7FB8A95691471 /* CameraPicker.swift in Sources */,
+				829F3254AD193BC2FC55795A /* ConsentSheet.swift in Sources */,
+				EA1D45B662EED5972BD8C434 /* DeepSeekClient.swift in Sources */,
+				2212BEFD684455A68E3E8F0C /* FieldBriefView.swift in Sources */,
+				391D427F8EDDB36B0F74AD02 /* FieldHomeView.swift in Sources */,
+				567E522CEC55E93F02656553 /* IDResultView.swift in Sources */,
+				3955C8A189FA7E6ECE44483E /* LocalLegalWebView.swift in Sources */,
+				F7BE4D707A9D4F73918A86E6 /* LookalikeChatView.swift in Sources */,
+				D3D79E43356756472E92FF56 /* OverlayAnnotateView.swift in Sources */,
+				F264C7EE37F7E4CA0B7A72DC /* RootNavigationView.swift in Sources */,
+				63F82EEB6617BB9197250986 /* SettingsPrivacyView.swift in Sources */,
+				248E9BFA45FDD37C468B3EDA /* SignatureComponents.swift in Sources */,
+				C9CD79B922E6C43A110BB7DF /* SpeechRecognitionService.swift in Sources */,
+				62177309F659EBAC76D2A466 /* SporeCueApp.swift in Sources */,
+				F618AE5A57094C1413860CB8 /* SporeCueTheme.swift in Sources */,
+				83F996DFB1BFED3C7205B4BC /* TTSPlayer.swift in Sources */,
+				579C7FA9BD35CB41561E90CE /* VoiceNoteRecorder.swift in Sources */,
+				CA90C30BF2192D537D865599 /* VoiceNoteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA17970C7FDDEA252D90B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC9534FA119CDF6B786C1C3 /* SporeCueUISmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40ED4E06290B14C2D1ADCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4A70947C21A96C5F778857 /* SporeCueDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B43484558F593BD8C5B2D282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9778020E098397A5ED868B6C /* SporeCue */;
+			targetProxy = BC99CF419F2DD0E6759FB604 /* PBXContainerItemProxy */;
+		};
+		B9B7E30C3C316C0F24052BEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9778020E098397A5ED868B6C /* SporeCue */;
+			targetProxy = BEAFF1F9B939BDA33D2FF996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59EC5355B0CA827574987827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		646C1993E90C062CD884DDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SporeCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cap, gill, and pore close-ups so SporeCue can help identify field finds";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free field notes while holding a knife or basket";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import hike album stills to complete species identification in SporeCue";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken lookalike and habitat questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue;
+				PRODUCT_NAME = SporeCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7A056309DCA405204F9AEE4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SporeCue;
+			};
+			name = Release;
+		};
+		9172E3093439B7B37E41B1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		965384E8130AB8F09CD8009B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SporeCue.app/SporeCue";
+			};
+			name = Debug;
+		};
+		97E736A1FACBA3B84D8A1640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SporeCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cap, gill, and pore close-ups so SporeCue can help identify field finds";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free field notes while holding a knife or basket";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import hike album stills to complete species identification in SporeCue";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken lookalike and habitat questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue;
+				PRODUCT_NAME = SporeCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7C61A2022CE9A828F566AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SporeCue.app/SporeCue";
+			};
+			name = Release;
+		};
+		B3FAE7FEA0228E7FDEAF2B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.sporecue.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SporeCue;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F38E01CADD7C494CB85C929 /* Build configuration list for PBXNativeTarget "SporeCueUISmokeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FAE7FEA0228E7FDEAF2B67 /* Debug */,
+				7A056309DCA405204F9AEE4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74729A8C60CC1B19F592545C /* Build configuration list for PBXNativeTarget "SporeCueDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965384E8130AB8F09CD8009B /* Debug */,
+				A7C61A2022CE9A828F566AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76A5793892B6DF7173774375 /* Build configuration list for PBXNativeTarget "SporeCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97E736A1FACBA3B84D8A1640 /* Debug */,
+				646C1993E90C062CD884DDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89D4212FEBC6AD8E8145DA77 /* Build configuration list for PBXProject "SporeCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9172E3093439B7B37E41B1C6 /* Debug */,
+				59EC5355B0CA827574987827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C6C9E9280B163208AA0DFB68 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		D3730CB7F4E3838703325472 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		488E5FE3284F992A6EC155C9 /* SporeCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SporeCueDomain;
+		};
+		B5C9C276FCBEA77228C32DAB /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		B75FA88E7370BC840426E967 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		BF07D0D0CF6CCAD53232117A /* SporeCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SporeCueDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4ABC5EF16680FA05B9A2E852 /* Project object */;
+}
