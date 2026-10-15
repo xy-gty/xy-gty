@@ -1,0 +1,6 @@
+Dispatch `cd29d1f4-…` complete. Launch hash verified; NightCue `pm_docs` finished **ready**.
+
+- **Product:** NightCue — AI night long-exposure coach (`com.lingguang.nightcue`); night-frame rail + exposure-diagnosis overlays; palette `#1E3A8A` / `#EFF6FF` / `#FBBF24`; `nightcue/` symlink; free_app_only (paid unlock deferred)
+- **Frozen:** `technical_contract_sha256` `72c5bea9…21a771dd` · `pm_visual_manifest_sha256` `1a4dadba…15248f0` (8 NightCue-prefixed frames, all readback **pass**)
+- **Finish:** `cursor-package ultra-lite finish --status ready` → ok (`map_sha256` `f441ba74…3b6d4847`, `msg-56817d27…`)
+- **Gaps (non-blocking):** legal URLs / AI key / CloudKit UNKNOWN; Feishu skip; no AppIcon/LaunchScreen; Option A soft known_issues for device camera/mic/speechVision readback for all 8 NightCue frames finished successfully (each scored **pass**). That evidence was already frozen into the visual manifest and included in the `pm_docs` ready finish.

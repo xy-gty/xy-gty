@@ -1,0 +1,11 @@
+{
+  "schema": "appfactory.ultra_lite_accept_build.v1",
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "product_commit": "17f64efd1d5a8389cd47b0ebb1206304a07b49a0",
+  "simulator_udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+  "build_log": "evidence/build.log",
+  "domain_log": "evidence/domain-accept.log",
+  "uitest_log": "evidence/runtime/uitest-seeded-final.log"
+}

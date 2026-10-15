@@ -1,0 +1,173 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "NightCue",
+    "development_bundle_id": "com.lingguang.nightcue",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "night_frame_photo_camera_and_library_import",
+    "exposure_noise_trail_diagnosis_review_persist",
+    "ai_night_long_exposure_coach_chat_with_consent_gate",
+    "annotated_exposure_diagnosis_overlays",
+    "tts_field_cues_on_tripod",
+    "microphone_dictate_exposure_fields",
+    "night_frame_rail_and_exposure_diagnosis_overlays",
+    "local_legal_pages_user_owned_night_photos_only",
+    "free_app_only_no_storekit_paywall_coins_att",
+    "not_scoutcue_solar_ephemeris_scouting",
+    "not_hivecue_formcue_yarncue_twins"
+  ],
+  "entities": [
+    {
+      "name": "Session",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "NightFrame",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "ExposureDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "DiagnosisFinding",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AnnotatedOverlay",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachTurn",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachMessage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "FieldCue",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "DictatedExposure",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "ExposureReviewBar",
+      "confirm": "Keep",
+      "reject": "Discard",
+      "edit": "Edit"
+    },
+    {
+      "name": "TurnReview",
+      "confirm": "Keep",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "nightcue.consent.v1",
+      "fields": [
+        "frame_photo_descriptor",
+        "exposure_summary",
+        "noise_summary",
+        "trail_signs",
+        "scene_plan_summary",
+        "current_frame_label",
+        "chat_text",
+        "voice_transcript",
+        "dictated_exposure_fields"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechExposureCapture"
+    },
+    {
+      "name": "FieldCueTTSPlayer"
+    },
+    {
+      "name": "NightFrameRail"
+    },
+    {
+      "name": "ExposureDiagnosisOverlayCanvas"
+    },
+    {
+      "name": "AnnotatedOverlayEditor"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "SessionsHome",
+    "NewSession",
+    "CaptureImport",
+    "ExposureReview",
+    "NightCoach",
+    "CoachChat",
+    "TurnReview",
+    "AnnotatedOverlay",
+    "FieldCueTTS",
+    "DictateExposure",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Keep",
+    "reject": "Discard",
+    "edit": "Edit"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "privacy_usage_descriptions": {
+    "NSCameraUsageDescription": "Capture night test frames for AI long-exposure coaching",
+    "NSPhotoLibraryUsageDescription": "Import past night frames to compare exposure and noise",
+    "NSMicrophoneUsageDescription": "Hands-free parameter Q&A while holding a tripod",
+    "NSSpeechRecognitionUsageDescription": "Dictate exposure settings (ISO, shutter, aperture, notes) into the coach"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "208408ae38e5cad75bb1b251da8ab05ec311faea35fac13ed4f620747039fb34"
+    }
+  ],
+  "goal_sha256": "35099fec9fe66d526038235c8a1750e5f92e2161f1b1d3adcb54743c8b738e3b",
+  "frozen_at": "2026-10-15T08:00:41Z"
+}

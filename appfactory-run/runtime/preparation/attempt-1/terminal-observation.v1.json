@@ -1,0 +1,46 @@
+{
+  "event": {
+    "dispatch_id": "e3a9a1f0-67fa-481b-bc39-ed862af058af",
+    "agent_id": "cursor-cli-prep-e3a9a1f067fa",
+    "execution_seq": 1,
+    "status": "completed",
+    "source": "cursor_task_host",
+    "kind": "execution_completed",
+    "final_text": "Dispatch `e3a9a1f0-67fa-481b-bc39-ed862af058af` finished **ready**.\n\n- Launch hash verified; all bound source hashes matched\n- Workspace: NightCue domain + `Vendor/AppRuntimeCore` (no `product/` writes)\n- Cache hit `1225d7e5…`; domain compile outside inventory\n- `PREPARATION.md` Status: ready; finish receipt accepted\n\nController can observe stop and seal.",
+    "note": "CONTROLLER: prep ready; seal"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "observed_at": 1792051612.0739799,
+    "controller_id": "50c9c897-a987-4b75-9818-1e53a6afe9ad",
+    "session_id": "grokbot-packaging-kf-20261015T075333Z-d3a0d226",
+    "session_kind": "interactive",
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "50c9c897-a987-4b75-9818-1e53a6afe9ad",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_cd29d1f40c1847cd9c9beb32dc73f775",
+        "agent_id": "cursor-cli-pm-cd29d1f40c18",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_e3a9a1f067fa481bbc39ed862af058af",
+        "agent_id": "cursor-cli-prep-e3a9a1f067fa",
+        "agent_status": {
+          "completed": "CONTROLLER: prep ready; seal"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-15T08:06:52Z"
+}

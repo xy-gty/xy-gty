@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "nightcue-capture-import.receipt.json",
+  "verdict_sha256": "ac018d1f7dfef65196817155451569dcb208f459710b2200feedbf02565c1a4b",
+  "written_at": "2026-10-15T08:22:44Z"
+}

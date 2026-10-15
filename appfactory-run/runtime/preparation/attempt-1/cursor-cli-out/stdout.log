@@ -1,0 +1,8 @@
+Dispatch `e3a9a1f0-67fa-481b-bc39-ed862af058af` finished **ready**.
+
+- Launch hash verified; all bound source hashes matched
+- Workspace: NightCue domain + `Vendor/AppRuntimeCore` (no `product/` writes)
+- Cache hit `1225d7e5…`; domain compile outside inventory
+- `PREPARATION.md` Status: ready; finish receipt accepted
+
+Controller can observe stop and seal.

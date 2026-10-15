@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-15T07:53:33Z",
+  "model_mode": "dev",
+  "objective": "# NightCue\n\nPaid AI night-long-exposure coach (one-time unlock for unlimited night packs; no coins).\n\nRemake vs NightCap Camera Long Exposure (com.interealtime.LightBoost).\n\n## Core loop\nImport or shoot night frames → diagnose exposure/noise issues → chat for settings → generate annotated overlays → TTS field cues → dictate exposure writes into coach.\n\n## Hard operator rules\n- product_dir: nightcue/ (never leave as product/ only — symlink nightcue→product)\n- palette: primary #1E3A8A · secondary #EFF6FF · accent #FBBF24 (must differ from delivered apps; ban all-black clones)\n- UI: night-frame rail + exposure-diagnosis overlay layers; must look clearly different from HiveCue/FormCue/YarnCue (no twins)\n- Positioning ≠ ScoutCue (solar/ephemeris scouting)\n- Four permissions with real flows (extend core, do not replace): Camera (night test frames), Photos (history night compare), Microphone (hands-free param Q&A), Speech Recognition (write exposure into coach)\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max (UDID 315A7C2C or any Pro Max) even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues; P1 non-blockers must not block delivery\n- When disk tight: clear DerivedData/simulator caches proactively (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI night-long-exposure coach: import or shoot night frames, recognize exposure/noise issues, chat for settings, generate annotated overlays, TTS field cues—unlock unlimited night packs.\n\n## Positioning\nAI 夜景长曝光教练——拍/导入夜景试片→诊断曝光与噪点→对话参数→标注叠图→TTS 现场口令。\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

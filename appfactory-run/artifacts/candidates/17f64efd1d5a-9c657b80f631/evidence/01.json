@@ -1,0 +1,51 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_smoke.v1",
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "e7b2b568-4833-4d29-a7f3-fd5a337fcd0a",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/product",
+  "source_commit": "17f64efd1d5a8389cd47b0ebb1206304a07b49a0",
+  "branch": "nightcue/kf-20261015T075333Z",
+  "bundle_id": "com.lingguang.nightcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/NightCue.app",
+  "app_content_sha256": "9c657b80f63106d879a7d40428b685a09bfb2c3b345011a1650da6d11ea956eb",
+  "configuration_status": "unconfigured",
+  "simulator": {
+    "udid": "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+    "runtime": "iOS 26.5",
+    "name": "iPhone 17 Pro"
+  },
+  "install": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "install",
+      "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/NightCue.app"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/install.log",
+    "log_sha256": "58ea1a700d8d18303985228c4715ae63cdd6030c591916e91adefbb71965c2e6"
+  },
+  "launch": {
+    "command": [
+      "xcrun",
+      "simctl",
+      "launch",
+      "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+      "com.lingguang.nightcue"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "pid": 60640,
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/launch.log",
+    "log_sha256": "0f05dbc671fc9ca87bfc33891251a9f69f35ddf9468ce31f649c47bbcc618dd0"
+  },
+  "observation": {
+    "status": "observed",
+    "screenshot_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/smoke.png",
+    "screenshot_sha256": "06e0097e609060dc9521f1eb0298f426406f462e31c193e9eeb5287b962e961b"
+  }
+}

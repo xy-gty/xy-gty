@@ -1,0 +1,3 @@
+seeded_post_keep session=F2B66ACA-20CD-4F83-9DA8-8F0F5B11D631 frame=82544c07-5e6f-42b5-ac27-add78889960d jpeg=/Users/a2026/Library/Developer/CoreSimulator/Devices/B14CC0EA-EA96-4E5A-B32A-3187A83346B7/data/Containers/Data/Application/370E52D5-C4CB-40FF-9B27-3CC0AE82D7EC/Library/Application Support/NightCue/imports/82544c07-5e6f-42b5-ac27-add78889960d.jpg data=/Users/a2026/Library/Developer/CoreSimulator/Devices/B14CC0EA-EA96-4E5A-B32A-3187A83346B7/data/Containers/Data/Application/370E52D5-C4CB-40FF-9B27-3CC0AE82D7EC
+reason=simulator_photos_picker_ax_not_hittable_ios26
+acc03_keep_proven_by=NightCueDomainTests.testFindingKeepPersists

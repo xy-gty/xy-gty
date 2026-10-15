@@ -1,0 +1,822 @@
+{
+  "schema": "appfactory.ultra_lite_candidate.v1",
+  "status": "candidate_unaccepted",
+  "package_acceptance": "pending",
+  "kind": "local_simulator_app",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/product",
+  "source_commit": "17f64efd1d5a8389cd47b0ebb1206304a07b49a0",
+  "branch": "nightcue/kf-20261015T075333Z",
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "e7b2b568-4833-4d29-a7f3-fd5a337fcd0a",
+  "generation": 1,
+  "execution_seq": 1,
+  "dispatch_sha256": "5fe0bede8cc87c9a6293256cb6b80722677597c3864afe0afdc2df7ad72f1a39",
+  "app_content_sha256": "9c657b80f63106d879a7d40428b685a09bfb2c3b345011a1650da6d11ea956eb",
+  "pm_visual_manifest_sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0",
+  "build_evidence_sha256": "2f910b9f8012672ccc7384b53e717b60f2638e04a7daccf341e838193b8ca89c",
+  "smoke_evidence_sha256": "ea76e452583abd3160f7df772ae5aec52915f2bf6a365c165836298cc7bcdd22",
+  "production_binding_sha256": "2916b4466820c9a3ccfb6510eb8a9c01147c9a0eed435363a9da3e6b23637c60",
+  "evidence_sha256": [
+    "2f910b9f8012672ccc7384b53e717b60f2638e04a7daccf341e838193b8ca89c",
+    "ea76e452583abd3160f7df772ae5aec52915f2bf6a365c165836298cc7bcdd22",
+    "8f0e14b820ff7e9c7f33ba2d676f304228f0e147b3bd19104a771d63eb0ce68e",
+    "98f0d0be9be2b2239439cf51cce8b04c93efaa856f780538fef43dc8255e22ba",
+    "58ea1a700d8d18303985228c4715ae63cdd6030c591916e91adefbb71965c2e6",
+    "0f05dbc671fc9ca87bfc33891251a9f69f35ddf9468ce31f649c47bbcc618dd0",
+    "06e0097e609060dc9521f1eb0298f426406f462e31c193e9eeb5287b962e961b",
+    "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0"
+  ],
+  "candidate_name": "17f64efd1d5a-9c657b80f631",
+  "input_sha256": "92856415cbb1a88f1a16bf43afbe5bfb6b7c70d804388905c149b97e05181e14",
+  "published_at": "2026-10-15T08:34:57Z",
+  "app": {
+    "bundle_id": "com.lingguang.nightcue",
+    "executable": "NightCue",
+    "executable_sha256": "a96d98fccbea7210bf1f00d242af2b83f9819b0014932268acb043067c51d7e8",
+    "supported_platforms": [
+      "iPhoneSimulator"
+    ],
+    "app_name": "NightCue.app"
+  },
+  "task_snapshot_sha256": "a229f66a7238cafef8d9188c395b06eee02d5cc110c533c9a3867bc853301a0f",
+  "production_binding": {
+    "task_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/codex_task.v1.json",
+    "schema": "appfactory.codex-task.v1",
+    "run_id": "kf-20261015T075333Z-d3a0d226",
+    "stage": "ai_app_build",
+    "attempt": 1,
+    "dispatch_id": "e7b2b568-4833-4d29-a7f3-fd5a337fcd0a",
+    "generation": 1,
+    "execution_seq": 1,
+    "controller_id": "50c9c897-a987-4b75-9818-1e53a6afe9ad",
+    "ownership_epoch": 1,
+    "agent_id": "cursor-cli-build-e7b2b5684833",
+    "repo_root": "/Users/a2026/work/factory-prod-1",
+    "runtime": "cursor_task",
+    "product_dir": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/product",
+    "dispatch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/codex_dispatch.md",
+    "dispatch_sha256": "5fe0bede8cc87c9a6293256cb6b80722677597c3864afe0afdc2df7ad72f1a39",
+    "role_ref": "/Users/a2026/work/factory-prod-1/agents/AIAppBuilderAgent/prompt.core.md",
+    "role_sha256": "cec836729aca91c0f01085615434392b91b40e0b37000447a7375a47b1ea3846",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-builder/SKILL.md",
+        "sha256": "9ce8b9c93a277367b0ac8bc77f21c0816ae6a1cf70c62ea141d9e49ba9123bf8"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/SKILL.md",
+        "sha256": "29b7b15926dd9eda8d81b7e383cbb10f3df947c1e945d566a221be5510a99d8a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/SKILL.md",
+        "sha256": "38063e6053ea6f4f78a2a727736e7b3e07a5ad56d69b41415a7fb59818eeb3d2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ios-privacy-implementation/SKILL.md",
+        "sha256": "3198671ab9c5e8122a1c1a111c4af54e63ba436d2fe919264cc77160b23149b3"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ios_runtime_acceptance/SKILL.md",
+        "sha256": "da2c52298ca281ffb10f47ad150fe2ea80a9598772c6c7202e3df90d00640dee"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/swiftui-expert-skill/SKILL.md",
+        "sha256": "e18b8de61b3f8bae93b94efb70b874fcc854ad2831633ec5a57e5a64e2dfe36f"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_timing.py",
+        "sha256": "436618d05b65cf3e4a44881f47dcf249543b7433d7d864949339101701b4114a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_candidate.py",
+        "sha256": "c6abaaa0ba1c4138523366d8d75d97291f89aeabc329d6896a849a1e429f7ee1"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/codex_package/children.py",
+        "sha256": "74d2b9f292dbd6b92076e2072c0fe1c3bec486298da16203b812b8dc22c31246"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p0-execution.md",
+        "sha256": "66e8b2a09881e6f7d4fda47e02773250c53f7a09901a602cfbd38148205dc573"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/foundation.v1.json",
+        "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Package.swift",
+        "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+        "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+        "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+        "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+        "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+        "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+        "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_foundation.py",
+        "sha256": "d7b44b9d643e417e0eaa9588b8303ed0f6f61291d26ff25dd73d74b0c0da3da2"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py",
+        "sha256": "8f1f39f0a185e6cf223d5a4365456ac94cfe9ffe7d46b8e2289f19da95a3762e"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_technical.py",
+        "sha256": "0ef72dc8e7663a36d17ed4f4adbf37adfae421c71bce323011195cde45f6c9dd"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/codex_package/preparation.py",
+        "sha256": "b0284fd1098562974b82bf6e0f8c1784eefa69c710e53519181a663e958241fa"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p1-execution.md",
+        "sha256": "8eafbe8424fd39b7057c79765b1828ca7b96fce60fe9c043a97a198e593ff1e6"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "sha256": "72c5bea905cf48b0f721c2bceb6834b467d0108e2f088c97d597840b21a771dd"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+        "sha256": "5c47a259e6eef2d0f502524689385bf33f44b78a6b725efcc08d4e46046fffd4"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical/contract.md",
+        "sha256": "208408ae38e5cad75bb1b251da8ab05ec311faea35fac13ed4f620747039fb34"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/runtime/preparation/attempt-1/sealed.v1.json",
+        "sha256": "c7adb9d63225bafeaa070ff628b265cdfa00c7cc83747088a5b17f2e7f2d160d"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/cursor-execution.md",
+        "sha256": "6e9c1e46d9f94e08712ad285de54289db9bd9d577273083d9bd9cbdebfe7c529"
+      }
+    ],
+    "pm_visual_input": {
+      "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+      "visual_manifest_sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0",
+      "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1"
+    },
+    "ultra_lite_execution": {
+      "schema": "appfactory.ai_ultra_lite_execution.v1",
+      "revision": "p1",
+      "timing_schema": "appfactory.ultra_lite_timing.v1",
+      "child_slots": 0,
+      "candidate_publish": "local_simulator_app",
+      "foundation_version": "1.0.0",
+      "design_readback_reuse": "exact_key",
+      "private_engineering_preparation": true
+    },
+    "production_policy": {
+      "schema": "appfactory.ai_ultra_lite_production.v1",
+      "runtime": "cursor",
+      "model": "auto",
+      "stage_efforts": {
+        "pm_docs": "auto",
+        "ai_app_build": "auto",
+        "ai_app_accept": "auto",
+        "delivery": "auto"
+      },
+      "dispatch_effort": "auto",
+      "vision_effort": "auto",
+      "acceptance_runtime": "cursor_cloud",
+      "operator_override_reason": "operator_selected_cursor_ultra_lite_auto"
+    },
+    "requested_model": "auto",
+    "requested_reasoning_effort": "auto",
+    "spawn_kwargs_sha256": "a8db4ffb014b02271e10b45fb19e4c51c809e6e58b7e456c8762a49d39efc4b2",
+    "spawn_receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/runtime/native-spawn/cursor-spawn-receipt-cursor-cli-build-e7b2b5684833.json",
+    "spawn_receipt_sha256": "63fbe9263e0c750a8ddd8d78d09ceeb014fd677f01c292ad39f35d747540214d"
+  },
+  "package_ref": "NightCue.app.zip",
+  "package_sha256": "962861347f2dfd1a1ccebe4b87b6f262c8de6068e2099a43be14fb8df5a97733",
+  "package_bytes": 6549955,
+  "app_entries": [
+    {
+      "ref": "Frameworks",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/AppRuntimeCore_37097539E92C579C_PackageProduct",
+      "mode": 493,
+      "kind": "file",
+      "size": 341712,
+      "sha256": "1ddff4b66ee98d141b0fec30d7374d68543361f3ca9bb91ed513f15c23b26b14"
+    },
+    {
+      "ref": "Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 780,
+      "sha256": "95a7cc61788ba621a2cede16a858c8264b1d9f73a58af63736defabd05b10993"
+    },
+    {
+      "ref": "Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 1798,
+      "sha256": "41305204a23438d353ec38e661a791daf8a4699ffa3c512c66b80977b71f2a7d"
+    },
+    {
+      "ref": "Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 773,
+      "sha256": "a05a6d2b274d9201a631f7be6320f5c4bda20bc1f645c521cb503734bf55b132"
+    },
+    {
+      "ref": "Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct",
+      "mode": 493,
+      "kind": "file",
+      "size": 524352,
+      "sha256": "d7bc3a0bcb242b384454b25cda6e2b892c083279e609c346b528c375d783743c"
+    },
+    {
+      "ref": "Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 1798,
+      "sha256": "2153ff03b2f039b45d0b60851a7cced1e3c4c755516aa50e74b2159daacd3d78"
+    },
+    {
+      "ref": "Frameworks/Testing.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/Testing.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 907,
+      "sha256": "bbcbea48c0dbd6882bcb7fb2301590da876c2e4a38af45f2f180576257ff1d4b"
+    },
+    {
+      "ref": "Frameworks/Testing.framework/Testing",
+      "mode": 493,
+      "kind": "file",
+      "size": 6920688,
+      "sha256": "1986afd2209b8bb14a58207eed68baf267f77e4c7737db20bea81ef58076187e"
+    },
+    {
+      "ref": "Frameworks/Testing.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/Testing.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 4470,
+      "sha256": "d4ea19a6205a1aa25fe00e49abf0cb86dfae23aed5a6cad58faf3a4bd21fbfbf"
+    },
+    {
+      "ref": "Frameworks/Testing.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 516,
+      "sha256": "223a7e8eb1e41954e172a3fa1d67f2599f17e9e7aa7ebe6165469b21b17c9468"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 956,
+      "sha256": "5a4175b7974d1727ba93ff93c74c2390949150ad1e96091f270454eb8346e79b"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport",
+      "mode": 493,
+      "kind": "file",
+      "size": 1553216,
+      "sha256": "dba609c844eaafabfd1448f019f9c4781dd0ae1c7b0a9c9b80ea13342468dbda"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 2018,
+      "sha256": "698deeaefd9347e7585203a292ce3ff315a04b484247bee93e97cb86318c84b3"
+    },
+    {
+      "ref": "Frameworks/XCTAutomationSupport.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 878,
+      "sha256": "909d0355c12c582734fd68afa4fe6c897ab55907364e6b618e7c083e2f03d758"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework/XCTest",
+      "mode": 493,
+      "kind": "file",
+      "size": 208400,
+      "sha256": "9704e507fe542166b80f96178194ec456180a6498af50858990d32671d05b349"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 17362,
+      "sha256": "026b86d77c4f67c0c0c9b6dc0d5dc36c12fc487ad8e975262a9e132edff52b5a"
+    },
+    {
+      "ref": "Frameworks/XCTest.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 886,
+      "sha256": "2f0d9073b2ed1feb101463b96c31c62efcc745438d19769b964d8c1fd09f8143"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework/XCTestCore",
+      "mode": 493,
+      "kind": "file",
+      "size": 4089904,
+      "sha256": "193ecdbb651f484a6e14f5d4dba4ef6de4b5e3aa46e53fa97bb6f1806bef71f3"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 2018,
+      "sha256": "a4e4cb1b450b595cd79991e6a5bc1a00bedad7ef6b6f2cb402b562c45aee3ec4"
+    },
+    {
+      "ref": "Frameworks/XCTestCore.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 892,
+      "sha256": "b1e2907db77398ee443b5f99aae969be48e8f0627ff219cb164d9286d7145de8"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework/XCTestSupport",
+      "mode": 493,
+      "kind": "file",
+      "size": 224912,
+      "sha256": "f48a2fc67431dd73c9238768ec6635ea8d311098aea8c7b2021920e34c4f5dc4"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 2018,
+      "sha256": "493bfa3cbc1033bef7ab5021c6c6423a3ed8bbd86b1fa7c294524777dee105b1"
+    },
+    {
+      "ref": "Frameworks/XCTestSupport.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 894,
+      "sha256": "c8165e0af2a549416efc6dbe5d4bf3d8d306c42cb68d963c3f0b6d8f34457533"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework/XCUIAutomation",
+      "mode": 493,
+      "kind": "file",
+      "size": 3643712,
+      "sha256": "94e82a956c1d5bdd596b020bd517e793a7534da3efe6468233909ae7a2629ff3"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 9338,
+      "sha256": "04ef214a7112d65469abb1c4fca5e5222b7d7f84a1906bd107d780ceed580da2"
+    },
+    {
+      "ref": "Frameworks/XCUIAutomation.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 878,
+      "sha256": "a05755dfb1b3c5fabe06e52ca0a5aafc57919ebcabf0bb10740bc04790ef5bb3"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework/XCUnit",
+      "mode": 493,
+      "kind": "file",
+      "size": 100640,
+      "sha256": "4d8ff95683584aeaa4d4e4c5699d4f9cc651ca8ac3cd0b9294a960eeccf2b803"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 2018,
+      "sha256": "a6c97eddc25aff25229771a51202ff4ddc11234de78af235bd7661493ef4f3dc"
+    },
+    {
+      "ref": "Frameworks/XCUnit.framework/version.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "610df6a865b3c4c8c7e86c4b30c672a5edf7f956ae2605502afdb819518bea78"
+    },
+    {
+      "ref": "Frameworks/libXCTestBundleInject.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 139824,
+      "sha256": "46e7d27a02da5ed805846b031a56ecfaccd4feed9ec4dc053a5ad689c00530dc"
+    },
+    {
+      "ref": "Frameworks/libXCTestSwiftSupport.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 2052560,
+      "sha256": "547be7a8f425563f4ee23f9af749884abcbce56eb3b42714b69929d716e8a533"
+    },
+    {
+      "ref": "Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 1177,
+      "sha256": "a604e13b3ac3df268e649a5037c183b8f16edefbc52026d4a8220c186ddcb011"
+    },
+    {
+      "ref": "NightCue",
+      "mode": 493,
+      "kind": "file",
+      "size": 58272,
+      "sha256": "a96d98fccbea7210bf1f00d242af2b83f9819b0014932268acb043067c51d7e8"
+    },
+    {
+      "ref": "NightCue.debug.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 2245952,
+      "sha256": "30b05a264695913e41c67dfdf2872295f52953263d92bbb96251928b6d448f6c"
+    },
+    {
+      "ref": "PkgInfo",
+      "mode": 420,
+      "kind": "file",
+      "size": 8,
+      "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+    },
+    {
+      "ref": "PlugIns",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/AppRuntimeCore_37097539E92C579C_PackageProduct",
+      "mode": 493,
+      "kind": "file",
+      "size": 341712,
+      "sha256": "1ddff4b66ee98d141b0fec30d7374d68543361f3ca9bb91ed513f15c23b26b14"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 780,
+      "sha256": "95a7cc61788ba621a2cede16a858c8264b1d9f73a58af63736defabd05b10993"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/AppRuntimeCore_37097539E92C579C_PackageProduct.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 1798,
+      "sha256": "41305204a23438d353ec38e661a791daf8a4699ffa3c512c66b80977b71f2a7d"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 773,
+      "sha256": "a05a6d2b274d9201a631f7be6320f5c4bda20bc1f645c521cb503734bf55b132"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct",
+      "mode": 493,
+      "kind": "file",
+      "size": 524352,
+      "sha256": "d7bc3a0bcb242b384454b25cda6e2b892c083279e609c346b528c375d783743c"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Frameworks/NightCueDomain_1CF5F6EAFF4DA77D_PackageProduct.framework/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 1798,
+      "sha256": "2153ff03b2f039b45d0b60851a7cced1e3c4c755516aa50e74b2159daacd3d78"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/Info.plist",
+      "mode": 420,
+      "kind": "file",
+      "size": 687,
+      "sha256": "418e0ef0c8c72fecc27674b303e750a64139dd19b51d54d9151d547598e20fcb"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/NightCueDomainTests",
+      "mode": 493,
+      "kind": "file",
+      "size": 166896,
+      "sha256": "539affda7004819d4a5f8e395e35332fa8e41da8cd6920757b09b06910825dbc"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "PlugIns/NightCueDomainTests.xctest/_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 4074,
+      "sha256": "cf4026de1635c7f0887897e487848ccf58ca0c9d67e40e694ae1213eedf63e78"
+    },
+    {
+      "ref": "PrivacyInfo.xcprivacy",
+      "mode": 420,
+      "kind": "file",
+      "size": 815,
+      "sha256": "10e30c3a228307f4cf0eecf35997a7551e74924f326189391168e6142ff6a9f6"
+    },
+    {
+      "ref": "_CodeSignature",
+      "mode": 493,
+      "kind": "directory"
+    },
+    {
+      "ref": "_CodeSignature/CodeResources",
+      "mode": 420,
+      "kind": "file",
+      "size": 17675,
+      "sha256": "0953b1a9fee894fc48e7976c09cdf3f447b80582bfe7b485bb15b6ffa3d33894"
+    },
+    {
+      "ref": "__preview.dylib",
+      "mode": 493,
+      "kind": "file",
+      "size": 34800,
+      "sha256": "58c1643fd2ec077b3da70840399b55443941ae6d5678d29e34acda9f0119e265"
+    },
+    {
+      "ref": "privacy.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 595,
+      "sha256": "c4cb04aa899c9f03186993d0e9293a031a32db0c35d584b3b3096a663f302bc2"
+    },
+    {
+      "ref": "provider-policy.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 648,
+      "sha256": "5ef4db17f79c8bc11e43a928d5df084d4c8c739abbd66d1bf54fdb8d0c7038eb"
+    },
+    {
+      "ref": "support.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 518,
+      "sha256": "d40b6fd526194b19dde77fc6869faf36938661919c40ec3281a7d233efd05d3d"
+    },
+    {
+      "ref": "terms.html",
+      "mode": 420,
+      "kind": "file",
+      "size": 499,
+      "sha256": "67ea8997baffed5a20085ecea9a10303ee08887726872b95cb02ede2b9b07fde"
+    }
+  ],
+  "frozen_evidence": [
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/evidence/build.json",
+      "ref": "evidence/00.json",
+      "sha256": "2f910b9f8012672ccc7384b53e717b60f2638e04a7daccf341e838193b8ca89c"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/evidence/smoke.json",
+      "ref": "evidence/01.json",
+      "sha256": "ea76e452583abd3160f7df772ae5aec52915f2bf6a365c165836298cc7bcdd22"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/build.log",
+      "ref": "evidence/02.log",
+      "sha256": "8f0e14b820ff7e9c7f33ba2d676f304228f0e147b3bd19104a771d63eb0ce68e"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/domain.log",
+      "ref": "evidence/03.log",
+      "sha256": "98f0d0be9be2b2239439cf51cce8b04c93efaa856f780538fef43dc8255e22ba"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/install.log",
+      "ref": "evidence/04.log",
+      "sha256": "58ea1a700d8d18303985228c4715ae63cdd6030c591916e91adefbb71965c2e6"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/launch.log",
+      "ref": "evidence/05.log",
+      "sha256": "0f05dbc671fc9ca87bfc33891251a9f69f35ddf9468ce31f649c47bbcc618dd0"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/smoke.png",
+      "ref": "evidence/06.png",
+      "sha256": "06e0097e609060dc9521f1eb0298f426406f462e31c193e9eeb5287b962e961b"
+    },
+    {
+      "source_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+      "ref": "evidence/07.json",
+      "sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0"
+    }
+  ],
+  "implemented_scope": [
+    "sessions_home_night_rail_empty_and_list",
+    "capture_camera_and_photos_import",
+    "exposure_review_keep_discard_edit",
+    "night_coach_frame_rail_diagnosis_overlays",
+    "coach_chat_consent_gate_deepseek_or_local",
+    "annotated_exposure_overlay",
+    "field_cue_tts",
+    "dictate_mic_speech_exposure_fields",
+    "settings_revoke_local_legal",
+    "domain_persistence_and_consent_tests",
+    "free_app_only_no_storekit_coins_att"
+  ],
+  "unverified_items": [
+    "independent_eight_domain_acceptance_pending",
+    "runtime_visual_frame_judgment_pending",
+    "live_deepseek_with_configured_key_pending",
+    "device_camera_microphone_speech_pending"
+  ],
+  "runtime_conditions": {
+    "simulator": {
+      "udid": "8843C141-E2FE-4DEA-A58F-0A63A5C649EF",
+      "runtime": "iOS 26.5",
+      "name": "iPhone 17 Pro"
+    },
+    "configuration_status": "unconfigured",
+    "target": "iOS Simulator; unzip and install the .app with simctl",
+    "credential_requirement": "Publisher copies no environment/configuration values; app-specific protected runtime input/Keychain may be required",
+    "independent_acceptance": "pending; local smoke is not the eight-domain acceptance"
+  }
+}

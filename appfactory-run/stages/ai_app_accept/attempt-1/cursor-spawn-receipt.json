@@ -1,0 +1,17 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "4a6d927a-7937-481f-b0a7-8f173ac9b461",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_4a6d927a7937481fb0a78f173ac9b461",
+    "prompt": "Dispatch 4a6d927a-7937-481f-b0a7-8f173ac9b461. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_accept/attempt-1/codex.launch.md SHA-256 1ed57804717d36da22f365a2c9703c1c778467e39ec34a7f1aefe04873546bf8. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-accept-4a6d927a7937",
+  "agent_name": "/root/pkg_4a6d927a7937481fb0a78f173ac9b461",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T08:37:21Z",
+  "pid": 62039,
+  "note": "NightCue ai_app_accept e1 local agent CLI start_new_session"
+}

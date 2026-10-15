@@ -1,0 +1,205 @@
+{
+  "_control_event_cursor": 15,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-15T07:53:33Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_accept/attempt-1/MAP.md",
+        "result_sha256": "02fd1ebc453ae178f66727bba2e5d7b37c145072869d9d8db4c1ec291cc2f8bd",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "72c5bea905cf48b0f721c2bceb6834b467d0108e2f088c97d597840b21a771dd",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "0d8970484130867864029aa8d054098d9a8b4f1c83126b2c4c19fbd8d34ef40b"
+      },
+      "started_at": "2026-10-15T08:37:03Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T09:20:58Z"
+    },
+    "ai_app_build": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "ce72e15337dc05e6dc2d300781e7648431cdd951ac5f111f246218850dd9ca02",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "c7adb9d63225bafeaa070ff628b265cdfa00c7cc83747088a5b17f2e7f2d160d",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/ai_app_build/attempt-1/MAP.md",
+        "result_sha256": "b4ca048fbb2fec14c69bb048c7ae08dbb24dfb95113ee3422ba84ba22e362069",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "72c5bea905cf48b0f721c2bceb6834b467d0108e2f088c97d597840b21a771dd",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0"
+      },
+      "started_at": "2026-10-15T08:25:09Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T08:36:49Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {},
+      "started_at": "2026-10-15T09:21:30Z",
+      "status": "active",
+      "updated_at": "2026-10-15T09:21:30Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/goal/goal.json",
+        "goal_sha256": "35099fec9fe66d526038235c8a1750e5f92e2161f1b1d3adcb54743c8b738e3b"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-15T07:53:33Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "f441ba74ef0ba79dfa591d8d964b0ce35845bc4e793b641cdc8fd4623b6d4847",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "72c5bea905cf48b0f721c2bceb6834b467d0108e2f088c97d597840b21a771dd",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "1a4dadba3e29ffddbae1a77fc341df3ac1b5580d4e0bfd14f4e27686815248f0",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T075333Z-d3a0d226/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-15T07:54:30Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T08:25:02Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# NightCue\n\nPaid AI night-long-exposure coach (one-time unlock for unlimited night packs; no coins).\n\nRemake vs NightCap Camera Long Exposure (com.interealtime.LightBoost).\n\n## Core loop\nImport or shoot night frames → diagnose exposure/noise issues → chat for settings → generate annotated overlays → TTS field cues → dictate exposure writes into coach.\n\n## Hard operator rules\n- product_dir: nightcue/ (never leave as product/ only — symlink nightcue→product)\n- palette: primary #1E3A8A · secondary #EFF6FF · accent #FBBF24 (must differ from delivered apps; ban all-black clones)\n- UI: night-frame rail + exposure-diagnosis overlay layers; must look clearly different from HiveCue/FormCue/YarnCue (no twins)\n- Positioning ≠ ScoutCue (solar/ephemeris scouting)\n- Four permissions with real flows (extend core, do not replace): Camera (night test frames), Photos (history night compare), Microphone (hands-free param Q&A), Speech Recognition (write exposure into coach)\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max (UDID 315A7C2C or any Pro Max) even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues; P1 non-blockers must not block delivery\n- When disk tight: clear DerivedData/simulator caches proactively (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI night-long-exposure coach: import or shoot night frames, recognize exposure/noise issues, chat for settings, generate annotated overlays, TTS field cues—unlock unlimited night packs.\n\n## Positioning\nAI 夜景长曝光教练——拍/导入夜景试片→诊断曝光与噪点→对话参数→标注叠图→TTS 现场口令。\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "run_status": "active",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 2635.0,
+            "finished_at": "2026-10-15T09:20:58Z",
+            "started_at": "2026-10-15T08:37:03Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 700.0,
+            "finished_at": "2026-10-15T08:36:49Z",
+            "started_at": "2026-10-15T08:25:09Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": null,
+            "finished_at": null,
+            "started_at": "2026-10-15T09:21:30Z",
+            "status": "active",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1832.0,
+            "finished_at": "2026-10-15T08:25:02Z",
+            "started_at": "2026-10-15T07:54:30Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 8,
+  "ultra_lite_execution_revision": "p1"
+}

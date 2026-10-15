@@ -1,0 +1,32 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "Camera / Photos 拍或导入夜景试片",
+    "AI 曝光 / 噪点 / 拖影草稿 → Keep / Discard / Edit",
+    "NightCoach：夜景帧轨 + 曝光诊断叠层",
+    "Coach chat 问参数（ISO / shutter / focus）",
+    "标注叠图确认",
+    "TTS 现场口令",
+    "麦克风 + 语音识别：口述曝光字段"
+  ],
+  "differentiation": {},
+  "diversity_key": "nightcue 在城市天际线 星空 光轨等场景做长曝光 需要现场快速诊断与参数建议的 iphone 夜拍爱好者 双手常扶三脚架 遥控器 夜拍现场拍一张试片 ai 给出曝光 噪点 拖影草稿 keep 落成 diagnosisfinding 同一会话里用夜景帧轨推进各试片 需要时聊天问参数 在曝光诊断叠层上确认标注 tts 现场口令 手持三脚架时可口述曝光字段 nightcue is an ai night long exposure coach shoot or import",
+  "feature_blocks": [
+    "Session 1— NightFrame",
+    "NightFrame 0..1 ExposureDraft → 0.. DiagnosisFinding",
+    "NightFrame 0.. AnnotatedOverlay",
+    "Session 0.. CoachTurn / CoachMessage",
+    "Session 0.. FieldCue",
+    "Session 0.. DictatedExposure",
+    "AIConsentRecord（本地 + Keychain 元数据）"
+  ],
+  "product_fingerprint": "e950103bff09d095ee2b1fc959f191cfe3cb21b48c2a128255af1af093de19db",
+  "product_name": "NightCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "在城市天际线、星空、光轨等场景做长曝光、需要现场快速诊断与参数建议的 iPhone 夜拍爱好者（双手常扶三脚架 / 遥控器）。",
+  "user_problem": "夜拍现场拍一张试片 → AI 给出曝光/噪点/拖影草稿 → Keep 落成 DiagnosisFinding → 同一会话里用夜景帧轨推进各试片 → 需要时聊天问参数、在曝光诊断叠层上确认标注、TTS 现场口令；手持三脚架时可口述曝光字段。",
+  "value_proposition": "NightCue is an AI night long-exposure coach: shoot or import night test frames, keep reviewed exposure and noise findings, chat for settings, confirm diagnosis overlays, and hear field cues while you stay on the tripod."
+}

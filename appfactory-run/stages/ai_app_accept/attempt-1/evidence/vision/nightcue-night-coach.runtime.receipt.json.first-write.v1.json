@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "nightcue-night-coach.runtime.receipt.json",
+  "verdict_sha256": "6877d369073d400078d04d90e30227be83b486f77597535a839207f39ae42a59",
+  "written_at": "2026-10-15T09:20:22Z"
+}

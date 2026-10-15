@@ -1,0 +1,67 @@
+{
+  "schema": "appfactory.ultra_lite_preparation_seal.v1",
+  "run_id": "kf-20261015T075333Z-d3a0d226",
+  "dispatch_id": "e3a9a1f0-67fa-481b-bc39-ed862af058af",
+  "producer_pm_attempt": 1,
+  "technical_contract_sha256": "72c5bea905cf48b0f721c2bceb6834b467d0108e2f088c97d597840b21a771dd",
+  "members": [
+    {
+      "ref": "Package.swift",
+      "sha256": "f0eb01d969d031ffef17ac52a186d7c22ada0ac28ac9aa43eb604c8bfadff75d"
+    },
+    {
+      "ref": "Sources/NightCueDomain/Entities.swift",
+      "sha256": "f4724c1d3f460a08603f9d20a2abf38a34e3b630e400b0128384f247b1209b7b"
+    },
+    {
+      "ref": "Sources/NightCueDomain/Navigation.swift",
+      "sha256": "3f77354796a944b451234f2c2fb87af2e01cbb60cd51fa5d9960253146b3a669"
+    },
+    {
+      "ref": "Sources/NightCueDomain/ReviewControls.swift",
+      "sha256": "10e7b6512e5892fa9dcb0dd726d9fe85aad12f808bf46e6789ebbc102b52b052"
+    },
+    {
+      "ref": "Sources/NightCueDomain/Stores.swift",
+      "sha256": "9564e73c58c874b670d523a89490ef11708d384e5dff7d9c84d720d287e0f2c9"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "Vendor/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    }
+  ],
+  "map_sha256": "cfed6f7c340eb2af42d7a4b6dfdad8a928a0bdfd9d6e1162997a46b137084bb1",
+  "spawn_receipt_sha256": "19a10bbf40aeff8e5f4a819821d5a83039daa3826b291232a22c175bd158c233",
+  "terminal_sha256": "adcf3f8a0d8e73bd7c98b896df7a0beac8f55178f6cdf1366fac405db017ef53",
+  "sealed_at": "2026-10-15T08:06:52Z",
+  "cache_receipt_sha256": "e7c9012cb3b412150ba4505420d32b82b0f4fad7a911b3fc0e3f1648cb4fd150",
+  "cache_key": "1225d7e5c639ba857c29161baa51ebbdb27dad675c6d2207c8000e813e3a8e8f"
+}
