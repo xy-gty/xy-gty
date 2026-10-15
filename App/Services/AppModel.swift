@@ -175,9 +175,11 @@ final class AppModel: ObservableObject {
         if activeProjectId == nil {
             activeProjectId = projects.first?.id
         }
-        if let cues = activeProject.map({ id in stitchCues.filter { $0.projectId == id } }),
-           let idx = cues.firstIndex(where: { $0.stepIndex == (activeProject?.currentRow ?? 0) }) {
-            currentStepIndex = idx
+        if let project = activeProject {
+            let cues = stitchCues.filter { $0.projectId == project.id }.sorted { $0.stepIndex < $1.stepIndex }
+            if let idx = cues.firstIndex(where: { $0.rowNumber == project.currentRow }) {
+                currentStepIndex = idx
+            }
         }
     }
 
