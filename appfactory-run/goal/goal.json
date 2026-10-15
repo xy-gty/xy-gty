@@ -1,0 +1,37 @@
+{
+  "acceptance_policy": {
+    "mode": "runtime_verification_required"
+  },
+  "ai_profile": "ultra_lite",
+  "factory_version": "8.3.63",
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "locked_at": "2026-10-15T12:30:49Z",
+  "model_mode": "dev",
+  "objective": "# FrameCue\n\nPaid AI director framing coach (one-time unlock for unlimited framing packs; no coins).\n\nRemake vs Cadrage Director's Viewfinder (com.distantblue.Cadrage) — differentiate: composition/shot-size chat coach + overlays, not just pro camera aspect preview.\n\n## Core loop\nShoot or import stills → recognize subjects and composition issues → chat shot size / aspect / lens language → generate safe-frame / rule-of-thirds / aspect overlays → TTS on-set director cues.\n\n## Hard operator rules\n- product_dir: framecue/ (never leave as product/ only — symlink framecue→product)\n- palette: primary #7E22CE · secondary #FAF5FF · accent #F59E0B (must differ from RuleCue #854D0E/#FEFCE8/#0891B2, StopCue #16A34A/#F0FDF4/#DB2777, NightCue #1E3A8A, and other delivered apps; ban all-black/dark-gray clones)\n- UI: 片场场记板式画幅框 + 底部景别芯片条（must look clearly different from StopCue film-sprocket timeline, RuleCue table zone cards + turn step bar, NightCue night-frame rail — no twins）\n- Four permissions with real flows (extend core, do not replace):\n  - Camera: on-set framing trial shots, capture current composition frame\n  - Photos: import scout/reference stills for aspect analysis\n  - Microphone: hands-free on-set cues (e.g. switch to medium shot)\n  - Speech Recognition: spoken shot-size instructions written into coach chat and refresh overlays\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues for non-core UL fails; P1 non-blockers must not block delivery\n- When disk tight: clear unused DerivedData/simulator caches (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI director framing coach: shoot or import stills, recognize composition issues, chat shot size/aspect/lens language, generate safe-frame and rule-of-thirds overlays, TTS on-set cues—unlock unlimited framing packs.\n\n## Positioning\n导演取景/构图 AI 教练——拍或导入画面，对话景别与焦段，生成画幅标注叠图，TTS 现场口令。\n",
+  "onboarding_enabled": false,
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "requested_count": 1,
+  "run_id": "kf-20261015T123049Z-789bf0d3",
+  "schema_version": "claude-app-factory.goal-lock.v1",
+  "ultra_lite_execution_revision": "p1"
+}

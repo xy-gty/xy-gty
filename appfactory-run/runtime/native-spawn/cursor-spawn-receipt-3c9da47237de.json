@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "e4f25707-22cc-44e7-9123-010e35399208",
+  "spawn_kwargs": {
+    "subagent_type": "delivery-reporter-agent",
+    "model": "auto",
+    "description": "pkg_e4f2570722cc44e79123010e35399208",
+    "prompt": "Dispatch e4f25707-22cc-44e7-9123-010e35399208. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/delivery/attempt-1/codex.launch.md SHA-256 118a08692bee520f63f716c237898b302f8d82b11e5e5aa9bbfb501ddbca6844. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-delivery-e4f2570722cc",
+  "agent_name": "/root/pkg_e4f2570722cc44e79123010e35399208",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T13:45:39Z",
+  "pid": 3291,
+  "note": "FrameCue delivery e1 local agent CLI start_new_session; Feishu skip"
+}

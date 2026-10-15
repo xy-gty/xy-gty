@@ -1,0 +1,43 @@
+name: FrameCueAcceptUI
+options:
+  bundleIdPrefix: xycoins.2027.test
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    TARGETED_DEVICE_FAMILY: "1"
+    SWIFT_VERSION: "5.0"
+targets:
+  HostStub:
+    type: application
+    platform: iOS
+    sources: [HostStub]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test.framecue.accept.host
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+  FrameCueAcceptUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [FrameCueAcceptUITests]
+    dependencies:
+      - target: HostStub
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test.framecue.accept.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+        TEST_TARGET_NAME: HostStub
+
+schemes:
+  FrameCueAcceptUI:
+    build:
+      targets:
+        HostStub: all
+        FrameCueAcceptUITests: [test]
+    test:
+      targets:
+        - FrameCueAcceptUITests

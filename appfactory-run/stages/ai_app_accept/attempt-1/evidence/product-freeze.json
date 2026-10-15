@@ -1,0 +1,9 @@
+{
+  "schema": "appfactory.product_freeze.v1",
+  "product_commit": "bd7bee1829677f58b05a55979d37eb5749bcb0a8",
+  "product_branch": "framecue/kf-20261015T123049Z-789bf0d3",
+  "worktree_clean": true,
+  "status_porcelain": "",
+  "bundle_id": "com.lingguang.framecue",
+  "udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7"
+}

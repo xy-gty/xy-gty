@@ -1,0 +1,31 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "Camera / Photos 拍或导入静帧",
+    "AI 构图问题草稿 → Keep / Discard / Edit",
+    "SlateStage：场记板画幅框 + 底部景别芯片条",
+    "Coach chat 景别 / 画幅比 / 焦段语言",
+    "安全框 / 三分法 / 画幅叠图确认",
+    "TTS 现场导演口令",
+    "麦克风 + 语音识别：口述景别写入聊天并刷新叠图"
+  ],
+  "differentiation": {},
+  "diversity_key": "framecue 独立导演 摄像助理 短片创作者 片场或勘景时需要快速景别与构图反馈 而不是只看专业相机画幅预览器 拍或导入一张静帧 ai 指出构图问题草稿 keep 落成构图要点 同一会话里在场记板画幅框内看画面 底部景别芯片切换 ecu cu ms ws 聊天景别 画幅 焦段 生成安全框与三分法叠图 tts 现场口令 双手持机时可口述 切中景 framecue is an ai director framing coach shoot or import stills k",
+  "feature_blocks": [
+    "入口：冷启动 / Tab Sessions",
+    "操作：浏览 FramingSession 列表；空态主 CTA「New session」",
+    "结果：进入 NewSession 或已有 SlateStage",
+    "持久：FramingSession 列表 AtomicCodableStore",
+    "空态：空架 + 场记板画幅框轮廓预留 + 底部景别芯片条位置暗示（非裸聊天壳；非胶片齿孔时间线；非桌区卡）",
+    "错误：存储损坏 → 保留旧文件 + 字面恢复失败提示"
+  ],
+  "product_fingerprint": "0e3abf03086304099d251b14e0113ef8ba35d1aacfb34868ec6e0d61d4ea36d7",
+  "product_name": "FrameCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "独立导演 / 摄像助理 / 短片创作者：片场或勘景时需要快速景别与构图反馈，而不是只看专业相机画幅预览器。",
+  "user_problem": "拍或导入一张静帧 → AI 指出构图问题草稿 → Keep 落成构图要点 → 同一会话里在场记板画幅框内看画面、底部景别芯片切换 ECU/CU/MS/WS → 聊天景别/画幅/焦段 → 生成安全框与三分法叠图 → TTS 现场口令；双手持机时可口述「切中景」。",
+  "value_proposition": "FrameCue is an AI director framing coach: shoot or import stills, keep reviewed composition notes, chat shot size and lens language, mark safe-frame overlays on a clapper canvas, and hear on-set TTS cues hands-free."
+}

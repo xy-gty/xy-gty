@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261015T123049Z-789bf0d3",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "framecue-home-empty",
+      "page_id": "sessions_home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-home-empty-r1.txt",
+      "image_ref": "frames/framecue-home-empty-r1.png",
+      "receipt_ref": "frames/framecue-home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-home-empty.receipt.jsonl",
+          "sha256": "f4d9a3659a2a6f0133b5a5268dcb4c5b002925917379e11b6918f2343e57c06e"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-home-empty.receipt.json",
+          "sha256": "a4c00282af340aec1f5212d738b8fb79144a1ca75d6c0af6b0069b7fbbe6c322"
+        }
+      ],
+      "prompt_sha256": "27c142b9f4004b9c74cbdf538600e9f72cf1c9dc688e82bc8a305ca7c6cdfc01",
+      "image_sha256": "522cb8e9df1dde3362b549bde192455cfce49ddd5f12f28764be641e7e20d547",
+      "receipt_sha256": "fab622cedc26f1eaef9ca13576b1091a81216f9a4c4658917ed27e86c5c920d1",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-capture-import",
+      "page_id": "capture",
+      "state_id": "import",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-capture-import-r1.txt",
+      "image_ref": "frames/framecue-capture-import-r1.png",
+      "receipt_ref": "frames/framecue-capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-capture-import.receipt.jsonl",
+          "sha256": "d2ee21631865e70c6c9847f21a0c8e9f14011766275735d505436534e1c420e4"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-capture-import.receipt.json",
+          "sha256": "55974c94ef8dd85892f1700000de37f5762bd64bf0b291165a8d0718d1cfd18d"
+        }
+      ],
+      "prompt_sha256": "f8071e2f2176de09b6045ee76f46967da283ebbd82b71b45b8bc8877df05ae19",
+      "image_sha256": "6f9d69090e94d1a6309719d95ea8d438e5d545db363ba1429c070cb95026ea28",
+      "receipt_sha256": "e08e35d2033cff564dcd1f55a0a4ef70f0bcd0eb84242ca78b9dd53c647e1e57",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-composition-review",
+      "page_id": "composition",
+      "state_id": "review",
+      "criterion_ids": [
+        "crit-composition-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-composition-review-r2.txt",
+      "image_ref": "frames/framecue-composition-review-r2.png",
+      "receipt_ref": "frames/framecue-composition-review-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-composition-review.receipt.jsonl",
+          "sha256": "885fd799c8b5e77dc831a448c76300a4466fa164abeb748af47905fe0f53f1cb"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-composition-review.receipt.json",
+          "sha256": "07a7922e32ca45facc3ddc5793c0c3e1c4e00cb21a749a427530f9f8c78dfff9"
+        }
+      ],
+      "prompt_sha256": "1ee68a38d61ff764e3a0a756ba185a16e6cfabe4206211592a1a3fd432522be1",
+      "image_sha256": "a4264c3bdf85afd7d9e4d0a992e72d1cad7f596eca472c8f302e52cbd7a79ae8",
+      "receipt_sha256": "ca79967357302598936e201a2528f5c9e0c664a89244b92011a11e6a446e8cca",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-slate-stage",
+      "page_id": "slate",
+      "state_id": "stage",
+      "criterion_ids": [
+        "crit-slate-stage"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-slate-stage-r1.txt",
+      "image_ref": "frames/framecue-slate-stage-r1.png",
+      "receipt_ref": "frames/framecue-slate-stage-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-slate-stage.receipt.jsonl",
+          "sha256": "ad53513b5d63a07d1f4ea86b52d4f358bbdbcbe544a67193396473a8e980255a"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-slate-stage.receipt.json",
+          "sha256": "d3ff1c4d87505f0f384b0be9a427e7ddfa505c4d9f90f6f0149025b06cc7130f"
+        }
+      ],
+      "prompt_sha256": "328feaba4f706cd3ef357adee1f5e626d6323ff35b770b77391ae4282b465391",
+      "image_sha256": "cda3df392a80a62bd2814bc4f5238343a7d7c6f52e5b219eaed2e088fe3a5484",
+      "receipt_sha256": "3195b6d9602e45eb78e4237960f85e3caad02348b3e46c93c7b108124425ac8e",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-coach-chat",
+      "page_id": "coach",
+      "state_id": "chat",
+      "criterion_ids": [
+        "crit-coach-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-coach-chat-r1.txt",
+      "image_ref": "frames/framecue-coach-chat-r1.png",
+      "receipt_ref": "frames/framecue-coach-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-coach-chat.receipt.jsonl",
+          "sha256": "8bd7a6155577b964b1551dc472515659db1548f688b972101e225fa8342ed9a7"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-coach-chat.receipt.json",
+          "sha256": "baefd4e49fb22c784bd1af3bdf1d1626d77115c6c735cfe7c37ab43c2e1dbb72"
+        }
+      ],
+      "prompt_sha256": "a5902339ec0501e3d6bd4b131692e48766f0893292ad03b14cf1c8e1202da216",
+      "image_sha256": "b7d41cd817725b069889a7fd03e48b7858d903978e26799409a9629583b953dc",
+      "receipt_sha256": "0925983323d3e9dd3e715f769679158f3c2cb3655a9db57746e685fb6821eeec",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-overlay-marks",
+      "page_id": "overlay",
+      "state_id": "marks",
+      "criterion_ids": [
+        "crit-overlay-marks"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-overlay-marks-r1.txt",
+      "image_ref": "frames/framecue-overlay-marks-r1.png",
+      "receipt_ref": "frames/framecue-overlay-marks-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-overlay-marks.receipt.jsonl",
+          "sha256": "265281a148fec583bc5e0b93707967c1d9c58e5f769bbc18813102457944d851"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-overlay-marks.receipt.json",
+          "sha256": "e44f084ce6db0f103dd27250b131a8c0ae0eb512b4d44e78b2ccf6826c3bbbc0"
+        }
+      ],
+      "prompt_sha256": "964fc7e6f7e2875bffc6c3b6c98af5fd75c53a192bbe7125d3ef0440f280e7b0",
+      "image_sha256": "1f678a206af75d729186c2c275bb5eef21cbb07c236c8fbc34300320fcef02b2",
+      "receipt_sha256": "cceb52c98fc34e1cd77a0effa137a9bbc99cc20dacdb888b5a84d72a1db59041",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-hands-free-tts",
+      "page_id": "handsfree",
+      "state_id": "tts",
+      "criterion_ids": [
+        "crit-hands-free-tts"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-hands-free-tts-r1.txt",
+      "image_ref": "frames/framecue-hands-free-tts-r1.png",
+      "receipt_ref": "frames/framecue-hands-free-tts-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-hands-free-tts.receipt.jsonl",
+          "sha256": "40decfccca6401ef491e767627a540fa6f42931a70fed64da434a116ed203811"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-hands-free-tts.receipt.json",
+          "sha256": "6e0cd95ef5cfc4f0cd75aef6905a34c211f3af91cbbc0c08d3738e0a7b4f9319"
+        }
+      ],
+      "prompt_sha256": "140fb1e409ab7f4915d077ae1a6ad226234af6cc290f60962ba34e313949252a",
+      "image_sha256": "97e9db7e9e4b9b05b75418f6040a0467d99dad87c1249fa75dd5b28d4dc4f73e",
+      "receipt_sha256": "d19e9cd04a2e6c8293205ee5f5c86312ae903344284fb3144b208898a04fefcc",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "framecue-settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "crit-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/framecue-settings-privacy-r1.txt",
+      "image_ref": "frames/framecue-settings-privacy-r1.png",
+      "receipt_ref": "frames/framecue-settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/framecue-settings-privacy.receipt.jsonl",
+          "sha256": "b354e06ac8ab62f867934146104f6e3d0c12ba9c52918ca3050bff2f80b50f0c"
+        },
+        {
+          "ref": "evidence/visual-readback/framecue-settings-privacy.receipt.json",
+          "sha256": "c5268efc7b5d938598429b6e1694138642a7ce6b72c7345de5f8a65f6e857861"
+        }
+      ],
+      "prompt_sha256": "0c8449c763e9ea530b208dce8a7616aec8a430459368ab51595de67c4e381cc0",
+      "image_sha256": "272976960493e44f405d787ccca2bbe58ed9402f104ef9ad68bab70ffc15c20f",
+      "receipt_sha256": "baeea4f7b700115d332bc002ebe14cd73f0071827af3362cf96c9e34384bc96e",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "93969b8d706c559d1e30aee06efe6b392c70524fb21f39aa986690e4b2648335"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "e0ef7591065a154cfe3d85ed1f6e73804e2844fef755b368166f05ae8a1f119e"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "48b5a25da0341f55d5a646531a5be0311df55dfa64bdf062387424b3e16110be"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "5c36f788cbf6c782b4b30c26bd0e416d03f928c964903887cce69748a00a2c1d"
+    }
+  ],
+  "frozen_at": "2026-10-15T13:09:42Z"
+}

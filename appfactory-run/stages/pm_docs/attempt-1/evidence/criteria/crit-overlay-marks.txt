@@ -1,0 +1,1 @@
+Does the still show overlay marks (thirds/safe-frame guides) on a still inside the clapper canvas with Keep marks action?

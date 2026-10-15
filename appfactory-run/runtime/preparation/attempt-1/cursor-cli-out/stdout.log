@@ -1,0 +1,6 @@
+Dispatch `ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d` finished **ready**.
+
+- Launch hash verified; bound refs matched
+- `AppRuntimeCore` installed; cache hit (shared baseline not recompiled)
+- `FrameCueDomain` scaffolded (entities/nav/stores/review + palette/allergy literals); domain compile OK outside workspace inventory
+- `preparation finish --status ready` OK — private receipt written; controller seals separately

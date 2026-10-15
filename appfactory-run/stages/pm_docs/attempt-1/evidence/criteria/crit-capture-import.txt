@@ -1,0 +1,1 @@
+Does the still show Capture/import with Camera and Photo library actions inside or under a clapper-framed preview, FrameCue palette, and English UI?

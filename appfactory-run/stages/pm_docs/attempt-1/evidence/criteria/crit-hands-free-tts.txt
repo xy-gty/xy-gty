@@ -1,0 +1,1 @@
+Does the still show hands-free TTS cue controls with Play and a shot-size chip selected, FrameCue palette?

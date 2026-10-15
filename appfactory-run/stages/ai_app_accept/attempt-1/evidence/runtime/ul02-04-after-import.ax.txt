@@ -1,0 +1,111 @@
+Optional(Attributes: Application, 0x1176b9900, pid: 95368, label: 'FrameCue'
+Element subtree:
+ →Application, 0x1176b9900, pid: 95368, label: 'FrameCue'
+    Window (Main), 0x1176b9a40, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x1176b9b80, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x1176b9cc0, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x1176b9e00, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x1176b9f40, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x1176ba080, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x1176ba1c0, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x1176ba300, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x1176ba440, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x1176ba580, {{0.0, 135.5}, {402.0, 603.0}}
+                        Other, 0x1176ba6c0, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x1176ba800, {{0.0, 135.5}, {402.0, 603.0}}
+                            NavigationBar, 0x1176ba940, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'Sessions'
+                              StaticText, 0x1176baa80, {{156.2, 228.0}, {89.6, 26.0}}, label: 'Sessions'
+                            Other, 0x1176babc0, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x1176bad00, {{0.0, 135.5}, {402.0, 603.0}}
+                                Other, 0x1176bae40, {{0.0, 135.5}, {402.0, 603.0}}
+                                  Other, 0x1176baf80, {{0.0, 135.5}, {402.0, 603.0}}
+                                    ScrollView, 0x1176bb0c0, {{0.0, 135.5}, {402.0, 603.0}}
+                                      Other, 0x1176bb200, {{0.0, -181.3}, {320.0, 736.0}}
+                                        StaticText, 0x1176bb340, {{20.0, -161.3}, {163.3, 40.7}}, label: 'FrameCue'
+                                        StaticText, 0x1176bb480, {{20.0, -100.7}, {249.7, 38.0}}, label: 'AI director framing coach — clapper slate + shot chips.'
+                                        StaticText, 0x1176bb5c0, {{68.0, -28.7}, {46.0, 14.3}}, identifier: 'clapper_frame_canvas', label: 'SLATE'
+                                        StaticText, 0x1176bb700, {{261.0, -28.7}, {19.0, 14.3}}, identifier: 'clapper_frame_canvas', label: 'MS'
+                                        Image, 0x1176bb840, {{174.6, 239.8}, {53.2, 53.2}}, identifier: 'clapper_frame_canvas', label: 'Scan'
+                                        StaticText, 0x1176bb980, {{86.5, 311.6}, {229.1, 24.3}}, identifier: 'clapper_frame_canvas', label: '1 session(s) on the board'
+                                        ScrollView, 0x1176bbac0, {{25.1, 461.7}, {351.8, 62.8}}, identifier: 'shot_size_chip_bar'
+                                          Other, 0x1176bbc00, {{25.1, 461.7}, {394.0, 62.8}}
+                                            Button, 0x1176bbd40, {{29.2, 468.3}, {76.0, 49.6}}, identifier: 'shot_chip_ECU', label: 'ECU'
+                                            Button, 0x1176bbe80, {{113.4, 468.3}, {64.7, 49.6}}, identifier: 'shot_chip_CU', label: 'CU'
+                                            Button, 0x1174c0000, {{186.2, 468.3}, {66.0, 49.6}}, identifier: 'shot_chip_MS', label: 'MS'
+                                            Button, 0x1174c21c0, {{260.4, 468.3}, {67.6, 49.6}}, identifier: 'shot_chip_WS', label: 'WS'
+                                            Button, 0x1174c2300, {{336.2, 468.3}, {78.9, 49.6}}, identifier: 'shot_chip_EWS', label: 'EWS'
+                                        Button, 0x1174c0c80, {{25.1, 549.6}, {351.8, 43.1}}, identifier: 'new_session_cta', label: 'New session'
+                                          Image, 0x1174c0140, {{125.2, 560.5}, {21.4, 21.4}}, identifier: 'plus.circle.fill', label: 'Add'
+                                          StaticText, 0x1174c26c0, {{25.1, 549.6}, {351.8, 43.1}}, label: 'New session'
+                                        StaticText, 0x1174c2580, {{25.1, 617.9}, {89.6, 25.5}}, label: 'Sessions'
+                                        Button, 0x1174c17c0, {{24.5, 655.4}, {353.0, 85.0}}, label: 'Accept Frame A, MS · 16:9'
+                                          StaticText, 0x1174c0f00, {{42.7, 673.6}, {158.7, 25.5}}, label: 'Accept Frame A'
+                                          StaticText, 0x1176a75c0, {{42.7, 704.2}, {69.5, 18.0}}, label: 'MS · 16:9'
+                                          Image, 0x1176a7e80, {{347.6, 688.7}, {10.5, 18.4}}, identifier: 'chevron.right', label: 'Forward'
+                                        StaticText, 0x1176a7d40, {{25.1, 764.9}, {294.8, 42.3}}, label: 'Session opened — capture or import a framing still.'
+                                      Other, 0x117673e80, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x1176726c0, {{0.0, 135.5}, {402.0, 214.6}}
+                                        Other, 0x117672300, {{0.0, 536.5}, {402.0, 202.0}}
+                                      Other, 0x117671a40, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x117672440, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Other, 0x1176721c0, {{0.0, 135.5}, {402.0, 118.5}}
+                                          Other, 0x117672580, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x117671e00, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Other, 0x117670f00, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x117670b40, {{0.0, 135.5}, {402.0, 214.6}}
+                                          Other, 0x117670c80, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x116878000, {{0.0, 135.5}, {402.0, 214.6}}
+                                            Other, 0x117426580, {{0.0, 135.5}, {402.0, 214.6}}
+                                        Other, 0x117427340, {{0.0, 536.5}, {402.0, 202.0}}
+                                          Image, 0x117425b80, {{-120.0, 324.0}, {560.0, 312.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x117427700, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x117426bc0, {{0.0, 536.5}, {402.0, 202.0}}
+                                          Other, 0x117426f80, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x117426e40, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x117427e80, {{0.0, 536.5}, {402.0, 202.0}}
+                                      Other, 0x117427840, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 3 pages', value: 64%
+                                        Other, 0x117427980, {{394.5, 411.0}, {3.8, 203.1}}
+                                      Other, 0x117426d00, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 3 pages', value: 64%
+                                        Other, 0x117426800, {{394.5, 411.0}, {3.8, 203.1}}
+                            Other, 0x117426080, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x1174248c0, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x1174261c0, {{0.0, 617.9}, {402.0, 120.6}}
+                  Other, 0x117425900, {{0.0, 135.5}, {402.0, 603.0}}
+                    TabBar, 0x117424280, {{0.0, 617.9}, {402.0, 120.6}}, label: 'Tab Bar'
+                      Other, 0x117426a80, {{28.9, 617.9}, {344.2, 77.9}}
+                        Other, 0x117424dc0, {{28.9, 617.9}, {118.1, 67.8}}
+                        Other, 0x117424640, {{28.9, 617.9}, {344.2, 77.9}}
+                          Button, 0x1174243c0, {{33.9, 622.9}, {118.1, 67.8}}, identifier: 'film.stack', label: 'Sessions', Selected
+                            Image, 0x117424a00, {{74.1, 629.2}, {37.7, 39.4}}, identifier: 'film.stack.fill', label: 'film.stack.fill'
+                          Button, 0x117424500, {{142.0, 622.9}, {118.1, 67.8}}, identifier: 'rectangle.inset.filled', label: 'Stage'
+                            Image, 0x117426300, {{180.9, 632.1}, {41.5, 31.4}}, identifier: 'inset.filled.rectangle', label: 'inset.filled.rectangle'
+                          Button, 0x117427ac0, {{250.0, 622.9}, {118.1, 67.8}}, identifier: 'gearshape.fill', label: 'Settings'
+                            Image, 0x117426440, {{291.4, 630.5}, {35.2, 35.2}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x117427200, {{33.9, 622.9}, {118.1, 67.8}}
+                          Other, 0x1174266c0, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x117424c80, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x117424b40, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x117425180, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x117424f00, {{33.9, 622.9}, {118.1, 67.8}}
+                                  Other, 0x117425cc0, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x1176a3d40, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x106e8f0c0, {{33.9, 622.9}, {118.1, 67.8}}
+                  Other, 0x106e8f5c0, {{0.0, 617.9}, {402.0, 120.6}}
+                    Other, 0x106e8fac0, {{0.0, 617.9}, {402.0, 120.6}}
+                      Other, 0x106e8f200, {{0.0, 617.9}, {402.0, 120.6}}
+                        Other, 0x106e8fc00, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x106e8f340, {{0.0, 617.9}, {402.0, 120.6}}
+                            Other, 0x106e8f480, {{0.0, 617.9}, {402.0, 104.3}}
+                        Other, 0x106e8ee40, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x106e8fd40, {{0.0, 617.9}, {402.0, 104.3}}
+    Window, 0x106e8ef80, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x106e8f980, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x106e8f840, {{0.0, 135.5}, {402.0, 603.0}}
+Path to element:
+ →Application, 0x1176b9900, pid: 95368, label: 'FrameCue'
+Query chain:
+ →Find: Application 'com.lingguang.framecue'
+  Output: {
+    Application, 0x106e8f700, pid: 95368, label: 'FrameCue'
+  }
+)

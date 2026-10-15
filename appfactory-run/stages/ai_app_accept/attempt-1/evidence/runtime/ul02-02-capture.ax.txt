@@ -1,0 +1,92 @@
+Optional(Attributes: Application, 0x117418a00, pid: 95368, label: 'FrameCue'
+Element subtree:
+ →Application, 0x117418a00, pid: 95368, label: 'FrameCue'
+    Window (Main), 0x11741a580, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x11741a1c0, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x11741a300, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x117419f40, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x1174197c0, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x117419900, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x117419540, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x117419680, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x1174192c0, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x117419400, {{0.0, 135.5}, {402.0, 603.0}}
+                        Other, 0x117419040, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x117418640, {{0.0, 135.5}, {402.0, 603.0}}
+                            NavigationBar, 0x117418780, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'Capture / Import'
+                              Button, 0x117418dc0, {{20.1, 213.4}, {55.3, 55.3}}, identifier: 'BackButton', label: 'New session'
+                              StaticText, 0x117418c80, {{118.9, 228.0}, {163.7, 26.0}}, label: 'Capture / Import'
+                            Other, 0x117418b40, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x117418000, {{0.0, 135.5}, {402.0, 603.0}}
+                                Other, 0x117418140, {{0.0, 135.5}, {402.0, 603.0}}
+                                  Other, 0x117418280, {{0.0, 135.5}, {402.0, 603.0}}
+                                    ScrollView, 0x1174183c0, {{0.0, 135.5}, {402.0, 603.0}}
+                                      Other, 0x117418500, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x1174188c0, {{0.0, 135.5}, {402.0, 214.6}}
+                                        Other, 0x116878000, {{0.0, 536.5}, {402.0, 202.0}}
+                                      Other, 0x116878140, {{0.0, 135.5}, {402.0, 603.0}}
+                                        Other, 0x116878280, {{0.0, 536.5}, {402.0, 202.0}}
+                                          Image, 0x1168783c0, {{-120.0, 324.0}, {560.0, 312.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x116878500, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x116878640, {{0.0, 536.5}, {402.0, 202.0}}
+                                          Other, 0x116878780, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x1168788c0, {{0.0, 536.5}, {402.0, 202.0}}
+                                            Other, 0x116878a00, {{0.0, 536.5}, {402.0, 202.0}}
+                                      Other, 0x116878b40, {{0.0, 281.2}, {402.0, 608.9}}
+                                        StaticText, 0x116878c80, {{85.4, 323.9}, {85.8, 18.0}}, identifier: 'clapper_frame_canvas', label: 'CAPTURE'
+                                        StaticText, 0x116878dc0, {{327.9, 323.9}, {23.9, 18.0}}, identifier: 'clapper_frame_canvas', label: 'MS'
+                                        Image, 0x116878f00, {{176.7, 453.3}, {48.2, 48.2}}, identifier: 'clapper_frame_canvas', label: 'Screenshot'
+                                        StaticText, 0x116879040, {{57.8, 517.4}, {286.4, 53.2}}, identifier: 'clapper_frame_canvas', label: 'Shoot a trial frame or import a scout still.'
+                                        Button, 0x116879180, {{25.1, 686.2}, {351.8, 43.1}}, label: 'Camera'
+                                          Image, 0x1168792c0, {{145.7, 697.5}, {26.0, 20.1}}, identifier: 'camera.fill', label: 'Camera'
+                                          StaticText, 0x116879400, {{25.1, 686.2}, {351.8, 43.1}}, label: 'Camera'
+                                        Button, 0x116879540, {{25.1, 754.4}, {351.8, 43.1}}, label: 'Photo library'
+                                          Image, 0x116879680, {{122.3, 765.3}, {26.0, 21.4}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x1168797c0, {{25.1, 754.4}, {351.8, 43.1}}, label: 'Photo library'
+                                        StaticText, 0x116879900, {{53.6, 822.7}, {294.8, 42.3}}, label: 'Session opened — capture or import a framing still.'
+                                      Other, 0x116879a40, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x116879b80, {{394.5, 285.0}, {3.8, 227.0}}
+                                      Other, 0x116879cc0, {{360.5, 281.2}, {37.7, 336.7}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                                        Other, 0x116879e00, {{394.5, 285.0}, {3.8, 227.0}}
+                            Other, 0x116879f40, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x11687a080, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x11687a1c0, {{0.0, 617.9}, {402.0, 120.6}}
+                  Other, 0x11687a300, {{0.0, 135.5}, {402.0, 603.0}}
+                    TabBar, 0x11687a440, {{0.0, 617.9}, {402.0, 120.6}}, label: 'Tab Bar'
+                      Other, 0x11687a580, {{28.9, 617.9}, {344.2, 77.9}}
+                        Other, 0x11687a6c0, {{28.9, 617.9}, {118.1, 67.8}}
+                        Other, 0x11687a800, {{28.9, 617.9}, {344.2, 77.9}}
+                          Button, 0x11687a940, {{33.9, 622.9}, {118.1, 67.8}}, identifier: 'film.stack', label: 'Sessions', Selected
+                            Image, 0x11687aa80, {{74.1, 629.2}, {37.7, 39.4}}, identifier: 'film.stack.fill', label: 'film.stack.fill'
+                          Button, 0x11687abc0, {{142.0, 622.9}, {118.1, 67.8}}, identifier: 'rectangle.inset.filled', label: 'Stage'
+                            Image, 0x11687ad00, {{180.9, 632.1}, {41.5, 31.4}}, identifier: 'inset.filled.rectangle', label: 'inset.filled.rectangle'
+                          Button, 0x11687ae40, {{250.0, 622.9}, {118.1, 67.8}}, identifier: 'gearshape.fill', label: 'Settings'
+                            Image, 0x11687af80, {{291.4, 630.5}, {35.2, 35.2}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x11687b0c0, {{33.9, 622.9}, {118.1, 67.8}}
+                          Other, 0x11687b200, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x11687b340, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x11687b480, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x11687b5c0, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x11687b700, {{33.9, 622.9}, {118.1, 67.8}}
+                                  Other, 0x11687b840, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x11687b980, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x11687bac0, {{33.9, 622.9}, {118.1, 67.8}}
+                  Other, 0x11687bc00, {{0.0, 617.9}, {402.0, 120.6}}
+                    Other, 0x11687bd40, {{0.0, 617.9}, {402.0, 120.6}}
+                      Other, 0x11687be80, {{0.0, 617.9}, {402.0, 120.6}}
+                        Other, 0x1175b0000, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x1175b0140, {{0.0, 617.9}, {402.0, 120.6}}
+                            Other, 0x1175b0280, {{0.0, 617.9}, {402.0, 104.3}}
+                        Other, 0x1175b03c0, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x1175b0500, {{0.0, 617.9}, {402.0, 104.3}}
+    Window, 0x1175b0640, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x1175b0780, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x1175b08c0, {{0.0, 135.5}, {402.0, 603.0}}
+Path to element:
+ →Application, 0x117418a00, pid: 95368, label: 'FrameCue'
+Query chain:
+ →Find: Application 'com.lingguang.framecue'
+  Output: {
+    Application, 0x1175b0a00, pid: 95368, label: 'FrameCue'
+  }
+)

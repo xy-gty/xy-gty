@@ -1,0 +1,73 @@
+{
+  "run_id": "kf-20261015T123049Z-789bf0d3",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "5660f5a2-98ef-470d-871d-95da1789aa7e",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/product",
+  "source_commit": "bd7bee1829677f58b05a55979d37eb5749bcb0a8",
+  "branch": "main",
+  "bundle_id": "com.lingguang.framecue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_build/attempt-1/FrameCue.app",
+  "app_content_sha256": "a496f933457c50b533668844bca09a00a0ed440813c8add88f828f62f7f1fe2b",
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "implemented_scope": [
+    "sessions_home_empty_clapper_outline_and_chip_bar_hint",
+    "new_session_capture_import_camera_photos",
+    "composition_review_keep_discard_edit",
+    "slate_stage_clapper_frame_and_shot_size_chip_bar",
+    "coach_chat_consent_gate_turn_review",
+    "overlay_marks_safe_frame_rule_of_thirds",
+    "hands_free_tts_director_cues",
+    "dictate_shot_speech_to_coach",
+    "settings_revoke_consent_local_legal_pages",
+    "app_runtime_core_persistence_and_navigation"
+  ],
+  "unverified_items": [
+    "independent_eight_domain_acceptance_pending",
+    "runtime_visual_frame_judgment_pending",
+    "live_deepseek_outbound_pending_ai_key_unavailable",
+    "device_camera_speech_recognition_true_device_pending"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/product/FrameCue.xcodeproj",
+      "-scheme",
+      "FrameCue",
+      "-destination",
+      "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_build/attempt-1/DerivedData",
+      "-configuration",
+      "Debug",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "6160432844d454af56dc849519d4174ece37ac9b3ea302fcacb972f064e2473d"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "test",
+        "-project",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/product/FrameCue.xcodeproj",
+        "-scheme",
+        "FrameCue",
+        "-destination",
+        "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+        "-derivedDataPath",
+        "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_build/attempt-1/DerivedData",
+        "-only-testing:FrameCueDomainTests"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "4743df4e5dd38f7ba94aab68944e3f62c754ba88a207859898cc82737b5fce57"
+    }
+  ]
+}

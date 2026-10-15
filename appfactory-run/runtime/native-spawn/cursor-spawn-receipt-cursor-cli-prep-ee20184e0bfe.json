@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "pkg_ee20184e0bfe4a4bb4cd2fbbff2b211d",
+    "prompt": "Dispatch ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/runtime/preparation/attempt-1/codex.launch.md SHA-256 7e833f63e03e5fefba9da11896a69c47d2c2f5add6ea3537e9b49d3abe3e410d. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-prep-ee20184e0bfe",
+  "agent_name": "/root/pkg_ee20184e0bfe4a4bb4cd2fbbff2b211d",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T12:36:56Z",
+  "pid": 77728,
+  "note": "FrameCue preparation e1 local agent CLI start_new_session"
+}

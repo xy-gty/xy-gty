@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "a61dbdb2-21da-4c62-b224-c6d94958069c",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_a61dbdb221da4c62b224c6d94958069c",
+    "prompt": "Dispatch a61dbdb2-21da-4c62-b224-c6d94958069c. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/pm_docs/attempt-1/codex.launch.md SHA-256 3f981fad24a96cbb449018f1aafc16ae50a65b8ee1ff9ec3bf1346f5527137b4. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-pm-a61dbdb221da",
+  "agent_name": "/root/pkg_a61dbdb221da4c62b224c6d94958069c",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T12:31:30Z",
+  "pid": 74950,
+  "note": "FrameCue pm_docs local CLI"
+}

@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-framecue-home-empty.receipt.json",
+  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T123049Z-789bf0d3/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-framecue-home-empty.receipt.jsonl",
+  "model": "auto"
+}

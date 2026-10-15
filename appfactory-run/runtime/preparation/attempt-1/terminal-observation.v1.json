@@ -1,0 +1,45 @@
+{
+  "event": {
+    "dispatch_id": "ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d",
+    "agent_id": "cursor-cli-prep-ee20184e0bfe",
+    "execution_seq": 1,
+    "status": "completed",
+    "source": "cursor_task_host",
+    "kind": "execution_completed",
+    "final_text": "Dispatch `ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d` finished **ready**.\n\n- Launch hash verified; bound refs matched\n- `AppRuntimeCore` installed; cache hit (shared baseline not recompiled)\n- `FrameCueDomain` scaffolded (entities/nav/stores/review + palette/allergy literals); domain compile OK outside workspace inventory\n- `preparation finish --status ready` OK — private receipt written; controller seals separately\n\n# FrameCue — private engineering preparation\n\nStatus: ready\n\ntask_kind: ultra_lite_preparation  \ndispatch_id: ee20184e-0bfe-4a4b-b4cd-2fbbff2b211d  \nproducer_pm_attempt: 1  \ntechnical_contract_sha256: 3bd8adb2a16343fa320ed77ae22ca4f28be2e84ca52888d949f52528126826fd\n\n## Scope\n\nShared domain/interfaces/storage scaffolding only. No product UI, Simulator, AppIcon/Launch assets, or formal stage MAP edits. Target device: iPhone 17 Pro only prefer B14CC0EA (Pro Max banned). Four privacy capabilities wired as literals only (Camera/Photos/Mic/Speech). Delivery product_dir: framecue/ (symlink framecue→product; never product/ only); Feishu CONTROLLER_DELIVERY skip; Option A soft known_issues; no coins; Ultra-lite p1 factory-prod-1 single-slot. NOT RuleCue/StopCue/NightCue twins.\n\n## Foundation\n\n- Installed via `python3 -m factory.ultra_lite_foundation install --product-root workspace`\n- `workspace/Vendor/AppRuntimeCore` integrity checked by finish helper\n- preparation_cache ensure: cache hit (`1225d7e5c639ba857c29161baa51ebbdb27dad675c6d2207c8000e813e3a8e8f`); shared baseline not recompiled\n- Domain package compile scratch left outside workspace inventory (`domain-build-scratch/`)\n- host-compile artifacts left outside workspace inventory (`host-compile/`)\n\n## Source inventory (workspace/)\n\n- Package.swift — SwiftPM package depending on local AppRuntimeCore\n- Sources/FrameCueDomain/Entities.swift — FramingSession, FrameStill, CompositionDraft, CompositionNote, ShotSizePlan, AspectOverlay, CoachTurn, CoachMessage, VoiceIntent, AIConsentRecord\n- Sources/FrameCueDomain/Navigation.swift — frozen navigation destinations\n- Sources/FrameCueDomain/ReviewControls.swift — CompositionReviewBar / TurnReview / OverlayEditor / AIConsentContract / interface + privacy literals + palette (#7E22CE/#FAF5FF/#F59E0B) + ClapperFrameCanvas/ShotSizeChipBar names; allergy RuleCue table-zone / StopCue film-sprocket / NightCue night-frame\n- Sources/FrameCueDomain/Stores.swift — AtomicCodableStore key names + Keychain service/account helpers\n- Vendor/AppRuntimeCore/** — public foundation library\n\n## Notes\n\n- UI design deferred to Builder after final visuals (clapper frame canvas + bottom shot-size chip bar)\n- privacy/terms/support/ai_key/cloudkit remain UNKNOWN gaps from technical contract\n- free_app_only; no StoreKit/paywall/coins/ATT\n- consent disclosure_version: framecue.consent.v1; provider DeepSeek\n- development_bundle_id: com.lingguang.framecue; product_dir: framecue/\n- NO AppIcon/LaunchScreen this round\n"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "controller_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+    "session_id": "grokbot-packaging-kf-20261015T123049Z-789bf0d3",
+    "session_kind": "interactive",
+    "observed_at": 1792068083.513773,
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_a61dbdb221da4c62b224c6d94958069c",
+        "agent_id": "cursor-cli-pm-a61dbdb221da",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_ee20184e0bfe4a4bb4cd2fbbff2b211d",
+        "agent_id": "cursor-cli-prep-ee20184e0bfe",
+        "agent_status": {
+          "completed": "CONTROLLER seal: PREPARATION ready + finish ready; agent exited"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-15T12:41:23Z"
+}
