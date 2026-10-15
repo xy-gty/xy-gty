@@ -1,0 +1,18 @@
+schema: appfactory.delivery_packaging_readback.v1
+run_id: kf-20261015T135733Z-fecade9e
+product_dir_symlink: wingcue -> product (ok)
+local_HEAD: 0ee8e582a11a22bc04d96259ef8955b6cc3a0f10
+branch: wingcue/kf-20261015T135733Z-fecade9e
+remote_tip: 0ee8e582a11a22bc04d96259ef8955b6cc3a0f10	refs/heads/wingcue/kf-20261015T135733Z-fecade9e
+tip_match_accept_freeze: True
+accept_freeze_commit: 0ee8e582a11a22bc04d96259ef8955b6cc3a0f10
+candidate: 0ee8e582a11a-ab7764800c1f
+candidate_zip: artifacts/candidates/0ee8e582a11a-ab7764800c1f/WingCue.app.zip exists=True size=6570822
+receipt_sha256: 16fcb48e4dc8e33f8f6b44bc33d11920a1e07ab0f86d1c288d28037e95ceccd4
+agent_context_sha256: 9a45444392e5ec7af1c114fbd7f61225378b156cb3eedd23ee97a80678abc75e (content excl. embedded sha256; file bytes b6b618ef…)
+remote: git@github.com:xy-gty/xy-gty.git
+repo_url: https://github.com/xy-gty/xy-gty/tree/wingcue/kf-20261015T135733Z-fecade9e
+feishu: CONTROLLER_DELIVERY skip
+df:
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   228Gi   184Gi    15Gi    93%    1.5M  155M    1%   /System/Volumes/Data

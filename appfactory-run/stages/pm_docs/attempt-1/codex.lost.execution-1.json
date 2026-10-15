@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_lost_session.v1",
+  "task": {
+    "dispatch_id": "92a6e1ef-89a5-4b72-a820-de2b16858028",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-pm-92a6e1ef89a5",
+    "agent_name": "/root/pkg_92a6e1ef89a54b72a820de2b16858028",
+    "execution_status": "running"
+  },
+  "reason": "codex_native_session_unrecoverable: Connection lost + pm_docs_stuck idle; agent pid 6215 killed; 8/8 vision receipts ready — replace_lost_worker same attempt",
+  "quarantined_at": "2026-10-15T15:18:51Z"
+}

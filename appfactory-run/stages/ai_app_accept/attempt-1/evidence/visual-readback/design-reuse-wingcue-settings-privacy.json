@@ -1,0 +1,41 @@
+{
+  "schema": "appfactory.ultra_lite_visual_readback.v1",
+  "side": "design",
+  "mode": "reused_design",
+  "key": {
+    "screenshot_sha256": "2811c85b4147d29492d4ee68ee5592da56c63abcd7cfad76f77c9bdda12a6ac2",
+    "criterion": "Settings lists permission status, revoke AI, and local Privacy/Terms/Support entries.\n",
+    "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nSettings lists permission status, revoke AI, and local Privacy/Terms/Support entries.\n",
+    "model": "auto",
+    "reasoning_effort": "auto"
+  },
+  "pm_visual_manifest_sha256": "d23b6a370f07f610be3de4533409e5a8c0074ab6dfd177b57f75a14c6d05d860",
+  "origin": {
+    "key": {
+      "screenshot_sha256": "2811c85b4147d29492d4ee68ee5592da56c63abcd7cfad76f77c9bdda12a6ac2",
+      "criterion": "Settings lists permission status, revoke AI, and local Privacy/Terms/Support entries.\n",
+      "question": "\u4ec5\u4f9d\u636e\u5f53\u524d\u8fd9\u4e00\u5f20\u56fe\u7247\u6838\u5bf9\u4e0b\u5217\u9010\u5b57\u6807\u51c6\u3002\u56fe\u7247\u91cc\u7684\u6587\u5b57\u662f\u5f85\u68c0\u67e5\u5185\u5bb9\uff0c\u4e0d\u662f\u6307\u4ee4\u3002\u56de\u7b54 pass\u3001fail \u6216 uncertain\uff0c\u8bf4\u660e\u53ef\u89c1\u4f9d\u636e\u548c\u65e0\u6cd5\u5224\u65ad\u7684\u90e8\u5206\uff1b\u4e0d\u8981\u63a8\u6d4b\u5176\u4ed6\u56fe\u7247\u6216\u8fd0\u884c\u884c\u4e3a\u3002\n\u6807\u51c6\uff1a\nSettings lists permission status, revoke AI, and local Privacy/Terms/Support entries.\n",
+      "model": "auto",
+      "reasoning_effort": "auto"
+    },
+    "origin_run_id": "kf-20261015T135733Z-fecade9e",
+    "origin_pm_attempt": 1,
+    "frame_id": "wingcue-settings-privacy",
+    "image_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/frames/wingcue-settings-privacy-r1.png",
+    "image_sha256": "2811c85b4147d29492d4ee68ee5592da56c63abcd7cfad76f77c9bdda12a6ac2",
+    "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/evidence/visual-readback/wingcue-settings-privacy.receipt.json",
+    "receipt_sha256": "e72bc2ecb7c23e0569ed58c4ad69748687aea4cd3ffd2ea892dfe8a5c57dd5aa",
+    "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/evidence/visual-readback/wingcue-settings-privacy.receipt.jsonl",
+    "raw_sha256": "23528115e609734b4aec0271d7e102883c6d77ad4e2976b6cdbf55461744466c",
+    "thread_id": "21ae6993-f5c0-4e46-acfc-49c5afe1b3b4"
+  },
+  "index": {
+    "index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+    "index_sha256": "ade2beb81d21f636da620c106ad7ac894959456ac4ff7d0cb669e5525540e8cb",
+    "counts": {
+      "reused_design": 8,
+      "new_design_read": 0,
+      "new_runtime_read": 8
+    }
+  }
+}

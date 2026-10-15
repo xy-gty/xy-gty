@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "runtime-wingcue-overlay-annotate.receipt.json",
+  "verdict_sha256": "26bdc01477c6105692d7afcfbc2422b46c30719e0e614e0c06a7fbd2d26e1ece",
+  "written_at": "2026-10-15T15:59:47Z"
+}

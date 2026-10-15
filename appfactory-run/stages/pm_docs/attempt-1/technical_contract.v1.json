@@ -1,0 +1,261 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261015T135733Z-fecade9e",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "WingCue",
+    "development_bundle_id": "com.lingguang.wingcue",
+    "product_dir": "wingcue",
+    "simulator_pref_udid": "B14CC0EA"
+  },
+  "config_mode": "local_only",
+  "scope": [
+    "camera_or_photos_bird_capture_to_id_session",
+    "ai_species_id_with_field_marks",
+    "lookalike_coach_chat_text_and_speech",
+    "annotated_overlay_callouts",
+    "tts_species_name_and_tips",
+    "microphone_voice_notes",
+    "local_persistence_and_restart_restore",
+    "four_permissions_camera_photos_mic_speech",
+    "ai_consent_gate_and_local_legal_pages",
+    "honest_unconfigured_ai_states",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "IDSession",
+      "fields": [
+        "id",
+        "createdAt",
+        "photoLocalURL",
+        "source",
+        "status"
+      ]
+    },
+    {
+      "name": "SpeciesCandidate",
+      "fields": [
+        "sessionId",
+        "scientificName",
+        "commonName",
+        "confidence",
+        "rank",
+        "silhouetteKey"
+      ]
+    },
+    {
+      "name": "FieldMark",
+      "fields": [
+        "candidateId",
+        "label",
+        "bodyRegion",
+        "salience",
+        "chipEmphasis"
+      ]
+    },
+    {
+      "name": "LookalikePair",
+      "fields": [
+        "sessionId",
+        "leftCandidateId",
+        "rightCandidateId",
+        "contrastNotes"
+      ]
+    },
+    {
+      "name": "CoachTurn",
+      "fields": [
+        "sessionId",
+        "role",
+        "text",
+        "sttSource",
+        "createdAt"
+      ]
+    },
+    {
+      "name": "AnnotatedOverlay",
+      "fields": [
+        "sessionId",
+        "photoLocalURL",
+        "callouts",
+        "createdAt"
+      ]
+    },
+    {
+      "name": "VoiceNote",
+      "fields": [
+        "sessionId",
+        "localAudioURL",
+        "transcript",
+        "createdAt"
+      ]
+    },
+    {
+      "name": "AIConsentRecord",
+      "fields": [
+        "provider",
+        "disclosureVersion",
+        "grantedAt",
+        "revokedAt"
+      ]
+    },
+    {
+      "name": "AppSettings",
+      "fields": [
+        "ttsEnabled",
+        "speechInputEnabled",
+        "consentRevoked"
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "SightingStore",
+      "role": "AtomicCodableStore persistence for sessions and related entities"
+    },
+    {
+      "name": "PhotoCaptureService",
+      "role": "Camera still capture into app support"
+    },
+    {
+      "name": "PhotoLibraryImporter",
+      "role": "Photos import via PhotoImportSession"
+    },
+    {
+      "name": "SpeciesIDClient",
+      "role": "DeepSeek structured species ID + field marks"
+    },
+    {
+      "name": "CoachChatClient",
+      "role": "Lookalike clarification with feedback reuse"
+    },
+    {
+      "name": "OverlayAnnotator",
+      "role": "Field-mark callouts on photo"
+    },
+    {
+      "name": "TTSPlayer",
+      "role": "AVSpeechSynthesizer species name and tips"
+    },
+    {
+      "name": "VoiceNoteRecorder",
+      "role": "Microphone notes while hands busy"
+    },
+    {
+      "name": "SpeechQuestionIngress",
+      "role": "SFSpeechRecognizer into coach chat"
+    },
+    {
+      "name": "ConsentGate",
+      "role": "AIConsentGate before outbound AI"
+    },
+    {
+      "name": "KeychainCredentialStore",
+      "role": "Credential presence for DeepSeek key"
+    },
+    {
+      "name": "TypedNavigationStore",
+      "role": "Route restore"
+    }
+  ],
+  "navigation": [
+    {
+      "route": "fieldHome",
+      "kind": "root"
+    },
+    {
+      "route": "cameraCapture",
+      "kind": "modal"
+    },
+    {
+      "route": "photoImport",
+      "kind": "sheet"
+    },
+    {
+      "route": "idResult",
+      "kind": "push",
+      "param": "sessionId"
+    },
+    {
+      "route": "lookalikeChat",
+      "kind": "push",
+      "param": "sessionId"
+    },
+    {
+      "route": "overlayStudio",
+      "kind": "push",
+      "param": "sessionId"
+    },
+    {
+      "route": "voiceNote",
+      "kind": "sheet",
+      "param": "sessionId?"
+    },
+    {
+      "route": "aiConsent",
+      "kind": "sheet"
+    },
+    {
+      "route": "settings",
+      "kind": "push"
+    },
+    {
+      "route": "legal",
+      "kind": "push",
+      "param": "page"
+    }
+  ],
+  "review_controls": {
+    "confirm": [
+      "Save ID",
+      "Keep",
+      "Use"
+    ],
+    "reject": [
+      "Dismiss",
+      "Reject"
+    ],
+    "edit": [
+      "Edit marks"
+    ]
+  },
+  "permissions": [
+    "camera",
+    "photos",
+    "microphone",
+    "speech_recognition"
+  ],
+  "palette": {
+    "primary": "#0F766E",
+    "secondary": "#F0FDFA",
+    "accent": "#C2410C"
+  },
+  "ui_species": "field-card_stack + oversized_field_mark_chips + silhouette_compare_bar",
+  "ai": {
+    "provider": "DeepSeek",
+    "outbound_default": "disabled_until_key_or_authorized_config",
+    "send_fields": [
+      "bird_still",
+      "user_question",
+      "confirmed_species_marks",
+      "lookalike_pair_ids",
+      "optional_voice_transcript"
+    ]
+  },
+  "gaps": {
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "4e2aa4de95c0ff385ef8bf56cdea333ae973e9feb2a61e10c8898348683ad72b"
+    }
+  ],
+  "goal_sha256": "454c522780b1b02fc5ba0a8180739dfb72e3d7a8b30544d382d02ba63155bb82",
+  "frozen_at": "2026-10-15T14:02:31Z"
+}

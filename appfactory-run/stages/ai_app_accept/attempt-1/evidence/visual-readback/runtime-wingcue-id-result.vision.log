@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-id-result.receipt.json",
+  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-id-result.receipt.jsonl",
+  "model": "auto"
+}
+
+---STDERR---

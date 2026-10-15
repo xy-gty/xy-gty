@@ -1,0 +1,17 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job.
+
+Always include this composition line verbatim:
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Do not letterbox, overlay, or recompose after the fact. Do not draw UI with PIL.
+
+Then describe this exact page/state:
+
+Lookalike coach chat. Upper third retains mini field-card and chips for Yellow Warbler. Lower thread: user bubble 'which warbler has the white wing bars' and coach bubble explaining contrast vs lookalike. Bottom composer with text field and speech button. Teal/mint/terracotta palette, no table-zone chrome.
+
+App: WingCue — AI birding field coach.
+Palette: primary teal #0F766E, secondary mint #F0FDFA, accent terracotta #C2410C.
+UI species: stacked species field-cards with depth, oversized field-mark chips, silhouette comparison bar.
+NOT ClosetCue mosaic, NOT FrameCue clapper/safe-frame, NOT ScoutCue sky-arc, NOT RuleCue table zone, NOT StopCue film sprocket, NOT all-black dark UI.
+iPhone portrait SwiftUI, large legible English UI text, status bar visible.

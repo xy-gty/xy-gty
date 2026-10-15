@@ -1,0 +1,12 @@
+{
+  "schema": "appfactory.codex_lost_session.v1",
+  "task": {
+    "dispatch_id": "81116dfe-7fcc-47b6-a0d5-34f494a26bef",
+    "execution_seq": 1,
+    "agent_id": "cursor-cli-delivery-81116dfe7fcc",
+    "agent_name": "/root/pkg_81116dfe7fcc47b6a0d534f494a26bef",
+    "execution_status": "running"
+  },
+  "reason": "codex_native_session_unrecoverable",
+  "quarantined_at": "2026-10-15T16:11:45Z"
+}

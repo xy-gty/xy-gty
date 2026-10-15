@@ -1,0 +1,8 @@
+Dispatch `a3d63b86-182d-4aff-8850-f3c19ff78dfa` finished **ready**.
+
+- Launch hash verified (`2cf984ee…`)
+- Workspace: WingCueDomain entities/nav/stores/interfaces + `Vendor/AppRuntimeCore`
+- `preparation_cache ensure`: cache hit (baseline not recompiled); domain compile OK in `domain-build-scratch/`
+- `preparation finish --status ready` succeeded; private receipt written
+
+Controller can observe stop and seal.

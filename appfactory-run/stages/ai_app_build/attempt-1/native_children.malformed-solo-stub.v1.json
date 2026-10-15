@@ -1,0 +1,10 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "run_id": "kf-20261015T135733Z-fecade9e",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "cfd201bb-873b-4138-8faa-97461baa1c40",
+  "child_slots": 0,
+  "children": [],
+  "note": "solo Builder; capacity reserved 1 including self"
+}

@@ -1,0 +1,2 @@
+First line of your answer must be exactly one word: pass or fail or uncertain (nothing else on that line). Then explain.
+Criterion: Lookalike chat shows coach thread under retained chips/cards context with text and speech affordance.

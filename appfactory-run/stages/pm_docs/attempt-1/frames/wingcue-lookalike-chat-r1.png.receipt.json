@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-cddca1d21645",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 780685,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/frames/wingcue-lookalike-chat-r1.png",
+  "output_sha256": "c210dbfe468251d605cf92becafed7f19cfacd2ac024c3286519288ed0bef3c6",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/frames/prompts/wingcue-lookalike-chat-r1.txt",
+  "prompt_sha256": "e5a774f6e63991331ba8182b509d9f8968a80ca5302684653d385ee86e4893ea",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "8f99a573c2c2b28d218edc7215c5a947d6229d516d5adec9aa20204cb08e3837",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T14:12:32Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

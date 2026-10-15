@@ -1,0 +1,90 @@
+[
+  {
+    "frame_id": "wingcue-home-empty",
+    "shot": "rt-home-empty.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-home-empty.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-home-empty.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"e8fa866673cccd77731ced8f7e896b98f2cdbb8d79183e8f6544089bf044b8b4\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 1\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "I'll read the image and check it only against the listed empty-home criteria.**fail**\n\n**\u53ef\u89c1\u4f9d\u636e\uff08\u7b26\u5408\u6b63\u9879\uff09**\n- \u6574\u5c4f\u6d45\u8584\u8377\u7eff\u753b\u5e03\uff08mint canvas\uff09\n- \u4e2d\u90e8\u53e0\u653e\u7a7a\u5361\u7247\u63d0\u793a\uff08stacked empty field-card hint\uff0c\u9876\u5361\u6709 WingCue\uff09\n- \u5e76\u6392 **Shoot**\uff08\u8d64\u9676\u8272\uff09"
+  },
+  {
+    "frame_id": "wingcue-capture-camera",
+    "shot": "rt-capture-camera.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-capture-camera.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-capture-camera.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"f76282dcb120fde77412a927ec8dce82a945b48c4e3f47cca3561decf3e4d4db\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 2\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "I'll open that screenshot and judge it only against the camera-capture UI standard you listed.**fail**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u524d\u666f\u662f iOS \u7167\u7247\u9009\u62e9\u5668\uff08\u300c\u7167\u7247\u300d/\u300c\u7cbe\u9009\u96c6\u300d\u3001\u79c1\u5bc6\u8bbf\u95ee\u7167\u7247\u8bf4\u660e\u3001\u7f29\u7565\u56fe\u7f51\u683c\uff09\uff0c\u4e0d\u662f\u5b9e\u65f6\u76f8\u673a\u53d6\u666f/\u62cd\u6444\u754c\u9762\u3002\n- \u672a\u89c1\u5feb\u95e8\u63a7\u4ef6\uff1b\u5e95\u90e8\u662f\u83dc\u5355\u4e0e\u641c\u7d22\u7c7b\u6309\u94ae\u3002\n- \u672a\u89c1\u9e1f\u4f53/\u7fbd\u6bdb\u53d6"
+  },
+  {
+    "frame_id": "wingcue-id-result",
+    "shot": "rt-id-result.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-id-result.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-id-result.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"8f4e87ac6fe9819534b2eb6c5a87ed6a943d58ecc8656fbb7be1ef70dd37150b\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 3\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "I'll read that single screenshot and judge only what's visible against the stated criterion.fail\n\nVisible evidence: the screen title is \u201cID result\u201d, with a banner \u201cTrip still imported.\u201d and a single l"
+  },
+  {
+    "frame_id": "wingcue-lookalike-chat",
+    "shot": "rt-lookalike-chat.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-lookalike-chat.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-lookalike-chat.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"4d2cfeac8c554e550032cbe417bbda84b5aa9dc58a85fafa91358ca7aab8c276\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 4\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "I'll read that screenshot and score it only against the lookalike-chat standard you listed.**fail**\n\n**\u53ef\u89c1\u4f9d\u636e**\n- \u6709\u4fdd\u7559\u7684 chips/cards \u4e0a\u4e0b\u6587\uff1a\u6807\u9898\u4e0b\u6709 chip\u300cTrip still imported.\u300d\uff0c\u5176\u4e0b\u6709\u4e00\u5757\u5e26\u5706\u89d2\u8fb9\u6846\u7684\u68d5\u8272\u5927\u5361\u7247\u3002\n- \u5361\u7247\u4e0b\u65b9\u4e3a\u7a7a\uff0c**\u770b\u4e0d\u5230** "
+  },
+  {
+    "frame_id": "wingcue-overlay-annotate",
+    "shot": "rt-overlay-annotate.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-overlay-annotate.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-overlay-annotate.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"1cc74e2f9c7e3b473d42043c2cfee09beb914c92860f204507cc93b271d0ca5d\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 5\n  }\n}",
+    "register_err": "",
+    "conclusion": "I'll inspect that single screenshot with the image Read tool and judge only what's visible against the overlay-label standard.**fail**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u753b\u9762\u662f WingCue \u4e3b\u754c\u9762\uff1a\u6807\u9898\u3001\u8bbe\u7f6e\u9f7f\u8f6e\u3001\u300cTrip still imported.\u300d\u300cAI not configured \u2014 local capture still works.\u300d\u3001\u5e95\u90e8 **Shoot** / **Import**\uff0c\u4ee5\u53ca\u300cAsk coach\u300d\u8f93\u5165\u533a\u3002\n- \u672a\u89c1\u9e1f\u7c7b\u7167\u7247\uff0c\u4e5f\u672a\u89c1\u4efb\u4f55 callout \u6807\u6ce8\u6216\u6307\u5411\u90e8\u4f4d\u7684\u6807\u7b7e\u3002\n- \u672a\u89c1\u540d\u4e3a Overlay studio \u7684\u754c\u9762\u6216\u6807\u6ce8\u5de5\u5177\u3002\n\n\u65e0\u6cd5\u5224\u65ad\uff08\u4ec5\u51ed\u672c\u56fe\uff09\uff1a\n- \u662f\u5426\u5b58\u5728 Overlay studio \u529f\u80fd\u3001\u80fd\u5426\u6253\u5f00\u3001\u4ee5\u53ca\u6807\u6ce8\u662f\u5426\u4e0e field marks \u7ed1\u5b9a\u2014\u2014\u672c\u56fe\u672a\u5c55\u793a\u76f8\u5173\u5185\u5bb9\u3002",
+    "result_snip": "I'll inspect that single screenshot with the image Read tool and judge only what's visible against the overlay-label standard.**fail**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u753b\u9762\u662f WingCue \u4e3b\u754c\u9762\uff1a\u6807\u9898\u3001\u8bbe\u7f6e\u9f7f\u8f6e\u3001\u300cTrip still imported.\u300d\u300cAI not co"
+  },
+  {
+    "frame_id": "wingcue-voice-note",
+    "shot": "rt-voice-note.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-voice-note.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-voice-note.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"419db0d1590a8e25c658c31b900aa72b6904931d7d2e53b1d09df19c4c9e7cf6\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 6\n  }\n}",
+    "register_err": "",
+    "conclusion": "pass",
+    "result_snip": "**pass**\n\n\u53ef\u89c1\u4f9d\u636e\uff1a\n- \u5e95\u90e8 sheet \u6807\u9898\u4e3a **\u300cVoice note\u300d**\n- \u6587\u6848\u542b **\u300cHands-free field note\u300d** \u4e0e **\u300ctap to record a short mic note\u300d**\n- \u4e2d\u592e\u6709\u9ea6\u514b\u98ce\u5706\u5f62\u63a7\u4ef6\uff0c\u5e95\u90e8\u6709 **\u300cStop & save\u300d**\uff08\u53e6\u6709 **\u300cClose\u300d**\uff09\n\n\u65e0\u6cd5\u5224\u65ad\uff1a\u4ec5\u51ed\u672c\u56fe\u4e0d\u80fd\u786e\u8ba4\u5f55\u97f3\u662f\u5426\u771f\u6b63\u5f00\u59cb/\u505c\u6b62\u6216\u5199\u5165"
+  },
+  {
+    "frame_id": "wingcue-consent-ai",
+    "shot": "rt-consent-ai.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-consent-ai.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-consent-ai.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"b86fc9001f9f967dc74456c67c39fef1f3dfd958d384110d9fe3fce1ed470f20\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 7\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "**fail**\n\n**\u53ef\u89c1\u4f9d\u636e**\n- \u753b\u9762\u662f **Settings** \u5217\u8868\uff08Camera / Photos / Microphone / Speech\uff09\u4ee5\u53ca **Legal (local)**\uff08Privacy / Terms / Support\uff09\uff0c\u4e0d\u662f AI \u53d1\u9001\u524d\u7684 consent sheet\u3002\n- \u5168\u6587\u672a\u89c1 **DeepSeek**\u3002\n- \u672a\u89c1\u4efb\u4f55\u5f85\u53d1\u9001\u5b57\u6bb5\u5217\u8868\uff08send fields\uff09"
+  },
+  {
+    "frame_id": "wingcue-settings-privacy",
+    "shot": "rt-settings-privacy.png",
+    "rc_vision": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"receipt_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-settings-privacy.receipt.json\",\n  \"raw_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime-wingcue-settings-privacy.receipt.jsonl\",\n  \"model\": \"auto\"\n}",
+    "register_rc": 0,
+    "register_out": "{\n  \"index_ref\": \"/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json\",\n  \"index_sha256\": \"a4269c3b010924a23057640987e75b439a91228a7e34519e676677ef568b6bc2\",\n  \"counts\": {\n    \"reused_design\": 8,\n    \"new_design_read\": 0,\n    \"new_runtime_read\": 8\n  }\n}",
+    "register_err": "",
+    "conclusion": "fail",
+    "result_snip": "**fail**\n\n**\u53ef\u89c1\u4f9d\u636e**\n- \u6807\u9898\u4e3a Settings\u3002\n- \u6709 AI \u76f8\u5173\u72b6\u6001\u6587\u6848\uff1a`Outbound AI blocked until you allow sharing`\uff0c\u4ee5\u53ca `AI not configured \u2014 local capture still works.`\n- \u6709 `Review AI consent` \u5165\u53e3\uff08\u975e \u201cRevoke AI\u201d \u5b57\u6837\uff09\u3002\n- \u53e6\u6709 Fi"
+  }
+]

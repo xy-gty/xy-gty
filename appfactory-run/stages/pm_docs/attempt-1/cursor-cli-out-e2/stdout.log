@@ -1,0 +1,7 @@
+Dispatch **92a6e1ef** finished **ready**.
+
+- Launch file hash verified (`e33ca75d…`)
+- 8/8 vision receipts already `conclusion: pass` — vision not re-run
+- Overlay freeze blocker was a mismatched `raw_sha256` (incomplete jsonl in place); restored the matching stream, then froze
+- `visual_manifest.v1.json` frozen: `d23b6a370f07f610be3de4533409e5a8c0074ab6dfd177b57f75a14c6d05d860`
+- `MAP.md` written; finish receipt `ok: true`, status `ready`

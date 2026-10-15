@@ -1,0 +1,58 @@
+Optional(Attributes: Application, 0x113d90c80, pid: 41991, label: 'WingCue'
+Element subtree:
+ →Application, 0x113d90c80, pid: 41991, label: 'WingCue'
+    Window (Main), 0x113d90dc0, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x113d908c0, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x113d90f00, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x113d93480, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x113d93980, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x113d92580, {{0.0, 135.5}, {402.0, 603.0}}
+                NavigationBar, 0x113d917c0, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'ID result'
+                  Button, 0x113d90780, {{20.1, 213.4}, {55.3, 55.3}}, identifier: 'BackButton', label: 'Back'
+                  StaticText, 0x113d93700, {{159.1, 228.0}, {83.8, 26.0}}, label: 'ID result'
+                Other, 0x113d93840, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x113d92f80, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x113d935c0, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x113d93ac0, {{0.0, 135.5}, {402.0, 603.0}}
+                        ScrollView, 0x113d91e00, {{0.0, 135.5}, {402.0, 603.0}}, identifier: 'IDResultView'
+                          Other, 0x113d926c0, {{0.0, 135.5}, {402.0, 603.0}}
+                            Other, 0x113d92440, {{0.0, 135.5}, {402.0, 214.6}}
+                          Other, 0x113d92e40, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x113d92800, {{0.0, 281.2}, {402.0, 1180.5}}
+                            StaticText, 0x113d93340, {{40.2, 321.4}, {160.4, 22.6}}, label: 'Trip still imported.'
+                            Image, 0x113c68000, {{25.1, 379.2}, {351.8, 351.8}}
+                            ScrollView, 0x113c68500, {{25.1, 984.7}, {351.8, 63.2}}, identifier: 'OversizedFieldMarkChips'
+                              Other, 0x113c68140, {{25.1, 984.7}, {277.2, 63.2}}
+                                StaticText, 0x113c68280, {{50.2, 999.8}, {227.0, 33.1}}, label: 'Waiting for marks'
+                            Image, 0x113c683c0, {{90.5, 1067.6}, {43.1, 48.2}}, identifier: 'SilhouetteCompareBar', label: 'bird.fill'
+                            Image, 0x113c68780, {{268.4, 1067.6}, {43.1, 48.2}}, identifier: 'SilhouetteCompareBar', label: 'bird.fill'
+                            StaticText, 0x113c68640, {{105.8, 1123.5}, {12.6, 16.8}}, identifier: 'SilhouetteCompareBar', label: '—'
+                            StaticText, 0x114f53c00, {{283.6, 1123.5}, {12.6, 16.8}}, identifier: 'SilhouetteCompareBar', label: '—'
+                            StaticText, 0x114f52580, {{107.3, 1145.3}, {9.6, 16.8}}, identifier: 'SilhouetteCompareBar', label: 'A'
+                            StaticText, 0x114f52bc0, {{285.3, 1145.3}, {9.2, 16.8}}, identifier: 'SilhouetteCompareBar', label: 'B'
+                            Button, 0x114f53ac0, {{25.1, 1178.6}, {101.8, 43.1}}, label: 'Identify'
+                            Button, 0x114f52a80, {{139.4, 1178.6}, {102.2, 43.1}}, label: 'Save ID'
+                            Button, 0x114f53e80, {{254.2, 1178.6}, {104.7, 43.1}}, label: 'Dismiss'
+                            StaticText, 0x114f52940, {{25.1, 1241.8}, {220.7, 18.0}}, label: 'Edit marks (comma-separated)'
+                            TextField, 0x114f51e00, {{25.1, 1269.9}, {351.8, 42.7}}, placeholderValue: 'white wing bars, eye ring'
+                            Button, 0x114f52440, {{25.1, 1322.7}, {100.5, 25.5}}, label: 'Edit marks'
+                            Button, 0x114f53480, {{25.1, 1375.8}, {93.8, 53.2}}, label: 'Clarify lookalikes'
+                            Button, 0x114f53700, {{134.0, 1389.7}, {87.1, 25.5}}, label: 'Annotate'
+                            Button, 0x114f52d00, {{248.7, 1375.8}, {88.8, 53.2}}, label: 'Speak tip'
+                              Image, 0x114f52080, {{252.1, 1379.6}, {23.5, 18.4}}, identifier: 'speaker.wave.2.fill', label: 'Volume High'
+                              StaticText, 0x114f535c0, {{248.7, 1375.8}, {88.8, 53.2}}, label: 'Speak tip'
+                            Other, 0x114f53840, {{0.0, 0.0}, {0.0, 0.0}}, identifier: 'FieldCardStack'
+                          Other, 0x114f52f80, {{360.5, 281.2}, {37.7, 457.3}}, label: 'Vertical scroll bar, 3 pages', value: 0%
+                            Other, 0x114f53d40, {{394.5, 285.0}, {3.8, 198.1}}
+                          Other, 0x114f52e40, {{360.5, 281.2}, {37.7, 457.3}}, label: 'Vertical scroll bar, 3 pages', value: 0%
+                            Other, 0x114f53200, {{394.5, 285.0}, {3.8, 198.1}}
+                Other, 0x114f56440, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x114f56d00, {{0.0, 135.5}, {402.0, 603.0}}
+Path to element:
+ →Application, 0x113d90c80, pid: 41991, label: 'WingCue'
+Query chain:
+ →Find: Application 'com.lingguang.wingcue'
+  Output: {
+    Application, 0x114f570c0, pid: 41991, label: 'WingCue'
+  }
+)

@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "cfd201bb-873b-4138-8faa-97461baa1c40",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-builder",
+    "model": "auto",
+    "description": "pkg_cfd201bb873b41388faa97461baa1c40",
+    "prompt": "Dispatch cfd201bb-873b-4138-8faa-97461baa1c40. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/ai_app_build/attempt-1/codex.launch.md SHA-256 d75ac1231deab610fbd774df920400c054a5bde45e3f13a10730e0587bde0c90. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-build-cfd201bb873b",
+  "agent_name": "/root/pkg_cfd201bb873b41388faa97461baa1c40",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T15:26:22Z",
+  "pid": 32456,
+  "note": "WingCue build local CLI"
+}

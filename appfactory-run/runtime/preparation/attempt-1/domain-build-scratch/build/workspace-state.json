@@ -1,0 +1,27 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "appruntimecore",
+          "kind" : "fileSystem",
+          "location" : "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore",
+          "name" : "AppRuntimeCore"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore"
+        },
+        "subpath" : "appruntimecore"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

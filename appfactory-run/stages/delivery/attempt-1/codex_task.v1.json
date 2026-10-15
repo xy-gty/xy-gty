@@ -1,0 +1,188 @@
+{
+  "schema": "appfactory.codex-task.v1",
+  "run_id": "kf-20261015T135733Z-fecade9e",
+  "stage": "delivery",
+  "attempt": 1,
+  "dispatch_id": "81116dfe-7fcc-47b6-a0d5-34f494a26bef",
+  "generation": 1,
+  "runtime": "cursor_task",
+  "controller_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+  "ownership_epoch": 1,
+  "execution_seq": 2,
+  "agent_id": "cursor-cli-delivery-81116dfe7fcc",
+  "agent_name": "/root/pkg_81116dfe7fcc47b6a0d534f494a26bef_e2",
+  "thread_id": null,
+  "turn_id": null,
+  "expected_state_version": 8,
+  "repo_root": "/Users/a2026/work/factory-prod-1",
+  "role_ref": "/Users/a2026/work/factory-prod-1/agents/DeliveryReporterAgent/prompt.core.md",
+  "role_sha256": "36afdc072b0dd34535c97d8ba23562eedabe24a5753f9e8c7202ce5b9d757e1b",
+  "dispatch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/delivery/attempt-1/codex_dispatch.md",
+  "dispatch_sha256": "3876d89e924fea16884e278ebcad11dc8af2e3b9756d9f0a5ad41cd14db91e8f",
+  "expected_map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/delivery/attempt-1/MAP.md",
+  "execution_status": "completed",
+  "required_slots": 1,
+  "requested_model": "auto",
+  "observed_model": null,
+  "usage": null,
+  "usage_degraded": "package_usage_degraded:codex_native_unavailable",
+  "finish_receipt": {
+    "dispatch_id": "81116dfe-7fcc-47b6-a0d5-34f494a26bef",
+    "status": "ready",
+    "map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/delivery/attempt-1/MAP.md",
+    "map_sha256": "2befc9622c8dd01a43a14976f95fb1ce56f2e9c779e39642faf83e3e150c97a3",
+    "reported_at": "2026-10-15T16:15:15Z",
+    "message_id": "msg-f87a5d1b2827443d8af850930b8629d4"
+  },
+  "created_at": "2026-10-15T16:09:56Z",
+  "production_policy": {
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "runtime": "cursor",
+    "model": "auto",
+    "stage_efforts": {
+      "pm_docs": "auto",
+      "ai_app_build": "auto",
+      "ai_app_accept": "auto",
+      "delivery": "auto"
+    },
+    "dispatch_effort": "auto",
+    "vision_effort": "auto",
+    "acceptance_runtime": "cursor_cloud",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto"
+  },
+  "ultra_lite_execution": {
+    "schema": "appfactory.ai_ultra_lite_execution.v1",
+    "revision": "p1",
+    "timing_schema": "appfactory.ultra_lite_timing.v1",
+    "child_slots": 0,
+    "candidate_publish": "local_simulator_app",
+    "foundation_version": "1.0.0",
+    "design_readback_reuse": "exact_key",
+    "private_engineering_preparation": true
+  },
+  "ultra_lite_execution_sha256": "67c372b6e753b33bf4bd02651bd1dbababe5f66fd9f25fef73b9390a9be5c761",
+  "pm_visual_input": {
+    "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+    "visual_manifest_sha256": "d23b6a370f07f610be3de4533409e5a8c0074ab6dfd177b57f75a14c6d05d860",
+    "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1"
+  },
+  "product_dir": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/product",
+  "agent_type": "delivery-reporter-agent",
+  "role_binding_mode": "dispatch_prompt",
+  "requested_reasoning_effort": "auto",
+  "source_inputs": [
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/SKILL.md",
+      "sha256": "29b7b15926dd9eda8d81b7e383cbb10f3df947c1e945d566a221be5510a99d8a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_timing.py",
+      "sha256": "436618d05b65cf3e4a44881f47dcf249543b7433d7d864949339101701b4114a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_foundation.py",
+      "sha256": "d7b44b9d643e417e0eaa9588b8303ed0f6f61291d26ff25dd73d74b0c0da3da2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_visual_readback.py",
+      "sha256": "8f1f39f0a185e6cf223d5a4365456ac94cfe9ffe7d46b8e2289f19da95a3762e"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_technical.py",
+      "sha256": "0ef72dc8e7663a36d17ed4f4adbf37adfae421c71bce323011195cde45f6c9dd"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/codex_package/preparation.py",
+      "sha256": "b0284fd1098562974b82bf6e0f8c1784eefa69c710e53519181a663e958241fa"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p1-execution.md",
+      "sha256": "8eafbe8424fd39b7057c79765b1828ca7b96fce60fe9c043a97a198e593ff1e6"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical_contract.v1.json",
+      "sha256": "d0f1491a21ac0e032bbaeac9f646a5ae92bd9ae082cfb064fe62fa8a21423c17"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+      "sha256": "f9eb8887b913b3716eb7333b1f8507e8092cf29f51fe65d738cc6d89c4708650"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical/contract.md",
+      "sha256": "4e2aa4de95c0ff385ef8bf56cdea333ae973e9feb2a61e10c8898348683ad72b"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/cursor-execution.md",
+      "sha256": "6e9c1e46d9f94e08712ad285de54289db9bd9d577273083d9bd9cbdebfe7c529"
+    }
+  ],
+  "technical_binding": {
+    "schema": "appfactory.ultra_lite_technical.v1",
+    "run_id": "kf-20261015T135733Z-fecade9e",
+    "producer_pm_attempt": 1,
+    "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical_contract.v1.json",
+    "technical_contract_sha256": "d0f1491a21ac0e032bbaeac9f646a5ae92bd9ae082cfb064fe62fa8a21423c17",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "sha256": "d0f1491a21ac0e032bbaeac9f646a5ae92bd9ae082cfb064fe62fa8a21423c17"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+        "sha256": "f9eb8887b913b3716eb7333b1f8507e8092cf29f51fe65d738cc6d89c4708650"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/pm_docs/attempt-1/technical/contract.md",
+        "sha256": "4e2aa4de95c0ff385ef8bf56cdea333ae973e9feb2a61e10c8898348683ad72b"
+      }
+    ]
+  },
+  "launch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/delivery/attempt-1/codex.launch.e2.md",
+  "launch_sha256": "fe2faae275c18a6b97c27f68d2003f5b41d94c57b07bb391252f529fa1333007",
+  "spawn_kwargs": {
+    "subagent_type": "delivery-reporter-agent",
+    "model": "auto",
+    "description": "pkg_81116dfe7fcc47b6a0d534f494a26bef_e2",
+    "prompt": "Dispatch 81116dfe-7fcc-47b6-a0d5-34f494a26bef. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/stages/delivery/attempt-1/codex.launch.e2.md SHA-256 fe2faae275c18a6b97c27f68d2003f5b41d94c57b07bb391252f529fa1333007. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "spawn_kwargs_sha256": "0e0514ec150cddd32b625cf733eda5ad7e148e0f07d47eae01b2f84cf91a7dab",
+  "bound_at": "2026-10-15T16:12:25Z",
+  "native_task_name": "pkg_81116dfe7fcc47b6a0d534f494a26bef_e2",
+  "launch_intent_at": "2026-10-15T16:12:10Z",
+  "spawn_receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T135733Z-fecade9e/runtime/native-spawn/cursor-spawn-receipt-e2-8d3b3c5b49c8.json",
+  "spawn_receipt_sha256": "8d3b3c5b49c86b2144c94576a5874b934460894fba69db73501df876cd062a49",
+  "runtime_observed_at": "2026-10-15T16:16:38Z",
+  "business_submission": "submitting"
+}

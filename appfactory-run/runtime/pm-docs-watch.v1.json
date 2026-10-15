@@ -1,0 +1,19 @@
+{
+  "attempt": 1,
+  "code": null,
+  "consumes_budget": false,
+  "detail": "",
+  "execution_status": "running",
+  "idle_limit": 1800,
+  "idle_seconds": 0.088,
+  "last_activity_at": "2026-10-15T15:16:06+00:00",
+  "observed_at": "2026-10-15T15:16:06+00:00",
+  "run_id": "kf-20261015T135733Z-fecade9e",
+  "same_attempt": true,
+  "schema": "appfactory.ultra_lite_pm_docs_watch.v1",
+  "started_at": "2026-10-15T13:57:45+00:00",
+  "stuck": false,
+  "trigger": null,
+  "wall_limit": 14400,
+  "wall_seconds": 4701.105
+}

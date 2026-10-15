@@ -1,0 +1,2 @@
+First line of your answer must be exactly one word: pass or fail or uncertain (nothing else on that line). Then explain.
+Criterion: Overlay studio places callout labels on the bird photo tied to field marks.

@@ -1,0 +1,19 @@
+{
+  "schema": "appfactory.codex_infra_retry.v1",
+  "retries": [
+    {
+      "dispatch_id": "92a6e1ef-89a5-4b72-a820-de2b16858028",
+      "infra_class": "native_session_unrecoverable",
+      "action": "replace_lost_worker",
+      "consumes_budget": false,
+      "recorded_at": "2026-10-15T15:18:51Z"
+    },
+    {
+      "dispatch_id": "81116dfe-7fcc-47b6-a0d5-34f494a26bef",
+      "infra_class": "native_session_unrecoverable",
+      "action": "replace_lost_worker",
+      "consumes_budget": false,
+      "recorded_at": "2026-10-15T16:11:45Z"
+    }
+  ]
+}
