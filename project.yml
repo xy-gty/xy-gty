@@ -1,0 +1,83 @@
+name: LuxCue
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  LuxCueDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  LuxCue:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: LuxCueDomain
+        product: LuxCueDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue
+        PRODUCT_NAME: LuxCue
+        INFOPLIST_KEY_CFBundleDisplayName: LuxCue
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture spot-meter and gray-card readings so LuxCue can suggest exposure coaching
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import stills to complete spot-meter sessions in LuxCue
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free meter notes while holding the camera
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken zone and exposure questions into coach chat text
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+  LuxCueDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: LuxCueDomain
+        product: LuxCueDomain
+      - package: AppRuntimeCore
+      - target: LuxCue
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue.tests
+  LuxCueUISmokeTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: LuxCue
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue.uitests
+        TEST_TARGET_NAME: LuxCue
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  LuxCue:
+    build:
+      targets:
+        LuxCue: all
+        LuxCueDomainTests: [test]
+        LuxCueUISmokeTests: [test]
+    test:
+      targets:
+        - LuxCueDomainTests
+        - LuxCueUISmokeTests
+    run:
+      config: Debug
