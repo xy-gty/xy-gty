@@ -1,0 +1,92 @@
+Optional(Attributes: Application, 0x10328ae40, pid: 19271, label: 'StopCue'
+Element subtree:
+ →Application, 0x10328ae40, pid: 19271, label: 'StopCue'
+    Window (Main), 0x10328af80, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x10328b0c0, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x10328b200, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x10328b340, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x10328b480, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x10328b5c0, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x10328b700, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x10328b840, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x10328b980, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x10328bac0, {{0.0, 135.5}, {402.0, 603.0}}
+                        Other, 0x10328bc00, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x10328bd40, {{0.0, 135.5}, {402.0, 603.0}}
+                            NavigationBar, 0x10328be80, {{0.0, 213.4}, {402.0, 133.2}}, identifier: 'StopCue'
+                              Other, 0x112848000, {{331.7, 218.4}, {45.2, 45.2}}, identifier: 'plus', label: 'New project'
+                                Other, 0x112848140, {{331.7, 218.4}, {45.2, 45.2}}
+                                  Button, 0x112848280, {{337.1, 218.4}, {34.3, 45.2}}, identifier: 'plus', label: 'New project'
+                              StaticText, 0x1128483c0, {{20.1, 285.8}, {173.8, 51.1}}, label: 'StopCue'
+                            Other, 0x112848500, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x112848640, {{0.0, 135.5}, {402.0, 603.0}}
+                                Other, 0x112848780, {{0.0, 135.5}, {402.0, 603.0}}
+                                  Other, 0x1128488c0, {{0.0, 135.5}, {402.0, 603.0}}
+                                    ScrollView, 0x112848a00, {{20.1, 135.5}, {361.8, 300.7}}, identifier: 'film-sprocket-timeline'
+                                      Other, 0x112848b40, {{20.1, 135.5}, {427.1, 300.7}}
+                                        Button, 0x112848c80, {{33.6, 332.4}, {91.1, 93.7}}, label: 'Frame F1'
+                                          Image, 0x112848dc0, {{66.6, 358.3}, {24.7, 19.3}}, identifier: 'film', label: 'Movie'
+                                          StaticText, 0x112848f00, {{71.4, 409.4}, {15.5, 16.8}}, label: 'F1'
+                                        Button, 0x112849040, {{137.2, 333.1}, {89.8, 93.1}}, label: 'Frame F2'
+                                          Image, 0x112849180, {{170.0, 358.3}, {24.7, 19.3}}, identifier: 'film', label: 'Movie'
+                                          StaticText, 0x1128492c0, {{173.8, 409.4}, {16.8, 16.8}}, label: 'F2'
+                                        Button, 0x112849400, {{240.3, 333.1}, {89.8, 93.1}}, label: 'Frame F3'
+                                          Image, 0x112849540, {{273.0, 358.3}, {24.7, 19.3}}, identifier: 'film', label: 'Movie'
+                                          StaticText, 0x112849680, {{276.6, 409.4}, {17.2, 16.8}}, label: 'F3'
+                                        Button, 0x1128497c0, {{343.3, 333.1}, {89.8, 93.1}}, label: 'Frame F4'
+                                          Image, 0x112849900, {{376.0, 358.3}, {24.7, 19.3}}, identifier: 'film', label: 'Movie'
+                                          StaticText, 0x112849a40, {{379.6, 409.4}, {17.2, 16.8}}, label: 'F4'
+                                      Other, 0x112849b80, {{20.1, 135.5}, {361.8, 300.7}}
+                                        Other, 0x112849cc0, {{20.1, 135.5}, {361.8, 214.6}}
+                                      Other, 0x112849e00, {{20.1, 135.5}, {361.8, 300.7}}
+                                        Other, 0x112849f40, {{20.1, 135.5}, {361.8, 214.6}}
+                                          Image, 0x11284a080, {{-104.0, -166.0}, {528.0, 332.0}}, identifier: 'AdditionalDimmingOverlay'
+                                          Other, 0x11284a1c0, {{20.1, 135.5}, {361.8, 214.6}}
+                                            Other, 0x11284a300, {{20.1, 135.5}, {361.8, 214.6}}
+                                          Other, 0x11284a440, {{20.1, 135.5}, {361.8, 214.6}}
+                                            Other, 0x11284a580, {{20.1, 135.5}, {361.8, 214.6}}
+                                            Other, 0x11284a6c0, {{20.1, 135.5}, {361.8, 214.6}}
+                                    StaticText, 0x11284a800, {{103.6, 480.5}, {194.7, 33.1}}, label: 'No projects yet'
+                                    StaticText, 0x11284a940, {{48.2, 538.7}, {305.7, 22.6}}, label: 'Start a stop-motion coach project with a film-sprocket timeline and onion-skin overlays.'
+                                    Button, 0x11284aa80, {{73.7, 586.5}, {254.6, 73.3}}, label: '+ New project'
+                                      Image, 0x11284abc0, {{115.6, 612.5}, {21.8, 21.8}}, identifier: 'plus.circle.fill', label: 'Add'
+                                      StaticText, 0x11284ad00, {{73.7, 586.5}, {254.6, 73.3}}, label: '+ New project'
+                            Other, 0x11284ae40, {{0.0, 135.5}, {402.0, 603.0}}
+                              Other, 0x11284af80, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x11284b0c0, {{0.0, 617.9}, {402.0, 120.6}}
+                  Other, 0x11284b200, {{0.0, 135.5}, {402.0, 603.0}}
+                    TabBar, 0x11284b340, {{0.0, 617.9}, {402.0, 120.6}}, label: 'Tab Bar'
+                      Other, 0x11284b480, {{28.9, 617.9}, {344.2, 77.9}}
+                        Other, 0x11284b5c0, {{28.9, 617.9}, {118.1, 67.8}}
+                        Other, 0x11284b700, {{28.9, 617.9}, {344.2, 77.9}}
+                          Button, 0x11284b840, {{33.9, 622.9}, {118.1, 67.8}}, label: 'Projects', Selected
+                            Image, 0x11284b980, {{74.1, 629.2}, {37.7, 39.4}}, identifier: 'film.stack.fill', label: 'film.stack.fill'
+                          Button, 0x11284bac0, {{142.0, 622.9}, {118.1, 67.8}}, label: 'Coach'
+                            Image, 0x11284bc00, {{177.1, 629.2}, {48.2, 39.4}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'conversation'
+                          Button, 0x11284bd40, {{250.0, 622.9}, {118.1, 67.8}}, label: 'Settings'
+                            Image, 0x11284be80, {{291.4, 630.5}, {35.2, 35.2}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x112850000, {{33.9, 622.9}, {118.1, 67.8}}
+                          Other, 0x112850140, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x112850280, {{33.9, 622.9}, {118.1, 67.8}}
+                            Other, 0x1128503c0, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x112850500, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x112850640, {{33.9, 622.9}, {118.1, 67.8}}
+                                  Other, 0x112850780, {{33.9, 622.9}, {118.1, 67.8}}
+                                Other, 0x1128508c0, {{33.9, 622.9}, {118.1, 67.8}}
+                              Other, 0x112850a00, {{33.9, 622.9}, {118.1, 67.8}}
+                  Other, 0x112850b40, {{0.0, 617.9}, {402.0, 120.6}}
+                    Other, 0x112850c80, {{0.0, 617.9}, {402.0, 120.6}}
+                      Other, 0x112850dc0, {{0.0, 617.9}, {402.0, 120.6}}
+                        Other, 0x112850f00, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x112851040, {{0.0, 617.9}, {402.0, 120.6}}
+                            Other, 0x112851180, {{0.0, 617.9}, {402.0, 104.3}}
+                        Other, 0x1128512c0, {{0.0, 617.9}, {402.0, 120.6}}
+                          Other, 0x112851400, {{0.0, 617.9}, {402.0, 104.3}}
+Path to element:
+ →Application, 0x10328ae40, pid: 19271, label: 'StopCue'
+Query chain:
+ →Find: Application 'com.lingguang.stopcue'
+  Output: {
+    Application, 0x112851540, pid: 19271, label: 'StopCue'
+  }
+)

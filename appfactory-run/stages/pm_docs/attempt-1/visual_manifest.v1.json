@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261015T093242Z-0f4256a0",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "stopcue-home-empty",
+      "page_id": "home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "crit-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-home-empty-r1.txt",
+      "image_ref": "frames/stopcue-home-empty-r1.png",
+      "receipt_ref": "frames/stopcue-home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-home-empty.receipt.jsonl",
+          "sha256": "e99abf013b830975ed4785ce01875ea47f08a6c90d5eae18f983b528a2b90f45"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-home-empty.receipt.json",
+          "sha256": "004fc8841993e1d9f3175433c63e3ca5df9443e91f785f99d7d0cd2f082ce745"
+        }
+      ],
+      "prompt_sha256": "3a585b392aaf48a5f3bf9183f907739bb4e7138888b429ea8ba1ad0adcf72573",
+      "image_sha256": "5f2c3cd10b568f7daa2da066a5ca8e4a1607910af2e3ea2543b8742c5d91510f",
+      "receipt_sha256": "dadee9f9e07032d2d289f35ca24dd2af3e2fe3f543dcffb1d87e3580037dd89d",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-capture-import",
+      "page_id": "capture_import",
+      "state_id": "ready",
+      "criterion_ids": [
+        "crit-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-capture-import-r1.txt",
+      "image_ref": "frames/stopcue-capture-import-r1.png",
+      "receipt_ref": "frames/stopcue-capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-capture-import.receipt.jsonl",
+          "sha256": "dd49ff75f0315b90732aad87ff417a69dfefa862fe19693de5be2fdeb1f29445"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-capture-import.receipt.json",
+          "sha256": "f986a099601c14524914616f2a158b4118f8f59dc76e55de74aadc6f1a8a2d97"
+        }
+      ],
+      "prompt_sha256": "4a42e6936d6178b02ac14602ecf1625785afae64ece7c6a6222cdd86ccff9eac",
+      "image_sha256": "7af0b6b9bb5151b86649dfa13b77ba5764f0adacd856601fe07184e41755df9d",
+      "receipt_sha256": "90019884d8320b46be7075d58791f65a80d7ae1e6412e626f86a00ed870d6084",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-frame-review",
+      "page_id": "frame_review",
+      "state_id": "draft",
+      "criterion_ids": [
+        "crit-frame-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-frame-review-r1.txt",
+      "image_ref": "frames/stopcue-frame-review-r1.png",
+      "receipt_ref": "frames/stopcue-frame-review-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-frame-review.receipt.jsonl",
+          "sha256": "215733be20167c283b58affe23c29ba63fbc002f2297877f38051d345d767441"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-frame-review.receipt.json",
+          "sha256": "00791935835827d1e5fbaaca20c9a535c6942574e50db0612468264f1da4eeda"
+        }
+      ],
+      "prompt_sha256": "1745781355f46f6a2eb22da86b5cd7e40ff81f9e53c373e096937d3aee50e7c1",
+      "image_sha256": "399e904df9dd83df6551908b1ca31ad2944d51e7eb7dff201a137ae9cbc1b626",
+      "receipt_sha256": "604fa08cb6788bd7b022ce8786e1c9583aa30060a0c24c64fad51161c9eed46f",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-stop-coach",
+      "page_id": "stop_coach",
+      "state_id": "timeline_onion",
+      "criterion_ids": [
+        "crit-stop-coach"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-stop-coach-r1.txt",
+      "image_ref": "frames/stopcue-stop-coach-r1.png",
+      "receipt_ref": "frames/stopcue-stop-coach-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-stop-coach.receipt.jsonl",
+          "sha256": "269eba73670059460bb48e70d855ac4fb195a48229f3b7ef6b4fdc89b183fc60"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-stop-coach.receipt.json",
+          "sha256": "49540dcbd3adedb95fac28770ed09aca5e2acd7ef3f5572d16e80613fbbf4ba5"
+        }
+      ],
+      "prompt_sha256": "e802dc6dd18cbcfbfa1ee776328ed29092819b23a639fc37ecef4e4cc3340cea",
+      "image_sha256": "dd185670412cde72725d8a627c5d0305e6dda736d5de6245bcca2f5cdefb07c4",
+      "receipt_sha256": "02b2dfa574d7b49286291a7d46395459e98b4ec978183b7422bff37084c5e7a1",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-coach-chat",
+      "page_id": "coach_chat",
+      "state_id": "thread",
+      "criterion_ids": [
+        "crit-coach-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-coach-chat-r1.txt",
+      "image_ref": "frames/stopcue-coach-chat-r1.png",
+      "receipt_ref": "frames/stopcue-coach-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-coach-chat.receipt.jsonl",
+          "sha256": "79aeaba4ca5561700459c5a8e84d119cb1da00ed5fe48523a45e53941af721b7"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-coach-chat.receipt.json",
+          "sha256": "74abcfb2ffe8103c677d3aa2af59dad2e545909b435c4974b6a21aa1ff0ac771"
+        }
+      ],
+      "prompt_sha256": "cff4126210eeee0972a35815d518a18c58bfba7cb2293a928a11ae6bb7deb587",
+      "image_sha256": "068e550261a9e160b6e5596295e1b94666b9c8e40c471cd315a03b9fea91f1a3",
+      "receipt_sha256": "73a1833eac141bbe5a3895dc8c7b9556d69a6d631eb49000a42925fcc7fda5b4",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-onion-overlay",
+      "page_id": "onion_skin_guide",
+      "state_id": "annotated",
+      "criterion_ids": [
+        "crit-onion-overlay"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-onion-overlay-r1.txt",
+      "image_ref": "frames/stopcue-onion-overlay-r1.png",
+      "receipt_ref": "frames/stopcue-onion-overlay-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-onion-overlay.receipt.jsonl",
+          "sha256": "c0d930f281b94d2837f25a6c2a95be6c49d82a187b9565aeee722617011b8cf0"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-onion-overlay.receipt.json",
+          "sha256": "3664a95403e86107f2599e5af4c794926c5aaeeb510ca0b5fce73b38efaaf7eb"
+        }
+      ],
+      "prompt_sha256": "b87b46da472e06723bf6d202b472fbd5b3e2c1bfa80c0422910517a4e15e7909",
+      "image_sha256": "66c0c9e66035957db313de991b9453a4fc294ea110c3897523558e593a9d497d",
+      "receipt_sha256": "f62f8e67da410d4f44272e22c071278e52af76cb6b846952210e536a172df543",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-tts-countdown",
+      "page_id": "countdown_tts",
+      "state_id": "playing",
+      "criterion_ids": [
+        "crit-tts-countdown"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-tts-countdown-r1.txt",
+      "image_ref": "frames/stopcue-tts-countdown-r1.png",
+      "receipt_ref": "frames/stopcue-tts-countdown-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-tts-countdown.receipt.jsonl",
+          "sha256": "936896104b01eee51dc605799c6fcc68c9df81aa12268c4cf2c79e08748dc069"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-tts-countdown.receipt.json",
+          "sha256": "82e454a3e9f2f3dd2fcdfe2e68c8715227b3a296aea6ebe0d8a19fc6a69815a0"
+        }
+      ],
+      "prompt_sha256": "df30202ad49eea9261fbafe4847630847ebeaa13ba68abac63c5b5fdba5c74ea",
+      "image_sha256": "5011c879db308ac4020c2d598c9b84cc39fe7c204b3589f6bf0811914d3997b2",
+      "receipt_sha256": "56844732d9ab9efbdc838b4f74300824570c3dce20356c68a695f7b70ac17c35",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stopcue-settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "crit-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stopcue-settings-privacy-r2.txt",
+      "image_ref": "frames/stopcue-settings-privacy-r2.png",
+      "receipt_ref": "frames/stopcue-settings-privacy-r2.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stopcue-settings-privacy-r2b.receipt.jsonl",
+          "sha256": "078b326ecbab5dcbffb442a78068cdbc18c8e20696713a4fc67b6cf3487ef537"
+        },
+        {
+          "ref": "evidence/visual-readback/stopcue-settings-privacy-r2b.receipt.json",
+          "sha256": "292216c81715b1c6512457365c480f81b3e09151f857036322b4ab795ca0f421"
+        }
+      ],
+      "prompt_sha256": "079a7451b4a9f7847510ca80e6bbfa910b556bc354aa28965904521e410c6126",
+      "image_sha256": "158f245a4968848f59a3c42fcf51fbce913a06139b38f1c555f0af66cd77a318",
+      "receipt_sha256": "b073caa324945c5e2ef9d073fb08a8017e9e77838732e919a176e2fc3f467064",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "275c27e064bd344601e3adf3ce51faa248900a845500965e3349a618c7a68041"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "8c54b63e33feaa6f11e5377ee7e063c1700847ff0341a61c58782d514df1d279"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "43a43d685dd9be5e91870d24b820620483d4e9e3886e257cf544831e6fc3d592"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "815eb73fb0fd6c943a84eabf8706c8c5a26797c02720bb5bf39d70ba70fcdc60"
+    }
+  ],
+  "frozen_at": "2026-10-15T10:08:48Z"
+}

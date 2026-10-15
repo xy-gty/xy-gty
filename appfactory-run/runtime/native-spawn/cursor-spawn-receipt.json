@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "b20a1a38-710a-43db-806a-3b531834098a",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "pkg_b20a1a38710a43db806a3b531834098a",
+    "prompt": "Dispatch b20a1a38-710a-43db-806a-3b531834098a. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/runtime/preparation/attempt-1/codex.launch.md SHA-256 b167cf3a02f87fd6cfbcc0369dfb9a67ace12f0b34017d5d6ea94ab973dc77a0. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-prep-b20a1a38710a",
+  "agent_name": "/root/pkg_b20a1a38710a43db806a3b531834098a",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T10:10:18Z",
+  "pid": 5341,
+  "note": "StopCue preparation e1 local agent CLI start_new_session"
+}

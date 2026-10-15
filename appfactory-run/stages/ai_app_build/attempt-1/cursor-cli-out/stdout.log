@@ -1,0 +1,16 @@
+**StopCue `ai_app_build` attempt-1 finished `ready`.**
+
+| Item | Result |
+|------|--------|
+| Hash | `codex.launch.md` matched `51649ee8…` |
+| Prep | Consumed via `cursor-package ultra-lite preparation consume` |
+| Product | `stopcue` → `product`; palette `#16A34A` / `#F0FDF4` / `#DB2777` |
+| UI | Film-sprocket timeline + onion-skin overlay (not NightCue twins) |
+| Sim | iPhone 17 Pro `B14CC0EA…` only; Pro Max `315A7C2C` untouched |
+| Build / tests | Succeeded; 9/9 domain tests |
+| Smoke | Install + launch (pid 11966) + `smoke.png` |
+| Candidate | `8ff7e72ef352-83d81be924fa` (`candidate_unaccepted`) |
+| Git | `git@github.com:xy-gty/xy-gty.git` branch `stopcue/kf-20261015T093242Z-0f4256a0` @ `8ff7e72e…` |
+| Finish | `cursor-package ultra-lite finish --status ready` → ok |
+
+Soft gaps (Option A): local_only URL/key/CloudKit/Feishu row, deferred pricing, no AppIcon/LaunchScreen, hardware permissions pending accept. Feishu CONTROLLER_DELIVERY skipped.

@@ -1,0 +1,2 @@
+Does this still show StopCue Projects empty state with film-sprocket timeline placeholder, New project CTA, #16A34A/#F0FDF4/#DB2777 palette, and no NightCue rail / CuePartner / HiveCue / FormCue / YarnCue / ScoutCue twins or all-black shell?
+Answer with pass or fail first, then brief evidence.

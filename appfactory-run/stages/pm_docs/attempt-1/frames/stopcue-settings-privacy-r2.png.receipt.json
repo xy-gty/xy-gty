@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-40be5458fa80",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 449889,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/stopcue-settings-privacy-r2.png",
+  "output_sha256": "158f245a4968848f59a3c42fcf51fbce913a06139b38f1c555f0af66cd77a318",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/prompts/stopcue-settings-privacy-r2.txt",
+  "prompt_sha256": "079a7451b4a9f7847510ca80e6bbfa910b556bc354aa28965904521e410c6126",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "ec67cd9496dcb309c3e54fc9f454fec7b2f205355581abaa56fed55178bc504d",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T09:47:40Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

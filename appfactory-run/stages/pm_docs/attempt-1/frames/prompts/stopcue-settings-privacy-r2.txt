@@ -1,0 +1,36 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job.
+
+Always include this composition line verbatim. Codex may return a native
+portrait at the requested size; GrokBot returns landscape (1024x576 /
+1280x720). This line keeps the phone UI as a croppable vertical strip so the
+factory wrapper can produce 640x1392 without losing content when the source
+is landscape:
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+If Codex writes the requested portrait size directly, skip postprocess.
+Factory postprocess (official, wrapper-owned, landscape sources only):
+- fit_pad: crop the vertical UI strip, uniform scale, center on the target
+  canvas, solid sampled-color padding. No drawn UI.
+- crop_scale: crop the vertical UI strip, then uniform scale to the target.
+
+Do not ask the image model to letterbox, overlay, or recompose after the fact.
+Do not draw, redraw, or overlay UI with PIL. The wrapper records generator,
+postprocess, source sha256/size, prompt_file, and crop_box on the receipt.
+
+Then describe this exact page/state: chrome, hierarchy, copy, and example data.
+
+
+App: StopCue — AI stop-motion coach.
+Palette: primary #16A34A sprocket green, secondary #F0FDF4 mint wash, accent #DB2777 magenta, ink #14532D on light surfaces. Ban all-black shell. Ban NightCue #1E3A8A night-frame rail + exposure-diagnosis overlays. Ban CuePartner script axis, HiveCue hex comb, FormCue chip rail, YarnCue yarn-ball strip, ScoutCue solar/ephemeris scouting shell.
+Large legible English UI text. Native iOS SwiftUI look.
+Signature chrome: horizontal film-sprocket timeline (perforated film strip with sprocket holes left/right of frame thumbnails) + translucent onion-skin overlay (previous frame ghosted over current frame for alignment). NOT a night-frame rail, NOT honeycomb, NOT yarn ball, NOT solar chart.
+
+Page: Settings / Privacy.
+Rows: Revoke AI consent (magenta).
+Exactly four separate Privacy permission rows, each on its own line: Camera; Photos; Microphone; Speech Recognition — each with a short usage subtitle.
+Legal section: Privacy; Terms; Support as three local page rows.
+StopCue title; mint background; green section headers; magenta accent on Revoke.
+No App Store paywall, no coins, no ATT prompt chrome.
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)

@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image_resized",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-706e4df9a92d",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 775138,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/stopcue-stop-coach-r1.png",
+  "output_sha256": "08fa08e5174cd2011acfe91a3527c53cff13e419039ba9530df037c9b5f4347a",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/prompts/stopcue-stop-coach-r1.txt",
+  "prompt_sha256": "e802dc6dd18cbcfbfa1ee776328ed29092819b23a639fc37ecef4e4cc3340cea",
+  "requested_size": "640x1392",
+  "source_height": 1280,
+  "source_sha256": "0b354fa5687b89d9b2470369f67c1f54abd04a356667e41b51071e06a5b834c2",
+  "source_size": "720x1280",
+  "source_width": 720,
+  "timestamp": "2026-10-15T09:42:56Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

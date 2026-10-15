@@ -1,0 +1,15 @@
+{
+  "schema": "appfactory.ultra_lite_product_freeze.v1",
+  "run_id": "kf-20261015T093242Z-0f4256a0",
+  "stage": "ai_app_accept",
+  "attempt": 1,
+  "product_commit": "8ff7e72ef3525166bbb448c398b3be0b23430dee",
+  "product_branch": "stopcue/kf-20261015T093242Z-0f4256a0",
+  "product_dir": "stopcue",
+  "bundle_id": "com.lingguang.stopcue",
+  "worktree_clean": true,
+  "status_short": "",
+  "remote": "git@github.com:xy-gty/xy-gty.git",
+  "simulator_udid": "B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+  "simulator_name": "iPhone 17 Pro"
+}

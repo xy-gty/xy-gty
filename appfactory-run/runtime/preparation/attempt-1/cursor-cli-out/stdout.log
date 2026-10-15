@@ -1,0 +1,8 @@
+Dispatch `b20a1a38-710a-43db-806a-3b531834098a` finished **ready**.
+
+- Launch hash verified; bound contract hashes OK  
+- Workspace: StopCue domain + `Vendor/AppRuntimeCore` (controlled install)  
+- Cache hit `1225d7e5…`; domain compile in scratch only  
+- `PREPARATION.md` Status: ready; finish receipt sealed privately (13 members)
+
+Controller can observe stop and seal.

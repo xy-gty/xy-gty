@@ -1,0 +1,304 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project StopCueAcceptUI.xcodeproj -scheme StopCueAcceptUI -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7" -derivedDataPath /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept "-only-testing:StopCueAcceptUITests/LegalScrollTests/testScrollOpenLegal" test
+
+Build settings from command line:
+    SDKROOT = iphonesimulator26.5
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'StopCueAcceptUITests' in project 'StopCueAcceptUI'
+        ➜ Explicit dependency on target 'HostStub' in project 'StopCueAcceptUI'
+    Target 'HostStub' in project 'StopCueAcceptUI' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 194ff452f458d6ae2a65f79980000f42
+Build description path: /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/XCBuildData/194ff452f458d6ae2a65f79980000f42.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness/StopCueAcceptUI.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+ProcessInfoPlistFile /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/HostStub.app/Info.plist /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/empty-HostStub.plist (in target 'HostStub' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-infoPlistUtility /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/HostStub.build/empty-HostStub.plist -producttype com.apple.product-type.application -genpkginfo /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/HostStub.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/HostStub.app/Info.plist
+
+SwiftDriver StopCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name StopCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ StopCueAcceptUITests (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+
+EmitSwiftModule normal arm64 (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    
+
+SwiftCompile normal arm64 Compiling\ LegalScrollTests.swift /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness/StopCueAcceptUITests/LegalScrollTests.swift (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+SwiftCompile normal arm64 /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness/StopCueAcceptUITests/LegalScrollTests.swift (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for StopCueAcceptUITests (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+
+SwiftDriver\ Compilation\ Requirements StopCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name StopCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.abi.json (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.abi.json /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftsourceinfo (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftsourceinfo /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling LegalScrollTests.swift (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+
+SwiftDriver\ Compilation StopCueAcceptUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name StopCueAcceptUITests -Onone @/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -sdk-module-cache-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-generated-files.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-own-target-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests-project-headers.hmap -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources/arm64 -Xcc -I/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-Swift.h -working-directory /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/StopCueAcceptUITests normal (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.swiftmodule @/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/StopCueAcceptUITests
+
+ExtractAppIntentsMetadata (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name StopCueAcceptUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier xycoins.2027.test.stopcue.accept.uitests --output /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/StopCueAcceptUITests --dependency-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests_dependency_info.dat --stringsdata-file /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.SwiftFileList --metadata-file-list /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/StopCueAcceptUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/Objects-normal/arm64/StopCueAcceptUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-15 18:49:57.678 appintentsmetadataprocessor[22542:9480294] Starting appintentsmetadataprocessor export
+2026-10-15 18:49:57.682 appintentsmetadataprocessor[22542:9480294] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/StopCueAcceptUITests --scan-folder /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/Frameworks --scan-folder /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/PlugIns --scan-folder /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/SystemExtensions --scan-folder /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/Info.plist /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/empty-StopCueAcceptUITests.plist (in target 'StopCueAcceptUITests' from project 'StopCueAcceptUI')
+    cd /Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/ui-harness
+    builtin-infoPlistUtility /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/empty-StopCueAcceptUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Intermediates.noindex/StopCueAcceptUI.build/Debug-iphonesimulator/StopCueAcceptUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Build/Products/Debug-iphonesimulator/StopCueAcceptUITests-Runner.app/PlugIns/StopCueAcceptUITests.xctest/Info.plist
+
+2026-10-15 18:49:59.110949+0800 StopCueAcceptUITests-Runner[22543:9480449] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-15 18:49:59.824.
+Test Suite 'StopCueAcceptUITests.xctest' started at 2026-10-15 18:49:59.825.
+Test Suite 'LegalScrollTests' started at 2026-10-15 18:49:59.825.
+Test Case '-[StopCueAcceptUITests.LegalScrollTests testScrollOpenLegal]' started.
+    t =     0.00s Start Test at 2026-10-15 18:49:59.826
+    t =     0.04s Set Up
+    t =     0.04s Terminate com.lingguang.stopcue:21217
+objc[22543]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108c0c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10848c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.07s Open com.lingguang.stopcue
+    t =     1.07s     Launch com.lingguang.stopcue
+    t =     1.18s         Setting up automation session
+    t =     1.66s         Wait for com.lingguang.stopcue to idle
+    t =     4.55s Tap "Settings" Button
+    t =     4.55s     Wait for com.lingguang.stopcue to idle
+    t =     4.55s     Find the "Settings" Button
+    t =     4.66s     Check for interrupting elements affecting "Settings" Button
+    t =     4.69s     Synthesize event
+    t =     4.99s     Wait for com.lingguang.stopcue to idle
+    t =     7.42s Checking existence of `CollectionView (First Match)`
+    t =     7.46s Swipe up CollectionView (First Match)
+    t =     7.46s     Wait for com.lingguang.stopcue to idle
+    t =     7.46s     Find the CollectionView (First Match)
+    t =     7.48s     Check for interrupting elements affecting CollectionView
+    t =     7.51s     Synthesize event
+    t =     7.95s     Wait for com.lingguang.stopcue to idle
+    t =    10.35s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    10.35s     Wait for com.lingguang.stopcue to idle
+    t =    10.35s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    10.40s     Check for interrupting elements affecting CollectionView
+    t =    10.44s     Synthesize event
+    t =    10.90s     Wait for com.lingguang.stopcue to idle
+    t =    12.12s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    12.12s     Wait for com.lingguang.stopcue to idle
+    t =    12.13s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    12.15s     Check for interrupting elements affecting CollectionView
+    t =    12.18s     Synthesize event
+    t =    12.62s     Wait for com.lingguang.stopcue to idle
+    t =    13.48s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    13.48s     Wait for com.lingguang.stopcue to idle
+    t =    13.49s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    13.51s     Check for interrupting elements affecting CollectionView
+    t =    13.54s     Synthesize event
+    t =    13.98s     Wait for com.lingguang.stopcue to idle
+    t =    14.84s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    14.84s     Wait for com.lingguang.stopcue to idle
+    t =    14.84s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    14.87s     Check for interrupting elements affecting CollectionView
+    t =    14.90s     Synthesize event
+    t =    15.35s     Wait for com.lingguang.stopcue to idle
+    t =    16.20s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    16.20s     Wait for com.lingguang.stopcue to idle
+    t =    16.20s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    16.23s     Check for interrupting elements affecting CollectionView
+    t =    16.26s     Synthesize event
+    t =    16.71s     Wait for com.lingguang.stopcue to idle
+    t =    17.69s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    17.82s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    17.85s Waiting 2.0s for "Privacy" StaticText to exist
+    t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" StaticText`
+    t =    18.89s         Checking existence of `"Privacy" StaticText`
+    t =    18.93s         Capturing element debug description
+    t =    19.86s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" StaticText`
+    t =    19.86s         Checking existence of `"Privacy" StaticText`
+    t =    19.90s         Capturing element debug description
+    t =    19.90s     Checking existence of `"Privacy" StaticText`
+    t =    19.92s Collecting debug information to assist test failure triage
+    t =    19.92s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    19.96s Waiting 1.0s for "Privacy" Button to exist
+    t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Privacy" Button`
+    t =    20.96s         Checking existence of `"Privacy" Button`
+    t =    20.98s         Capturing element debug description
+    t =    20.98s     Checking existence of `"Privacy" Button`
+    t =    21.00s Collecting debug information to assist test failure triage
+    t =    21.00s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    21.03s Waiting 1.0s for Cell (First Match) to exist
+    t =    22.04s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (First Match)`
+    t =    22.04s         Checking existence of `Cell (First Match)`
+    t =    22.09s         Capturing element debug description
+    t =    22.09s     Checking existence of `Cell (First Match)`
+    t =    22.11s Collecting debug information to assist test failure triage
+    t =    22.11s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    22.15s Waiting 2.0s for "Terms" StaticText to exist
+    t =    23.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" StaticText`
+    t =    23.18s         Checking existence of `"Terms" StaticText`
+    t =    23.22s         Capturing element debug description
+    t =    24.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" StaticText`
+    t =    24.15s         Checking existence of `"Terms" StaticText`
+    t =    24.19s         Capturing element debug description
+    t =    24.19s     Checking existence of `"Terms" StaticText`
+    t =    24.22s Collecting debug information to assist test failure triage
+    t =    24.22s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    24.25s Waiting 1.0s for "Terms" Button to exist
+    t =    25.25s     Checking `Expect predicate `existsNoRetry == 1` for object "Terms" Button`
+    t =    25.25s         Checking existence of `"Terms" Button`
+    t =    25.29s         Capturing element debug description
+    t =    25.30s     Checking existence of `"Terms" Button`
+    t =    25.32s Collecting debug information to assist test failure triage
+    t =    25.32s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    25.35s Waiting 1.0s for Cell (First Match) to exist
+    t =    26.36s     Checking `Expect predicate `existsNoRetry == 1` for object Cell (First Match)`
+    t =    26.36s         Checking existence of `Cell (First Match)`
+    t =    26.41s         Capturing element debug description
+    t =    26.41s     Checking existence of `Cell (First Match)`
+    t =    26.44s Collecting debug information to assist test failure triage
+    t =    26.44s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    26.48s Waiting 2.0s for "Support" StaticText to exist
+    t =    27.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Support" StaticText`
+    t =    27.52s         Checking existence of `"Support" StaticText`
+    t =    27.54s Tap "Support" StaticText
+    t =    27.54s     Wait for com.lingguang.stopcue to idle
+    t =    27.54s     Find the "Support" StaticText
+    t =    27.57s     Check for interrupting elements affecting "Support" StaticText
+    t =    27.58s     Synthesize event
+    t =    27.88s     Wait for com.lingguang.stopcue to idle
+    t =    30.02s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    30.16s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    30.19s Waiting 2.0s for Button (First Match) to exist
+    t =    31.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    31.22s         Checking existence of `Button (First Match)`
+    t =    31.27s         Capturing element debug description
+    t =    32.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    32.20s         Checking existence of `Button (First Match)`
+    t =    32.24s         Capturing element debug description
+    t =    32.24s     Checking existence of `Button (First Match)`
+    t =    32.27s Collecting debug information to assist test failure triage
+    t =    32.27s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    32.30s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    32.30s     Wait for com.lingguang.stopcue to idle
+    t =    32.30s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    32.31s     Check for interrupting elements affecting CollectionView
+    t =    32.33s     Synthesize event
+    t =    32.79s     Wait for com.lingguang.stopcue to idle
+    t =    33.53s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    33.53s     Wait for com.lingguang.stopcue to idle
+    t =    33.54s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    33.57s     Check for interrupting elements affecting CollectionView
+    t =    33.59s     Synthesize event
+    t =    34.04s     Wait for com.lingguang.stopcue to idle
+    t =    34.80s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    34.80s     Wait for com.lingguang.stopcue to idle
+    t =    34.81s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    34.84s     Check for interrupting elements affecting CollectionView
+    t =    34.86s     Synthesize event
+    t =    35.31s     Wait for com.lingguang.stopcue to idle
+    t =    36.07s Waiting 2.0s for "Provider policy" StaticText to exist
+    t =    37.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Provider policy" StaticText`
+    t =    37.11s         Checking existence of `"Provider policy" StaticText`
+    t =    37.13s Tap "Provider policy" StaticText
+    t =    37.13s     Wait for com.lingguang.stopcue to idle
+    t =    37.13s     Find the "Provider policy" StaticText
+    t =    37.15s     Check for interrupting elements affecting "Provider policy" StaticText
+    t =    37.17s     Synthesize event
+    t =    37.47s     Wait for com.lingguang.stopcue to idle
+    t =    39.61s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    39.73s Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    39.76s Waiting 2.0s for Button (First Match) to exist
+    t =    40.79s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    40.79s         Checking existence of `Button (First Match)`
+    t =    40.84s         Capturing element debug description
+    t =    41.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    41.77s         Checking existence of `Button (First Match)`
+    t =    41.81s         Capturing element debug description
+    t =    41.81s     Checking existence of `Button (First Match)`
+    t =    41.84s Collecting debug information to assist test failure triage
+    t =    41.84s     Requesting snapshot of accessibility hierarchy for app with pid 22577
+    t =    41.87s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    41.87s     Wait for com.lingguang.stopcue to idle
+    t =    41.87s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    41.89s     Check for interrupting elements affecting CollectionView
+    t =    41.90s     Synthesize event
+    t =    42.35s     Wait for com.lingguang.stopcue to idle
+    t =    43.10s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    43.10s     Wait for com.lingguang.stopcue to idle
+    t =    43.11s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    43.13s     Check for interrupting elements affecting CollectionView
+    t =    43.15s     Synthesize event
+    t =    43.60s     Wait for com.lingguang.stopcue to idle
+    t =    44.35s Swipe up CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    44.35s     Wait for com.lingguang.stopcue to idle
+    t =    44.36s     Find the CollectionView at {{0.0, 135.5}, {402.0, 603.0}}
+    t =    44.38s     Check for interrupting elements affecting CollectionView
+    t =    44.41s     Synthesize event
+    t =    44.86s     Wait for com.lingguang.stopcue to idle
+    t =    45.62s Tear Down
+Test Case '-[StopCueAcceptUITests.LegalScrollTests testScrollOpenLegal]' passed (45.933 seconds).
+Test Suite 'LegalScrollTests' passed at 2026-10-15 18:50:45.760.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.933 (45.935) seconds
+Test Suite 'StopCueAcceptUITests.xctest' passed at 2026-10-15 18:50:45.761.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.933 (45.936) seconds
+Test Suite 'Selected tests' passed at 2026-10-15 18:50:45.762.
+	 Executed 1 test, with 0 failures (0 unexpected) in 45.933 (45.938) seconds
+2026-10-15 18:50:46.086 xcodebuild[22517:9480040] [MT] IDETestOperationsObserverDebug: 48.375 elapsed -- Testing started completed.
+2026-10-15 18:50:46.086 xcodebuild[22517:9480040] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-15 18:50:46.086 xcodebuild[22517:9480040] [MT] IDETestOperationsObserverDebug: 48.375 sec, +48.375 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/appfactory-derived-kf-20261015T093242Z-0f4256a0-accept/Logs/Test/Test-StopCueAcceptUI-2026.10.15_18-49-56-+0800.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

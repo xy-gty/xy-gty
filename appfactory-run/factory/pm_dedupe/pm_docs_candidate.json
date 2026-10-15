@@ -1,0 +1,35 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "Camera / Photos 拍或导入帧序列",
+    "AI 分镜 / 间隔草稿 → Keep / Discard / Edit",
+    "StopCoach：胶片齿孔时间轴 + 洋葱皮叠层预览",
+    "Coach chat 问分镜与间隔",
+    "洋葱皮标注确认",
+    "TTS 倒计时口令",
+    "麦克风 + 语音识别：口述间隔/口令字段"
+  ],
+  "differentiation": {},
+  "diversity_key": "stopcue 用 iphone 做定格动画 需要现场分镜建议与拍摄节拍提示的创作者 双手常扶相机 桌面布景 定格现场拍 导入一串帧 ai 给出分镜与间隔草稿 keep 落成 timingcue onionskinguide 同一项目里用胶片齿孔时间轴推进各帧 需要时聊天问分镜 在洋葱皮叠层上确认标注 tts 倒计时口令 拍摄中可口述间隔 口令字段 stopcue is an ai stop motion coach capture or import frame seque",
+  "feature_blocks": [
+    "| Entity | 关联 | 持久 |",
+    "|--------|------|------|",
+    "| Project | 1→N FrameSequence, TimingCue, CoachMessage | AtomicCodableStore |",
+    "| FrameSequence | N→1 Project；本地 image refs | AtomicCodableStore + files |",
+    "| ShotPlanDraft | 未确认分镜/间隔 | AtomicCodableStore |",
+    "| TimingCue | 确认后的间隔/倒计时 | AtomicCodableStore |",
+    "| OnionSkinGuide | 确认后的洋葱皮标注 | AtomicCodableStore |",
+    "| CoachTurn / CoachMessage | 草稿 → 确认后历史 | AtomicCodableStore |",
+    "| CountdownCue | TTS 段落 | AtomicCodableStore |",
+    "| DictatedInterval | 口述字段 | AtomicCodableStore |"
+  ],
+  "product_fingerprint": "027ccda127858f296f650487085df52ba3c732172d330e0beb2f835330988a44",
+  "product_name": "StopCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "用 iPhone 做定格动画、需要现场分镜建议与拍摄节拍提示的创作者（双手常扶相机/桌面布景）。",
+  "user_problem": "定格现场拍/导入一串帧 → AI 给出分镜与间隔草稿 → Keep 落成 TimingCue / OnionSkinGuide → 同一项目里用胶片齿孔时间轴推进各帧 → 需要时聊天问分镜、在洋葱皮叠层上确认标注、TTS 倒计时口令；拍摄中可口述间隔/口令字段。",
+  "value_proposition": "StopCue is an AI stop-motion coach: capture or import frame sequences, keep reviewed shot plans and timing, chat for storyboard beats, confirm onion-skin guides, and hear TTS countdown cues while you shoot."
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "stopcue-capture-import.receipt.json",
+  "verdict_sha256": "9fd801b3d5cfbde6b94c4204edaccaa8883d403b59a2c944cff21e7ba88154cb",
+  "written_at": "2026-10-15T10:08:39Z"
+}

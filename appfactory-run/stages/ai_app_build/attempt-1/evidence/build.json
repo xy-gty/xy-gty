@@ -1,0 +1,70 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "run_id": "kf-20261015T093242Z-0f4256a0",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "016ece23-5fb2-4f65-b39e-f67191d8d894",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/product",
+  "source_commit": "8ff7e72ef3525166bbb448c398b3be0b23430dee",
+  "branch": "stopcue/kf-20261015T093242Z-0f4256a0",
+  "bundle_id": "com.lingguang.stopcue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/StopCue.app",
+  "app_content_sha256": "83d81be924fa5ee5bdcdd6a2b8e6422cd37c5684d0823f881409b12232144ba5",
+  "implemented_scope": [
+    "projects_home_film_sprocket_empty_and_list",
+    "capture_camera_and_photos_import",
+    "frame_review_keep_discard_edit",
+    "stop_coach_film_sprocket_timeline_onion_skin",
+    "coach_chat_consent_gate_deepseek_or_local",
+    "onion_skin_annotated_guide",
+    "countdown_tts_cues",
+    "dictate_mic_speech_interval_fields",
+    "settings_revoke_local_legal",
+    "domain_persistence_and_consent_tests",
+    "free_app_only_no_storekit_coins_att"
+  ],
+  "unverified_items": [
+    "independent_eight_domain_acceptance_pending",
+    "runtime_visual_frame_judgment_pending",
+    "live_deepseek_with_configured_key_pending",
+    "device_camera_microphone_speech_pending",
+    "operator_pricing_deferred_free_app_only",
+    "external_legal_urls_cloudkit_feishu_row_gaps"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "StopCue.xcodeproj",
+      "-scheme",
+      "StopCue",
+      "-destination",
+      "platform=iOS Simulator,id=B14CC0EA-EA96-4E5A-B32A-3187A83346B7",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_build/attempt-1/DerivedData",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "fcac797f38291c58cfc6a9fdf887650dd40386e475b667f5248c203ea0337d95"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "-project",
+        "StopCue.xcodeproj",
+        "-scheme",
+        "StopCue",
+        "-only-testing:StopCueDomainTests",
+        "test"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "7900d463fe56debd587a058ef028cf5df48559f13c2f2c3344b259402bd48210"
+    }
+  ]
+}

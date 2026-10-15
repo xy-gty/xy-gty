@@ -1,0 +1,8 @@
+{
+  "schema": "appfactory.cursor_task_children.v1",
+  "parent_dispatch_id": "016ece23-5fb2-4f65-b39e-f67191d8d894",
+  "parent_execution_seq": 1,
+  "child_slots": 0,
+  "note": "UltraLite p1 single-slot serial; parent Builder owns all files; no ui_business/ai_privacy children spawned.",
+  "children": []
+}

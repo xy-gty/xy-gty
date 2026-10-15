@@ -1,0 +1,34 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "command": [
+    "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+    "-c",
+    "<pm_visuals_image_mcp.bridge>"
+  ],
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "height": 1392,
+  "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+  "job_id": "job-b5c82d8ce195",
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 742414,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/stopcue-onion-overlay-r1.png",
+  "output_sha256": "66c0c9e66035957db313de991b9453a4fc294ea110c3897523558e593a9d497d",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/pm_docs/attempt-1/frames/prompts/stopcue-onion-overlay-r1.txt",
+  "prompt_sha256": "b87b46da472e06723bf6d202b472fbd5b3e2c1bfa80c0422910517a4e15e7909",
+  "requested_size": "640x1392",
+  "source_height": 1392,
+  "source_sha256": "66c0c9e66035957db313de991b9453a4fc294ea110c3897523558e593a9d497d",
+  "source_size": "640x1392",
+  "source_width": 640,
+  "timestamp": "2026-10-15T09:53:42Z",
+  "wake": "local_seed",
+  "webhook_http": {
+    "http_status": 200,
+    "mode": "local",
+    "ok": true
+  },
+  "width": 640
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "appfactory.visual_readback_first_write.v1",
+  "receipt": "stopcue-onion-overlay.receipt.json",
+  "verdict_sha256": "95e45b0d4c0ac5d1eb3cd16db04a25269665e9c2152614a2acd9d90a233cc357",
+  "written_at": "2026-10-15T09:52:08Z"
+}

@@ -1,0 +1,13 @@
+**StopCue `ai_app_accept` ready** — dispatch `8e636dd9-…` finished; simulator lease released.
+
+Verified `codex.launch.md` SHA-256, ran independent acceptance on iPhone 17 Pro `B14CC0EA` only (Pro Max untouched), product commit `8ff7e72…` / `stopcue/`.
+
+| Domain | Result |
+|--------|--------|
+| UL-01 / UL-02 | pass — install/launch + UITest journeys |
+| UL-03–05 | pass — `ai_key_unavailable` honest local_only; domain 9/9 incl. second-call |
+| UL-06 | pass — Revoke + permission copy + local legal HTML; WebView open flaky → known_issue |
+| UL-07 | pass (Option A) — home + capture vision pass; other frames → known_issues |
+| UL-08 | pass — evidence bound to commit/branch/candidate |
+
+Finish: `cursor-package ultra-lite finish --status ready` → `ok`. MAP: `stages/ai_app_accept/attempt-1/MAP.md`.Acceptance already finished successfully: UL-02 journeys, follow-up/legal UITests, and runtime vision all completed; MAP is `ready` and the dispatch finish was recorded.

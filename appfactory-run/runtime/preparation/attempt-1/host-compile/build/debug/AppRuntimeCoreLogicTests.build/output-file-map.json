@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/tests/ultra_lite_foundation_logic/Tests/AppRuntimeCoreLogicTests/SafetyTests.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/SafetyTests.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/SafetyTests.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/SafetyTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/SafetyTests.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261013T063311Z-0f7a54f0/runtime/preparation/attempt-1/host-compile/build/arm64-apple-macosx/debug/AppRuntimeCoreLogicTests.build/SafetyTests.dia"
+  }
+}

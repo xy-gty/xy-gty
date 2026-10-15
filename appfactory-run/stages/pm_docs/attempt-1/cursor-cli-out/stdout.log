@@ -1,0 +1,8 @@
+Dispatch `06876bf1-89fb-43b5-99d2-7830eaa3a0a2` complete. Launch hash verified; `pm_docs` finished **ready**.
+
+**StopCue** UltraLite P1 design is frozen:
+- `technical_contract_sha256`: `6aa7ee6083e7746fa2f67056aa5b47073685641d760c2172930253bdab5e5dd7`
+- `pm_visual_manifest_sha256`: `67d2dbd0136b12a02e0ce2e3b79e23804e20902ee7c947865851b82be2150265`
+- 8 frames (settings revised to r2); GrokBot local_seed + Cursor vision readbacks pass
+- Palette `#16A34A` / `#F0FDF4` / `#DB2777`; film-sprocket + onion-skin; free_app_only (paid unlock deferred as gap)
+- Finish receipt ok (`msg-a9b5cc357f6d45cab051eb055a38615a`); identity-skeleton planned (`feishu_client_unavailable`, non-blocking)
