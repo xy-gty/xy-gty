@@ -1,0 +1,1 @@
+Annotated WIP screen shows stitch callouts or pins overlaid on a WIP photo with Keep marks control.

@@ -1,0 +1,83 @@
+Optional(Attributes: Application, 0x116c2f340, pid: 9513, label: 'YarnCue'
+Element subtree:
+ →Application, 0x116c2f340, pid: 9513, label: 'YarnCue'
+    Window (Main), 0x116c2f480, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x116c2f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x116c2f700, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x116c2f840, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x116c2f980, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x116c2fac0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x116c2fc00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x116c2fd40, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x116c2fe80, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x116c2d180, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x116c2d2c0, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x116c2d400, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x116c2d540, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Capture'
+                              Button, 0x116c2d680, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'New project'
+                              StaticText, 0x116c2d7c0, {{16.0, 119.7}, {128.0, 40.7}}, label: 'Capture'
+                            Other, 0x116c2d900, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x116c2da40, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x116c2f200, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x116c2ea80, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x116c2ebc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x116c2ed00, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x116c2ee40, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x116c2ef80, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x116c2f0c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x116c2db80, {{0.0, 168.0}, {402.0, 280.3}}
+                                        StaticText, 0x116c2dcc0, {{20.0, 188.0}, {231.3, 33.7}}, label: 'Capture or import'
+                                        StaticText, 0x116c2de00, {{20.0, 241.7}, {358.7, 42.3}}, label: 'Camera for yarn / WIP photos; Photo library for prior shots into the coach flow.'
+                                        Button, 0x116c2df40, {{20.0, 304.0}, {362.0, 34.3}}, identifier: 'cta-camera', label: 'Camera'
+                                          Image, 0x116c2e080, {{157.0, 313.0}, {20.7, 16.0}}, identifier: 'camera.fill', label: 'Camera'
+                                          StaticText, 0x116c2e1c0, {{20.0, 304.0}, {362.0, 34.3}}, label: 'Camera'
+                                        Button, 0x116c2e300, {{20.0, 358.3}, {362.0, 34.3}}, identifier: 'cta-photo-library', label: 'Photo library'
+                                          Image, 0x116c2e440, {{138.0, 367.0}, {20.7, 17.0}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                                          StaticText, 0x116c2e580, {{20.0, 358.3}, {362.0, 34.3}}, label: 'Photo library'
+                                        StaticText, 0x116c2e6c0, {{20.0, 412.7}, {284.3, 15.7}}, label: 'Project created — capture a yarn or WIP photo.'
+                                      Other, 0x116c2e800, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x116c2e940, {{396.0, 461.7}, {3.0, 326.3}}
+                                      Other, 0x116c2b200, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x116c2b340, {{396.0, 461.7}, {3.0, 326.3}}
+                            Other, 0x116c2b480, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x116c2b5c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x116c2b700, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x116c2b840, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x116c2b980, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x116c2bac0, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x116c2bc00, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x116c2bd40, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x116c2be80, {{68.0, 795.0}, {94.0, 54.0}}, identifier: 'square.grid.2x2.fill', label: 'Projects', Selected
+                            Image, 0x116c28280, {{102.0, 802.3}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x116c28000, {{154.0, 795.0}, {94.0, 54.0}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'Coach'
+                            Image, 0x116c28140, {{182.0, 800.0}, {38.3, 31.3}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'conversation'
+                          Button, 0x116c29f40, {{240.0, 795.0}, {94.0, 54.0}}, identifier: 'gearshape.fill', label: 'Settings'
+                            Image, 0x116c2a080, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x116c2a1c0, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x116c2a300, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x116c2a440, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x116c2a580, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x116c2a6c0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x116c2a800, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x116c2a940, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x116c2aa80, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x116c2abc0, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x116c2ad00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x116c2ae40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x116c2af80, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x116c2b0c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11702c000, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x11702c140, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11702c280, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11702c3c0, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x11702c500, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x11702c640, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x11702c780, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x116c2f340, pid: 9513, label: 'YarnCue'
+Query chain:
+ →Find: Application 'com.lingguang.yarncue'
+  Output: {
+    Application, 0x11702c8c0, pid: 9513, label: 'YarnCue'
+  }
+)

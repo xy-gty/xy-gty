@@ -1,0 +1,13 @@
+{
+  "schema": "appfactory.codex_lost_session.v1",
+  "task": {
+    "dispatch_id": "9ba15c2c-3db1-4817-a9c4-367452364f43",
+    "execution_seq": 4,
+    "agent_id": "cursor-cli-pm-9ba15c2c3db1-e4",
+    "agent_name": "/root/pkg_9ba15c2c3db14817a9c4367452364f43_e4",
+    "execution_status": "running"
+  },
+  "reason": "codex_native_session_unrecoverable:e4_connection_stalled",
+  "quarantined_at": "2026-10-14T14:02:52Z",
+  "note": "CONTROLLER replace_lost_worker manual — infra-retry budget already used once; e5 spawn"
+}

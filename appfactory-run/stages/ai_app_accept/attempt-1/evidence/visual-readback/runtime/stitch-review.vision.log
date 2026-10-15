@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime/stitch-review.receipt.json",
+  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime/stitch-review.receipt.jsonl",
+  "model": "auto"
+}

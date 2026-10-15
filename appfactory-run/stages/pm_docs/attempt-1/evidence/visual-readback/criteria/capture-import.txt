@@ -1,0 +1,1 @@
+Capture/import screen shows Camera and Photo library actions for adding a yarn or WIP photo.

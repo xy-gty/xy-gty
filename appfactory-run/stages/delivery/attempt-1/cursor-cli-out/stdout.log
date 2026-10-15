@@ -1,0 +1,7 @@
+Dispatch `18b7b80e-bbda-4de4-bb0f-ae225c8319ca` completed. Launch hash verified; delivery finished `ready`.
+
+**YarnCue** delivered on independent branch `yarncue/kf-20261014T130415Z` → `xy-gty/xy-gty` @ `4770b6a8073711e044ddfce4575e49c535768ce1` (not main). Accept MAP ready; factory `package_acceptance=accepted`.
+
+**Finish:** `ok: true`, map SHA `ab4673edb4dda435f1409eea1f113466087d439e27da3399ddcf086baa7d175d`.
+
+**Gaps (replace_before_submission):** `ai_key_unavailable`, `legal_url_unknown`, `cloudkit_unconfigured`, `feishu_row_not_yet_created` (operator skip), free-app pricing deferred, branding assets deferred. Formal `delivered` remains for controller complete.

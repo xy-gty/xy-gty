@@ -1,0 +1,65 @@
+{
+  "schema": "appfactory.ultra_lite_candidate_build.v1",
+  "run_id": "kf-20261014T130415Z-f3114989",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "dispatch_id": "543cf837-eed0-4218-bd1f-2d4591f37de4",
+  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/product",
+  "source_commit": "4770b6a8073711e044ddfce4575e49c535768ce1",
+  "branch": "yarncue/kf-20261014T130415Z",
+  "bundle_id": "com.lingguang.yarncue",
+  "app_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_build/attempt-1/DerivedData/Build/Products/Debug-iphonesimulator/YarnCue.app",
+  "app_content_sha256": "bc768aee891c51e2cdb7f69449eae5a3f3a4c59d5cfbc4de7c116b562a129f2a",
+  "implemented_scope": [
+    "ProjectsHome NewProject CaptureImport StitchReview Keep/Discard/Edit",
+    "ProjectCoach YarnBallSwatchStrip + NextRowStepBand",
+    "CoachChat consent-gated DeepSeek or honest local_only gap",
+    "AnnotatedWIP HandsFreeTTS DictateNote Settings local legal pages",
+    "AppRuntimeCore AtomicCodableStore AIConsentGate TypedNavigationStore RuntimeForm PhotoImportSession"
+  ],
+  "unverified_items": [
+    "Independent eight-domain acceptance not completed",
+    "Runtime visual frame-by-frame judgment deferred to ai_app_accept",
+    "Live DeepSeek path unverified without configured API key (ai_key_unavailable gap)"
+  ],
+  "build": {
+    "command": [
+      "xcodebuild",
+      "-project",
+      "YarnCue.xcodeproj",
+      "-scheme",
+      "YarnCue",
+      "-destination",
+      "generic/platform=iOS Simulator",
+      "-derivedDataPath",
+      "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_build/attempt-1/DerivedData",
+      "-configuration",
+      "Debug",
+      "build"
+    ],
+    "exit_code": 0,
+    "status": "succeeded",
+    "target_platform": "iphonesimulator",
+    "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_build/attempt-1/build.log",
+    "log_sha256": "799b82bacecdd227c7cb677ff67c2c57ac553be745f6b60bde4b3cb12f353ee9"
+  },
+  "domain_checks": [
+    {
+      "command": [
+        "xcodebuild",
+        "test",
+        "-project",
+        "YarnCue.xcodeproj",
+        "-scheme",
+        "YarnCue",
+        "-destination",
+        "platform=iOS Simulator,name=iPhone 17 Pro",
+        "-only-testing:YarnCueDomainTests"
+      ],
+      "exit_code": 0,
+      "status": "succeeded",
+      "log_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_build/attempt-1/domain.log",
+      "log_sha256": "86527482a9475ed6d4ba6ba8c83b96740915f415ce9a98105b620144819d0c30"
+    }
+  ]
+}

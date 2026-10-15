@@ -1,0 +1,352 @@
+{
+  "batch_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/evidence/image-batch-r1.json",
+  "batch_sha256": "e971b0a8c7a6bdda7600c744b255c8201205c88d6d6b9e5f6248ef9f3b827a69",
+  "completed": 8,
+  "ok": false,
+  "results": [
+    {
+      "exit_code": 0,
+      "image_id": "home-empty",
+      "job_id": "job-f9c0e6ccffb9",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/home-empty-r1.png",
+      "output_sha256": "7a89a00f9d0cf79551caab6a69d3a2e37a655f8e7f23404ba5134d03fe84b9ea",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/home-empty-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-f9c0e6ccffb9",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 777564,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/home-empty-r1.png",
+        "output_sha256": "7a89a00f9d0cf79551caab6a69d3a2e37a655f8e7f23404ba5134d03fe84b9ea",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/home-empty-r1.txt",
+        "prompt_sha256": "5224ef672a91c11f28c39160d102f09de3f31bafd89d8f3f7ee5773fc76a33ae",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/home-empty-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1392,
+        "source_sha256": "7a89a00f9d0cf79551caab6a69d3a2e37a655f8e7f23404ba5134d03fe84b9ea",
+        "source_size": "640x1392",
+        "source_width": 640,
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    },
+    {
+      "exit_code": 0,
+      "image_id": "capture-import",
+      "job_id": "job-0f1ceaa4d18a",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/capture-import-r1.png",
+      "output_sha256": "9473f394d2840cbcdbf50a30f04035fd0271fb329c43bc26a047bcf65c46f37b",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/capture-import-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image_resized",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-0f1ceaa4d18a",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 445873,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/capture-import-r1.png",
+        "output_sha256": "9473f394d2840cbcdbf50a30f04035fd0271fb329c43bc26a047bcf65c46f37b",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/capture-import-r1.txt",
+        "prompt_sha256": "3af28fc5fcfa83253a24005b2078acc25c02b239a32efe2ffe04aa2466fc5602",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/capture-import-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1280,
+        "source_sha256": "79040be933c2544c1664500bad46dd324709afbbd9492016654ed4ac0c6bef64",
+        "source_size": "720x1280",
+        "source_width": 720,
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "stitch-review",
+      "job_id": "job-bb4cc74436ac",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/stitch-review-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/stitch-review-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for stitch-review-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/stitch-review-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-bb4cc74436ac.json",
+        "job_id": "job-bb4cc74436ac",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/stitch-review-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/stitch-review-r1.txt",
+        "prompt_sha256": "4a623caac1a01fbb0ceb3abaa365217ec68385f900fdc7309ae8994e4a732108",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/stitch-review-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-bb4cc74436ac.json",
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "project-coach",
+      "job_id": "job-1587402115f6",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/project-coach-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/project-coach-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for project-coach-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/project-coach-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-1587402115f6.json",
+        "job_id": "job-1587402115f6",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/project-coach-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/project-coach-r1.txt",
+        "prompt_sha256": "24a877ffac74ee4b58fd59625c68dcceb897edc550d10b9f4473797fb4024f0e",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/project-coach-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-1587402115f6.json",
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "image_id": "coach-chat",
+      "job_id": "job-5fbc3a8ffec3",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/coach-chat-r1.png",
+      "output_sha256": "9239cc2d8832d86f784b92013e32fc5367af7c9846ccc9c949d44f07a5203f5d",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/coach-chat-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image_resized",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-5fbc3a8ffec3",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 569057,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/coach-chat-r1.png",
+        "output_sha256": "9239cc2d8832d86f784b92013e32fc5367af7c9846ccc9c949d44f07a5203f5d",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/coach-chat-r1.txt",
+        "prompt_sha256": "d92b0189171088665eab59bf4a111c203eebc2ac3d68f2a66c45040b614c5fc7",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/coach-chat-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1280,
+        "source_sha256": "5e1bf65801f56cdc4787ef4695d2479e909e0530df0c33d556caa59f301f2c65",
+        "source_size": "720x1280",
+        "source_width": 720,
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "annotated-wip",
+      "job_id": "job-3e0b7495bc12",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/annotated-wip-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/annotated-wip-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for annotated-wip-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/annotated-wip-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-3e0b7495bc12.json",
+        "job_id": "job-3e0b7495bc12",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/annotated-wip-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/annotated-wip-r1.txt",
+        "prompt_sha256": "de1267e96785b221f46b233953b135985ac5e67635c9ffdaa53b6fdd8d13acf9",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/annotated-wip-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-3e0b7495bc12.json",
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "code": "seed_missing",
+      "exit_code": 1,
+      "image_id": "hands-free-tts",
+      "job_id": "job-1e33b20a1228",
+      "ok": false,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/hands-free-tts-r1.png",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/hands-free-tts-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image",
+        "backoff_attempts": 1,
+        "code": "seed_missing",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "detail": "no seed PNG for hands-free-tts-r1; place under /Users/a2026/work/pm-visuals-image-mcp/seed/hands-free-tts-r1.png or map in /Users/a2026/work/pm-visuals-image-mcp/seed/index.json",
+        "generator": "grokbot",
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "inbox_path": "/Users/a2026/work/pm-visuals-image-mcp/inbox/job-1e33b20a1228.json",
+        "job_id": "job-1e33b20a1228",
+        "model": "grok-bot-generate-image",
+        "ok": false,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/hands-free-tts-r1.png",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/hands-free-tts-r1.txt",
+        "prompt_sha256": "3a607a1073806d156f5fccad4812dc901bc0bee2f861b9963ef0d1a04d47e31b",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/hands-free-tts-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "status_path": "/Users/a2026/work/pm-visuals-image-mcp/status/job-1e33b20a1228.json",
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        }
+      }
+    },
+    {
+      "exit_code": 0,
+      "image_id": "settings-privacy",
+      "job_id": "job-100104b6ad3b",
+      "ok": true,
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/settings-privacy-r1.png",
+      "output_sha256": "1ff6a829cfefbe300a302350e764adecdeb6d040eefa192918fd8c1bfe3e7cea",
+      "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/settings-privacy-r1.png.receipt.json",
+      "result": {
+        "backend": "grok_bot_generate_image_resized",
+        "backoff_attempts": 1,
+        "code": "ok",
+        "command": [
+          "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+          "-c",
+          "<pm_visuals_image_mcp.bridge>"
+        ],
+        "content_type": "image/png",
+        "generator": "grokbot",
+        "height": 1392,
+        "helper_path": "/Users/a2026/work/pm-visuals-image-mcp/.venv/bin/python",
+        "job_id": "job-100104b6ad3b",
+        "model": "grok-bot-generate-image",
+        "ok": true,
+        "output_bytes": 500005,
+        "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/settings-privacy-r1.png",
+        "output_sha256": "1ff6a829cfefbe300a302350e764adecdeb6d040eefa192918fd8c1bfe3e7cea",
+        "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/settings-privacy-r1.txt",
+        "prompt_sha256": "2d565283317c7669f1db55d1ae7cd4f181f0cb3001f745f8638ed420912cff42",
+        "receipt_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/settings-privacy-r1.png.receipt.json",
+        "requested_size": "640x1392",
+        "source_height": 1280,
+        "source_sha256": "5838a9f9cd45fa86e20ff94e21a12b1429f409f46f22058a7da3fef895859317",
+        "source_size": "720x1280",
+        "source_width": 720,
+        "timestamp": "2026-10-14T13:11:44Z",
+        "wake": "local_seed",
+        "webhook_http": {
+          "http_status": 200,
+          "mode": "local",
+          "ok": true
+        },
+        "width": 640
+      },
+      "skipped": false
+    }
+  ],
+  "schema": "appfactory.grokbot_image_batch_result.v1",
+  "status": "completed",
+  "submission_scope": "local_wrapper_tasks",
+  "submitted": 8
+}

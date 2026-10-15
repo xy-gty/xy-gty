@@ -1,0 +1,19 @@
+{
+  "backend": "grok_bot_generate_image",
+  "code": "ok",
+  "content_type": "image/png",
+  "generator": "grokbot",
+  "width": 640,
+  "height": 1392,
+  "model": "grok-bot-generate-image",
+  "ok": true,
+  "output_bytes": 676535,
+  "output_path": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/stitch-review-r1.png",
+  "output_sha256": "33fa34764cf043f6b87c265fe331fb31f222cec729d69a52939e7bfebf5d85d6",
+  "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/frames/prompts/stitch-review-r1.txt",
+  "prompt_sha256": "4a623caac1a01fbb0ceb3abaa365217ec68385f900fdc7309ae8994e4a732108",
+  "requested_size": "640x1392",
+  "visual_check": "PASS: stitch-review page; WIP knit photo; Suggested Row 12 k2 p2 rib; Keep/Discard/Edit; Review chip; fuchsia/lime palette; 640x1392",
+  "timestamp": "2026-10-14T13:13:59Z",
+  "wake": "local_seed"
+}

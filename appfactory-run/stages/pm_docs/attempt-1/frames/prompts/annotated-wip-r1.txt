@@ -1,0 +1,30 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job.
+
+Always include this composition line verbatim. Codex may return a native
+portrait at the requested size; GrokBot returns landscape (1024x576 /
+1280x720). This line keeps the phone UI as a croppable vertical strip so the
+factory wrapper can produce 640x1392 without losing content when the source
+is landscape:
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+If Codex writes the requested portrait size directly, skip postprocess.
+Factory postprocess (official, wrapper-owned, landscape sources only):
+- fit_pad: crop the vertical UI strip, uniform scale, center on the target
+  canvas, solid sampled-color padding. No drawn UI.
+- crop_scale: crop the vertical UI strip, then uniform scale to the target.
+
+Do not ask the image model to letterbox, overlay, or recompose after the fact.
+Do not draw, redraw, or overlay UI with PIL. The wrapper records generator,
+postprocess, source sha256/size, prompt_file, and crop_box on the receipt.
+
+Then describe this exact page/state: chrome, hierarchy, copy, and example data.
+
+App: YarnCue — AI knitting/crochet weave coach.
+Palette: primary #A21CAF fuchsia, secondary #FDF4FF soft wash, accent #84CC16 lime, deep purple ink #3B0764 on light surfaces. Multi-color yarn accents. Ban all-black shell. Ban rope-path carousel, sky-arc card stack, dial+strip twins.
+Large legible English UI text. Native iOS SwiftUI look.
+
+Page: Annotated stitch diagram on WIP photo.
+Full-bleed WIP knitting photo with 2–3 numbered annotation pins/callouts pointing at stitches (lime pins, white labels "1 k", "2 p").
+Top bar: "Annotate WIP" with Keep marks / Discard.
+Small swatch strip remnant at top. Not a black editor chrome.

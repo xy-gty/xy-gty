@@ -1,0 +1,165 @@
+{
+  "schema": "appfactory.ultra_lite_technical.v1",
+  "run_id": "kf-20261014T130415Z-f3114989",
+  "producer_pm_attempt": 1,
+  "identity": {
+    "app_name": "YarnCue",
+    "development_bundle_id": "com.lingguang.yarncue",
+    "ui_language": "en-US"
+  },
+  "scope": [
+    "yarn_wip_photo_camera_and_library_import",
+    "stitch_row_recognition_review_persist",
+    "ai_weave_coach_next_row_chat_with_consent_gate",
+    "annotated_stitch_diagrams_on_wip",
+    "tts_hands_free_next_row_coaching",
+    "microphone_dictate_pattern_notes_and_speech_to_coach",
+    "yarn_ball_swatch_strip_and_horizontal_next_row_band",
+    "local_legal_pages_user_owned_wip_only",
+    "free_app_only_no_storekit_paywall_coins_att"
+  ],
+  "entities": [
+    {
+      "name": "Project",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "WIPShot",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "StitchRecognitionDraft",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "StitchCue",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AnnotatedOverlay",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachTurn",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "CoachMessage",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "PatternNote",
+      "persistence": "AtomicCodableStore"
+    },
+    {
+      "name": "AIConsentRecord",
+      "persistence": "KeychainCredentialStore_and_local"
+    }
+  ],
+  "interfaces": [
+    {
+      "name": "StitchReviewBar",
+      "confirm": "Keep",
+      "reject": "Discard",
+      "edit": "Edit"
+    },
+    {
+      "name": "TurnReview",
+      "confirm": "Keep",
+      "reject": "Discard"
+    },
+    {
+      "name": "AIConsentGate",
+      "provider": "DeepSeek",
+      "disclosure_version": "yarncue.consent.v1",
+      "fields": [
+        "wip_photo_descriptor",
+        "recognized_stitch_summary",
+        "current_row",
+        "next_row_intent",
+        "pattern_note_text",
+        "chat_text",
+        "voice_transcript"
+      ]
+    },
+    {
+      "name": "PhotoImportSession"
+    },
+    {
+      "name": "CameraCapture"
+    },
+    {
+      "name": "SpeechNoteCapture"
+    },
+    {
+      "name": "HandsFreeTTSPlayer"
+    },
+    {
+      "name": "YarnBallSwatchStrip"
+    },
+    {
+      "name": "NextRowStepBand"
+    },
+    {
+      "name": "AnnotatedDiagramEditor"
+    },
+    {
+      "name": "AtomicCodableStore"
+    },
+    {
+      "name": "KeychainCredentialStore"
+    },
+    {
+      "name": "TypedNavigationStore"
+    },
+    {
+      "name": "RuntimeForm"
+    }
+  ],
+  "navigation": [
+    "ProjectsHome",
+    "NewProject",
+    "CaptureImport",
+    "StitchReview",
+    "ProjectCoach",
+    "CoachChat",
+    "TurnReview",
+    "AnnotatedWIP",
+    "HandsFreeTTS",
+    "DictateNote",
+    "Settings",
+    "LegalPages",
+    "ConsentSheet"
+  ],
+  "review_controls": {
+    "confirm": "Keep",
+    "reject": "Discard",
+    "edit": "Edit"
+  },
+  "config": {
+    "config_mode": "local_only",
+    "privacy_url": "UNKNOWN",
+    "terms_url": "UNKNOWN",
+    "support_url": "UNKNOWN",
+    "ai_key": "UNKNOWN",
+    "cloudkit": "UNKNOWN"
+  },
+  "privacy_usage_descriptions": {
+    "NSCameraUsageDescription": "Capture yarn / WIP photos for stitch & row recognition",
+    "NSPhotoLibraryUsageDescription": "Import prior WIP / yarn shots into the coach flow",
+    "NSMicrophoneUsageDescription": "Dictate pattern notes and row intent while knitting",
+    "NSSpeechRecognitionUsageDescription": "Turn spoken next-row questions into coach chat and TTS"
+  },
+  "foundation": {
+    "name": "AppRuntimeCore",
+    "version": "1.0.0"
+  },
+  "documents": [
+    {
+      "ref": "technical/contract.md",
+      "sha256": "2376f4ab446a4d5735464fd8943c3a451d62e9f08bddaab3604934deadb55096"
+    }
+  ],
+  "goal_sha256": "4f3122313621462ccc94c3a7f119c76d9eb4a49e720447e1ab0a50ba04ea91d5",
+  "frozen_at": "2026-10-14T13:09:44Z"
+}

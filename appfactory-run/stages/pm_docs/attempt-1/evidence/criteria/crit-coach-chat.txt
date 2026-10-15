@@ -1,0 +1,1 @@
+Weave-coach chat shows YarnCue branding (not DuctCue), a next-row knitting/crochet reply, and Keep/Discard review controls before saving advice.

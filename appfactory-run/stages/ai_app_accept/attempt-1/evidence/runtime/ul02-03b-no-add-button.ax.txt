@@ -1,0 +1,86 @@
+Optional(Attributes: Application, 0x1182c5cc0, pid: 9513, label: 'YarnCue'
+Element subtree:
+ →Application, 0x1182c5cc0, pid: 9513, label: 'YarnCue'
+    Window (Main), 0x1182c6a80, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x1182c5e00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x1182c5f40, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x1182c66c0, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x1182c6940, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x1182c6440, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1182c6580, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x1182c61c0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x1182c6800, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x1182c6300, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x1182c6080, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x1182c70c0, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x1182c6bc0, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Review'
+                              Button, 0x1182c5b80, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Capture'
+                              StaticText, 0x1182c7c00, {{16.0, 119.7}, {114.0, 40.7}}, label: 'Review'
+                            Other, 0x1182c7480, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1182c4dc0, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x1182c7340, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x1182c7200, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x1182c43c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1182c52c0, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x1182c4280, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x1171e5900, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x1171e7d40, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x1171e70c0, {{0.0, 168.0}, {402.0, 540.0}}
+                                        StaticText, 0x1171e5b80, {{20.0, 188.0}, {188.3, 26.3}}, label: 'Stitch / row review'
+                                        Image, 0x1171e7700, {{20.0, 230.3}, {362.0, 240.3}}
+                                        TextField, 0x1171e75c0, {{20.0, 486.7}, {362.0, 34.0}}, placeholderValue: 'Stitch name', value: Double crochet
+                                        Stepper, 0x1171e7480, {{20.0, 536.7}, {362.0, 32.0}}, label: 'Row 1', value: 1
+                                          Button, 0x1171e5e00, {{288.0, 536.7}, {47.0, 32.0}}, identifier: 'Decrement', label: 'Row 1, Decrement', value: 1
+                                          Button, 0x1171e6e40, {{335.0, 536.7}, {47.0, 32.0}}, identifier: 'Increment', label: 'Row 1, Increment', value: 1
+                                        TextField, 0x1171e6940, {{26.0, 588.7}, {350.0, 45.0}}, value: Local recognition ...
+                                          Other, 0x1171e6f80, {{26.0, 608.2}, {350.0, 22.5}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                                            Other, 0x1171e6800, {{29.0, 627.7}, {341.0, 3.0}}
+                                        Button, 0x1171e6440, {{20.0, 653.7}, {62.7, 34.3}}, label: 'Keep'
+                                        Button, 0x1171e7ac0, {{94.7, 653.7}, {82.0, 34.3}}, label: 'Discard'
+                                        Button, 0x1171e6080, {{188.7, 653.7}, {53.3, 34.3}}, label: 'Edit'
+                                      Other, 0x1171e7340, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x1171e5cc0, {{396.0, 202.0}, {3.0, 586.0}}
+                                      Other, 0x1171e6300, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x1171e6bc0, {{396.0, 202.0}, {3.0, 586.0}}
+                            Other, 0x1171e7980, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x1171e61c0, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x1171e6a80, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x1171e6580, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x1171e6d00, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x1171e7e80, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x1182cd2c0, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x1182ce300, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x1182cf340, {{68.0, 795.0}, {94.0, 54.0}}, identifier: 'square.grid.2x2.fill', label: 'Projects', Selected
+                            Image, 0x1182ce440, {{102.0, 802.3}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x1182ced00, {{154.0, 795.0}, {94.0, 54.0}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'Coach'
+                            Image, 0x1182cc640, {{182.0, 800.0}, {38.3, 31.3}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'conversation'
+                          Button, 0x1182cd040, {{240.0, 795.0}, {94.0, 54.0}}, identifier: 'gearshape.fill', label: 'Settings'
+                            Image, 0x1182cfe80, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x1182cf980, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x1182cc8c0, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1182cfc00, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x1182cfac0, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x1182cebc0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117218280, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x117219cc0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x117219e00, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x117218000, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x117219680, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x117219f40, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x11721a080, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11721a1c0, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117218a00, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x117219900, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x117218140, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x117219a40, {{0.0, 791.0}, {402.0, 83.0}}
+    Window, 0x1172188c0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x117218c80, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x117218b40, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x1182c5cc0, pid: 9513, label: 'YarnCue'
+Query chain:
+ →Find: Application 'com.lingguang.yarncue'
+  Output: {
+    Application, 0x117219b80, pid: 9513, label: 'YarnCue'
+  }
+)

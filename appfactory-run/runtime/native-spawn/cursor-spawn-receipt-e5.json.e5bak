@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "9ba15c2c-3db1-4817-a9c4-367452364f43",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_9ba15c2c3db14817a9c4367452364f43_e5",
+    "prompt": "Dispatch 9ba15c2c-3db1-4817-a9c4-367452364f43. Read /Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/codex.launch.e5.md SHA-256 31eb01cf99618a99eaed9a0f6d56af55c830fa5bd7fe74dd3e1ea93e94f86cba. Verify the file hash, then execute that file. Do not copy the file into this message. CONTROLLER e5: e4 lost. Complete home-empty vision, fix coach-chat (no DuctCue), re-check capture-import, freeze visuals, write MAP.md, finish ready. Never overwrite locked annotated-wip-r1.png."
+  },
+  "agent_id": "cursor-cli-pm-9ba15c2c3db1-e5",
+  "agent_name": "/root/pkg_9ba15c2c3db14817a9c4367452364f43_e5",
+  "execution_seq": 5,
+  "spawned_at": "2026-10-14T14:02:52Z",
+  "pid": 34281,
+  "note": "CONTROLLER replace_lost_worker e5 after e4 dead; no infra-retry CLI"
+}

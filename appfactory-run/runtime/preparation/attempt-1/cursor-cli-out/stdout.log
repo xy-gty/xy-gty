@@ -1,0 +1,6 @@
+Dispatch `975b28b7-fc0f-4b3f-b25d-8010265d2baa` complete.
+
+- Launch hash verified; all bound source refs OK  
+- YarnCue private preparation **ready** (entities/navigation/stores/review + AppRuntimeCore via installer)  
+- `preparation_cache` hit; domain compile scratch outside workspace  
+- Finish receipt written (`status: ready`); controller can observe stop and seal

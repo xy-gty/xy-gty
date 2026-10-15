@@ -1,0 +1,15 @@
+{
+  "schema": "appfactory.ultra_lite_local_config.v1",
+  "app": "YarnCue",
+  "stdout_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/ai_app_accept/attempt-1/evidence/config-audit.stdout.txt",
+  "stdout_sha256": "5dee84e1416772efdec722227ffa9d9110b6e7375aa08165afa89a5383a776c0",
+  "classification": {
+    "schema": "appfactory.ultra_lite_local_config.v1",
+    "kind": "unknown",
+    "code": "audit_output_unclassified",
+    "blocker": false,
+    "detail": "no record_match_error token; treat remote config as a gap",
+    "literal": ""
+  },
+  "blocker": false
+}

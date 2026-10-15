@@ -1,0 +1,89 @@
+Optional(Attributes: Application, 0x118a58c80, pid: 10468, label: 'YarnCue'
+Element subtree:
+ →Application, 0x118a58c80, pid: 10468, label: 'YarnCue'
+    Window (Main), 0x118a58a00, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x118a58b40, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x118a58640, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x118a58140, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x118a58280, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x118a58000, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x118c4ed00, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x118c4ebc0, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x118c4f480, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x118c4fac0, {{0.0, 0.0}, {402.0, 874.0}}
+                        Other, 0x118c4fc00, {{0.0, 0.0}, {402.0, 874.0}}
+                          Other, 0x118c4f5c0, {{0.0, 0.0}, {402.0, 874.0}}
+                            NavigationBar, 0x118c4df40, {{0.0, 62.0}, {402.0, 106.0}}, identifier: 'Projects'
+                              StaticText, 0x118c4e300, {{16.0, 119.7}, {130.7, 40.7}}, label: 'Projects'
+                            Other, 0x118c4e440, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x118c4e580, {{0.0, 0.0}, {402.0, 874.0}}
+                                Other, 0x118c4e800, {{0.0, 0.0}, {402.0, 874.0}}
+                                  Other, 0x118c4f840, {{0.0, 0.0}, {402.0, 874.0}}
+                                    ScrollView, 0x118c4f700, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x118c4fd40, {{0.0, 0.0}, {402.0, 874.0}}
+                                        Other, 0x118c4fe80, {{0.0, 0.0}, {402.0, 170.8}}
+                                        Other, 0x118c4f980, {{0.0, 726.2}, {402.0, 147.8}}
+                                      Other, 0x118c4e940, {{0.0, 0.0}, {402.0, 874.0}}
+                                      Other, 0x118c4ef80, {{0.0, 168.0}, {402.0, 448.3}}
+                                        StaticText, 0x118c4f0c0, {{20.0, 188.0}, {114.7, 14.3}}, label: 'Yarn ball color strip'
+                                        ScrollView, 0x118c4f200, {{20.0, 210.3}, {362.0, 40.0}}, identifier: 'YarnBallSwatchStrip'
+                                          Other, 0x118c4f340, {{20.0, 210.3}, {312.0, 40.0}}
+                                            Other, 0x118c4ea80, {{20.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #A21CAF'
+                                            Other, 0x118c4ee40, {{66.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #EC4899'
+                                            Other, 0x11829c640, {{112.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #F472B6'
+                                            Other, 0x11829c280, {{158.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #84CC16'
+                                            Other, 0x11829c780, {{204.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #22D3EE'
+                                            Other, 0x11829c140, {{250.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #FBBF24'
+                                            Other, 0x11829ca00, {{296.0, 212.3}, {36.0, 36.0}}, label: 'Yarn swatch #FB7185'
+                                        StaticText, 0x11829c8c0, {{20.0, 270.3}, {135.0, 40.7}}, label: 'YarnCue'
+                                        StaticText, 0x11829c000, {{20.0, 331.0}, {347.3, 42.3}}, label: 'Snap yarn & WIP photos, Keep stitch cues, then coach the next row with hands-free TTS.'
+                                        Button, 0x11829c3c0, {{20.0, 393.3}, {116.0, 34.3}}, label: 'New project'
+                                        Button, 0x11829c500, {{20.0, 447.7}, {362.0, 148.7}}, identifier: 'YarnBallSwatchStrip', label: 'Accept WIP, Current row 1, Swatches'
+                                          StaticText, 0x11829cb40, {{36.0, 463.7}, {92.3, 20.3}}, label: 'Accept WIP'
+                                          StaticText, 0x11829cdc0, {{36.0, 492.0}, {91.7, 18.0}}, label: 'Current row 1'
+                                          StaticText, 0x11829cc80, {{36.0, 518.0}, {57.3, 14.3}}, label: 'Swatches'
+                                          ScrollView, 0x11829db80, {{36.0, 540.3}, {330.0, 40.0}}
+                                            Other, 0x11829da40, {{36.0, 540.3}, {312.0, 40.0}}
+                                      Other, 0x11829d680, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x11829cf00, {{396.0, 293.7}, {3.0, 494.3}}
+                                      Other, 0x11829d040, {{369.0, 116.0}, {30.0, 675.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                        Other, 0x11829dcc0, {{396.0, 293.7}, {3.0, 494.3}}
+                            Other, 0x11829d900, {{0.0, 0.0}, {402.0, 874.0}}
+                              Other, 0x11829df40, {{0.0, 0.0}, {402.0, 874.0}}
+                Other, 0x11829e580, {{0.0, 791.0}, {402.0, 83.0}}
+                  Other, 0x11829e800, {{0.0, 0.0}, {402.0, 874.0}}
+                    TabBar, 0x11829e300, {{0.0, 791.0}, {402.0, 83.0}}, label: 'Tab Bar'
+                      Other, 0x11829d7c0, {{64.0, 791.0}, {274.0, 62.0}}
+                        Other, 0x11829de00, {{64.0, 791.0}, {94.0, 54.0}}
+                        Other, 0x11829e940, {{64.0, 791.0}, {274.0, 62.0}}
+                          Button, 0x11829e6c0, {{68.0, 795.0}, {94.0, 54.0}}, label: 'Projects', Selected
+                            Image, 0x11829f0c0, {{102.0, 802.3}, {27.0, 25.0}}, identifier: 'square.grid.2x2.fill', label: 'grid 2x2'
+                          Button, 0x11829d400, {{154.0, 795.0}, {94.0, 54.0}}, label: 'Coach'
+                            Image, 0x11829d540, {{182.0, 800.0}, {38.3, 31.3}}, identifier: 'bubble.left.and.bubble.right.fill', label: 'conversation'
+                          Button, 0x11829e080, {{240.0, 795.0}, {94.0, 54.0}}, label: 'Settings'
+                            Image, 0x11829e1c0, {{273.0, 801.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'gearshape.fill'
+                        Other, 0x11829ea80, {{68.0, 795.0}, {94.0, 54.0}}
+                          Other, 0x11829e440, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x11829f200, {{68.0, 795.0}, {94.0, 54.0}}
+                            Other, 0x11829d2c0, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x11829ebc0, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x11829ee40, {{68.0, 795.0}, {94.0, 54.0}}
+                                  Other, 0x11829f340, {{68.0, 795.0}, {94.0, 54.0}}
+                                Other, 0x11829f480, {{68.0, 795.0}, {94.0, 54.0}}
+                              Other, 0x11829ef80, {{68.0, 795.0}, {94.0, 54.0}}
+                  Other, 0x11829ed00, {{0.0, 791.0}, {402.0, 83.0}}
+                    Other, 0x11829f700, {{0.0, 791.0}, {402.0, 83.0}}
+                      Other, 0x11829d180, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x11829f840, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x11829f5c0, {{0.0, 791.0}, {402.0, 83.0}}
+                            Other, 0x1182c9cc0, {{0.0, 791.0}, {402.0, 83.0}}
+                        Other, 0x1182c9e00, {{0.0, 791.0}, {402.0, 83.0}}
+                          Other, 0x1182c9f40, {{0.0, 791.0}, {402.0, 83.0}}
+Path to element:
+ →Application, 0x118a58c80, pid: 10468, label: 'YarnCue'
+Query chain:
+ →Find: Application 'com.lingguang.yarncue'
+  Output: {
+    Application, 0x1182c8140, pid: 10468, label: 'YarnCue'
+  }
+)

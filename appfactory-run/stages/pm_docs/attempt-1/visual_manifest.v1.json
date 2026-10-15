@@ -1,0 +1,244 @@
+{
+  "schema": "appfactory.ai_ultra_lite_visuals.v1",
+  "run_id": "kf-20261014T130415Z-f3114989",
+  "stage": "pm_docs",
+  "attempt": 1,
+  "frames": [
+    {
+      "frame_id": "home-empty",
+      "page_id": "home",
+      "state_id": "empty",
+      "criterion_ids": [
+        "CR-home-empty"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/home-empty-r1.txt",
+      "image_ref": "frames/home-empty-r1.png",
+      "receipt_ref": "frames/home-empty-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.jsonl",
+          "sha256": "f44b0122bc876a553b23b655aefe91de525301801bc0fe5423e2b9d083f03016"
+        },
+        {
+          "ref": "evidence/visual-readback/home-empty.receipt.json",
+          "sha256": "58cda4ae72b61d70b185772bb9368b2ac8a504e4e7d44989c8da149048cccb4d"
+        }
+      ],
+      "prompt_sha256": "5224ef672a91c11f28c39160d102f09de3f31bafd89d8f3f7ee5773fc76a33ae",
+      "image_sha256": "f6706f69b1975df9dd5cb29d0dd3b5c355179d374db5169ee27db77e5d9ff835",
+      "receipt_sha256": "aee7fdca866787ad5f358dee0905e9c32b348047d0dc3e00539bd1e586d10beb",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "capture-import",
+      "page_id": "capture-import",
+      "state_id": "chooser",
+      "criterion_ids": [
+        "CR-capture-import"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/capture-import-r1.txt",
+      "image_ref": "frames/capture-import-r1.png",
+      "receipt_ref": "frames/capture-import-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.jsonl",
+          "sha256": "10fde6dc05f313619cc88eae71aded44f92c2f493348d9379a08c57b914f7763"
+        },
+        {
+          "ref": "evidence/visual-readback/capture-import.receipt.json",
+          "sha256": "5304fd62355671caf2b8341ea50b1c6af3f396ca8786b03511a9fb8a84c07f01"
+        }
+      ],
+      "prompt_sha256": "3af28fc5fcfa83253a24005b2078acc25c02b239a32efe2ffe04aa2466fc5602",
+      "image_sha256": "8d0752fe5e9b0798f92d00d4f7ae31eca8d3121dc99742c1557aa60b71afc028",
+      "receipt_sha256": "155a78c28b92c91d7979f3aeb38eff053a8c576f3e470cecdb63105fada073d0",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "coach-chat",
+      "page_id": "coach-chat",
+      "state_id": "thread",
+      "criterion_ids": [
+        "CR-coach-chat"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/coach-chat-r1.txt",
+      "image_ref": "frames/coach-chat-r1.png",
+      "receipt_ref": "frames/coach-chat-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/coach-chat.receipt.jsonl",
+          "sha256": "15c814a627d1d2d7b876caa2daff869d578a66417e1c0b17ae2152789c1e07a9"
+        },
+        {
+          "ref": "evidence/visual-readback/coach-chat.receipt.json",
+          "sha256": "efe50e1540f74d08776f0062998593aa67df4e19c79cd520f9f42b9d7e22ebfb"
+        }
+      ],
+      "prompt_sha256": "d92b0189171088665eab59bf4a111c203eebc2ac3d68f2a66c45040b614c5fc7",
+      "image_sha256": "02724cba147f1d2eaf1569a55b096519f9e7dbb051a2d3a1706720de4b420171",
+      "receipt_sha256": "d2a2764cf77189a3b02b8a01d7ff1852ec79b78992c06069d2d2d7c9e241fba4",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "project-coach",
+      "page_id": "project-coach",
+      "state_id": "active",
+      "criterion_ids": [
+        "CR-project-coach"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/project-coach-r1.txt",
+      "image_ref": "frames/project-coach-r1.png",
+      "receipt_ref": "frames/project-coach-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/project-coach.receipt.jsonl",
+          "sha256": "6d18f8d71105b3b191a7193f129c34cd9ed436fff0f6cb6f0455e2857f91af12"
+        },
+        {
+          "ref": "evidence/visual-readback/project-coach.receipt.json",
+          "sha256": "77be3b11e1025294ce61b3b8c942abf1107a636949b57a92783eea7bebc44c02"
+        }
+      ],
+      "prompt_sha256": "24a877ffac74ee4b58fd59625c68dcceb897edc550d10b9f4473797fb4024f0e",
+      "image_sha256": "ff4c4e4eee976796bb883c7f918d026376392a86741abcb5924b146bd87823df",
+      "receipt_sha256": "e92c901eb176039586814c7b39cd7ba2d9b353341c8dfae5ba6f3685b0d71bd5",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "stitch-review",
+      "page_id": "stitch-review",
+      "state_id": "draft",
+      "criterion_ids": [
+        "CR-stitch-review"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/stitch-review-r1.txt",
+      "image_ref": "frames/stitch-review-r1.png",
+      "receipt_ref": "frames/stitch-review-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/stitch-review.receipt.jsonl",
+          "sha256": "de34c741cfac6c9046065b2483f09ba9af0e9d388e13b22d179c5187cd69f0c0"
+        },
+        {
+          "ref": "evidence/visual-readback/stitch-review.receipt.json",
+          "sha256": "f6582dd7bb6e1c4bdde299bf95655df48c9d352fb6210e195d94f58ec7e2db0e"
+        }
+      ],
+      "prompt_sha256": "4a623caac1a01fbb0ceb3abaa365217ec68385f900fdc7309ae8994e4a732108",
+      "image_sha256": "33fa34764cf043f6b87c265fe331fb31f222cec729d69a52939e7bfebf5d85d6",
+      "receipt_sha256": "fae11072cbf3b3e97d3a4c88e50c2179252406c33cc754fda9e54df121353694",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "annotated-wip",
+      "page_id": "annotated-wip",
+      "state_id": "overlay",
+      "criterion_ids": [
+        "CR-annotated-wip"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/annotated-wip-r1.txt",
+      "image_ref": "frames/annotated-wip-r1.png",
+      "receipt_ref": "frames/annotated-wip-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/annotated-wip.receipt.jsonl",
+          "sha256": "d5459abe9c62fafdac84eb59b116bd26913bbd3e1958199c336f628e3cd4105a"
+        },
+        {
+          "ref": "evidence/visual-readback/annotated-wip.receipt.json",
+          "sha256": "bb66e419e9c33870748f1b916e1c70d89ada5135bd0b24a62028d962d92a5b12"
+        }
+      ],
+      "prompt_sha256": "de1267e96785b221f46b233953b135985ac5e67635c9ffdaa53b6fdd8d13acf9",
+      "image_sha256": "9ace33afd688ae88e20a773718ba209f464bde2fa711e27e25634bf2f99c73d3",
+      "receipt_sha256": "c33ece18de0d03dddb1092c383361e2cb775c0b5b210d8133f282be52649a02b",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "hands-free-tts",
+      "page_id": "hands-free-tts",
+      "state_id": "speaking",
+      "criterion_ids": [
+        "CR-hands-free-tts"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/hands-free-tts-r1.txt",
+      "image_ref": "frames/hands-free-tts-r1.png",
+      "receipt_ref": "frames/hands-free-tts-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/hands-free-tts.receipt.jsonl",
+          "sha256": "706ba08c37bbe8eeb8da74b08ab4f9a6d779e38283a71a315fe8b341b362ed66"
+        },
+        {
+          "ref": "evidence/visual-readback/hands-free-tts.receipt.json",
+          "sha256": "9f8ef6d9632ba9febf3d43db787d08e21fabeea25ce7dc54429aebcb761dd33c"
+        }
+      ],
+      "prompt_sha256": "3a607a1073806d156f5fccad4812dc901bc0bee2f861b9963ef0d1a04d47e31b",
+      "image_sha256": "a3b4c1352c80a76a3dc52e0c157fff40f78c7cbfbf332435cb357ede0c297788",
+      "receipt_sha256": "a4dd5ea16fa623bc3c306fef8e1b9901a72134f6ce559c72e595521d42ca8cfe",
+      "width": 640,
+      "height": 1392
+    },
+    {
+      "frame_id": "settings-privacy",
+      "page_id": "settings",
+      "state_id": "privacy",
+      "criterion_ids": [
+        "CR-settings-privacy"
+      ],
+      "requested_size": "640x1392",
+      "prompt_ref": "frames/prompts/settings-privacy-r1.txt",
+      "image_ref": "frames/settings-privacy-r1.png",
+      "receipt_ref": "frames/settings-privacy-r1.png.receipt.json",
+      "readback_refs": [
+        {
+          "ref": "evidence/visual-readback/settings-privacy.receipt.jsonl",
+          "sha256": "65439f8de1f942ec57905df51fa790a59933da0eb342fdbac6e67a037e9635f7"
+        },
+        {
+          "ref": "evidence/visual-readback/settings-privacy.receipt.json",
+          "sha256": "b8fe9c15658f8f72fab424853809f87dad034d2f744ce7ceb020c46a6ea903ae"
+        }
+      ],
+      "prompt_sha256": "2d565283317c7669f1db55d1ae7cd4f181f0cb3001f745f8638ed420912cff42",
+      "image_sha256": "1ff6a829cfefbe300a302350e764adecdeb6d040eefa192918fd8c1bfe3e7cea",
+      "receipt_sha256": "8d5fcdf5ff2c13f0127388002094c1aa1c9c12c9c44745dcd3ec09a476954480",
+      "width": 640,
+      "height": 1392
+    }
+  ],
+  "assets": [],
+  "documents": [
+    {
+      "ref": "build/product.md",
+      "sha256": "04cbfa8eb0816d028d0e7e4a320e95b290225dfa2a7283c259fe7923269f1f71"
+    },
+    {
+      "ref": "build/features.md",
+      "sha256": "4cb9ae24e15fe9c347b53ce5ea9fb610b09b9fdb5a94e6d5ce08c9901c6accc8"
+    },
+    {
+      "ref": "build/design.md",
+      "sha256": "f8aea9cd849aec427bc311e8ad59883528fb35a86192de4196e2b91e53edd392"
+    },
+    {
+      "ref": "build/acceptance.md",
+      "sha256": "ab823403b5db0897457fae9ac6535509ebcaa14338a93644b87d8beaefd4f638"
+    }
+  ],
+  "frozen_at": "2026-10-15T02:15:42Z"
+}

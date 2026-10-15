@@ -1,0 +1,205 @@
+{
+  "schema": "appfactory.codex-task.v1",
+  "task_kind": "ultra_lite_preparation",
+  "run_id": "kf-20261014T130415Z-f3114989",
+  "stage": "ai_app_build",
+  "attempt": 1,
+  "producer_pm_attempt": 1,
+  "dispatch_id": "975b28b7-fc0f-4b3f-b25d-8010265d2baa",
+  "controller_id": "5cf415ee-4be7-474b-bcac-aa79da0fd6bf",
+  "ownership_epoch": 1,
+  "execution_seq": 1,
+  "required_slots": 1,
+  "execution_status": "completed",
+  "agent_id": "cursor-cli-prep-975b28b7fc0f",
+  "agent_name": "/root/pkg_975b28b7fc0f4b3fb25d8010265d2baa",
+  "requested_model": "auto",
+  "requested_reasoning_effort": "auto",
+  "technical_binding": {
+    "schema": "appfactory.ultra_lite_technical.v1",
+    "run_id": "kf-20261014T130415Z-f3114989",
+    "producer_pm_attempt": 1,
+    "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical_contract.v1.json",
+    "technical_contract_sha256": "f053d2ed94177b694d55ab0f4804c9d10fab8634d08141f95a8469f50fd6fa0f",
+    "source_inputs": [
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "sha256": "f053d2ed94177b694d55ab0f4804c9d10fab8634d08141f95a8469f50fd6fa0f"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+        "sha256": "e6265a768cb6d116fe5fd77fcdbccd01f33864d240fed4e8f965f23d8a94380a"
+      },
+      {
+        "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical/contract.md",
+        "sha256": "2376f4ab446a4d5735464fd8943c3a451d62e9f08bddaab3604934deadb55096"
+      }
+    ]
+  },
+  "source_inputs": [
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/agents/AIAppBuilderAgent/prompt.core.md",
+      "sha256": "cec836729aca91c0f01085615434392b91b40e0b37000447a7375a47b1ea3846"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical_contract.v1.json",
+      "sha256": "f053d2ed94177b694d55ab0f4804c9d10fab8634d08141f95a8469f50fd6fa0f"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical_contract.binding.v1.json",
+      "sha256": "e6265a768cb6d116fe5fd77fcdbccd01f33864d240fed4e8f965f23d8a94380a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/stages/pm_docs/attempt-1/technical/contract.md",
+      "sha256": "2376f4ab446a4d5735464fd8943c3a451d62e9f08bddaab3604934deadb55096"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/foundation.v1.json",
+      "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Package.swift",
+      "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+      "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+      "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+      "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+      "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+      "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/assets/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+      "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/SKILL.md",
+      "sha256": "29b7b15926dd9eda8d81b7e383cbb10f3df947c1e945d566a221be5510a99d8a"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/build-ios-apps/SKILL.md",
+      "sha256": "38063e6053ea6f4f78a2a727736e7b3e07a5ad56d69b41415a7fb59818eeb3d2"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/skills/ai-app-ultra-lite/references/p1-execution.md",
+      "sha256": "8eafbe8424fd39b7057c79765b1828ca7b96fce60fe9c043a97a198e593ff1e6"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/codex_package/preparation.py",
+      "sha256": "b0284fd1098562974b82bf6e0f8c1784eefa69c710e53519181a663e958241fa"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/codex_package/preparation_cache.py",
+      "sha256": "6938f4ba69107312b6069fc823c3eb46f44bc989f4a24129b452a68743494d49"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_technical.py",
+      "sha256": "0ef72dc8e7663a36d17ed4f4adbf37adfae421c71bce323011195cde45f6c9dd"
+    },
+    {
+      "ref": "/Users/a2026/work/factory-prod-1/factory/ultra_lite_foundation.py",
+      "sha256": "d7b44b9d643e417e0eaa9588b8303ed0f6f61291d26ff25dd73d74b0c0da3da2"
+    }
+  ],
+  "expected_map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/PREPARATION.md",
+  "artifact_root": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/workspace",
+  "product_dir": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/workspace",
+  "dispatch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/dispatch.md",
+  "created_at": "2026-10-14T13:11:35Z",
+  "runtime": "cursor_task",
+  "agent_type": "ultra-lite-worker",
+  "dispatch_sha256": "3ff0885c3d39b4c48d5bd98e95c8006d7b53befd1005ed010cb9695443e52250",
+  "launch_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/codex.launch.md",
+  "launch_sha256": "3ff0885c3d39b4c48d5bd98e95c8006d7b53befd1005ed010cb9695443e52250",
+  "spawn_kwargs": {
+    "subagent_type": "ultra-lite-worker",
+    "model": "auto",
+    "description": "pkg_975b28b7fc0f4b3fb25d8010265d2baa",
+    "prompt": "Dispatch 975b28b7-fc0f-4b3f-b25d-8010265d2baa. Read /Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/codex.launch.md SHA-256 3ff0885c3d39b4c48d5bd98e95c8006d7b53befd1005ed010cb9695443e52250. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "spawn_kwargs_sha256": "3a3d70df45c4c213e4d08262010815912fd1009e98ac9577eb17553ffda30884",
+  "launch_intent_at": "2026-10-14T13:11:42Z",
+  "spawn_receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/native-spawn/cursor-spawn-receipt-e4170a2a9574.json",
+  "spawn_receipt_sha256": "e4170a2a9574bcc92491f656fcd8d323d7df1928176d79a11ea042b530f3b84f",
+  "bound_at": "2026-10-14T13:12:01Z",
+  "finish_receipt": {
+    "status": "ready",
+    "map_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/PREPARATION.md",
+    "map_sha256": "920b20299a000d979d927dbd5a6c29b3089e6f4387caf1218c25c6237f62ce57",
+    "members": [
+      {
+        "ref": "Package.swift",
+        "sha256": "bad1dec1b4ebef7c3deebe41930083ce842a6c5c315889e742ff3c7a5eaa3079"
+      },
+      {
+        "ref": "Sources/YarnCueDomain/Entities.swift",
+        "sha256": "dee4d5f86812ae8e67d634c66883e6ad39c13dc32bde21ca89bc520cced69197"
+      },
+      {
+        "ref": "Sources/YarnCueDomain/Navigation.swift",
+        "sha256": "19cfda1342e7d85301679c9c655b31c0baf43cea753935e93335ab0fca75c268"
+      },
+      {
+        "ref": "Sources/YarnCueDomain/ReviewControls.swift",
+        "sha256": "9dbf29ae23958f579e2d8df99c41525d6b1ab3edbc460a2f28e589372d08d28d"
+      },
+      {
+        "ref": "Sources/YarnCueDomain/Stores.swift",
+        "sha256": "b63cfe1aa4b24bdaef8ed1b64510aea2e953538e8c3cb75815be45ddea3b0685"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Package.swift",
+        "sha256": "ee9231b48e8eec965fd8a78c3aaa7e1023adcbbd5417285fffaaaf330ebeee0e"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift",
+        "sha256": "6f86ec21e6943637efcc0a7b7efa30db0480aff8a8797c2162e59f9ea6e0df0a"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift",
+        "sha256": "d16b83207201ca6ed3ca994da3d691ec0be6be3a529b61e4614fb3305a5bbe37"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift",
+        "sha256": "c6dfe3191f9c2f6f41170c3b2ba98e37719bf769d95f3fb7426df06eb9f30019"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift",
+        "sha256": "34f651ac82c03c353eae543ef92db9ba116327ef05e8dd52686f8ab9afe575d7"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift",
+        "sha256": "75f8180339801554908f95580d1fbf562616715b35b41ba633a9f34a8d398ef2"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift",
+        "sha256": "eb4c6607212e57cab3df9fad426bd2d6db381fcca8ea5cacc38adc13c035e145"
+      },
+      {
+        "ref": "Vendor/AppRuntimeCore/foundation.v1.json",
+        "sha256": "5ac3406501873b4c8c260ba7f5ecc8c7786ecf2d7630a6661bb9faa78525e44c"
+      }
+    ]
+  },
+  "observed_model": null,
+  "final_text": "Dispatch `975b28b7-fc0f-4b3f-b25d-8010265d2baa` complete.\n\n- Launch hash verified; all bound source refs OK  \n- YarnCue private preparation **ready** (entities/navigation/stores/review + AppRuntimeCore via installer)  \n- `preparation_cache` hit; domain compile scratch outside workspace  \n- Finish receipt written (`status: ready`); controller can observe stop and seal",
+  "stopped_at": "2026-10-14T13:18:15Z",
+  "terminal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/terminal-observation.v1.json",
+  "terminal_sha256": "526ff765bebc2843475fa1025bb10eff03f9ca552792013c5b73fdd30c63578c",
+  "runtime_error": null,
+  "seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/runtime/preparation/attempt-1/sealed.v1.json",
+  "seal_sha256": "b214061da27ceb5a12c0745e10b15c3318270d4629f2ab119e2556d40aaa3605"
+}

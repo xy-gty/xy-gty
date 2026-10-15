@@ -1,0 +1,7 @@
+YarnCue `ai_app_build` dispatch **543cf837…** finished **ready**.
+
+**Product:** `runs/…/product` on independent branch `yarncue/kf-20261014T130415Z` @ `4770b6a8073711e044ddfce4575e49c535768ce1` · bundle `com.lingguang.yarncue` · palette `#A21CAF`/`#FDF4FF`/`#84CC16` · YarnBallSwatchStrip + NextRowStepBand · four permissions · no AppIcon/Launch art
+
+**Evidence:** build OK · 8/8 domain tests on **iPhone 17 Pro** · smoke install/launch/screenshot · candidate `4770b6a80737-bc768aee891c` (`candidate_unaccepted`) · finish receipt `msg-6f0f022d06614d2db95a91ed02f95fbd`
+
+**Gaps (non-blocking):** `ai_key_unavailable`, legal URL UNKNOWN, CloudKit/Feishu row, pricing deferred — eight-domain accept still pending.
