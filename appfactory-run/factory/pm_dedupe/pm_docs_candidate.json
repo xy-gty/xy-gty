@@ -1,0 +1,22 @@
+{
+  "bundle_id": "pm_docs_map:attempt-1",
+  "core_flows": [
+    "Shoot (Camera) or import (Photos) a cap / gill / pore still",
+    "AI returns ranked species + confidence on a vertical species-confidence stack",
+    "Oversized gill/pore closeup bar + informational edible/warning chip rail (disclaimer always visible)",
+    "Chat (text/speech) habitat / features / lookalikes",
+    "Annotated overlay callouts → TTS field brief → Save Find (persists; next call reuses confirmed notes)"
+  ],
+  "differentiation": {},
+  "diversity_key": "sporecue foragers and nature walkers who already photograph mushrooms in the field and need fast morphology aware species hypotheses lookalike contrast and hands free notes while never treating the app as food safety certification app name ",
+  "feature_blocks": [],
+  "product_fingerprint": "e0f28cd5cf10ea6bd90b492a664d8c513299c3a649125739250627812a341d40",
+  "product_name": "SporeCue",
+  "reference_app": {
+    "name": "",
+    "url": ""
+  },
+  "target_user": "Foragers and nature walkers who already photograph mushrooms in the field and need fast morphology-aware species hypotheses, lookalike contrast, and hands-free notes — while never treating the app as food-safety certification.",
+  "user_problem": "",
+  "value_proposition": "App name: SporeCue"
+}

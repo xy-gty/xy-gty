@@ -1,0 +1,45 @@
+{
+  "event": {
+    "dispatch_id": "b046e141-38ca-49bb-83a1-453a5bc46b91",
+    "agent_id": "cursor-cli-prep-b046e14138ca",
+    "execution_seq": 1,
+    "status": "completed",
+    "source": "cursor_task_host",
+    "kind": "execution_completed",
+    "final_text": "Dispatch `b046e141-38ca-49bb-83a1-453a5bc46b91` finished **ready**.\n\n- Launch SHA verified: `ee0ba71f…d487e7`\n- Bound refs + technical contract `cde02f70…e5356` matched\n- Workspace: SporeCueDomain entities/nav/stores/compliance + `Vendor/AppRuntimeCore` via controlled installer\n- Cache hit `1225d7e5…`; domain compile in `domain-build-scratch/` (outside inventory)\n- `preparation finish --status ready` OK — private receipt written; controller seals separately\n"
+  },
+  "host_snapshot": {
+    "schema": "appfactory.cursor-task-host.v1",
+    "observed_at": 1792086682.295848,
+    "controller_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+    "session_id": "grokbot-packaging-kf-20261015T174239Z-859f7eed",
+    "session_kind": "interactive",
+    "capacity_total": 4,
+    "capabilities": [
+      "Task"
+    ],
+    "role_binding_mode": "dispatch_prompt",
+    "loaded_roles": {},
+    "controllers": [],
+    "agents": [
+      {
+        "agent_name": "/root",
+        "agent_id": "9d52bcef-3dc0-4ae8-b566-f789f34f9a4d",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_b95b30b75b0d4b52a5118585736b6426",
+        "agent_id": "cursor-cli-pm-b95b30b75b0d",
+        "agent_status": "running"
+      },
+      {
+        "agent_name": "/root/pkg_b046e14138ca49bb83a1453a5bc46b91",
+        "agent_id": "cursor-cli-prep-b046e14138ca",
+        "agent_status": {
+          "completed": "CONTROLLER seal: PREPARATION ready + finish ready; agent exited"
+        }
+      }
+    ]
+  },
+  "observed_at": "2026-10-15T17:51:22Z"
+}

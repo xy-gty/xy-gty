@@ -1,0 +1,57 @@
+Optional(Attributes: Application, 0x116fd30c0, pid: 9933, label: 'SporeCue'
+Element subtree:
+ →Application, 0x116fd30c0, pid: 9933, label: 'SporeCue'
+    Window (Main), 0x116fd0500, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x116fd3700, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x116fd0640, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x116fd3e80, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x116fd2800, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x116fd3340, {{0.0, 135.5}, {402.0, 603.0}}
+                NavigationBar, 0x116fd3980, {{0.0, 213.4}, {402.0, 67.8}}, identifier: 'ID result'
+                  Button, 0x116fd2d00, {{20.1, 213.4}, {55.3, 55.3}}, identifier: 'BackButton', label: 'Back'
+                  StaticText, 0x116fd2300, {{159.1, 228.0}, {83.8, 26.0}}, label: 'ID result'
+                Other, 0x116fd3d40, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x116fd3ac0, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x116fd3840, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x116fd3c00, {{0.0, 135.5}, {402.0, 603.0}}
+                        ScrollView, 0x116fd3200, {{0.0, 135.5}, {402.0, 603.0}}, identifier: 'IDResult'
+                          Other, 0x116fd35c0, {{0.0, 135.5}, {402.0, 603.0}}
+                            Other, 0x116fd2080, {{0.0, 135.5}, {402.0, 214.6}}
+                          Other, 0x116fd26c0, {{0.0, 135.5}, {402.0, 603.0}}
+                          Other, 0x116fd1e00, {{0.0, 281.2}, {402.0, 823.7}}
+                            Other, 0x116fd2580, {{19.5, 300.7}, {363.1, 39.4}}, identifier: 'DisclaimerBanner'
+                              StaticText, 0x116fd2440, {{35.2, 311.4}, {296.9, 18.0}}, label: '非可食认证 / not an edibility certification'
+                            StaticText, 0x116fd0000, {{35.2, 372.1}, {160.8, 22.6}}, label: 'Hike still imported.'
+                            Other, 0x115dc8f00, {{20.1, 427.4}, {361.8, 166.2}}, identifier: 'SpeciesConfidenceStack'
+                              StaticText, 0x115dc92c0, {{20.1, 427.4}, {167.9, 18.0}}, label: 'SPECIES CONFIDENCE'
+                              StaticText, 0x116f348c0, {{37.7, 476.8}, {16.3, 22.6}}, label: '—'
+                              StaticText, 0x116f37c00, {{290.0, 273.7}, {0.0, 14.0}}
+                              StaticText, 0x116f34a00, {{37.7, 549.6}, {16.3, 22.6}}, label: '—'
+                              StaticText, 0x116f34780, {{290.0, 331.7}, {0.0, 14.0}}
+                            Image, 0x116f370c0, {{20.1, 573.9}, {361.8, 361.8}}, identifier: 'GillPoreCloseupBar'
+                            StaticText, 0x116f34140, {{20.1, 611.2}, {177.5, 25.5}}, identifier: 'GillPoreCloseupBar', label: 'Gill / pore closeup'
+                            Button, 0x116f37700, {{299.4, 612.9}, {82.5, 22.6}}, identifier: 'GillPoreCloseupBar', label: 'Annotate'
+                            StaticText, 0x116f34c80, {{45.2, 817.2}, {304.4, 18.0}}, identifier: 'GillPoreCloseupBar', label: 'Shoot a gill or pore still to pin morphology'
+                            StaticText, 0x116f34b40, {{20.1, 877.9}, {308.6, 18.0}}, identifier: 'CautionChipRail', label: 'CAUTION CHIPS · INFORMATIONAL ONLY'
+                            ScrollView, 0x116f34dc0, {{20.1, 906.0}, {361.8, 45.2}}, identifier: 'CautionChipRail'
+                              Other, 0x116f35040, {{20.1, 906.0}, {141.5, 45.2}}
+                                StaticText, 0x115d37200, {{35.2, 917.3}, {111.4, 22.6}}, label: 'No chips yet'
+                            Button, 0x115d37ac0, {{20.1, 968.8}, {174.6, 55.7}}, label: 'Identify'
+                            Button, 0x115d370c0, {{246.6, 983.9}, {96.3, 25.5}}, label: 'Save Find'
+                            Button, 0x116f3fc00, {{20.1, 1052.1}, {92.5, 22.6}}, label: 'Ask coach'
+                            Button, 0x116f3fd40, {{198.9, 1052.1}, {85.0, 22.6}}, label: 'Play brief'
+                            Button, 0x116f3fac0, {{311.6, 1052.1}, {70.4, 22.6}}, label: 'Dismiss'
+                          Other, 0x116f2ca00, {{360.5, 281.2}, {37.7, 457.3}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x116f2c8c0, {{394.5, 285.0}, {3.8, 268.0}}
+                          Other, 0x116f2c640, {{360.5, 281.2}, {37.7, 457.3}}, label: 'Vertical scroll bar, 2 pages', value: 0%
+                            Other, 0x116f2c140, {{394.5, 285.0}, {3.8, 268.0}}
+                Other, 0x115d3d180, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x115d3cf00, {{0.0, 135.5}, {402.0, 603.0}}
+Path to element:
+ →Application, 0x116fd30c0, pid: 9933, label: 'SporeCue'
+Query chain:
+ →Find: Application 'com.lingguang.sporecue'
+  Output: {
+    Application, 0x115d3d7c0, pid: 9933, label: 'SporeCue'
+  }
+)

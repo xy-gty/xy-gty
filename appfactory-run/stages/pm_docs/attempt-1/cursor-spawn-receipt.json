@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "b95b30b7-5b0d-4b52-a511-8585736b6426",
+  "spawn_kwargs": {
+    "subagent_type": "deepseek-pm-agent",
+    "model": "auto",
+    "description": "pkg_b95b30b75b0d4b52a5118585736b6426",
+    "prompt": "Dispatch b95b30b7-5b0d-4b52-a511-8585736b6426. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/codex.launch.md SHA-256 ab116240b7445f2e428e3fc4ff337c251e625f81b7de6c3adac028f4acec74e5. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-pm-b95b30b75b0d",
+  "agent_name": "/root/pkg_b95b30b75b0d4b52a5118585736b6426",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T17:43:06Z",
+  "pid": 91050,
+  "note": "SporeCue pm_docs e1 local agent CLI start_new_session"
+}

@@ -1,0 +1,6 @@
+UITest results (external harness, product source unmodified):
+- testUL01HomeLaunch PASSED
+- testUL02bSellCoreFlows PASSED (Shoot/Import→ID→Identify→Ask coach→Annotate→Play brief→Save Find→Voice note)
+- testUL04RelaunchPersistence PASSED
+- testUL06SettingsPrivacy PASSED (scroll to Camera/Photos/Mic/Speech; Privacy/Provider legal; Revoke)
+Domain tests: SporeCueDomainTests 12/12 PASSED (incl. second-call context, consent gate, chip informationalOnly, disclaimer)

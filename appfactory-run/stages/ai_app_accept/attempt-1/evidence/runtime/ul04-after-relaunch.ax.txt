@@ -1,0 +1,65 @@
+Optional(Attributes: Application, 0x116fd70c0, pid: 10504, label: 'SporeCue'
+Element subtree:
+ →Application, 0x116fd70c0, pid: 10504, label: 'SporeCue'
+    Window (Main), 0x116fd7200, {{0.0, 135.5}, {402.0, 603.0}}
+      Other, 0x116fd7340, {{0.0, 135.5}, {402.0, 603.0}}
+        Other, 0x116fd7480, {{0.0, 135.5}, {402.0, 603.0}}
+          Other, 0x116fd75c0, {{0.0, 135.5}, {402.0, 603.0}}
+            Other, 0x116fd7700, {{0.0, 135.5}, {402.0, 603.0}}
+              Other, 0x116fd7840, {{0.0, 135.5}, {402.0, 603.0}}
+                Other, 0x116fd7980, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x116fd7ac0, {{0.0, 135.5}, {402.0, 603.0}}
+                    Other, 0x116fd7c00, {{0.0, 135.5}, {402.0, 603.0}}
+                      Other, 0x116fd7d40, {{0.0, 135.5}, {402.0, 603.0}}
+                        StaticText, 0x116fd6e40, {{25.1, 223.4}, {152.0, 39.4}}, identifier: 'FieldHome', label: 'SporeCue'
+                        Button, 0x116fd6080, {{351.3, 231.0}, {25.5, 24.7}}, identifier: 'FieldHome', label: 'Settings'
+                        ScrollView, 0x116fd61c0, {{0.0, 262.8}, {402.0, 286.8}}, identifier: 'FieldHome'
+                          Other, 0x116fd6300, {{0.0, 262.8}, {402.0, 1032.6}}
+                            Other, 0x116fd6440, {{19.5, 262.2}, {363.1, 39.4}}, identifier: 'DisclaimerBanner'
+                              StaticText, 0x116fd6580, {{35.2, 272.8}, {296.9, 18.0}}, label: '非可食认证 / not an edibility certification'
+                            StaticText, 0x116fd66c0, {{35.2, 333.6}, {324.9, 47.7}}, label: 'AI not configured — local capture still works.'
+                            Button, 0x116fd6800, {{20.1, 414.0}, {71.2, 42.7}}, identifier: 'SubjectPicker', label: 'Cap'
+                            Button, 0x116fd6940, {{101.3, 414.0}, {64.1, 42.7}}, identifier: 'SubjectPicker', label: 'Gill'
+                            Button, 0x116fd6a80, {{175.5, 414.0}, {76.6, 42.7}}, identifier: 'SubjectPicker', label: 'Pore'
+                            Other, 0x116fd6bc0, {{20.1, 474.3}, {361.8, 166.2}}, identifier: 'SpeciesConfidenceStack'
+                              StaticText, 0x116fd6d00, {{20.1, 474.3}, {167.9, 18.0}}, label: 'SPECIES CONFIDENCE'
+                              StaticText, 0x116fd7e80, {{37.7, 523.7}, {199.7, 22.6}}, label: 'Rank 1 · waiting for still'
+                              StaticText, 0x117040000, {{335.8, 518.4}, {28.5, 33.1}}, label: '—'
+                              StaticText, 0x117040140, {{37.7, 596.5}, {202.7, 22.6}}, label: 'Rank 2 · waiting for still'
+                              StaticText, 0x117040280, {{335.8, 591.3}, {28.5, 33.1}}, label: '—'
+                            Image, 0x1170403c0, {{20.1, 620.8}, {361.8, 361.8}}, identifier: 'GillPoreCloseupBar'
+                            StaticText, 0x117040500, {{20.1, 658.1}, {177.5, 25.5}}, identifier: 'GillPoreCloseupBar', label: 'Gill / pore closeup'
+                            Button, 0x117040640, {{299.4, 659.8}, {82.5, 22.6}}, identifier: 'GillPoreCloseupBar', label: 'Annotate'
+                            StaticText, 0x117040780, {{45.2, 864.1}, {304.4, 18.0}}, identifier: 'GillPoreCloseupBar', label: 'Shoot a gill or pore still to pin morphology'
+                            StaticText, 0x1170408c0, {{20.1, 924.8}, {308.6, 18.0}}, identifier: 'CautionChipRail', label: 'CAUTION CHIPS · INFORMATIONAL ONLY'
+                            ScrollView, 0x117040a00, {{20.1, 952.9}, {361.8, 45.2}}, identifier: 'CautionChipRail'
+                              Other, 0x117040b40, {{20.1, 952.9}, {141.5, 45.2}}
+                                StaticText, 0x117040c80, {{35.2, 964.2}, {111.4, 22.6}}, label: 'No chips yet'
+                            StaticText, 0x117040dc0, {{20.1, 1015.7}, {125.2, 25.5}}, label: 'Recent finds'
+                            Button, 0x117040f00, {{20.1, 1058.8}, {361.8, 73.3}}, label: 'Gill · photos, draft'
+                              StaticText, 0x117041040, {{35.2, 1073.9}, {109.7, 22.6}}, label: 'Gill · photos'
+                              StaticText, 0x117041180, {{35.2, 1099.0}, {34.3, 18.0}}, label: 'draft'
+                              Image, 0x1170412c0, {{355.1, 1086.5}, {10.5, 18.4}}, identifier: 'chevron.right', label: 'Forward'
+                          Other, 0x117041400, {{360.5, 262.8}, {37.7, 286.8}}, label: 'Vertical scroll bar, 4 pages', value: 0%
+                            Other, 0x117041540, {{394.5, 469.2}, {3.8, 8.8}}
+                          Other, 0x117041680, {{360.5, 262.8}, {37.7, 286.8}}, label: 'Vertical scroll bar, 4 pages', value: 0%
+                            Other, 0x1170417c0, {{394.5, 469.2}, {3.8, 8.8}}
+                        Button, 0x117041900, {{20.1, 564.7}, {174.6, 60.7}}, identifier: 'FieldHome', label: 'Shoot'
+                          Image, 0x117041a40, {{59.9, 584.8}, {26.0, 20.5}}, identifier: 'camera.fill', label: 'Camera'
+                          StaticText, 0x117041b80, {{20.1, 564.7}, {174.6, 60.7}}, label: 'Shoot'
+                        Button, 0x117041cc0, {{207.3, 564.7}, {174.6, 60.7}}, identifier: 'FieldHome', label: 'Import'
+                          Image, 0x117041e00, {{242.9, 584.0}, {26.8, 22.2}}, identifier: 'photo.on.rectangle', label: 'photo.on.rectangle'
+                          StaticText, 0x117041f40, {{207.3, 564.7}, {174.6, 60.7}}, label: 'Import'
+                        TextField, 0x117042080, {{20.1, 638.0}, {276.4, 42.7}}, identifier: 'FieldHome', placeholderValue: 'Ask habitat / lookalike…'
+                        Button, 0x1170421c0, {{306.5, 643.4}, {32.7, 31.8}}, identifier: 'FieldHome', label: 'Speech question'
+                        Button, 0x117042300, {{349.2, 643.4}, {32.7, 31.8}}, identifier: 'FieldHome', label: 'Voice note'
+                Other, 0x117042440, {{0.0, 135.5}, {402.0, 603.0}}
+                  Other, 0x117042580, {{0.0, 135.5}, {402.0, 603.0}}
+Path to element:
+ →Application, 0x116fd70c0, pid: 10504, label: 'SporeCue'
+Query chain:
+ →Find: Application 'com.lingguang.sporecue'
+  Output: {
+    Application, 0x1170426c0, pid: 10504, label: 'SporeCue'
+  }
+)

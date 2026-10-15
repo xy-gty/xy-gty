@@ -1,0 +1,20 @@
+AppFactory pm_visuals / UltraLite full-screen frame image job.
+
+Always include this composition line verbatim:
+
+render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
+
+Do not letterbox, overlay, or recompose after the fact. Do not draw UI with PIL.
+
+Then describe this exact page/state:
+
+AI consent sheet. Title 'Send to DeepSeek for species coaching?'. Bullet list of fields: mushroom still, your question, confirmed notes, session id, optional voice transcript. Clear statement results are 非可食认证 / not an edibility certification. Buttons Allow AI (sky) and Not now (russet outline). Cream background.
+
+App: SporeCue — AI wild-mushroom field coach.
+Palette: primary russet #9A3412, secondary apricot cream #FFF7ED, accent sky #0284C7.
+UI species: vertical species-confidence stack, oversized gill/pore closeup bar, horizontal edible/warning chip rail.
+Hard compliance banner text visible wherever ID/edibility/foraging appears: 非可食认证 / not an edibility certification
+NOT MixCue bottle-rail, NOT WingCue stacked field-cards, NOT ClosetCue mosaic, NOT FrameCue clapper/safe-frame, NOT ScoutCue sky-arc, NOT RuleCue table zone, NOT StopCue film sprocket, NOT all-black dark UI.
+Do NOT show the words Shroomify or Pilze 123 anywhere.
+Do NOT show any text that says safe to eat, confirmed edible, or certified for consumption.
+iPhone portrait SwiftUI, large legible English UI text, status bar visible.

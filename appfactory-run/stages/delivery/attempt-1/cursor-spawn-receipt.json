@@ -1,0 +1,16 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "5e344109-87d3-44c5-9c1d-7d2b5bd79a5c",
+  "spawn_kwargs": {
+    "subagent_type": "delivery-reporter-agent",
+    "model": "auto",
+    "description": "pkg_5e34410987d344c59c1d7d2b5bd79a5c",
+    "prompt": "Dispatch 5e344109-87d3-44c5-9c1d-7d2b5bd79a5c. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/delivery/attempt-1/codex.launch.md SHA-256 ef4d799d421b7e64ebae13df40cd813a26b5d0eae1163a514a147555dbdf91ec. Verify the file hash, then execute that file. Do not copy the file into this message."
+  },
+  "agent_id": "cursor-cli-delivery-5e34410987d3",
+  "agent_name": "/root/pkg_5e34410987d344c59c1d7d2b5bd79a5c",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T18:44:03Z",
+  "pid": 15138,
+  "note": "SporeCue delivery e1 local agent CLI start_new_session push xy-gty sporecue/"
+}

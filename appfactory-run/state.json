@@ -1,0 +1,214 @@
+{
+  "_control_event_cursor": 17,
+  "acceptance_policy": {
+    "acceptance_policy": {
+      "authorization": {
+        "id": "appfactory-runtime-verification-v1",
+        "type": "system_default"
+      },
+      "mode": "runtime_verification_required",
+      "required_source_proofs": [
+        "xcode_source_build",
+        "source_unit_tests",
+        "source_artifact"
+      ],
+      "schema_version": "appfactory.acceptance-policy.v1",
+      "simulator_runtime": {
+        "accepted": false,
+        "claimed_pass": false,
+        "evidence_skill": "ios_runtime_acceptance",
+        "must_not_claim_pass": false,
+        "required": true,
+        "status": "REQUIRED"
+      }
+    },
+    "acceptance_policy_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/acceptance_policy.v1.json",
+    "acceptance_policy_sha256": "cb56b5d7daa90d2173a7d2eb10d6b10329b123f1b668f599ee933660c911651e",
+    "mode": "runtime_verification_required"
+  },
+  "ai_app_accept_rounds": 1,
+  "ai_profile": "ultra_lite",
+  "blockers": [],
+  "created_at": "2026-10-15T17:42:39Z",
+  "factory_version": "8.3.63",
+  "final_audit_rounds": 0,
+  "goal_version": 1,
+  "iap_opt_in": false,
+  "idea_discovery_enabled": false,
+  "idea_source": "operator_external",
+  "legacy_pm_selection": false,
+  "milestone_chain": "ai_native",
+  "milestones": {
+    "ai_app_accept": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/ai_app_accept/attempt-1/MAP.md",
+        "result_sha256": "5e74fe248e28aa24df03c3451b5405e14ffbb940ae2c09afe0456670c2b82153",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "cde02f702a052b37ad3f7a1eb8dd16836639377a1b10261f40bfd83c697e5356",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "0263b2c8eadb63c6c401b4d4bde562b5079f4c9e11498059822d9b86a00639d2",
+        "visual_readback_index_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/ai_app_accept/attempt-1/visual_readback_index.v1.json",
+        "visual_readback_index_sha256": "9fef4fca4b3ec8d9a9578afd6614c11feca86f19c75b78d4d53c746a91c4ffc1"
+      },
+      "started_at": "2026-10-15T18:20:27Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T18:43:37Z"
+    },
+    "ai_app_build": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "preparation_consumed_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/ai_app_build/attempt-1/preparation-consumed.v1.json",
+        "preparation_consumed_sha256": "1e2925726e32e0ab0563eb5fba0161e6472befd6abe953a7f36e032a0f30e0b2",
+        "preparation_seal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/sealed.v1.json",
+        "preparation_seal_sha256": "18f26f1601f171a8128d4c648a103c9a542b1987f966bd4998fd1dd7e681b2ea",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/ai_app_build/attempt-1/MAP.md",
+        "result_sha256": "a07848205d6842f6bc1f89ca74b2f36d45aa9135ccfd8c8dc927f1e06b25280d",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "cde02f702a052b37ad3f7a1eb8dd16836639377a1b10261f40bfd83c697e5356",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "0263b2c8eadb63c6c401b4d4bde562b5079f4c9e11498059822d9b86a00639d2"
+      },
+      "started_at": "2026-10-15T18:02:53Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T18:20:16Z"
+    },
+    "delivery": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/delivery/attempt-1/MAP.md",
+        "result_sha256": "a2bd0bdf82c6cac75582f1c5a96763942413d2e03fe1e74aa56b59e02aa9a5d8",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "cde02f702a052b37ad3f7a1eb8dd16836639377a1b10261f40bfd83c697e5356",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "0263b2c8eadb63c6c401b4d4bde562b5079f4c9e11498059822d9b86a00639d2"
+      },
+      "started_at": "2026-10-15T18:43:47Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T18:47:30Z"
+    },
+    "goal": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "goal_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/goal/goal.json",
+        "goal_sha256": "978a3a239f6b5c460da837fc7076ce6cb2c2d6629084e4a9728e2e7e42f4ab60"
+      },
+      "status": "validated",
+      "updated_at": "2026-10-15T17:42:39Z"
+    },
+    "pm_docs": {
+      "attempts": 1,
+      "blockers": [],
+      "evidence_refs": {
+        "dedupe_candidate_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/factory/pm_dedupe/pm_docs_candidate.json",
+        "dedupe_commit_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.commit.v1.json\"]",
+        "dedupe_receipt_refs": "[\"/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/factory/pm_dedupe/pm_docs_candidate.dedupe_receipt.v1.json\"]",
+        "dedupe_store": "/Users/a2026/.claude/app-factory/pmagent_global_dedupe.sqlite",
+        "result_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/MAP.md",
+        "result_sha256": "ac8c0008c145ea268a0242079a67b08f9bd489767a8877aee505cb10fff93c48",
+        "technical_contract_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/technical_contract.v1.json",
+        "technical_contract_sha256": "cde02f702a052b37ad3f7a1eb8dd16836639377a1b10261f40bfd83c697e5356",
+        "visual_contract_schema": "appfactory.ai_ultra_lite_visuals.v1",
+        "visual_manifest_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/visual_manifest.v1.json",
+        "visual_manifest_sha256": "0263b2c8eadb63c6c401b4d4bde562b5079f4c9e11498059822d9b86a00639d2",
+        "visual_runtime_required_count": "0",
+        "visual_runtime_required_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/visual-runtime-required.v1.json"
+      },
+      "started_at": "2026-10-15T17:42:50Z",
+      "status": "validated",
+      "updated_at": "2026-10-15T18:02:32Z"
+    }
+  },
+  "model_mode": "dev",
+  "objective": "# SporeCue\n\nPaid AI wild mushroom field ID / foraging coach (one-time unlock for unlimited ID packs; no coins).\n\nRemake vs Shroomify / Pilze 123 — differentiate: AI cap/gill/pore ID + lookalike chat + annotated overlays + TTS field brief, not just a static mushroom catalog. Do NOT name competitors in App copy.\n\n## Hard compliance (non-negotiable)\n- Every product surface that touches ID, edibility, or foraging MUST clearly state: 「非可食认证 / not an edibility certification」\n- NEVER imply a mushroom is safe to eat, \"confirmed edible\", or certified for consumption\n- Warning / caution chips are informational only — not safety approval\n\n## Core loop\nShoot or import cap / gill / pore photos → AI species ID + lookalikes → chat habitat/features → annotated overlay callouts → TTS field brief.\n\n## Hard operator rules\n- product_dir: sporecue/ (never leave as product/ only — symlink sporecue→product; deliver directory/branch name = sporecue, not product)\n- bundle_id suggestion: com.lingguang.sporecue\n- palette: primary #9A3412 · secondary #FFF7ED · accent #0284C7 (cap russet + apricot cream + sky blue; must differ from MixCue rose/gold, WingCue teal/mint/terracotta, FrameCue purple/amber, RuleCue amber/cyan, StopCue green/pink, and other delivered apps; ban all-black/dark-gray clones)\n- UI: 纵向物种置信栈 + 超大菌褶/管孔特写条 + 可食/警示 chip 轨（must look clearly different from MixCue bottle-rail, WingCue field-card stack, ClosetCue mosaic, FrameCue safe-frame/clapper, ScoutCue sky-arc, RuleCue table zone, StopCue film-sprocket — no twins）\n- Four permissions with real flows (extend core foraging ID coach, do not bolt on awkwardly):\n  - Camera: field capture of cap / gill / pore close-ups for ID\n  - Photos: import hike album stills to complete ID\n  - Microphone: hands-free field notes while holding knife/basket\n  - Speech Recognition: spoken questions like \"how does this differ from death cap\" into coach chat\n- Selling points must be real: photo/import → AI ID + lookalikes → habitat/feature chat → annotated overlay → TTS field brief\n- Do NOT generate AppIcon / LaunchScreen\n- Simulator: iPhone 17 Pro only (prefer B14CC0EA); NEVER shutdown/occupy Pro Max even if Booted\n- Deliver git@github.com:xy-gty/xy-gty.git independent branch; Feishu CONTROLLER_DELIVERY skip\n- Ultra-lite p1 @ factory v8.3.63; single-slot serial on factory-prod-1 (do not open prod-2)\n- Stage stuck → Option A soft known_issues for non-core UL fails; P1 non-blockers must not block delivery\n- When disk tight: clear unused DerivedData/simulator caches (never touch in-use DerivedData)\n\n## Idea\nBuild a paid AI wild-mushroom field coach: shoot or import cap/gill/pore photos, AI species ID with lookalikes, chat habitat and features, annotated overlays, TTS field briefs—unlock unlimited ID packs. Always disclose not an edibility certification.\n\n## Positioning\nAI 蘑菇野外识种/采菇教练——特征标注 + 易混种对话（非可食认证）。\n",
+  "onboarding_enabled": false,
+  "package_acceptance": "accepted",
+  "platform_evidence_skips": [],
+  "pm_agent": "DeepSeekPMAgent",
+  "product_contract_version": "appfactory.ai_ultra_lite_product.v1",
+  "product_mode": "ai_native",
+  "product_repair_rounds": 0,
+  "production_policy": {
+    "acceptance_runtime": "cursor_cloud",
+    "dispatch_effort": "auto",
+    "model": "auto",
+    "operator_override_reason": "operator_selected_cursor_ultra_lite_auto",
+    "runtime": "cursor",
+    "schema": "appfactory.ai_ultra_lite_production.v1",
+    "stage_efforts": {
+      "ai_app_accept": "auto",
+      "ai_app_build": "auto",
+      "delivery": "auto",
+      "pm_docs": "auto"
+    },
+    "vision_effort": "auto"
+  },
+  "report_status": "produced",
+  "requested_count": 1,
+  "run_id": "kf-20261015T174239Z-859f7eed",
+  "run_status": "delivered",
+  "schema_version": "claude-app-factory.run-state.v1",
+  "self_evolution_cases": [],
+  "stage_cost": {
+    "schema": "appfactory.stage_cost.v1",
+    "stages": {
+      "ai_app_accept": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1390.0,
+            "finished_at": "2026-10-15T18:43:37Z",
+            "started_at": "2026-10-15T18:20:27Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "ai_app_build": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1043.0,
+            "finished_at": "2026-10-15T18:20:16Z",
+            "started_at": "2026-10-15T18:02:53Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "delivery": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 223.0,
+            "finished_at": "2026-10-15T18:47:30Z",
+            "started_at": "2026-10-15T18:43:47Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      },
+      "pm_docs": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "duration_seconds": 1182.0,
+            "finished_at": "2026-10-15T18:02:32Z",
+            "started_at": "2026-10-15T17:42:50Z",
+            "status": "validated",
+            "usage": null
+          }
+        ]
+      }
+    }
+  },
+  "state_version": 9,
+  "ultra_lite_execution_revision": "p1"
+}

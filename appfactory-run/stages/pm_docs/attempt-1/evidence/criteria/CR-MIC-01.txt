@@ -1,0 +1,1 @@
+Voice note sheet shows recording state for hands-busy foraging notes with clear stop control.

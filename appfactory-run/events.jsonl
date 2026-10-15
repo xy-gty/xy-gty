@@ -1,0 +1,11 @@
+{"event": "run_created", "run_id": "kf-20261015T174239Z-859f7eed", "ts": "2026-10-15T17:42:39Z"}
+{"event": "pm_agent_selected", "pm_agent": "DeepSeekPMAgent", "ts": "2026-10-15T17:42:39Z"}
+{"event": "milestone_validated", "milestone": "goal", "ts": "2026-10-15T17:42:39Z"}
+{"attempt": 1, "event": "milestone_attempt", "milestone": "pm_docs", "ts": "2026-10-15T17:42:50Z"}
+{"event": "milestone_validated", "milestone": "pm_docs", "ts": "2026-10-15T18:02:32Z"}
+{"attempt": 1, "event": "milestone_attempt", "milestone": "ai_app_build", "ts": "2026-10-15T18:02:53Z"}
+{"event": "milestone_validated", "milestone": "ai_app_build", "ts": "2026-10-15T18:20:16Z"}
+{"attempt": 1, "event": "milestone_attempt", "milestone": "ai_app_accept", "ts": "2026-10-15T18:20:27Z"}
+{"event": "milestone_validated", "milestone": "ai_app_accept", "ts": "2026-10-15T18:43:37Z"}
+{"attempt": 1, "event": "milestone_attempt", "milestone": "delivery", "ts": "2026-10-15T18:43:47Z"}
+{"event": "milestone_validated", "milestone": "delivery", "ts": "2026-10-15T18:47:30Z"}

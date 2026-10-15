@@ -1,0 +1,17 @@
+{
+  "source": "cursor_task_host",
+  "dispatch_id": "91c298dc-03c0-46d2-a3b6-fde882cdb125",
+  "spawn_kwargs": {
+    "subagent_type": "ai-app-accept",
+    "model": "auto",
+    "description": "pkg_91c298dc03c046d2a3b6fde882cdb125",
+    "prompt": "Dispatch 91c298dc-03c0-46d2-a3b6-fde882cdb125. Read /Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/ai_app_accept/attempt-1/codex.launch.md SHA-256 1bbd0fd614eb66e13e1bf0f68a50b20706769753b2850c4eac2b4a81446d042b. Verify the file hash, then execute that file. Do not copy the file into this message.",
+    "environment": "cloud"
+  },
+  "agent_id": "cursor-cli-accept-91c298dc03c0",
+  "agent_name": "/root/pkg_91c298dc03c046d2a3b6fde882cdb125",
+  "execution_seq": 1,
+  "spawned_at": "2026-10-15T18:20:45Z",
+  "pid": 7259,
+  "note": "SporeCue ai_app_accept e1 local agent CLI start_new_session Option A"
+}

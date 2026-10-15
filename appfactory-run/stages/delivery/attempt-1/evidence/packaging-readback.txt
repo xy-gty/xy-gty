@@ -1,0 +1,10 @@
+953628045629d96380e8792457acd895f19955ed	refs/heads/sporecue/kf-20261015T174239Z-859f7eed
+953628045629d96380e8792457acd895f19955ed	refs/heads/sporecue-kf-20261015T174239Z-859f7eed
+local_HEAD=953628045629d96380e8792457acd895f19955ed
+product_dir=sporecue/
+remote=git@github.com:xy-gty/xy-gty.git
+branch=sporecue/kf-20261015T174239Z-859f7eed
+push_status=ok
+push_at_utc=2026-10-15T18:45:42Z
+feishu=CONTROLLER_DELIVERY_skip record_id=n/a blocker=false
+pro_max_udid=315A7C2C-1EDE-4CFE-A504-188637441E40 status=Booted untouched

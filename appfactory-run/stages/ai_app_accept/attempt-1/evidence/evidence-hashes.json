@@ -1,0 +1,501 @@
+{
+  "schema": "appfactory.evidence_hashes.v1",
+  "count": 99,
+  "items": [
+    {
+      "ref": "evidence/candidate-receipt.json",
+      "sha256": "51942d6a65fd2625c09e89b35e76c508d16dc3d0d61a0a41b667b7bc8f0e0b14",
+      "bytes": 15362
+    },
+    {
+      "ref": "evidence/config/inspect-key.json",
+      "sha256": "4feb148da8ab5412bee27731fcc9fedee70e2b224072ddf3e72f012549d3fe74",
+      "bytes": 169
+    },
+    {
+      "ref": "evidence/logs/build.log",
+      "sha256": "5c97daf29cba8635d4f281ece780b3382d50430e63890f93906f49e7e744907b",
+      "bytes": 357396
+    },
+    {
+      "ref": "evidence/logs/install.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "ref": "evidence/logs/launch.log",
+      "sha256": "947f69c0914caf69e8b5288eaf5c6bac3aa190f099209aedebac584bd557f36c",
+      "bytes": 58
+    },
+    {
+      "ref": "evidence/product-freeze.json",
+      "sha256": "34ed991ee08bcff4bbc2181eb1fcbda4ba9aff7a3e428db00aec66e8ea9ab212",
+      "bytes": 492
+    },
+    {
+      "ref": "evidence/runtime/domain-tests.log",
+      "sha256": "81a1dd526a84d2019b6bd910482ffc6111d8eb074a3408961c59720d461f3220",
+      "bytes": 30720
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-capture-camera.png",
+      "sha256": "28bead673909382e7e290b968263c86c6ca1cc6bd4100027de783bfa86fe6dfa",
+      "bytes": 595488
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-home-empty.png",
+      "sha256": "b790addc89f1c3fe01fb207c13084559107971599e2cbee796f97d3c59cfcadf",
+      "bytes": 256002
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-id-result.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-lookalike-chat.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-overlay-annotate.png",
+      "sha256": "ab1cfb8451fe23f8438c7602ac1d33f9cfefda79ecf741b5adb3c8c5e544e2cf",
+      "bytes": 242795
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-settings-privacy.png",
+      "sha256": "b8e45057d588e450d73577100e18fb447cff330ca4e3c172a7c6683929ab7304",
+      "bytes": 351837
+    },
+    {
+      "ref": "evidence/runtime/rt-sporecue-voice-note.png",
+      "sha256": "3f0c42190b693cee9de3e6b1337f86518d3d65c29291e7d0d19cf2bfceb69a7b",
+      "bytes": 199115
+    },
+    {
+      "ref": "evidence/runtime/uitest-all.log",
+      "sha256": "b49094c30d42817945b2202ba42d9bb3d66a8a9f5d1e2795216cc88562f8a1e7",
+      "bytes": 194533
+    },
+    {
+      "ref": "evidence/runtime/uitest-summary.txt",
+      "sha256": "d1b5ad4172bddfb6eec72d0497e9fc3b15852445b205180cb1bf6b4fe6cf0b93",
+      "bytes": 478
+    },
+    {
+      "ref": "evidence/runtime/uitest-ul06.log",
+      "sha256": "8e4295481ad8a5d9c915e6fe08b4ade8205faca76e066332d5239e5e2bcb96db",
+      "bytes": 42916
+    },
+    {
+      "ref": "evidence/runtime/ul01-home.ax.txt",
+      "sha256": "c3690073b9bf5ca119500fe6d87fd4915d68bf25ea1a6bac684e936a5634c2e7",
+      "bytes": 5318
+    },
+    {
+      "ref": "evidence/runtime/ul01-home.png",
+      "sha256": "b790addc89f1c3fe01fb207c13084559107971599e2cbee796f97d3c59cfcadf",
+      "bytes": 256002
+    },
+    {
+      "ref": "evidence/runtime/ul01-species-chrome.ax.txt",
+      "sha256": "ab0c1d35c567828129e2224b5ca0ba2fec7cf2c0fcbfa8150919bf22045d56cc",
+      "bytes": 5318
+    },
+    {
+      "ref": "evidence/runtime/ul02-01-home.ax.txt",
+      "sha256": "f41095e6abe3edc3c93e53d05a86a09ccf460c1012031aa3a262180a3c1fdfab",
+      "bytes": 5318
+    },
+    {
+      "ref": "evidence/runtime/ul02-01-home.png",
+      "sha256": "b790addc89f1c3fe01fb207c13084559107971599e2cbee796f97d3c59cfcadf",
+      "bytes": 256002
+    },
+    {
+      "ref": "evidence/runtime/ul02-02-capture-camera.png",
+      "sha256": "28bead673909382e7e290b968263c86c6ca1cc6bd4100027de783bfa86fe6dfa",
+      "bytes": 595488
+    },
+    {
+      "ref": "evidence/runtime/ul02-02-capture.ax.txt",
+      "sha256": "9757d1ce7ea82bcc9ff794624c1f3fb836dc866e40d6b75d8616754bc96747d2",
+      "bytes": 19684
+    },
+    {
+      "ref": "evidence/runtime/ul02-03-import-picker.png",
+      "sha256": "1dde2b686252478981e5d1cd524a773a3ab3374726cb230ee595063766ce54ae",
+      "bytes": 596006
+    },
+    {
+      "ref": "evidence/runtime/ul02-03-import.ax.txt",
+      "sha256": "81ab86e0cc44c26319f07a5a068f47f98f9d4a352539412f4168b0d110a4ae5c",
+      "bytes": 18996
+    },
+    {
+      "ref": "evidence/runtime/ul02-04-after-import.ax.txt",
+      "sha256": "510807c7a4f2a14e1c839258792aa98c4930cf5d912a747e8b88075bdb0e0de9",
+      "bytes": 4787
+    },
+    {
+      "ref": "evidence/runtime/ul02-04-after-import.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/ul02-05-id-result.ax.txt",
+      "sha256": "30a004acf0f879658a600d19ec9867209b75c60b7444468d4bfb243f6b50e5a7",
+      "bytes": 4787
+    },
+    {
+      "ref": "evidence/runtime/ul02-05-id-result.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/ul02-05b-after-identify.ax.txt",
+      "sha256": "5650839a789db8ae283bb45101e4e9024f55d2e2be5c4396b976a1b58728626f",
+      "bytes": 4787
+    },
+    {
+      "ref": "evidence/runtime/ul02-05b-after-identify.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/ul02-06-lookalike-chat.ax.txt",
+      "sha256": "742c88374db95325ddeb9ea6e2f7e086a774cfc884c3ab46435e9dc3c2291375",
+      "bytes": 4787
+    },
+    {
+      "ref": "evidence/runtime/ul02-06-lookalike-chat.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/runtime/ul02-07-overlay.ax.txt",
+      "sha256": "1cce3f84c23a0b0710d0e99c75307397b5c4e1df0dc923ae98e0eeedd1892c22",
+      "bytes": 6248
+    },
+    {
+      "ref": "evidence/runtime/ul02-07-overlay.png",
+      "sha256": "ab1cfb8451fe23f8438c7602ac1d33f9cfefda79ecf741b5adb3c8c5e544e2cf",
+      "bytes": 242795
+    },
+    {
+      "ref": "evidence/runtime/ul02-08-tts.ax.txt",
+      "sha256": "713f1e440ae2a4872cee51a7ba81b4b6087cf69aaf132b6738a941156a2f4d94",
+      "bytes": 6248
+    },
+    {
+      "ref": "evidence/runtime/ul02-08-tts.png",
+      "sha256": "ab1cfb8451fe23f8438c7602ac1d33f9cfefda79ecf741b5adb3c8c5e544e2cf",
+      "bytes": 242795
+    },
+    {
+      "ref": "evidence/runtime/ul02-09-voice-note.ax.txt",
+      "sha256": "390ac05595612d37ed83cf7681e3ba683d8110457ba4f31cadfe24952715c37b",
+      "bytes": 8345
+    },
+    {
+      "ref": "evidence/runtime/ul02-09-voice-note.png",
+      "sha256": "3f0c42190b693cee9de3e6b1337f86518d3d65c29291e7d0d19cf2bfceb69a7b",
+      "bytes": 199115
+    },
+    {
+      "ref": "evidence/runtime/ul02-end-home.png",
+      "sha256": "ab1cfb8451fe23f8438c7602ac1d33f9cfefda79ecf741b5adb3c8c5e544e2cf",
+      "bytes": 242795
+    },
+    {
+      "ref": "evidence/runtime/ul02-end.ax.txt",
+      "sha256": "69d5c6b64e240379351ed6c67efec1c95bd2524b5aa188915696787fb9ecfac8",
+      "bytes": 6248
+    },
+    {
+      "ref": "evidence/runtime/ul04-after-relaunch.ax.txt",
+      "sha256": "8380cc0056b2fc3823dc80f62f5e6e23e377890f8b3bf3e88eea7ab1eff084ec",
+      "bytes": 6134
+    },
+    {
+      "ref": "evidence/runtime/ul04-after-relaunch.png",
+      "sha256": "ac48e1cfa1d02e939b736d9c0106d59a3f700c8c0b63662d95b0a633013feeb9",
+      "bytes": 256182
+    },
+    {
+      "ref": "evidence/runtime/ul04-before.ax.txt",
+      "sha256": "5bd294d5548a8f2131f0dd0af9b082f04e13e62d293756943dda2f9bfdef3c3c",
+      "bytes": 6134
+    },
+    {
+      "ref": "evidence/runtime/ul04-before.png",
+      "sha256": "3bd6970f2c68b4be0b6d0204368580f5c873871e3f593e23e068988f2223f499",
+      "bytes": 256045
+    },
+    {
+      "ref": "evidence/runtime/ul06-after-revoke.ax.txt",
+      "sha256": "bdd61694904b86fd56694aab32dd2d0d6d38491502a571954797b062a5b414d3",
+      "bytes": 7001
+    },
+    {
+      "ref": "evidence/runtime/ul06-after-revoke.png",
+      "sha256": "ec266cee0c6e4cf70a26cf08535e6760763bc87fc78e7fffd4cdce8eaa40c9ff",
+      "bytes": 218280
+    },
+    {
+      "ref": "evidence/runtime/ul06-before-legal.ax.txt",
+      "sha256": "25134910f08e3f5ba443faeabb7905c420040e782042654bcd59b73f505681f4",
+      "bytes": 8936
+    },
+    {
+      "ref": "evidence/runtime/ul06-legal-privacy.ax.txt",
+      "sha256": "c50ec0b04d783f788d50564bb60e18ae3cfdc53c2aa07977cd037e1ffd756956",
+      "bytes": 5547
+    },
+    {
+      "ref": "evidence/runtime/ul06-legal-privacy.png",
+      "sha256": "a498624d3cb9e664e603510724ec4d2d349c7e3cdddf99b67d7f5f08f7352997",
+      "bytes": 343081
+    },
+    {
+      "ref": "evidence/runtime/ul06-settings-scrolled.ax.txt",
+      "sha256": "f306000ecc77f4930219a812ceb64c97103827af2ec11591f8037761d71c80dc",
+      "bytes": 8936
+    },
+    {
+      "ref": "evidence/runtime/ul06-settings-scrolled.png",
+      "sha256": "e09fb85bf43b7c01804f79308f73b2aaf4547dfe69ab3a5cb8a6802a86c09907",
+      "bytes": 351989
+    },
+    {
+      "ref": "evidence/runtime/ul06-settings.ax.txt",
+      "sha256": "f7be1b7a6cce510e9ab9536d9ef239683db9c42608bf6fc380a8483cd08ec016",
+      "bytes": 7001
+    },
+    {
+      "ref": "evidence/runtime/ul06-settings.png",
+      "sha256": "9f48d725996929ba495667aabea085b4ec83dd5fe16447f8a72d423dd61112d6",
+      "bytes": 217867
+    },
+    {
+      "ref": "evidence/visual-readback/design-reuse-log.json",
+      "sha256": "2082412d421382671861987eed53218fd68b8b83c8ca786afd3a3f9b01c5f5cc",
+      "bytes": 24288
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.png",
+      "sha256": "28bead673909382e7e290b968263c86c6ca1cc6bd4100027de783bfa86fe6dfa",
+      "bytes": 595488
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.receipt.cursor-process/argv.json",
+      "sha256": "057147d65fe1dc14f4dc8421fb483dfadb191acf1545f64054aa0dc051156590",
+      "bytes": 795
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.receipt.cursor-process/cursor_process.json",
+      "sha256": "35882cc9ad0fd89c668558c39d31483ae9e90b159c275edd3ee0bff140140c50",
+      "bytes": 7238
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.receipt.json",
+      "sha256": "5ebc334416a60e8a234a9406a0167478bdc05cbf1bc89ad5c7e5e6c61a6336a5",
+      "bytes": 5212
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.receipt.json.first-write.v1.json",
+      "sha256": "4e4e67209a995ece07ad188085843a82a538edfc554c9ca3f348b63540eb31ea",
+      "bytes": 244
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-capture-camera.receipt.jsonl",
+      "sha256": "e7854cf6a2e3bf942a4fb72ead0400ebf033492054f2dd2e889540c1b140c4ae",
+      "bytes": 6591
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.png",
+      "sha256": "b790addc89f1c3fe01fb207c13084559107971599e2cbee796f97d3c59cfcadf",
+      "bytes": 256002
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.receipt.cursor-process/argv.json",
+      "sha256": "ca3bcad291fbccf205ce74fbd14889bd9c5c36ad706ca7ba5ec6ebeee0b463cc",
+      "bytes": 1013
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.receipt.cursor-process/cursor_process.json",
+      "sha256": "0ce2c030ffe97cf7911339beaf6141c8c496511215c2d3693881708ed9281bb5",
+      "bytes": 15320
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.receipt.json",
+      "sha256": "7f61da096f24684fa98c50b74bfa2a5713c7842fd4e961583fb380baf75d3412",
+      "bytes": 8230
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.receipt.json.first-write.v1.json",
+      "sha256": "e0b5ae0a869430c7c853a7bab5ee71d4b84330bae72c32b9033b438f8b0e6c9e",
+      "bytes": 240
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-home-empty.receipt.jsonl",
+      "sha256": "7c93a5a9566849f94686d04bf284c8de86a1650508923e8a59287a0fab781518",
+      "bytes": 14051
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.receipt.cursor-process/argv.json",
+      "sha256": "c3e77dcb136664d57d9a19fe6fab0a9c4f57e7743a7610f0ca1659b2f92cedc2",
+      "bytes": 1059
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.receipt.cursor-process/cursor_process.json",
+      "sha256": "3f6823a35961dd17fca3ae373a3c46733c5a4555bb6a6bc6483ed2d174f1be4e",
+      "bytes": 11484
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.receipt.json",
+      "sha256": "0059798e58a05b8851fb1534f409cc8021ee8932a45f7130845eddfbc2bfbc2f",
+      "bytes": 7935
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.receipt.json.first-write.v1.json",
+      "sha256": "7083d929e4b0230a3165784a67f9d4e5558590427882d8f814d2b56a6dfd89c4",
+      "bytes": 239
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-id-result.receipt.jsonl",
+      "sha256": "0ec189a4f488c91aa759aa1109a9ee6793d6b467e452ebd03afdaf57f449e755",
+      "bytes": 10612
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.png",
+      "sha256": "a6c7f2cfc32b40986daae748559ce6d9c2b85afd785e3363d117b1b3a992c254",
+      "bytes": 187358
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.receipt.cursor-process/argv.json",
+      "sha256": "e116e302c0c398cfe8e8eeb141fa5a79443f2def3cde858afec97fbb755bdb69",
+      "bytes": 781
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.receipt.cursor-process/cursor_process.json",
+      "sha256": "82afe3093d85ba85d8128dfb77a8d5fad90fab6e537fd6046eb481512bb08201",
+      "bytes": 8664
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.receipt.json",
+      "sha256": "07788499eb63ed5dd1e49d86eb2d82e19e5177474334b2b28460e1702b58843a",
+      "bytes": 6027
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.receipt.json.first-write.v1.json",
+      "sha256": "3e52f6e2d436c9fecd9abd1c15970dfcf57a72087d366ad3bfc5fe2912602b0b",
+      "bytes": 244
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-lookalike-chat.receipt.jsonl",
+      "sha256": "e5ce3d8dee8fda55204eb09b54f94f8496e53a1cef5fa8a1d449582c5bb2e7bf",
+      "bytes": 7971
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.png",
+      "sha256": "ab1cfb8451fe23f8438c7602ac1d33f9cfefda79ecf741b5adb3c8c5e544e2cf",
+      "bytes": 242795
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.receipt.cursor-process/argv.json",
+      "sha256": "e528841462918a6dfd3ff9f64c7cce563e80c33c92d5383c628de7462d813dd3",
+      "bytes": 745
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.receipt.cursor-process/cursor_process.json",
+      "sha256": "438ec779cf288e88b03f2c73d9486a0cc6947cf1b030210ea168cb4a91d52c2b",
+      "bytes": 6568
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.receipt.json",
+      "sha256": "5e64a67d5f55c5320d1f1f404291657471f64dc6621054c6eec5d9444c6685a3",
+      "bytes": 4463
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.receipt.json.first-write.v1.json",
+      "sha256": "e8d0201ff9660798c88ad808d3537c6813cc29cafe0456380651b7ec79a206ad",
+      "bytes": 246
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-overlay-annotate.receipt.jsonl",
+      "sha256": "9b27d6a149434dd485b2168c7fa69a2d192a7f98808537432547b7a4309adf77",
+      "bytes": 5923
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.png",
+      "sha256": "b8e45057d588e450d73577100e18fb447cff330ca4e3c172a7c6683929ab7304",
+      "bytes": 351837
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.receipt.cursor-process/argv.json",
+      "sha256": "c105ad58508aac1e893036c6900c28bf983e14f6fc2a3694bd602ac95b1a53b9",
+      "bytes": 724
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.receipt.cursor-process/cursor_process.json",
+      "sha256": "29ee46e5208727753036fc8a9ae6c49e08c82d666bfd39b993c8faa31124886c",
+      "bytes": 8817
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.receipt.json",
+      "sha256": "527b31174b3a3d430cfbe8a6fc4ba30340dfbdbe75fd2edb218fa0db4da2c50c",
+      "bytes": 4900
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.receipt.json.first-write.v1.json",
+      "sha256": "0c23b35605d22077a677fd8bdb058b08be852c7eb236ce6f91753a94993db422",
+      "bytes": 246
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-settings-privacy.receipt.jsonl",
+      "sha256": "0a3556ff8aa107c54a79861e66523348f6a65a3a7878779700077f704fb2b87b",
+      "bytes": 7995
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.png",
+      "sha256": "3f0c42190b693cee9de3e6b1337f86518d3d65c29291e7d0d19cf2bfceb69a7b",
+      "bytes": 199115
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.receipt.cursor-process/argv.json",
+      "sha256": "40c0440f1038d6392ea87dbd1e18d70a849ecfb3306444469bcfa7bd724f74bd",
+      "bytes": 713
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.receipt.cursor-process/cursor_process.json",
+      "sha256": "274d5eaeae62c67baa67064672e8f8d76e19bb4275543e9ce6f7965c9d4b76c8",
+      "bytes": 6170
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.receipt.json",
+      "sha256": "dd79d7621cf07e5b170d349c79cd8c132f0c34dd2c91c4dc3f2f9a9a6855c370",
+      "bytes": 4287
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.receipt.json.first-write.v1.json",
+      "sha256": "c8fc8ef1c2404ae3773453c8a24f8f266a6734de81a4e744049ac196904d41e4",
+      "bytes": 240
+    },
+    {
+      "ref": "evidence/visual-readback/rt-sporecue-voice-note.receipt.jsonl",
+      "sha256": "fa68c04dce1fcece91ee46fb57d13b6129853a63e9a617fd08bb6907fe6f0e5d",
+      "bytes": 5567
+    },
+    {
+      "ref": "evidence/visual-readback/runtime-vision-summary.json",
+      "sha256": "dab5101e9b680aa0ca0d4809d9337b7fe7fcc3183e5e25407498fda957c9fbcf",
+      "bytes": 3643
+    }
+  ]
+}

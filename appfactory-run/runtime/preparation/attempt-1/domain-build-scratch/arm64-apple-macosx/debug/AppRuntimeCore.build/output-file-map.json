@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/primary.swiftdeps"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AIConsentGate.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AIConsentGate.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/AtomicCodableStore.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/AtomicCodableStore.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/KeychainCredentialStore.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/KeychainCredentialStore.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/PhotoImportSession.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/PhotoImportSession.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/RuntimeForm.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/RuntimeForm.dia"
+  },
+  "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/workspace/Vendor/AppRuntimeCore/Sources/AppRuntimeCore/TypedNavigationStore.swift": {
+    "dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.d",
+    "object": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.swift.o",
+    "swiftmodule": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore~partial.swiftmodule",
+    "swift-dependencies": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.swiftdeps",
+    "diagnostics": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/runtime/preparation/attempt-1/domain-build-scratch/arm64-apple-macosx/debug/AppRuntimeCore.build/TypedNavigationStore.dia"
+  }
+}

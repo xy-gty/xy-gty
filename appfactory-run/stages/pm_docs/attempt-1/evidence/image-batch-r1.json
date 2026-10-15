@@ -1,0 +1,61 @@
+{
+  "schema": "appfactory.grokbot_image_batch.v1",
+  "jobs": [
+    {
+      "image_id": "sporecue-home-empty-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-home-empty-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-home-empty-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-home-empty-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-capture-camera-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-capture-camera-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-capture-camera-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-capture-camera-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-id-result-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-id-result-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-id-result-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-id-result-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-lookalike-chat-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-lookalike-chat-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-lookalike-chat-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-lookalike-chat-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-overlay-annotate-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-overlay-annotate-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-overlay-annotate-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-overlay-annotate-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-voice-note-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-voice-note-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-voice-note-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-voice-note-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-consent-ai-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-consent-ai-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-consent-ai-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-consent-ai-r1.png.receipt.json"
+    },
+    {
+      "image_id": "sporecue-settings-privacy-r1",
+      "prompt_file": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/prompts/sporecue-settings-privacy-r1.txt",
+      "output": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-settings-privacy-r1.png",
+      "size": "640x1392",
+      "receipt": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/frames/sporecue-settings-privacy-r1.png.receipt.json"
+    }
+  ]
+}

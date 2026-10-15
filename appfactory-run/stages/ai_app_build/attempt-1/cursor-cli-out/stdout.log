@@ -1,0 +1,18 @@
+**SporeCue `ai_app_build` ready** (dispatch `59eaa24c-6d26-48c7-8b52-9df84593f079`).
+
+Launch file hash verified (`731dcdbf…`). Sealed preparation consumed; product built under `sporecue/` → `product`.
+
+| Item | Result |
+|------|--------|
+| Bundle | `com.lingguang.sporecue` |
+| Commit | `953628045629d96380e8792457acd895f19955ed` |
+| Branch / remote | `sporecue` → `sporecue-kf-20261015T174239Z-859f7eed` on `git@github.com:xy-gty/xy-gty.git` |
+| Simulator | iPhone 17 Pro `B14CC0EA-…` (leased, then released) |
+| Domain tests | 12/12 passed |
+| UI smoke | field home + disclaimer + Settings revoke passed |
+| Candidate | `candidate_unaccepted` `953628045629-ed4e4e7deb04` |
+| Finish | `ready` — MAP at attempt-1 |
+
+Hard rules covered: palette `#9A3412/#FFF7ED/#0284C7`, vertical species-confidence stack + gill/pore closeup bar + caution chip rail, 「非可食认证 / not an edibility certification」 on foraging surfaces, four permissions, no AppIcon/LaunchScreen, no competitor names, Feishu delivery skip.
+
+Soft gaps (Option A): AI key unconfigured (honest banner); P1 URL/CloudKit/Feishu-row gaps; `validate-build` reported `ai_app_not_live:undeclared_cloud` (source helper only — live AI remains Acceptance). Independent eight-domain accept still pending.
