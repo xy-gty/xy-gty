@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B9ED4809765FB678B401CD /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AB90E37874BA6907109473 /* VoiceNoteRecorder.swift */; };
+		0FE008E7665308BCE012F324 /* WingCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95928C3E46114BD79910A7 /* WingCueDomainTests.swift */; };
+		124D22CC3CBD19A7476CAA21 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020F6C878842B857071B127 /* DeepSeekClient.swift */; };
+		1A1BB349238326BD0936E608 /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AD3C82E1429BF3655A11F /* VoiceNoteView.swift */; };
+		1DD060E5C10B9BC441E712EA /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EB75A13BEAE875FF277AB /* terms.html */; };
+		24B02FE598FC0030F90E9A72 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DBED6EF77A808729327A6 /* SpeechRecognitionService.swift */; };
+		2B6125664581BF30EA76C4CC /* WingCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA80C4AAE42828AE8B1B4C1 /* WingCueTheme.swift */; };
+		3F6E6FE63BF167FA4441C050 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE169E633C14DF84912581E /* CameraPicker.swift */; };
+		4A5DD472C5D86B0046AC2243 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C540640B60C0980D4737FFF /* RootNavigationView.swift */; };
+		4E2DEB7D34E8FBF4DE6967FE /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD345B960C3B122B25B83354 /* SettingsPrivacyView.swift */; };
+		50177D4D8B08368C2BFF92C2 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 019F2D6BBE375E3D8C9E3B93 /* support.html */; };
+		5C666DD221A129C5469F7597 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E33EFFD537CD2D7083A04B /* ConsentSheet.swift */; };
+		65D1B66BE157FAE5B4E5A710 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3B59C188D371B4E89CB776B2 /* PrivacyInfo.xcprivacy */; };
+		66EA8AD85456ACD488C4C002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A74C055CB439F4357E1CF4 /* Assets.xcassets */; };
+		71B56ACF0AFFACEAE7EEACF9 /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = FED58A729051F9DECEF71ECE /* provider-policy.html */; };
+		790309C9957CFBD56CBE3C83 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9698ACDEA0451B1811380 /* LocalLegalWebView.swift */; };
+		914372B28162B9A7E20DCBCC /* WingCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7B5BC4E9E36EC861F29F4 /* WingCueApp.swift */; };
+		9239210F3B42060FF35B685F /* OverlayStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312CDA18C9C76E16FAF00A95 /* OverlayStudioView.swift */; };
+		9EB54D59B0AE6D7F76F2E331 /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E71296FA88FE00DDE50641 /* TTSPlayer.swift */; };
+		B83381CFAA52EEE3BB3B3BE1 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 64E8BE6725B40EA51B70EDEA /* privacy.html */; };
+		C2A93DBD028026765EF91313 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF9A7687A039A9BE7C47CB /* AppModel.swift */; };
+		C9A1BAFC6627A780E10A1975 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8D863A8212DB6A89BFA53042 /* AppRuntimeCore */; };
+		D61A10EA7E35E85C8466B005 /* WingCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = AB1D4EC38B3E61199C0E3FBE /* WingCueDomain */; };
+		DB83EC186FA879A998B1D015 /* WingCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9B0A88B7812E0529D133DD /* WingCueDomain */; };
+		DF31E92047F4D3F28EC65731 /* LookalikeChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35569ADA090097D71FBC417 /* LookalikeChatView.swift */; };
+		E4B69CC7B7CD8B0E4CA1DF9E /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 550FE9CEBA44BC0AE7719580 /* AppRuntimeCore */; };
+		E6C5D48BAB8C0731CC4028DA /* IDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993DA5BE6D0C3250498E9C1 /* IDResultView.swift */; };
+		FB8D04EEC4F05E2294E0B585 /* FieldHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21EA1143782DC59B6FD1CE /* FieldHomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5CF63E3FDF2B11D606047D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 693E6A2C4C8627B4097A7501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24CF4DECAF2103B52669AF88;
+			remoteInfo = WingCue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0020F6C878842B857071B127 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		019F2D6BBE375E3D8C9E3B93 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		0A0DBED6EF77A808729327A6 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		0A2EB75A13BEAE875FF277AB /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		312CDA18C9C76E16FAF00A95 /* OverlayStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayStudioView.swift; sourceTree = "<group>"; };
+		34A74C055CB439F4357E1CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B0FF407681D5567CC624FB /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		3A21EA1143782DC59B6FD1CE /* FieldHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldHomeView.swift; sourceTree = "<group>"; };
+		3B59C188D371B4E89CB776B2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		64D9698ACDEA0451B1811380 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		64E8BE6725B40EA51B70EDEA /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		658AD3C82E1429BF3655A11F /* VoiceNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteView.swift; sourceTree = "<group>"; };
+		784A56A4C774AC9FB2E4F308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C540640B60C0980D4737FFF /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		9BA80C4AAE42828AE8B1B4C1 /* WingCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingCueTheme.swift; sourceTree = "<group>"; };
+		9F102EEF82BA333B0BF17033 /* WingCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WingCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D7B5BC4E9E36EC861F29F4 /* WingCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingCueApp.swift; sourceTree = "<group>"; };
+		AD345B960C3B122B25B83354 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		B9AB90E37874BA6907109473 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		C0E71296FA88FE00DDE50641 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
+		C0FF9A7687A039A9BE7C47CB /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		C8E33EFFD537CD2D7083A04B /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		C993DA5BE6D0C3250498E9C1 /* IDResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResultView.swift; sourceTree = "<group>"; };
+		CBE169E633C14DF84912581E /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		E93D91788F223A98B3F10852 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		F0043E17AF86181F93ADD22C /* WingCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WingCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35569ADA090097D71FBC417 /* LookalikeChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookalikeChatView.swift; sourceTree = "<group>"; };
+		FC95928C3E46114BD79910A7 /* WingCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingCueDomainTests.swift; sourceTree = "<group>"; };
+		FED58A729051F9DECEF71ECE /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2240CA407EC10CFB692B44C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61A10EA7E35E85C8466B005 /* WingCueDomain in Frameworks */,
+				E4B69CC7B7CD8B0E4CA1DF9E /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E2949C50CF8BAA22557458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A1BAFC6627A780E10A1975 /* AppRuntimeCore in Frameworks */,
+				DB83EC186FA879A998B1D015 /* WingCueDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		029624B2B898F0C375439D32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1994599B75741FDC790B26F /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C5A27B6B298587E504D385E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				34A74C055CB439F4357E1CF4 /* Assets.xcassets */,
+				784A56A4C774AC9FB2E4F308 /* Info.plist */,
+				3B59C188D371B4E89CB776B2 /* PrivacyInfo.xcprivacy */,
+				A0D7B5BC4E9E36EC861F29F4 /* WingCueApp.swift */,
+				603BFE20FB3278755CDE5923 /* AI */,
+				029624B2B898F0C375439D32 /* Resources */,
+				7C320C9599B11E1850A0F6B7 /* Services */,
+				79426A64199E1C8EB6FA9490 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1CBABBDCA830C5E23D60A876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0043E17AF86181F93ADD22C /* WingCue.app */,
+				9F102EEF82BA333B0BF17033 /* WingCueDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D8A2F16CC880B00EFB64E7F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E93D91788F223A98B3F10852 /* AppRuntimeCore */,
+				37B0FF407681D5567CC624FB /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		366378C859D3D8E18EFCCBE4 = {
+			isa = PBXGroup;
+			children = (
+				1C5A27B6B298587E504D385E /* App */,
+				1D8A2F16CC880B00EFB64E7F /* Packages */,
+				4B4CA860B521E8EC7BD4666C /* Tests */,
+				1CBABBDCA830C5E23D60A876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B4CA860B521E8EC7BD4666C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FC95928C3E46114BD79910A7 /* WingCueDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		603BFE20FB3278755CDE5923 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				C8E33EFFD537CD2D7083A04B /* ConsentSheet.swift */,
+				0020F6C878842B857071B127 /* DeepSeekClient.swift */,
+				64D9698ACDEA0451B1811380 /* LocalLegalWebView.swift */,
+				AD345B960C3B122B25B83354 /* SettingsPrivacyView.swift */,
+				0A0DBED6EF77A808729327A6 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		79426A64199E1C8EB6FA9490 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CBE169E633C14DF84912581E /* CameraPicker.swift */,
+				3A21EA1143782DC59B6FD1CE /* FieldHomeView.swift */,
+				C993DA5BE6D0C3250498E9C1 /* IDResultView.swift */,
+				F35569ADA090097D71FBC417 /* LookalikeChatView.swift */,
+				312CDA18C9C76E16FAF00A95 /* OverlayStudioView.swift */,
+				8C540640B60C0980D4737FFF /* RootNavigationView.swift */,
+				658AD3C82E1429BF3655A11F /* VoiceNoteView.swift */,
+				9BA80C4AAE42828AE8B1B4C1 /* WingCueTheme.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7C320C9599B11E1850A0F6B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0FF9A7687A039A9BE7C47CB /* AppModel.swift */,
+				C0E71296FA88FE00DDE50641 /* TTSPlayer.swift */,
+				B9AB90E37874BA6907109473 /* VoiceNoteRecorder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F1994599B75741FDC790B26F /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				64E8BE6725B40EA51B70EDEA /* privacy.html */,
+				FED58A729051F9DECEF71ECE /* provider-policy.html */,
+				019F2D6BBE375E3D8C9E3B93 /* support.html */,
+				0A2EB75A13BEAE875FF277AB /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24CF4DECAF2103B52669AF88 /* WingCue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE8DB93234A8761DF339498E /* Build configuration list for PBXNativeTarget "WingCue" */;
+			buildPhases = (
+				1F4CF80850C54BAE2486AC31 /* Sources */,
+				B467CEA52827C949C8AE5602 /* Resources */,
+				98E2949C50CF8BAA22557458 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WingCue;
+			packageProductDependencies = (
+				8D863A8212DB6A89BFA53042 /* AppRuntimeCore */,
+				7C9B0A88B7812E0529D133DD /* WingCueDomain */,
+			);
+			productName = WingCue;
+			productReference = F0043E17AF86181F93ADD22C /* WingCue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7139A67AE3B48EA826CAECAD /* WingCueDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9829260E005171F8B642557F /* Build configuration list for PBXNativeTarget "WingCueDomainTests" */;
+			buildPhases = (
+				A0CB16C2B55B775B22F4AF30 /* Sources */,
+				2240CA407EC10CFB692B44C2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ACB6C1597AEB41A61B4C4FA /* PBXTargetDependency */,
+			);
+			name = WingCueDomainTests;
+			packageProductDependencies = (
+				AB1D4EC38B3E61199C0E3FBE /* WingCueDomain */,
+				550FE9CEBA44BC0AE7719580 /* AppRuntimeCore */,
+			);
+			productName = WingCueDomainTests;
+			productReference = 9F102EEF82BA333B0BF17033 /* WingCueDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		693E6A2C4C8627B4097A7501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = A803A8D228F7F07E220DADCB /* Build configuration list for PBXProject "WingCue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 366378C859D3D8E18EFCCBE4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				324AC02DC51ACD13E272A597 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				8F1A21E70FF4BFE50C8E59A0 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1CBABBDCA830C5E23D60A876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24CF4DECAF2103B52669AF88 /* WingCue */,
+				7139A67AE3B48EA826CAECAD /* WingCueDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B467CEA52827C949C8AE5602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA8AD85456ACD488C4C002 /* Assets.xcassets in Resources */,
+				65D1B66BE157FAE5B4E5A710 /* PrivacyInfo.xcprivacy in Resources */,
+				B83381CFAA52EEE3BB3B3BE1 /* privacy.html in Resources */,
+				71B56ACF0AFFACEAE7EEACF9 /* provider-policy.html in Resources */,
+				50177D4D8B08368C2BFF92C2 /* support.html in Resources */,
+				1DD060E5C10B9BC441E712EA /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4CF80850C54BAE2486AC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A93DBD028026765EF91313 /* AppModel.swift in Sources */,
+				3F6E6FE63BF167FA4441C050 /* CameraPicker.swift in Sources */,
+				5C666DD221A129C5469F7597 /* ConsentSheet.swift in Sources */,
+				124D22CC3CBD19A7476CAA21 /* DeepSeekClient.swift in Sources */,
+				FB8D04EEC4F05E2294E0B585 /* FieldHomeView.swift in Sources */,
+				E6C5D48BAB8C0731CC4028DA /* IDResultView.swift in Sources */,
+				790309C9957CFBD56CBE3C83 /* LocalLegalWebView.swift in Sources */,
+				DF31E92047F4D3F28EC65731 /* LookalikeChatView.swift in Sources */,
+				9239210F3B42060FF35B685F /* OverlayStudioView.swift in Sources */,
+				4A5DD472C5D86B0046AC2243 /* RootNavigationView.swift in Sources */,
+				4E2DEB7D34E8FBF4DE6967FE /* SettingsPrivacyView.swift in Sources */,
+				24B02FE598FC0030F90E9A72 /* SpeechRecognitionService.swift in Sources */,
+				9EB54D59B0AE6D7F76F2E331 /* TTSPlayer.swift in Sources */,
+				04B9ED4809765FB678B401CD /* VoiceNoteRecorder.swift in Sources */,
+				1A1BB349238326BD0936E608 /* VoiceNoteView.swift in Sources */,
+				914372B28162B9A7E20DCBCC /* WingCueApp.swift in Sources */,
+				2B6125664581BF30EA76C4CC /* WingCueTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CB16C2B55B775B22F4AF30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE008E7665308BCE012F324 /* WingCueDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ACB6C1597AEB41A61B4C4FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24CF4DECAF2103B52669AF88 /* WingCue */;
+			targetProxy = B5CF63E3FDF2B11D606047D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39261B5DD54C706586CD7F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		73F9A3686F8B58687780D4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.wingcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WingCue.app/WingCue";
+			};
+			name = Debug;
+		};
+		7892E0BEF198B3C286114B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WingCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture bird plumage close-ups for species identification";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free field voice notes while holding binoculars";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import trip album stills for species ID sessions";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speak lookalike coach questions without typing";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.wingcue;
+				PRODUCT_NAME = WingCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BDDD81DEAAF9663F9F8F7A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.wingcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WingCue.app/WingCue";
+			};
+			name = Release;
+		};
+		BE8E4410069AD2CCFFE45426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C9D47062FAE8546DF5ACD749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WingCue;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture bird plumage close-ups for species identification";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free field voice notes while holding binoculars";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import trip album stills for species ID sessions";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speak lookalike coach questions without typing";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.wingcue;
+				PRODUCT_NAME = WingCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9829260E005171F8B642557F /* Build configuration list for PBXNativeTarget "WingCueDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73F9A3686F8B58687780D4FF /* Debug */,
+				BDDD81DEAAF9663F9F8F7A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A803A8D228F7F07E220DADCB /* Build configuration list for PBXProject "WingCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E4410069AD2CCFFE45426 /* Debug */,
+				39261B5DD54C706586CD7F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EE8DB93234A8761DF339498E /* Build configuration list for PBXNativeTarget "WingCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7892E0BEF198B3C286114B19 /* Debug */,
+				C9D47062FAE8546DF5ACD749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		324AC02DC51ACD13E272A597 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		8F1A21E70FF4BFE50C8E59A0 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		550FE9CEBA44BC0AE7719580 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		7C9B0A88B7812E0529D133DD /* WingCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WingCueDomain;
+		};
+		8D863A8212DB6A89BFA53042 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		AB1D4EC38B3E61199C0E3FBE /* WingCueDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WingCueDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 693E6A2C4C8627B4097A7501 /* Project object */;
+}
