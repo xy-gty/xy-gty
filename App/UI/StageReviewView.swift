@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct StageReviewView: View {
     @EnvironmentObject private var model: AppModel
@@ -9,32 +9,32 @@ struct StageReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Review proposed stage")
                     .font(.title2.bold())
-                    .foregroundStyle(KnotCueTheme.primary)
+                    .foregroundStyle(BightstepTheme.primary)
                 if let draft = model.editingDraft {
                     Text(draft.proposedStageTags.joined(separator: " · "))
                         .font(.headline)
                     if let wrong = draft.proposedWrongHauls.first {
-                        Text(wrong).foregroundStyle(KnotCueTheme.warn)
+                        Text(wrong).foregroundStyle(BightstepTheme.warn)
                     }
                     if let mm = draft.proposedRopeDiameterMM {
-                        Text("\(Int(mm)) mm rope").foregroundStyle(KnotCueTheme.accent)
+                        Text("\(Int(mm)) mm rope").foregroundStyle(BightstepTheme.accent)
                     }
                     TextField("Edit stage tags", text: $model.stageEditBuffer)
                         .textFieldStyle(.roundedBorder)
                 }
-                Button(KnotCueReviewControls.confirm) { model.keepStage() }
-                    .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
-                Button(KnotCueReviewControls.edit) { model.beginEditStage() }
-                    .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
-                Button(KnotCueReviewControls.reject) { model.rejectDraft() }
-                    .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
-                Text(KnotCueIdentity.coachingDisclaimer)
+                Button(BightstepReviewControls.confirm) { model.keepStage() }
+                    .buttonStyle(BightstepTheme.PrimaryButtonStyle())
+                Button(BightstepReviewControls.edit) { model.beginEditStage() }
+                    .buttonStyle(BightstepTheme.SecondaryButtonStyle())
+                Button(BightstepReviewControls.reject) { model.rejectDraft() }
+                    .buttonStyle(BightstepTheme.SecondaryButtonStyle())
+                Text(BightstepIdentity.coachingDisclaimer)
                     .font(.footnote)
-                    .foregroundStyle(KnotCueTheme.muted)
+                    .foregroundStyle(BightstepTheme.muted)
             }
             .padding(20)
         }
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Stage review")
     }
 }

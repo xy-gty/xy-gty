@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct StepOverlayView: View {
     @EnvironmentObject private var model: AppModel
@@ -8,7 +8,7 @@ struct StepOverlayView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Step annotation overlay")
                 .font(.title2.bold())
-                .foregroundStyle(KnotCueTheme.primary)
+                .foregroundStyle(BightstepTheme.primary)
             if let overlay = model.pendingOverlay {
                 ForEach(Array(overlay.annotationNotes.enumerated()), id: \.offset) { index, note in
                     HStack {
@@ -16,20 +16,20 @@ struct StepOverlayView: View {
                             .font(.headline.bold())
                             .foregroundStyle(.white)
                             .frame(width: 32, height: 32)
-                            .background(KnotCueTheme.accent)
+                            .background(BightstepTheme.accent)
                             .clipShape(Circle())
                         Text(note)
                     }
                 }
             }
-            Button(KnotCueReviewControls.overlayConfirm) { model.savePendingOverlay() }
-                .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
-            Button(KnotCueReviewControls.overlayReject) { model.discardPendingOverlay() }
-                .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+            Button(BightstepReviewControls.overlayConfirm) { model.savePendingOverlay() }
+                .buttonStyle(BightstepTheme.PrimaryButtonStyle())
+            Button(BightstepReviewControls.overlayReject) { model.discardPendingOverlay() }
+                .buttonStyle(BightstepTheme.SecondaryButtonStyle())
             Spacer()
         }
         .padding(20)
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Overlay")
     }
 }

@@ -191,8 +191,8 @@ public struct AIConsentRecord: Codable, Equatable, Sendable {
     public var updatedAt: Date
 
     public init(
-        provider: String = KnotCueIdentity.aiProvider,
-        disclosureVersion: String = KnotCueIdentity.consentDisclosureVersion,
+        provider: String = BightstepIdentity.aiProvider,
+        disclosureVersion: String = BightstepIdentity.consentDisclosureVersion,
         generation: UInt64 = 0,
         granted: Bool = false,
         updatedAt: Date = Date()

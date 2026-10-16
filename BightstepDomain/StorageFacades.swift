@@ -2,7 +2,7 @@ import Foundation
 import AppRuntimeCore
 
 /// Caller-owned AtomicCodableStore facades for frozen entities. Ordinary saves never replace corrupt bytes.
-public final class KnotCueStorageRoot: @unchecked Sendable {
+public final class BightstepStorageRoot: @unchecked Sendable {
     public let rootDirectory: URL
     public let practiceSessions: AtomicCodableStore<PracticeSessionCatalog>
     public let knotCaptureDrafts: AtomicCodableStore<KnotCaptureDraftCatalog>

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00BB4E4479E9FA353A60D3DB /* KnotCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 24C68F9C8392F5911B7C3DDC /* KnotCueDomain */; };
+		00BB4E4479E9FA353A60D3DB /* BightstepDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 24C68F9C8392F5911B7C3DDC /* BightstepDomain */; };
 		05DED796EE00B2AEB5E57A58 /* deepseek-privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C4417B2D1EAC866F7944 /* deepseek-privacy.html */; };
 		0C7CB68573085B66729E83A3 /* KnotCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F446F12A9E33A77D649018D /* KnotCaptureView.swift */; };
 		1400B2DE5CF605A37D23C14C /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352090C8519A175D52AF5371 /* CoachChatView.swift */; };
 		1DA22BA9085F3A1FC98FA177 /* HandsFreeCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */; };
 		22280240728218772C18B0F3 /* StepOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C70F08A96F39B135A50BD /* StepOverlayView.swift */; };
-		2ADF7B76CCA5F4977C2B4FBB /* KnotCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418E20432119FCC0DA540FE /* KnotCueDomainTests.swift */; };
+		2ADF7B76CCA5F4977C2B4FBB /* BightstepDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */; };
 		3900E5BB75AD9086F3E534BD /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA862C518CF337858320D518 /* SpeechCaptureView.swift */; };
 		4DACDB0A25612FBD7382B968 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 469996C65B3C87EB8B198945 /* AppRuntimeCore */; };
 		6431814DA599443BACE8698B /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = A22014A703ADCEE280D99AFC /* privacy.html */; };
@@ -23,18 +23,18 @@
 		7C443E59717B3621F2215DDA /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475B33F3D0FEB39CFDD4B47 /* SettingsPrivacyView.swift */; };
 		7DA819982E7C2761C3981A56 /* RopeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B12CC5F9F676B465E37779 /* RopeHomeView.swift */; };
 		8471CF630F39624F382331ED /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58C97C78714704CC4BB15B /* AppModel.swift */; };
-		B5CCA127DBF2CC03FAE11911 /* KnotCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B002E569CD2EF76756AB5 /* KnotCueApp.swift */; };
+		B5CCA127DBF2CC03FAE11911 /* BightstepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B002E569CD2EF76756AB5 /* BightstepApp.swift */; };
 		C0676D20F247DFB8A0959323 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4158E972E22A884C467FB081 /* AppRuntimeCore */; };
 		C1A5FC8BE8603FEEDA132639 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0315FBCEDBA222D5ECE910A3 /* PrivacyInfo.xcprivacy */; };
 		C67DB27F40781E3B5D6E2F6F /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06064D50E2B7FDD01C1363AB /* ConsentSheet.swift */; };
-		C7C9EBFB8960F35B36E28E6B /* KnotCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3F0F711C82A079E965431 /* KnotCueTheme.swift */; };
+		C7C9EBFB8960F35B36E28E6B /* BightstepTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3F0F711C82A079E965431 /* BightstepTheme.swift */; };
 		CF06AF93D9C02CB7CC93CE1A /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF67F25C99542434B24535D /* DeepSeekClient.swift */; };
 		D8C64524E94B2257F1011DE0 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */; };
 		DFD6741992A5D05A098FB3EC /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D9526256DC96FDEE46DB86C /* terms.html */; };
 		E26C333DABD47A372CD27077 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886EDCA7D09F687A05FCB513 /* LocalLegalWebView.swift */; };
 		E7FBED01BDCE1926AD39818C /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09BD7475AE35C9EB9D3859 /* CameraCapturePicker.swift */; };
 		EC4268F0251DF8A6691C8AFD /* StageReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5127AF6CDFF23D2E3792D644 /* StageReviewView.swift */; };
-		F9BC1B303FE2B0AA4A4368AB /* KnotCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 4233C0691361A437C1059E5C /* KnotCueDomain */; };
+		F9BC1B303FE2B0AA4A4368AB /* BightstepDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 4233C0691361A437C1059E5C /* BightstepDomain */; };
 		FCA5197D31C2DA8A1894636A /* KnotStageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 			containerPortal = 6EC538ADF4ABCDF235978584 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FF933DA18D298C89A5921AE5;
-			remoteInfo = KnotCue;
+			remoteInfo = Bightstep;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,13 +60,13 @@
 		50A8C4417B2D1EAC866F7944 /* deepseek-privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "deepseek-privacy.html"; sourceTree = "<group>"; };
 		5127AF6CDFF23D2E3792D644 /* StageReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageReviewView.swift; sourceTree = "<group>"; };
 		596936263CF165CE3633B0C7 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
-		5D49D9C43827A79356A41A0E /* knotcue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = knotcue; path = .; sourceTree = SOURCE_ROOT; };
-		6418E20432119FCC0DA540FE /* KnotCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotCueDomainTests.swift; sourceTree = "<group>"; };
+		5D49D9C43827A79356A41A0E /* bightstep */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bightstep; path = .; sourceTree = SOURCE_ROOT; };
+		6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepDomainTests.swift; sourceTree = "<group>"; };
 		7F58C97C78714704CC4BB15B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		7FD347F67531EE23D8A25921 /* KnotCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KnotCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BightstepDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		886EDCA7D09F687A05FCB513 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
 		967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeCoachView.swift; sourceTree = "<group>"; };
-		99B2E71940CD64B032E64F18 /* KnotCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KnotCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B2E71940CD64B032E64F18 /* Bightstep.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Bightstep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E382BA02959F55D244F3519 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
 		A22014A703ADCEE280D99AFC /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		CD09BD7475AE35C9EB9D3859 /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 		D58917D1F9A5AB432249D729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D71C70F08A96F39B135A50BD /* StepOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepOverlayView.swift; sourceTree = "<group>"; };
 		DA862C518CF337858320D518 /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
-		E13B002E569CD2EF76756AB5 /* KnotCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotCueApp.swift; sourceTree = "<group>"; };
-		E2E3F0F711C82A079E965431 /* KnotCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotCueTheme.swift; sourceTree = "<group>"; };
+		E13B002E569CD2EF76756AB5 /* BightstepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepApp.swift; sourceTree = "<group>"; };
+		E2E3F0F711C82A079E965431 /* BightstepTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepTheme.swift; sourceTree = "<group>"; };
 		F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStageDetailView.swift; sourceTree = "<group>"; };
 		F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9BC1B303FE2B0AA4A4368AB /* KnotCueDomain in Frameworks */,
+				F9BC1B303FE2B0AA4A4368AB /* BightstepDomain in Frameworks */,
 				4DACDB0A25612FBD7382B968 /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0676D20F247DFB8A0959323 /* AppRuntimeCore in Frameworks */,
-				00BB4E4479E9FA353A60D3DB /* KnotCueDomain in Frameworks */,
+				00BB4E4479E9FA353A60D3DB /* BightstepDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 		577C2882671D07D168BEF359 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6418E20432119FCC0DA540FE /* KnotCueDomainTests.swift */,
+				6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CECEAFC775AA8274A2F0011E /* AppRuntimeCore */,
-				5D49D9C43827A79356A41A0E /* knotcue */,
+				5D49D9C43827A79356A41A0E /* bightstep */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			children = (
 				D58917D1F9A5AB432249D729 /* Assets.xcassets */,
 				22BF0E627627801074CC7C30 /* Info.plist */,
-				E13B002E569CD2EF76756AB5 /* KnotCueApp.swift */,
+				E13B002E569CD2EF76756AB5 /* BightstepApp.swift */,
 				D491C9E54BCB579CBBF779D9 /* AI */,
 				98617FF9F484947FC58E4D33 /* Resources */,
 				72CCE5D126EBCD8BD2C1D910 /* Services */,
@@ -178,8 +178,8 @@
 		D4CA6C17DCD6DA5A37127F58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99B2E71940CD64B032E64F18 /* KnotCue.app */,
-				7FD347F67531EE23D8A25921 /* KnotCueDomainTests.xctest */,
+				99B2E71940CD64B032E64F18 /* Bightstep.app */,
+				7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				352090C8519A175D52AF5371 /* CoachChatView.swift */,
 				967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */,
 				0F446F12A9E33A77D649018D /* KnotCaptureView.swift */,
-				E2E3F0F711C82A079E965431 /* KnotCueTheme.swift */,
+				E2E3F0F711C82A079E965431 /* BightstepTheme.swift */,
 				F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */,
 				F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */,
 				08B12CC5F9F676B465E37779 /* RopeHomeView.swift */,
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		246157F659D578DABD359F93 /* KnotCueDomainTests */ = {
+		246157F659D578DABD359F93 /* BightstepDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "KnotCueDomainTests" */;
+			buildConfigurationList = CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "BightstepDomainTests" */;
 			buildPhases = (
 				19DC29A45D271357465E91BD /* Sources */,
 				CBE3CF4C8061FACAB58D98A2 /* Frameworks */,
@@ -226,18 +226,18 @@
 			dependencies = (
 				1E732D064716B4B9B62D02D6 /* PBXTargetDependency */,
 			);
-			name = KnotCueDomainTests;
+			name = BightstepDomainTests;
 			packageProductDependencies = (
-				4233C0691361A437C1059E5C /* KnotCueDomain */,
+				4233C0691361A437C1059E5C /* BightstepDomain */,
 				469996C65B3C87EB8B198945 /* AppRuntimeCore */,
 			);
-			productName = KnotCueDomainTests;
-			productReference = 7FD347F67531EE23D8A25921 /* KnotCueDomainTests.xctest */;
+			productName = BightstepDomainTests;
+			productReference = 7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FF933DA18D298C89A5921AE5 /* KnotCue */ = {
+		FF933DA18D298C89A5921AE5 /* Bightstep */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "KnotCue" */;
+			buildConfigurationList = 99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "Bightstep" */;
 			buildPhases = (
 				B3A55331930038566B0AD170 /* Sources */,
 				9D83334EAAD338B0A7C5406D /* Resources */,
@@ -247,13 +247,13 @@
 			);
 			dependencies = (
 			);
-			name = KnotCue;
+			name = Bightstep;
 			packageProductDependencies = (
 				4158E972E22A884C467FB081 /* AppRuntimeCore */,
-				24C68F9C8392F5911B7C3DDC /* KnotCueDomain */,
+				24C68F9C8392F5911B7C3DDC /* BightstepDomain */,
 			);
-			productName = KnotCue;
-			productReference = 99B2E71940CD64B032E64F18 /* KnotCue.app */;
+			productName = Bightstep;
+			productReference = 99B2E71940CD64B032E64F18 /* Bightstep.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 				TargetAttributes = {
 				};
 			};
-			buildConfigurationList = 94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "KnotCue" */;
+			buildConfigurationList = 94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "Bightstep" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -285,8 +285,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF933DA18D298C89A5921AE5 /* KnotCue */,
-				246157F659D578DABD359F93 /* KnotCueDomainTests */,
+				FF933DA18D298C89A5921AE5 /* Bightstep */,
+				246157F659D578DABD359F93 /* BightstepDomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADF7B76CCA5F4977C2B4FBB /* KnotCueDomainTests.swift in Sources */,
+				2ADF7B76CCA5F4977C2B4FBB /* BightstepDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,8 +327,8 @@
 				CF06AF93D9C02CB7CC93CE1A /* DeepSeekClient.swift in Sources */,
 				1DA22BA9085F3A1FC98FA177 /* HandsFreeCoachView.swift in Sources */,
 				0C7CB68573085B66729E83A3 /* KnotCaptureView.swift in Sources */,
-				B5CCA127DBF2CC03FAE11911 /* KnotCueApp.swift in Sources */,
-				C7C9EBFB8960F35B36E28E6B /* KnotCueTheme.swift in Sources */,
+				B5CCA127DBF2CC03FAE11911 /* BightstepApp.swift in Sources */,
+				C7C9EBFB8960F35B36E28E6B /* BightstepTheme.swift in Sources */,
 				FCA5197D31C2DA8A1894636A /* KnotStageDetailView.swift in Sources */,
 				E26C333DABD47A372CD27077 /* LocalLegalWebView.swift in Sources */,
 				D8C64524E94B2257F1011DE0 /* RootTabView.swift in Sources */,
@@ -346,7 +346,7 @@
 /* Begin PBXTargetDependency section */
 		1E732D064716B4B9B62D02D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF933DA18D298C89A5921AE5 /* KnotCue */;
+			target = FF933DA18D298C89A5921AE5 /* Bightstep */;
 			targetProxy = 9EAD9F19E487D6843718434E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,19 +359,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KnotCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "KnotCue photographs in-progress rope knots to recognize stage and wrong hauls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KnotCue uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KnotCue imports practice reference photos to diagnose which rope-knot step drifted.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "KnotCue uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Bightstep;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Bightstep photographs in-progress rope knots to recognize stage and wrong hauls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Bightstep uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bightstep imports practice reference photos to diagnose which rope-knot step drifted.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Bightstep uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.knotcue;
-				PRODUCT_NAME = KnotCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bightstep;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -386,10 +386,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.knotcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bightstep.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnotCue.app/KnotCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bightstep.app/Bightstep";
 			};
 			name = Release;
 		};
@@ -461,10 +461,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.knotcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bightstep.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnotCue.app/KnotCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bightstep.app/Bightstep";
 			};
 			name = Debug;
 		};
@@ -475,19 +475,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KnotCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "KnotCue photographs in-progress rope knots to recognize stage and wrong hauls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KnotCue uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KnotCue imports practice reference photos to diagnose which rope-knot step drifted.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "KnotCue uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Bightstep;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Bightstep photographs in-progress rope knots to recognize stage and wrong hauls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Bightstep uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bightstep imports practice reference photos to diagnose which rope-knot step drifted.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Bightstep uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.knotcue;
-				PRODUCT_NAME = KnotCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bightstep;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -562,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "KnotCue" */ = {
+		94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "Bightstep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4CD4D7C6E090D452417B782 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "KnotCue" */ = {
+		99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "Bightstep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD7C9147F69E1537C4A867B3 /* Debug */,
@@ -580,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "KnotCueDomainTests" */ = {
+		CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "BightstepDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0767386A3464A3268034CB7 /* Debug */,
@@ -603,17 +603,17 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		24C68F9C8392F5911B7C3DDC /* KnotCueDomain */ = {
+		24C68F9C8392F5911B7C3DDC /* BightstepDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = KnotCueDomain;
+			productName = BightstepDomain;
 		};
 		4158E972E22A884C467FB081 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		4233C0691361A437C1059E5C /* KnotCueDomain */ = {
+		4233C0691361A437C1059E5C /* BightstepDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = KnotCueDomain;
+			productName = BightstepDomain;
 		};
 		469996C65B3C87EB8B198945 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

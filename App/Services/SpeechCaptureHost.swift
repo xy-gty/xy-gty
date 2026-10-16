@@ -1,7 +1,7 @@
 import Foundation
 import Speech
 import AVFoundation
-import KnotCueDomain
+import BightstepDomain
 
 /// On-device speech recognition into CoachChat. Does not outbound-send audio.
 @MainActor

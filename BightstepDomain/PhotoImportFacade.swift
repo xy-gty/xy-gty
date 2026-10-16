@@ -3,12 +3,12 @@ import AppRuntimeCore
 
 /// PhotoImportSession + CameraCapture wiring: product owns destination bytes under local photos/.
 @MainActor
-public enum KnotCuePhotoImportFacade {
+public enum BightstepPhotoImportFacade {
     public static let cameraSourceKind = "camera"
     public static let librarySourceKind = "photo_library"
 
     public static func makeSession(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
         let destination = storage.photosDirectory.appendingPathComponent(fileName, isDirectory: false)
@@ -17,7 +17,7 @@ public enum KnotCuePhotoImportFacade {
     }
 
     public static func recordImportedDraft(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         destination: URL,
         practiceSessionID: UUID? = nil,
         sourceKind: String = "photo_library"
@@ -34,7 +34,7 @@ public enum KnotCuePhotoImportFacade {
     }
 
     public static func confirmDraft(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         draft: KnotCaptureDraft,
         stageTags: [String]? = nil,
         wrongHauls: [String]? = nil,
@@ -62,7 +62,7 @@ public enum KnotCuePhotoImportFacade {
     }
 
     public static func saveOverlay(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         overlay: StepOverlay,
         localFileName: String? = nil,
         annotationNotes: [String]? = nil
@@ -84,7 +84,7 @@ public enum KnotCuePhotoImportFacade {
     }
 
     public static func discardOverlay(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         overlayID: UUID
     ) throws {
         var catalog = try storage.stepOverlays.load() ?? StepOverlayCatalog()
@@ -96,21 +96,21 @@ public enum KnotCuePhotoImportFacade {
 /// CameraCapture seam: same destination ownership as library import; host AVCapture wiring is Builder's.
 @MainActor
 public enum CameraCapture {
-    public static let sourceKind = KnotCuePhotoImportFacade.cameraSourceKind
+    public static let sourceKind = BightstepPhotoImportFacade.cameraSourceKind
 
     public static func makeCaptureDestination(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
-        KnotCuePhotoImportFacade.makeSession(storage: storage, fileName: fileName)
+        BightstepPhotoImportFacade.makeSession(storage: storage, fileName: fileName)
     }
 
     public static func recordCapturedDraft(
-        storage: KnotCueStorageRoot,
+        storage: BightstepStorageRoot,
         destination: URL,
         practiceSessionID: UUID? = nil
     ) throws -> KnotCaptureDraft {
-        try KnotCuePhotoImportFacade.recordImportedDraft(
+        try BightstepPhotoImportFacade.recordImportedDraft(
             storage: storage,
             destination: destination,
             practiceSessionID: practiceSessionID,

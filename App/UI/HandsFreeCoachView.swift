@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct HandsFreeCoachView: View {
     @EnvironmentObject private var model: AppModel
@@ -8,28 +8,28 @@ struct HandsFreeCoachView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Hands-free coach")
                 .font(.title2.bold())
-                .foregroundStyle(KnotCueTheme.primary)
+                .foregroundStyle(BightstepTheme.primary)
             if let plan = model.activeHandsFreePlan {
                 ForEach(Array(plan.steps.enumerated()), id: \.offset) { index, step in
                     Text(step)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(index == model.handsFreeStepIndex ? KnotCueTheme.accent.opacity(0.2) : KnotCueTheme.surface)
+                        .background(index == model.handsFreeStepIndex ? BightstepTheme.accent.opacity(0.2) : BightstepTheme.surface)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
             }
             Button("Play steps") { model.playCurrentHandsFreeStep() }
-                .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
+                .buttonStyle(BightstepTheme.PrimaryButtonStyle())
             HStack {
-                Button(KnotCueReviewControls.HandsFreePlayer.pause) { model.pauseHandsFree() }
-                    .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
-                Button(KnotCueReviewControls.HandsFreePlayer.next) { model.nextHandsFreeStep() }
-                    .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+                Button(BightstepReviewControls.HandsFreePlayer.pause) { model.pauseHandsFree() }
+                    .buttonStyle(BightstepTheme.SecondaryButtonStyle())
+                Button(BightstepReviewControls.HandsFreePlayer.next) { model.nextHandsFreeStep() }
+                    .buttonStyle(BightstepTheme.SecondaryButtonStyle())
             }
             Spacer()
         }
         .padding(20)
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Hands-free")
     }
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 import PhotosUI
-import KnotCueDomain
+import BightstepDomain
 
 struct RopeHomeView: View {
     @EnvironmentObject private var model: AppModel
@@ -9,24 +9,24 @@ struct RopeHomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("KnotCue")
+                    Text("Bightstep")
                         .font(.largeTitle.bold())
-                        .foregroundStyle(KnotCueTheme.primary)
+                        .foregroundStyle(BightstepTheme.primary)
                     Text("Vertical rope-diameter step carousel")
                         .font(.subheadline)
-                        .foregroundStyle(KnotCueTheme.muted)
+                        .foregroundStyle(BightstepTheme.muted)
                 }
                 if model.stages.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("No stages yet")
                             .font(.title3.bold())
-                            .foregroundStyle(KnotCueTheme.ink)
+                            .foregroundStyle(BightstepTheme.ink)
                         Text("Snap or import a knot to recognize stage, then keep it on the rope carousel.")
-                            .foregroundStyle(KnotCueTheme.muted)
+                            .foregroundStyle(BightstepTheme.muted)
                     }
                     .padding(20)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(KnotCueTheme.surface)
+                    .background(BightstepTheme.surface)
                     .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                 }
                 RopeDiameterCarousel(
@@ -40,21 +40,21 @@ struct RopeHomeView: View {
                     }
                 )
                 Button("Snap knot") { model.push(.knotCapture) }
-                    .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
+                    .buttonStyle(BightstepTheme.PrimaryButtonStyle())
                 Button("Ask coach") {
                     model.selectedTab = .coach
                     if model.chatText.isEmpty {
                         model.chatText = "What's the next haul for a bowline at step 3?"
                     }
                 }
-                .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+                .buttonStyle(BightstepTheme.SecondaryButtonStyle())
                 if model.recognitionBusy {
                     ProgressView("Reading knot stage…")
                 }
             }
             .padding(20)
         }
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Rope")
         .navigationBarTitleDisplayMode(.inline)
     }

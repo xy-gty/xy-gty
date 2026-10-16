@@ -1,9 +1,9 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
-extension KnotCueRoute: Hashable {}
+extension BightstepRoute: Hashable {}
 
-enum KnotCueTheme {
+enum BightstepTheme {
     // Primary #B45309 · Secondary #FFFBEB · Accent #0EA5E9 · ink #1C1917
     static let primary = Color(red: 180 / 255, green: 83 / 255, blue: 9 / 255)
     static let secondary = Color(red: 255 / 255, green: 251 / 255, blue: 235 / 255)
@@ -59,8 +59,8 @@ struct RopeDiameterCarousel: View {
                             .font(.caption.weight(.bold))
                             .padding(.horizontal, 14)
                             .padding(.vertical, 8)
-                            .foregroundStyle(selected == mm ? Color.white : KnotCueTheme.ink)
-                            .background(selected == mm ? KnotCueTheme.accent : KnotCueTheme.surface)
+                            .foregroundStyle(selected == mm ? Color.white : BightstepTheme.ink)
+                            .background(selected == mm ? BightstepTheme.accent : BightstepTheme.surface)
                             .clipShape(Capsule())
                     }
                 }
@@ -74,35 +74,35 @@ struct RopeDiameterCarousel: View {
                             HStack(alignment: .top, spacing: 14) {
                                 ZStack {
                                     Circle()
-                                        .stroke(KnotCueTheme.primary, lineWidth: 4)
+                                        .stroke(BightstepTheme.primary, lineWidth: 4)
                                         .frame(width: 44, height: 44)
                                     Text("\(index + 1)")
                                         .font(.headline.weight(.bold))
-                                        .foregroundStyle(KnotCueTheme.primary)
+                                        .foregroundStyle(BightstepTheme.primary)
                                 }
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(stage.stageTags.first ?? "Knot stage")
                                         .font(.headline)
-                                        .foregroundStyle(KnotCueTheme.ink)
+                                        .foregroundStyle(BightstepTheme.ink)
                                     if let d = stage.ropeDiameterMM {
                                         Text("\(Int(d)) mm rope")
                                             .font(.caption.weight(.semibold))
-                                            .foregroundStyle(KnotCueTheme.accent)
+                                            .foregroundStyle(BightstepTheme.accent)
                                     }
                                     if let wrong = stage.wrongHauls.first {
                                         Text(wrong)
                                             .font(.caption)
-                                            .foregroundStyle(KnotCueTheme.warn)
+                                            .foregroundStyle(BightstepTheme.warn)
                                     }
                                 }
                                 Spacer(minLength: 0)
                             }
                             .padding(16)
-                            .background(KnotCueTheme.surface)
+                            .background(BightstepTheme.surface)
                             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 18, style: .continuous)
-                                    .stroke(KnotCueTheme.primary.opacity(0.2), lineWidth: 1)
+                                    .stroke(BightstepTheme.primary.opacity(0.2), lineWidth: 1)
                             )
                         }
                         .buttonStyle(.plain)

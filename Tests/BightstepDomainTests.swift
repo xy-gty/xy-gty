@@ -1,17 +1,17 @@
 import XCTest
-import KnotCueDomain
+import BightstepDomain
 import AppRuntimeCore
 
-final class KnotCueDomainTests: XCTestCase {
+final class BightstepDomainTests: XCTestCase {
     func testReviewControlLabels() {
-        XCTAssertEqual(KnotCueReviewControls.confirm, "Keep stage")
-        XCTAssertEqual(KnotCueReviewControls.reject, "Not this")
-        XCTAssertEqual(KnotCueReviewControls.edit, "Edit stage")
-        XCTAssertEqual(KnotCueReviewControls.StepOverlayPreview.confirm, "Save overlay")
-        XCTAssertEqual(KnotCueReviewControls.StepOverlayPreview.reject, "Discard")
-        XCTAssertEqual(KnotCueIdentity.aiProvider, "DeepSeek")
-        XCTAssertEqual(KnotCueIdentity.consentDisclosureVersion, "knotcue.consent.v1")
-        XCTAssertEqual(KnotCueIdentity.developmentBundleID, "com.lingguang.knotcue")
+        XCTAssertEqual(BightstepReviewControls.confirm, "Keep stage")
+        XCTAssertEqual(BightstepReviewControls.reject, "Not this")
+        XCTAssertEqual(BightstepReviewControls.edit, "Edit stage")
+        XCTAssertEqual(BightstepReviewControls.StepOverlayPreview.confirm, "Save overlay")
+        XCTAssertEqual(BightstepReviewControls.StepOverlayPreview.reject, "Discard")
+        XCTAssertEqual(BightstepIdentity.aiProvider, "DeepSeek")
+        XCTAssertEqual(BightstepIdentity.consentDisclosureVersion, "bightstep.consent.v1")
+        XCTAssertEqual(BightstepIdentity.developmentBundleID, "com.lingguang.bightstep")
     }
 
     func testNavigationCasesMatchContract() {
@@ -20,15 +20,15 @@ final class KnotCueDomainTests: XCTestCase {
             "CoachChat", "StepOverlay", "HandsFreeCoach", "SpeechCapture", "Settings",
             "LegalPages", "ConsentSheet"
         ]
-        XCTAssertEqual(KnotCueNavigation.allRoutes.map(\.rawValue), expected)
+        XCTAssertEqual(BightstepNavigation.allRoutes.map(\.rawValue), expected)
     }
 
     func testKeepStagePersistRejectDoesNotWriteAndRestart() throws {
         let root = FileManager.default.temporaryDirectory
-            .appendingPathComponent("knotcue-test-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("bightstep-test-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: root) }
-        let storage = KnotCueStorageRoot(rootDirectory: root)
+        let storage = BightstepStorageRoot(rootDirectory: root)
         try FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true
@@ -56,8 +56,8 @@ final class KnotCueDomainTests: XCTestCase {
     func testConsentGateBlocksUntilGrantAndAfterRevoke() throws {
         var disk: AIConsentGate.State?
         let gate = AIConsentGate(
-            provider: KnotCueIdentity.aiProvider,
-            disclosureVersion: KnotCueIdentity.consentDisclosureVersion,
+            provider: BightstepIdentity.aiProvider,
+            disclosureVersion: BightstepIdentity.consentDisclosureVersion,
             load: { disk },
             persist: { disk = $0 }
         )
@@ -73,17 +73,17 @@ final class KnotCueDomainTests: XCTestCase {
     }
 
     func testOutboundRequiresConsentAndKey() {
-        XCTAssertFalse(KnotCueOutboundAIBoundary.snapshot(consentGranted: false, apiKeyPresent: true).outboundEnabled)
-        XCTAssertTrue(KnotCueOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: true).outboundEnabled)
-        XCTAssertFalse(KnotCueOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: false).outboundEnabled)
+        XCTAssertFalse(BightstepOutboundAIBoundary.snapshot(consentGranted: false, apiKeyPresent: true).outboundEnabled)
+        XCTAssertTrue(BightstepOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: true).outboundEnabled)
+        XCTAssertFalse(BightstepOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: false).outboundEnabled)
     }
 
     func testOverlaySaveAndDiscardSemantics() throws {
         let root = FileManager.default.temporaryDirectory
-            .appendingPathComponent("knotcue-overlay-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("bightstep-overlay-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: root) }
-        let storage = KnotCueStorageRoot(rootDirectory: root)
+        let storage = BightstepStorageRoot(rootDirectory: root)
         try FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true

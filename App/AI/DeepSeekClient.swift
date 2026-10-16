@@ -1,5 +1,5 @@
 import Foundation
-import KnotCueDomain
+import BightstepDomain
 
 enum DeepSeekClientError: Error, LocalizedError {
     case notConfigured
@@ -57,9 +57,9 @@ final class DeepSeekClient {
         let photoData = try Data(contentsOf: photoURL)
         let b64 = photoData.base64EncodedString()
         let system = """
-        You analyze rope-knot practice photos for KnotCue. Reply with JSON only:
+        You analyze rope-knot practice photos for Bightstep. Reply with JSON only:
         {"stageTags":["…"],"wrongHauls":["…"],"ropeDiameterMM":number|null}
-        Educational coaching only. \(KnotCueIdentity.coachingDisclaimer)
+        Educational coaching only. \(BightstepIdentity.coachingDisclaimer)
         """
         let userText = "Recognize knot stage from this practice photo. Allowed outbound field: knot_photo_bytes."
         let content: [[String: Any]] = [
@@ -77,8 +77,8 @@ final class DeepSeekClient {
         }
         let feedbackBlock = priorFeedback.isEmpty ? "none" : priorFeedback.joined(separator: "\n")
         let system = """
-        You are KnotCue's rope-knot next-haul coach. English only. Suggest the next haul and a short safety note.
-        \(KnotCueIdentity.coachingDisclaimer)
+        You are Bightstep's rope-knot next-haul coach. English only. Suggest the next haul and a short safety note.
+        \(BightstepIdentity.coachingDisclaimer)
         Reply with JSON only: {"text":"…","nextHaul":"…"}
         """
         let user = """

@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct RootTabView: View {
     @EnvironmentObject private var model: AppModel
@@ -20,7 +20,7 @@ struct RootTabView: View {
                     .tabItem { Label("Settings", systemImage: "gearshape") }
                     .tag(AppModel.AppTab.settings)
             }
-            .navigationDestination(for: KnotCueRoute.self) { route in
+            .navigationDestination(for: BightstepRoute.self) { route in
                 switch route {
                 case .knotCapture: KnotCaptureView()
                 case .stageReview: StageReviewView()
@@ -33,7 +33,7 @@ struct RootTabView: View {
                 }
             }
         }
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .sheet(isPresented: $model.showConsent) { ConsentSheet() }
         .sheet(isPresented: $model.showCameraPicker) {
             CameraCapturePicker(

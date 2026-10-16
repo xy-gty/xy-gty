@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var model: AppModel
@@ -13,7 +13,7 @@ struct CoachChatView: View {
                             .font(.footnote)
                             .padding(12)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(KnotCueTheme.surface)
+                            .background(BightstepTheme.surface)
                             .clipShape(RoundedRectangle(cornerRadius: 12))
                     }
                     ForEach(model.coachTurns) { turn in
@@ -23,12 +23,12 @@ struct CoachChatView: View {
                             if !turn.haulContext.isEmpty {
                                 Text("Next haul: \(turn.haulContext)")
                                     .font(.caption.weight(.bold))
-                                    .foregroundStyle(KnotCueTheme.accent)
+                                    .foregroundStyle(BightstepTheme.accent)
                             }
                         }
                         .padding(14)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(KnotCueTheme.surface)
+                        .background(BightstepTheme.surface)
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                     }
                 }
@@ -46,15 +46,15 @@ struct CoachChatView: View {
                 Button(model.chatBusy ? "Planning next haul…" : "Send") {
                     model.sendCoachChatLocalDemoIfNeeded()
                 }
-                .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
+                .buttonStyle(BightstepTheme.PrimaryButtonStyle())
                 .disabled(model.chatBusy)
                 Button("Make step overlay") { model.makeStepOverlay() }
-                    .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+                    .buttonStyle(BightstepTheme.SecondaryButtonStyle())
             }
             .padding(16)
-            .background(KnotCueTheme.secondary)
+            .background(BightstepTheme.secondary)
         }
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Coach")
     }
 }

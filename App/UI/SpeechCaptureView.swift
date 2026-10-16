@@ -7,23 +7,23 @@ struct SpeechCaptureView: View {
         VStack(spacing: 20) {
             Text(model.speechHost.isListening ? "Listening…" : "Mic ready")
                 .font(.title2.bold())
-                .foregroundStyle(KnotCueTheme.primary)
+                .foregroundStyle(BightstepTheme.primary)
             Text(model.speechHost.partialTranscript.isEmpty ? "Speak a coach question while both hands hold the rope." : model.speechHost.partialTranscript)
                 .multilineTextAlignment(.center)
-                .foregroundStyle(KnotCueTheme.ink)
+                .foregroundStyle(BightstepTheme.ink)
             if let err = model.speechHost.lastError {
-                Text(err).foregroundStyle(KnotCueTheme.warn)
+                Text(err).foregroundStyle(BightstepTheme.warn)
             }
             Button("Use transcript in chat") { model.stopMicAndFillChat() }
-                .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
+                .buttonStyle(BightstepTheme.PrimaryButtonStyle())
             Button("Listen again") {
                 Task { await model.speechHost.start() }
             }
-            .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+            .buttonStyle(BightstepTheme.SecondaryButtonStyle())
             Spacer()
         }
         .padding(20)
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Speech")
     }
 }

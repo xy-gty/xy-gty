@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct KnotStageDetailView: View {
     @EnvironmentObject private var model: AppModel
@@ -10,29 +10,29 @@ struct KnotStageDetailView: View {
                 if let stage = model.selectedStage {
                     Text(stage.stageTags.joined(separator: " · "))
                         .font(.title2.bold())
-                        .foregroundStyle(KnotCueTheme.ink)
+                        .foregroundStyle(BightstepTheme.ink)
                     if let mm = stage.ropeDiameterMM {
-                        Text("\(Int(mm)) mm").foregroundStyle(KnotCueTheme.accent)
+                        Text("\(Int(mm)) mm").foregroundStyle(BightstepTheme.accent)
                     }
                     ForEach(stage.wrongHauls, id: \.self) { wrong in
-                        Text(wrong).foregroundStyle(KnotCueTheme.warn)
+                        Text(wrong).foregroundStyle(BightstepTheme.warn)
                     }
                     Button("Ask coach with this stage") {
                         model.selectedTab = .coach
                         model.chatText = "Next haul for \(stage.stageTags.first ?? "this stage")?"
                     }
-                    .buttonStyle(KnotCueTheme.PrimaryButtonStyle())
+                    .buttonStyle(BightstepTheme.PrimaryButtonStyle())
                     Button("Make step overlay") { model.makeStepOverlay() }
-                        .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+                        .buttonStyle(BightstepTheme.SecondaryButtonStyle())
                     Button("Hands-free coach") { model.openHandsFree(stage: stage) }
-                        .buttonStyle(KnotCueTheme.SecondaryButtonStyle())
+                        .buttonStyle(BightstepTheme.SecondaryButtonStyle())
                 } else {
                     Text("No stage selected.")
                 }
             }
             .padding(20)
         }
-        .background(KnotCueTheme.secondary.ignoresSafeArea())
+        .background(BightstepTheme.secondary.ignoresSafeArea())
         .navigationTitle("Stage")
     }
 }

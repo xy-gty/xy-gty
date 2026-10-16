@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import KnotCueDomain
+import BightstepDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -16,7 +16,7 @@ final class AppModel: ObservableObject {
     @Published var overlays: [StepOverlay] = []
     @Published var handsFreePlans: [HandsFreePlan] = []
     @Published var selectedTab: AppTab = .rope
-    @Published var path: [KnotCueRoute] = []
+    @Published var path: [BightstepRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -38,13 +38,13 @@ final class AppModel: ObservableObject {
     @Published var selectedDiameter = "10 mm"
     @Published var practiceSummary = "Bowline practice"
 
-    let storage: KnotCueStorageRoot
+    let storage: BightstepStorageRoot
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<KnotCueRoute>
+    let navigation: TypedNavigationStore<BightstepRoute>
     let handsFreeTTS = HandsFreeTTS()
 
     private var cachedAPIKey: String?
-    private let keychain = KnotCueConsentFacade.makeAPIKeyStore()
+    private let keychain = BightstepConsentFacade.makeAPIKeyStore()
 
     var cameraHardwareAvailable: Bool { CameraCaptureAvailability.cameraHardwareAvailable }
 
@@ -74,17 +74,17 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("KnotCue", isDirectory: true)
+            .appendingPathComponent("Bightstep", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
-        storage = KnotCueStorageRoot(rootDirectory: root)
+        storage = BightstepStorageRoot(rootDirectory: root)
         try? FileManager.default.createDirectory(at: storage.photosDirectory, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(at: storage.overlaysDirectory, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true
         )
-        navigation = KnotCueNavigation.makeStore(directory: root)
-        consentGate = KnotCueConsentFacade.makeGate(storage: storage)
+        navigation = BightstepNavigation.makeStore(directory: root)
+        consentGate = BightstepConsentFacade.makeGate(storage: storage)
         consentGranted = consentGate.state.granted
         reload()
         Task { await self.loadAPIKeyFromKeychain() }
@@ -138,7 +138,7 @@ final class AppModel: ObservableObject {
         return key
     }
 
-    func push(_ route: KnotCueRoute) {
+    func push(_ route: BightstepRoute) {
         path.append(route)
         persistPath()
     }
@@ -431,7 +431,7 @@ final class AppModel: ObservableObject {
         Local demo next-haul (AI outbound off or unavailable).
         Next haul: \(next).
         Safety: ease the standing part if the loop is tight.
-        \(KnotCueIdentity.coachingDisclaimer)
+        \(BightstepIdentity.coachingDisclaimer)
         You asked: \(prompt)
         """
         let turn = CoachTurn(
@@ -511,7 +511,7 @@ final class AppModel: ObservableObject {
             "Form the rabbit hole with the working end.",
             "Pass the rabbit through and around the tree.",
             "Pull working end to set the bowline.",
-            KnotCueIdentity.coachingDisclaimer
+            BightstepIdentity.coachingDisclaimer
         ]
         let plan = HandsFreePlan(
             knotStageID: stage?.id ?? selectedStageID,

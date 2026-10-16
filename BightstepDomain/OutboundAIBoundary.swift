@@ -2,7 +2,7 @@ import Foundation
 
 /// Outbound AI defaults off until Secrets.xcconfig DEEPSEEK_API_KEY or authorized config exists.
 /// config_mode=local_only; privacy/terms/support/cloudkit/ai_key remain UNKNOWN gaps.
-public enum KnotCueOutboundAIBoundary {
+public enum BightstepOutboundAIBoundary {
     public static let configMode = "local_only"
     public static let privacyURLGap = "UNKNOWN"
     public static let termsURLGap = "UNKNOWN"
@@ -30,7 +30,7 @@ public enum KnotCueOutboundAIBoundary {
     }
 
     public static func filterOutboundPayload(_ fields: [String: Data]) -> [String: Data] {
-        let allow = Set(KnotCueConsentFacade.outboundFieldAllowlist)
+        let allow = Set(BightstepConsentFacade.outboundFieldAllowlist)
         return fields.filter { allow.contains($0.key) }
     }
 }

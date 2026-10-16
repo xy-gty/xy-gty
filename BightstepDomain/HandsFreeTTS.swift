@@ -23,7 +23,7 @@ public final class HandsFreeTTS {
         let line = plan.steps[index]
 #if canImport(AVFoundation)
         let utterance = AVSpeechUtterance(string: line)
-        utterance.voice = AVSpeechSynthesisVoice(language: KnotCueIdentity.uiLanguage)
+        utterance.voice = AVSpeechSynthesisVoice(language: BightstepIdentity.uiLanguage)
         synthesizer.speak(utterance)
 #else
         _ = line

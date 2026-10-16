@@ -1,8 +1,8 @@
 import Foundation
 import AppRuntimeCore
 
-/// AIConsentGate seam: provider DeepSeek, disclosure knotcue.consent.v1; local + Keychain existence boundary.
-public enum KnotCueConsentFacade {
+/// AIConsentGate seam: provider DeepSeek, disclosure bightstep.consent.v1; local + Keychain existence boundary.
+public enum BightstepConsentFacade {
     public static let outboundFieldAllowlist: [String] = [
         "chat_text",
         "knot_photo_bytes",
@@ -13,10 +13,10 @@ public enum KnotCueConsentFacade {
     ]
 
     @MainActor
-    public static func makeGate(storage: KnotCueStorageRoot) -> AIConsentGate {
+    public static func makeGate(storage: BightstepStorageRoot) -> AIConsentGate {
         AIConsentGate(
-            provider: KnotCueIdentity.aiProvider,
-            disclosureVersion: KnotCueIdentity.consentDisclosureVersion,
+            provider: BightstepIdentity.aiProvider,
+            disclosureVersion: BightstepIdentity.consentDisclosureVersion,
             load: {
                 guard let record = try storage.consentLocal.load() else { return nil }
                 return AIConsentGate.State(
@@ -43,8 +43,8 @@ public enum KnotCueConsentFacade {
 #if canImport(Security)
     public static func makeAPIKeyStore() -> KeychainCredentialStore {
         KeychainCredentialStore(
-            service: KnotCueIdentity.keychainService,
-            account: KnotCueIdentity.keychainAPIKeyAccount
+            service: BightstepIdentity.keychainService,
+            account: BightstepIdentity.keychainAPIKeyAccount
         )
     }
 

@@ -1,5 +1,5 @@
 import SwiftUI
-import KnotCueDomain
+import BightstepDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var model: AppModel
