@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "StopCue",
+    name: "Onionreel",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "StopCueDomain", targets: ["StopCueDomain"]),
+        .library(name: "OnionreelDomain", targets: ["OnionreelDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "StopCueDomain",
+            name: "OnionreelDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/StopCueDomain"
+            path: "Sources/OnionreelDomain"
         ),
     ]
 )

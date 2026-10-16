@@ -5,43 +5,43 @@ struct CountdownTTSView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("TTS countdown cues")
+            Text("Countdown lines")
                 .font(.title3.bold())
-                .foregroundStyle(StopCueTheme.ink)
+                .foregroundStyle(OnionreelTheme.ink)
             if appModel.sessionCues.isEmpty {
-                Text("Keep a shot plan to generate countdown cues.")
-                    .foregroundStyle(StopCueTheme.muted)
+                Text("Keep a shot plan to generate countdown lines.")
+                    .foregroundStyle(OnionreelTheme.muted)
             } else {
                 ForEach(Array(appModel.sessionCues.enumerated()), id: \.element.id) { idx, cue in
                     HStack {
                         Text("\(idx + 1).")
-                            .foregroundStyle(StopCueTheme.accent)
+                            .foregroundStyle(OnionreelTheme.accent)
                             .fontWeight(.bold)
                         Text(cue.text)
-                            .foregroundStyle(StopCueTheme.ink)
+                            .foregroundStyle(OnionreelTheme.ink)
                     }
                 }
             }
             HStack {
                 Button("Play") { appModel.playCountdownCues() }
                     .buttonStyle(.borderedProminent)
-                    .tint(StopCueTheme.primary)
+                    .tint(OnionreelTheme.primary)
                 Button("Pause") { appModel.pauseCountdownCues() }
                     .buttonStyle(.bordered)
                 Button("Next") { appModel.nextCountdownCue() }
                     .buttonStyle(.bordered)
-                    .tint(StopCueTheme.accent)
+                    .tint(OnionreelTheme.accent)
             }
             if appModel.tts.isSpeaking {
-                Text("Speaking…").font(.caption).foregroundStyle(StopCueTheme.accent)
+                Text("Speaking…").font(.caption).foregroundStyle(OnionreelTheme.accent)
             }
             if let msg = appModel.statusMessage {
-                Text(msg).font(.footnote).foregroundStyle(StopCueTheme.muted)
+                Text(msg).font(.footnote).foregroundStyle(OnionreelTheme.muted)
             }
             Spacer()
         }
         .padding(20)
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Countdown")
     }
 }

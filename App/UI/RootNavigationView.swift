@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 ProjectsHomeView()
-                    .navigationDestination(for: StopCueRoute.self) { route in
+                    .navigationDestination(for: OnionreelRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "film",
                         description: Text("Create a stop-motion project from the Projects tab.")
                     )
-                    .stopCueScreen()
+                    .onionreelScreen()
                 }
             }
             .tabItem { Label("Coach", systemImage: "bubble.left.and.bubble.right.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: StopCueRoute) -> some View {
+    private func destination(for route: OnionreelRoute) -> some View {
         switch route {
         case .projectsHome:
             ProjectsHomeView()

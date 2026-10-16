@@ -1,4 +1,0 @@
-{
-  "error": "AIAppLineError:ai_app_not_live:undeclared_cloud",
-  "ok": false
-}

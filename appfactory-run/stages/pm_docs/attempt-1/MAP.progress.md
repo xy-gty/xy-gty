@@ -1,6 +1,0 @@
-# StopCue — pm_docs progress
-
-Status: ready
-Finish receipt ok; MAP written last.
-technical_contract_sha256: 6aa7ee6083e7746fa2f67056aa5b47073685641d760c2172930253bdab5e5dd7
-pm_visual_manifest_sha256: 67d2dbd0136b12a02e0ce2e3b79e23804e20902ee7c947865851b82be2150265

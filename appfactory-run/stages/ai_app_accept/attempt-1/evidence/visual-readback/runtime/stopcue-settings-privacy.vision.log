@@ -1,6 +1,0 @@
-{
-  "ok": true,
-  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime/stopcue-settings-privacy.receipt.json",
-  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T093242Z-0f4256a0/stages/ai_app_accept/attempt-1/evidence/visual-readback/runtime/stopcue-settings-privacy.receipt.jsonl",
-  "model": "auto"
-}

@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import StopCueDomain
+import OnionreelDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -18,7 +18,7 @@ final class AppModel: ObservableObject {
     @Published var dictatedIntervals: [DictatedInterval] = []
 
     @Published var activeProjectId: String?
-    @Published var path: [StopCueRoute] = []
+    @Published var path: [OnionreelRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -51,7 +51,7 @@ final class AppModel: ObservableObject {
     @Published var pendingDisplacementNote = ""
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<StopCueRoute>
+    let navigation: TypedNavigationStore<OnionreelRoute>
     let tts = CountdownCueTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -66,7 +66,7 @@ final class AppModel: ObservableObject {
     private let dictatedStore: AtomicCodableStore<[DictatedInterval]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = StopCueStores.apiKeyStore()
+    private let keychain = OnionreelStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
 
@@ -132,27 +132,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("StopCue", isDirectory: true)
+            .appendingPathComponent("Onionreel", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        projectStore = StopCueStores.projectStore(directory: root)
-        sequenceStore = StopCueStores.frameSequenceStore(directory: root)
-        draftStore = StopCueStores.shotPlanDraftStore(directory: root)
-        timingStore = StopCueStores.timingCueStore(directory: root)
-        onionStore = StopCueStores.onionSkinGuideStore(directory: root)
-        turnStore = StopCueStores.coachTurnStore(directory: root)
-        messageStore = StopCueStores.coachMessageStore(directory: root)
-        countdownStore = StopCueStores.countdownCueStore(directory: root)
-        dictatedStore = StopCueStores.dictatedIntervalStore(directory: root)
+        projectStore = OnionreelStores.projectStore(directory: root)
+        sequenceStore = OnionreelStores.frameSequenceStore(directory: root)
+        draftStore = OnionreelStores.shotPlanDraftStore(directory: root)
+        timingStore = OnionreelStores.timingCueStore(directory: root)
+        onionStore = OnionreelStores.onionSkinGuideStore(directory: root)
+        turnStore = OnionreelStores.coachTurnStore(directory: root)
+        messageStore = OnionreelStores.coachMessageStore(directory: root)
+        countdownStore = OnionreelStores.countdownCueStore(directory: root)
+        dictatedStore = OnionreelStores.dictatedIntervalStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = StopCueStores.storeURL(directory: root, name: StopCueStores.aiConsentLocal)
+        let consentURL = OnionreelStores.storeURL(directory: root, name: OnionreelStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -167,7 +167,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await StopCueStores.consentKeychainStore().save(mirrorData)
+                    try? await OnionreelStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -228,7 +228,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: StopCueRoute) {
+    func push(_ route: OnionreelRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -533,7 +533,7 @@ final class AppModel: ObservableObject {
         showConsent = false
         pendingCoachAction = nil
         if path.last == .consentSheet { _ = path.popLast(); persistNavigation() }
-        statusMessage = "AI send blocked — timeline, onion skin, and local cues still available."
+        statusMessage = "AI send blocked — timeline, onion skin, and local notes still available."
         refreshAIAvailability()
     }
 
@@ -676,13 +676,13 @@ final class AppModel: ObservableObject {
     func playCountdownCues() {
         let corpus = sessionCues.map(\.text)
         guard !corpus.isEmpty else {
-            statusMessage = "No countdown cues yet — Keep a shot plan first."
+            statusMessage = "No countdown lines yet — Keep a shot plan first."
             return
         }
         if ttsCueIndex >= corpus.count { ttsCueIndex = 0 }
         let text = corpus[ttsCueIndex]
         tts.speak(text)
-        statusMessage = "Playing cue \(ttsCueIndex + 1)/\(corpus.count)"
+        statusMessage = "Playing note \(ttsCueIndex + 1)/\(corpus.count)"
     }
 
     func pauseCountdownCues() {

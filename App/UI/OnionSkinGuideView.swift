@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct OnionSkinGuideView: View {
@@ -8,10 +8,10 @@ struct OnionSkinGuideView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Onion-skin annotated guide")
                 .font(.title3.bold())
-                .foregroundStyle(StopCueTheme.ink)
+                .foregroundStyle(OnionreelTheme.ink)
             Text("Tap to place an alignment mark. Keep writes OnionSkinGuide.")
                 .font(.subheadline)
-                .foregroundStyle(StopCueTheme.muted)
+                .foregroundStyle(OnionreelTheme.muted)
             OnionSkinOverlayCanvas(
                 currentImage: appModel.currentFrameImage(),
                 previousImage: appModel.previousFrameImage(),
@@ -30,12 +30,12 @@ struct OnionSkinGuideView: View {
                     .buttonStyle(.bordered)
                 Button(FrameReviewBar.confirm) { appModel.keepOnionGuide() }
                     .buttonStyle(.borderedProminent)
-                    .tint(StopCueTheme.accent)
+                    .tint(OnionreelTheme.accent)
             }
             Spacer()
         }
         .padding(20)
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Onion guide")
     }
 }

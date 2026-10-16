@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct FrameReviewView: View {
@@ -9,7 +9,7 @@ struct FrameReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Shot-plan draft")
                     .font(.title2.bold())
-                    .foregroundStyle(StopCueTheme.ink)
+                    .foregroundStyle(OnionreelTheme.ink)
                 if let img = appModel.currentFrameImage() ?? appModel.frameImage(at: max((appModel.activeSequence?.frameRefs.count ?? 1) - 1, 0)) {
                     Image(uiImage: img)
                         .resizable()
@@ -23,7 +23,7 @@ struct FrameReviewView: View {
                     .lineLimit(2...4)
                     .textFieldStyle(.roundedBorder)
                 if let reason = appModel.aiUnavailableReason {
-                    Text(reason).font(.caption).foregroundStyle(StopCueTheme.muted)
+                    Text(reason).font(.caption).foregroundStyle(OnionreelTheme.muted)
                 }
                 HStack {
                     Button(FrameReviewBar.reject) { appModel.discardShotPlanDraft() }
@@ -32,12 +32,12 @@ struct FrameReviewView: View {
                         .buttonStyle(.bordered)
                     Button(FrameReviewBar.confirm) { appModel.keepShotPlanDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(StopCueTheme.primary)
+                        .tint(OnionreelTheme.primary)
                 }
             }
             .padding(20)
         }
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Frame review")
     }
 }

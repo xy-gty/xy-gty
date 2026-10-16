@@ -11,12 +11,12 @@ struct CoachChatView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(msg.role.uppercased())
                                 .font(.caption2.bold())
-                                .foregroundStyle(StopCueTheme.accent)
+                                .foregroundStyle(OnionreelTheme.accent)
                             Text(msg.text)
                                 .font(.body)
-                                .foregroundStyle(StopCueTheme.ink)
+                                .foregroundStyle(OnionreelTheme.ink)
                                 .padding(10)
-                                .background(StopCueTheme.card)
+                                .background(OnionreelTheme.card)
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                         }
                     }
@@ -38,15 +38,15 @@ struct CoachChatView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            .tint(StopCueTheme.primary)
+            .tint(OnionreelTheme.primary)
             .padding(.horizontal)
             .disabled(appModel.coachBusy)
             if let reason = appModel.aiUnavailableReason {
-                Text(reason).font(.caption).foregroundStyle(StopCueTheme.muted).padding(.horizontal)
+                Text(reason).font(.caption).foregroundStyle(OnionreelTheme.muted).padding(.horizontal)
             }
         }
         .padding(.bottom)
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Coach chat")
     }
 }

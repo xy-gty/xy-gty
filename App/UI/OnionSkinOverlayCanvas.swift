@@ -20,7 +20,7 @@ struct OnionSkinOverlayCanvas: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                StopCueTheme.card
+                OnionreelTheme.card
                 if let currentImage {
                     Image(uiImage: currentImage)
                         .resizable()
@@ -39,7 +39,7 @@ struct OnionSkinOverlayCanvas: View {
                             Text("Onion skin")
                                 .font(.caption2.bold())
                                 .padding(6)
-                                .background(StopCueTheme.accent.opacity(0.85))
+                                .background(OnionreelTheme.accent.opacity(0.85))
                                 .foregroundStyle(.white)
                                 .clipShape(Capsule())
                                 .padding(8),
@@ -48,7 +48,7 @@ struct OnionSkinOverlayCanvas: View {
                 }
                 ForEach(marks) { mark in
                     Circle()
-                        .fill(StopCueTheme.accent)
+                        .fill(OnionreelTheme.accent)
                         .frame(width: 14, height: 14)
                         .overlay(Circle().stroke(Color.white, lineWidth: 2))
                         .position(

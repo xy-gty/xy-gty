@@ -1,5 +1,5 @@
 import SwiftUI
-import StopCueDomain
+import OnionreelDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(StopCueTheme.ink)
+                        .foregroundStyle(OnionreelTheme.ink)
 
                     Text(
-                        "StopCue sends the fields below to \(AIConsentContract.provider) for stop-motion coaching. "
+                        "Onionreel sends the fields below to \(AIConsentContract.provider) for stop-motion coaching. "
                             + "This is a coaching aid, not a calibrated motion-capture system. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(StopCueTheme.muted)
+                    .foregroundStyle(OnionreelTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(StopCueTheme.ink)
+                            .foregroundStyle(OnionreelTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(StopCueTheme.primary)
+                                .foregroundStyle(OnionreelTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(StopCueTheme.muted)
+                        .foregroundStyle(OnionreelTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(StopCueTheme.primary)
+                        .tint(OnionreelTheme.primary)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .stopCueScreen()
+            .onionreelScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

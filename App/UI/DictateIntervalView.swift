@@ -5,10 +5,10 @@ struct DictateIntervalView: View {
 
     var body: some View {
         Form {
-            Section("Interval / cue fields") {
+            Section("Interval fields") {
                 TextField("Interval ms", text: $appModel.intervalField)
                     .keyboardType(.numberPad)
-                TextField("Cue text", text: $appModel.cueTextField)
+                TextField("Line text", text: $appModel.cueTextField)
                 TextField("Notes", text: $appModel.notesField, axis: .vertical)
                     .lineLimit(2...4)
             }
@@ -16,20 +16,20 @@ struct DictateIntervalView: View {
                 Button {
                     appModel.startDictate(fieldKey: "interval")
                 } label: {
-                    Label(appModel.speechBusy ? "Listening…" : "Dictate interval / cue", systemImage: "mic.fill")
+                    Label(appModel.speechBusy ? "Listening…" : "Dictate the interval", systemImage: "mic.fill")
                 }
                 .disabled(appModel.speechBusy)
                 if !appModel.speechTranscript.isEmpty {
                     Text("Transcript: \(appModel.speechTranscript)")
                         .font(.footnote)
-                        .foregroundStyle(StopCueTheme.muted)
+                        .foregroundStyle(OnionreelTheme.muted)
                 }
             }
             Section {
                 Button("Save dictated interval") {
                     appModel.saveDictatedInterval()
                 }
-                .tint(StopCueTheme.primary)
+                .tint(OnionreelTheme.primary)
             }
             if let msg = appModel.statusMessage {
                 Section {
@@ -38,7 +38,7 @@ struct DictateIntervalView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .background(StopCueTheme.secondary.ignoresSafeArea())
+        .background(OnionreelTheme.secondary.ignoresSafeArea())
         .navigationTitle("Dictate")
     }
 }

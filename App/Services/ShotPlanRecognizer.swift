@@ -1,5 +1,5 @@
 import UIKit
-import StopCueDomain
+import OnionreelDomain
 
 enum ShotPlanRecognizer {
     struct Result {

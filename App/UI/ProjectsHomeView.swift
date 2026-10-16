@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct ProjectsHomeView: View {
@@ -17,10 +17,10 @@ struct ProjectsHomeView: View {
                     .opacity(0.55)
                     Text("No projects yet")
                         .font(.title2.bold())
-                        .foregroundStyle(StopCueTheme.ink)
+                        .foregroundStyle(OnionreelTheme.ink)
                     Text("Start a stop-motion coach project with a film-sprocket timeline and onion-skin overlays.")
                         .font(.subheadline)
-                        .foregroundStyle(StopCueTheme.muted)
+                        .foregroundStyle(OnionreelTheme.muted)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                     Button {
@@ -32,7 +32,7 @@ struct ProjectsHomeView: View {
                             .padding(.vertical, 12)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(StopCueTheme.accent)
+                    .tint(OnionreelTheme.accent)
                 }
                 .padding()
             } else {
@@ -44,10 +44,10 @@ struct ProjectsHomeView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(project.title)
                                     .font(.headline)
-                                    .foregroundStyle(StopCueTheme.ink)
+                                    .foregroundStyle(OnionreelTheme.ink)
                                 Text("\(Int(project.targetFrameRate)) fps · updated \(project.updatedAt.formatted(date: .abbreviated, time: .shortened))")
                                     .font(.caption)
-                                    .foregroundStyle(StopCueTheme.muted)
+                                    .foregroundStyle(OnionreelTheme.muted)
                             }
                         }
                     }
@@ -55,15 +55,15 @@ struct ProjectsHomeView: View {
                 .scrollContentBackground(.hidden)
             }
         }
-        .stopCueScreen()
-        .navigationTitle("StopCue")
+        .onionreelScreen()
+        .navigationTitle("Onionreel")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     appModel.push(.newProject)
                 } label: {
                     Image(systemName: "plus")
-                        .foregroundStyle(StopCueTheme.accent)
+                        .foregroundStyle(OnionreelTheme.accent)
                 }
                 .accessibilityLabel("New project")
             }
@@ -95,11 +95,11 @@ struct NewProjectView: View {
                 Button("Create project") {
                     appModel.createProject()
                 }
-                .tint(StopCueTheme.primary)
+                .tint(OnionreelTheme.primary)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(StopCueTheme.secondary.ignoresSafeArea())
+        .background(OnionreelTheme.secondary.ignoresSafeArea())
         .navigationTitle("New project")
     }
 }

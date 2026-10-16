@@ -8,10 +8,10 @@ struct CaptureImportView: View {
         VStack(spacing: 20) {
             Text("Capture or import frames")
                 .font(.title3.bold())
-                .foregroundStyle(StopCueTheme.ink)
+                .foregroundStyle(OnionreelTheme.ink)
             Text("Camera for frame-by-frame capture · Photos for sequence import")
                 .font(.subheadline)
-                .foregroundStyle(StopCueTheme.muted)
+                .foregroundStyle(OnionreelTheme.muted)
                 .multilineTextAlignment(.center)
 
             Button {
@@ -21,14 +21,14 @@ struct CaptureImportView: View {
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
-            .tint(StopCueTheme.primary)
+            .tint(OnionreelTheme.primary)
 
             PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                 Label("Import sequence frame", systemImage: "photo.on.rectangle")
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.bordered)
-            .tint(StopCueTheme.accent)
+            .tint(OnionreelTheme.accent)
             .onChange(of: appModel.selectedPhotoItem) { _, _ in
                 Task { await appModel.importPhotoFromLibrary() }
             }
@@ -38,12 +38,12 @@ struct CaptureImportView: View {
             }
 
             if let msg = appModel.statusMessage {
-                Text(msg).font(.footnote).foregroundStyle(StopCueTheme.muted)
+                Text(msg).font(.footnote).foregroundStyle(OnionreelTheme.muted)
             }
             Spacer()
         }
         .padding(24)
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Capture / Import")
         .sheet(isPresented: $appModel.showCamera) {
             CameraPicker { image in

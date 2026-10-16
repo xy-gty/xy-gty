@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct StopCoachView: View {
@@ -9,7 +9,7 @@ struct StopCoachView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text(appModel.activeProject?.title ?? "StopCoach")
                     .font(.title2.bold())
-                    .foregroundStyle(StopCueTheme.ink)
+                    .foregroundStyle(OnionreelTheme.ink)
 
                 FilmSprocketTimeline(
                     labels: appModel.frameLabels,
@@ -19,13 +19,13 @@ struct StopCoachView: View {
 
                 Toggle(isOn: $appModel.showOnionSkin) {
                     Text("Onion-skin overlay")
-                        .foregroundStyle(StopCueTheme.ink)
+                        .foregroundStyle(OnionreelTheme.ink)
                 }
-                .tint(StopCueTheme.accent)
+                .tint(OnionreelTheme.accent)
 
                 if appModel.showOnionSkin {
                     Slider(value: $appModel.onionOpacity, in: 0.15...0.7)
-                        .tint(StopCueTheme.accent)
+                        .tint(OnionreelTheme.accent)
                 }
 
                 OnionSkinOverlayCanvas(
@@ -47,22 +47,22 @@ struct StopCoachView: View {
                 }
 
                 if let msg = appModel.statusMessage {
-                    Text(msg).font(.footnote).foregroundStyle(StopCueTheme.muted)
+                    Text(msg).font(.footnote).foregroundStyle(OnionreelTheme.muted)
                 }
             }
             .padding(20)
         }
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("StopCoach")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Capture") { appModel.push(.captureImport) }
-                    .foregroundStyle(StopCueTheme.accent)
+                    .foregroundStyle(OnionreelTheme.accent)
             }
         }
     }
 
-    private func navButton(_ title: String, icon: String, route: StopCueRoute) -> some View {
+    private func navButton(_ title: String, icon: String, route: OnionreelRoute) -> some View {
         Button {
             appModel.push(route)
         } label: {
@@ -71,6 +71,6 @@ struct StopCoachView: View {
                 .padding(.vertical, 12)
         }
         .buttonStyle(.bordered)
-        .tint(StopCueTheme.primary)
+        .tint(OnionreelTheme.primary)
     }
 }

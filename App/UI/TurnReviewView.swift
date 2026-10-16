@@ -1,4 +1,4 @@
-import StopCueDomain
+import OnionreelDomain
 import SwiftUI
 
 struct TurnReviewView: View {
@@ -8,11 +8,11 @@ struct TurnReviewView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Review coach turn")
                 .font(.title3.bold())
-                .foregroundStyle(StopCueTheme.ink)
+                .foregroundStyle(OnionreelTheme.ink)
             Text(appModel.pendingTurn?.text ?? "No pending turn")
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(StopCueTheme.card)
+                .background(OnionreelTheme.card)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             TextField("Feedback for next call", text: $appModel.userFeedback, axis: .vertical)
                 .lineLimit(2...4)
@@ -22,12 +22,12 @@ struct TurnReviewView: View {
                     .buttonStyle(.bordered)
                 Button(TurnReview.confirm) { appModel.keepPendingTurn() }
                     .buttonStyle(.borderedProminent)
-                    .tint(StopCueTheme.primary)
+                    .tint(OnionreelTheme.primary)
             }
             Spacer()
         }
         .padding(20)
-        .stopCueScreen()
+        .onionreelScreen()
         .navigationTitle("Turn review")
     }
 }

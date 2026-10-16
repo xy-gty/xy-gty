@@ -1,5 +1,5 @@
 import SwiftUI
-import StopCueDomain
+import OnionreelDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -11,13 +11,13 @@ struct SettingsPrivacyView: View {
                     Text("Outbound AI")
                     Spacer()
                     Text(appModel.consentGranted ? "Allowed" : "Blocked")
-                        .foregroundStyle(appModel.consentGranted ? StopCueTheme.accent : StopCueTheme.primary)
+                        .foregroundStyle(appModel.consentGranted ? OnionreelTheme.accent : OnionreelTheme.primary)
                         .fontWeight(.semibold)
                 }
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(StopCueTheme.muted)
+                        .foregroundStyle(OnionreelTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -52,14 +52,14 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                LabeledContent("App", value: StopCueIdentity.appName)
-                LabeledContent("Bundle", value: StopCueIdentity.developmentBundleId)
-                LabeledContent("Simulator target", value: StopCueDevicePolicy.targetDevice)
-                LabeledContent("Product dir", value: StopCueIdentity.productDir)
+                LabeledContent("App", value: OnionreelIdentity.appName)
+                LabeledContent("Bundle", value: OnionreelIdentity.developmentBundleId)
+                LabeledContent("Simulator target", value: OnionreelDevicePolicy.targetDevice)
+                LabeledContent("Product dir", value: OnionreelIdentity.productDir)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(StopCueTheme.secondary.ignoresSafeArea())
+        .background(OnionreelTheme.secondary.ignoresSafeArea())
         .navigationTitle("Settings")
     }
 }

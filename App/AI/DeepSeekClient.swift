@@ -1,5 +1,5 @@
 import Foundation
-import StopCueDomain
+import OnionreelDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -72,7 +72,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are StopCue's AI stop-motion coach. Reply with JSON only:
+        You are Onionreel's AI stop-motion coach. Reply with JSON only:
         {"reply":"concise next-frame coaching for a stop-motion shooter"}
         Reuse shot plans, timing, onion-skin notes and prior_feedback. Hands may be on the set — keep interval and alignment steps actionable. Not a night-exposure or solar scout twin.
         """

@@ -1,2 +1,0 @@
-Does this still show a StopCue Settings screen with revoke consent, four separate permission rows (Camera, Photos, Microphone, Speech Recognition), local legal entries, mint/green/magenta palette (#16A34A/#F0FDF4/#DB2777 feel), and no paywall/coins/ATT or twin chrome?
-Answer with pass or fail first, then brief evidence. Exact pixel hex match is not required; OCR of the brand word may be slightly noisy if the green StopCue chrome is otherwise clear.
