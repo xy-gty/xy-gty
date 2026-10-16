@@ -1,0 +1,10 @@
+{
+  "schema": "appfactory.ios_package_manifest.v1",
+  "app_name": "BrewCue",
+  "bundle_id": "com.lingguang.brewcue",
+  "product_dir": "brewcue",
+  "development_team": null,
+  "platforms": ["iphonesimulator"],
+  "no_app_icon": true,
+  "no_launch_screen": true
+}
