@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import SporeCueDomain
+import GillnoteDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = SporeCueState()
-    @Published var path: [SporeCueRoute] = []
+    @Published var state = GillnoteState()
+    @Published var path: [GillnoteRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -27,7 +27,7 @@ final class AppModel: ObservableObject {
     @Published var draftCallouts: [MorphologyCallout] = []
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<SporeCueRoute>
+    let navigation: TypedNavigationStore<GillnoteRoute>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -36,7 +36,7 @@ final class AppModel: ObservableObject {
     private let supportRoot: URL
     private let photosRoot: URL
     private let audioRoot: URL
-    private let keychain = SporeCueStores.apiKeyStore()
+    private let keychain = GillnoteStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -91,7 +91,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent(SporeCueStores.mediaDirectoryName, isDirectory: true)
+            .appendingPathComponent(GillnoteStores.mediaDirectoryName, isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -102,10 +102,10 @@ final class AppModel: ObservableObject {
         forageStore = ForageStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
-            isValid: SporeCueNavigation.isValid
+            isValid: GillnoteNavigation.isValid
         )
 
-        let consentURL = SporeCueStores.storeURL(directory: root, name: SporeCueStores.aiConsentLocal)
+        let consentURL = GillnoteStores.storeURL(directory: root, name: GillnoteStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -121,7 +121,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await SporeCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await GillnoteStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -147,7 +147,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? forageStore.load()) ?? SporeCueState()
+        state = (try? forageStore.load()) ?? GillnoteState()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
             activeSessionId = state.sessions.first?.id
@@ -181,7 +181,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: SporeCueRoute) {
+    func push(_ route: GillnoteRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -309,7 +309,7 @@ final class AppModel: ObservableObject {
                 photoDescriptor: descriptor,
                 subject: session.subject,
                 confirmedNotes: confirmedSpeciesContext,
-                question: "Identify species hypotheses and morphology cues"
+                question: "Identify species hypotheses and morphology notes"
             )
             try consentGate.validate(permit)
 
@@ -345,7 +345,7 @@ final class AppModel: ObservableObject {
         state.sessions[idx].status = "confirmed"
         state.sessions[idx].disclaimerAck = true
         persist()
-        setBanner("Find saved for feedback reuse. \(SporeCueCompliance.requiredDisclaimer)")
+        setBanner("Find saved for feedback reuse. \(GillnoteCompliance.requiredDisclaimer)")
     }
 
     func dismissID() {
@@ -381,7 +381,7 @@ final class AppModel: ObservableObject {
         state.callouts.removeAll { $0.sessionId == session.id }
         state.callouts.append(contentsOf: draftCallouts)
         persist()
-        setBanner("Overlay kept. \(SporeCueCompliance.requiredDisclaimer)")
+        setBanner("Overlay kept. \(GillnoteCompliance.requiredDisclaimer)")
         if path.last == .overlayAnnotate {
             path.removeLast()
             persistNavigation()

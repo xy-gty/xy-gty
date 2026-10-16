@@ -1,5 +1,5 @@
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct IDResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -36,7 +36,7 @@ struct IDResultView: View {
                             .font(.headline)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 12)
-                            .background(RoundedRectangle(cornerRadius: 14).fill(SporeCueTheme.accent))
+                            .background(RoundedRectangle(cornerRadius: 14).fill(GillnoteTheme.accent))
                             .foregroundStyle(.white)
                     }
                     .disabled(appModel.identifyBusy)
@@ -49,23 +49,23 @@ struct IDResultView: View {
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 14)
-                            .stroke(SporeCueTheme.primary, lineWidth: 2)
+                            .stroke(GillnoteTheme.primary, lineWidth: 2)
                     )
-                    .foregroundStyle(SporeCueTheme.primary)
+                    .foregroundStyle(GillnoteTheme.primary)
                 }
 
                 HStack(spacing: 10) {
                     Button("Ask coach") { appModel.push(.lookalikeChat) }
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                     Spacer()
                     Button("Play brief") { appModel.playFieldBrief() }
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
-                        .background(Capsule().fill(SporeCueTheme.secondary))
-                        .overlay(Capsule().stroke(SporeCueTheme.accent, lineWidth: 1))
-                        .foregroundStyle(SporeCueTheme.accent)
+                        .background(Capsule().fill(GillnoteTheme.secondary))
+                        .overlay(Capsule().stroke(GillnoteTheme.accent, lineWidth: 1))
+                        .foregroundStyle(GillnoteTheme.accent)
                     Button("Dismiss") { appModel.dismissID() }
-                        .foregroundStyle(SporeCueTheme.muted)
+                        .foregroundStyle(GillnoteTheme.muted)
                 }
                 .font(.subheadline.weight(.semibold))
             }

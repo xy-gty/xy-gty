@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import SporeCueDomain
+import GillnoteDomain
 
 /// Vertical species-confidence stack — signature UI (not bottle-rail / field-card / mosaic).
 struct SpeciesConfidenceStackView: View {
@@ -11,24 +11,24 @@ struct SpeciesConfidenceStackView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Species confidence")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(SporeCueTheme.muted)
+                .foregroundStyle(GillnoteTheme.muted)
                 .textCase(.uppercase)
 
             if candidates.isEmpty {
                 VStack(alignment: .leading, spacing: 6) {
                     ForEach(0 ..< 2, id: \.self) { idx in
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .fill(SporeCueTheme.stackSlot)
+                            .fill(GillnoteTheme.stackSlot)
                             .frame(height: 52)
                             .overlay(
                                 HStack {
                                     Text(emptyHint ? "Rank \(idx + 1) · waiting for still" : "—")
                                         .font(.subheadline)
-                                        .foregroundStyle(SporeCueTheme.muted)
+                                        .foregroundStyle(GillnoteTheme.muted)
                                     Spacer()
                                     Text(emptyHint ? "—" : "")
                                         .font(.system(size: 22, weight: .bold, design: .rounded))
-                                        .foregroundStyle(SporeCueTheme.primary.opacity(0.35))
+                                        .foregroundStyle(GillnoteTheme.primary.opacity(0.35))
                                 }
                                 .padding(.horizontal, 14)
                             )
@@ -40,30 +40,30 @@ struct SpeciesConfidenceStackView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(candidate.displayName)
                                 .font(.system(size: 20, weight: .bold, design: .rounded))
-                                .foregroundStyle(SporeCueTheme.ink)
+                                .foregroundStyle(GillnoteTheme.ink)
                                 .lineLimit(2)
                             if let sci = candidate.scientificName, !sci.isEmpty {
                                 Text(sci)
                                     .font(.caption)
                                     .italic()
-                                    .foregroundStyle(SporeCueTheme.muted)
+                                    .foregroundStyle(GillnoteTheme.muted)
                             }
                         }
                         Spacer(minLength: 8)
                         Text("\(Int((candidate.confidence * 100).rounded()))%")
                             .font(.system(size: 22, weight: .bold, design: .rounded))
-                            .foregroundStyle(SporeCueTheme.primary)
+                            .foregroundStyle(GillnoteTheme.primary)
                             .accessibilityLabel("Confidence \(Int(candidate.confidence * 100)) percent")
                     }
                     .padding(.horizontal, 14)
                     .padding(.vertical, 12)
                     .background(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .fill(SporeCueTheme.stackSlot)
+                            .fill(GillnoteTheme.stackSlot)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                                     .stroke(
-                                        candidate.rank == 1 ? SporeCueTheme.accent : SporeCueTheme.primary.opacity(0.15),
+                                        candidate.rank == 1 ? GillnoteTheme.accent : GillnoteTheme.primary.opacity(0.15),
                                         lineWidth: candidate.rank == 1 ? 2 : 1
                                     )
                             )
@@ -88,12 +88,12 @@ struct GillPoreCloseupBarView: View {
             HStack {
                 Text("\(subjectLabel) closeup")
                     .font(.headline)
-                    .foregroundStyle(SporeCueTheme.ink)
+                    .foregroundStyle(GillnoteTheme.ink)
                 Spacer()
                 if let onAnnotate {
                     Button("Annotate", action: onAnnotate)
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(SporeCueTheme.accent)
+                        .foregroundStyle(GillnoteTheme.accent)
                 }
             }
 
@@ -102,9 +102,9 @@ struct GillPoreCloseupBarView: View {
                     .fill(
                         LinearGradient(
                             colors: [
-                                SporeCueTheme.primary.opacity(0.85),
-                                SporeCueTheme.accent.opacity(0.55),
-                                SporeCueTheme.barFace,
+                                GillnoteTheme.primary.opacity(0.85),
+                                GillnoteTheme.accent.opacity(0.55),
+                                GillnoteTheme.barFace,
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
@@ -129,7 +129,7 @@ struct GillPoreCloseupBarView: View {
                             .foregroundStyle(.white)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 6)
-                            .background(Capsule().fill(SporeCueTheme.primary.opacity(0.85)))
+                            .background(Capsule().fill(GillnoteTheme.primary.opacity(0.85)))
                     }
                     if callouts.isEmpty {
                         Text("Shoot a gill or pore still to pin morphology")
@@ -142,7 +142,7 @@ struct GillPoreCloseupBarView: View {
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .stroke(SporeCueTheme.accent, lineWidth: 2.5)
+                    .stroke(GillnoteTheme.accent, lineWidth: 2.5)
             )
         }
         .accessibilityIdentifier("GillPoreCloseupBar")
@@ -165,7 +165,7 @@ struct CautionChipRailView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Caution chips · informational only")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(SporeCueTheme.muted)
+                .foregroundStyle(GillnoteTheme.muted)
                 .textCase(.uppercase)
 
             ScrollView(.horizontal, showsIndicators: false) {
@@ -186,10 +186,10 @@ struct CautionChipRailView: View {
     private func chipLabel(_ title: String, kind: String) -> some View {
         let tint: Color = {
             switch kind {
-            case "toxic_lookalike": return SporeCueTheme.primary
-            case "warning_lookalike": return SporeCueTheme.accent
-            case "info_edible_look": return SporeCueTheme.primary.opacity(0.75)
-            default: return SporeCueTheme.muted
+            case "toxic_lookalike": return GillnoteTheme.primary
+            case "warning_lookalike": return GillnoteTheme.accent
+            case "info_edible_look": return GillnoteTheme.primary.opacity(0.75)
+            default: return GillnoteTheme.muted
             }
         }()
         return Text(title)
@@ -199,7 +199,7 @@ struct CautionChipRailView: View {
             .padding(.vertical, 9)
             .background(
                 Capsule()
-                    .fill(SporeCueTheme.chipFace)
+                    .fill(GillnoteTheme.chipFace)
                     .overlay(Capsule().stroke(tint.opacity(0.45), lineWidth: 1))
             )
     }

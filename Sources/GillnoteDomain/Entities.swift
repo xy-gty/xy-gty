@@ -212,7 +212,7 @@ public struct AppSettings: Codable, Hashable, Sendable {
 }
 
 /// Aggregate root persisted via AtomicCodableStore for restart restore.
-public struct SporeCueState: Codable, Hashable, Sendable {
+public struct GillnoteState: Codable, Hashable, Sendable {
     public var sessions: [ForageSession]
     public var candidates: [SpeciesCandidate]
     public var callouts: [MorphologyCallout]

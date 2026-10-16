@@ -2,14 +2,14 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum SporeCueStores {
+public enum GillnoteStores {
     public static let forageState = "spore_cue_state"
     public static let aiConsentLocal = "ai_consent_local"
-    public static let supportFolderName = "SporeCue"
-    public static let mediaDirectoryName = "SporeCue"
+    public static let supportFolderName = "Gillnote"
+    public static let mediaDirectoryName = "Gillnote"
 
-    /// Keychain service for credential presence (sporecue.ai per technical contract).
-    public static let keychainService = "sporecue.ai"
+    /// Keychain service for credential presence (gillnote.ai per technical contract).
+    public static let keychainService = "gillnote.ai"
     public static let keychainAPIKeyAccount = "deepseek_api_key"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -31,7 +31,7 @@ public enum SporeCueStores {
         directory.appendingPathComponent("\(name).json", isDirectory: false)
     }
 
-    public static func forageStore(directory: URL) -> AtomicCodableStore<SporeCueState> {
+    public static func forageStore(directory: URL) -> AtomicCodableStore<GillnoteState> {
         AtomicCodableStore(url: storeURL(directory: directory, name: forageState))
     }
 
@@ -51,17 +51,17 @@ public enum SporeCueStores {
 
 /// ForageStore facade — AtomicCodableStore persistence for forage sessions and related entities.
 public struct ForageStore {
-    private let store: AtomicCodableStore<SporeCueState>
+    private let store: AtomicCodableStore<GillnoteState>
 
     public init(directory: URL) {
-        self.store = SporeCueStores.forageStore(directory: directory)
+        self.store = GillnoteStores.forageStore(directory: directory)
     }
 
-    public func load() throws -> SporeCueState {
-        try store.load() ?? SporeCueState()
+    public func load() throws -> GillnoteState {
+        try store.load() ?? GillnoteState()
     }
 
-    public func save(_ state: SporeCueState) throws {
+    public func save(_ state: GillnoteState) throws {
         try store.save(state)
     }
 }

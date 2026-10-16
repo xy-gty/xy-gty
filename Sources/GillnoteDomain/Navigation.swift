@@ -2,7 +2,7 @@ import Foundation
 import AppRuntimeCore
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum SporeCueRoute: String, Codable, Hashable, Sendable {
+public enum GillnoteRoute: String, Codable, Hashable, Sendable {
     case fieldHome
     case cameraCapture
     case photoImport
@@ -16,10 +16,10 @@ public enum SporeCueRoute: String, Codable, Hashable, Sendable {
     case legal
 }
 
-public enum SporeCueNavigation {
+public enum GillnoteNavigation {
     public static let storeFileName = "navigation_path.json"
 
-    public static func isValid(_ route: SporeCueRoute) -> Bool {
+    public static func isValid(_ route: GillnoteRoute) -> Bool {
         switch route {
         case .fieldHome, .cameraCapture, .photoImport, .idResult, .lookalikeChat,
              .overlayAnnotate, .fieldBrief, .voiceNote, .aiConsent, .settings, .legal:
@@ -28,7 +28,7 @@ public enum SporeCueNavigation {
     }
 
     @MainActor
-    public static func makeStore(directory: URL) -> TypedNavigationStore<SporeCueRoute> {
+    public static func makeStore(directory: URL) -> TypedNavigationStore<GillnoteRoute> {
         TypedNavigationStore(
             url: directory.appendingPathComponent(storeFileName, isDirectory: false),
             isValid: isValid

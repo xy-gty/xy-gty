@@ -1,5 +1,5 @@
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -30,7 +30,7 @@ struct SettingsPrivacyView: View {
                 }
                 Text(appModel.consentGranted ? "Consent: granted" : "Consent: not granted")
                     .font(.caption)
-                    .foregroundStyle(SporeCueTheme.muted)
+                    .foregroundStyle(GillnoteTheme.muted)
             }
 
             Section("Permissions (foraging coach)") {
@@ -52,11 +52,11 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Gaps") {
-                Text("privacy_url: \(SporeCueGaps.privacyURL)")
-                Text("terms_url: \(SporeCueGaps.termsURL)")
-                Text("support_url: \(SporeCueGaps.supportURL)")
-                Text("ai_key: \(SporeCueGaps.aiKey)")
-                Text("cloudkit: \(SporeCueGaps.cloudkit)")
+                Text("privacy_url: \(GillnoteGaps.privacyURL)")
+                Text("terms_url: \(GillnoteGaps.termsURL)")
+                Text("support_url: \(GillnoteGaps.supportURL)")
+                Text("ai_key: \(GillnoteGaps.aiKey)")
+                Text("cloudkit: \(GillnoteGaps.cloudkit)")
             }
         }
         .scrollContentBackground(.hidden)

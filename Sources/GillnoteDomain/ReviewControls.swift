@@ -9,7 +9,7 @@ public enum SporeReviewControls {
 }
 
 /// Hard compliance disclaimer — required on every ID / edibility / foraging surface.
-public enum SporeCueCompliance {
+public enum GillnoteCompliance {
     public static let requiredDisclaimer = "非可食认证 / not an edibility certification"
     public static let edibilityCertification = false
     public static let neverImplySafeToEat = true
@@ -17,7 +17,7 @@ public enum SporeCueCompliance {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "sporecue.consent.v1"
+    public static let disclosureVersion = "gillnote.consent.v1"
     public static let fields = [
         "cap_gill_pore_still",
         "user_question",
@@ -41,7 +41,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum SporeCueInterfaceNames {
+public enum GillnoteInterfaceNames {
     public static let forageStore = "ForageStore"
     public static let photoCaptureService = "PhotoCaptureService"
     public static let photoLibraryImporter = "PhotoLibraryImporter"
@@ -64,35 +64,35 @@ public enum SporeCueInterfaceNames {
 /// Permission usage strings extending foraging ID coach (no competitor names).
 public enum PrivacyUsageCopy {
     public static let camera =
-        "Capture cap, gill, and pore close-ups so SporeCue can help identify field finds"
+        "Capture cap, gill, and pore close-ups so Gillnote can help identify field finds"
     public static let photoLibrary =
-        "Import hike album stills to complete species identification in SporeCue"
+        "Import hike album stills to complete species identification in Gillnote"
     public static let microphone =
         "Record hands-free field notes while holding a knife or basket"
     public static let speechRecognition =
         "Turn spoken lookalike and habitat questions into coach chat text"
 }
 
-public enum SporeCueIdentity {
-    public static let appName = "SporeCue"
-    public static let developmentBundleId = "com.lingguang.sporecue"
-    public static let productDir = "sporecue"
+public enum GillnoteIdentity {
+    public static let appName = "Gillnote"
+    public static let developmentBundleId = "com.lingguang.gillnote"
+    public static let productDir = "gillnote"
     public static let uiLanguage = "en-US"
     public static let simulatorPrefUDID = "B14CC0EA"
 }
 
-public enum SporeCuePalette {
+public enum GillnotePalette {
     public static let primary = "#9A3412"
     public static let secondary = "#FFF7ED"
     public static let accent = "#0284C7"
 }
 
-public enum SporeCueUISpecies {
+public enum GillnoteUISpecies {
     public static let signature =
         "vertical_species_confidence_stack + oversized_gill_pore_closeup_bar + edible_warning_chip_rail"
 }
 
-public enum SporeCueGaps {
+public enum GillnoteGaps {
     public static let privacyURL = "UNKNOWN"
     public static let termsURL = "UNKNOWN"
     public static let supportURL = "UNKNOWN"
@@ -101,15 +101,15 @@ public enum SporeCueGaps {
 }
 
 
-public enum SporeCueDevicePolicy {
+public enum GillnoteDevicePolicy {
     public static let targetDevice = "iPhone 17 Pro"
     public static let preferredUDID = "B14CC0EA"
     public static let bannedDevices = ["iPhone 17 Pro Max", "iPhone 16 Pro Max", "iPhone 15 Pro Max"]
 }
 
-public enum SporeCueAllergy {
+public enum GillnoteAllergy {
     public static let bannedTwinShells = [
-        "MixCue", "WingCue", "FrameCue", "RuleCue", "StopCue", "ClosetCue", "ScoutCue",
+        "Stirboard", "Fieldmark", "Mattebox", "Tablehost", "Onionreel", "Hemline", "Sunbrief",
     ]
     public static let bannedCompetitorNames = ["Shroomify", "Pilze 123"]
     public static let requiredUI = [
@@ -119,7 +119,7 @@ public enum SporeCueAllergy {
     ]
 }
 
-public enum SporeCuePermissions {
+public enum GillnotePermissions {
     public static let required = ["Camera", "Photos", "Microphone", "Speech Recognition"]
 }
 
@@ -148,12 +148,12 @@ public enum ChipRailBuilder {
     }
 
     public static func ensureDisclaimer(_ text: String) -> String {
-        if text.contains(SporeCueCompliance.requiredDisclaimer) { return text }
-        return "\(SporeCueCompliance.requiredDisclaimer) — \(text)"
+        if text.contains(GillnoteCompliance.requiredDisclaimer) { return text }
+        return "\(GillnoteCompliance.requiredDisclaimer) — \(text)"
     }
 }
 
-/// Maps morphology cues into overlay callouts on the still.
+/// Maps morphology notes into overlay callouts on the still.
 public enum OverlayAnnotator {
     public static func callouts(from cues: [String], sessionId: String, subject: String) -> [MorphologyCallout] {
         cues.prefix(4).enumerated().map { idx, cue in

@@ -1,23 +1,23 @@
 import XCTest
-import SporeCueDomain
+import GillnoteDomain
 import AppRuntimeCore
 
-final class SporeCueDomainTests: XCTestCase {
+final class GillnoteDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(SporeReviewControls.confirm, ["Save Find", "Keep", "Use"])
         XCTAssertEqual(SporeReviewControls.reject, ["Dismiss", "Reject"])
         XCTAssertEqual(SporeReviewControls.edit, ["Edit callouts"])
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "sporecue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "gillnote.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 5)
     }
 
     func testComplianceDisclaimer() {
-        XCTAssertEqual(SporeCueCompliance.requiredDisclaimer, "非可食认证 / not an edibility certification")
-        XCTAssertFalse(SporeCueCompliance.edibilityCertification)
-        XCTAssertTrue(SporeCueCompliance.neverImplySafeToEat)
+        XCTAssertEqual(GillnoteCompliance.requiredDisclaimer, "非可食认证 / not an edibility certification")
+        XCTAssertFalse(GillnoteCompliance.edibilityCertification)
+        XCTAssertTrue(GillnoteCompliance.neverImplySafeToEat)
         let ensured = ChipRailBuilder.ensureDisclaimer("gill spacing tight")
-        XCTAssertTrue(ensured.contains(SporeCueCompliance.requiredDisclaimer))
+        XCTAssertTrue(ensured.contains(GillnoteCompliance.requiredDisclaimer))
     }
 
     func testPrivacyUsageCopy() {
@@ -31,12 +31,12 @@ final class SporeCueDomainTests: XCTestCase {
 
     func testForageStoreRoundTrip() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("sporecue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("gillnote-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
         let store = ForageStore(directory: dir)
-        var state = SporeCueState()
+        var state = GillnoteState()
         let session = ForageSession(
             id: "s1",
             createdAt: Date(),
@@ -112,25 +112,25 @@ final class SporeCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteAndAllergy() {
-        XCTAssertEqual(SporeCueIdentity.developmentBundleId, "com.lingguang.sporecue")
-        XCTAssertEqual(SporeCueIdentity.productDir, "sporecue")
-        XCTAssertEqual(SporeCueIdentity.appName, "SporeCue")
-        XCTAssertEqual(SporeCuePalette.primary, "#9A3412")
-        XCTAssertEqual(SporeCuePalette.secondary, "#FFF7ED")
-        XCTAssertEqual(SporeCuePalette.accent, "#0284C7")
-        XCTAssertEqual(SporeCueDevicePolicy.targetDevice, "iPhone 17 Pro")
-        XCTAssertEqual(SporeCueDevicePolicy.preferredUDID, "B14CC0EA")
-        XCTAssertTrue(SporeCueDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
-        XCTAssertTrue(SporeCueAllergy.bannedTwinShells.contains("MixCue"))
-        XCTAssertTrue(SporeCueAllergy.bannedTwinShells.contains("WingCue"))
-        XCTAssertTrue(SporeCueAllergy.bannedTwinShells.contains("FrameCue"))
-        XCTAssertTrue(SporeCueAllergy.bannedTwinShells.contains("ScoutCue"))
-        XCTAssertTrue(SporeCueAllergy.bannedCompetitorNames.contains("Shroomify"))
-        XCTAssertTrue(SporeCueAllergy.bannedCompetitorNames.contains("Pilze 123"))
-        XCTAssertTrue(SporeCueAllergy.requiredUI.contains("vertical species-confidence stack"))
-        XCTAssertTrue(SporeCueAllergy.requiredUI.contains("oversized gill/pore closeup bar"))
-        XCTAssertTrue(SporeCueAllergy.requiredUI.contains("edible/warning chip rail"))
-        XCTAssertEqual(SporeCuePermissions.required.count, 4)
+        XCTAssertEqual(GillnoteIdentity.developmentBundleId, "com.lingguang.gillnote")
+        XCTAssertEqual(GillnoteIdentity.productDir, "gillnote")
+        XCTAssertEqual(GillnoteIdentity.appName, "Gillnote")
+        XCTAssertEqual(GillnotePalette.primary, "#9A3412")
+        XCTAssertEqual(GillnotePalette.secondary, "#FFF7ED")
+        XCTAssertEqual(GillnotePalette.accent, "#0284C7")
+        XCTAssertEqual(GillnoteDevicePolicy.targetDevice, "iPhone 17 Pro")
+        XCTAssertEqual(GillnoteDevicePolicy.preferredUDID, "B14CC0EA")
+        XCTAssertTrue(GillnoteDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
+        XCTAssertTrue(GillnoteAllergy.bannedTwinShells.contains("Stirboard"))
+        XCTAssertTrue(GillnoteAllergy.bannedTwinShells.contains("Fieldmark"))
+        XCTAssertTrue(GillnoteAllergy.bannedTwinShells.contains("Mattebox"))
+        XCTAssertTrue(GillnoteAllergy.bannedTwinShells.contains("Sunbrief"))
+        XCTAssertTrue(GillnoteAllergy.bannedCompetitorNames.contains("Shroomify"))
+        XCTAssertTrue(GillnoteAllergy.bannedCompetitorNames.contains("Pilze 123"))
+        XCTAssertTrue(GillnoteAllergy.requiredUI.contains("vertical species-confidence stack"))
+        XCTAssertTrue(GillnoteAllergy.requiredUI.contains("oversized gill/pore closeup bar"))
+        XCTAssertTrue(GillnoteAllergy.requiredUI.contains("edible/warning chip rail"))
+        XCTAssertEqual(GillnotePermissions.required.count, 4)
     }
 
     func testChipRailInformationalOnly() {
@@ -148,7 +148,7 @@ final class SporeCueDomainTests: XCTestCase {
             lookalike: "bitter bolete",
             cues: ["pore surface", "cap margin"]
         )
-        XCTAssertTrue(brief.scriptText.contains(SporeCueCompliance.requiredDisclaimer))
+        XCTAssertTrue(brief.scriptText.contains(GillnoteCompliance.requiredDisclaimer))
         XCTAssertFalse(brief.scriptText.lowercased().contains("safe to eat"))
     }
 
@@ -166,14 +166,14 @@ final class SporeCueDomainTests: XCTestCase {
     }
 
     func testNavigationRoutesValid() {
-        XCTAssertTrue(SporeCueNavigation.isValid(.fieldHome))
-        XCTAssertTrue(SporeCueNavigation.isValid(.idResult))
-        XCTAssertTrue(SporeCueNavigation.isValid(.lookalikeChat))
-        XCTAssertTrue(SporeCueNavigation.isValid(.overlayAnnotate))
-        XCTAssertTrue(SporeCueNavigation.isValid(.fieldBrief))
-        XCTAssertTrue(SporeCueNavigation.isValid(.voiceNote))
-        XCTAssertTrue(SporeCueNavigation.isValid(.aiConsent))
-        XCTAssertTrue(SporeCueNavigation.isValid(.settings))
-        XCTAssertTrue(SporeCueNavigation.isValid(.legal))
+        XCTAssertTrue(GillnoteNavigation.isValid(.fieldHome))
+        XCTAssertTrue(GillnoteNavigation.isValid(.idResult))
+        XCTAssertTrue(GillnoteNavigation.isValid(.lookalikeChat))
+        XCTAssertTrue(GillnoteNavigation.isValid(.overlayAnnotate))
+        XCTAssertTrue(GillnoteNavigation.isValid(.fieldBrief))
+        XCTAssertTrue(GillnoteNavigation.isValid(.voiceNote))
+        XCTAssertTrue(GillnoteNavigation.isValid(.aiConsent))
+        XCTAssertTrue(GillnoteNavigation.isValid(.settings))
+        XCTAssertTrue(GillnoteNavigation.isValid(.legal))
     }
 }

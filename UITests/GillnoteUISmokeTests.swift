@@ -1,12 +1,12 @@
 import XCTest
 
-final class SporeCueUISmokeTests: XCTestCase {
+final class GillnoteUISmokeTests: XCTestCase {
     func testFieldHomeSignatureAndSettings() {
         let app = XCUIApplication()
         app.launchArguments = ["-ui-smoke-reset"]
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["SporeCue"].waitForExistence(timeout: 12))
+        XCTAssertTrue(app.staticTexts["Gillnote"].waitForExistence(timeout: 12))
         XCTAssertTrue(
             app.otherElements["DisclaimerBanner"].waitForExistence(timeout: 5)
                 || app.staticTexts.matching(NSPredicate(format: "label CONTAINS[c] %@", "edibility")).firstMatch.exists

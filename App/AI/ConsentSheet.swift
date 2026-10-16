@@ -1,5 +1,5 @@
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -12,29 +12,29 @@ struct ConsentSheet: View {
 
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(SporeCueTheme.ink)
+                        .foregroundStyle(GillnoteTheme.ink)
 
                     Text(
-                        "SporeCue sends the fields below to \(AIConsentContract.provider) for morphology-aware species hypotheses, lookalike coaching, and field briefs. "
-                            + "\(SporeCueCompliance.requiredDisclaimer). Revoke anytime in Settings."
+                        "Gillnote sends the fields below to \(AIConsentContract.provider) for morphology-aware species hypotheses, lookalike coaching, and field briefs. "
+                            + "\(GillnoteCompliance.requiredDisclaimer). Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(SporeCueTheme.muted)
+                    .foregroundStyle(GillnoteTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(SporeCueTheme.ink)
+                            .foregroundStyle(GillnoteTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(SporeCueTheme.primary)
+                                .foregroundStyle(GillnoteTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(SporeCueTheme.muted)
+                        .foregroundStyle(GillnoteTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -46,7 +46,7 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(SporeCueTheme.accent)
+                        .tint(GillnoteTheme.accent)
                     }
                     .padding(.top, 8)
                 }

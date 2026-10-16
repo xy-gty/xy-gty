@@ -1,14 +1,14 @@
 import SwiftUI
 
 @main
-struct SporeCueApp: App {
+struct GillnoteApp: App {
     @StateObject private var appModel = AppModel()
 
     var body: some Scene {
         WindowGroup {
             RootNavigationView()
                 .environmentObject(appModel)
-                .tint(SporeCueTheme.accent)
+                .tint(GillnoteTheme.accent)
         }
     }
 }

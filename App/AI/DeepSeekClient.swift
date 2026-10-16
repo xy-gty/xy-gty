@@ -1,5 +1,5 @@
 import Foundation
-import SporeCueDomain
+import GillnoteDomain
 
 struct SpeciesIDPayload: Sendable {
     var candidates: [SpeciesCandidate]
@@ -67,14 +67,14 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are SporeCue, an AI wild-mushroom field coach. Reply with JSON only:
+        You are Gillnote, an AI wild-mushroom field coach. Reply with JSON only:
         {"candidates":[{"displayName":"","scientificName":"","confidence":0.0,"rank":1,"morphologyCues":["cue"]}],
          "chipKinds":["info_edible_look","warning_lookalike"],
          "coachTip":""}
         Rank morphological species hypotheses from cap/gill/pore stills.
         NEVER say safe to eat, confirmed edible, or certify consumption.
         Always treat chips as informational only. Do not name Shroomify or Pilze 123.
-        Not a MixCue/WingCue/FrameCue/RuleCue/StopCue/ClosetCue/ScoutCue twin.
+        Not a Stirboard/Fieldmark/Mattebox/Tablehost/Onionreel/Hemline/Sunbrief twin.
         Include phrase: 非可食认证 / not an edibility certification in coachTip.
         """
 
@@ -100,7 +100,7 @@ struct DeepSeekClient {
             "active_session_id": sessionId,
         ]
         let system = """
-        You are SporeCue lookalike/habitat coach. Reply JSON only: {"reply":"..."}.
+        You are Gillnote lookalike/habitat coach. Reply JSON only: {"reply":"..."}.
         Contrast habitat and morphology. Restate 非可食认证 / not an edibility certification
         whenever edibility or foraging risk is mentioned. Never imply safe to eat.
         Do not name Shroomify or Pilze 123.
