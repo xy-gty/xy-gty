@@ -1,8 +1,8 @@
 import Foundation
 import AppRuntimeCore
 
-/// AIConsentGate seam: provider DeepSeek, disclosure closetcue.consent.v1; local + Keychain existence boundary.
-public enum ClosetCueConsentFacade {
+/// AIConsentGate seam: provider DeepSeek, disclosure hemline.consent.v1; local + Keychain existence boundary.
+public enum HemlineConsentFacade {
     public static let outboundFieldAllowlist: [String] = [
         "chat_text",
         "weather_occasion",
@@ -13,10 +13,10 @@ public enum ClosetCueConsentFacade {
     ]
 
     @MainActor
-    public static func makeGate(storage: ClosetCueStorageRoot) -> AIConsentGate {
+    public static func makeGate(storage: HemlineStorageRoot) -> AIConsentGate {
         AIConsentGate(
-            provider: ClosetCueIdentity.aiProvider,
-            disclosureVersion: ClosetCueIdentity.consentDisclosureVersion,
+            provider: HemlineIdentity.aiProvider,
+            disclosureVersion: HemlineIdentity.consentDisclosureVersion,
             load: {
                 guard let record = try storage.consentLocal.load() else { return nil }
                 return AIConsentGate.State(
@@ -43,8 +43,8 @@ public enum ClosetCueConsentFacade {
 #if canImport(Security)
     public static func makeAPIKeyStore() -> KeychainCredentialStore {
         KeychainCredentialStore(
-            service: ClosetCueIdentity.keychainService,
-            account: ClosetCueIdentity.keychainAPIKeyAccount
+            service: HemlineIdentity.keychainService,
+            account: HemlineIdentity.keychainAPIKeyAccount
         )
     }
 

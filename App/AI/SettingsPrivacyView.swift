@@ -1,5 +1,5 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -23,9 +23,9 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason).font(.footnote).foregroundStyle(.secondary)
                 }
-                Text("Provider: \(ClosetCueIdentity.aiProvider)")
-                Text("Disclosure: \(ClosetCueIdentity.consentDisclosureVersion)")
-                ForEach(ClosetCueConsentFacade.outboundFieldAllowlist, id: \.self) { field in
+                Text("Provider: \(HemlineIdentity.aiProvider)")
+                Text("Disclosure: \(HemlineIdentity.consentDisclosureVersion)")
+                ForEach(HemlineConsentFacade.outboundFieldAllowlist, id: \.self) { field in
                     Text("• \(field)").font(.caption).foregroundStyle(.secondary)
                 }
                 Button("Revoke AI consent") {
@@ -44,11 +44,11 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Compliance") {
-                Text(ClosetCueIdentity.styleSuggestionDisclaimer).font(.footnote)
+                Text(HemlineIdentity.styleSuggestionDisclaimer).font(.footnote)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(ClosetCueTheme.bg.ignoresSafeArea())
+        .background(HemlineTheme.bg.ignoresSafeArea())
         .navigationTitle("Settings")
         .onAppear { aiSharingToggle = appModel.consentGranted }
         .onChange(of: appModel.consentGranted) { _, granted in aiSharingToggle = granted }
@@ -85,6 +85,6 @@ struct LegalPagesView: View {
         }
         .onAppear { page = initial }
         .navigationTitle(page.title)
-        .background(ClosetCueTheme.bg.ignoresSafeArea())
+        .background(HemlineTheme.bg.ignoresSafeArea())
     }
 }

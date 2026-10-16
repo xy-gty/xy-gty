@@ -1,6 +1,6 @@
 import SwiftUI
 import PhotosUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct CaptureImportView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -10,9 +10,9 @@ struct CaptureImportView: View {
             Spacer()
             Image(systemName: appModel.cameraHardwareAvailable ? "camera.viewfinder" : "photo.on.rectangle")
                 .font(.system(size: 56))
-                .foregroundStyle(ClosetCueTheme.cta)
-            ClosetCueTheme.sectionTitle("Add a piece")
-            ClosetCueTheme.mutedText(
+                .foregroundStyle(HemlineTheme.cta)
+            HemlineTheme.sectionTitle("Add a piece")
+            HemlineTheme.mutedText(
                 appModel.cameraHardwareAvailable
                     ? "Snap a garment or pick from your library."
                     : "Camera unavailable here — use the photo library or demo piece."
@@ -29,13 +29,13 @@ struct CaptureImportView: View {
             PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                 Text("Photo library")
                     .font(.headline.weight(.semibold))
-                    .foregroundStyle(ClosetCueTheme.ink)
+                    .foregroundStyle(HemlineTheme.ink)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .background(ClosetCueTheme.surface)
+                    .background(HemlineTheme.surface)
                     .overlay(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .stroke(ClosetCueTheme.line, lineWidth: 1)
+                            .stroke(HemlineTheme.line, lineWidth: 1)
                     )
                     .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             }
@@ -49,14 +49,14 @@ struct CaptureImportView: View {
 
             Spacer()
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Capture")
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: appModel.selectedPhotoItem) { _, item in
             guard let item else { return }
             Task {
                 if let data = try? await item.loadTransferable(type: Data.self) {
-                    appModel.importPhotoData(data, sourceKind: ClosetCuePhotoImportFacade.librarySourceKind)
+                    appModel.importPhotoData(data, sourceKind: HemlinePhotoImportFacade.librarySourceKind)
                 }
                 appModel.selectedPhotoItem = nil
             }

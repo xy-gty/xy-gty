@@ -23,7 +23,7 @@ public final class MorningBriefingTTS {
         let line = briefing.utterances[index]
 #if canImport(AVFoundation)
         let utterance = AVSpeechUtterance(string: line)
-        utterance.voice = AVSpeechSynthesisVoice(language: ClosetCueIdentity.uiLanguage)
+        utterance.voice = AVSpeechSynthesisVoice(language: HemlineIdentity.uiLanguage)
         synthesizer.speak(utterance)
 #else
         _ = line

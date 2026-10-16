@@ -1,6 +1,6 @@
 import SwiftUI
 import PhotosUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct ClosetShelfView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -19,14 +19,14 @@ struct ClosetShelfView: View {
                 filledShelf
             }
         }
-        .closetCueScene()
-        .navigationTitle(ClosetCueIdentity.appName)
+        .hemlineScene()
+        .navigationTitle(HemlineIdentity.appName)
         .navigationBarTitleDisplayMode(.large)
         .onChange(of: appModel.selectedPhotoItem) { _, item in
             guard let item else { return }
             Task {
                 if let data = try? await item.loadTransferable(type: Data.self) {
-                    appModel.importPhotoData(data, sourceKind: ClosetCuePhotoImportFacade.librarySourceKind)
+                    appModel.importPhotoData(data, sourceKind: HemlinePhotoImportFacade.librarySourceKind)
                 }
                 appModel.selectedPhotoItem = nil
             }
@@ -36,8 +36,8 @@ struct ClosetShelfView: View {
     private var emptyShelf: some View {
         VStack(spacing: 28) {
             Spacer()
-            ClosetCueTheme.heroTitle(ClosetCueIdentity.appName)
-            ClosetCueTheme.mutedText("Your calm closet shelf — add a piece to start.")
+            HemlineTheme.heroTitle(HemlineIdentity.appName)
+            HemlineTheme.mutedText("Your calm closet shelf — add a piece to start.")
             addPieceControls
             Button("Try demo piece") {
                 appModel.importDemoPiece()
@@ -91,10 +91,10 @@ struct ClosetShelfView: View {
             PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                 Text("Add a piece")
                     .font(.headline.weight(.semibold))
-                    .foregroundStyle(ClosetCueTheme.bg)
+                    .foregroundStyle(HemlineTheme.bg)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .background(ClosetCueTheme.cta)
+                    .background(HemlineTheme.cta)
                     .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             }
             .padding(.horizontal, 24)
@@ -127,10 +127,10 @@ struct ClosetShelfView: View {
                         .resizable()
                         .scaledToFill()
                 } else {
-                    ClosetCueTheme.surface
+                    HemlineTheme.surface
                     Image(systemName: "tshirt")
                         .font(.title2)
-                        .foregroundStyle(ClosetCueTheme.muted)
+                        .foregroundStyle(HemlineTheme.muted)
                 }
             }
             .frame(height: 110)
@@ -139,11 +139,11 @@ struct ClosetShelfView: View {
 
             Text(item.category.isEmpty ? "Piece" : item.category)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(ClosetCueTheme.ink)
+                .foregroundStyle(HemlineTheme.ink)
                 .lineLimit(1)
         }
         .padding(8)
-        .background(ClosetCueTheme.surface)
+        .background(HemlineTheme.surface)
         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 }

@@ -1,10 +1,10 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct RootTabView: View {
     @EnvironmentObject private var appModel: AppModel
 
-    private var pathBinding: Binding<[ClosetCueRoute]> {
+    private var pathBinding: Binding<[HemlineRoute]> {
         Binding(
             get: { appModel.path },
             set: { newValue in
@@ -41,7 +41,7 @@ struct RootTabView: View {
             CameraCapturePicker(
                 onImageData: { data in
                     appModel.showCameraPicker = false
-                    appModel.importPhotoData(data, sourceKind: ClosetCuePhotoImportFacade.cameraSourceKind)
+                    appModel.importPhotoData(data, sourceKind: HemlinePhotoImportFacade.cameraSourceKind)
                 },
                 onCancel: { appModel.showCameraPicker = false }
             )
@@ -65,33 +65,33 @@ struct RootTabView: View {
     private var closetTab: some View {
         NavigationStack(path: pathBinding) {
             ClosetShelfView()
-                .navigationDestination(for: ClosetCueRoute.self, destination: routeDestination)
+                .navigationDestination(for: HemlineRoute.self, destination: routeDestination)
         }
     }
 
     private var stylistTab: some View {
         NavigationStack(path: pathBinding) {
             StylistChatView()
-                .navigationDestination(for: ClosetCueRoute.self, destination: routeDestination)
+                .navigationDestination(for: HemlineRoute.self, destination: routeDestination)
         }
     }
 
     private var looksTab: some View {
         NavigationStack(path: pathBinding) {
             SavedLooksView()
-                .navigationDestination(for: ClosetCueRoute.self, destination: routeDestination)
+                .navigationDestination(for: HemlineRoute.self, destination: routeDestination)
         }
     }
 
     private var settingsTab: some View {
         NavigationStack(path: pathBinding) {
             SettingsPrivacyView()
-                .navigationDestination(for: ClosetCueRoute.self, destination: routeDestination)
+                .navigationDestination(for: HemlineRoute.self, destination: routeDestination)
         }
     }
 
     @ViewBuilder
-    private func routeDestination(_ route: ClosetCueRoute) -> some View {
+    private func routeDestination(_ route: HemlineRoute) -> some View {
         switch route {
         case .captureImport:
             CaptureImportView()
@@ -129,8 +129,8 @@ private struct SavedLooksView: View {
         Group {
             if appModel.savedLooks.isEmpty {
                 VStack(spacing: 16) {
-                    ClosetCueTheme.heroTitle("Looks")
-                    ClosetCueTheme.mutedText("Saved flat-lays appear here after you Save look from the stylist.")
+                    HemlineTheme.heroTitle("Looks")
+                    HemlineTheme.mutedText("Saved flat-lays appear here after you Save look from the stylist.")
                     Button("Ask stylist") {
                         appModel.selectedTab = .stylist
                         appModel.push(.stylistChat)
@@ -155,7 +155,7 @@ private struct SavedLooksView: View {
                 }
             }
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Looks")
         .navigationBarTitleDisplayMode(.large)
     }

@@ -1,5 +1,5 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct FlatLayBoardView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -14,9 +14,9 @@ struct FlatLayBoardView: View {
                     .padding(.horizontal, 16)
             } else {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(ClosetCueTheme.surface)
+                    .fill(HemlineTheme.surface)
                     .overlay {
-                        ClosetCueTheme.mutedText("Flat-lay preview")
+                        HemlineTheme.mutedText("Flat-lay preview")
                     }
                     .frame(height: 420)
                     .padding(.horizontal, 16)
@@ -25,13 +25,13 @@ struct FlatLayBoardView: View {
             Spacer()
 
             VStack(spacing: 10) {
-                Button(ClosetCueReviewControls.FlatLayPreview.confirm) {
+                Button(HemlineReviewControls.FlatLayPreview.confirm) {
                     appModel.saveLook()
                 }
                 .buttonStyle(CCPrimaryButtonStyle())
                 .padding(.horizontal, 24)
 
-                Button(ClosetCueReviewControls.FlatLayPreview.reject) {
+                Button(HemlineReviewControls.FlatLayPreview.reject) {
                     appModel.discardLook()
                 }
                 .buttonStyle(CCSecondaryButtonStyle())
@@ -39,7 +39,7 @@ struct FlatLayBoardView: View {
             }
             .padding(.bottom, 24)
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Flat-lay")
         .navigationBarTitleDisplayMode(.inline)
     }

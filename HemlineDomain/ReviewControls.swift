@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen review_controls / interface confirm-reject-edit labels (en-US UI).
-public enum ClosetCueReviewControls {
+public enum HemlineReviewControls {
     public static let confirm = "Keep"
     public static let reject = "Not this"
     public static let edit = "Edit tags"
@@ -9,14 +9,14 @@ public enum ClosetCueReviewControls {
     public static let flatLayReject = "Discard"
 
     public enum GarmentReviewBar {
-        public static let confirm = ClosetCueReviewControls.confirm
-        public static let reject = ClosetCueReviewControls.reject
-        public static let edit = ClosetCueReviewControls.edit
+        public static let confirm = HemlineReviewControls.confirm
+        public static let reject = HemlineReviewControls.reject
+        public static let edit = HemlineReviewControls.edit
     }
 
     public enum FlatLayPreview {
-        public static let confirm = ClosetCueReviewControls.flatLayConfirm
-        public static let reject = ClosetCueReviewControls.flatLayReject
+        public static let confirm = HemlineReviewControls.flatLayConfirm
+        public static let reject = HemlineReviewControls.flatLayReject
     }
 
     public enum MorningBriefingPlayer {

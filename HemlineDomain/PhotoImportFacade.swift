@@ -3,12 +3,12 @@ import AppRuntimeCore
 
 /// PhotoImportSession + CameraCapture wiring: product owns destination bytes under local photos/.
 @MainActor
-public enum ClosetCuePhotoImportFacade {
+public enum HemlinePhotoImportFacade {
     public static let cameraSourceKind = "camera"
     public static let librarySourceKind = "photo_library"
 
     public static func makeSession(
-        storage: ClosetCueStorageRoot,
+        storage: HemlineStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
         let destination = storage.photosDirectory.appendingPathComponent(fileName, isDirectory: false)
@@ -17,7 +17,7 @@ public enum ClosetCuePhotoImportFacade {
     }
 
     public static func recordImportedDraft(
-        storage: ClosetCueStorageRoot,
+        storage: HemlineStorageRoot,
         destination: URL,
         sourceKind: String = "photo_library"
     ) throws -> GarmentDraft {
@@ -35,20 +35,20 @@ public enum ClosetCuePhotoImportFacade {
 /// CameraCapture seam: same destination ownership as library import; host AVCapture wiring is Builder's.
 @MainActor
 public enum CameraCapture {
-    public static let sourceKind = ClosetCuePhotoImportFacade.cameraSourceKind
+    public static let sourceKind = HemlinePhotoImportFacade.cameraSourceKind
 
     public static func makeCaptureDestination(
-        storage: ClosetCueStorageRoot,
+        storage: HemlineStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
-        ClosetCuePhotoImportFacade.makeSession(storage: storage, fileName: fileName)
+        HemlinePhotoImportFacade.makeSession(storage: storage, fileName: fileName)
     }
 
     public static func recordCapturedDraft(
-        storage: ClosetCueStorageRoot,
+        storage: HemlineStorageRoot,
         destination: URL
     ) throws -> GarmentDraft {
-        try ClosetCuePhotoImportFacade.recordImportedDraft(
+        try HemlinePhotoImportFacade.recordImportedDraft(
             storage: storage,
             destination: destination,
             sourceKind: sourceKind

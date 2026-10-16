@@ -1,7 +1,7 @@
-# ClosetCue icon embed (controller)
+# Hemline icon embed (controller)
 
-- AppIcon ← work/closetcue-icons/AppIcon.png (Screen Image Worker be0259eb, 1024²)
-- LaunchBackground ← work/closetcue-icons/Launch.png (1290×2796)
+- AppIcon ← work/hemline-icons/AppIcon.png (Screen Image Worker be0259eb, 1024²)
+- LaunchBackground ← work/hemline-icons/Launch.png (1290×2796)
 - Paths:
   - App/Assets.xcassets/AppIcon.appiconset/AppIcon.png
   - App/Assets.xcassets/LaunchBackground.imageset/Launch.png

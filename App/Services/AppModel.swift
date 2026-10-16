@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import ClosetCueDomain
+import HemlineDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -16,7 +16,7 @@ final class AppModel: ObservableObject {
     @Published var briefings: [MorningBriefing] = []
     @Published var weatherContexts: [WeatherOccasionContext] = []
     @Published var selectedTab: AppTab = .closet
-    @Published var path: [ClosetCueRoute] = []
+    @Published var path: [HemlineRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -38,13 +38,13 @@ final class AppModel: ObservableObject {
     @Published var selectedItemID: UUID?
     @Published var tagEditBuffer = ""
 
-    let storage: ClosetCueStorageRoot
+    let storage: HemlineStorageRoot
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<ClosetCueRoute>
+    let navigation: TypedNavigationStore<HemlineRoute>
     let briefingTTS = MorningBriefingTTS()
 
     private var cachedAPIKey: String?
-    private let keychain = ClosetCueConsentFacade.makeAPIKeyStore()
+    private let keychain = HemlineConsentFacade.makeAPIKeyStore()
 
     var cameraHardwareAvailable: Bool { CameraCaptureAvailability.cameraHardwareAvailable }
 
@@ -59,13 +59,13 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("ClosetCue", isDirectory: true)
+            .appendingPathComponent("Hemline", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
-        storage = ClosetCueStorageRoot(rootDirectory: root)
+        storage = HemlineStorageRoot(rootDirectory: root)
         try? FileManager.default.createDirectory(at: storage.photosDirectory, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(at: storage.boardsDirectory, withIntermediateDirectories: true)
-        navigation = ClosetCueNavigation.makeStore(directory: root)
-        consentGate = ClosetCueConsentFacade.makeGate(storage: storage)
+        navigation = HemlineNavigation.makeStore(directory: root)
+        consentGate = HemlineConsentFacade.makeGate(storage: storage)
         consentGranted = consentGate.state.granted
         reload()
         Task { await self.loadAPIKeyFromKeychain() }
@@ -117,7 +117,7 @@ final class AppModel: ObservableObject {
 
     // MARK: - Navigation helpers
 
-    func push(_ route: ClosetCueRoute) {
+    func push(_ route: HemlineRoute) {
         path.append(route)
         persistPath()
     }
@@ -319,7 +319,7 @@ final class AppModel: ObservableObject {
         • \(piece)
         • Charcoal trousers
         • Loafers
-        \(ClosetCueIdentity.styleSuggestionDisclaimer)
+        \(HemlineIdentity.styleSuggestionDisclaimer)
         """
     }
 
@@ -339,7 +339,7 @@ final class AppModel: ObservableObject {
                 .font: UIFont.systemFont(ofSize: 28, weight: .bold),
                 .foregroundColor: UIColor(red: 0.96, green: 0.94, blue: 0.92, alpha: 1)
             ]
-            NSString(string: "ClosetCue look").draw(at: CGPoint(x: 40, y: 48), withAttributes: titleAttrs)
+            NSString(string: "Hemline look").draw(at: CGPoint(x: 40, y: 48), withAttributes: titleAttrs)
             let bodyAttrs: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 18, weight: .regular),
                 .foregroundColor: UIColor(red: 0.83, green: 0.78, blue: 0.72, alpha: 1)
@@ -431,10 +431,10 @@ final class AppModel: ObservableObject {
         let look = plan?.responseText.split(separator: "\n").first.map(String.init)
             ?? "Navy linen shirt with charcoal trousers"
         return [
-            "Good morning — ClosetCue briefing for \(occasionText).",
+            "Good morning — Hemline briefing for \(occasionText).",
             "Weather note: \(weatherText).",
             "Today's look: \(look).",
-            ClosetCueIdentity.styleSuggestionDisclaimer
+            HemlineIdentity.styleSuggestionDisclaimer
         ]
     }
 

@@ -1,7 +1,7 @@
 import Foundation
 import Speech
 import AVFoundation
-import ClosetCueDomain
+import HemlineDomain
 
 /// On-device speech recognition into StylistChat. Does not outbound-send audio.
 @MainActor

@@ -1,5 +1,5 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct MorningBriefingView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -16,13 +16,13 @@ struct MorningBriefingView: View {
                     .padding(16)
                 }
             } else {
-                ClosetCueTheme.mutedText("No briefing loaded.")
+                HemlineTheme.mutedText("No briefing loaded.")
                     .padding(20)
             }
 
             playerBar
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Morning briefing")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -32,13 +32,13 @@ struct MorningBriefingView: View {
         let isActive = index == appModel.briefingIndex
         Text(line)
             .font(.body)
-            .foregroundStyle(isActive ? ClosetCueTheme.cta : ClosetCueTheme.ink)
+            .foregroundStyle(isActive ? HemlineTheme.cta : HemlineTheme.ink)
             .padding(14)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(isActive ? ClosetCueTheme.surface : ClosetCueTheme.bg)
+            .background(isActive ? HemlineTheme.surface : HemlineTheme.bg)
             .overlay(
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .stroke(isActive ? ClosetCueTheme.cta : ClosetCueTheme.line, lineWidth: isActive ? 2 : 1)
+                    .stroke(isActive ? HemlineTheme.cta : HemlineTheme.line, lineWidth: isActive ? 2 : 1)
             )
             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             .animation(.easeInOut(duration: 0.25), value: appModel.briefingIndex)
@@ -51,12 +51,12 @@ struct MorningBriefingView: View {
             }
             .buttonStyle(CCPrimaryButtonStyle())
 
-            Button(ClosetCueReviewControls.MorningBriefingPlayer.pause) {
+            Button(HemlineReviewControls.MorningBriefingPlayer.pause) {
                 appModel.pauseBriefing()
             }
             .buttonStyle(CCSecondaryButtonStyle())
 
-            Button(ClosetCueReviewControls.MorningBriefingPlayer.next) {
+            Button(HemlineReviewControls.MorningBriefingPlayer.next) {
                 appModel.nextBriefingStep()
             }
             .buttonStyle(CCSecondaryButtonStyle())

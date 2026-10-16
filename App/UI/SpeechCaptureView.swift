@@ -8,26 +8,26 @@ struct SpeechCaptureView: View {
             Spacer()
             ZStack {
                 Circle()
-                    .fill(ClosetCueTheme.surface)
+                    .fill(HemlineTheme.surface)
                     .frame(width: 120, height: 120)
                 Image(systemName: appModel.speechHost.isListening ? "waveform" : "mic.fill")
                     .font(.system(size: 44))
-                    .foregroundStyle(appModel.speechHost.isListening ? ClosetCueTheme.cta : ClosetCueTheme.muted)
+                    .foregroundStyle(appModel.speechHost.isListening ? HemlineTheme.cta : HemlineTheme.muted)
                     .symbolEffect(.pulse, isActive: appModel.speechHost.isListening)
             }
 
-            ClosetCueTheme.sectionTitle(
+            HemlineTheme.sectionTitle(
                 appModel.speechHost.isListening ? "Listening…" : "Ready to listen"
             )
 
             Text(appModel.speechHost.partialTranscript.isEmpty ? "Speak your outfit question." : appModel.speechHost.partialTranscript)
                 .font(.body)
-                .foregroundStyle(ClosetCueTheme.ink)
+                .foregroundStyle(HemlineTheme.ink)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
 
             if let error = appModel.speechHost.lastError {
-                ClosetCueTheme.mutedText(error)
+                HemlineTheme.mutedText(error)
                     .padding(.horizontal, 24)
             }
 
@@ -40,7 +40,7 @@ struct SpeechCaptureView: View {
             .padding(.horizontal, 24)
             .padding(.bottom, 32)
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Speech")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {

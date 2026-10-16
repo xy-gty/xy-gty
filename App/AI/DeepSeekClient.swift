@@ -1,5 +1,5 @@
 import Foundation
-import ClosetCueDomain
+import HemlineDomain
 
 enum DeepSeekClientError: LocalizedError {
     case notConfigured
@@ -42,7 +42,7 @@ struct DeepSeekClient {
         let photoData = (try? Data(contentsOf: photoURL)) ?? Data()
         let byteDigest = photoData.prefix(256).base64EncodedString()
         let prompt = """
-        You are ClosetCue AI wardrobe assistant. \(ClosetCueIdentity.styleSuggestionDisclaimer)
+        You are Hemline AI wardrobe assistant. \(HemlineIdentity.styleSuggestionDisclaimer)
         garment_photo_bytes: \(photoData.count) bytes (sample): \(byteDigest)
         file: \(photoURL.lastPathComponent)
         Return JSON object keys: category, color_tone, season_hint, tags (string array).
@@ -61,7 +61,7 @@ struct DeepSeekClient {
         priorFeedback: [String]
     ) async throws -> String {
         let userPrompt = """
-        You are ClosetCue stylist AI. \(ClosetCueIdentity.styleSuggestionDisclaimer)
+        You are Hemline stylist AI. \(HemlineIdentity.styleSuggestionDisclaimer)
         weather_occasion: \(weather) · \(occasion)
         closet_summary: \(closetSummary)
         outfit_context / prior feedback: \(priorFeedback.joined(separator: " | "))
@@ -73,8 +73,8 @@ struct DeepSeekClient {
 
     func morningBriefingUtterances(plan: OutfitPlan) async throws -> [String] {
         let prompt = """
-        Write 3-4 short spoken morning briefing lines for ClosetCue.
-        \(ClosetCueIdentity.styleSuggestionDisclaimer)
+        Write 3-4 short spoken morning briefing lines for Hemline.
+        \(HemlineIdentity.styleSuggestionDisclaimer)
         outfit_context: \(plan.promptText)
         stylist plan: \(plan.responseText)
         Return JSON array of strings (each one utterance). No markdown.
@@ -146,14 +146,14 @@ struct DeepSeekClient {
            let data = String(text[start...end]).data(using: .utf8),
            let arr = try? JSONSerialization.jsonObject(with: data) as? [String],
            !arr.isEmpty {
-            return arr + [ClosetCueIdentity.styleSuggestionDisclaimer]
+            return arr + [HemlineIdentity.styleSuggestionDisclaimer]
         }
         let line = fallbackPlan.responseText.split(separator: "\n").first.map(String.init)
-            ?? "Review today's outfit in ClosetCue."
+            ?? "Review today's outfit in Hemline."
         return [
-            "Good morning from ClosetCue.",
+            "Good morning from Hemline.",
             line,
-            ClosetCueIdentity.styleSuggestionDisclaimer
+            HemlineIdentity.styleSuggestionDisclaimer
         ]
     }
 

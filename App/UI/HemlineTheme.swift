@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum ClosetCueTheme {
+enum HemlineTheme {
     static let bg = Color(red: 0x2A / 255, green: 0x2E / 255, blue: 0x34 / 255)
     static let surface = Color(red: 0x3A / 255, green: 0x40 / 255, blue: 0x48 / 255)
     static let ink = Color(red: 0xF5 / 255, green: 0xF1 / 255, blue: 0xEA / 255)
@@ -39,10 +39,10 @@ struct CCPrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.headline.weight(.semibold))
-            .foregroundStyle(ClosetCueTheme.bg)
+            .foregroundStyle(HemlineTheme.bg)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
-            .background(ClosetCueTheme.cta.opacity(configuration.isPressed ? 0.85 : 1))
+            .background(HemlineTheme.cta.opacity(configuration.isPressed ? 0.85 : 1))
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
     }
 }
@@ -51,13 +51,13 @@ struct CCSecondaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.headline.weight(.medium))
-            .foregroundStyle(ClosetCueTheme.ink)
+            .foregroundStyle(HemlineTheme.ink)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 14)
-            .background(ClosetCueTheme.surface.opacity(configuration.isPressed ? 0.85 : 1))
+            .background(HemlineTheme.surface.opacity(configuration.isPressed ? 0.85 : 1))
             .overlay(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .stroke(ClosetCueTheme.line, lineWidth: 1)
+                    .stroke(HemlineTheme.line, lineWidth: 1)
             )
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
     }
@@ -69,10 +69,10 @@ struct CCTagChip: View {
     var body: some View {
         Text(label)
             .font(.caption.weight(.medium))
-            .foregroundStyle(ClosetCueTheme.ink)
+            .foregroundStyle(HemlineTheme.ink)
             .padding(.horizontal, 10)
             .padding(.vertical, 6)
-            .background(ClosetCueTheme.accent.opacity(0.35))
+            .background(HemlineTheme.accent.opacity(0.35))
             .clipShape(Capsule())
     }
 }
@@ -83,15 +83,15 @@ struct CCStatusBanner: View {
     var body: some View {
         Text(message)
             .font(.footnote.weight(.medium))
-            .foregroundStyle(ClosetCueTheme.ink)
+            .foregroundStyle(HemlineTheme.ink)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
             .padding(.horizontal, 16)
-            .background(ClosetCueTheme.surface)
+            .background(HemlineTheme.surface)
             .overlay(
                 Rectangle()
                     .frame(height: 1)
-                    .foregroundStyle(ClosetCueTheme.line),
+                    .foregroundStyle(HemlineTheme.line),
                 alignment: .top
             )
     }
@@ -101,12 +101,12 @@ struct CCSceneBackground: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(ClosetCueTheme.bg.ignoresSafeArea())
+            .background(HemlineTheme.bg.ignoresSafeArea())
     }
 }
 
 extension View {
-    func closetCueScene() -> some View {
+    func hemlineScene() -> some View {
         modifier(CCSceneBackground())
     }
 }

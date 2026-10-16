@@ -1,4 +1,4 @@
-name: ClosetCue
+name: Hemline
 options:
   deploymentTarget:
     iOS: "17.0"
@@ -6,7 +6,7 @@ options:
 packages:
   AppRuntimeCore:
     path: Vendor/AppRuntimeCore
-  ClosetCueDomain:
+  HemlineDomain:
     path: .
 settings:
   base:
@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     GENERATE_INFOPLIST_FILE: YES
 targets:
-  ClosetCue:
+  Hemline:
     type: application
     platform: iOS
     sources:
@@ -26,42 +26,43 @@ targets:
       - path: App/Info.plist
     dependencies:
       - package: AppRuntimeCore
-      - package: ClosetCueDomain
-        product: ClosetCueDomain
+      - package: HemlineDomain
+        product: HemlineDomain
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.closetcue
-        PRODUCT_NAME: ClosetCue
-        INFOPLIST_KEY_CFBundleDisplayName: ClosetCue
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: ClosetCue imports garment photos you choose so you can review tags before saving pieces to your closet catalog.
-        INFOPLIST_KEY_NSCameraUsageDescription: ClosetCue can snap garment photos into your closet catalog for optional recognition review.
-        INFOPLIST_KEY_NSMicrophoneUsageDescription: ClosetCue uses the microphone so you can speak outfit questions that fill stylist chat before you send.
-        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: ClosetCue uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Hemline
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Hemline
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.
+        INFOPLIST_KEY_NSCameraUsageDescription: Hemline can snap garment photos into your closet catalog for optional recognition review.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.
         INFOPLIST_KEY_UILaunchScreen_Generation: NO
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
-  ClosetCueDomainTests:
+  HemlineDomainTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: Tests
     dependencies:
-      - package: ClosetCueDomain
-        product: ClosetCueDomain
+      - package: HemlineDomain
+        product: HemlineDomain
       - package: AppRuntimeCore
-      - target: ClosetCue
+      - target: Hemline
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.closetcue.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.hemline.tests
 schemes:
-  ClosetCue:
+  Hemline:
     build:
       targets:
-        ClosetCue: all
-        ClosetCueDomainTests: [test]
+        Hemline: all
+        HemlineDomainTests: [test]
     test:
       targets:
-        - ClosetCueDomainTests
+        - HemlineDomainTests
     run:
       config: Debug

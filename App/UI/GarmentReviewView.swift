@@ -1,5 +1,5 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct GarmentReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -14,7 +14,7 @@ struct GarmentReviewView: View {
                     tagSection(draft)
                     actionBar
                 } else {
-                    ClosetCueTheme.mutedText("No draft to review.")
+                    HemlineTheme.mutedText("No draft to review.")
                     Button("Back to closet") {
                         appModel.popToRoot()
                     }
@@ -23,7 +23,7 @@ struct GarmentReviewView: View {
             }
             .padding(20)
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Review")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
@@ -42,11 +42,11 @@ struct GarmentReviewView: View {
                     .scaledToFit()
             } else {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(ClosetCueTheme.surface)
+                    .fill(HemlineTheme.surface)
                     .overlay {
                         Image(systemName: "photo")
                             .font(.largeTitle)
-                            .foregroundStyle(ClosetCueTheme.muted)
+                            .foregroundStyle(HemlineTheme.muted)
                     }
             }
         }
@@ -57,16 +57,16 @@ struct GarmentReviewView: View {
 
     @ViewBuilder
     private func tagSection(_ draft: GarmentDraft) -> some View {
-        ClosetCueTheme.sectionTitle("Suggested tags")
+        HemlineTheme.sectionTitle("Suggested tags")
         if isEditingTags {
             TextField("Tags (comma separated)", text: $appModel.tagEditBuffer, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .focused($tagsFocused)
-                .foregroundStyle(ClosetCueTheme.ink)
+                .foregroundStyle(HemlineTheme.ink)
         } else {
             FlowTagRow(tags: displayTags(for: draft))
         }
-        ClosetCueTheme.mutedText("\(draft.proposedCategory) · \(draft.proposedColorTone) · \(draft.proposedSeasonHint)")
+        HemlineTheme.mutedText("\(draft.proposedCategory) · \(draft.proposedColorTone) · \(draft.proposedSeasonHint)")
     }
 
     private func displayTags(for draft: GarmentDraft) -> [String] {
@@ -79,19 +79,19 @@ struct GarmentReviewView: View {
 
     private var actionBar: some View {
         VStack(spacing: 10) {
-            Button(ClosetCueReviewControls.confirm) {
+            Button(HemlineReviewControls.confirm) {
                 appModel.keepDraft()
             }
             .buttonStyle(CCPrimaryButtonStyle())
             .disabled(appModel.editingDraft == nil)
 
-            Button(ClosetCueReviewControls.reject) {
+            Button(HemlineReviewControls.reject) {
                 appModel.rejectDraft()
                 isEditingTags = false
             }
             .buttonStyle(CCSecondaryButtonStyle())
 
-            Button(ClosetCueReviewControls.edit) {
+            Button(HemlineReviewControls.edit) {
                 appModel.beginEditTags()
                 isEditingTags = true
                 tagsFocused = true

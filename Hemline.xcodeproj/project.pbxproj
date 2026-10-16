@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00BABDCB0B5F7D48560EADB8 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3B9641FEE1102E8107FD3 /* support.html */; };
-		0A7428266D9A4DB5EF3A78ED /* ClosetCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9123463A19A114FDFFDB3D70 /* ClosetCueDomain */; };
+		0A7428266D9A4DB5EF3A78ED /* HemlineDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9123463A19A114FDFFDB3D70 /* HemlineDomain */; };
 		0F19575696F4EDF5F97AE4BC /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */; };
 		15D8C7AE9BF6400AEFB4149E /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */; };
 		1DE7A29FA3B611C6C9BB8367 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D474B2384755CE50238B02 /* SpeechCaptureHost.swift */; };
@@ -27,12 +27,12 @@
 		9256596078BDA1540C33D105 /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */; };
 		9BF7D927CC9DFCAE05DE5F4E /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7A56E60CAB52625FA1102 /* privacy.html */; };
 		B2BA315899C80595A4B37955 /* ClosetItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A6573050EE84312C14FF2 /* ClosetItemDetailView.swift */; };
-		BEA41F3153AECA99A5B6F4C3 /* ClosetCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086BE9819C2D4F541EBBD1B9 /* ClosetCueTheme.swift */; };
+		BEA41F3153AECA99A5B6F4C3 /* HemlineTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */; };
 		C806ECEFF3AB6CF5E8542388 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */; };
 		DF18D8A496A45ED95C79BA5B /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 087F3E8F46BA7519801C1513 /* AppRuntimeCore */; };
-		E0367730279A04FCC7AC8D1F /* ClosetCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDE5EC78EAC1682E8F32B1B /* ClosetCueApp.swift */; };
-		E48FD3E226812BDF224A2A7D /* ClosetCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91086E6ABE69C949947AB480 /* ClosetCueDomainTests.swift */; };
-		EBB54CFB27E901C2D05C0163 /* ClosetCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = CABF41E87066324614A22824 /* ClosetCueDomain */; };
+		E0367730279A04FCC7AC8D1F /* HemlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */; };
+		E48FD3E226812BDF224A2A7D /* HemlineDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */; };
+		EBB54CFB27E901C2D05C0163 /* HemlineDomain in Frameworks */ = {isa = PBXBuildFile; productRef = CABF41E87066324614A22824 /* HemlineDomain */; };
 		EE3F27FFD46401051E70B8F6 /* StylistChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF683ABE21E4838ADBF11BBB /* StylistChatView.swift */; };
 		FCD0135F930B94F519516105 /* GarmentReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD1DBFCA0C39C6E4E1BEBE /* GarmentReviewView.swift */; };
 /* End PBXBuildFile section */
@@ -43,12 +43,12 @@
 			containerPortal = 452F84CF33E39EFB78D66353 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7F00E3B522D3ED75C3559301;
-			remoteInfo = ClosetCue;
+			remoteInfo = Hemline;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		086BE9819C2D4F541EBBD1B9 /* ClosetCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetCueTheme.swift; sourceTree = "<group>"; };
+		086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineTheme.swift; sourceTree = "<group>"; };
 		10D474B2384755CE50238B02 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
 		2CBE30B71992D348C31CD711 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
 		49DD1DBFCA0C39C6E4E1BEBE /* GarmentReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentReviewView.swift; sourceTree = "<group>"; };
@@ -56,19 +56,19 @@
 		4F6F189FFAA4FEC579C97BE5 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
 		4FF47A6C2570DED272E5FFBE /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		518BA435C2DBB233688A5324 /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
-		6806D767ECE10D19125581F6 /* ClosetCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClosetCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HemlineDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE7A56E60CAB52625FA1102 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		6DB00BE211D864596028B2D9 /* MorningBriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningBriefingView.swift; sourceTree = "<group>"; };
-		6FDE5EC78EAC1682E8F32B1B /* ClosetCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetCueApp.swift; sourceTree = "<group>"; };
+		6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineApp.swift; sourceTree = "<group>"; };
 		7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
 		75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetShelfView.swift; sourceTree = "<group>"; };
 		7FFBF292C7165A0D2C2A7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
 		8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatLayBoardView.swift; sourceTree = "<group>"; };
 		8FC3B9641FEE1102E8107FD3 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
-		91086E6ABE69C949947AB480 /* ClosetCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetCueDomainTests.swift; sourceTree = "<group>"; };
+		91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineDomainTests.swift; sourceTree = "<group>"; };
 		99FF0F8A13C3BBDDA04B9B1B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		9AFADB5A226F82A5FEC02D33 /* ClosetCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClosetCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFADB5A226F82A5FEC02D33 /* Hemline.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Hemline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
 		A629C29066549901C54B3EFA /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
 		BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7428266D9A4DB5EF3A78ED /* ClosetCueDomain in Frameworks */,
+				0A7428266D9A4DB5EF3A78ED /* HemlineDomain in Frameworks */,
 				DF18D8A496A45ED95C79BA5B /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD7E6A6F85A3316ED83ABD4 /* AppRuntimeCore in Frameworks */,
-				EBB54CFB27E901C2D05C0163 /* ClosetCueDomain in Frameworks */,
+				EBB54CFB27E901C2D05C0163 /* HemlineDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 		0C8C0E5811FAF52BDC125F47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AFADB5A226F82A5FEC02D33 /* ClosetCue.app */,
-				6806D767ECE10D19125581F6 /* ClosetCueDomainTests.xctest */,
+				9AFADB5A226F82A5FEC02D33 /* Hemline.app */,
+				6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				FC13C564940844E9CEDA801C /* Assets.xcassets */,
-				6FDE5EC78EAC1682E8F32B1B /* ClosetCueApp.swift */,
+				6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */,
 				7FFBF292C7165A0D2C2A7E3F /* Info.plist */,
 				8542CA0BAAA105837BAC8AC0 /* AI */,
 				C2DF489D641A8E470689174B /* Resources */,
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */,
-				086BE9819C2D4F541EBBD1B9 /* ClosetCueTheme.swift */,
+				086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */,
 				4E8A6573050EE84312C14FF2 /* ClosetItemDetailView.swift */,
 				75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */,
 				8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */,
@@ -174,7 +174,7 @@
 		B5E2E28D67B6F37229E571C2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				91086E6ABE69C949947AB480 /* ClosetCueDomainTests.swift */,
+				91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -211,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65C564CC1A6B4C87BFE5F3AF /* ClosetCueDomainTests */ = {
+		65C564CC1A6B4C87BFE5F3AF /* HemlineDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "ClosetCueDomainTests" */;
+			buildConfigurationList = C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "HemlineDomainTests" */;
 			buildPhases = (
 				4E6413B7302CD16F57C31531 /* Sources */,
 				3F0D6E16C326E02E06E952DC /* Frameworks */,
@@ -223,18 +223,18 @@
 			dependencies = (
 				A61F19BE31115FE3983E4A08 /* PBXTargetDependency */,
 			);
-			name = ClosetCueDomainTests;
+			name = HemlineDomainTests;
 			packageProductDependencies = (
-				9123463A19A114FDFFDB3D70 /* ClosetCueDomain */,
+				9123463A19A114FDFFDB3D70 /* HemlineDomain */,
 				087F3E8F46BA7519801C1513 /* AppRuntimeCore */,
 			);
-			productName = ClosetCueDomainTests;
-			productReference = 6806D767ECE10D19125581F6 /* ClosetCueDomainTests.xctest */;
+			productName = HemlineDomainTests;
+			productReference = 6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7F00E3B522D3ED75C3559301 /* ClosetCue */ = {
+		7F00E3B522D3ED75C3559301 /* Hemline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "ClosetCue" */;
+			buildConfigurationList = A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "Hemline" */;
 			buildPhases = (
 				13D801F6F43AA68A9082B3E2 /* Sources */,
 				44D62B8DC14403D359C6A2AD /* Resources */,
@@ -244,13 +244,13 @@
 			);
 			dependencies = (
 			);
-			name = ClosetCue;
+			name = Hemline;
 			packageProductDependencies = (
 				F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */,
-				CABF41E87066324614A22824 /* ClosetCueDomain */,
+				CABF41E87066324614A22824 /* HemlineDomain */,
 			);
-			productName = ClosetCue;
-			productReference = 9AFADB5A226F82A5FEC02D33 /* ClosetCue.app */;
+			productName = Hemline;
+			productReference = 9AFADB5A226F82A5FEC02D33 /* Hemline.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 				TargetAttributes = {
 				};
 			};
-			buildConfigurationList = 484319D15733B9B9395B783D /* Build configuration list for PBXProject "ClosetCue" */;
+			buildConfigurationList = 484319D15733B9B9395B783D /* Build configuration list for PBXProject "Hemline" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -282,8 +282,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F00E3B522D3ED75C3559301 /* ClosetCue */,
-				65C564CC1A6B4C87BFE5F3AF /* ClosetCueDomainTests */,
+				7F00E3B522D3ED75C3559301 /* Hemline */,
+				65C564CC1A6B4C87BFE5F3AF /* HemlineDomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,8 +311,8 @@
 				201C9127A29D2E6664354EA7 /* AppModel.swift in Sources */,
 				4CE455CF5F6C3745955A9CF7 /* CameraCapturePicker.swift in Sources */,
 				15D8C7AE9BF6400AEFB4149E /* CaptureImportView.swift in Sources */,
-				E0367730279A04FCC7AC8D1F /* ClosetCueApp.swift in Sources */,
-				BEA41F3153AECA99A5B6F4C3 /* ClosetCueTheme.swift in Sources */,
+				E0367730279A04FCC7AC8D1F /* HemlineApp.swift in Sources */,
+				BEA41F3153AECA99A5B6F4C3 /* HemlineTheme.swift in Sources */,
 				B2BA315899C80595A4B37955 /* ClosetItemDetailView.swift in Sources */,
 				8785CE7BFEAB4A7CBB0D6CC6 /* ClosetShelfView.swift in Sources */,
 				0F19575696F4EDF5F97AE4BC /* ConsentSheet.swift in Sources */,
@@ -333,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48FD3E226812BDF224A2A7D /* ClosetCueDomainTests.swift in Sources */,
+				E48FD3E226812BDF224A2A7D /* HemlineDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +342,7 @@
 /* Begin PBXTargetDependency section */
 		A61F19BE31115FE3983E4A08 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F00E3B522D3ED75C3559301 /* ClosetCue */;
+			target = 7F00E3B522D3ED75C3559301 /* Hemline */;
 			targetProxy = 6636016656B0C587CB691ACE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -355,19 +355,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ClosetCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ClosetCue can snap garment photos into your closet catalog for optional recognition review.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ClosetCue uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ClosetCue imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "ClosetCue uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Hemline;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hemline can snap garment photos into your closet catalog for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.closetcue;
-				PRODUCT_NAME = ClosetCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Hemline;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -382,10 +382,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.closetcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.hemline.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClosetCue.app/ClosetCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemline.app/Hemline";
 			};
 			name = Debug;
 		};
@@ -457,10 +457,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.closetcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.hemline.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClosetCue.app/ClosetCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemline.app/Hemline";
 			};
 			name = Release;
 		};
@@ -537,19 +537,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ClosetCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ClosetCue can snap garment photos into your closet catalog for optional recognition review.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ClosetCue uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ClosetCue imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "ClosetCue uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Hemline;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hemline can snap garment photos into your closet catalog for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.closetcue;
-				PRODUCT_NAME = ClosetCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Hemline;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -558,7 +558,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		484319D15733B9B9395B783D /* Build configuration list for PBXProject "ClosetCue" */ = {
+		484319D15733B9B9395B783D /* Build configuration list for PBXProject "Hemline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7ACF18AF8CDB315BDBA16B3D /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "ClosetCue" */ = {
+		A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "Hemline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				269DD1C2A3B54F6B23DBEE31 /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "ClosetCueDomainTests" */ = {
+		C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "HemlineDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				742F3EFAD24FE9EF4117F202 /* Debug */,
@@ -603,13 +603,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		9123463A19A114FDFFDB3D70 /* ClosetCueDomain */ = {
+		9123463A19A114FDFFDB3D70 /* HemlineDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ClosetCueDomain;
+			productName = HemlineDomain;
 		};
-		CABF41E87066324614A22824 /* ClosetCueDomain */ = {
+		CABF41E87066324614A22824 /* HemlineDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ClosetCueDomain;
+			productName = HemlineDomain;
 		};
 		F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

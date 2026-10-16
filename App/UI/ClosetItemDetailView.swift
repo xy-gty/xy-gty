@@ -1,5 +1,5 @@
 import SwiftUI
-import ClosetCueDomain
+import HemlineDomain
 
 struct ClosetItemDetailView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -15,20 +15,20 @@ struct ClosetItemDetailView: View {
                                 .scaledToFit()
                         } else {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .fill(ClosetCueTheme.surface)
+                                .fill(HemlineTheme.surface)
                                 .frame(height: 280)
                                 .overlay {
                                     Image(systemName: "tshirt")
                                         .font(.largeTitle)
-                                        .foregroundStyle(ClosetCueTheme.muted)
+                                        .foregroundStyle(HemlineTheme.muted)
                                 }
                         }
                     }
                     .frame(maxWidth: .infinity)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
 
-                    ClosetCueTheme.sectionTitle(item.category.isEmpty ? "Closet piece" : item.category)
-                    ClosetCueTheme.mutedText("\(item.colorTone) · \(item.seasonHint)")
+                    HemlineTheme.sectionTitle(item.category.isEmpty ? "Closet piece" : item.category)
+                    HemlineTheme.mutedText("\(item.colorTone) · \(item.seasonHint)")
 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 8) {
@@ -47,11 +47,11 @@ struct ClosetItemDetailView: View {
                 }
                 .padding(20)
             } else {
-                ClosetCueTheme.mutedText("Item not found.")
+                HemlineTheme.mutedText("Item not found.")
                     .padding(20)
             }
         }
-        .closetCueScene()
+        .hemlineScene()
         .navigationTitle("Piece")
         .navigationBarTitleDisplayMode(.inline)
     }
