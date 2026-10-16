@@ -1,8 +1,8 @@
 {
   "schema": "appfactory.ios_package_manifest.v1",
-  "app_name": "BrewCue",
-  "bundle_id": "com.lingguang.brewcue",
-  "product_dir": "brewcue",
+  "app_name": "Bloomkettle",
+  "bundle_id": "com.lingguang.bloomkettle",
+  "product_dir": "bloomkettle",
   "development_team": null,
   "platforms": ["iphonesimulator"],
   "no_app_icon": true,

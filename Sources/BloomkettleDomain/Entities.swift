@@ -197,8 +197,8 @@ public struct AppSettings: Codable, Hashable, Sendable {
     }
 }
 
-/// Aggregate root persisted via AtomicCodableStore\<BrewCueState\>.
-public struct BrewCueState: Codable, Hashable, Sendable {
+/// Aggregate root persisted via AtomicCodableStore\<BloomkettleState\>.
+public struct BloomkettleState: Codable, Hashable, Sendable {
     public var sessions: [BrewSession]
     public var shots: [BrewShot]
     public var pourSteps: [PourStep]

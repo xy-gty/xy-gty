@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 import AppRuntimeCore
 
 struct CoachChatView: View {
@@ -22,9 +22,9 @@ struct CoachChatView: View {
                                     .padding(12)
                                     .background(
                                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                            .fill(turn.role == "user" ? BrewCueTheme.accent.opacity(0.15) : Color.white.opacity(0.9))
+                                            .fill(turn.role == "user" ? BloomkettleTheme.accent.opacity(0.15) : Color.white.opacity(0.9))
                                     )
-                                    .foregroundStyle(BrewCueTheme.ink)
+                                    .foregroundStyle(BloomkettleTheme.ink)
                                 if turn.role != "user" { Spacer(minLength: 40) }
                             }
                             .id(turn.id)
@@ -53,7 +53,7 @@ struct CoachChatView: View {
                             appModel.startSpeechCue()
                         }
                     } label: {
-                        Label(appModel.speechService.isListening ? "Stop" : "Speak cue", systemImage: "mic.fill")
+                        Label(appModel.speechService.isListening ? "Stop" : "Read aloud", systemImage: "mic.fill")
                     }
                     .buttonStyle(.bordered)
                     .accessibilityIdentifier("ChatSpeakCue")
@@ -68,17 +68,17 @@ struct CoachChatView: View {
                         }
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(BrewCueTheme.accent)
+                    .tint(BloomkettleTheme.accent)
                     .disabled(appModel.coachBusy)
                     .accessibilityIdentifier("CoachSend")
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 10)
-                .background(BrewCueTheme.secondary.opacity(0.95))
+                .background(BloomkettleTheme.secondary.opacity(0.95))
             }
             .frame(height: 140)
         }
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Coach chat")
         .accessibilityIdentifier("CoachChat")
     }

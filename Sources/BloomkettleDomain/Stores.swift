@@ -2,13 +2,13 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum BrewCueStores {
-    public static let stateFile = "brewcue_state"
+public enum BloomkettleStores {
+    public static let stateFile = "bloomkettle_state"
     public static let aiConsentLocal = "ai_consent_local"
     public static let navigationFile = "navigation_stack"
 
     /// Keychain service for DeepSeek API key existence + consent mirror.
-    public static let keychainService = "com.lingguang.brewcue"
+    public static let keychainService = "com.lingguang.bloomkettle"
     public static let keychainAPIKeyAccount = "DEEPSEEK_API_KEY"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -16,7 +16,7 @@ public enum BrewCueStores {
         directory.appendingPathComponent("\(name).json", isDirectory: false)
     }
 
-    public static func stateStore(directory: URL) -> AtomicCodableStore<BrewCueState> {
+    public static func stateStore(directory: URL) -> AtomicCodableStore<BloomkettleState> {
         AtomicCodableStore(url: storeURL(directory: directory, name: stateFile))
     }
 
@@ -35,8 +35,8 @@ public enum BrewCueStores {
     @MainActor
     public static func navigationStore(
         directory: URL,
-        isValid: @escaping (BrewCueRoutePayload) -> Bool = { _ in true }
-    ) -> TypedNavigationStore<BrewCueRoutePayload> {
+        isValid: @escaping (BloomkettleRoutePayload) -> Bool = { _ in true }
+    ) -> TypedNavigationStore<BloomkettleRoutePayload> {
         TypedNavigationStore(
             url: storeURL(directory: directory, name: navigationFile),
             isValid: isValid
@@ -46,8 +46,8 @@ public enum BrewCueStores {
 
 /// Brew session CRUD surface (interface name literal; implementation deferred to Builder).
 public protocol BrewSessionStore {
-    func load() throws -> BrewCueState
-    func save(_ state: BrewCueState) throws
+    func load() throws -> BloomkettleState
+    func save(_ state: BloomkettleState) throws
     func upsertSession(_ session: BrewSession) throws
     func session(id: String) throws -> BrewSession?
 }

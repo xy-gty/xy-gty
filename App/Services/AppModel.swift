@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import BrewCueDomain
+import BloomkettleDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = BrewCueState()
-    @Published var path: [BrewCueRoute] = []
+    @Published var state = BloomkettleState()
+    @Published var path: [BloomkettleRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -36,13 +36,13 @@ final class AppModel: ObservableObject {
     @Published var lastUserFeedback = ""
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<BrewCueRoutePayload>
+    let navigation: TypedNavigationStore<BloomkettleRoutePayload>
     let speechService = SpeechRecognitionService()
 
     private let brewStore: BrewStore
     private let supportRoot: URL
     private let mediaRoot: URL
-    private let keychain = BrewCueStores.apiKeyStore()
+    private let keychain = BloomkettleStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -99,7 +99,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("brewcue", isDirectory: true)
+            .appendingPathComponent("bloomkettle", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         mediaRoot = root.appendingPathComponent("media", isDirectory: true)
@@ -107,11 +107,11 @@ final class AppModel: ObservableObject {
 
         brewStore = BrewStore(directory: root)
         navigation = TypedNavigationStore(
-            url: BrewCueStores.storeURL(directory: root, name: BrewCueStores.navigationFile),
-            isValid: { BrewCueRoute.allCases.contains($0.route) }
+            url: BloomkettleStores.storeURL(directory: root, name: BloomkettleStores.navigationFile),
+            isValid: { BloomkettleRoute.allCases.contains($0.route) }
         )
 
-        let consentURL = BrewCueStores.storeURL(directory: root, name: BrewCueStores.aiConsentLocal)
+        let consentURL = BloomkettleStores.storeURL(directory: root, name: BloomkettleStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -127,7 +127,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await BrewCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await BloomkettleStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -164,7 +164,7 @@ final class AppModel: ObservableObject {
     }
 
     private func seedUITestSessionIfNeeded() {
-        state = BrewCueState()
+        state = BloomkettleState()
         let sessionId = "uitest-session"
         let shotId = "uitest-shot"
         let image = UIGraphicsImageRenderer(size: CGSize(width: 320, height: 320)).image { ctx in
@@ -180,7 +180,7 @@ final class AppModel: ObservableObject {
             id: sessionId,
             title: "UITest V60",
             gearNote: "V60",
-            complianceSnapshot: BrewCueCompliance.bannerEN,
+            complianceSnapshot: BloomkettleCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )
@@ -222,7 +222,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? brewStore.load()) ?? BrewCueState()
+        state = (try? brewStore.load()) ?? BloomkettleState()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
             activeSessionId = state.sessions.first?.id
@@ -240,7 +240,7 @@ final class AppModel: ObservableObject {
 
     private func saveNavigation() {
         let payloads = path.map {
-            BrewCueRoutePayload(
+            BloomkettleRoutePayload(
                 route: $0,
                 sessionId: activeSessionId,
                 shotId: activeShotId,
@@ -280,7 +280,7 @@ final class AppModel: ObservableObject {
         statusIsError = error
     }
 
-    func push(_ route: BrewCueRoute) {
+    func push(_ route: BloomkettleRoute) {
         path.append(route)
         saveNavigation()
     }
@@ -296,7 +296,7 @@ final class AppModel: ObservableObject {
             id: id,
             title: title,
             gearNote: "",
-            complianceSnapshot: BrewCueCompliance.bannerEN,
+            complianceSnapshot: BloomkettleCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )
@@ -680,7 +680,7 @@ final class AppModel: ObservableObject {
             if let err = speechService.lastError {
                 flash(err, error: true)
             } else {
-                flash("Listening for pour cues…")
+                flash("Listening for pour notes…")
             }
         }
     }

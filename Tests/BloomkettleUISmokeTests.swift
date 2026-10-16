@@ -1,19 +1,19 @@
 import XCTest
 
-final class BrewCueUISmokeTests: XCTestCase {
+final class BloomkettleUISmokeTests: XCTestCase {
     func testLaunchBrewHome() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-uitest-seed"]
         app.launch()
         XCTAssertTrue(app.descendants(matching: .any)["BrewHome"].waitForExistence(timeout: 8)
-            || app.staticTexts["BrewCue"].waitForExistence(timeout: 8))
+            || app.staticTexts["Bloomkettle"].waitForExistence(timeout: 8))
     }
 
     func testCoreFunnelFlow() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-uitest-seed"]
         app.launch()
-        XCTAssertTrue(app.staticTexts["BrewCue"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.staticTexts["Bloomkettle"].waitForExistence(timeout: 8))
         // Open seeded session
         let session = app.buttons.matching(NSPredicate(format: "label CONTAINS 'UITest V60'")).firstMatch
         if session.waitForExistence(timeout: 4) {

@@ -1,6 +1,6 @@
 import SwiftUI
 import PhotosUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct CaptureImportView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,10 +11,10 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Capture or import")
                     .font(.title2.bold())
-                    .foregroundStyle(BrewCueTheme.ink)
+                    .foregroundStyle(BloomkettleTheme.ink)
                 Text("Choose what the shot shows, then snap with Camera or import from Photos.")
                     .font(.subheadline)
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
 
                 Text("Shot kind")
                     .font(.headline)
@@ -29,9 +29,9 @@ struct CaptureImportView: View {
                                     .padding(.horizontal, 14)
                                     .padding(.vertical, 8)
                                     .background(
-                                        Capsule().fill(appModel.shotKind == kind ? BrewCueTheme.accent : BrewCueTheme.secondary)
+                                        Capsule().fill(appModel.shotKind == kind ? BloomkettleTheme.accent : BloomkettleTheme.secondary)
                                     )
-                                    .foregroundStyle(appModel.shotKind == kind ? Color.white : BrewCueTheme.ink)
+                                    .foregroundStyle(appModel.shotKind == kind ? Color.white : BloomkettleTheme.ink)
                             }
                             .buttonStyle(.plain)
                         }
@@ -45,7 +45,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(BrewCueTheme.primary)
+                .tint(BloomkettleTheme.primary)
                 .accessibilityIdentifier("SnapBrew")
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
@@ -53,7 +53,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
-                .tint(BrewCueTheme.accent)
+                .tint(BloomkettleTheme.accent)
                 .accessibilityIdentifier("ImportShot")
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     appModel.handlePhotoItemChange()
@@ -62,11 +62,11 @@ struct CaptureImportView: View {
                 Button("Cancel") {
                     appModel.popToHome()
                 }
-                .foregroundStyle(BrewCueTheme.muted)
+                .foregroundStyle(BloomkettleTheme.muted)
             }
             .padding(20)
         }
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Capture")
         .accessibilityIdentifier("CaptureImport")
     }

@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct SessionDetailView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -10,7 +10,7 @@ struct SessionDetailView: View {
                 Section(session.title) {
                     Text(session.complianceSnapshot)
                         .font(.caption)
-                        .foregroundStyle(BrewCueTheme.muted)
+                        .foregroundStyle(BloomkettleTheme.muted)
                     Button("Resume funnel") { appModel.push(.funnelTimeline) }
                     Button("Coach chat") { appModel.push(.coachChat) }
                     Button("Capture another shot") { appModel.push(.captureImport) }
@@ -28,7 +28,7 @@ struct SessionDetailView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Session")
         .accessibilityIdentifier("SessionDetail")
     }

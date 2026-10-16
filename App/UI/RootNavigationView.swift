@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct RootNavigationView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             BrewHomeView()
-                .navigationDestination(for: BrewCueRoute.self) { route in
+                .navigationDestination(for: BloomkettleRoute.self) { route in
                     switch route {
                     case .brewHome:
                         BrewHomeView()
@@ -44,7 +44,7 @@ struct RootNavigationView: View {
             if let msg = appModel.statusMessage {
                 Text(msg)
                     .font(.footnote.weight(.medium))
-                    .foregroundStyle(appModel.statusIsError ? Color.red : BrewCueTheme.ink)
+                    .foregroundStyle(appModel.statusIsError ? Color.red : BloomkettleTheme.ink)
                     .padding(12)
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
                     .padding()
@@ -61,6 +61,6 @@ struct LegalPageHost: View {
         LocalLegalWebView(fileName: page)
             .navigationTitle(page.capitalized)
             .navigationBarTitleDisplayMode(.inline)
-            .brewCueScreen()
+            .bloomkettleScreen()
     }
 }

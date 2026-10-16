@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct ReadingReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,7 +9,7 @@ struct ReadingReviewView: View {
             Section {
                 Text("Review pour drafts — \(ReadingReviewBar.confirm) / \(ReadingReviewBar.reject) / \(ReadingReviewBar.edit)")
                     .font(.subheadline)
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
             }
             ForEach(appModel.sessionSteps, id: \.id) { step in
                 VStack(alignment: .leading, spacing: 8) {
@@ -17,7 +17,7 @@ struct ReadingReviewView: View {
                         .font(.headline)
                     Text("\(step.targetGrams.map { String(format: "%.0f g", $0) } ?? "—") · \(step.targetSeconds.map { String(format: "%.0f s", $0) } ?? "—")")
                         .font(.subheadline)
-                        .foregroundStyle(BrewCueTheme.muted)
+                        .foregroundStyle(BloomkettleTheme.muted)
                     if appModel.editingStepId == step.id {
                         TextField("Grams", text: $appModel.editGramsDraft)
                             .keyboardType(.decimalPad)
@@ -25,12 +25,12 @@ struct ReadingReviewView: View {
                             .keyboardType(.decimalPad)
                         Button(ReadingReviewBar.confirm) { appModel.applyEditStep() }
                             .buttonStyle(.borderedProminent)
-                            .tint(BrewCueTheme.accent)
+                            .tint(BloomkettleTheme.accent)
                     } else {
                         HStack {
                             Button(ReadingReviewBar.confirm) { appModel.keepStep(step.id) }
                                 .buttonStyle(.borderedProminent)
-                                .tint(BrewCueTheme.accent)
+                                .tint(BloomkettleTheme.accent)
                             Button(ReadingReviewBar.reject) { appModel.discardStep(step.id) }
                                 .buttonStyle(.bordered)
                             Button(ReadingReviewBar.edit) { appModel.beginEditStep(step.id) }
@@ -38,7 +38,7 @@ struct ReadingReviewView: View {
                         }
                     }
                 }
-                .listRowBackground(BrewCueTheme.secondary.opacity(0.5))
+                .listRowBackground(BloomkettleTheme.secondary.opacity(0.5))
             }
             Section {
                 Button("Keep brew note") { appModel.keepBrewNote() }
@@ -47,7 +47,7 @@ struct ReadingReviewView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Review")
         .accessibilityIdentifier("ReadingReview")
     }

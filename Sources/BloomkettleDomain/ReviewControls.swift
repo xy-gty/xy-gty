@@ -10,7 +10,7 @@ public enum ReadingReviewBar {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "brewcue.consent.v1"
+    public static let disclosureVersion = "bloomkettle.consent.v1"
     public static let fields = [
         "shot_desc",
         "bean_guess",
@@ -39,7 +39,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum BrewCueInterfaceNames {
+public enum BloomkettleInterfaceNames {
     public static let readingReviewBar = "ReadingReviewBar"
     public static let aiConsentGate = "AIConsentGate"
     public static let photoImportSession = "PhotoImportSession"
@@ -57,16 +57,16 @@ public enum BrewCueInterfaceNames {
 
 public enum PrivacyUsageCopy {
     public static let camera =
-        "Capture beans, grounds, bloom, pour, or crema so BrewCue can coach your pour-over"
+        "Capture beans, grounds, bloom, pour, or crema so Bloomkettle can coach your pour-over"
     public static let photoLibrary =
         "Import post-brew shots for diagnosis and pour-over coaching"
     public static let microphone =
-        "Hands-free pour cues while both hands hold the kettle"
+        "Hands-free pour notes while both hands hold the kettle"
     public static let speechRecognition =
-        "Turn spoken cues like 1:16 V60 or next pour into coach chat text"
+        "Turn spoken lines like 1:16 V60 or next pour into coach chat text"
 }
 
-public enum BrewCueCompliance {
+public enum BloomkettleCompliance {
     public static let homeBrewCoach =
         "家用冲煮教练 · home brew coach only"
     public static let notBaristaCertification =
@@ -92,45 +92,45 @@ public enum BrewCueCompliance {
         "Home brew coach only; not barista certification; not nutrition/medical; not equipment warranty; no alcohol-service claims"
 }
 
-public enum BrewCueIdentity {
-    public static let appName = "BrewCue"
-    public static let developmentBundleId = "com.lingguang.brewcue"
-    public static let productDir = "brewcue"
+public enum BloomkettleIdentity {
+    public static let appName = "Bloomkettle"
+    public static let developmentBundleId = "com.lingguang.bloomkettle"
+    public static let productDir = "bloomkettle"
     public static let uiLanguage = "en-US"
     public static let deliveryRepo = "git@github.com:xy-gty/xy-gty.git"
     public static let deliveryBranchHint = "xy-gty"
 }
 
-public enum BrewCuePalette {
+public enum BloomkettlePalette {
     public static let primary = "#A16207"
     public static let secondary = "#ECFDF5"
     public static let accent = "#4F46E5"
 }
 
-public enum BrewCueDevicePolicy {
+public enum BloomkettleDevicePolicy {
     public static let targetDevice = "iPhone 17 Pro"
     public static let preferredUDID = "B14CC0EA"
     public static let bannedDevices = ["iPhone 17 Pro Max"]
 }
 
 /// Explicit anti-twin markers — Builder must not adopt these shells.
-public enum BrewCueAllergy {
+public enum BloomkettleAllergy {
     public static let bannedTwinShells = [
-        "MixCue",
-        "CellarCue",
-        "FolioCue",
-        "FinishCue",
-        "PantryCue",
+        "Stirboard",
+        "Racknote",
+        "Spinewell",
+        "Heatbar",
+        "Pantry",
     ]
     public static let bannedAppCopyNames = [
         "The Great Coffee App",
     ]
     public static let differentiationNotes = [
-        "MixCue bottle-rail — not BrewCue",
-        "CellarCue bin grid — not BrewCue",
-        "FolioCue spine-rail — not BrewCue",
-        "FinishCue slit scrubber — not BrewCue",
-        "PantryCue layout — not BrewCue",
+        "Stirboard bottle-rail — not Bloomkettle",
+        "Racknote bin grid — not Bloomkettle",
+        "Spinewell spine-rail — not Bloomkettle",
+        "Heatbar slit scrubber — not Bloomkettle",
+        "Pantry layout — not Bloomkettle",
     ]
     public static let requiredUI = [
         "vertical pour-over funnel timeline",

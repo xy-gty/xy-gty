@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "BrewCue",
+    name: "Bloomkettle",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "BrewCueDomain", targets: ["BrewCueDomain"]),
+        .library(name: "BloomkettleDomain", targets: ["BloomkettleDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "BrewCueDomain",
+            name: "BloomkettleDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/BrewCueDomain"
+            path: "Sources/BloomkettleDomain"
         ),
     ]
 )

@@ -1,5 +1,5 @@
 import Foundation
-import BrewCueDomain
+import BloomkettleDomain
 
 struct PourStepDraft: Sendable {
     var kind: String
@@ -83,10 +83,10 @@ struct DeepSeekClient {
             "user_feedback": userFeedback,
         ]
         let system = """
-        You are BrewCue, an AI home pour-over coach only.
+        You are Bloomkettle, an AI home pour-over coach only.
         Reply JSON only: {"shot_desc":"","grind":"medium","steps":[{"kind":"bloom|pour|drawdown","pour_index":0,"grams":40,"seconds":30,"note":""}]}
         Home brew coach only; not barista certification; not nutrition/medical; not equipment warranty; no alcohol-service claims.
-        Never name The Great Coffee App or competitors. Not MixCue/CellarCue/FolioCue/FinishCue/PantryCue.
+        Never name The Great Coffee App or competitors. Not Stirboard/Racknote/Spinewell/Heatbar/Pantry.
         """
         let content = try await chat(system: system, userJSON: payload)
         return try Self.parseBrew(content: content, fallbackDesc: shotDesc)
@@ -116,7 +116,7 @@ struct DeepSeekClient {
             "crema_note": "",
         ]
         let system = """
-        You are BrewCue chat coach. Reply JSON only:
+        You are Bloomkettle chat coach. Reply JSON only:
         {"reply":"short coach answer","next_grams":60,"next_seconds":30}
         Home brew coach only; not barista certification; not nutrition/medical; not equipment warranty; no alcohol-service claims.
         Never name The Great Coffee App.

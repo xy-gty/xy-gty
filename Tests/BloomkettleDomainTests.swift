@@ -1,14 +1,14 @@
 import XCTest
-import BrewCueDomain
+import BloomkettleDomain
 import AppRuntimeCore
 
-final class BrewCueDomainTests: XCTestCase {
+final class BloomkettleDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(ReadingReviewBar.confirm, "Keep")
         XCTAssertEqual(ReadingReviewBar.reject, "Discard")
         XCTAssertEqual(ReadingReviewBar.edit, "Edit")
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "brewcue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "bloomkettle.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 10)
     }
 
@@ -22,19 +22,19 @@ final class BrewCueDomainTests: XCTestCase {
 
     func testBrewStoreRoundTrip() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("brewcue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("bloomkettle-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
-        let store = AtomicCodableStore<BrewCueState>(
-            url: BrewCueStores.storeURL(directory: dir, name: BrewCueStores.stateFile)
+        let store = AtomicCodableStore<BloomkettleState>(
+            url: BloomkettleStores.storeURL(directory: dir, name: BloomkettleStores.stateFile)
         )
-        var state = BrewCueState()
+        var state = BloomkettleState()
         let session = BrewSession(
             id: "s1",
             title: "Morning V60",
             gearNote: "V60",
-            complianceSnapshot: BrewCueCompliance.bannerEN,
+            complianceSnapshot: BloomkettleCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )
@@ -79,27 +79,27 @@ final class BrewCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteComplianceAndAllergy() {
-        XCTAssertEqual(BrewCueIdentity.developmentBundleId, "com.lingguang.brewcue")
-        XCTAssertEqual(BrewCueIdentity.productDir, "brewcue")
-        XCTAssertEqual(BrewCueIdentity.appName, "BrewCue")
-        XCTAssertEqual(BrewCuePalette.primary, "#A16207")
-        XCTAssertEqual(BrewCuePalette.secondary, "#ECFDF5")
-        XCTAssertEqual(BrewCuePalette.accent, "#4F46E5")
-        XCTAssertEqual(BrewCueDevicePolicy.targetDevice, "iPhone 17 Pro")
-        XCTAssertEqual(BrewCueDevicePolicy.preferredUDID, "B14CC0EA")
-        XCTAssertTrue(BrewCueDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
-        XCTAssertTrue(BrewCueAllergy.bannedAppCopyNames.contains("The Great Coffee App"))
-        XCTAssertTrue(BrewCueAllergy.bannedTwinShells.contains("MixCue"))
-        XCTAssertTrue(BrewCueAllergy.bannedTwinShells.contains("FinishCue"))
-        XCTAssertTrue(BrewCueAllergy.requiredUI.contains(where: { $0.contains("funnel") }))
-        XCTAssertTrue(BrewCueAllergy.noAppIconOrLaunchScreen)
-        XCTAssertTrue(BrewCueCompliance.bannerZH.contains("家用冲煮教练"))
-        XCTAssertTrue(BrewCueCompliance.bannerEN.contains("Home brew coach"))
-        XCTAssertTrue(BrewCueCompliance.bannerEN.contains("not barista certification"))
+        XCTAssertEqual(BloomkettleIdentity.developmentBundleId, "com.lingguang.bloomkettle")
+        XCTAssertEqual(BloomkettleIdentity.productDir, "bloomkettle")
+        XCTAssertEqual(BloomkettleIdentity.appName, "Bloomkettle")
+        XCTAssertEqual(BloomkettlePalette.primary, "#A16207")
+        XCTAssertEqual(BloomkettlePalette.secondary, "#ECFDF5")
+        XCTAssertEqual(BloomkettlePalette.accent, "#4F46E5")
+        XCTAssertEqual(BloomkettleDevicePolicy.targetDevice, "iPhone 17 Pro")
+        XCTAssertEqual(BloomkettleDevicePolicy.preferredUDID, "B14CC0EA")
+        XCTAssertTrue(BloomkettleDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
+        XCTAssertTrue(BloomkettleAllergy.bannedAppCopyNames.contains("The Great Coffee App"))
+        XCTAssertTrue(BloomkettleAllergy.bannedTwinShells.contains("Stirboard"))
+        XCTAssertTrue(BloomkettleAllergy.bannedTwinShells.contains("Heatbar"))
+        XCTAssertTrue(BloomkettleAllergy.requiredUI.contains(where: { $0.contains("funnel") }))
+        XCTAssertTrue(BloomkettleAllergy.noAppIconOrLaunchScreen)
+        XCTAssertTrue(BloomkettleCompliance.bannerZH.contains("家用冲煮教练"))
+        XCTAssertTrue(BloomkettleCompliance.bannerEN.contains("Home brew coach"))
+        XCTAssertTrue(BloomkettleCompliance.bannerEN.contains("not barista certification"))
     }
 
     func testKeychainServiceIdentity() {
-        XCTAssertEqual(BrewCueStores.keychainService, "com.lingguang.brewcue")
-        XCTAssertEqual(BrewCueStores.keychainAPIKeyAccount, "DEEPSEEK_API_KEY")
+        XCTAssertEqual(BloomkettleStores.keychainService, "com.lingguang.bloomkettle")
+        XCTAssertEqual(BloomkettleStores.keychainAPIKeyAccount, "DEEPSEEK_API_KEY")
     }
 }

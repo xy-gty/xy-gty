@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -21,9 +21,9 @@ struct SettingsPrivacyView: View {
                 ))
                 Text("Provider: \(AIConsentContract.provider) · \(AIConsentContract.disclosureVersion)")
                     .font(.caption)
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
                 if let reason = appModel.aiUnavailableReason {
-                    Text(reason).font(.caption).foregroundStyle(BrewCueTheme.muted)
+                    Text(reason).font(.caption).foregroundStyle(BloomkettleTheme.muted)
                 }
             }
 
@@ -35,7 +35,7 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Compliance") {
-                ForEach(BrewCueCompliance.requiredDisclaimers, id: \.self) { line in
+                ForEach(BloomkettleCompliance.requiredDisclaimers, id: \.self) { line in
                     Text(line).font(.caption)
                 }
             }
@@ -48,7 +48,7 @@ struct SettingsPrivacyView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Settings")
         .accessibilityIdentifier("SettingsPrivacy")
     }

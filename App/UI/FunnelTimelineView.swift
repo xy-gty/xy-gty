@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct FunnelTimelineView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,7 +11,7 @@ struct FunnelTimelineView: View {
 
                 Text("Pour-over funnel")
                     .font(.title2.bold())
-                    .foregroundStyle(BrewCueTheme.primary)
+                    .foregroundStyle(BloomkettleTheme.primary)
 
                 // Vertical funnel timeline (signature — not bottle-rail / bin / spine / slit)
                 FunnelTimeline(steps: appModel.funnelSteps)
@@ -38,7 +38,7 @@ struct FunnelTimelineView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(BrewCueTheme.muted)
+                        .foregroundStyle(BloomkettleTheme.muted)
                 }
 
                 Button {
@@ -48,14 +48,14 @@ struct FunnelTimelineView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(BrewCueTheme.accent)
+                .tint(BloomkettleTheme.accent)
                 .disabled(appModel.readBusy)
                 .accessibilityIdentifier("CoachThisBrew")
 
                 HStack {
                     Button("Coach chat") { appModel.push(.coachChat) }
                         .buttonStyle(.bordered)
-                    Button("Speak cue") {
+                    Button("Read aloud") {
                         if appModel.speechService.isListening {
                             appModel.stopSpeechCue()
                         } else {
@@ -63,13 +63,13 @@ struct FunnelTimelineView: View {
                         }
                     }
                     .buttonStyle(.bordered)
-                    .tint(BrewCueTheme.primary)
+                    .tint(BloomkettleTheme.primary)
                     .accessibilityIdentifier("SpeakCue")
                 }
             }
             .padding(20)
         }
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Funnel")
         .accessibilityIdentifier("FunnelTimelineScreen")
     }
@@ -84,32 +84,32 @@ struct FunnelTimeline: View {
             FunnelShape()
                 .fill(
                     LinearGradient(
-                        colors: [BrewCueTheme.primary.opacity(0.35), BrewCueTheme.secondary, BrewCueTheme.accent.opacity(0.25)],
+                        colors: [BloomkettleTheme.primary.opacity(0.35), BloomkettleTheme.secondary, BloomkettleTheme.accent.opacity(0.25)],
                         startPoint: .top,
                         endPoint: .bottom
                     )
                 )
-                .overlay(FunnelShape().stroke(BrewCueTheme.primary.opacity(0.55), lineWidth: 2))
+                .overlay(FunnelShape().stroke(BloomkettleTheme.primary.opacity(0.55), lineWidth: 2))
 
             VStack(spacing: 10) {
                 if steps.isEmpty {
                     Text("Capture a shot to seed bloom → pours → drawdown")
                         .font(.caption)
-                        .foregroundStyle(BrewCueTheme.muted)
+                        .foregroundStyle(BloomkettleTheme.muted)
                         .padding(.top, 40)
                 } else {
                     ForEach(Array(steps.enumerated()), id: \.element.id) { idx, step in
                         HStack {
                             Circle()
-                                .fill(BrewCueTheme.accent)
+                                .fill(BloomkettleTheme.accent)
                                 .frame(width: 10, height: 10)
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(label(for: step))
                                     .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(BrewCueTheme.ink)
+                                    .foregroundStyle(BloomkettleTheme.ink)
                                 Text(detail(for: step))
                                     .font(.caption)
-                                    .foregroundStyle(BrewCueTheme.muted)
+                                    .foregroundStyle(BloomkettleTheme.muted)
                             }
                             Spacer()
                         }
@@ -159,45 +159,45 @@ struct NextPourCard: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Next pour")
                 .font(.headline)
-                .foregroundStyle(BrewCueTheme.ink)
+                .foregroundStyle(BloomkettleTheme.ink)
             HStack(alignment: .firstTextBaseline, spacing: 8) {
                 Text(String(format: "%.0f", grams))
                     .font(.system(size: 56, weight: .bold, design: .rounded))
-                    .foregroundStyle(BrewCueTheme.primary)
+                    .foregroundStyle(BloomkettleTheme.primary)
                     .accessibilityIdentifier("NextPourGrams")
                 Text("g")
                     .font(.title2.weight(.semibold))
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
                 Spacer()
                 Text(String(format: "%.0f", seconds))
                     .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .foregroundStyle(BrewCueTheme.accent)
+                    .foregroundStyle(BloomkettleTheme.accent)
                     .accessibilityIdentifier("NextPourSeconds")
                 Text("s")
                     .font(.title3.weight(.semibold))
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
             }
             if busy {
                 ProgressView("Reading pour…")
-                    .tint(BrewCueTheme.accent)
+                    .tint(BloomkettleTheme.accent)
             }
             Slider(value: $grams, in: 10...200, step: 5)
-                .tint(BrewCueTheme.primary)
+                .tint(BloomkettleTheme.primary)
             Slider(value: $seconds, in: 5...120, step: 5)
-                .tint(BrewCueTheme.accent)
+                .tint(BloomkettleTheme.accent)
             Button("Apply to funnel", action: onApply)
                 .buttonStyle(.bordered)
-                .tint(BrewCueTheme.primary)
+                .tint(BloomkettleTheme.primary)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(Color.white.opacity(0.92))
-                .shadow(color: BrewCueTheme.accent.opacity(0.15), radius: 10, y: 4)
+                .shadow(color: BloomkettleTheme.accent.opacity(0.15), radius: 10, y: 4)
                 .overlay(
                     RoundedRectangle(cornerRadius: 22, style: .continuous)
-                        .stroke(BrewCueTheme.primary.opacity(0.35), lineWidth: 1.5)
+                        .stroke(BloomkettleTheme.primary.opacity(0.35), lineWidth: 1.5)
                 )
         )
     }
@@ -212,7 +212,7 @@ struct GrindChipRail: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Grind size")
                 .font(.headline)
-                .foregroundStyle(BrewCueTheme.ink)
+                .foregroundStyle(BloomkettleTheme.ink)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
                     ForEach(chips, id: \.self) { chip in
@@ -225,11 +225,11 @@ struct GrindChipRail: View {
                                 .padding(.vertical, 8)
                                 .background(
                                     Capsule()
-                                        .fill(selected == chip ? BrewCueTheme.accent : BrewCueTheme.secondary)
+                                        .fill(selected == chip ? BloomkettleTheme.accent : BloomkettleTheme.secondary)
                                 )
-                                .foregroundStyle(selected == chip ? Color.white : BrewCueTheme.ink)
+                                .foregroundStyle(selected == chip ? Color.white : BloomkettleTheme.ink)
                                 .overlay(
-                                    Capsule().stroke(BrewCueTheme.primary.opacity(0.3), lineWidth: 1)
+                                    Capsule().stroke(BloomkettleTheme.primary.opacity(0.3), lineWidth: 1)
                                 )
                         }
                         .buttonStyle(.plain)

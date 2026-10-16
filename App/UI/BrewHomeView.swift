@@ -1,5 +1,5 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
 struct BrewHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,12 +8,12 @@ struct BrewHomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 ComplianceBanner()
-                Text("BrewCue")
+                Text("Bloomkettle")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(BrewCueTheme.primary)
+                    .foregroundStyle(BloomkettleTheme.primary)
                 Text("Home pour-over coach — snap a brew shot, follow the funnel timeline.")
                     .font(.subheadline)
-                    .foregroundStyle(BrewCueTheme.muted)
+                    .foregroundStyle(BloomkettleTheme.muted)
 
                 Button {
                     appModel.createSession()
@@ -22,7 +22,7 @@ struct BrewHomeView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(BrewCueTheme.accent)
+                .tint(BloomkettleTheme.accent)
                 .accessibilityIdentifier("NewBrewSession")
 
                 if appModel.state.sessions.isEmpty {
@@ -42,20 +42,20 @@ struct BrewHomeView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(session.title)
                                         .font(.headline)
-                                        .foregroundStyle(BrewCueTheme.ink)
+                                        .foregroundStyle(BloomkettleTheme.ink)
                                     Text(session.gearNote.isEmpty ? "Pour-over" : session.gearNote)
                                         .font(.caption)
-                                        .foregroundStyle(BrewCueTheme.muted)
+                                        .foregroundStyle(BloomkettleTheme.muted)
                                 }
                                 Spacer()
                                 Image(systemName: "chevron.right")
-                                    .foregroundStyle(BrewCueTheme.primary)
+                                    .foregroundStyle(BloomkettleTheme.primary)
                             }
                             .padding(14)
                             .background(
                                 RoundedRectangle(cornerRadius: 16, style: .continuous)
                                     .fill(Color.white.opacity(0.85))
-                                    .shadow(color: BrewCueTheme.primary.opacity(0.12), radius: 6, y: 2)
+                                    .shadow(color: BloomkettleTheme.primary.opacity(0.12), radius: 6, y: 2)
                             )
                         }
                         .buttonStyle(.plain)
@@ -64,7 +64,7 @@ struct BrewHomeView: View {
             }
             .padding(20)
         }
-        .brewCueScreen()
+        .bloomkettleScreen()
         .navigationTitle("Home")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

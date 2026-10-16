@@ -1,19 +1,19 @@
 import Foundation
 import AppRuntimeCore
-import BrewCueDomain
+import BloomkettleDomain
 
 final class BrewStore: BrewSessionStore {
-    private let store: AtomicCodableStore<BrewCueState>
+    private let store: AtomicCodableStore<BloomkettleState>
 
     init(directory: URL) {
-        store = BrewCueStores.stateStore(directory: directory)
+        store = BloomkettleStores.stateStore(directory: directory)
     }
 
-    func load() throws -> BrewCueState {
-        try store.load() ?? BrewCueState()
+    func load() throws -> BloomkettleState {
+        try store.load() ?? BloomkettleState()
     }
 
-    func save(_ state: BrewCueState) throws {
+    func save(_ state: BloomkettleState) throws {
         try store.save(state)
     }
 

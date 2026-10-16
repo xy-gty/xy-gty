@@ -1,7 +1,7 @@
 import SwiftUI
-import BrewCueDomain
+import BloomkettleDomain
 
-enum BrewCueTheme {
+enum BloomkettleTheme {
     static let primary = Color(hex: 0xA16207)
     static let secondary = Color(hex: 0xECFDF5)
     static let accent = Color(hex: 0x4F46E5)
@@ -27,28 +27,28 @@ extension Color {
 }
 
 extension View {
-    func brewCueScreen() -> some View {
-        self.background(BrewCueTheme.mintField.ignoresSafeArea())
+    func bloomkettleScreen() -> some View {
+        self.background(BloomkettleTheme.mintField.ignoresSafeArea())
     }
 }
 
 struct ComplianceBanner: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(BrewCueCompliance.bannerEN)
+            Text(BloomkettleCompliance.bannerEN)
                 .font(.caption.weight(.semibold))
-            Text(BrewCueCompliance.bannerZH)
+            Text(BloomkettleCompliance.bannerZH)
                 .font(.caption2)
         }
-        .foregroundStyle(BrewCueTheme.ink)
+        .foregroundStyle(BloomkettleTheme.ink)
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(BrewCueTheme.secondary.opacity(0.95))
+                .fill(BloomkettleTheme.secondary.opacity(0.95))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .stroke(BrewCueTheme.primary.opacity(0.4), lineWidth: 1)
+                        .stroke(BloomkettleTheme.primary.opacity(0.4), lineWidth: 1)
                 )
         )
         .accessibilityIdentifier("ComplianceBanner")

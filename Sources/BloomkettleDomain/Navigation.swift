@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum BrewCueRoute: String, Codable, CaseIterable, Sendable {
+public enum BloomkettleRoute: String, Codable, CaseIterable, Sendable {
     case brewHome = "BrewHome"
     case captureImport = "CaptureImport"
     case funnelTimeline = "FunnelTimeline"
@@ -15,15 +15,15 @@ public enum BrewCueRoute: String, Codable, CaseIterable, Sendable {
 }
 
 /// Parameterized route payload for TypedNavigationStore restore.
-public struct BrewCueRoutePayload: Codable, Hashable, Sendable {
-    public var route: BrewCueRoute
+public struct BloomkettleRoutePayload: Codable, Hashable, Sendable {
+    public var route: BloomkettleRoute
     public var sessionId: String?
     public var shotId: String?
     public var brewNoteId: String?
     /// privacy | terms | support | providerPolicy
     public var legalPage: String?
     public init(
-        route: BrewCueRoute,
+        route: BloomkettleRoute,
         sessionId: String? = nil,
         shotId: String? = nil,
         brewNoteId: String? = nil,
