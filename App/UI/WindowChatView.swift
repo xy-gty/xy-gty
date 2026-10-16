@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct WindowChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -18,9 +18,9 @@ struct WindowChatView: View {
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(turn.role == "user" ? CellarCueTheme.binFilled : Color.white)
+                                        .fill(turn.role == "user" ? RacknoteTheme.binFilled : Color.white)
                                 )
-                                .foregroundStyle(CellarCueTheme.ink)
+                                .foregroundStyle(RacknoteTheme.ink)
                             if turn.role != "user" { Spacer(minLength: 40) }
                         }
                     }
@@ -28,7 +28,7 @@ struct WindowChatView: View {
                     if appModel.coachBusy {
                         Text("Coach is thinking…")
                             .font(.caption)
-                            .foregroundStyle(CellarCueTheme.muted)
+                            .foregroundStyle(RacknoteTheme.muted)
                     }
                 }
                 .padding(16)
@@ -48,10 +48,10 @@ struct WindowChatView: View {
                     Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "waveform")
                 }
                 Button("Send") { appModel.sendCoachQuestion() }
-                    .foregroundStyle(CellarCueTheme.accent)
+                    .foregroundStyle(RacknoteTheme.accent)
             }
             .padding(12)
-            .background(CellarCueTheme.secondary)
+            .background(RacknoteTheme.secondary)
         }
         .cellarScreen()
         .navigationTitle("Window & pairing")

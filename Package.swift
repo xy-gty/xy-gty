@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "CellarCue",
+    name: "Racknote",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "CellarCueDomain", targets: ["CellarCueDomain"]),
+        .library(name: "RacknoteDomain", targets: ["RacknoteDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "CellarCueDomain",
+            name: "RacknoteDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/CellarCueDomain"
+            path: "Sources/RacknoteDomain"
         ),
     ]
 )

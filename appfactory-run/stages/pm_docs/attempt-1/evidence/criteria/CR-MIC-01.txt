@@ -1,1 +1,0 @@
-Voice note / pull-brief surface shows recording or TTS play state for hands-busy cellar notes; script preview includes compliance and 21+.

@@ -1,1 +1,0 @@
-AI consent discloses DeepSeek and send fields (label still, question, confirmed notes, bottle/bin id, optional transcript) before send; Allow / Not now actions.

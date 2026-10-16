@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct PullBriefView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,12 +11,12 @@ struct PullBriefView: View {
 
                 Text("TTS pull / pour brief")
                     .font(.title2.bold())
-                    .foregroundStyle(CellarCueTheme.ink)
+                    .foregroundStyle(RacknoteTheme.ink)
 
                 if let brief = appModel.activeBrief {
                     Text(brief.scriptText)
                         .font(.body)
-                        .foregroundStyle(CellarCueTheme.ink)
+                        .foregroundStyle(RacknoteTheme.ink)
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 14, style: .continuous)
@@ -28,7 +28,7 @@ struct PullBriefView: View {
                             appModel.playPullBrief()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(CellarCueTheme.accent)
+                        .tint(RacknoteTheme.accent)
                         .disabled(appModel.tts.isSpeaking)
 
                         Button("Stop") { appModel.tts.stop() }
@@ -36,7 +36,7 @@ struct PullBriefView: View {
                     }
                 } else {
                     Text("No brief yet — Identify a bottle first.")
-                        .foregroundStyle(CellarCueTheme.muted)
+                        .foregroundStyle(RacknoteTheme.muted)
                 }
             }
             .padding(16)

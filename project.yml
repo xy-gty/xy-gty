@@ -1,4 +1,4 @@
-name: CellarCue
+name: Racknote
 options:
   deploymentTarget:
     iOS: "17.0"
@@ -6,7 +6,7 @@ options:
 packages:
   AppRuntimeCore:
     path: Vendor/AppRuntimeCore
-  CellarCueDomain:
+  RacknoteDomain:
     path: .
 settings:
   base:
@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     GENERATE_INFOPLIST_FILE: YES
 targets:
-  CellarCue:
+  Racknote:
     type: application
     platform: iOS
     sources:
@@ -27,58 +27,58 @@ targets:
       - path: App/PrivacyInfo.xcprivacy
     dependencies:
       - package: AppRuntimeCore
-      - package: CellarCueDomain
-        product: CellarCueDomain
+      - package: RacknoteDomain
+        product: RacknoteDomain
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue
-        PRODUCT_NAME: CellarCue
-        INFOPLIST_KEY_CFBundleDisplayName: CellarCue
-        INFOPLIST_KEY_NSCameraUsageDescription: Capture wine label, cork, and bin-tag stills so CellarCue can place bottles in your cellar grid
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import cellar photos to complete label OCR and bin placement in CellarCue
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Racknote
+        INFOPLIST_KEY_CFBundleDisplayName: Racknote
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture wine label, cork, and bin-tag stills so Racknote can place bottles in your cellar grid
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import cellar photos to complete label OCR and bin placement in Racknote
         INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free bin notes while carrying bottles
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken drinking-window and pairing questions into coach chat text
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
-        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_KEY_UILaunchScreen_Generation: NO
-  CellarCueDomainTests:
+  RacknoteDomainTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: Tests
     dependencies:
-      - package: CellarCueDomain
-        product: CellarCueDomain
+      - package: RacknoteDomain
+        product: RacknoteDomain
       - package: AppRuntimeCore
-      - target: CellarCue
+      - target: Racknote
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.racknote.tests
 
-  CellarCueUISmokeTests:
+  RacknoteUISmokeTests:
     type: bundle.ui-testing
     platform: iOS
     sources:
       - path: UITests
     dependencies:
-      - target: CellarCue
+      - target: Racknote
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.cellarcue.uitests
-        TEST_TARGET_NAME: CellarCue
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.racknote.uitests
+        TEST_TARGET_NAME: Racknote
         GENERATE_INFOPLIST_FILE: YES
 schemes:
-  CellarCue:
+  Racknote:
     build:
       targets:
-        CellarCue: all
-        CellarCueDomainTests: [test]
-        CellarCueUISmokeTests: [test]
+        Racknote: all
+        RacknoteDomainTests: [test]
+        RacknoteUISmokeTests: [test]
     test:
       targets:
-        - CellarCueDomainTests
-        - CellarCueUISmokeTests
+        - RacknoteDomainTests
+        - RacknoteUISmokeTests
     run:
       config: Debug

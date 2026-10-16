@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -33,7 +33,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(CellarCueTheme.muted)
+                        .foregroundStyle(RacknoteTheme.muted)
                 }
             }
 
@@ -45,11 +45,11 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                Text("Bundle \(CellarCueIdentity.developmentBundleId)")
+                Text("Bundle \(RacknoteIdentity.developmentBundleId)")
                     .font(.caption)
-                Text("Product dir \(CellarCueIdentity.productDir)")
+                Text("Product dir \(RacknoteIdentity.productDir)")
                     .font(.caption)
-                Text("Simulator prefer \(CellarCueDevicePolicy.preferredUDID)")
+                Text("Simulator prefer \(RacknoteDevicePolicy.preferredUDID)")
                     .font(.caption)
             }
         }

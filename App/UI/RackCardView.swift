@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct RackCardView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,12 +11,12 @@ struct RackCardView: View {
 
                 Text("Annotated rack card")
                     .font(.title2.bold())
-                    .foregroundStyle(CellarCueTheme.ink)
+                    .foregroundStyle(RacknoteTheme.ink)
 
                 ForEach(Array(appModel.draftCallouts.enumerated()), id: \.offset) { idx, callout in
                     HStack(alignment: .top) {
                         Text("•")
-                            .foregroundStyle(CellarCueTheme.accent)
+                            .foregroundStyle(RacknoteTheme.accent)
                         TextField("Callout", text: binding(at: idx))
                             .textFieldStyle(.roundedBorder)
                     }
@@ -25,12 +25,12 @@ struct RackCardView: View {
                 Button("Add callout") {
                     appModel.draftCallouts.append("New pull note")
                 }
-                .foregroundStyle(CellarCueTheme.primary)
+                .foregroundStyle(RacknoteTheme.primary)
 
                 HStack {
                     Button("Keep") { appModel.keepRackCard() }
                         .buttonStyle(.borderedProminent)
-                        .tint(CellarCueTheme.accent)
+                        .tint(RacknoteTheme.accent)
                     Button("Edit bin") { }
                         .buttonStyle(.bordered)
                     Button("Dismiss") { appModel.rejectRackCardDraft() }

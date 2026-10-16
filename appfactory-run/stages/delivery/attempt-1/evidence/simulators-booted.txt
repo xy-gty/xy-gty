@@ -1,5 +1,0 @@
-== Devices ==
--- iOS 26.4 --
--- iOS 26.5 --
-    iPhone 17 Pro (B14CC0EA-EA96-4E5A-B32A-3187A83346B7) (Booted) 
-    iPhone 17 Pro Max (315A7C2C-1EDE-4CFE-A504-188637441E40) (Booted) 
