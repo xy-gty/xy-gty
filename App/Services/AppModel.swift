@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import DuctCueDomain
+import AirspanDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -16,7 +16,7 @@ final class AppModel: ObservableObject {
     @Published var sizeDiagrams: [SizeDiagram] = []
     @Published var fieldStepPlans: [FieldStepPlan] = []
     @Published var selectedTab: AppTab = .jobs
-    @Published var path: [DuctCueRoute] = []
+    @Published var path: [AirspanRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -37,13 +37,13 @@ final class AppModel: ObservableObject {
     @Published var selectedRunID: UUID?
     @Published var selectedSessionID: UUID?
 
-    let storage: DuctCueStorageRoot
+    let storage: AirspanStorageRoot
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<DuctCueRoute>
+    let navigation: TypedNavigationStore<AirspanRoute>
     let fieldTTS = FieldStepsTTS()
 
     private var cachedAPIKey: String?
-    private let keychain = DuctCueConsentFacade.makeAPIKeyStore()
+    private let keychain = AirspanConsentFacade.makeAPIKeyStore()
 
     var cameraHardwareAvailable: Bool { CameraCaptureAvailability.cameraHardwareAvailable }
 
@@ -70,17 +70,17 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("DuctCue", isDirectory: true)
+            .appendingPathComponent("Airspan", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
-        storage = DuctCueStorageRoot(rootDirectory: root)
+        storage = AirspanStorageRoot(rootDirectory: root)
         try? FileManager.default.createDirectory(at: storage.photosDirectory, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(at: storage.diagramsDirectory, withIntermediateDirectories: true)
         try? FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true
         )
-        navigation = DuctCueNavigation.makeStore(directory: root)
-        consentGate = DuctCueConsentFacade.makeGate(storage: storage)
+        navigation = AirspanNavigation.makeStore(directory: root)
+        consentGate = AirspanConsentFacade.makeGate(storage: storage)
         consentGranted = consentGate.state.granted
         reload()
         Task { await self.loadAPIKeyFromKeychain() }
@@ -128,7 +128,7 @@ final class AppModel: ObservableObject {
         return key
     }
 
-    func push(_ route: DuctCueRoute) {
+    func push(_ route: AirspanRoute) {
         path.append(route)
         persistPath()
     }
@@ -422,13 +422,13 @@ final class AppModel: ObservableObject {
         let formulas = [
             "Q = V × A (CFM = FPM × ft²)",
             "Friction loss ≈ \(String(format: "%.2f", friction)) in.wg / 100 ft (rule-of-thumb demo)",
-            DuctCueIdentity.sizingFormulaDisclaimer
+            AirspanIdentity.sizingFormulaDisclaimer
         ]
         let text = """
         Local demo sizing (AI outbound off or unavailable).
         Target \(Int(cfm)) CFM through 10×8 → velocity ≈ \(Int(velocity)) FPM.
         Friction demo \(friction) in.wg/100 ft.
-        \(DuctCueIdentity.sizingFormulaDisclaimer)
+        \(AirspanIdentity.sizingFormulaDisclaimer)
         You asked: \(prompt)
         """
         let session = SizingSession(
@@ -513,7 +513,7 @@ final class AppModel: ObservableObject {
             "Cut \(chip) transition to match the run.",
             "Hang and seal joints; check for leaks.",
             "Verify airflow near \(Int(cfmKnob)) CFM target.",
-            DuctCueIdentity.sizingFormulaDisclaimer
+            AirspanIdentity.sizingFormulaDisclaimer
         ]
         let plan = FieldStepPlan(
             ductRunID: run?.id ?? selectedRunID,

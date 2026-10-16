@@ -1,5 +1,5 @@
 import Foundation
-import DuctCueDomain
+import AirspanDomain
 
 enum DeepSeekClientError: Error, LocalizedError {
     case notConfigured
@@ -57,7 +57,7 @@ final class DeepSeekClient {
         self.session = session
     }
 
-    /// Trailing-closure convenience matching ClosetCue / AppModel call sites.
+    /// Trailing-closure convenience matching Hemline / AppModel call sites.
     convenience init(apiKey: String, _ assertConsent: @escaping () throws -> Void) {
         self.init(apiKey: apiKey, assertConsent: assertConsent)
     }
@@ -70,9 +70,9 @@ final class DeepSeekClient {
         let photoData = try Data(contentsOf: photoURL)
         let b64 = photoData.base64EncodedString()
         let system = """
-        You analyze HVAC duct photos for DuctCue. Reply with JSON only:
+        You analyze HVAC duct photos for Airspan. Reply with JSON only:
         {"sizeTags":["…"],"diameterInches":number|null,"lengthFeet":number|null}
-        Use imperial inches/feet. \(DuctCueIdentity.sizingFormulaDisclaimer)
+        Use imperial inches/feet. \(AirspanIdentity.sizingFormulaDisclaimer)
         """
         let userText = """
         Recognize duct run sizes from this job-site photo. Allowed outbound field: duct_photo_bytes.
@@ -106,8 +106,8 @@ final class DeepSeekClient {
             ? "none"
             : priorFeedback.joined(separator: "\n")
         let system = """
-        You are DuctCue's HVAC duct sizing coach. English only. Cite formulas for friction, velocity, and CFM.
-        \(DuctCueIdentity.sizingFormulaDisclaimer)
+        You are Airspan's HVAC duct sizing coach. English only. Cite formulas for friction, velocity, and CFM.
+        \(AirspanIdentity.sizingFormulaDisclaimer)
         Reply with JSON only:
         {"text":"…","cfm":number|null,"friction":number|null,"velocity":number|null,"citedFormulas":["…"]}
         """

@@ -4,19 +4,19 @@ import PackageDescription
 /// Private preparation scaffold: shared domain + local AppRuntimeCore dependency.
 /// Formal Xcode host / visuals belong to later Builder; no UI targets here.
 let package = Package(
-    name: "DuctCueDomain",
+    name: "AirspanDomain",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "DuctCueDomain", targets: ["DuctCueDomain"])
+        .library(name: "AirspanDomain", targets: ["AirspanDomain"])
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore")
     ],
     targets: [
         .target(
-            name: "DuctCueDomain",
+            name: "AirspanDomain",
             dependencies: ["AppRuntimeCore"],
-            path: "DuctCueDomain"
+            path: "AirspanDomain"
         )
     ]
 )

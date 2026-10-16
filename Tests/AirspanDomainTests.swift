@@ -1,17 +1,17 @@
 import XCTest
-import DuctCueDomain
+import AirspanDomain
 import AppRuntimeCore
 
-final class DuctCueDomainTests: XCTestCase {
+final class AirspanDomainTests: XCTestCase {
     func testReviewControlLabels() {
-        XCTAssertEqual(DuctCueReviewControls.confirm, "Use")
-        XCTAssertEqual(DuctCueReviewControls.reject, "Not this")
-        XCTAssertEqual(DuctCueReviewControls.edit, "Edit sizes")
-        XCTAssertEqual(DuctCueReviewControls.SizeDiagramPreview.confirm, "Save diagram")
-        XCTAssertEqual(DuctCueReviewControls.SizeDiagramPreview.reject, "Discard")
-        XCTAssertEqual(DuctCueIdentity.aiProvider, "DeepSeek")
-        XCTAssertEqual(DuctCueIdentity.consentDisclosureVersion, "ductcue.consent.v1")
-        XCTAssertEqual(DuctCueIdentity.developmentBundleID, "com.lingguang.ductcue")
+        XCTAssertEqual(AirspanReviewControls.confirm, "Use")
+        XCTAssertEqual(AirspanReviewControls.reject, "Not this")
+        XCTAssertEqual(AirspanReviewControls.edit, "Edit sizes")
+        XCTAssertEqual(AirspanReviewControls.SizeDiagramPreview.confirm, "Save diagram")
+        XCTAssertEqual(AirspanReviewControls.SizeDiagramPreview.reject, "Discard")
+        XCTAssertEqual(AirspanIdentity.aiProvider, "DeepSeek")
+        XCTAssertEqual(AirspanIdentity.consentDisclosureVersion, "airspan.consent.v1")
+        XCTAssertEqual(AirspanIdentity.developmentBundleID, "com.lingguang.airspan")
     }
 
     func testNavigationCasesMatchContract() {
@@ -20,15 +20,15 @@ final class DuctCueDomainTests: XCTestCase {
             "CoachChat", "SizeDiagram", "FieldSteps", "SpeechCapture", "Settings",
             "LegalPages", "ConsentSheet"
         ]
-        XCTAssertEqual(DuctCueNavigation.allRoutes.map(\.rawValue), expected)
+        XCTAssertEqual(AirspanNavigation.allRoutes.map(\.rawValue), expected)
     }
 
     func testDuctRunPersistRejectDoesNotWriteAndRestart() throws {
         let root = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ductcue-test-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("airspan-test-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: root) }
-        let storage = DuctCueStorageRoot(rootDirectory: root)
+        let storage = AirspanStorageRoot(rootDirectory: root)
         try FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true
@@ -60,8 +60,8 @@ final class DuctCueDomainTests: XCTestCase {
     func testConsentGateBlocksUntilGrantAndAfterRevoke() throws {
         var disk: AIConsentGate.State?
         let gate = AIConsentGate(
-            provider: DuctCueIdentity.aiProvider,
-            disclosureVersion: DuctCueIdentity.consentDisclosureVersion,
+            provider: AirspanIdentity.aiProvider,
+            disclosureVersion: AirspanIdentity.consentDisclosureVersion,
             load: { disk },
             persist: { disk = $0 }
         )
@@ -77,17 +77,17 @@ final class DuctCueDomainTests: XCTestCase {
     }
 
     func testOutboundRequiresConsentAndKey() {
-        XCTAssertFalse(DuctCueOutboundAIBoundary.snapshot(consentGranted: false, apiKeyPresent: true).outboundEnabled)
-        XCTAssertTrue(DuctCueOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: true).outboundEnabled)
-        XCTAssertFalse(DuctCueOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: false).outboundEnabled)
+        XCTAssertFalse(AirspanOutboundAIBoundary.snapshot(consentGranted: false, apiKeyPresent: true).outboundEnabled)
+        XCTAssertTrue(AirspanOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: true).outboundEnabled)
+        XCTAssertFalse(AirspanOutboundAIBoundary.snapshot(consentGranted: true, apiKeyPresent: false).outboundEnabled)
     }
 
     func testSizeDiagramSaveAndDiscardSemantics() throws {
         let root = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ductcue-diagram-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("airspan-diagram-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: root) }
-        let storage = DuctCueStorageRoot(rootDirectory: root)
+        let storage = AirspanStorageRoot(rootDirectory: root)
         try FileManager.default.createDirectory(
             at: root.appendingPathComponent("domain", isDirectory: true),
             withIntermediateDirectories: true

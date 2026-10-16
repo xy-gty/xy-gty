@@ -10,13 +10,13 @@ struct JobCaptureView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Capture or import a duct run photo. You review tags before saving.")
                     .font(.subheadline)
-                    .foregroundStyle(DuctCueTheme.ink.opacity(0.85))
+                    .foregroundStyle(AirspanTheme.ink.opacity(0.85))
 
                 PhotosPicker(selection: $model.selectedPhotoItem, matching: .images) {
                     Label("Choose from library", systemImage: "photo.on.rectangle")
                         .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+                .buttonStyle(AirspanTheme.SecondaryButtonStyle())
                 .onChange(of: model.selectedPhotoItem) { _, _ in
                     model.handlePickedPhoto()
                 }
@@ -24,13 +24,13 @@ struct JobCaptureView: View {
                 Button("Take photo") {
                     model.beginTakePhoto()
                 }
-                .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+                .buttonStyle(AirspanTheme.PrimaryButtonStyle())
                 .accessibilityIdentifier("take_photo")
 
                 Button("Use demo job photo") {
                     model.importDemoJobPhoto()
                 }
-                .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+                .buttonStyle(AirspanTheme.SecondaryButtonStyle())
 
                 if model.recognitionBusy {
                     ProgressView("Reading duct run…")
@@ -39,7 +39,7 @@ struct JobCaptureView: View {
             }
             .padding()
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Job photo")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

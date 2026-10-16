@@ -23,7 +23,7 @@ public final class FieldStepsTTS {
         let line = plan.steps[index]
 #if canImport(AVFoundation)
         let utterance = AVSpeechUtterance(string: line)
-        utterance.voice = AVSpeechSynthesisVoice(language: DuctCueIdentity.uiLanguage)
+        utterance.voice = AVSpeechSynthesisVoice(language: AirspanIdentity.uiLanguage)
         synthesizer.speak(utterance)
 #else
         _ = line

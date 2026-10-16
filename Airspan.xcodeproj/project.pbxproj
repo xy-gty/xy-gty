@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033B25F8CF23256529F2BC7E /* DuctCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = C540E4408CCF98A7E35F75F4 /* DuctCueDomain */; };
+		033B25F8CF23256529F2BC7E /* AirspanDomain in Frameworks */ = {isa = PBXBuildFile; productRef = C540E4408CCF98A7E35F75F4 /* AirspanDomain */; };
 		0B0BDD73FD8B2833C367B9F7 /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C222864C17AAFEDC8C855 /* SpeechCaptureView.swift */; };
-		1F5032FD2E98761D0A82C839 /* DuctCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 153A2C3E0DAF81301A5A012B /* DuctCueDomain */; };
+		1F5032FD2E98761D0A82C839 /* AirspanDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 153A2C3E0DAF81301A5A012B /* AirspanDomain */; };
 		22E3567056F25FF3014C59E4 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */; };
 		32D72E4E594D1B433FE5727C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */; };
 		33246092A1FA7F34CF1ADD72 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = FCA0A9A47FA7BF8034B17A05 /* support.html */; };
 		44C05D008EE96A7C364AB8F0 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = F06C8AC5E508D616BC65BC6F /* privacy.html */; };
 		4F1DE999A053B3E546650CA5 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2B15AC065F5AAB7135A969CD /* AppRuntimeCore */; };
-		50ED9123983591EF2E611F7D /* DuctCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */; };
+		50ED9123983591EF2E611F7D /* AirspanDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253734F76B12D9F314A43A30 /* AirspanDomainTests.swift */; };
 		5D1300599C910485BCE9F3D1 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DD93EEC5CDF403A399B88 /* SpeechCaptureHost.swift */; };
 		5F4A5BECB89C97A8C980BC34 /* FieldStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */; };
 		82A70357B1254A165AEE0C15 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EC3993A670713D4FD4FFB4 /* AppModel.swift */; };
@@ -23,14 +23,14 @@
 		A6981327EB4BE81BF9DE1E7B /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFBB79CEFC259C57386721F /* CameraCapturePicker.swift */; };
 		A92DBC9FCAE588AFD9F35FC3 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB314EE0C70D9447C126D85 /* DeepSeekClient.swift */; };
 		AEA5B2DFC85E3C2AF704CAF0 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4437E9458D59A03339F0AD /* RootTabView.swift */; };
-		B2248028314C1E6D160CF716 /* DuctCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */; };
+		B2248028314C1E6D160CF716 /* AirspanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD14FDB75AD7C6B6BCAB504 /* AirspanApp.swift */; };
 		B9E7AA080C48F3317604CFF1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4B29C965D63299F0535FD1FA /* PrivacyInfo.xcprivacy */; };
 		BEB443ABE2CD80E1B230039A /* DuctRunReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */; };
 		C64FA831FE7D6D52B84FFE19 /* DuctRunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */; };
 		CAC5A760E1219B1F11BC845D /* deepseek-privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 38707393F7D5EBAB96D96087 /* deepseek-privacy.html */; };
 		D9863EE9D0AD1AEE3AA300FA /* JobCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650C196A575EF794C7651CA /* JobCaptureView.swift */; };
 		DC77E47310FC9018B2A3E4D5 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B9A18356128AC6FCAE43C /* LocalLegalWebView.swift */; };
-		E31D9028E19944C2F4561AD2 /* DuctCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A499063B019EBA951207F /* DuctCueTheme.swift */; };
+		E31D9028E19944C2F4561AD2 /* AirspanTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507A499063B019EBA951207F /* AirspanTheme.swift */; };
 		E9C999E693812F523FC3C281 /* SizeDiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0EBC6D62520E47897BEFC3 /* SizeDiagramView.swift */; };
 		EEBC616BFAD70FFEBE6716C2 /* JobsCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481B38176E79AB83A0165A0 /* JobsCanvasView.swift */; };
 		F1564DA19727181E700E1C9B /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C86C65AC36ECEDE1F2DCE33 /* CoachChatView.swift */; };
@@ -44,25 +44,25 @@
 			containerPortal = A5FEE0AE06687D34E1EA36E3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 84E60259812C1F38EEBEC0CA;
-			remoteInfo = DuctCue;
+			remoteInfo = Airspan;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		016C222864C17AAFEDC8C855 /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
 		15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctRunDetailView.swift; sourceTree = "<group>"; };
-		1717C35586EAF21AC2E95B89 /* DuctCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DuctCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DuctCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1717C35586EAF21AC2E95B89 /* Airspan.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Airspan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FF79B79B92EFD240A63518 /* AirspanDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AirspanDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251DD93EEC5CDF403A399B88 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
-		253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueDomainTests.swift; sourceTree = "<group>"; };
+		253734F76B12D9F314A43A30 /* AirspanDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirspanDomainTests.swift; sourceTree = "<group>"; };
 		38707393F7D5EBAB96D96087 /* deepseek-privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "deepseek-privacy.html"; sourceTree = "<group>"; };
 		4B29C965D63299F0535FD1FA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		507A499063B019EBA951207F /* DuctCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueTheme.swift; sourceTree = "<group>"; };
+		507A499063B019EBA951207F /* AirspanTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirspanTheme.swift; sourceTree = "<group>"; };
 		51EC3993A670713D4FD4FFB4 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		5481B38176E79AB83A0165A0 /* JobsCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCanvasView.swift; sourceTree = "<group>"; };
 		5537E444853B758C5E51DAED /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
 		6490BA0E135D20565A6BE6EC /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
-		69C627795431FA631D26D0E0 /* ductcue */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ductcue; path = .; sourceTree = SOURCE_ROOT; };
+		69C627795431FA631D26D0E0 /* airspan */ = {isa = PBXFileReference; lastKnownFileType = folder; name = airspan; path = .; sourceTree = SOURCE_ROOT; };
 		6C0EBC6D62520E47897BEFC3 /* SizeDiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeDiagramView.swift; sourceTree = "<group>"; };
 		8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACBA95DF38B72ADB0C49516 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctRunReviewView.swift; sourceTree = "<group>"; };
 		BAFBB79CEFC259C57386721F /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
 		C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStepsView.swift; sourceTree = "<group>"; };
-		DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuctCueApp.swift; sourceTree = "<group>"; };
+		DCD14FDB75AD7C6B6BCAB504 /* AirspanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirspanApp.swift; sourceTree = "<group>"; };
 		E09B9A18356128AC6FCAE43C /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
 		E485717001D9A6AA96B6225A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F06C8AC5E508D616BC65BC6F /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5032FD2E98761D0A82C839 /* DuctCueDomain in Frameworks */,
+				1F5032FD2E98761D0A82C839 /* AirspanDomain in Frameworks */,
 				22E3567056F25FF3014C59E4 /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1DE999A053B3E546650CA5 /* AppRuntimeCore in Frameworks */,
-				033B25F8CF23256529F2BC7E /* DuctCueDomain in Frameworks */,
+				033B25F8CF23256529F2BC7E /* AirspanDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5537E444853B758C5E51DAED /* AppRuntimeCore */,
-				69C627795431FA631D26D0E0 /* ductcue */,
+				69C627795431FA631D26D0E0 /* airspan */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 		41E2A7893D8AB13249D7CF9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1717C35586EAF21AC2E95B89 /* DuctCue.app */,
-				21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */,
+				1717C35586EAF21AC2E95B89 /* Airspan.app */,
+				21FF79B79B92EFD240A63518 /* AirspanDomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 		4B8A7D3222594B2E7822133E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				253734F76B12D9F314A43A30 /* DuctCueDomainTests.swift */,
+				253734F76B12D9F314A43A30 /* AirspanDomainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8B365D31E5DC82D4AC4870 /* Assets.xcassets */,
-				DCD14FDB75AD7C6B6BCAB504 /* DuctCueApp.swift */,
+				DCD14FDB75AD7C6B6BCAB504 /* AirspanApp.swift */,
 				E485717001D9A6AA96B6225A /* Info.plist */,
 				6C584A1FC09524F925B71C31 /* AI */,
 				0EB8E8FDD371A38F28F57167 /* Resources */,
@@ -178,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9C86C65AC36ECEDE1F2DCE33 /* CoachChatView.swift */,
-				507A499063B019EBA951207F /* DuctCueTheme.swift */,
+				507A499063B019EBA951207F /* AirspanTheme.swift */,
 				15458C836C2FC4DB9937A39B /* DuctRunDetailView.swift */,
 				B736FA317549B5619AD7B7F3 /* DuctRunReviewView.swift */,
 				C19EA450538B41ACBD72FDE0 /* FieldStepsView.swift */,
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5289676A5F4DE905F4419153 /* DuctCueDomainTests */ = {
+		5289676A5F4DE905F4419153 /* AirspanDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "DuctCueDomainTests" */;
+			buildConfigurationList = 4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "AirspanDomainTests" */;
 			buildPhases = (
 				09D0822170275D359282D3E8 /* Sources */,
 				765803EEA042951B5BD9D930 /* Frameworks */,
@@ -226,18 +226,18 @@
 			dependencies = (
 				ACED812B19232AA23FFEE545 /* PBXTargetDependency */,
 			);
-			name = DuctCueDomainTests;
+			name = AirspanDomainTests;
 			packageProductDependencies = (
-				153A2C3E0DAF81301A5A012B /* DuctCueDomain */,
+				153A2C3E0DAF81301A5A012B /* AirspanDomain */,
 				D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */,
 			);
-			productName = DuctCueDomainTests;
-			productReference = 21FF79B79B92EFD240A63518 /* DuctCueDomainTests.xctest */;
+			productName = AirspanDomainTests;
+			productReference = 21FF79B79B92EFD240A63518 /* AirspanDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		84E60259812C1F38EEBEC0CA /* DuctCue */ = {
+		84E60259812C1F38EEBEC0CA /* Airspan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "DuctCue" */;
+			buildConfigurationList = 4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "Airspan" */;
 			buildPhases = (
 				9A0FE8432E6BB8AF76FC7A15 /* Sources */,
 				3169D847CDC646AEF3564A3C /* Resources */,
@@ -247,13 +247,13 @@
 			);
 			dependencies = (
 			);
-			name = DuctCue;
+			name = Airspan;
 			packageProductDependencies = (
 				2B15AC065F5AAB7135A969CD /* AppRuntimeCore */,
-				C540E4408CCF98A7E35F75F4 /* DuctCueDomain */,
+				C540E4408CCF98A7E35F75F4 /* AirspanDomain */,
 			);
-			productName = DuctCue;
-			productReference = 1717C35586EAF21AC2E95B89 /* DuctCue.app */;
+			productName = Airspan;
+			productReference = 1717C35586EAF21AC2E95B89 /* Airspan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 				TargetAttributes = {
 				};
 			};
-			buildConfigurationList = B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "DuctCue" */;
+			buildConfigurationList = B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "Airspan" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -285,8 +285,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84E60259812C1F38EEBEC0CA /* DuctCue */,
-				5289676A5F4DE905F4419153 /* DuctCueDomainTests */,
+				84E60259812C1F38EEBEC0CA /* Airspan */,
+				5289676A5F4DE905F4419153 /* AirspanDomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ED9123983591EF2E611F7D /* DuctCueDomainTests.swift in Sources */,
+				50ED9123983591EF2E611F7D /* AirspanDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +325,8 @@
 				F1564DA19727181E700E1C9B /* CoachChatView.swift in Sources */,
 				A4CB0CDAEDDA634F7AB62E65 /* ConsentSheet.swift in Sources */,
 				A92DBC9FCAE588AFD9F35FC3 /* DeepSeekClient.swift in Sources */,
-				B2248028314C1E6D160CF716 /* DuctCueApp.swift in Sources */,
-				E31D9028E19944C2F4561AD2 /* DuctCueTheme.swift in Sources */,
+				B2248028314C1E6D160CF716 /* AirspanApp.swift in Sources */,
+				E31D9028E19944C2F4561AD2 /* AirspanTheme.swift in Sources */,
 				C64FA831FE7D6D52B84FFE19 /* DuctRunDetailView.swift in Sources */,
 				BEB443ABE2CD80E1B230039A /* DuctRunReviewView.swift in Sources */,
 				5F4A5BECB89C97A8C980BC34 /* FieldStepsView.swift in Sources */,
@@ -346,7 +346,7 @@
 /* Begin PBXTargetDependency section */
 		ACED812B19232AA23FFEE545 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84E60259812C1F38EEBEC0CA /* DuctCue */;
+			target = 84E60259812C1F38EEBEC0CA /* Airspan */;
 			targetProxy = 2658FB7BFB99CDE37C3DB163 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -361,10 +361,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.airspan.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuctCue.app/DuctCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airspan.app/Airspan";
 			};
 			name = Release;
 		};
@@ -502,10 +502,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.airspan.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuctCue.app/DuctCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airspan.app/Airspan";
 			};
 			name = Debug;
 		};
@@ -516,19 +516,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DuctCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "DuctCue photographs ducts and registers on site for run recognition you review before saving.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Airspan;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Airspan photographs ducts and registers on site for run recognition you review before saving.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Airspan uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Airspan imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Airspan uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue;
-				PRODUCT_NAME = DuctCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Airspan;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -541,19 +541,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DuctCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "DuctCue photographs ducts and registers on site for run recognition you review before saving.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_CFBundleDisplayName = Airspan;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Airspan photographs ducts and registers on site for run recognition you review before saving.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Airspan uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Airspan imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Airspan uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.ductcue;
-				PRODUCT_NAME = DuctCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Airspan;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -562,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "DuctCueDomainTests" */ = {
+		4188CDFAEE500AA1CC2A3B66 /* Build configuration list for PBXNativeTarget "AirspanDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55E21E6930EE550A1FAE5E39 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "DuctCue" */ = {
+		4F7A979662FA2B601484A58B /* Build configuration list for PBXNativeTarget "Airspan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC5F128CF2C938AEF62E7509 /* Debug */,
@@ -580,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "DuctCue" */ = {
+		B976F522755DC6AB918DAA16 /* Build configuration list for PBXProject "Airspan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A21D39A5F36F7DE76D176A5 /* Debug */,
@@ -603,17 +603,17 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		153A2C3E0DAF81301A5A012B /* DuctCueDomain */ = {
+		153A2C3E0DAF81301A5A012B /* AirspanDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DuctCueDomain;
+			productName = AirspanDomain;
 		};
 		2B15AC065F5AAB7135A969CD /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		C540E4408CCF98A7E35F75F4 /* DuctCueDomain */ = {
+		C540E4408CCF98A7E35F75F4 /* AirspanDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DuctCueDomain;
+			productName = AirspanDomain;
 		};
 		D7B6CB53DA1271877FC0D3B6 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

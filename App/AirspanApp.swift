@@ -1,14 +1,14 @@
 import SwiftUI
 
 @main
-struct DuctCueApp: App {
+struct AirspanApp: App {
     @StateObject private var appModel = AppModel()
 
     var body: some Scene {
         WindowGroup {
             RootTabView()
                 .environmentObject(appModel)
-                .tint(DuctCueTheme.accent)
+                .tint(AirspanTheme.accent)
         }
     }
 }

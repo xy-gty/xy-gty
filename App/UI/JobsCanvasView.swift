@@ -1,5 +1,5 @@
 import SwiftUI
-import DuctCueDomain
+import AirspanDomain
 
 struct JobsCanvasView: View {
     @EnvironmentObject private var model: AppModel
@@ -21,19 +21,19 @@ struct JobsCanvasView: View {
             }
             .padding()
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Jobs")
         .navigationBarTitleDisplayMode(.large)
     }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(DuctCueIdentity.appName)
+            Text(AirspanIdentity.appName)
                 .font(.largeTitle.bold())
-                .foregroundStyle(DuctCueTheme.primary)
+                .foregroundStyle(AirspanTheme.primary)
             Text("Isometric duct canvas · CFM knob · size chips")
                 .font(.subheadline)
-                .foregroundStyle(DuctCueTheme.ink.opacity(0.75))
+                .foregroundStyle(AirspanTheme.ink.opacity(0.75))
         }
     }
 
@@ -42,17 +42,17 @@ struct JobsCanvasView: View {
             HStack {
                 Text("CFM knob")
                     .font(.headline)
-                    .foregroundStyle(DuctCueTheme.ink)
+                    .foregroundStyle(AirspanTheme.ink)
                 Spacer()
                 Text("\(Int(model.cfmKnob)) CFM")
                     .font(.title3.monospacedDigit().weight(.semibold))
-                    .foregroundStyle(DuctCueTheme.accent)
+                    .foregroundStyle(AirspanTheme.accent)
             }
             Slider(value: $model.cfmKnob, in: 100...2000, step: 10)
-                .tint(DuctCueTheme.primary)
+                .tint(AirspanTheme.primary)
         }
         .padding()
-        .background(DuctCueTheme.cardBackground)
+        .background(AirspanTheme.cardBackground)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
     }
 
@@ -61,7 +61,7 @@ struct JobsCanvasView: View {
             HStack(spacing: 8) {
                 ForEach(model.sizeChips, id: \.self) { chip in
                     Button(chip) { highlightedChip = chip }
-                        .buttonStyle(DuctCueTheme.AccentChipStyle(selected: highlightedChip == chip))
+                        .buttonStyle(AirspanTheme.AccentChipStyle(selected: highlightedChip == chip))
                 }
             }
         }
@@ -72,13 +72,13 @@ struct JobsCanvasView: View {
             Button("Add job photo") {
                 model.push(.jobCapture)
             }
-            .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+            .buttonStyle(AirspanTheme.PrimaryButtonStyle())
             .accessibilityIdentifier("add_job_photo")
 
             Button("Ask coach") {
                 model.selectedTab = .coach
             }
-            .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+            .buttonStyle(AirspanTheme.SecondaryButtonStyle())
         }
     }
 
@@ -86,7 +86,7 @@ struct JobsCanvasView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Confirmed duct runs")
                 .font(.headline)
-                .foregroundStyle(DuctCueTheme.ink)
+                .foregroundStyle(AirspanTheme.ink)
             ForEach(model.ductRuns) { run in
                 Button {
                     model.selectedRunID = run.id
@@ -96,7 +96,7 @@ struct JobsCanvasView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(run.sizeTags.joined(separator: ", "))
                                 .font(.subheadline.weight(.semibold))
-                                .foregroundStyle(DuctCueTheme.ink)
+                                .foregroundStyle(AirspanTheme.ink)
                             if let feet = run.lengthFeet {
                                 Text("\(feet, specifier: "%.0f") ft · \(run.sourceKind.replacingOccurrences(of: "_", with: " "))")
                                     .font(.caption)
@@ -106,10 +106,10 @@ struct JobsCanvasView: View {
                         Spacer()
                         Image(systemName: "chevron.right")
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(DuctCueTheme.primary)
+                            .foregroundStyle(AirspanTheme.primary)
                     }
                     .padding()
-                    .background(DuctCueTheme.cardBackground)
+                    .background(AirspanTheme.cardBackground)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
                 .buttonStyle(.plain)
@@ -118,7 +118,7 @@ struct JobsCanvasView: View {
             Button("Add job photo") {
                 model.push(.jobCapture)
             }
-            .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+            .buttonStyle(AirspanTheme.PrimaryButtonStyle())
             .accessibilityIdentifier("add_job_photo")
         }
     }
@@ -127,6 +127,6 @@ struct JobsCanvasView: View {
         Button("Field steps") {
             model.openFieldSteps(run: model.selectedRun)
         }
-        .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+        .buttonStyle(AirspanTheme.SecondaryButtonStyle())
     }
 }

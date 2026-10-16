@@ -1,8 +1,8 @@
 import Foundation
 import AppRuntimeCore
 
-/// AIConsentGate seam: provider DeepSeek, disclosure ductcue.consent.v1; local + Keychain existence boundary.
-public enum DuctCueConsentFacade {
+/// AIConsentGate seam: provider DeepSeek, disclosure airspan.consent.v1; local + Keychain existence boundary.
+public enum AirspanConsentFacade {
     public static let outboundFieldAllowlist: [String] = [
         "chat_text",
         "airflow_numbers",
@@ -13,10 +13,10 @@ public enum DuctCueConsentFacade {
     ]
 
     @MainActor
-    public static func makeGate(storage: DuctCueStorageRoot) -> AIConsentGate {
+    public static func makeGate(storage: AirspanStorageRoot) -> AIConsentGate {
         AIConsentGate(
-            provider: DuctCueIdentity.aiProvider,
-            disclosureVersion: DuctCueIdentity.consentDisclosureVersion,
+            provider: AirspanIdentity.aiProvider,
+            disclosureVersion: AirspanIdentity.consentDisclosureVersion,
             load: {
                 guard let record = try storage.consentLocal.load() else { return nil }
                 return AIConsentGate.State(
@@ -43,8 +43,8 @@ public enum DuctCueConsentFacade {
 #if canImport(Security)
     public static func makeAPIKeyStore() -> KeychainCredentialStore {
         KeychainCredentialStore(
-            service: DuctCueIdentity.keychainService,
-            account: DuctCueIdentity.keychainAPIKeyAccount
+            service: AirspanIdentity.keychainService,
+            account: AirspanIdentity.keychainAPIKeyAccount
         )
     }
 

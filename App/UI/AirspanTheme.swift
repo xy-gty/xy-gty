@@ -1,9 +1,9 @@
 import SwiftUI
-import DuctCueDomain
+import AirspanDomain
 
-extension DuctCueRoute: Hashable {}
+extension AirspanRoute: Hashable {}
 
-enum DuctCueTheme {
+enum AirspanTheme {
     static let primary = Color(red: 14 / 255, green: 116 / 255, blue: 144 / 255)
     static let secondary = Color(red: 240 / 255, green: 249 / 255, blue: 255 / 255)
     static let accent = Color(red: 245 / 255, green: 158 / 255, blue: 11 / 255)
@@ -63,22 +63,22 @@ struct IsometricDuctCanvas: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(DuctCueTheme.secondary)
+                .fill(AirspanTheme.secondary)
             Canvas { context, size in
                 var path = Path()
                 path.move(to: CGPoint(x: size.width * 0.12, y: size.height * 0.72))
                 path.addLine(to: CGPoint(x: size.width * 0.38, y: size.height * 0.42))
                 path.addLine(to: CGPoint(x: size.width * 0.62, y: size.height * 0.48))
                 path.addLine(to: CGPoint(x: size.width * 0.82, y: size.height * 0.28))
-                context.stroke(path, with: .color(DuctCueTheme.canvasLine), lineWidth: lineWidth)
+                context.stroke(path, with: .color(AirspanTheme.canvasLine), lineWidth: lineWidth)
             }
             if let accentChip {
                 Text(accentChip)
                     .font(.caption.weight(.bold))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 6)
-                    .background(DuctCueTheme.accent.opacity(0.15))
-                    .foregroundStyle(DuctCueTheme.accent)
+                    .background(AirspanTheme.accent.opacity(0.15))
+                    .foregroundStyle(AirspanTheme.accent)
                     .clipShape(Capsule())
                     .padding(12)
             }

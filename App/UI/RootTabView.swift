@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 import WebKit
-import DuctCueDomain
+import AirspanDomain
 
 struct RootTabView: View {
     @EnvironmentObject private var model: AppModel
@@ -25,7 +25,7 @@ struct RootTabView: View {
                     .tabItem { Label("Settings", systemImage: "gearshape") }
                     .tag(AppModel.AppTab.settings)
             }
-            .navigationDestination(for: DuctCueRoute.self) { route in
+            .navigationDestination(for: AirspanRoute.self) { route in
                 switch route {
                 case .jobCapture:
                     JobCaptureView()
@@ -46,7 +46,7 @@ struct RootTabView: View {
                 }
             }
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .sheet(isPresented: $model.showConsent) {
             ConsentSheetView()
                 .presentationDetents([.medium, .large])
@@ -84,19 +84,19 @@ private struct ConsentSheetView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Allow DeepSeek coaching")
                         .font(.title2.bold())
-                        .foregroundStyle(DuctCueTheme.ink)
-                    Text("If you continue, DuctCue may send chat text, airflow numbers, duct photo bytes, duct run tags, job summary, and sizing context to \(DuctCueIdentity.aiProvider) for inference.")
-                        .foregroundStyle(DuctCueTheme.ink.opacity(0.85))
-                    Text("Disclosure: \(DuctCueIdentity.consentDisclosureVersion)")
+                        .foregroundStyle(AirspanTheme.ink)
+                    Text("If you continue, Airspan may send chat text, airflow numbers, duct photo bytes, duct run tags, job summary, and sizing context to \(AirspanIdentity.aiProvider) for inference.")
+                        .foregroundStyle(AirspanTheme.ink.opacity(0.85))
+                    Text("Disclosure: \(AirspanIdentity.consentDisclosureVersion)")
                         .font(.caption)
                         .foregroundStyle(.secondary)
-                    Text(DuctCueIdentity.sizingFormulaDisclaimer)
+                    Text(AirspanIdentity.sizingFormulaDisclaimer)
                         .font(.footnote)
-                        .foregroundStyle(DuctCueTheme.primary)
+                        .foregroundStyle(AirspanTheme.primary)
                 }
                 .padding()
             }
-            .background(DuctCueTheme.secondary)
+            .background(AirspanTheme.secondary)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Not now") { model.declineConsentFromSheet(); dismiss() }
@@ -130,7 +130,7 @@ private struct DiagramsTabView: View {
                 }
             }
             .navigationTitle("Diagrams")
-            .background(DuctCueTheme.secondary.ignoresSafeArea())
+            .background(AirspanTheme.secondary.ignoresSafeArea())
         }
     }
 }
@@ -147,7 +147,7 @@ private struct DiagramRowView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Size diagram")
                     .font(.headline)
-                    .foregroundStyle(DuctCueTheme.ink)
+                    .foregroundStyle(AirspanTheme.ink)
                 if let saved = diagram.savedAt {
                     Text(saved.formatted(date: .abbreviated, time: .shortened))
                         .font(.caption)
@@ -194,19 +194,19 @@ private struct SettingsTabView: View {
                     }
                 }
                 Section("Legal") {
-                    NavigationLink(value: DuctCueRoute.legalPages) {
+                    NavigationLink(value: AirspanRoute.legalPages) {
                         Text("Privacy, terms & support")
                     }
                 }
                 Section("About") {
-                    LabeledContent("App", value: DuctCueIdentity.appName)
-                    Text(DuctCueIdentity.sizingFormulaDisclaimer)
+                    LabeledContent("App", value: AirspanIdentity.appName)
+                    Text(AirspanIdentity.sizingFormulaDisclaimer)
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
             }
             .navigationTitle("Settings")
-            .navigationDestination(for: DuctCueRoute.self) { route in
+            .navigationDestination(for: AirspanRoute.self) { route in
                 if route == .legalPages {
                     LegalPagesHubView()
                 } else {

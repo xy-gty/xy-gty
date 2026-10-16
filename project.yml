@@ -1,4 +1,4 @@
-name: DuctCue
+name: Airspan
 options:
   deploymentTarget:
     iOS: "17.0"
@@ -6,7 +6,7 @@ options:
 packages:
   AppRuntimeCore:
     path: Vendor/AppRuntimeCore
-  DuctCueDomain:
+  AirspanDomain:
     path: .
 settings:
   base:
@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     GENERATE_INFOPLIST_FILE: YES
 targets:
-  DuctCue:
+  Airspan:
     type: application
     platform: iOS
     sources:
@@ -26,42 +26,43 @@ targets:
       - path: App/Info.plist
     dependencies:
       - package: AppRuntimeCore
-      - package: DuctCueDomain
-        product: DuctCueDomain
+      - package: AirspanDomain
+        product: AirspanDomain
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.ductcue
-        PRODUCT_NAME: DuctCue
-        INFOPLIST_KEY_CFBundleDisplayName: DuctCue
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: DuctCue imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.
-        INFOPLIST_KEY_NSCameraUsageDescription: DuctCue photographs ducts and registers on site for run recognition you review before saving.
-        INFOPLIST_KEY_NSMicrophoneUsageDescription: DuctCue uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.
-        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: DuctCue uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Airspan
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Airspan
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Airspan imports as-built drawings and job photos so you can read duct dimensions and review runs before saving.
+        INFOPLIST_KEY_NSCameraUsageDescription: Airspan photographs ducts and registers on site for run recognition you review before saving.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Airspan uses the microphone so you can ask airflow questions hands-free that fill coach chat before you send.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Airspan uses on-device speech recognition to turn spoken airflow numbers into editable coach chat text you review before sending.
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
-  DuctCueDomainTests:
+  AirspanDomainTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: Tests
     dependencies:
-      - package: DuctCueDomain
-        product: DuctCueDomain
+      - package: AirspanDomain
+        product: AirspanDomain
       - package: AppRuntimeCore
-      - target: DuctCue
+      - target: Airspan
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.ductcue.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.airspan.tests
 schemes:
-  DuctCue:
+  Airspan:
     build:
       targets:
-        DuctCue: all
-        DuctCueDomainTests: [test]
+        Airspan: all
+        AirspanDomainTests: [test]
     test:
       targets:
-        - DuctCueDomainTests
+        - AirspanDomainTests
     run:
       config: Debug

@@ -2,7 +2,7 @@ import Foundation
 import AppRuntimeCore
 
 /// Caller-owned AtomicCodableStore facades for frozen entities. Ordinary saves never replace corrupt bytes.
-public final class DuctCueStorageRoot: @unchecked Sendable {
+public final class AirspanStorageRoot: @unchecked Sendable {
     public let rootDirectory: URL
     public let jobSites: AtomicCodableStore<JobSiteCatalog>
     public let ductRunDrafts: AtomicCodableStore<DuctRunDraftCatalog>

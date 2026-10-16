@@ -3,12 +3,12 @@ import AppRuntimeCore
 
 /// PhotoImportSession + CameraCapture wiring: product owns destination bytes under local photos/.
 @MainActor
-public enum DuctCuePhotoImportFacade {
+public enum AirspanPhotoImportFacade {
     public static let cameraSourceKind = "camera"
     public static let librarySourceKind = "photo_library"
 
     public static func makeSession(
-        storage: DuctCueStorageRoot,
+        storage: AirspanStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
         let destination = storage.photosDirectory.appendingPathComponent(fileName, isDirectory: false)
@@ -17,7 +17,7 @@ public enum DuctCuePhotoImportFacade {
     }
 
     public static func recordImportedDraft(
-        storage: DuctCueStorageRoot,
+        storage: AirspanStorageRoot,
         destination: URL,
         jobSiteID: UUID? = nil,
         sourceKind: String = "photo_library"
@@ -34,7 +34,7 @@ public enum DuctCuePhotoImportFacade {
     }
 
     public static func confirmDraft(
-        storage: DuctCueStorageRoot,
+        storage: AirspanStorageRoot,
         draft: DuctRunDraft,
         sizeTags: [String]? = nil,
         diameterInches: Double? = nil,
@@ -64,21 +64,21 @@ public enum DuctCuePhotoImportFacade {
 /// CameraCapture seam: same destination ownership as library import; host AVCapture wiring is Builder's.
 @MainActor
 public enum CameraCapture {
-    public static let sourceKind = DuctCuePhotoImportFacade.cameraSourceKind
+    public static let sourceKind = AirspanPhotoImportFacade.cameraSourceKind
 
     public static func makeCaptureDestination(
-        storage: DuctCueStorageRoot,
+        storage: AirspanStorageRoot,
         fileName: String = UUID().uuidString + ".jpg"
     ) -> (session: PhotoImportSession, destination: URL) {
-        DuctCuePhotoImportFacade.makeSession(storage: storage, fileName: fileName)
+        AirspanPhotoImportFacade.makeSession(storage: storage, fileName: fileName)
     }
 
     public static func recordCapturedDraft(
-        storage: DuctCueStorageRoot,
+        storage: AirspanStorageRoot,
         destination: URL,
         jobSiteID: UUID? = nil
     ) throws -> DuctRunDraft {
-        try DuctCuePhotoImportFacade.recordImportedDraft(
+        try AirspanPhotoImportFacade.recordImportedDraft(
             storage: storage,
             destination: destination,
             jobSiteID: jobSiteID,

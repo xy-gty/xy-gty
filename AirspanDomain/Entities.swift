@@ -188,8 +188,8 @@ public struct AIConsentRecord: Codable, Equatable, Sendable {
     public var updatedAt: Date
 
     public init(
-        provider: String = DuctCueIdentity.aiProvider,
-        disclosureVersion: String = DuctCueIdentity.consentDisclosureVersion,
+        provider: String = AirspanIdentity.aiProvider,
+        disclosureVersion: String = AirspanIdentity.consentDisclosureVersion,
         generation: UInt64 = 0,
         granted: Bool = false,
         updatedAt: Date = Date()

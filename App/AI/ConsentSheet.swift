@@ -1,12 +1,12 @@
 import SwiftUI
-import DuctCueDomain
+import AirspanDomain
 
-/// First-use DeepSeek data-sharing consent (`ductcue.consent.v1`).
+/// First-use DeepSeek data-sharing consent (`airspan.consent.v1`).
 struct ConsentSheet: View {
     @EnvironmentObject private var model: AppModel
     @State private var showDeepSeekPolicy = false
 
-    private let outboundFields = DuctCueConsentFacade.outboundFieldAllowlist
+    private let outboundFields = AirspanConsentFacade.outboundFieldAllowlist
 
     var body: some View {
         NavigationStack {
@@ -32,14 +32,14 @@ struct ConsentSheet: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Share with \(DuctCueIdentity.aiProvider)")
+            Text("Share with \(AirspanIdentity.aiProvider)")
                 .font(.title2.bold())
                 .foregroundStyle(Color(red: 0.05, green: 0.45, blue: 0.56))
-            Text("Disclosure \(DuctCueIdentity.consentDisclosureVersion)")
+            Text("Disclosure \(AirspanIdentity.consentDisclosureVersion)")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
             Text(
-                "DuctCue sends the fields below to DeepSeek for duct photo recognition and sizing coach replies. " +
+                "Airspan sends the fields below to DeepSeek for duct photo recognition and sizing coach replies. " +
                     "Declining keeps local jobs, diagrams, and formula demos on this device."
             )
             .font(.body)

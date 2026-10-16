@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import DuctCueDomain
+import AirspanDomain
 
 struct DuctRunDetailView: View {
     @EnvironmentObject private var model: AppModel
@@ -15,7 +15,7 @@ struct DuctRunDetailView: View {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(run.sizeTags.joined(separator: ", "))
                             .font(.title2.bold())
-                            .foregroundStyle(DuctCueTheme.ink)
+                            .foregroundStyle(AirspanTheme.ink)
                         if let feet = run.lengthFeet {
                             Text("Length \(feet, specifier: "%.0f") ft")
                                 .foregroundStyle(.secondary)
@@ -31,7 +31,7 @@ struct DuctRunDetailView: View {
                 ContentUnavailableView("Run not found", systemImage: "wind")
             }
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Duct run")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -56,18 +56,18 @@ struct DuctRunDetailView: View {
                 model.selectedRunID = run.id
                 model.selectedTab = .coach
             }
-            .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+            .buttonStyle(AirspanTheme.PrimaryButtonStyle())
 
             Button("Make size diagram") {
                 model.selectedRunID = run.id
                 model.makeSizeDiagram()
             }
-            .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+            .buttonStyle(AirspanTheme.SecondaryButtonStyle())
 
             Button("Field steps") {
                 model.openFieldSteps(run: run)
             }
-            .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+            .buttonStyle(AirspanTheme.SecondaryButtonStyle())
         }
     }
 }

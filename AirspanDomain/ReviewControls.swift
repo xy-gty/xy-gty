@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen review_controls / interface confirm-reject-edit labels (en-US UI).
-public enum DuctCueReviewControls {
+public enum AirspanReviewControls {
     public static let confirm = "Use"
     public static let reject = "Not this"
     public static let edit = "Edit sizes"
@@ -9,14 +9,14 @@ public enum DuctCueReviewControls {
     public static let diagramReject = "Discard"
 
     public enum DuctRunReviewBar {
-        public static let confirm = DuctCueReviewControls.confirm
-        public static let reject = DuctCueReviewControls.reject
-        public static let edit = DuctCueReviewControls.edit
+        public static let confirm = AirspanReviewControls.confirm
+        public static let reject = AirspanReviewControls.reject
+        public static let edit = AirspanReviewControls.edit
     }
 
     public enum SizeDiagramPreview {
-        public static let confirm = DuctCueReviewControls.diagramConfirm
-        public static let reject = DuctCueReviewControls.diagramReject
+        public static let confirm = AirspanReviewControls.diagramConfirm
+        public static let reject = AirspanReviewControls.diagramReject
     }
 
     public enum FieldStepsPlayer {

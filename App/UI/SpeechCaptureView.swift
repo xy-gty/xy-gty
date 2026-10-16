@@ -8,17 +8,17 @@ struct SpeechCaptureView: View {
             Spacer()
             Image(systemName: model.speechHost.isListening ? "waveform.circle.fill" : "mic.circle")
                 .font(.system(size: 72))
-                .foregroundStyle(DuctCueTheme.primary)
+                .foregroundStyle(AirspanTheme.primary)
                 .symbolEffect(.pulse, isActive: model.speechHost.isListening)
 
             Text(model.speechHost.isListening ? "Listening…" : "Ready to listen")
                 .font(.title2.bold())
-                .foregroundStyle(DuctCueTheme.ink)
+                .foregroundStyle(AirspanTheme.ink)
 
             Text(model.speechHost.partialTranscript.isEmpty ? "Speak airflow numbers for coach chat." : model.speechHost.partialTranscript)
                 .font(.body)
                 .multilineTextAlignment(.center)
-                .foregroundStyle(DuctCueTheme.ink.opacity(0.85))
+                .foregroundStyle(AirspanTheme.ink.opacity(0.85))
                 .padding(.horizontal)
 
             if let error = model.speechHost.lastError {
@@ -34,11 +34,11 @@ struct SpeechCaptureView: View {
             Button("Stop & use transcript") {
                 model.stopMicAndFillChat()
             }
-            .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+            .buttonStyle(AirspanTheme.PrimaryButtonStyle())
             .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Speech")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {

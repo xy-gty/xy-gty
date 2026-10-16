@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import DuctCueDomain
+import AirspanDomain
 
 struct DuctRunReviewView: View {
     @EnvironmentObject private var model: AppModel
@@ -22,7 +22,7 @@ struct DuctRunReviewView: View {
             }
             .padding()
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Review run")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -48,7 +48,7 @@ struct DuctRunReviewView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Size tags")
                 .font(.headline)
-                .foregroundStyle(DuctCueTheme.ink)
+                .foregroundStyle(AirspanTheme.ink)
             TextField("e.g. 10×8, 8\" round", text: $model.sizeEditBuffer, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
                 .lineLimit(2...4)
@@ -57,21 +57,21 @@ struct DuctRunReviewView: View {
 
     private var reviewButtons: some View {
         VStack(spacing: 10) {
-            Button(DuctCueReviewControls.confirm) {
+            Button(AirspanReviewControls.confirm) {
                 model.useDraft()
             }
-            .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+            .buttonStyle(AirspanTheme.PrimaryButtonStyle())
 
-            Button(DuctCueReviewControls.reject) {
+            Button(AirspanReviewControls.reject) {
                 model.rejectDraft()
             }
-            .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+            .buttonStyle(AirspanTheme.SecondaryButtonStyle())
 
-            Button(DuctCueReviewControls.edit) {
+            Button(AirspanReviewControls.edit) {
                 model.beginEditSizes()
             }
             .font(.subheadline.weight(.semibold))
-            .foregroundStyle(DuctCueTheme.accent)
+            .foregroundStyle(AirspanTheme.accent)
         }
     }
 }

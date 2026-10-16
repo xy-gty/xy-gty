@@ -1,5 +1,5 @@
 import SwiftUI
-import DuctCueDomain
+import AirspanDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var model: AppModel
@@ -10,7 +10,7 @@ struct SettingsPrivacyView: View {
             Section {
                 Toggle(isOn: aiSharingBinding) {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Share data with \(DuctCueIdentity.aiProvider)")
+                        Text("Share data with \(AirspanIdentity.aiProvider)")
                         Text("Off stops all outbound AI requests immediately.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -24,20 +24,20 @@ struct SettingsPrivacyView: View {
             } header: {
                 Text("AI sharing")
             } footer: {
-                Text("Disclosure \(DuctCueIdentity.consentDisclosureVersion). Fields: \(DuctCueConsentFacade.outboundFieldAllowlist.joined(separator: ", ")).")
+                Text("Disclosure \(AirspanIdentity.consentDisclosureVersion). Fields: \(AirspanConsentFacade.outboundFieldAllowlist.joined(separator: ", ")).")
             }
 
             Section("Legal & support") {
                 legalRow("Privacy Policy", page: .privacy)
                 legalRow("Terms of Use", page: .terms)
                 legalRow("Support", page: .support)
-                legalRow("\(DuctCueIdentity.aiProvider) provider policy", page: .deepseekPrivacy)
+                legalRow("\(AirspanIdentity.aiProvider) provider policy", page: .deepseekPrivacy)
             }
 
             Section("External links (not configured)") {
-                gapRow("Privacy URL", gap: DuctCueOutboundAIBoundary.privacyURLGap)
-                gapRow("Terms URL", gap: DuctCueOutboundAIBoundary.termsURLGap)
-                gapRow("Support URL", gap: DuctCueOutboundAIBoundary.supportURLGap)
+                gapRow("Privacy URL", gap: AirspanOutboundAIBoundary.privacyURLGap)
+                gapRow("Terms URL", gap: AirspanOutboundAIBoundary.termsURLGap)
+                gapRow("Support URL", gap: AirspanOutboundAIBoundary.supportURLGap)
             }
         }
         .navigationTitle("Privacy & AI")

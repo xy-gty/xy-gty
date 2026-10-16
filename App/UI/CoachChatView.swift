@@ -1,6 +1,6 @@
 import SwiftUI
 import AppRuntimeCore
-import DuctCueDomain
+import AirspanDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var model: AppModel
@@ -12,16 +12,16 @@ struct CoachChatView: View {
                 if let reason = model.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(DuctCueTheme.ink.opacity(0.8))
+                        .foregroundStyle(AirspanTheme.ink.opacity(0.8))
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(DuctCueTheme.accent.opacity(0.12))
+                        .background(AirspanTheme.accent.opacity(0.12))
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
                 if let run = model.selectedRun {
                     Text("Context: \(run.sizeTags.joined(separator: ", "))")
                         .font(.caption.weight(.semibold))
-                        .foregroundStyle(DuctCueTheme.primary)
+                        .foregroundStyle(AirspanTheme.primary)
                 }
                 messagesList
             }
@@ -29,7 +29,7 @@ struct CoachChatView: View {
         } actions: {
             composerBar
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Coach")
         .navigationBarTitleDisplayMode(.large)
     }
@@ -52,7 +52,7 @@ struct CoachChatView: View {
             HStack {
                 Text("You")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(DuctCueTheme.primary)
+                    .foregroundStyle(AirspanTheme.primary)
                 Spacer()
                 Text(session.createdAt.formatted(date: .omitted, time: .shortened))
                     .font(.caption2)
@@ -60,14 +60,14 @@ struct CoachChatView: View {
             }
             Text(session.promptText)
                 .font(.body)
-                .foregroundStyle(DuctCueTheme.ink)
+                .foregroundStyle(AirspanTheme.ink)
 
             Text("Coach")
                 .font(.caption.weight(.bold))
-                .foregroundStyle(DuctCueTheme.accent)
+                .foregroundStyle(AirspanTheme.accent)
             Text(session.responseText)
                 .font(.body)
-                .foregroundStyle(DuctCueTheme.ink)
+                .foregroundStyle(AirspanTheme.ink)
 
             if !session.citedFormulas.isEmpty {
                 VStack(alignment: .leading, spacing: 6) {
@@ -78,23 +78,23 @@ struct CoachChatView: View {
                             .font(.caption)
                             .padding(8)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(DuctCueTheme.secondary)
+                            .background(AirspanTheme.secondary)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 8)
-                                    .stroke(DuctCueTheme.primary.opacity(0.25), lineWidth: 1)
+                                    .stroke(AirspanTheme.primary.opacity(0.25), lineWidth: 1)
                             )
                     }
                 }
             }
 
             if session.includesSizingDisclaimer {
-                Text(DuctCueIdentity.sizingFormulaDisclaimer)
+                Text(AirspanIdentity.sizingFormulaDisclaimer)
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }
         }
         .padding()
-        .background(DuctCueTheme.cardBackground)
+        .background(AirspanTheme.cardBackground)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
     }
 
@@ -109,9 +109,9 @@ struct CoachChatView: View {
                     model.startMicIntoChat()
                 } label: {
                     Image(systemName: "mic.fill")
-                        .foregroundStyle(DuctCueTheme.primary)
+                        .foregroundStyle(AirspanTheme.primary)
                         .padding(10)
-                        .background(DuctCueTheme.secondary)
+                        .background(AirspanTheme.secondary)
                         .clipShape(Circle())
                 }
                 .accessibilityLabel("Microphone")
@@ -121,7 +121,7 @@ struct CoachChatView: View {
                     model.makeSizeDiagram()
                 }
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(DuctCueTheme.primary)
+                .foregroundStyle(AirspanTheme.primary)
 
                 Spacer()
 
@@ -132,7 +132,7 @@ struct CoachChatView: View {
                     model.sendCoachChatLocalDemoIfNeeded()
                 }
                 .font(.headline)
-                .foregroundStyle(DuctCueTheme.primary)
+                .foregroundStyle(AirspanTheme.primary)
                 .disabled(model.chatText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.chatBusy)
             }
         }

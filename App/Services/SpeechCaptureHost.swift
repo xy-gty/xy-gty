@@ -1,7 +1,7 @@
 import Foundation
 import Speech
 import AVFoundation
-import DuctCueDomain
+import AirspanDomain
 
 /// On-device speech recognition into CoachChat. Does not outbound-send audio.
 @MainActor

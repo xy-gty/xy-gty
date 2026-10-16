@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import DuctCueDomain
+import AirspanDomain
 
 struct SizeDiagramView: View {
     @EnvironmentObject private var model: AppModel
@@ -14,20 +14,20 @@ struct SizeDiagramView: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                     VStack(spacing: 10) {
-                        Button(DuctCueReviewControls.SizeDiagramPreview.confirm) {
+                        Button(AirspanReviewControls.SizeDiagramPreview.confirm) {
                             model.savePendingDiagram()
                         }
-                        .buttonStyle(DuctCueTheme.PrimaryButtonStyle())
+                        .buttonStyle(AirspanTheme.PrimaryButtonStyle())
 
-                        Button(DuctCueReviewControls.SizeDiagramPreview.reject) {
+                        Button(AirspanReviewControls.SizeDiagramPreview.reject) {
                             model.discardPendingDiagram()
                         }
-                        .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+                        .buttonStyle(AirspanTheme.SecondaryButtonStyle())
 
                         Button("Field steps") {
                             model.openFieldSteps(for: diagram)
                         }
-                        .buttonStyle(DuctCueTheme.SecondaryButtonStyle())
+                        .buttonStyle(AirspanTheme.SecondaryButtonStyle())
                     }
                 } else {
                     ContentUnavailableView(
@@ -38,7 +38,7 @@ struct SizeDiagramView: View {
             }
             .padding()
         }
-        .background(DuctCueTheme.secondary.ignoresSafeArea())
+        .background(AirspanTheme.secondary.ignoresSafeArea())
         .navigationTitle("Size diagram")
         .navigationBarTitleDisplayMode(.inline)
     }
