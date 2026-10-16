@@ -1,8 +1,0 @@
-SporeCue delivery dispatch `5e344109…` finished **ready**.
-
-- Launch SHA verified; accept tip `953628045629…` + Option A known_issues unchanged  
-- Pushed `git@github.com:xy-gty/xy-gty.git` → `sporecue/kf-20261015T174239Z-859f7eed` (tip match)  
-- `product_dir: sporecue/` (symlink → product); Pro Max left Booted  
-- Feishu CONTROLLER_DELIVERY skip (`record_id` n/a, blocker=false)  
-- MAP: `stages/delivery/attempt-1/MAP.md` · finish receipt sha `a2bd0bdf…`  
-- Formal `delivered` is still for controller complete/status readback

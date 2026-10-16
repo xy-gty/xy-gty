@@ -1,5 +1,5 @@
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct VoiceNoteView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -12,24 +12,24 @@ struct VoiceNoteView: View {
 
                 Text("Hands-free field note")
                     .font(.title2.bold())
-                    .foregroundStyle(SporeCueTheme.ink)
+                    .foregroundStyle(GillnoteTheme.ink)
 
                 Text("Record while holding a knife or basket. Notes attach to the active find.")
                     .font(.subheadline)
-                    .foregroundStyle(SporeCueTheme.muted)
+                    .foregroundStyle(GillnoteTheme.muted)
                     .multilineTextAlignment(.center)
 
                 if appModel.voiceRecorder.isRecording {
                     Image(systemName: "waveform.circle.fill")
                         .font(.system(size: 72))
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                     Text("Recording…")
                         .font(.headline)
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                 } else {
                     Image(systemName: "mic.circle")
                         .font(.system(size: 72))
-                        .foregroundStyle(SporeCueTheme.accent)
+                        .foregroundStyle(GillnoteTheme.accent)
                 }
 
                 if let err = appModel.voiceRecorder.lastError {
@@ -43,13 +43,13 @@ struct VoiceNoteView: View {
                             dismiss()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(SporeCueTheme.primary)
+                        .tint(GillnoteTheme.primary)
                     } else {
                         Button("Start") {
                             appModel.startVoiceNote()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(SporeCueTheme.accent)
+                        .tint(GillnoteTheme.accent)
                     }
                     Button("Close") { dismiss() }
                         .buttonStyle(.bordered)

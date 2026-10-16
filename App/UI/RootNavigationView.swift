@@ -1,4 +1,4 @@
-import SporeCueDomain
+import GillnoteDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             FieldHomeView()
-                .navigationDestination(for: SporeCueRoute.self) { route in
+                .navigationDestination(for: GillnoteRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -33,7 +33,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: SporeCueRoute) -> some View {
+    private func destination(for route: GillnoteRoute) -> some View {
         switch route {
         case .fieldHome:
             FieldHomeView()

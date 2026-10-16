@@ -1,6 +1,6 @@
 import PhotosUI
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct FieldHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,15 +8,15 @@ struct FieldHomeView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("SporeCue")
+                Text("Gillnote")
                     .font(.system(size: 26, weight: .bold, design: .rounded))
-                    .foregroundStyle(SporeCueTheme.primary)
+                    .foregroundStyle(GillnoteTheme.primary)
                 Spacer()
                 Button {
                     appModel.push(.settings)
                 } label: {
                     Image(systemName: "gearshape.fill")
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                 }
                 .accessibilityLabel("Settings")
             }
@@ -53,7 +53,7 @@ struct FieldHomeView: View {
                     if !appModel.state.sessions.isEmpty {
                         Text("Recent finds")
                             .font(.headline)
-                            .foregroundStyle(SporeCueTheme.ink)
+                            .foregroundStyle(GillnoteTheme.ink)
                         ForEach(appModel.state.sessions.prefix(6), id: \.id) { session in
                             Button {
                                 appModel.activeSessionId = session.id
@@ -63,19 +63,19 @@ struct FieldHomeView: View {
                                     VStack(alignment: .leading) {
                                         Text(session.subject.capitalized + " · " + session.source)
                                             .font(.subheadline.weight(.semibold))
-                                            .foregroundStyle(SporeCueTheme.ink)
+                                            .foregroundStyle(GillnoteTheme.ink)
                                         Text(session.status)
                                             .font(.caption)
-                                            .foregroundStyle(SporeCueTheme.muted)
+                                            .foregroundStyle(GillnoteTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(SporeCueTheme.accent)
+                                        .foregroundStyle(GillnoteTheme.accent)
                                 }
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(SporeCueTheme.stackSlot)
+                                        .fill(GillnoteTheme.stackSlot)
                                 )
                             }
                             .buttonStyle(.plain)
@@ -106,14 +106,14 @@ struct FieldHomeView: View {
                         .background(
                             Capsule().fill(
                                 appModel.captureSubject == subject
-                                    ? SporeCueTheme.accent
-                                    : SporeCueTheme.barFace
+                                    ? GillnoteTheme.accent
+                                    : GillnoteTheme.barFace
                             )
                         )
                         .foregroundStyle(
                             appModel.captureSubject == subject
                                 ? Color.white
-                                : SporeCueTheme.primary
+                                : GillnoteTheme.primary
                         )
                 }
                 .buttonStyle(.plain)
@@ -133,7 +133,7 @@ struct FieldHomeView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
-                        .background(RoundedRectangle(cornerRadius: 16).fill(SporeCueTheme.accent))
+                        .background(RoundedRectangle(cornerRadius: 16).fill(GillnoteTheme.accent))
                         .foregroundStyle(.white)
                 }
                 .accessibilityIdentifier("ShootButton")
@@ -145,9 +145,9 @@ struct FieldHomeView: View {
                         .padding(.vertical, 14)
                         .background(
                             RoundedRectangle(cornerRadius: 16)
-                                .stroke(SporeCueTheme.primary, lineWidth: 2)
+                                .stroke(GillnoteTheme.primary, lineWidth: 2)
                         )
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                         .contentShape(Rectangle())
                 }
                 .accessibilityLabel("Import")
@@ -169,7 +169,7 @@ struct FieldHomeView: View {
                 } label: {
                     Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "mic.circle.fill")
                         .font(.title2)
-                        .foregroundStyle(SporeCueTheme.accent)
+                        .foregroundStyle(GillnoteTheme.accent)
                 }
                 .accessibilityLabel("Speech question")
 
@@ -178,13 +178,13 @@ struct FieldHomeView: View {
                 } label: {
                     Image(systemName: "waveform.circle.fill")
                         .font(.title2)
-                        .foregroundStyle(SporeCueTheme.primary)
+                        .foregroundStyle(GillnoteTheme.primary)
                 }
                 .accessibilityLabel("Voice note")
             }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(SporeCueTheme.barFace.ignoresSafeArea(edges: .bottom))
+        .background(GillnoteTheme.barFace.ignoresSafeArea(edges: .bottom))
     }
 }

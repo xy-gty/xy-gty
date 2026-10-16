@@ -1,6 +1,0 @@
-{
-  "ok": true,
-  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/evidence/visual-readback/sporecue-lookalike-chat.receipt.json",
-  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T174239Z-859f7eed/stages/pm_docs/attempt-1/evidence/visual-readback/sporecue-lookalike-chat.receipt.jsonl",
-  "model": "auto"
-}

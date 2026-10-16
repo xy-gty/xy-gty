@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import SporeCueDomain
+import GillnoteDomain
 
 struct OverlayAnnotateView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -19,7 +19,7 @@ struct OverlayAnnotateView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 } else {
                     RoundedRectangle(cornerRadius: 16)
-                        .fill(SporeCueTheme.barFace)
+                        .fill(GillnoteTheme.barFace)
                         .frame(height: 280)
                 }
 
@@ -31,7 +31,7 @@ struct OverlayAnnotateView: View {
                         Text(callout.label)
                             .font(.caption.weight(.bold))
                             .padding(6)
-                            .background(Capsule().fill(SporeCueTheme.accent.opacity(0.9)))
+                            .background(Capsule().fill(GillnoteTheme.accent.opacity(0.9)))
                             .foregroundStyle(.white)
                             .position(x: x + 40, y: y + 20)
                     }
@@ -51,7 +51,7 @@ struct OverlayAnnotateView: View {
                         )
                         Text(callout.region.uppercased())
                             .font(.caption2)
-                            .foregroundStyle(SporeCueTheme.muted)
+                            .foregroundStyle(GillnoteTheme.muted)
                     }
                 }
             }
@@ -62,9 +62,9 @@ struct OverlayAnnotateView: View {
                     .buttonStyle(.bordered)
                 Button("Keep") { appModel.keepOverlay() }
                     .buttonStyle(.borderedProminent)
-                    .tint(SporeCueTheme.accent)
+                    .tint(GillnoteTheme.accent)
                 Button("Edit callouts") {}
-                    .foregroundStyle(SporeCueTheme.primary)
+                    .foregroundStyle(GillnoteTheme.primary)
             }
             .padding(.bottom, 16)
         }

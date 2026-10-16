@@ -1,5 +1,5 @@
 import SwiftUI
-import SporeCueDomain
+import GillnoteDomain
 
 struct LookalikeChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -20,20 +20,20 @@ struct LookalikeChatView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(turn.role == "coach" ? "Coach" : "You")
                                     .font(.caption.weight(.semibold))
-                                    .foregroundStyle(SporeCueTheme.muted)
+                                    .foregroundStyle(GillnoteTheme.muted)
                                 Text(turn.text)
                                     .font(.body)
-                                    .foregroundStyle(SporeCueTheme.ink)
+                                    .foregroundStyle(GillnoteTheme.ink)
                                 if turn.sttSource == "speech" {
                                     Text("via speech")
                                         .font(.caption2)
-                                        .foregroundStyle(SporeCueTheme.accent)
+                                        .foregroundStyle(GillnoteTheme.accent)
                                 }
                             }
                             .padding(12)
                             .background(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .fill(turn.role == "coach" ? SporeCueTheme.stackSlot : SporeCueTheme.barFace)
+                                    .fill(turn.role == "coach" ? GillnoteTheme.stackSlot : GillnoteTheme.barFace)
                             )
                             if turn.role == "user" { Spacer(minLength: 40) }
                         }
@@ -54,14 +54,14 @@ struct LookalikeChatView: View {
                     }
                 } label: {
                     Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "mic.fill")
-                        .foregroundStyle(SporeCueTheme.accent)
+                        .foregroundStyle(GillnoteTheme.accent)
                 }
                 Button("Send") { appModel.sendCoachQuestion() }
                     .buttonStyle(.borderedProminent)
-                    .tint(SporeCueTheme.accent)
+                    .tint(GillnoteTheme.accent)
             }
             .padding(12)
-            .background(SporeCueTheme.barFace)
+            .background(GillnoteTheme.barFace)
         }
         .sporeScreen()
         .navigationTitle("Lookalike chat")

@@ -1,1 +1,0 @@
-Overlay annotate shows still with callout pins and Keep/Edit controls; disclaimer remains; not a clapper/safe-frame UI.

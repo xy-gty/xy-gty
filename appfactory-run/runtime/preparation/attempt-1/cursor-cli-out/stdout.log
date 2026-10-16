@@ -1,7 +1,0 @@
-Dispatch `b046e141-38ca-49bb-83a1-453a5bc46b91` finished **ready**.
-
-- Launch SHA verified: `ee0ba71f…d487e7`
-- Bound refs + technical contract `cde02f70…e5356` matched
-- Workspace: SporeCueDomain entities/nav/stores/compliance + `Vendor/AppRuntimeCore` via controlled installer
-- Cache hit `1225d7e5…`; domain compile in `domain-build-scratch/` (outside inventory)
-- `preparation finish --status ready` OK — private receipt written; controller seals separately
