@@ -1,4 +1,4 @@
-import LuxCueDomain
+import ZonelightDomain
 import SwiftUI
 import PhotosUI
 
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             MeterHomeView()
-                .navigationDestination(for: LuxCueRoute.self) { route in
+                .navigationDestination(for: ZonelightRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -34,7 +34,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: LuxCueRoute) -> some View {
+    private func destination(for route: ZonelightRoute) -> some View {
         switch route {
         case .meterHome:
             MeterHomeView()

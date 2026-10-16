@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import LuxCueDomain
+import ZonelightDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = LuxCueState()
-    @Published var path: [LuxCueRoute] = []
+    @Published var state = ZonelightState()
+    @Published var path: [ZonelightRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -29,7 +29,7 @@ final class AppModel: ObservableObject {
     @Published var editZoneText = ""
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<LuxCueRoute>
+    let navigation: TypedNavigationStore<ZonelightRoute>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -38,7 +38,7 @@ final class AppModel: ObservableObject {
     private let supportRoot: URL
     private let photosRoot: URL
     private let audioRoot: URL
-    private let keychain = LuxCueStores.apiKeyStore()
+    private let keychain = ZonelightStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -98,7 +98,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent(LuxCueStores.supportFolderName, isDirectory: true)
+            .appendingPathComponent(ZonelightStores.supportFolderName, isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -109,10 +109,10 @@ final class AppModel: ObservableObject {
         meterStore = MeterStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
-            isValid: LuxCueNavigation.isValid
+            isValid: ZonelightNavigation.isValid
         )
 
-        let consentURL = LuxCueStores.storeURL(directory: root, name: LuxCueStores.aiConsentLocal)
+        let consentURL = ZonelightStores.storeURL(directory: root, name: ZonelightStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -128,7 +128,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await LuxCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await ZonelightStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -154,7 +154,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? meterStore.load()) ?? LuxCueState()
+        state = (try? meterStore.load()) ?? ZonelightState()
         persist()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
@@ -192,7 +192,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: LuxCueRoute) {
+    func push(_ route: ZonelightRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -361,7 +361,7 @@ final class AppModel: ObservableObject {
                 shutter: "1/125",
                 iso: "200",
                 confidence: 0.2,
-                rationale: LuxCueComplianceCopy.ensureDisclaimers(
+                rationale: ZonelightComplianceCopy.ensureDisclaimers(
                     "AI not configured — local uncalibrated EV estimate only."
                 ),
                 complianceBanner: true
@@ -404,7 +404,7 @@ final class AppModel: ObservableObject {
                 shutter: payload.shutter,
                 iso: payload.iso,
                 confidence: payload.confidence,
-                rationale: LuxCueComplianceCopy.ensureDisclaimers(payload.rationale),
+                rationale: ZonelightComplianceCopy.ensureDisclaimers(payload.rationale),
                 complianceBanner: true
             )
             state.exposureIDs.removeAll { $0.sessionId == session.id }
@@ -417,7 +417,7 @@ final class AppModel: ObservableObject {
             editEVText = String(format: "%.1f", exposure.ev)
             editZoneText = selectedZone
             persist()
-            setBanner(LuxCueComplianceCopy.ensureDisclaimers("Exposure ID ready."))
+            setBanner(ZonelightComplianceCopy.ensureDisclaimers("Exposure ID ready."))
         } catch {
             setBanner(error.localizedDescription, error: true)
         }
@@ -436,7 +436,7 @@ final class AppModel: ObservableObject {
         state.sessions[idx].status = "confirmed"
         state.sessions[idx].disclaimerAck = true
         persist()
-        setBanner(LuxCueComplianceCopy.ensureDisclaimers("Reading saved for feedback reuse."))
+        setBanner(ZonelightComplianceCopy.ensureDisclaimers("Reading saved for feedback reuse."))
     }
 
     func dismissID() {
@@ -461,9 +461,9 @@ final class AppModel: ObservableObject {
                 "EV \(String(format: "%.1f", exposure.ev))",
                 "\(exposure.aperture) · \(exposure.shutter) · ISO \(exposure.iso)",
                 "Zone \(selectedZone)",
-            ] + LuxCueCompliance.requiredDisclaimers
+            ] + ZonelightCompliance.requiredDisclaimers
         } else {
-            draftCallouts = LuxCueCompliance.requiredDisclaimers
+            draftCallouts = ZonelightCompliance.requiredDisclaimers
         }
         push(.meterCard)
     }
@@ -479,7 +479,7 @@ final class AppModel: ObservableObject {
         state.meterCards.removeAll { $0.sessionId == session.id }
         state.meterCards.append(card)
         persist()
-        setBanner(LuxCueComplianceCopy.ensureDisclaimers("Meter card kept."))
+        setBanner(ZonelightComplianceCopy.ensureDisclaimers("Meter card kept."))
         if path.last == .meterCard {
             path.removeLast()
             persistNavigation()
@@ -504,7 +504,7 @@ final class AppModel: ObservableObject {
             setBanner("TTS disabled in Settings.", error: true)
             return
         }
-        let script = LuxCueComplianceCopy.makeCalloutScript(exposure: exposure, zone: selectedZone)
+        let script = ZonelightComplianceCopy.makeCalloutScript(exposure: exposure, zone: selectedZone)
         let callout = SetCallout(
             sessionId: session.id,
             scriptText: script,
@@ -545,7 +545,7 @@ final class AppModel: ObservableObject {
             let local = CoachTurn(
                 sessionId: sessionId,
                 role: "coach",
-                text: LuxCueComplianceCopy.localCoachTip(
+                text: ZonelightComplianceCopy.localCoachTip(
                     question: question,
                     zone: selectedZone,
                     exposure: activeExposure

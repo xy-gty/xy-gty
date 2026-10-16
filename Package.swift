@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "LuxCue",
+    name: "Zonelight",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "LuxCueDomain", targets: ["LuxCueDomain"]),
+        .library(name: "ZonelightDomain", targets: ["ZonelightDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "LuxCueDomain",
+            name: "ZonelightDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/LuxCueDomain"
+            path: "Sources/ZonelightDomain"
         ),
     ]
 )

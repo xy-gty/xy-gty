@@ -1,26 +1,26 @@
 import XCTest
-import LuxCueDomain
+import ZonelightDomain
 import AppRuntimeCore
 
-final class LuxCueDomainTests: XCTestCase {
+final class ZonelightDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(LuxReviewControls.confirm, ["Save Reading", "Keep", "Use"])
         XCTAssertEqual(LuxReviewControls.reject, ["Dismiss", "Reject"])
         XCTAssertEqual(LuxReviewControls.edit, ["Edit EV", "Edit zone"])
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "luxcue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "zonelight.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 5)
     }
 
     func testComplianceDisclaimers() {
-        XCTAssertFalse(LuxCueCompliance.calibratedLabInstrument)
-        XCTAssertFalse(LuxCueCompliance.medicalLighting)
-        XCTAssertTrue(LuxCueCompliance.neverClaimLabCalibrationOrMedicalLighting)
-        XCTAssertEqual(LuxCueCompliance.requiredDisclaimers.count, 2)
-        XCTAssertTrue(LuxCueCompliance.requiredDisclaimers[0].contains("非校准实验室仪表"))
-        XCTAssertTrue(LuxCueCompliance.requiredDisclaimers[1].contains("非医疗用光"))
-        XCTAssertTrue(LuxCueCompliance.requiredDisclaimers[0].contains("not a calibrated lab instrument"))
-        XCTAssertTrue(LuxCueCompliance.requiredDisclaimers[1].contains("not for medical lighting"))
+        XCTAssertFalse(ZonelightCompliance.calibratedLabInstrument)
+        XCTAssertFalse(ZonelightCompliance.medicalLighting)
+        XCTAssertTrue(ZonelightCompliance.neverClaimLabCalibrationOrMedicalLighting)
+        XCTAssertEqual(ZonelightCompliance.requiredDisclaimers.count, 2)
+        XCTAssertTrue(ZonelightCompliance.requiredDisclaimers[0].contains("非校准实验室仪表"))
+        XCTAssertTrue(ZonelightCompliance.requiredDisclaimers[1].contains("非医疗用光"))
+        XCTAssertTrue(ZonelightCompliance.requiredDisclaimers[0].contains("not a calibrated lab instrument"))
+        XCTAssertTrue(ZonelightCompliance.requiredDisclaimers[1].contains("not for medical lighting"))
     }
 
     func testPrivacyUsageCopy() {
@@ -34,14 +34,14 @@ final class LuxCueDomainTests: XCTestCase {
 
     func testMeterStoreRoundTripPersistReviewed() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("luxcue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("zonelight-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
-        let store = AtomicCodableStore<LuxCueState>(
-            url: LuxCueStores.storeURL(directory: dir, name: LuxCueStores.meterState)
+        let store = AtomicCodableStore<ZonelightState>(
+            url: ZonelightStores.storeURL(directory: dir, name: ZonelightStores.meterState)
         )
-        var state = LuxCueState()
+        var state = ZonelightState()
         let session = MeterSession(
             id: "s1",
             createdAt: Date(),
@@ -71,7 +71,7 @@ final class LuxCueDomainTests: XCTestCase {
                 shutter: "1/125",
                 iso: "200",
                 confidence: 0.8,
-                rationale: LuxCueCompliance.requiredDisclaimers.joined(separator: ". "),
+                rationale: ZonelightCompliance.requiredDisclaimers.joined(separator: ". "),
                 complianceBanner: true
             )
         ]
@@ -122,16 +122,16 @@ final class LuxCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteAndAllergy() {
-        XCTAssertEqual(LuxCueIdentity.developmentBundleId, "com.lingguang.luxcue")
-        XCTAssertEqual(LuxCueIdentity.productDir, "luxcue")
-        XCTAssertEqual(LuxCueIdentity.appName, "LuxCue")
-        XCTAssertEqual(LuxCueIdentity.simulatorPrefUDID, "B14CC0EA")
-        XCTAssertEqual(LuxCuePalette.primary, "#1D4ED8")
-        XCTAssertEqual(LuxCuePalette.secondary, "#F0F9FF")
-        XCTAssertEqual(LuxCuePalette.accent, "#EAB308")
-        XCTAssertTrue(LuxCueUISpecies.signature.contains("zone_system_dial"))
-        XCTAssertTrue(LuxCueUISpecies.signature.contains("oversized_ev_readout_bar"))
-        XCTAssertTrue(LuxCueUISpecies.signature.contains("spot_meter_cross_card"))
+        XCTAssertEqual(ZonelightIdentity.developmentBundleId, "com.lingguang.zonelight")
+        XCTAssertEqual(ZonelightIdentity.productDir, "zonelight")
+        XCTAssertEqual(ZonelightIdentity.appName, "Zonelight")
+        XCTAssertEqual(ZonelightIdentity.simulatorPrefUDID, "B14CC0EA")
+        XCTAssertEqual(ZonelightPalette.primary, "#1D4ED8")
+        XCTAssertEqual(ZonelightPalette.secondary, "#F0F9FF")
+        XCTAssertEqual(ZonelightPalette.accent, "#EAB308")
+        XCTAssertTrue(ZonelightUISpecies.signature.contains("zone_system_dial"))
+        XCTAssertTrue(ZonelightUISpecies.signature.contains("oversized_ev_readout_bar"))
+        XCTAssertTrue(ZonelightUISpecies.signature.contains("spot_meter_cross_card"))
     }
 
     func testSetCalloutComplianceLiterals() {
@@ -146,7 +146,7 @@ final class LuxCueDomainTests: XCTestCase {
             complianceBanner: true
         )
         var script = "Set EV \(exposure.ev), aperture \(exposure.aperture), shutter \(exposure.shutter), ISO \(exposure.iso)."
-        for line in LuxCueCompliance.requiredDisclaimers where !script.contains(line) {
+        for line in ZonelightCompliance.requiredDisclaimers where !script.contains(line) {
             script += " " + line
         }
         XCTAssertTrue(script.contains("非校准实验室仪表"))
@@ -170,21 +170,21 @@ final class LuxCueDomainTests: XCTestCase {
     }
 
     func testNavigationRoutesValid() {
-        XCTAssertTrue(LuxCueNavigation.isValid(.meterHome))
-        XCTAssertTrue(LuxCueNavigation.isValid(.cameraSpot))
-        XCTAssertTrue(LuxCueNavigation.isValid(.photoImport))
-        XCTAssertTrue(LuxCueNavigation.isValid(.exposureResult))
-        XCTAssertTrue(LuxCueNavigation.isValid(.coachChat))
-        XCTAssertTrue(LuxCueNavigation.isValid(.meterCard))
-        XCTAssertTrue(LuxCueNavigation.isValid(.setCallout))
-        XCTAssertTrue(LuxCueNavigation.isValid(.voiceNote))
-        XCTAssertTrue(LuxCueNavigation.isValid(.aiConsent))
-        XCTAssertTrue(LuxCueNavigation.isValid(.settings))
-        XCTAssertTrue(LuxCueNavigation.isValid(.legal))
+        XCTAssertTrue(ZonelightNavigation.isValid(.meterHome))
+        XCTAssertTrue(ZonelightNavigation.isValid(.cameraSpot))
+        XCTAssertTrue(ZonelightNavigation.isValid(.photoImport))
+        XCTAssertTrue(ZonelightNavigation.isValid(.exposureResult))
+        XCTAssertTrue(ZonelightNavigation.isValid(.coachChat))
+        XCTAssertTrue(ZonelightNavigation.isValid(.meterCard))
+        XCTAssertTrue(ZonelightNavigation.isValid(.setCallout))
+        XCTAssertTrue(ZonelightNavigation.isValid(.voiceNote))
+        XCTAssertTrue(ZonelightNavigation.isValid(.aiConsent))
+        XCTAssertTrue(ZonelightNavigation.isValid(.settings))
+        XCTAssertTrue(ZonelightNavigation.isValid(.legal))
     }
 
     func testKeychainServiceIdentity() {
-        XCTAssertEqual(LuxCueStores.keychainService, "luxcue.ai")
-        XCTAssertEqual(LuxCueStores.keychainAPIKeyAccount, "deepseek_api_key")
+        XCTAssertEqual(ZonelightStores.keychainService, "zonelight.ai")
+        XCTAssertEqual(ZonelightStores.keychainAPIKeyAccount, "deepseek_api_key")
     }
 }

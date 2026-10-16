@@ -1,5 +1,5 @@
 import Foundation
-import LuxCueDomain
+import ZonelightDomain
 
 struct ExposureIDPayload: Sendable {
     var ev: Double
@@ -69,12 +69,12 @@ struct DeepSeekClient {
             "zone_hint": zoneHint,
         ]
         let system = """
-        You are LuxCue, an AI exposure / light-meter coach. Reply with JSON only:
+        You are Zonelight, an AI exposure / light-meter coach. Reply with JSON only:
         {"ev":0.0,"aperture":"f/2.8","shutter":"1/125","iso":"200","confidence":0.0,"rationale":"","zoneHint":"V"}
         Suggest EV / aperture / shutter / ISO with zone advice for photography lighting.
         ALWAYS include in rationale: 非校准实验室仪表 / not a calibrated lab instrument; 非医疗用光 / not for medical lighting.
         NEVER claim lab calibration or medical lighting use. Do not name myLightMeter.
-        Not a FrameCue/NightCue/ScoutCue/StopCue/CellarCue/MixCue/SporeCue twin.
+        Not a Mattebox/Shutterdusk/Sunbrief/Onionreel/Racknote/Stirboard/Gillnote twin.
         """
         let content = try await chat(system: system, userJSON: payload)
         return try Self.parseExposure(content: content)
@@ -97,7 +97,7 @@ struct DeepSeekClient {
             "active_session_id": sessionId,
         ]
         let system = """
-        You are LuxCue zone / film / digital coach. Reply JSON only:
+        You are Zonelight zone / film / digital coach. Reply JSON only:
         {"reply":"...","strategy":"zone|film|digital"}
         Restate 非校准实验室仪表 / not a calibrated lab instrument and 非医疗用光 / not for medical lighting.
         Never claim lab calibration or medical lighting. Do not name myLightMeter.
@@ -146,7 +146,7 @@ struct DeepSeekClient {
             throw Failure.decodeFailed("not JSON")
         }
         let ev = (obj["ev"] as? Double) ?? Double(obj["ev"] as? String ?? "") ?? 0
-        let rationale = LuxCueComplianceCopy.ensureDisclaimers((obj["rationale"] as? String) ?? "")
+        let rationale = ZonelightComplianceCopy.ensureDisclaimers((obj["rationale"] as? String) ?? "")
         return ExposureIDPayload(
             ev: ev,
             aperture: (obj["aperture"] as? String) ?? "f/2.8",
@@ -163,7 +163,7 @@ struct DeepSeekClient {
               let obj = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
             throw Failure.decodeFailed("coach not JSON")
         }
-        let reply = LuxCueComplianceCopy.ensureDisclaimers((obj["reply"] as? String) ?? "")
+        let reply = ZonelightComplianceCopy.ensureDisclaimers((obj["reply"] as? String) ?? "")
         return CoachReplyPayload(
             reply: reply,
             strategy: (obj["strategy"] as? String) ?? "zone"

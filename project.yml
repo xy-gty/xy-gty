@@ -1,4 +1,4 @@
-name: LuxCue
+name: Zonelight
 options:
   deploymentTarget:
     iOS: "17.0"
@@ -6,7 +6,7 @@ options:
 packages:
   AppRuntimeCore:
     path: Vendor/AppRuntimeCore
-  LuxCueDomain:
+  ZonelightDomain:
     path: .
 settings:
   base:
@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     GENERATE_INFOPLIST_FILE: YES
 targets:
-  LuxCue:
+  Zonelight:
     type: application
     platform: iOS
     sources:
@@ -27,57 +27,57 @@ targets:
       - path: App/PrivacyInfo.xcprivacy
     dependencies:
       - package: AppRuntimeCore
-      - package: LuxCueDomain
-        product: LuxCueDomain
+      - package: ZonelightDomain
+        product: ZonelightDomain
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue
-        PRODUCT_NAME: LuxCue
-        INFOPLIST_KEY_CFBundleDisplayName: LuxCue
-        INFOPLIST_KEY_NSCameraUsageDescription: Capture spot-meter and gray-card readings so LuxCue can suggest exposure coaching
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import stills to complete spot-meter sessions in LuxCue
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Zonelight
+        INFOPLIST_KEY_CFBundleDisplayName: Zonelight
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import stills to complete spot-meter sessions in Zonelight
         INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free meter notes while holding the camera
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken zone and exposure questions into coach chat text
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
-        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_KEY_UILaunchScreen_Generation: NO
-  LuxCueDomainTests:
+  ZonelightDomainTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: Tests
     dependencies:
-      - package: LuxCueDomain
-        product: LuxCueDomain
+      - package: ZonelightDomain
+        product: ZonelightDomain
       - package: AppRuntimeCore
-      - target: LuxCue
+      - target: Zonelight
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue.tests
-  LuxCueUISmokeTests:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.zonelight.tests
+  ZonelightUISmokeTests:
     type: bundle.ui-testing
     platform: iOS
     sources:
       - path: UITests
     dependencies:
-      - target: LuxCue
+      - target: Zonelight
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.luxcue.uitests
-        TEST_TARGET_NAME: LuxCue
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.zonelight.uitests
+        TEST_TARGET_NAME: Zonelight
         GENERATE_INFOPLIST_FILE: YES
 schemes:
-  LuxCue:
+  Zonelight:
     build:
       targets:
-        LuxCue: all
-        LuxCueDomainTests: [test]
-        LuxCueUISmokeTests: [test]
+        Zonelight: all
+        ZonelightDomainTests: [test]
+        ZonelightUISmokeTests: [test]
     test:
       targets:
-        - LuxCueDomainTests
-        - LuxCueUISmokeTests
+        - ZonelightDomainTests
+        - ZonelightUISmokeTests
     run:
       config: Debug

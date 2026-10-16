@@ -1,6 +1,6 @@
-# LuxCue
+# Zonelight
 
-AI exposure / light-meter coach. Bundle `com.lingguang.luxcue`. Product dir `luxcue/`.
+AI exposure / light-meter coach. Bundle `com.lingguang.zonelight`. Product dir `zonelight/`.
 
 Hard compliance on every meter/EV/zone/TTS surface:
 - 非校准实验室仪表 / not a calibrated lab instrument

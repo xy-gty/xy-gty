@@ -1,27 +1,27 @@
 import Foundation
-import LuxCueDomain
+import ZonelightDomain
 import AppRuntimeCore
 
 struct MeterStore {
-    private let store: AtomicCodableStore<LuxCueState>
+    private let store: AtomicCodableStore<ZonelightState>
 
     init(directory: URL) {
-        store = LuxCueStores.meterStore(directory: directory)
+        store = ZonelightStores.meterStore(directory: directory)
     }
 
-    func load() throws -> LuxCueState {
-        try store.load() ?? LuxCueState()
+    func load() throws -> ZonelightState {
+        try store.load() ?? ZonelightState()
     }
 
-    func save(_ state: LuxCueState) throws {
+    func save(_ state: ZonelightState) throws {
         try store.save(state)
     }
 }
 
-enum LuxCueComplianceCopy {
+enum ZonelightComplianceCopy {
     static func ensureDisclaimers(_ text: String) -> String {
         var out = text
-        for line in LuxCueCompliance.requiredDisclaimers {
+        for line in ZonelightCompliance.requiredDisclaimers {
             if !out.contains(line) {
                 out += (out.isEmpty || out.hasSuffix(".") ? " " : ". ") + line
             }

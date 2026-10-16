@@ -2,7 +2,7 @@ import Foundation
 import AppRuntimeCore
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum LuxCueRoute: String, Codable, Hashable, Sendable {
+public enum ZonelightRoute: String, Codable, Hashable, Sendable {
     case meterHome
     case cameraSpot
     case photoImport
@@ -16,10 +16,10 @@ public enum LuxCueRoute: String, Codable, Hashable, Sendable {
     case legal
 }
 
-public enum LuxCueNavigation {
+public enum ZonelightNavigation {
     public static let storeFileName = "navigation_path.json"
 
-    public static func isValid(_ route: LuxCueRoute) -> Bool {
+    public static func isValid(_ route: ZonelightRoute) -> Bool {
         switch route {
         case .meterHome, .cameraSpot, .photoImport, .exposureResult, .coachChat,
              .meterCard, .setCallout, .voiceNote, .aiConsent, .settings, .legal:
@@ -28,7 +28,7 @@ public enum LuxCueNavigation {
     }
 
     @MainActor
-    public static func makeStore(directory: URL) -> TypedNavigationStore<LuxCueRoute> {
+    public static func makeStore(directory: URL) -> TypedNavigationStore<ZonelightRoute> {
         TypedNavigationStore(
             url: directory.appendingPathComponent(storeFileName, isDirectory: false),
             isValid: isValid

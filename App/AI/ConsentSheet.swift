@@ -1,5 +1,5 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -12,30 +12,30 @@ struct ConsentSheet: View {
 
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(LuxCueTheme.ink)
+                        .foregroundStyle(ZonelightTheme.ink)
 
                     Text(
-                        "LuxCue sends the fields below to \(AIConsentContract.provider) for exposure ID and zone/film/digital coaching. "
-                            + LuxCueCompliance.requiredDisclaimers.joined(separator: ". ")
+                        "Zonelight sends the fields below to \(AIConsentContract.provider) for exposure ID and zone/film/digital coaching. "
+                            + ZonelightCompliance.requiredDisclaimers.joined(separator: ". ")
                             + ". Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(LuxCueTheme.muted)
+                    .foregroundStyle(ZonelightTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(LuxCueTheme.ink)
+                            .foregroundStyle(ZonelightTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(LuxCueTheme.primary)
+                                .foregroundStyle(ZonelightTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -47,7 +47,7 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(LuxCueTheme.accent)
+                        .tint(ZonelightTheme.accent)
                     }
                     .padding(.top, 8)
                 }

@@ -1,5 +1,5 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct ExposureResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -26,10 +26,10 @@ struct ExposureResultView: View {
                             .font(.headline)
                         Text("\(exposure.aperture) · \(exposure.shutter) · ISO \(exposure.iso)")
                             .font(.title3.weight(.semibold))
-                            .foregroundStyle(LuxCueTheme.primary)
+                            .foregroundStyle(ZonelightTheme.primary)
                         Text(exposure.rationale)
                             .font(.subheadline)
-                            .foregroundStyle(LuxCueTheme.muted)
+                            .foregroundStyle(ZonelightTheme.muted)
                         HStack {
                             TextField("Edit EV", text: $appModel.editEVText)
                                 .textFieldStyle(.roundedBorder)
@@ -41,7 +41,7 @@ struct ExposureResultView: View {
                         }
                     }
                     .padding(14)
-                    .background(RoundedRectangle(cornerRadius: 14).fill(LuxCueTheme.card))
+                    .background(RoundedRectangle(cornerRadius: 14).fill(ZonelightTheme.card))
                 }
 
                 Button {
@@ -51,13 +51,13 @@ struct ExposureResultView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(LuxCueTheme.primary)
+                .tint(ZonelightTheme.primary)
                 .disabled(appModel.identifyBusy)
 
                 HStack {
                     Button("Save Reading") { appModel.saveReading() }
                         .buttonStyle(.borderedProminent)
-                        .tint(LuxCueTheme.accent)
+                        .tint(ZonelightTheme.accent)
                     Button("Keep") { appModel.keepExposure() }
                         .buttonStyle(.bordered)
                     Button("Use") { appModel.useExposure() }
@@ -76,7 +76,7 @@ struct ExposureResultView: View {
                 if let message = appModel.statusMessage {
                     Text(message)
                         .font(.footnote)
-                        .foregroundStyle(appModel.statusIsError ? .red : LuxCueTheme.ink)
+                        .foregroundStyle(appModel.statusIsError ? .red : ZonelightTheme.ink)
                 }
             }
             .padding(20)

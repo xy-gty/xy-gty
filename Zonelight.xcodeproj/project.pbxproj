@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		0DD3227BEB8CD4DDA534A33F /* MeterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E17698BA48A0679214435B7 /* MeterCardView.swift */; };
 		217AEAF57024463C9AFCD142 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78F49A192D59CF2978D664 /* SpeechRecognitionService.swift */; };
-		25BF96BCCC356A4865BD33A9 /* LuxCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA277EE595CB7BAC5367E3 /* LuxCueDomain */; };
-		28AD71FE8384AC7582C3A024 /* LuxCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D881393A5F44165934416CC /* LuxCueDomainTests.swift */; };
+		25BF96BCCC356A4865BD33A9 /* ZonelightDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA277EE595CB7BAC5367E3 /* ZonelightDomain */; };
+		28AD71FE8384AC7582C3A024 /* ZonelightDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D881393A5F44165934416CC /* ZonelightDomainTests.swift */; };
 		2F35771F423BD32B877A3246 /* SignatureComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE2090B3175D968D4A1BF5 /* SignatureComponents.swift */; };
 		36F740E4CEBAFDD25D443982 /* ExposureResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C6A11977BE49C31B4348A /* ExposureResultView.swift */; };
-		38FDBBAF2CB29C8304D99479 /* LuxCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6CC35E0BE502EDFE40D5 /* LuxCueApp.swift */; };
+		38FDBBAF2CB29C8304D99479 /* ZonelightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */; };
 		3B4AAEE616CC3F4CAAF6D135 /* SetCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E185665F29FF7FCEC8FB971A /* SetCalloutView.swift */; };
 		47538DB6B2DF9C1C7C5E72B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415FC09CE9EB34261498ECBD /* Assets.xcassets */; };
 		493BCD93BB6FEF96984BC924 /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */; };
 		4C6D5FD5858CB93D7B068BC8 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6C6748E9E85FC61DE27EB /* LocalLegalWebView.swift */; };
 		580C4A8AA1154B398C84DD3B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */; };
-		608B2E81316780C099DAA1C1 /* LuxCueUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D6E4480F863038F2FC375 /* LuxCueUISmokeTests.swift */; };
-		6EAFA44BBC8D665E9CA41731 /* LuxCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCA76ECC2B247DC08CC36F /* LuxCueTheme.swift */; };
+		608B2E81316780C099DAA1C1 /* ZonelightUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */; };
+		6EAFA44BBC8D665E9CA41731 /* ZonelightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */; };
 		82E02A62F38B64A1EB3B0062 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A657CA4A86BF7CFACB14B /* SettingsPrivacyView.swift */; };
 		83E00BB01BF87918B19F37BA /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = CF249DB91FA14B63479CAD7A /* provider-policy.html */; };
 		89674492D31883C6CBA527B8 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */; };
@@ -30,7 +30,7 @@
 		B7B0780AEEED0FC6113038D7 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5B72C77FD6769A77AD5C207C /* AppRuntimeCore */; };
 		B909877BDD3F3351B56707D9 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */; };
 		BA4F672DA57BFE0492B4ABE5 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A9FABE8C4FBE774B61B13 /* privacy.html */; };
-		BDCF270BDC7057C1A36C76AF /* LuxCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 308F8570DDC664F57871AC8F /* LuxCueDomain */; };
+		BDCF270BDC7057C1A36C76AF /* ZonelightDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 308F8570DDC664F57871AC8F /* ZonelightDomain */; };
 		BDD480C8795D04A77B1587B1 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */; };
 		C04A8BEC20F22AA4190E9FF5 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA156FD810CEB4D75B5BFBC /* VoiceNoteRecorder.swift */; };
 		C3BE743682A01C757B1FCB1F /* MeterHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E4ECC4719C63DED9DE764 /* MeterHomeView.swift */; };
@@ -47,36 +47,36 @@
 			containerPortal = ABC83F55F571F464D34D3A75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 212766C4ECF1B49445CE8172;
-			remoteInfo = LuxCue;
+			remoteInfo = Zonelight;
 		};
 		C1D09ECB962FC46E3E2F1582 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ABC83F55F571F464D34D3A75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 212766C4ECF1B49445CE8172;
-			remoteInfo = LuxCue;
+			remoteInfo = Zonelight;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E9A657CA4A86BF7CFACB14B /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
 		192CFBD907CA143033191773 /* MeterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterStore.swift; sourceTree = "<group>"; };
-		2583E97C90D163E2E5D782D0 /* LuxCueUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LuxCueUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZonelightUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4A9FABE8C4FBE774B61B13 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		3251E013E594090663AAAF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		3D881393A5F44165934416CC /* LuxCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxCueDomainTests.swift; sourceTree = "<group>"; };
+		3D881393A5F44165934416CC /* ZonelightDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightDomainTests.swift; sourceTree = "<group>"; };
 		3E17698BA48A0679214435B7 /* MeterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterCardView.swift; sourceTree = "<group>"; };
 		415FC09CE9EB34261498ECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A3D6CC35E0BE502EDFE40D5 /* LuxCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxCueApp.swift; sourceTree = "<group>"; };
+		4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightApp.swift; sourceTree = "<group>"; };
 		4DDA28F49648CE1CF652C588 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
 		5635689520D81E685AFB4156 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
 		5655C0C47D4C8762A6A4D33B /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
-		62FCA76ECC2B247DC08CC36F /* LuxCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxCueTheme.swift; sourceTree = "<group>"; };
-		6A5CC7FC64763F356DD794F7 /* LuxCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LuxCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightTheme.swift; sourceTree = "<group>"; };
+		6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZonelightDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778C6A11977BE49C31B4348A /* ExposureResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureResultView.swift; sourceTree = "<group>"; };
 		7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
 		81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		861F2C7AFDA0007EEBE6FFF8 /* LuxCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LuxCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Zonelight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B3E7EA74D180D07877A3B1 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
 		9642EB6ADC8D20D045F82588 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
 		9A78F49A192D59CF2978D664 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		E185665F29FF7FCEC8FB971A /* SetCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCalloutView.swift; sourceTree = "<group>"; };
 		EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
 		FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
-		FA3D6E4480F863038F2FC375 /* LuxCueUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxCueUISmokeTests.swift; sourceTree = "<group>"; };
+		FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightUISmokeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B909877BDD3F3351B56707D9 /* AppRuntimeCore in Frameworks */,
-				25BF96BCCC356A4865BD33A9 /* LuxCueDomain in Frameworks */,
+				25BF96BCCC356A4865BD33A9 /* ZonelightDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDCF270BDC7057C1A36C76AF /* LuxCueDomain in Frameworks */,
+				BDCF270BDC7057C1A36C76AF /* ZonelightDomain in Frameworks */,
 				B7B0780AEEED0FC6113038D7 /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +133,7 @@
 			children = (
 				415FC09CE9EB34261498ECBD /* Assets.xcassets */,
 				3251E013E594090663AAAF3C /* Info.plist */,
-				4A3D6CC35E0BE502EDFE40D5 /* LuxCueApp.swift */,
+				4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */,
 				81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */,
 				4F07ADC1F5640A0C8FEA5A13 /* AI */,
 				8934CD11D5D607425AFF01AE /* Resources */,
@@ -146,7 +146,7 @@
 		4E8F58E4C92DDD788B9B803C /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				FA3D6E4480F863038F2FC375 /* LuxCueUISmokeTests.swift */,
+				FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */,
 				EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */,
 				778C6A11977BE49C31B4348A /* ExposureResultView.swift */,
-				62FCA76ECC2B247DC08CC36F /* LuxCueTheme.swift */,
+				62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */,
 				3E17698BA48A0679214435B7 /* MeterCardView.swift */,
 				B49E4ECC4719C63DED9DE764 /* MeterHomeView.swift */,
 				7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */,
@@ -183,9 +183,9 @@
 		6A359DF642604DF44A4AE24D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				861F2C7AFDA0007EEBE6FFF8 /* LuxCue.app */,
-				6A5CC7FC64763F356DD794F7 /* LuxCueDomainTests.xctest */,
-				2583E97C90D163E2E5D782D0 /* LuxCueUISmokeTests.xctest */,
+				861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */,
+				6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */,
+				2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 		E7B89E39C711F4991FCB7F70 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3D881393A5F44165934416CC /* LuxCueDomainTests.swift */,
+				3D881393A5F44165934416CC /* ZonelightDomainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04166DD7C50FB34A030F0436 /* LuxCueUISmokeTests */ = {
+		04166DD7C50FB34A030F0436 /* ZonelightUISmokeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "LuxCueUISmokeTests" */;
+			buildConfigurationList = 97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "ZonelightUISmokeTests" */;
 			buildPhases = (
 				85425831064E3A7C568B1C68 /* Sources */,
 			);
@@ -251,16 +251,16 @@
 			dependencies = (
 				74AEEAC0A84AC69BEAFCEF30 /* PBXTargetDependency */,
 			);
-			name = LuxCueUISmokeTests;
+			name = ZonelightUISmokeTests;
 			packageProductDependencies = (
 			);
-			productName = LuxCueUISmokeTests;
-			productReference = 2583E97C90D163E2E5D782D0 /* LuxCueUISmokeTests.xctest */;
+			productName = ZonelightUISmokeTests;
+			productReference = 2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		212766C4ECF1B49445CE8172 /* LuxCue */ = {
+		212766C4ECF1B49445CE8172 /* Zonelight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "LuxCue" */;
+			buildConfigurationList = B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "Zonelight" */;
 			buildPhases = (
 				FCAF927947E53469C76EC554 /* Sources */,
 				F4168A303C2877F7E5E029FC /* Resources */,
@@ -270,18 +270,18 @@
 			);
 			dependencies = (
 			);
-			name = LuxCue;
+			name = Zonelight;
 			packageProductDependencies = (
 				A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */,
-				81BA277EE595CB7BAC5367E3 /* LuxCueDomain */,
+				81BA277EE595CB7BAC5367E3 /* ZonelightDomain */,
 			);
-			productName = LuxCue;
-			productReference = 861F2C7AFDA0007EEBE6FFF8 /* LuxCue.app */;
+			productName = Zonelight;
+			productReference = 861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */;
 			productType = "com.apple.product-type.application";
 		};
-		89C5A72E5DB0E54A5E2A80D7 /* LuxCueDomainTests */ = {
+		89C5A72E5DB0E54A5E2A80D7 /* ZonelightDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "LuxCueDomainTests" */;
+			buildConfigurationList = EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "ZonelightDomainTests" */;
 			buildPhases = (
 				3AC20A0CB0C193D8020EBD0E /* Sources */,
 				5A92F927253C64305EB96DD8 /* Frameworks */,
@@ -291,13 +291,13 @@
 			dependencies = (
 				4F8F414AE12AD90FC120A763 /* PBXTargetDependency */,
 			);
-			name = LuxCueDomainTests;
+			name = ZonelightDomainTests;
 			packageProductDependencies = (
-				308F8570DDC664F57871AC8F /* LuxCueDomain */,
+				308F8570DDC664F57871AC8F /* ZonelightDomain */,
 				5B72C77FD6769A77AD5C207C /* AppRuntimeCore */,
 			);
-			productName = LuxCueDomainTests;
-			productReference = 6A5CC7FC64763F356DD794F7 /* LuxCueDomainTests.xctest */;
+			productName = ZonelightDomainTests;
+			productReference = 6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "LuxCue" */;
+			buildConfigurationList = 81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "Zonelight" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -332,9 +332,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				212766C4ECF1B49445CE8172 /* LuxCue */,
-				89C5A72E5DB0E54A5E2A80D7 /* LuxCueDomainTests */,
-				04166DD7C50FB34A030F0436 /* LuxCueUISmokeTests */,
+				212766C4ECF1B49445CE8172 /* Zonelight */,
+				89C5A72E5DB0E54A5E2A80D7 /* ZonelightDomainTests */,
+				04166DD7C50FB34A030F0436 /* ZonelightUISmokeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD71FE8384AC7582C3A024 /* LuxCueDomainTests.swift in Sources */,
+				28AD71FE8384AC7582C3A024 /* ZonelightDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608B2E81316780C099DAA1C1 /* LuxCueUISmokeTests.swift in Sources */,
+				608B2E81316780C099DAA1C1 /* ZonelightUISmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +383,8 @@
 				955BADD0A6F30E245CA151B5 /* DeepSeekClient.swift in Sources */,
 				36F740E4CEBAFDD25D443982 /* ExposureResultView.swift in Sources */,
 				4C6D5FD5858CB93D7B068BC8 /* LocalLegalWebView.swift in Sources */,
-				38FDBBAF2CB29C8304D99479 /* LuxCueApp.swift in Sources */,
-				6EAFA44BBC8D665E9CA41731 /* LuxCueTheme.swift in Sources */,
+				38FDBBAF2CB29C8304D99479 /* ZonelightApp.swift in Sources */,
+				6EAFA44BBC8D665E9CA41731 /* ZonelightTheme.swift in Sources */,
 				0DD3227BEB8CD4DDA534A33F /* MeterCardView.swift in Sources */,
 				C3BE743682A01C757B1FCB1F /* MeterHomeView.swift in Sources */,
 				CE0186DD304DD2381CBF081E /* MeterStore.swift in Sources */,
@@ -404,12 +404,12 @@
 /* Begin PBXTargetDependency section */
 		4F8F414AE12AD90FC120A763 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 212766C4ECF1B49445CE8172 /* LuxCue */;
+			target = 212766C4ECF1B49445CE8172 /* Zonelight */;
 			targetProxy = C1D09ECB962FC46E3E2F1582 /* PBXContainerItemProxy */;
 		};
 		74AEEAC0A84AC69BEAFCEF30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 212766C4ECF1B49445CE8172 /* LuxCue */;
+			target = 212766C4ECF1B49445CE8172 /* Zonelight */;
 			targetProxy = 099516CCFBA4F07014C2E2B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,10 +425,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuxCue;
+				TEST_TARGET_NAME = Zonelight;
 			};
 			name = Release;
 		};
@@ -442,24 +442,24 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LuxCue;
+				TEST_TARGET_NAME = Zonelight;
 			};
 			name = Debug;
 		};
 		5C505CF3C9424AEE24ABDA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LuxCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so LuxCue can suggest exposure coaching";
+				INFOPLIST_KEY_CFBundleDisplayName = Zonelight;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free meter notes while holding the camera";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in LuxCue";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in Zonelight";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken zone and exposure questions into coach chat text";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,8 +467,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue;
-				PRODUCT_NAME = LuxCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Zonelight;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -549,10 +549,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuxCue.app/LuxCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zonelight.app/Zonelight";
 			};
 			name = Debug;
 		};
@@ -565,10 +565,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuxCue.app/LuxCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zonelight.app/Zonelight";
 			};
 			name = Release;
 		};
@@ -634,14 +634,14 @@
 		D14A686989B5BD0B442D91C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LuxCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so LuxCue can suggest exposure coaching";
+				INFOPLIST_KEY_CFBundleDisplayName = Zonelight;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free meter notes while holding the camera";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in LuxCue";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in Zonelight";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken zone and exposure questions into coach chat text";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -649,8 +649,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.luxcue;
-				PRODUCT_NAME = LuxCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Zonelight;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -659,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "LuxCue" */ = {
+		81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "Zonelight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67F0B54CA524F6D858F77FC3 /* Debug */,
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "LuxCueUISmokeTests" */ = {
+		97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "ZonelightUISmokeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13FDC5EA66F908213637301F /* Debug */,
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "LuxCue" */ = {
+		B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "Zonelight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C505CF3C9424AEE24ABDA07 /* Debug */,
@@ -686,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "LuxCueDomainTests" */ = {
+		EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "ZonelightDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D6C2FC0D907FC3332561267 /* Debug */,
@@ -709,17 +709,17 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		308F8570DDC664F57871AC8F /* LuxCueDomain */ = {
+		308F8570DDC664F57871AC8F /* ZonelightDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = LuxCueDomain;
+			productName = ZonelightDomain;
 		};
 		5B72C77FD6769A77AD5C207C /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		81BA277EE595CB7BAC5367E3 /* LuxCueDomain */ = {
+		81BA277EE595CB7BAC5367E3 /* ZonelightDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = LuxCueDomain;
+			productName = ZonelightDomain;
 		};
 		A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

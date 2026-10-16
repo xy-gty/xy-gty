@@ -230,7 +230,7 @@ public struct AppSettings: Codable, Hashable, Sendable {
 }
 
 /// Aggregate root persisted via AtomicCodableStore for restart restore.
-public struct LuxCueState: Codable, Hashable, Sendable {
+public struct ZonelightState: Codable, Hashable, Sendable {
     public var sessions: [MeterSession]
     public var spotReadings: [SpotReading]
     public var exposureIDs: [ExposureID]

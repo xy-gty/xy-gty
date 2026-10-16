@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "212766C4ECF1B49445CE8172"
-               BuildableName = "LuxCue.app"
-               BlueprintName = "LuxCue"
-               ReferencedContainer = "container:LuxCue.xcodeproj">
+               BuildableName = "Zonelight.app"
+               BlueprintName = "Zonelight"
+               ReferencedContainer = "container:Zonelight.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "89C5A72E5DB0E54A5E2A80D7"
-               BuildableName = "LuxCueDomainTests.xctest"
-               BlueprintName = "LuxCueDomainTests"
-               ReferencedContainer = "container:LuxCue.xcodeproj">
+               BuildableName = "ZonelightDomainTests.xctest"
+               BlueprintName = "ZonelightDomainTests"
+               ReferencedContainer = "container:Zonelight.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04166DD7C50FB34A030F0436"
-               BuildableName = "LuxCueUISmokeTests.xctest"
-               BlueprintName = "LuxCueUISmokeTests"
-               ReferencedContainer = "container:LuxCue.xcodeproj">
+               BuildableName = "ZonelightUISmokeTests.xctest"
+               BlueprintName = "ZonelightUISmokeTests"
+               ReferencedContainer = "container:Zonelight.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "212766C4ECF1B49445CE8172"
-            BuildableName = "LuxCue.app"
-            BlueprintName = "LuxCue"
-            ReferencedContainer = "container:LuxCue.xcodeproj">
+            BuildableName = "Zonelight.app"
+            BlueprintName = "Zonelight"
+            ReferencedContainer = "container:Zonelight.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -73,9 +73,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "89C5A72E5DB0E54A5E2A80D7"
-               BuildableName = "LuxCueDomainTests.xctest"
-               BlueprintName = "LuxCueDomainTests"
-               ReferencedContainer = "container:LuxCue.xcodeproj">
+               BuildableName = "ZonelightDomainTests.xctest"
+               BlueprintName = "ZonelightDomainTests"
+               ReferencedContainer = "container:Zonelight.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -84,9 +84,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04166DD7C50FB34A030F0436"
-               BuildableName = "LuxCueUISmokeTests.xctest"
-               BlueprintName = "LuxCueUISmokeTests"
-               ReferencedContainer = "container:LuxCue.xcodeproj">
+               BuildableName = "ZonelightUISmokeTests.xctest"
+               BlueprintName = "ZonelightUISmokeTests"
+               ReferencedContainer = "container:Zonelight.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -108,9 +108,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "212766C4ECF1B49445CE8172"
-            BuildableName = "LuxCue.app"
-            BlueprintName = "LuxCue"
-            ReferencedContainer = "container:LuxCue.xcodeproj">
+            BuildableName = "Zonelight.app"
+            BlueprintName = "Zonelight"
+            ReferencedContainer = "container:Zonelight.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -127,9 +127,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "212766C4ECF1B49445CE8172"
-            BuildableName = "LuxCue.app"
-            BlueprintName = "LuxCue"
-            ReferencedContainer = "container:LuxCue.xcodeproj">
+            BuildableName = "Zonelight.app"
+            BlueprintName = "Zonelight"
+            ReferencedContainer = "container:Zonelight.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

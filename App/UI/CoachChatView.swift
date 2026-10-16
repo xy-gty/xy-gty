@@ -1,5 +1,5 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -17,29 +17,29 @@ struct CoachChatView: View {
                             HStack {
                                 Text(turn.role.capitalized)
                                     .font(.caption.weight(.bold))
-                                    .foregroundStyle(turn.role == "coach" ? LuxCueTheme.primary : LuxCueTheme.accent)
+                                    .foregroundStyle(turn.role == "coach" ? ZonelightTheme.primary : ZonelightTheme.accent)
                                 if !turn.strategy.isEmpty {
                                     Text(turn.strategy)
                                         .font(.caption2)
                                         .padding(.horizontal, 6)
                                         .padding(.vertical, 2)
-                                        .background(Capsule().fill(LuxCueTheme.secondary))
+                                        .background(Capsule().fill(ZonelightTheme.secondary))
                                 }
                                 if turn.sttSource != nil {
                                     Image(systemName: "mic.fill")
                                         .font(.caption2)
-                                        .foregroundStyle(LuxCueTheme.accent)
+                                        .foregroundStyle(ZonelightTheme.accent)
                                 }
                             }
                             Text(turn.text)
                                 .font(.body)
-                                .foregroundStyle(LuxCueTheme.ink)
+                                .foregroundStyle(ZonelightTheme.ink)
                         }
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(
                             RoundedRectangle(cornerRadius: 12)
-                                .fill(turn.role == "coach" ? LuxCueTheme.card : LuxCueTheme.secondary)
+                                .fill(turn.role == "coach" ? ZonelightTheme.card : ZonelightTheme.secondary)
                         )
                     }
                 }
@@ -59,7 +59,7 @@ struct CoachChatView: View {
                         appModel.sendCoachQuestion()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(LuxCueTheme.primary)
+                    .tint(ZonelightTheme.primary)
                     .disabled(appModel.coachQuestion.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
                 HStack {
@@ -71,13 +71,13 @@ struct CoachChatView: View {
                         appModel.finishSpeechQuestion()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(LuxCueTheme.accent)
+                    .tint(ZonelightTheme.accent)
                     Button("Meter Card") { appModel.openMeterCard() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(16)
-            .background(LuxCueTheme.secondary)
+            .background(ZonelightTheme.secondary)
         }
         .luxScreen()
         .navigationTitle("Coach")

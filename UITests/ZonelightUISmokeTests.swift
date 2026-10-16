@@ -1,12 +1,12 @@
 import XCTest
 
-final class LuxCueUISmokeTests: XCTestCase {
+final class ZonelightUISmokeTests: XCTestCase {
     func testMeterHomeSignatureAndSettings() {
         let app = XCUIApplication()
         app.launchArguments = ["-ui-smoke-reset"]
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["LuxCue"].waitForExistence(timeout: 12))
+        XCTAssertTrue(app.staticTexts["Zonelight"].waitForExistence(timeout: 12))
         XCTAssertTrue(
             app.otherElements["ComplianceBanner"].waitForExistence(timeout: 5)
                 || app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "非校准")).firstMatch.exists

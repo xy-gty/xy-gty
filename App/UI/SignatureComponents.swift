@@ -1,13 +1,13 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct ComplianceBanner: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            ForEach(LuxCueCompliance.requiredDisclaimers, id: \.self) { line in
+            ForEach(ZonelightCompliance.requiredDisclaimers, id: \.self) { line in
                 Text(line)
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(LuxCueTheme.primary)
+                    .foregroundStyle(ZonelightTheme.primary)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -17,7 +17,7 @@ struct ComplianceBanner: View {
                 .fill(Color.white.opacity(0.9))
                 .overlay(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .stroke(LuxCueTheme.accent.opacity(0.45), lineWidth: 1.5)
+                        .stroke(ZonelightTheme.accent.opacity(0.45), lineWidth: 1.5)
                 )
         )
         .accessibilityElement(children: .combine)
@@ -36,25 +36,25 @@ struct ZoneSystemDialView: View {
         VStack(spacing: 10) {
             Text("Zone dial")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(LuxCueTheme.muted)
+                .foregroundStyle(ZonelightTheme.muted)
                 .textCase(.uppercase)
 
             ZStack {
                 Circle()
-                    .stroke(LuxCueTheme.primary.opacity(0.25), lineWidth: 18)
+                    .stroke(ZonelightTheme.primary.opacity(0.25), lineWidth: 18)
                     .frame(width: 168, height: 168)
                 Circle()
                     .trim(from: 0, to: dialProgress)
-                    .stroke(LuxCueTheme.accent, style: StrokeStyle(lineWidth: 18, lineCap: .round))
+                    .stroke(ZonelightTheme.accent, style: StrokeStyle(lineWidth: 18, lineCap: .round))
                     .rotationEffect(.degrees(-90))
                     .frame(width: 168, height: 168)
                 VStack(spacing: 2) {
                     Text("ZONE")
                         .font(.caption2.weight(.bold))
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
                     Text(selectedZone.isEmpty ? "—" : selectedZone)
                         .font(.system(size: 44, weight: .bold, design: .rounded))
-                        .foregroundStyle(LuxCueTheme.primary)
+                        .foregroundStyle(ZonelightTheme.primary)
                         .minimumScaleFactor(0.5)
                 }
                 .accessibilityIdentifier("ZoneDialNumeral")
@@ -69,12 +69,12 @@ struct ZoneSystemDialView: View {
                         } label: {
                             Text(zone)
                                 .font(.caption.weight(.bold))
-                                .foregroundStyle(selectedZone == zone ? .white : LuxCueTheme.ink)
+                                .foregroundStyle(selectedZone == zone ? .white : ZonelightTheme.ink)
                                 .frame(width: 36, height: 36)
                                 .background(
-                                    Circle().fill(selectedZone == zone ? LuxCueTheme.primary : LuxCueTheme.card)
+                                    Circle().fill(selectedZone == zone ? ZonelightTheme.primary : ZonelightTheme.card)
                                 )
-                                .overlay(Circle().stroke(LuxCueTheme.primary.opacity(0.25), lineWidth: 1))
+                                .overlay(Circle().stroke(ZonelightTheme.primary.opacity(0.25), lineWidth: 1))
                         }
                         .buttonStyle(.plain)
                         .accessibilityLabel("Zone \(zone)")
@@ -85,8 +85,8 @@ struct ZoneSystemDialView: View {
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(LuxCueTheme.card)
-                .shadow(color: LuxCueTheme.primary.opacity(0.08), radius: 8, y: 3)
+                .fill(ZonelightTheme.card)
+                .shadow(color: ZonelightTheme.primary.opacity(0.08), radius: 8, y: 3)
         )
     }
 
@@ -105,17 +105,17 @@ struct OversizedEVReadoutBar: View {
         HStack(alignment: .firstTextBaseline, spacing: 10) {
             Text("EV")
                 .font(.title3.weight(.bold))
-                .foregroundStyle(LuxCueTheme.accent)
+                .foregroundStyle(ZonelightTheme.accent)
             Text(evText)
                 .font(.system(size: 56, weight: .heavy, design: .rounded))
-                .foregroundStyle(LuxCueTheme.primary)
+                .foregroundStyle(ZonelightTheme.primary)
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .accessibilityIdentifier("EVReadoutValue")
             Spacer(minLength: 0)
             if shimmer {
                 ProgressView()
-                    .tint(LuxCueTheme.accent)
+                    .tint(ZonelightTheme.accent)
             }
         }
         .padding(.horizontal, 18)
@@ -125,14 +125,14 @@ struct OversizedEVReadoutBar: View {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(
                     LinearGradient(
-                        colors: [LuxCueTheme.primary.opacity(0.12), LuxCueTheme.secondary, LuxCueTheme.accent.opacity(0.18)],
+                        colors: [ZonelightTheme.primary.opacity(0.12), ZonelightTheme.secondary, ZonelightTheme.accent.opacity(0.18)],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
                 .overlay(
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .stroke(LuxCueTheme.primary.opacity(0.35), lineWidth: 1.5)
+                        .stroke(ZonelightTheme.primary.opacity(0.35), lineWidth: 1.5)
                 )
         )
         .accessibilityElement(children: .combine)
@@ -151,21 +151,21 @@ struct SpotMeterCrossCard: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Spot-meter cross")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(LuxCueTheme.muted)
+                .foregroundStyle(ZonelightTheme.muted)
                 .textCase(.uppercase)
 
             ZStack {
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(LuxCueTheme.secondary)
+                    .fill(ZonelightTheme.secondary)
                 // Crosshair
                 Rectangle()
-                    .fill(LuxCueTheme.primary.opacity(0.55))
+                    .fill(ZonelightTheme.primary.opacity(0.55))
                     .frame(width: 2)
                 Rectangle()
-                    .fill(LuxCueTheme.primary.opacity(0.55))
+                    .fill(ZonelightTheme.primary.opacity(0.55))
                     .frame(height: 2)
                 Circle()
-                    .stroke(LuxCueTheme.accent, lineWidth: 2)
+                    .stroke(ZonelightTheme.accent, lineWidth: 2)
                     .frame(width: 28, height: 28)
                     .offset(
                         x: empty ? 0 : CGFloat((crossX - 0.5) * 120),
@@ -174,7 +174,7 @@ struct SpotMeterCrossCard: View {
                 if empty {
                     Text("Mark subject / gray card")
                         .font(.subheadline)
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
                 } else {
                     VStack {
                         Spacer()
@@ -182,8 +182,8 @@ struct SpotMeterCrossCard: View {
                             .font(.caption.weight(.bold))
                             .padding(.horizontal, 10)
                             .padding(.vertical, 4)
-                            .background(Capsule().fill(LuxCueTheme.accent.opacity(0.2)))
-                            .foregroundStyle(LuxCueTheme.ink)
+                            .background(Capsule().fill(ZonelightTheme.accent.opacity(0.2)))
+                            .foregroundStyle(ZonelightTheme.ink)
                             .padding(.bottom, 10)
                     }
                 }
@@ -191,13 +191,13 @@ struct SpotMeterCrossCard: View {
             .frame(height: 160)
             .overlay(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .stroke(LuxCueTheme.primary.opacity(0.3), lineWidth: 1)
+                    .stroke(ZonelightTheme.primary.opacity(0.3), lineWidth: 1)
             )
         }
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(LuxCueTheme.card)
+                .fill(ZonelightTheme.card)
         )
         .accessibilityIdentifier("SpotMeterCrossCard")
     }

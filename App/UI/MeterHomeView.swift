@@ -1,6 +1,6 @@
 import SwiftUI
 import PhotosUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct MeterHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,9 +11,9 @@ struct MeterHomeView: View {
                 ComplianceBanner()
 
                 HStack {
-                    Text("LuxCue")
+                    Text("Zonelight")
                         .font(.largeTitle.bold())
-                        .foregroundStyle(LuxCueTheme.primary)
+                        .foregroundStyle(ZonelightTheme.primary)
                     Spacer()
                     Button {
                         appModel.push(.settings)
@@ -26,7 +26,7 @@ struct MeterHomeView: View {
 
                 Text("AI exposure coach — spot meter or import a still.")
                     .font(.subheadline)
-                    .foregroundStyle(LuxCueTheme.muted)
+                    .foregroundStyle(ZonelightTheme.muted)
 
                 OversizedEVReadoutBar(evText: appModel.evDisplay, shimmer: appModel.identifyBusy)
 
@@ -49,7 +49,7 @@ struct MeterHomeView: View {
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(LuxCueTheme.primary)
+                    .tint(ZonelightTheme.primary)
                     .accessibilityIdentifier("SpotButton")
 
                     PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
@@ -57,7 +57,7 @@ struct MeterHomeView: View {
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.bordered)
-                    .tint(LuxCueTheme.accent)
+                    .tint(ZonelightTheme.accent)
                     .accessibilityIdentifier("ImportButton")
                 }
 
@@ -71,27 +71,27 @@ struct MeterHomeView: View {
                             appModel.push(.exposureResult)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(LuxCueTheme.accent)
+                        .tint(ZonelightTheme.accent)
                     }
                 }
 
                 if let message = appModel.statusMessage {
                     Text(message)
                         .font(.footnote)
-                        .foregroundStyle(appModel.statusIsError ? .red : LuxCueTheme.ink)
+                        .foregroundStyle(appModel.statusIsError ? .red : ZonelightTheme.ink)
                 }
 
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
                 }
 
                 if !appModel.state.sessions.isEmpty {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Recent sessions")
                             .font(.headline)
-                            .foregroundStyle(LuxCueTheme.ink)
+                            .foregroundStyle(ZonelightTheme.ink)
                         ForEach(appModel.state.sessions.prefix(5), id: \.id) { session in
                             Button {
                                 appModel.activeSessionId = session.id
@@ -105,10 +105,10 @@ struct MeterHomeView: View {
                                     Spacer()
                                     Text(session.status)
                                         .font(.caption)
-                                        .foregroundStyle(LuxCueTheme.muted)
+                                        .foregroundStyle(ZonelightTheme.muted)
                                 }
                                 .padding(10)
-                                .background(RoundedRectangle(cornerRadius: 10).fill(LuxCueTheme.card))
+                                .background(RoundedRectangle(cornerRadius: 10).fill(ZonelightTheme.card))
                             }
                             .buttonStyle(.plain)
                         }

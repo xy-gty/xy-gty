@@ -1,5 +1,5 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct SetCalloutView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -12,31 +12,31 @@ struct SetCalloutView: View {
 
                 Text("TTS set callout")
                     .font(.title2.bold())
-                    .foregroundStyle(LuxCueTheme.primary)
+                    .foregroundStyle(ZonelightTheme.primary)
 
                 if let callout = appModel.activeCallout {
                     Text(callout.scriptText)
                         .font(.body)
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RoundedRectangle(cornerRadius: 14).fill(LuxCueTheme.card))
+                        .background(RoundedRectangle(cornerRadius: 14).fill(ZonelightTheme.card))
                     if appModel.tts.isSpeaking {
                         Label("Speaking…", systemImage: "speaker.wave.2.fill")
-                            .foregroundStyle(LuxCueTheme.accent)
+                            .foregroundStyle(ZonelightTheme.accent)
                     }
                     if let spoken = callout.spokenAt {
                         Text("Spoken at \(spoken.formatted())")
                             .font(.caption)
-                            .foregroundStyle(LuxCueTheme.muted)
+                            .foregroundStyle(ZonelightTheme.muted)
                     }
                 } else {
                     Text("No callout yet.")
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
                 }
 
                 Button("Speak again") { appModel.playSetCallout() }
                     .buttonStyle(.borderedProminent)
-                    .tint(LuxCueTheme.accent)
+                    .tint(ZonelightTheme.accent)
             }
             .padding(20)
         }

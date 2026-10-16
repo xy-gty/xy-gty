@@ -2,13 +2,13 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum LuxCueStores {
+public enum ZonelightStores {
     public static let meterState = "lux_cue_state"
     public static let aiConsentLocal = "ai_consent_local"
-    public static let supportFolderName = "LuxCue"
+    public static let supportFolderName = "Zonelight"
 
-    /// Keychain service for credential presence (luxcue.ai per technical contract).
-    public static let keychainService = "luxcue.ai"
+    /// Keychain service for credential presence (zonelight.ai per technical contract).
+    public static let keychainService = "zonelight.ai"
     public static let keychainAPIKeyAccount = "deepseek_api_key"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -30,7 +30,7 @@ public enum LuxCueStores {
         directory.appendingPathComponent("\(name).json", isDirectory: false)
     }
 
-    public static func meterStore(directory: URL) -> AtomicCodableStore<LuxCueState> {
+    public static func meterStore(directory: URL) -> AtomicCodableStore<ZonelightState> {
         AtomicCodableStore(url: storeURL(directory: directory, name: meterState))
     }
 

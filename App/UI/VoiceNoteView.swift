@@ -9,18 +9,18 @@ struct VoiceNoteView: View {
                 ComplianceBanner()
                 Text("Hands-free meter notes while holding the camera.")
                     .font(.subheadline)
-                    .foregroundStyle(LuxCueTheme.muted)
+                    .foregroundStyle(ZonelightTheme.muted)
                     .multilineTextAlignment(.center)
                 if appModel.voiceRecorder.isRecording {
                     Label("Recording…", systemImage: "mic.fill")
                         .foregroundStyle(.red)
                     Button("Stop & save") { appModel.stopVoiceNote() }
                         .buttonStyle(.borderedProminent)
-                        .tint(LuxCueTheme.primary)
+                        .tint(ZonelightTheme.primary)
                 } else {
                     Button("Start recording") { appModel.startVoiceNote() }
                         .buttonStyle(.borderedProminent)
-                        .tint(LuxCueTheme.accent)
+                        .tint(ZonelightTheme.accent)
                 }
                 Spacer()
             }

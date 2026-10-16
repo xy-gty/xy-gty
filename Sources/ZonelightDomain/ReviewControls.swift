@@ -9,7 +9,7 @@ public enum LuxReviewControls {
 }
 
 /// Hard compliance disclaimers — required on every EV / exposure / zone / meter / TTS surface.
-public enum LuxCueCompliance {
+public enum ZonelightCompliance {
     public static let calibratedLabInstrument = false
     public static let medicalLighting = false
     public static let neverClaimLabCalibrationOrMedicalLighting = true
@@ -21,7 +21,7 @@ public enum LuxCueCompliance {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "luxcue.consent.v1"
+    public static let disclosureVersion = "zonelight.consent.v1"
     public static let fields = [
         "spot_or_imported_still",
         "user_question",
@@ -45,7 +45,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum LuxCueInterfaceNames {
+public enum ZonelightInterfaceNames {
     public static let meterStore = "MeterStore"
     public static let spotMeterCapture = "SpotMeterCapture"
     public static let photoLibraryImporter = "PhotoLibraryImporter"
@@ -68,35 +68,35 @@ public enum LuxCueInterfaceNames {
 /// Permission usage strings extending meter coach (no competitor names).
 public enum PrivacyUsageCopy {
     public static let camera =
-        "Capture spot-meter and gray-card readings so LuxCue can suggest exposure coaching"
+        "Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching"
     public static let photoLibrary =
-        "Import stills to complete spot-meter sessions in LuxCue"
+        "Import stills to complete spot-meter sessions in Zonelight"
     public static let microphone =
         "Record hands-free meter notes while holding the camera"
     public static let speechRecognition =
         "Turn spoken zone and exposure questions into coach chat text"
 }
 
-public enum LuxCueIdentity {
-    public static let appName = "LuxCue"
-    public static let developmentBundleId = "com.lingguang.luxcue"
-    public static let productDir = "luxcue"
+public enum ZonelightIdentity {
+    public static let appName = "Zonelight"
+    public static let developmentBundleId = "com.lingguang.zonelight"
+    public static let productDir = "zonelight"
     public static let uiLanguage = "en-US"
     public static let simulatorPrefUDID = "B14CC0EA"
 }
 
-public enum LuxCuePalette {
+public enum ZonelightPalette {
     public static let primary = "#1D4ED8"
     public static let secondary = "#F0F9FF"
     public static let accent = "#EAB308"
 }
 
-public enum LuxCueUISpecies {
+public enum ZonelightUISpecies {
     public static let signature =
         "zone_system_dial + oversized_ev_readout_bar + spot_meter_cross_card"
 }
 
-public enum LuxCueGaps {
+public enum ZonelightGaps {
     public static let privacyURL = "UNKNOWN"
     public static let termsURL = "UNKNOWN"
     public static let supportURL = "UNKNOWN"

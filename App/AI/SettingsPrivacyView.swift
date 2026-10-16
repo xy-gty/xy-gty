@@ -1,5 +1,5 @@
 import SwiftUI
-import LuxCueDomain
+import ZonelightDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -30,7 +30,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(LuxCueTheme.muted)
+                        .foregroundStyle(ZonelightTheme.muted)
                 }
             }
 
@@ -42,11 +42,11 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                Text("Bundle \(LuxCueIdentity.developmentBundleId)")
+                Text("Bundle \(ZonelightIdentity.developmentBundleId)")
                     .font(.caption)
-                Text("Product dir \(LuxCueIdentity.productDir)")
+                Text("Product dir \(ZonelightIdentity.productDir)")
                     .font(.caption)
-                Text("Simulator prefer \(LuxCueIdentity.simulatorPrefUDID)")
+                Text("Simulator prefer \(ZonelightIdentity.simulatorPrefUDID)")
                     .font(.caption)
             }
         }
