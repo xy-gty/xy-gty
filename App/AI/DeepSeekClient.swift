@@ -1,5 +1,5 @@
 import Foundation
-import WingCueDomain
+import FieldmarkDomain
 
 struct SpeciesIDPayload: Sendable {
     var candidates: [SpeciesCandidate]
@@ -61,11 +61,11 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are WingCue, an AI birding field coach. Reply with JSON only:
+        You are Fieldmark, an AI birding field coach. Reply with JSON only:
         {"candidates":[{"commonName":"","scientificName":"","confidence":0.0,"rank":1,"silhouetteKey":""}],
          "fieldMarks":[{"candidateRank":1,"label":"","bodyRegion":"","salience":0.0,"chipEmphasis":true}],
          "contrastNotes":"","coachTip":""}
-        Rank lookalikes; emphasize field marks a birder can see. Not a ClosetCue/FrameCue/ScoutCue/RuleCue/StopCue twin.
+        Rank lookalikes; emphasize field marks a birder can see. Not a Hemline/Mattebox/Sunbrief/Tablehost/Onionreel twin.
         """
 
         let content = try await chat(system: system, userJSON: payload)
@@ -89,7 +89,7 @@ struct DeepSeekClient {
             "confirmed_species_marks": confirmedMarks,
         ]
         let system = """
-        You are WingCue lookalike coach. Reply JSON only: {"reply":"short contrast tip citing field marks"}.
+        You are Fieldmark lookalike coach. Reply JSON only: {"reply":"short contrast tip citing field marks"}.
         """
         let content = try await chat(system: system, userJSON: payload)
         if let data = content.data(using: .utf8),

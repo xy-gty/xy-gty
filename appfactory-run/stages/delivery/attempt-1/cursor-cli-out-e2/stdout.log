@@ -1,7 +1,0 @@
-Dispatch `81116dfe-…` delivery finished **ready**.
-
-- Launch hash verified; accept freeze tip `0ee8e582…` matches local + `origin/wingcue/kf-20261015T135733Z-fecade9e`
-- `package_acceptance: accepted`; Feishu skipped (CONTROLLER_DELIVERY); Option A known_issues retained
-- Repo: https://github.com/xy-gty/xy-gty/tree/wingcue/kf-20261015T135733Z-fecade9e · `wingcue/` · palette + FieldCardStack/chips/silhouette · no AppIcon/LaunchScreen
-- MAP: `stages/delivery/attempt-1/MAP.md` · finish receipt `map_sha256 2befc962…`
-- Formal `delivered` still needs controller complete/status readback

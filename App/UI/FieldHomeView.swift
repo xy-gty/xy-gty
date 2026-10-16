@@ -1,7 +1,7 @@
 import PhotosUI
 import SwiftUI
 import UIKit
-import WingCueDomain
+import FieldmarkDomain
 
 struct FieldHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,15 +9,15 @@ struct FieldHomeView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("WingCue")
+                Text("Fieldmark")
                     .font(.system(size: 22, weight: .bold, design: .rounded))
-                    .foregroundStyle(WingCueTheme.primary)
+                    .foregroundStyle(FieldmarkTheme.primary)
                 Spacer()
                 Button {
                     appModel.push(.settings)
                 } label: {
                     Image(systemName: "gearshape.fill")
-                        .foregroundStyle(WingCueTheme.primary)
+                        .foregroundStyle(FieldmarkTheme.primary)
                 }
                 .accessibilityLabel("Settings")
             }
@@ -50,7 +50,7 @@ struct FieldHomeView: View {
                     if !appModel.state.sessions.isEmpty {
                         Text("Recent sightings")
                             .font(.headline)
-                            .foregroundStyle(WingCueTheme.ink)
+                            .foregroundStyle(FieldmarkTheme.ink)
                         ForEach(appModel.state.sessions.prefix(6), id: \.id) { session in
                             Button {
                                 appModel.activeSessionId = session.id
@@ -60,23 +60,23 @@ struct FieldHomeView: View {
                                     VStack(alignment: .leading) {
                                         Text(session.source == "camera" ? "Camera still" : "Album still")
                                             .font(.subheadline.weight(.semibold))
-                                            .foregroundStyle(WingCueTheme.ink)
+                                            .foregroundStyle(FieldmarkTheme.ink)
                                         Text(session.status)
                                             .font(.caption)
-                                            .foregroundStyle(WingCueTheme.muted)
+                                            .foregroundStyle(FieldmarkTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(WingCueTheme.primary)
+                                        .foregroundStyle(FieldmarkTheme.primary)
                                 }
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(WingCueTheme.cardFace)
+                                        .fill(FieldmarkTheme.cardFace)
                                 )
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .stroke(WingCueTheme.primary.opacity(0.25), lineWidth: 1)
+                                        .stroke(FieldmarkTheme.primary.opacity(0.25), lineWidth: 1)
                                 )
                             }
                         }
@@ -87,7 +87,7 @@ struct FieldHomeView: View {
 
             coachBar
         }
-        .wingCueScreen()
+        .fieldmarkScreen()
         .navigationBarHidden(true)
         .accessibilityIdentifier("FieldHomeView")
     }
@@ -104,7 +104,7 @@ struct FieldHomeView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(WingCueTheme.accent)
+                .tint(FieldmarkTheme.accent)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Import", systemImage: "photo.on.rectangle")
@@ -113,7 +113,7 @@ struct FieldHomeView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.bordered)
-                .tint(WingCueTheme.primary)
+                .tint(FieldmarkTheme.primary)
             }
 
             HStack(spacing: 8) {
@@ -127,7 +127,7 @@ struct FieldHomeView: View {
                 } label: {
                     Image(systemName: "mic.circle.fill")
                         .font(.title2)
-                        .foregroundStyle(WingCueTheme.primary)
+                        .foregroundStyle(FieldmarkTheme.primary)
                 }
                 .accessibilityLabel("Voice note")
 
@@ -140,14 +140,14 @@ struct FieldHomeView: View {
                 } label: {
                     Image(systemName: "bubble.left.and.text.bubble.right.fill")
                         .font(.title2)
-                        .foregroundStyle(WingCueTheme.primary)
+                        .foregroundStyle(FieldmarkTheme.primary)
                 }
                 .accessibilityLabel("Lookalike chat")
             }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(WingCueTheme.cardFace.shadow(color: WingCueTheme.primary.opacity(0.12), radius: 8, y: -2))
+        .background(FieldmarkTheme.cardFace.shadow(color: FieldmarkTheme.primary.opacity(0.12), radius: 8, y: -2))
     }
 }
 

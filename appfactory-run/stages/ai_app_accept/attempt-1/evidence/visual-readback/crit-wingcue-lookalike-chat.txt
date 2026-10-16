@@ -1,1 +1,0 @@
-Lookalike chat shows coach thread under retained chips/cards context with text and speech affordance.

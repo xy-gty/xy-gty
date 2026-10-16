@@ -1,7 +1,0 @@
-Dispatch `cfd201bb-873b-4138-8faa-97461baa1c40` finished **ready**.
-
-- Launch file hash verified; sealed prep consumed into `wingcue/` → `product`
-- WingCue built on iPhone 17 Pro `B14CC0EA…` — BUILD SUCCEEDED, **10/10** domain tests, smoke pid **35231**
-- Candidate `0ee8e582a11a-ab7764800c1f` (`candidate_unaccepted`); branch pushed `wingcue/kf-20261015T135733Z-fecade9e` @ `0ee8e582…`
-- UI: field-card stack + oversized chips + silhouette bar; palette `#0F766E`/`#F0FDFA`/`#C2410C`; four permissions; no AppIcon/LaunchScreen; Feishu skip; Option A gaps soft
-- Finish receipt: `map_sha256 fdb3cc61…` — controller can adopt/record next

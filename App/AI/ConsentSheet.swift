@@ -1,5 +1,5 @@
 import SwiftUI
-import WingCueDomain
+import FieldmarkDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(WingCueTheme.ink)
+                        .foregroundStyle(FieldmarkTheme.ink)
 
                     Text(
-                        "WingCue sends the fields below to \(AIConsentContract.provider) for species ID, field marks, and lookalike coaching. "
+                        "Fieldmark sends the fields below to \(AIConsentContract.provider) for species ID, field marks, and lookalike coaching. "
                             + "This is a field aid, not a taxonomic authority. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(WingCueTheme.muted)
+                    .foregroundStyle(FieldmarkTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(WingCueTheme.ink)
+                            .foregroundStyle(FieldmarkTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(WingCueTheme.primary)
+                                .foregroundStyle(FieldmarkTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(WingCueTheme.muted)
+                        .foregroundStyle(FieldmarkTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(WingCueTheme.accent)
+                        .tint(FieldmarkTheme.accent)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .wingCueScreen()
+            .fieldmarkScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

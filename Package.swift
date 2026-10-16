@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "WingCue",
+    name: "Fieldmark",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "WingCueDomain", targets: ["WingCueDomain"]),
+        .library(name: "FieldmarkDomain", targets: ["FieldmarkDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "WingCueDomain",
+            name: "FieldmarkDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/WingCueDomain"
+            path: "Sources/FieldmarkDomain"
         ),
     ]
 )

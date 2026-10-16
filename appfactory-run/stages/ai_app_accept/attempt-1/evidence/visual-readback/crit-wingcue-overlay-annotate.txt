@@ -1,1 +1,0 @@
-Overlay studio places callout labels on the bird photo tied to field marks.

@@ -1,4 +1,4 @@
-import WingCueDomain
+import FieldmarkDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             FieldHomeView()
-                .navigationDestination(for: WingCueRoute.self) { route in
+                .navigationDestination(for: FieldmarkRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -33,7 +33,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: WingCueRoute) -> some View {
+    private func destination(for route: FieldmarkRoute) -> some View {
         switch route {
         case .fieldHome:
             FieldHomeView()

@@ -1,7 +1,7 @@
 import AppRuntimeCore
 import SwiftUI
 import UIKit
-import WingCueDomain
+import FieldmarkDomain
 
 struct LookalikeChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -33,22 +33,22 @@ struct LookalikeChatView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(turn.role == "coach" ? "Coach" : "You")
                                     .font(.caption2.weight(.bold))
-                                    .foregroundStyle(WingCueTheme.muted)
+                                    .foregroundStyle(FieldmarkTheme.muted)
                                 Text(turn.text)
                                     .font(.body)
-                                    .foregroundStyle(WingCueTheme.ink)
+                                    .foregroundStyle(FieldmarkTheme.ink)
                                 if turn.sttSource == "speech" {
                                     Text("via speech")
                                         .font(.caption2)
-                                        .foregroundStyle(WingCueTheme.accent)
+                                        .foregroundStyle(FieldmarkTheme.accent)
                                 }
                             }
                             .padding(12)
                             .background(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                                     .fill(turn.role == "coach"
-                                          ? WingCueTheme.primary.opacity(0.12)
-                                          : WingCueTheme.cardFace)
+                                          ? FieldmarkTheme.primary.opacity(0.12)
+                                          : FieldmarkTheme.cardFace)
                             )
                             if turn.role == "user" { Spacer(minLength: 40) }
                         }
@@ -56,7 +56,7 @@ struct LookalikeChatView: View {
 
                     if appModel.coachBusy {
                         ProgressView("Coach thinking…")
-                            .tint(WingCueTheme.primary)
+                            .tint(FieldmarkTheme.primary)
                     }
                 }
                 .padding(16)
@@ -76,7 +76,7 @@ struct LookalikeChatView: View {
                     } label: {
                         Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "waveform.circle.fill")
                             .font(.title2)
-                            .foregroundStyle(WingCueTheme.accent)
+                            .foregroundStyle(FieldmarkTheme.accent)
                     }
                     .accessibilityLabel("Speech question")
 
@@ -84,13 +84,13 @@ struct LookalikeChatView: View {
                         appModel.sendCoachQuestion()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(WingCueTheme.primary)
+                    .tint(FieldmarkTheme.primary)
                 }
                 .padding(12)
-                .background(WingCueTheme.cardFace)
+                .background(FieldmarkTheme.cardFace)
             }
         )
-        .wingCueScreen()
+        .fieldmarkScreen()
         .navigationTitle("Lookalike coach")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("LookalikeChatView")

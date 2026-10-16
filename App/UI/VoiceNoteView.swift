@@ -9,17 +9,17 @@ struct VoiceNoteView: View {
             VStack(spacing: 24) {
                 Text("Hands-free field note")
                     .font(.title2.bold())
-                    .foregroundStyle(WingCueTheme.ink)
+                    .foregroundStyle(FieldmarkTheme.ink)
 
                 Text("Keep binoculars up — tap to record a short mic note.")
                     .font(.subheadline)
-                    .foregroundStyle(WingCueTheme.muted)
+                    .foregroundStyle(FieldmarkTheme.muted)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
 
                 Image(systemName: appModel.voiceRecorder.isRecording ? "mic.circle.fill" : "mic.circle")
                     .font(.system(size: 72))
-                    .foregroundStyle(appModel.voiceRecorder.isRecording ? WingCueTheme.accent : WingCueTheme.primary)
+                    .foregroundStyle(appModel.voiceRecorder.isRecording ? FieldmarkTheme.accent : FieldmarkTheme.primary)
                     .symbolEffect(.pulse, isActive: appModel.voiceRecorder.isRecording)
 
                 if let err = appModel.voiceRecorder.lastError {
@@ -34,13 +34,13 @@ struct VoiceNoteView: View {
                             dismiss()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(WingCueTheme.accent)
+                        .tint(FieldmarkTheme.accent)
                     } else {
                         Button("Start recording") {
                             appModel.startVoiceNote()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(WingCueTheme.primary)
+                        .tint(FieldmarkTheme.primary)
                     }
 
                     Button("Close") { dismiss() }
@@ -49,7 +49,7 @@ struct VoiceNoteView: View {
             }
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .wingCueScreen()
+            .fieldmarkScreen()
             .navigationTitle("Voice note")
             .navigationBarTitleDisplayMode(.inline)
         }

@@ -1,5 +1,5 @@
 import SwiftUI
-import WingCueDomain
+import FieldmarkDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -22,7 +22,7 @@ struct SettingsPrivacyView: View {
                      ? "Sharing allowed with \(AIConsentContract.provider)"
                      : "Outbound AI blocked until you allow sharing")
                     .font(.subheadline)
-                    .foregroundStyle(WingCueTheme.muted)
+                    .foregroundStyle(FieldmarkTheme.muted)
                 if appModel.consentGranted {
                     Button("Revoke AI consent", role: .destructive) {
                         appModel.revokeConsent()
@@ -31,12 +31,12 @@ struct SettingsPrivacyView: View {
                     Button("Review AI consent") {
                         appModel.showConsent = true
                     }
-                    .foregroundStyle(WingCueTheme.primary)
+                    .foregroundStyle(FieldmarkTheme.primary)
                 }
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(WingCueTheme.accent)
+                        .foregroundStyle(FieldmarkTheme.accent)
                 }
             }
 
@@ -46,7 +46,7 @@ struct SettingsPrivacyView: View {
                 Label("Microphone — hands-free notes", systemImage: "mic.fill")
                 Label("Speech — coach questions", systemImage: "waveform")
             }
-            .foregroundStyle(WingCueTheme.ink)
+            .foregroundStyle(FieldmarkTheme.ink)
 
             Section("Legal (local)") {
                 NavigationLink("Privacy") { LegalPageView(title: "Privacy", fileName: "privacy") }
@@ -62,10 +62,10 @@ struct SettingsPrivacyView: View {
                 Text("AI key / CloudKit: UNKNOWN until configured")
             }
             .font(.caption)
-            .foregroundStyle(WingCueTheme.muted)
+            .foregroundStyle(FieldmarkTheme.muted)
         }
         .scrollContentBackground(.hidden)
-        .wingCueScreen()
+        .fieldmarkScreen()
         .navigationTitle("Settings")
         .accessibilityIdentifier("SettingsPrivacyView")
     }

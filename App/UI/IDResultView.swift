@@ -1,5 +1,5 @@
 import SwiftUI
-import WingCueDomain
+import FieldmarkDomain
 
 struct IDResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -18,7 +18,7 @@ struct IDResultView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                         .overlay(
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .stroke(WingCueTheme.primary, lineWidth: 2)
+                                .stroke(FieldmarkTheme.primary, lineWidth: 2)
                         )
                 }
 
@@ -34,18 +34,18 @@ struct IDResultView: View {
 
                 if appModel.identifyBusy {
                     ProgressView("Reading plumage…")
-                        .tint(WingCueTheme.primary)
+                        .tint(FieldmarkTheme.primary)
                 }
 
                 HStack(spacing: 10) {
                     Button("Identify") { appModel.requestIdentify() }
                         .buttonStyle(.borderedProminent)
-                        .tint(WingCueTheme.accent)
+                        .tint(FieldmarkTheme.accent)
                         .disabled(appModel.identifyBusy)
 
                     Button("Save ID") { appModel.saveID() }
                         .buttonStyle(.borderedProminent)
-                        .tint(WingCueTheme.accent)
+                        .tint(FieldmarkTheme.accent)
 
                     Button("Dismiss") { appModel.dismissID() }
                         .buttonStyle(.bordered)
@@ -54,11 +54,11 @@ struct IDResultView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Edit marks (comma-separated)")
                         .font(.caption)
-                        .foregroundStyle(WingCueTheme.muted)
+                        .foregroundStyle(FieldmarkTheme.muted)
                     TextField("white wing bars, eye ring", text: $appModel.editingMarksText)
                         .textFieldStyle(.roundedBorder)
                     Button("Edit marks") { appModel.applyEditedMarks() }
-                        .foregroundStyle(WingCueTheme.primary)
+                        .foregroundStyle(FieldmarkTheme.primary)
                 }
 
                 HStack(spacing: 12) {
@@ -67,10 +67,10 @@ struct IDResultView: View {
                             appModel.push(.lookalikeChat(sessionId: id))
                         }
                     }
-                    .foregroundStyle(WingCueTheme.primary)
+                    .foregroundStyle(FieldmarkTheme.primary)
 
                     Button("Annotate") { appModel.buildOverlayDraft() }
-                        .foregroundStyle(WingCueTheme.primary)
+                        .foregroundStyle(FieldmarkTheme.primary)
 
                     Button {
                         appModel.speakTip()
@@ -79,13 +79,13 @@ struct IDResultView: View {
                     }
                     .padding(.horizontal, 10)
                     .padding(.vertical, 6)
-                    .background(WingCueTheme.secondary)
+                    .background(FieldmarkTheme.secondary)
                     .clipShape(Capsule())
                 }
             }
             .padding(20)
         }
-        .wingCueScreen()
+        .fieldmarkScreen()
         .navigationTitle("ID result")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("IDResultView")

@@ -1,5 +1,5 @@
 import SwiftUI
-import WingCueDomain
+import FieldmarkDomain
 
 struct OverlayStudioView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -13,8 +13,8 @@ struct OverlayStudioView: View {
                         .scaledToFit()
                 } else {
                     RoundedRectangle(cornerRadius: 16)
-                        .fill(WingCueTheme.primary.opacity(0.1))
-                        .overlay(Text("No photo").foregroundStyle(WingCueTheme.muted))
+                        .fill(FieldmarkTheme.primary.opacity(0.1))
+                        .overlay(Text("No photo").foregroundStyle(FieldmarkTheme.muted))
                 }
 
                 GeometryReader { geo in
@@ -22,7 +22,7 @@ struct OverlayStudioView: View {
                         Text(callout.label)
                             .font(.system(size: 14, weight: .bold, design: .rounded))
                             .padding(6)
-                            .background(WingCueTheme.accent.opacity(0.9))
+                            .background(FieldmarkTheme.accent.opacity(0.9))
                             .foregroundStyle(.white)
                             .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                             .position(
@@ -43,7 +43,7 @@ struct OverlayStudioView: View {
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .stroke(WingCueTheme.primary, lineWidth: 2)
+                    .stroke(FieldmarkTheme.primary, lineWidth: 2)
             )
             .padding(.horizontal)
 
@@ -54,17 +54,17 @@ struct OverlayStudioView: View {
                 appModel.saveOverlay()
             }
             .buttonStyle(.borderedProminent)
-            .tint(WingCueTheme.accent)
+            .tint(FieldmarkTheme.accent)
 
             Button("Speak tip") {
                 appModel.speakTip()
             }
-            .foregroundStyle(WingCueTheme.primary)
+            .foregroundStyle(FieldmarkTheme.primary)
 
             Spacer()
         }
         .padding(.top, 12)
-        .wingCueScreen()
+        .fieldmarkScreen()
         .navigationTitle("Overlay studio")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("OverlayStudioView")

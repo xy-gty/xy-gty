@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import WingCueDomain
+import FieldmarkDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = WingCueState()
-    @Published var path: [WingCueRoute] = []
+    @Published var state = FieldmarkState()
+    @Published var path: [FieldmarkRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -26,7 +26,7 @@ final class AppModel: ObservableObject {
     @Published var overlayCallouts: [OverlayCallout] = []
 
     let consentGate: AIConsentGate
-    let navigation: WingCueNavigationStore
+    let navigation: FieldmarkNavigationStore
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -35,7 +35,7 @@ final class AppModel: ObservableObject {
     private let supportRoot: URL
     private let photosRoot: URL
     private let audioRoot: URL
-    private let keychain = WingCueStores.apiKeyStore()
+    private let keychain = FieldmarkStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -80,7 +80,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent(WingCueStores.mediaDirectoryName, isDirectory: true)
+            .appendingPathComponent(FieldmarkStores.mediaDirectoryName, isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -94,7 +94,7 @@ final class AppModel: ObservableObject {
             isValid: { _ in true }
         )
 
-        let consentURL = WingCueStores.storeURL(directory: root, name: WingCueStores.aiConsentLocal)
+        let consentURL = FieldmarkStores.storeURL(directory: root, name: FieldmarkStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -110,7 +110,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await WingCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await FieldmarkStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -132,7 +132,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? sightingStore.load()) ?? WingCueState()
+        state = (try? sightingStore.load()) ?? FieldmarkState()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
             activeSessionId = state.sessions.first?.id
@@ -166,7 +166,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: WingCueRoute) {
+    func push(_ route: FieldmarkRoute) {
         path.append(route)
         persistNavigation()
     }
