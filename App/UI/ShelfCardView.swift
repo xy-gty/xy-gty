@@ -9,32 +9,32 @@ struct ShelfCardView: View {
                 ComplianceRibbon()
                 Text("Annotated shelf card")
                     .font(.title2.bold())
-                    .foregroundStyle(FolioCueTheme.ink)
+                    .foregroundStyle(SpinewellTheme.ink)
                 if let card = appModel.activeShelfCard {
                     ForEach(card.callouts, id: \.self) { line in
                         Text(line)
                             .font(.body.weight(.medium))
-                            .foregroundStyle(FolioCueTheme.ink)
+                            .foregroundStyle(SpinewellTheme.ink)
                             .padding(12)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .background(
                                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(FolioCueTheme.cardFace)
+                                    .fill(SpinewellTheme.cardFace)
                             )
                     }
                     Button("Speak Find") { appModel.speakFindCallout() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FolioCueTheme.accent)
+                        .tint(SpinewellTheme.accent)
                 } else {
                     Text("No card yet.")
-                        .foregroundStyle(FolioCueTheme.muted)
+                        .foregroundStyle(SpinewellTheme.muted)
                     Button("Build card") { appModel.buildShelfCard() }
                         .buttonStyle(.borderedProminent)
                 }
             }
             .padding(16)
         }
-        .folioCueScreen()
+        .spinewellScreen()
         .navigationTitle("Shelf Card")
         .accessibilityIdentifier("ShelfCard")
     }
@@ -49,19 +49,19 @@ struct FindCalloutView: View {
                 ComplianceRibbon()
                 Text("Find-my-book callout")
                     .font(.title2.bold())
-                    .foregroundStyle(FolioCueTheme.ink)
+                    .foregroundStyle(SpinewellTheme.ink)
                 if let callout = appModel.state.findCallouts.first(where: { $0.sessionId == appModel.activeSessionId }) {
                     Text(callout.scriptText)
                         .font(.body)
-                        .foregroundStyle(FolioCueTheme.ink)
+                        .foregroundStyle(SpinewellTheme.ink)
                         .padding(14)
                         .background(
                             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                .fill(FolioCueTheme.cardFace)
+                                .fill(SpinewellTheme.cardFace)
                         )
                     Button("Speak again") { appModel.speakFindCallout() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FolioCueTheme.primary)
+                        .tint(SpinewellTheme.primary)
                 } else {
                     Button("Generate & speak") { appModel.speakFindCallout() }
                         .buttonStyle(.borderedProminent)
@@ -69,7 +69,7 @@ struct FindCalloutView: View {
             }
             .padding(16)
         }
-        .folioCueScreen()
+        .spinewellScreen()
         .navigationTitle("Find")
         .accessibilityIdentifier("FindCallout")
     }
@@ -82,19 +82,19 @@ struct VoiceNoteView: View {
         VStack(spacing: 20) {
             Text("Hands-free shelf note")
                 .font(.title2.bold())
-                .foregroundStyle(FolioCueTheme.ink)
+                .foregroundStyle(SpinewellTheme.ink)
             Text("Microphone extends the shelf coach while you hold books — location / TBR notes.")
                 .font(.subheadline)
-                .foregroundStyle(FolioCueTheme.muted)
+                .foregroundStyle(SpinewellTheme.muted)
                 .multilineTextAlignment(.center)
             if appModel.voiceRecorder.isRecording {
                 Button("Stop & save") { appModel.stopVoiceNote() }
                     .buttonStyle(.borderedProminent)
-                    .tint(FolioCueTheme.accent)
+                    .tint(SpinewellTheme.accent)
             } else {
                 Button("Start recording") { appModel.startVoiceNote() }
                     .buttonStyle(.borderedProminent)
-                    .tint(FolioCueTheme.primary)
+                    .tint(SpinewellTheme.primary)
             }
             if let err = appModel.voiceRecorder.lastError {
                 Text(err).foregroundStyle(.red)
@@ -102,7 +102,7 @@ struct VoiceNoteView: View {
             Spacer()
         }
         .padding(24)
-        .folioCueScreen()
+        .spinewellScreen()
         .accessibilityIdentifier("VoiceNote")
     }
 }

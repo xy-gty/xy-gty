@@ -10,7 +10,7 @@ public enum ShelfReviewControls {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "foliocue.consent.v1"
+    public static let disclosureVersion = "spinewell.consent.v1"
     public static let fields = [
         "cover_or_spine_still",
         "user_question",
@@ -34,7 +34,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum FolioCueInterfaceNames {
+public enum SpinewellInterfaceNames {
     public static let shelfStore = "ShelfStore"
     public static let coverSpineCapture = "CoverSpineCapture"
     public static let photoLibraryImporter = "PhotoLibraryImporter"
@@ -65,7 +65,7 @@ public enum PrivacyUsageCopy {
         "Speak shelf coach questions such as where a book is or mark reading progress"
 }
 
-public enum FolioCueCompliance {
+public enum SpinewellCompliance {
     public static let personalBookshelfCoach =
         "个人藏书教练 / personal bookshelf coach"
     public static let notBookstoreCatalogScraping =
@@ -83,38 +83,38 @@ public enum FolioCueCompliance {
     ]
 }
 
-public enum FolioCueIdentity {
-    public static let appName = "FolioCue"
-    public static let developmentBundleId = "com.lingguang.foliocue"
-    public static let productDir = "foliocue"
+public enum SpinewellIdentity {
+    public static let appName = "Spinewell"
+    public static let developmentBundleId = "com.lingguang.spinewell"
+    public static let productDir = "spinewell"
     public static let uiLanguage = "en-US"
     public static let deliveryRepo = "git@github.com:xy-gty/xy-gty.git"
     public static let deliveryBranchHint = "xy-gty"
 }
 
-public enum FolioCuePalette {
+public enum SpinewellPalette {
     public static let primary = "#065F46"
     public static let secondary = "#FEF3C7"
     public static let accent = "#C026D3"
 }
 
-public enum FolioCueDevicePolicy {
+public enum SpinewellDevicePolicy {
     public static let targetDevice = "iPhone 17 Pro"
     public static let preferredUDID = "B14CC0EA"
     public static let bannedDevices = ["iPhone 17 Pro Max"]
 }
 
 /// Explicit anti-twin markers — Builder must not adopt these shells.
-public enum FolioCueAllergy {
+public enum SpinewellAllergy {
     public static let bannedTwinShells = [
-        "LuxCue",
-        "CellarCue",
-        "MixCue",
-        "SporeCue",
-        "FrameCue",
-        "NightCue",
-        "ScoutCue",
-        "StopCue",
+        "Zonelight",
+        "Racknote",
+        "Stirboard",
+        "Gillnote",
+        "Mattebox",
+        "Shutterdusk",
+        "Sunbrief",
+        "Onionreel",
     ]
     public static let bannedAppCopyNames = [
         "BookBuddy",

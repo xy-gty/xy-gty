@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum FolioCueRoute: String, Codable, CaseIterable, Sendable {
+public enum SpinewellRoute: String, Codable, CaseIterable, Sendable {
     case shelfHome = "shelfHome"
     case cameraCapture = "cameraCapture"
     case photoImport = "photoImport"
@@ -16,13 +16,13 @@ public enum FolioCueRoute: String, Codable, CaseIterable, Sendable {
 }
 
 /// Parameterized route payload for TypedNavigationStore restore.
-public struct FolioCueRoutePayload: Codable, Hashable, Sendable {
-    public var route: FolioCueRoute
+public struct SpinewellRoutePayload: Codable, Hashable, Sendable {
+    public var route: SpinewellRoute
     public var sessionId: String?
     /// privacy | terms | support | providerPolicy
     public var legalPage: String?
     public init(
-        route: FolioCueRoute,
+        route: SpinewellRoute,
         sessionId: String? = nil,
         legalPage: String? = nil
     ) {

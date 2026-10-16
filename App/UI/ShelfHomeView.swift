@@ -1,6 +1,6 @@
 import PhotosUI
 import SwiftUI
-import FolioCueDomain
+import SpinewellDomain
 
 struct ShelfHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,15 +8,15 @@ struct ShelfHomeView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("FolioCue")
+                Text("Spinewell")
                     .font(.system(size: 24, weight: .bold, design: .serif))
-                    .foregroundStyle(FolioCueTheme.primary)
+                    .foregroundStyle(SpinewellTheme.primary)
                 Spacer()
                 Button {
                     appModel.push(.settings)
                 } label: {
                     Image(systemName: "gearshape.fill")
-                        .foregroundStyle(FolioCueTheme.primary)
+                        .foregroundStyle(SpinewellTheme.primary)
                 }
                 .accessibilityLabel("Settings")
             }
@@ -52,7 +52,7 @@ struct ShelfHomeView: View {
                     if !appModel.state.sessions.isEmpty {
                         Text("Recent shelf sessions")
                             .font(.headline)
-                            .foregroundStyle(FolioCueTheme.ink)
+                            .foregroundStyle(SpinewellTheme.ink)
                         ForEach(appModel.state.sessions.prefix(6), id: \.id) { session in
                             let kind = appModel.state.captures.first(where: { $0.sessionId == session.id })?.captureKind ?? "cover"
                             Button {
@@ -63,19 +63,19 @@ struct ShelfHomeView: View {
                                     VStack(alignment: .leading) {
                                         Text("\(session.source) · \(kind)")
                                             .font(.subheadline.weight(.semibold))
-                                            .foregroundStyle(FolioCueTheme.ink)
+                                            .foregroundStyle(SpinewellTheme.ink)
                                         Text(session.status)
                                             .font(.caption)
-                                            .foregroundStyle(FolioCueTheme.muted)
+                                            .foregroundStyle(SpinewellTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(FolioCueTheme.primary)
+                                        .foregroundStyle(SpinewellTheme.primary)
                                 }
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(FolioCueTheme.cardFace)
+                                        .fill(SpinewellTheme.cardFace)
                                 )
                             }
                             .buttonStyle(.plain)
@@ -89,7 +89,7 @@ struct ShelfHomeView: View {
 
             coachBar
         }
-        .folioCueScreen()
+        .spinewellScreen()
         .navigationBarHidden(true)
         .accessibilityIdentifier("ShelfHome")
     }
@@ -104,7 +104,7 @@ struct ShelfHomeView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FolioCueTheme.primary)
+                .tint(SpinewellTheme.primary)
                 .accessibilityIdentifier("SnapButton")
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
@@ -112,7 +112,7 @@ struct ShelfHomeView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
-                .tint(FolioCueTheme.accent)
+                .tint(SpinewellTheme.accent)
                 .accessibilityIdentifier("ImportButton")
             }
 
@@ -134,7 +134,7 @@ struct ShelfHomeView: View {
                     Label("Coach", systemImage: "bubble.left.and.bubble.right.fill")
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FolioCueTheme.accent)
+                .tint(SpinewellTheme.accent)
             }
         }
         .padding(.horizontal, 16)

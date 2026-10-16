@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "FolioCue",
+    name: "Spinewell",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "FolioCueDomain", targets: ["FolioCueDomain"]),
+        .library(name: "SpinewellDomain", targets: ["SpinewellDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "FolioCueDomain",
+            name: "SpinewellDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/FolioCueDomain"
+            path: "Sources/SpinewellDomain"
         ),
     ]
 )

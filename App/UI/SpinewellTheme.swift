@@ -1,10 +1,10 @@
 import SwiftUI
-import FolioCueDomain
+import SpinewellDomain
 
-enum FolioCueTheme {
-    static let primary = Color(hex: FolioCuePalette.primary)
-    static let secondary = Color(hex: FolioCuePalette.secondary)
-    static let accent = Color(hex: FolioCuePalette.accent)
+enum SpinewellTheme {
+    static let primary = Color(hex: SpinewellPalette.primary)
+    static let secondary = Color(hex: SpinewellPalette.secondary)
+    static let accent = Color(hex: SpinewellPalette.accent)
     static let ink = Color(hex: "#064E3B")
     static let muted = Color(hex: "#047857").opacity(0.72)
     static let cardFace = Color.white.opacity(0.92)
@@ -33,14 +33,14 @@ extension Color {
     }
 }
 
-struct FolioCueScreenModifier: ViewModifier {
+struct SpinewellScreenModifier: ViewModifier {
     func body(content: Content) -> some View {
         ZStack {
             LinearGradient(
                 colors: [
-                    FolioCueTheme.secondary,
+                    SpinewellTheme.secondary,
                     Color(hex: "#ECFDF5"),
-                    FolioCueTheme.secondary.opacity(0.85),
+                    SpinewellTheme.secondary.opacity(0.85),
                 ],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
@@ -52,8 +52,8 @@ struct FolioCueScreenModifier: ViewModifier {
 }
 
 extension View {
-    func folioCueScreen() -> some View {
-        modifier(FolioCueScreenModifier())
+    func spinewellScreen() -> some View {
+        modifier(SpinewellScreenModifier())
     }
 }
 
@@ -64,16 +64,16 @@ struct StatusBanner: View {
     var body: some View {
         Text(text)
             .font(.subheadline.weight(.medium))
-            .foregroundStyle(isError ? Color.white : FolioCueTheme.ink)
+            .foregroundStyle(isError ? Color.white : SpinewellTheme.ink)
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(isError ? FolioCueTheme.accent.opacity(0.9) : FolioCueTheme.cardFace)
+                    .fill(isError ? SpinewellTheme.accent.opacity(0.9) : SpinewellTheme.cardFace)
             )
             .overlay(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .stroke(FolioCueTheme.primary.opacity(0.25), lineWidth: 1)
+                    .stroke(SpinewellTheme.primary.opacity(0.25), lineWidth: 1)
             )
     }
 }
@@ -81,17 +81,17 @@ struct StatusBanner: View {
 struct ComplianceRibbon: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            ForEach(FolioCueCompliance.requiredDisclaimers, id: \.self) { line in
+            ForEach(SpinewellCompliance.requiredDisclaimers, id: \.self) { line in
                 Text(line)
                     .font(.caption2.weight(.semibold))
-                    .foregroundStyle(FolioCueTheme.secondary)
+                    .foregroundStyle(SpinewellTheme.secondary)
             }
         }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(FolioCueTheme.primary)
+                .fill(SpinewellTheme.primary)
         )
         .accessibilityIdentifier("ComplianceRibbon")
     }
@@ -106,7 +106,7 @@ struct SpineRailView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Spine rail")
                 .font(.caption.weight(.bold))
-                .foregroundStyle(FolioCueTheme.muted)
+                .foregroundStyle(SpinewellTheme.muted)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .bottom, spacing: 8) {
                     if items.isEmpty {
@@ -130,11 +130,11 @@ struct SpineRailView: View {
             .padding(10)
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(FolioCueTheme.railWood.opacity(0.18))
+                    .fill(SpinewellTheme.railWood.opacity(0.18))
             )
             .overlay(alignment: .bottom) {
                 Rectangle()
-                    .fill(FolioCueTheme.primary)
+                    .fill(SpinewellTheme.primary)
                     .frame(height: 6)
                     .clipShape(Capsule())
                     .padding(.horizontal, 8)
@@ -148,7 +148,7 @@ struct SpineRailView: View {
         let height = CGFloat(96 + (item.position % 5) * 10)
         return Text(item.spineLabel)
             .font(.system(size: 11, weight: .bold, design: .serif))
-            .foregroundStyle(FolioCueTheme.secondary)
+            .foregroundStyle(SpinewellTheme.secondary)
             .rotationEffect(.degrees(-90))
             .frame(width: height, height: 28)
             .frame(width: 28, height: height)
@@ -156,7 +156,7 @@ struct SpineRailView: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .fill(
                         LinearGradient(
-                            colors: [FolioCueTheme.primary, FolioCueTheme.accent.opacity(0.85)],
+                            colors: [SpinewellTheme.primary, SpinewellTheme.accent.opacity(0.85)],
                             startPoint: .top,
                             endPoint: .bottom
                         )
@@ -167,7 +167,7 @@ struct SpineRailView: View {
 
     private func emptySpine(height: CGFloat) -> some View {
         RoundedRectangle(cornerRadius: 4, style: .continuous)
-            .strokeBorder(FolioCueTheme.primary.opacity(0.35), style: StrokeStyle(lineWidth: 1, dash: [4, 3]))
+            .strokeBorder(SpinewellTheme.primary.opacity(0.35), style: StrokeStyle(lineWidth: 1, dash: [4, 3]))
             .frame(width: 28, height: height)
     }
 }
@@ -186,42 +186,42 @@ struct CoverOCRCardView: View {
             HStack {
                 Text(pending ? "Cover OCR card" : "Identified cover")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(FolioCueTheme.accent)
+                    .foregroundStyle(SpinewellTheme.accent)
                 Spacer()
                 if let confidence {
                     Text("\(Int(confidence * 100))%")
                         .font(.caption.monospacedDigit().weight(.semibold))
-                        .foregroundStyle(FolioCueTheme.primary)
+                        .foregroundStyle(SpinewellTheme.primary)
                 }
             }
             Text(title.isEmpty ? "Awaiting cover / spine still" : title)
                 .font(.system(size: 22, weight: .bold, design: .serif))
-                .foregroundStyle(FolioCueTheme.ink)
+                .foregroundStyle(SpinewellTheme.ink)
                 .fixedSize(horizontal: false, vertical: true)
             Text(author.isEmpty ? "Snap or import to fill this card" : author)
                 .font(.subheadline.weight(.medium))
-                .foregroundStyle(FolioCueTheme.muted)
+                .foregroundStyle(SpinewellTheme.muted)
             if !rationale.isEmpty {
                 Text(rationale)
                     .font(.footnote)
-                    .foregroundStyle(FolioCueTheme.ink.opacity(0.8))
+                    .foregroundStyle(SpinewellTheme.ink.opacity(0.8))
             }
             if let onIdentify {
                 Button("Identify Book", action: onIdentify)
                     .buttonStyle(.borderedProminent)
-                    .tint(FolioCueTheme.accent)
+                    .tint(SpinewellTheme.accent)
             }
         }
         .padding(18)
         .frame(maxWidth: .infinity, minHeight: 168, alignment: .topLeading)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(FolioCueTheme.cardFace)
-                .shadow(color: FolioCueTheme.primary.opacity(0.12), radius: 12, y: 4)
+                .fill(SpinewellTheme.cardFace)
+                .shadow(color: SpinewellTheme.primary.opacity(0.12), radius: 12, y: 4)
         )
         .overlay(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .stroke(FolioCueTheme.accent.opacity(0.45), lineWidth: 2)
+                .stroke(SpinewellTheme.accent.opacity(0.45), lineWidth: 2)
         )
         .accessibilityIdentifier("CoverOCRCard")
     }
@@ -236,19 +236,19 @@ struct ReadingProgressBarView: View {
             HStack {
                 Text("Reading progress")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(FolioCueTheme.muted)
+                    .foregroundStyle(SpinewellTheme.muted)
                 Spacer()
                 Text(label)
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(FolioCueTheme.primary)
+                    .foregroundStyle(SpinewellTheme.primary)
             }
             GeometryReader { geo in
                 ZStack(alignment: .leading) {
-                    Capsule().fill(FolioCueTheme.primary.opacity(0.15))
+                    Capsule().fill(SpinewellTheme.primary.opacity(0.15))
                     Capsule()
                         .fill(
                             LinearGradient(
-                                colors: [FolioCueTheme.primary, FolioCueTheme.accent],
+                                colors: [SpinewellTheme.primary, SpinewellTheme.accent],
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -261,7 +261,7 @@ struct ReadingProgressBarView: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(FolioCueTheme.cardFace)
+                .fill(SpinewellTheme.cardFace)
         )
         .accessibilityIdentifier("ReadingProgressBar")
     }
