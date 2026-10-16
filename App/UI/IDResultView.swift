@@ -1,5 +1,5 @@
 import SwiftUI
-import MixCueDomain
+import StirboardDomain
 
 struct IDResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -15,18 +15,18 @@ struct IDResultView: View {
                     BottleRailView(candidates: appModel.sessionCandidates)
 
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Label cues")
+                        Text("Label notes")
                             .font(.headline)
-                            .foregroundStyle(MixCueTheme.ink)
+                            .foregroundStyle(StirboardTheme.ink)
                         ForEach(appModel.sessionCandidates.flatMap(\.labelCues).prefix(6), id: \.self) { cue in
                             Text("· \(cue)")
                                 .font(.subheadline)
-                                .foregroundStyle(MixCueTheme.muted)
+                                .foregroundStyle(StirboardTheme.muted)
                         }
                         if appModel.sessionCandidates.isEmpty {
                             Text("Identify to fill the bottle rail.")
                                 .font(.subheadline)
-                                .foregroundStyle(MixCueTheme.muted)
+                                .foregroundStyle(StirboardTheme.muted)
                         }
 
                         NextPourCardView(
@@ -46,25 +46,25 @@ struct IDResultView: View {
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(MixCueTheme.accent)
+                    .tint(StirboardTheme.accent)
                     .disabled(appModel.identifyBusy)
 
                     Button("Save Mix") { appModel.saveMix() }
                         .buttonStyle(.borderedProminent)
-                        .tint(MixCueTheme.accent)
+                        .tint(StirboardTheme.accent)
 
                     Button("Dismiss") { appModel.dismissID() }
                         .buttonStyle(.bordered)
                 }
 
                 Button("Ask coach") { appModel.push(.recipeChat) }
-                    .foregroundStyle(MixCueTheme.primary)
+                    .foregroundStyle(StirboardTheme.primary)
                 Button("Open pour board") { appModel.openPourBoard() }
-                    .foregroundStyle(MixCueTheme.primary)
+                    .foregroundStyle(StirboardTheme.primary)
             }
             .padding(16)
         }
-        .mixCueScreen()
+        .stirboardScreen()
         .navigationTitle("Spirit ID")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("IDResult")

@@ -1,4 +1,4 @@
-name: MixCue
+name: Stirboard
 options:
   deploymentTarget:
     iOS: "17.0"
@@ -6,7 +6,7 @@ options:
 packages:
   AppRuntimeCore:
     path: Vendor/AppRuntimeCore
-  MixCueDomain:
+  StirboardDomain:
     path: .
 settings:
   base:
@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_IDENTITY: "-"
     GENERATE_INFOPLIST_FILE: YES
 targets:
-  MixCue:
+  Stirboard:
     type: application
     platform: iOS
     sources:
@@ -27,43 +27,43 @@ targets:
       - path: App/PrivacyInfo.xcprivacy
     dependencies:
       - package: AppRuntimeCore
-      - package: MixCueDomain
-        product: MixCueDomain
+      - package: StirboardDomain
+        product: StirboardDomain
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.mixcue
-        PRODUCT_NAME: MixCue
-        INFOPLIST_KEY_CFBundleDisplayName: MixCue
-        INFOPLIST_KEY_NSCameraUsageDescription: Capture bottle faces, labels, and garnish stills so MixCue can identify base spirits for your mix session
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import bar-shelf album stills to complete spirit identification in MixCue
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Stirboard
+        INFOPLIST_KEY_CFBundleDisplayName: Stirboard
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture bottle faces, labels, and garnish stills so Stirboard can identify base spirits for your mix session
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import bar-shelf album stills to complete spirit identification in Stirboard
         INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free voice notes while both hands shake or stir
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken substitute and recipe questions into coach chat text
         TARGETED_DEVICE_FAMILY: "1"
         CURRENT_PROJECT_VERSION: "1"
         MARKETING_VERSION: "1.0.0"
-        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_KEY_UILaunchScreen_Generation: NO
-  MixCueDomainTests:
+  StirboardDomainTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: Tests
     dependencies:
-      - package: MixCueDomain
-        product: MixCueDomain
+      - package: StirboardDomain
+        product: StirboardDomain
       - package: AppRuntimeCore
-      - target: MixCue
+      - target: Stirboard
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.mixcue.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.stirboard.tests
 schemes:
-  MixCue:
+  Stirboard:
     build:
       targets:
-        MixCue: all
-        MixCueDomainTests: [test]
+        Stirboard: all
+        StirboardDomainTests: [test]
     test:
       targets:
-        - MixCueDomainTests
+        - StirboardDomainTests
     run:
       config: Debug

@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import MixCueDomain
+import StirboardDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = MixCueState()
-    @Published var path: [MixCueRoute] = []
+    @Published var state = StirboardState()
+    @Published var path: [StirboardRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -27,7 +27,7 @@ final class AppModel: ObservableObject {
     @Published var captureSubject = "bottle"
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<MixCueRoute>
+    let navigation: TypedNavigationStore<StirboardRoute>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -36,7 +36,7 @@ final class AppModel: ObservableObject {
     private let supportRoot: URL
     private let photosRoot: URL
     private let audioRoot: URL
-    private let keychain = MixCueStores.apiKeyStore()
+    private let keychain = StirboardStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -78,7 +78,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent(MixCueStores.mediaDirectoryName, isDirectory: true)
+            .appendingPathComponent(StirboardStores.mediaDirectoryName, isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -89,10 +89,10 @@ final class AppModel: ObservableObject {
         mixStore = MixStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
-            isValid: MixCueNavigation.isValid
+            isValid: StirboardNavigation.isValid
         )
 
-        let consentURL = MixCueStores.storeURL(directory: root, name: MixCueStores.aiConsentLocal)
+        let consentURL = StirboardStores.storeURL(directory: root, name: StirboardStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -108,7 +108,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await MixCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await StirboardStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -130,7 +130,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? mixStore.load()) ?? MixCueState()
+        state = (try? mixStore.load()) ?? StirboardState()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
             activeSessionId = state.sessions.first?.id
@@ -167,7 +167,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: MixCueRoute) {
+    func push(_ route: StirboardRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -285,7 +285,7 @@ final class AppModel: ObservableObject {
                 photoDescriptor: descriptor,
                 subject: session.subject,
                 confirmedSpirits: confirmedSpiritsContext,
-                question: "Identify base spirit and label cues"
+                question: "Identify base spirit and label notes"
             )
             try consentGate.validate(permit)
 

@@ -1,5 +1,0 @@
-usage: ultra_lite_local_config.py identity-skeleton [-h] --run RUN --attempt
-                                                    ATTEMPT [--apply]
-                                                    [--reconcile]
-ultra_lite_local_config.py identity-skeleton: error: the following arguments are required: --attempt
-exit=0

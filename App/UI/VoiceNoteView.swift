@@ -9,16 +9,16 @@ struct VoiceNoteView: View {
             VStack(spacing: 24) {
                 Text("Hands-free voice note")
                     .font(.title2.bold())
-                    .foregroundStyle(MixCueTheme.ink)
+                    .foregroundStyle(StirboardTheme.ink)
                 Text("Record while both hands shake or stir. Mic permission is required; typed coach chat still works if denied.")
                     .font(.body)
-                    .foregroundStyle(MixCueTheme.muted)
+                    .foregroundStyle(StirboardTheme.muted)
                     .multilineTextAlignment(.center)
 
                 if appModel.voiceRecorder.isRecording {
                     Text("Recording…")
                         .font(.headline)
-                        .foregroundStyle(MixCueTheme.primary)
+                        .foregroundStyle(StirboardTheme.primary)
                 }
 
                 if let err = appModel.voiceRecorder.lastError {
@@ -42,12 +42,12 @@ struct VoiceNoteView: View {
                     .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(MixCueTheme.accent)
+                .tint(StirboardTheme.accent)
 
                 Spacer()
             }
             .padding(24)
-            .mixCueScreen()
+            .stirboardScreen()
             .navigationTitle("Voice note")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

@@ -1,5 +1,5 @@
 import SwiftUI
-import MixCueDomain
+import StirboardDomain
 
 struct PourBoardView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -10,14 +10,14 @@ struct PourBoardView: View {
                 if let recipe = appModel.sessionRecipe {
                     Text(recipe.title)
                         .font(.title2.bold())
-                        .foregroundStyle(MixCueTheme.ink)
+                        .foregroundStyle(StirboardTheme.ink)
                     Text("Base · \(recipe.baseSpirit)")
                         .font(.subheadline)
-                        .foregroundStyle(MixCueTheme.muted)
+                        .foregroundStyle(StirboardTheme.muted)
                     if !recipe.substituteNotes.isEmpty {
                         Text(recipe.substituteNotes)
                             .font(.footnote)
-                            .foregroundStyle(MixCueTheme.muted)
+                            .foregroundStyle(StirboardTheme.muted)
                     }
                 }
 
@@ -35,12 +35,12 @@ struct PourBoardView: View {
 
                 Button("Save Mix") { appModel.saveMix() }
                     .buttonStyle(.borderedProminent)
-                    .tint(MixCueTheme.accent)
+                    .tint(StirboardTheme.accent)
                     .frame(maxWidth: .infinity)
             }
             .padding(16)
         }
-        .mixCueScreen()
+        .stirboardScreen()
         .navigationTitle("Pour board")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("PourBoard")

@@ -1,1 +1,0 @@
-A horizontal garnish chip row sits under the pour card with placeable chip states.

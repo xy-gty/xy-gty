@@ -1,6 +1,6 @@
 import PhotosUI
 import SwiftUI
-import MixCueDomain
+import StirboardDomain
 
 struct BarHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,15 +8,15 @@ struct BarHomeView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text("MixCue")
+                Text("Stirboard")
                     .font(.system(size: 24, weight: .bold, design: .rounded))
-                    .foregroundStyle(MixCueTheme.primary)
+                    .foregroundStyle(StirboardTheme.primary)
                 Spacer()
                 Button {
                     appModel.push(.settings)
                 } label: {
                     Image(systemName: "gearshape.fill")
-                        .foregroundStyle(MixCueTheme.primary)
+                        .foregroundStyle(StirboardTheme.primary)
                 }
                 .accessibilityLabel("Settings")
             }
@@ -53,7 +53,7 @@ struct BarHomeView: View {
                     if !appModel.state.sessions.isEmpty {
                         Text("Recent mixes")
                             .font(.headline)
-                            .foregroundStyle(MixCueTheme.ink)
+                            .foregroundStyle(StirboardTheme.ink)
                         ForEach(appModel.state.sessions.prefix(6), id: \.id) { session in
                             Button {
                                 appModel.activeSessionId = session.id
@@ -63,19 +63,19 @@ struct BarHomeView: View {
                                     VStack(alignment: .leading) {
                                         Text(session.subject.capitalized + " · " + session.source)
                                             .font(.subheadline.weight(.semibold))
-                                            .foregroundStyle(MixCueTheme.ink)
+                                            .foregroundStyle(StirboardTheme.ink)
                                         Text(session.status)
                                             .font(.caption)
-                                            .foregroundStyle(MixCueTheme.muted)
+                                            .foregroundStyle(StirboardTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(MixCueTheme.primary)
+                                        .foregroundStyle(StirboardTheme.primary)
                                 }
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(MixCueTheme.cardFace)
+                                        .fill(StirboardTheme.cardFace)
                                 )
                             }
                             .buttonStyle(.plain)
@@ -88,7 +88,7 @@ struct BarHomeView: View {
 
             coachBar
         }
-        .mixCueScreen()
+        .stirboardScreen()
         .navigationBarHidden(true)
         .accessibilityIdentifier("BarHome")
     }
@@ -106,7 +106,7 @@ struct BarHomeView: View {
                         .padding(.vertical, 12)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(MixCueTheme.accent)
+                .tint(StirboardTheme.accent)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Import", systemImage: "photo.on.rectangle")
@@ -115,7 +115,7 @@ struct BarHomeView: View {
                         .padding(.vertical, 12)
                 }
                 .buttonStyle(.bordered)
-                .tint(MixCueTheme.primary)
+                .tint(StirboardTheme.primary)
             }
 
             HStack(spacing: 8) {
@@ -133,7 +133,7 @@ struct BarHomeView: View {
                 } label: {
                     Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "mic.circle.fill")
                         .font(.title2)
-                        .foregroundStyle(MixCueTheme.primary)
+                        .foregroundStyle(StirboardTheme.primary)
                 }
                 .accessibilityLabel("Speech question")
 
@@ -142,13 +142,13 @@ struct BarHomeView: View {
                 } label: {
                     Image(systemName: "waveform.circle")
                         .font(.title2)
-                        .foregroundStyle(MixCueTheme.accent)
+                        .foregroundStyle(StirboardTheme.accent)
                 }
                 .accessibilityLabel("Voice note")
             }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        .background(MixCueTheme.cardFace.ignoresSafeArea(edges: .bottom))
+        .background(StirboardTheme.cardFace.ignoresSafeArea(edges: .bottom))
     }
 }

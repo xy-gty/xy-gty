@@ -1,2 +1,0 @@
-{"type": "system", "subtype": "init", "session_id": "cursor-cli-build-bf79b15ba267"}
-{"type": "assistant", "message": {"role": "assistant", "content": [{"type": "text", "text": "MixCue ai_app_build MAP ready + finish ready; BUILD SUCCEEDED; 10/10 domain tests; smoke on B14CC0EA; candidate stamped; agent terminated after finish."}]}, "session_id": "cursor-cli-build-bf79b15ba267"}

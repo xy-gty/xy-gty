@@ -1,5 +1,5 @@
 import SwiftUI
-import MixCueDomain
+import StirboardDomain
 
 struct RecipeChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -17,20 +17,20 @@ struct RecipeChatView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(turn.role == "coach" ? "Coach" : "You")
                                     .font(.caption.weight(.bold))
-                                    .foregroundStyle(MixCueTheme.accent)
+                                    .foregroundStyle(StirboardTheme.accent)
                                 Text(turn.text)
                                     .font(.body)
-                                    .foregroundStyle(MixCueTheme.ink)
+                                    .foregroundStyle(StirboardTheme.ink)
                                 if turn.sttSource == "speech" {
                                     Text("via speech")
                                         .font(.caption2)
-                                        .foregroundStyle(MixCueTheme.muted)
+                                        .foregroundStyle(StirboardTheme.muted)
                                 }
                             }
                             .padding(12)
                             .background(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .fill(turn.role == "coach" ? MixCueTheme.cardFace : MixCueTheme.secondary)
+                                    .fill(turn.role == "coach" ? StirboardTheme.cardFace : StirboardTheme.secondary)
                             )
                             if turn.role == "user" { Spacer(minLength: 40) }
                         }
@@ -38,7 +38,7 @@ struct RecipeChatView: View {
                     if appModel.sessionTurns.isEmpty {
                         Text("Ask for a recipe or substitute — e.g. what can I sub for Cointreau.")
                             .font(.subheadline)
-                            .foregroundStyle(MixCueTheme.muted)
+                            .foregroundStyle(StirboardTheme.muted)
                             .padding(.top, 24)
                     }
                 }
@@ -56,7 +56,7 @@ struct RecipeChatView: View {
                     } label: {
                         Image(systemName: "arrow.up.circle.fill")
                             .font(.title)
-                            .foregroundStyle(MixCueTheme.primary)
+                            .foregroundStyle(StirboardTheme.primary)
                     }
                     .disabled(appModel.coachBusy)
                     Button {
@@ -68,18 +68,18 @@ struct RecipeChatView: View {
                     } label: {
                         Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "mic.fill")
                             .font(.title2)
-                            .foregroundStyle(MixCueTheme.accent)
+                            .foregroundStyle(StirboardTheme.accent)
                     }
                 }
                 Button("Open pour board") { appModel.openPourBoard() }
                     .frame(maxWidth: .infinity)
                     .buttonStyle(.borderedProminent)
-                    .tint(MixCueTheme.primary)
+                    .tint(StirboardTheme.primary)
             }
             .padding(12)
-            .background(MixCueTheme.cardFace)
+            .background(StirboardTheme.cardFace)
         }
-        .mixCueScreen()
+        .stirboardScreen()
         .navigationTitle("Coach")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("RecipeChat")

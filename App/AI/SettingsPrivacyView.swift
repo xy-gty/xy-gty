@@ -1,5 +1,5 @@
 import SwiftUI
-import MixCueDomain
+import StirboardDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -20,7 +20,7 @@ struct SettingsPrivacyView: View {
                 }
                 Text(appModel.consentGranted ? "Consent: granted" : "Consent: not granted")
                     .font(.caption)
-                    .foregroundStyle(MixCueTheme.muted)
+                    .foregroundStyle(StirboardTheme.muted)
             }
 
             Section("Permissions (core coach)") {
@@ -38,15 +38,15 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Gaps") {
-                Text("privacy_url: \(MixCueGaps.privacyURL)")
-                Text("terms_url: \(MixCueGaps.termsURL)")
-                Text("support_url: \(MixCueGaps.supportURL)")
-                Text("ai_key: \(MixCueGaps.aiKey)")
-                Text("cloudkit: \(MixCueGaps.cloudkit)")
+                Text("privacy_url: \(StirboardGaps.privacyURL)")
+                Text("terms_url: \(StirboardGaps.termsURL)")
+                Text("support_url: \(StirboardGaps.supportURL)")
+                Text("ai_key: \(StirboardGaps.aiKey)")
+                Text("cloudkit: \(StirboardGaps.cloudkit)")
             }
         }
         .scrollContentBackground(.hidden)
-        .mixCueScreen()
+        .stirboardScreen()
         .navigationTitle("Settings")
         .accessibilityIdentifier("Settings")
     }

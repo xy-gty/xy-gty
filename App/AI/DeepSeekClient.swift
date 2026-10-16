@@ -1,5 +1,5 @@
 import Foundation
-import MixCueDomain
+import StirboardDomain
 
 struct SpiritIDPayload: Sendable {
     var candidates: [SpiritCandidate]
@@ -66,11 +66,11 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are MixCue, an AI home-bar cocktail coach. Reply with JSON only:
+        You are Stirboard, an AI home-bar cocktail coach. Reply with JSON only:
         {"candidates":[{"displayName":"","baseSpirit":"","confidence":0.0,"rank":1,"labelCues":["cue"]}],
          "coachTip":""}
         Rank base-spirit candidates from bottle/label/garnish stills. Never name Cocktail Party or Bevnap.
-        Not a WingCue/FrameCue/RuleCue/StopCue/ClosetCue/ScoutCue twin.
+        Not a Fieldmark/Mattebox/Tablehost/Onionreel/Hemline/Sunbrief twin.
         """
 
         let content = try await chat(system: system, userJSON: payload)
@@ -94,7 +94,7 @@ struct DeepSeekClient {
             "confirmed_spirits_substitutes": confirmedSpirits,
         ]
         let system = """
-        You are MixCue recipe/substitute coach. Reply JSON only:
+        You are Stirboard recipe/substitute coach. Reply JSON only:
         {"reply":"short coach answer","recipe":{"title":"","baseSpirit":"","substituteNotes":"",
          "steps":[{"ordinal":1,"action":"pour","amountMl":45,"durationSec":null,"instruction":""}],
          "garnishChips":[{"name":"","placed":false,"accentColor":"#CA8A04"}]}}
@@ -197,7 +197,7 @@ struct DeepSeekClient {
                     recipeId: recipeId,
                     name: chip["name"] as? String ?? "Garnish",
                     placed: chip["placed"] as? Bool ?? false,
-                    accentColor: chip["accentColor"] as? String ?? MixCuePalette.accent
+                    accentColor: chip["accentColor"] as? String ?? StirboardPalette.accent
                 )
             }
             recipe = RecipeCard(

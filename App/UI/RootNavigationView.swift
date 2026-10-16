@@ -1,4 +1,4 @@
-import MixCueDomain
+import StirboardDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             BarHomeView()
-                .navigationDestination(for: MixCueRoute.self) { route in
+                .navigationDestination(for: StirboardRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -33,7 +33,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: MixCueRoute) -> some View {
+    private func destination(for route: StirboardRoute) -> some View {
         switch route {
         case .barHome:
             BarHomeView()

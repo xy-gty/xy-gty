@@ -1,6 +1,0 @@
-Dispatch `87175a47…994f` finished **ready**.
-
-- Launch hash verified; Acceptance MAP written and `cursor-package ultra-lite finish --status ready` accepted (`map_sha256` `7a8f832b…`).
-- Product commit frozen: `5e418cc1…` on `mixcue/kf-20261015T162417Z-7519c0dc` → `xy-gty`; `mixcue`→`product`; iPhone 17 Pro `B14CC0EA…` only (released).
-- Core selling points exercised on-device: Import→Spirit ID→Coach (“what can I sub for Cointreau”)→Pour board (Speak/Next/Save) + Shoot/Voice note/Speech + Settings four permissions; domain tests 10/10.
-- UL-07: design reuse 8/8; runtime vision pass on ID/chat/voice; Option A soft `known_issues` for home/capture/consent/pour/settings fold fails (no vision re-run). `ai_key_unavailable` / Feishu skip / no AppIcon as expected.
