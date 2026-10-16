@@ -1,5 +1,5 @@
 import UIKit
-import HiveCueDomain
+import BroodcheckDomain
 
 enum BroodRecognizer {
     struct Result {
@@ -24,7 +24,7 @@ enum BroodRecognizer {
         } else if brightness > 0.62 {
             brood = "Open / young brood pattern suspected on brighter comb of \(inspection.currentFrameLabel)."
             stores = "Bright capped stores likely along top bar — nectar-green pass candidate."
-            pests = "No strong pest cue from brightness alone; watch for spotty brood."
+            pests = "No strong pest sign from brightness alone; watch for spotty brood."
         } else {
             brood = "Mixed brood pattern on \(inspection.currentFrameLabel) — confirm queen right / worker cells."
             stores = "Mid stores band; mark nectar vs pollen before moving the rail."

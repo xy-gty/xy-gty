@@ -8,11 +8,11 @@ struct AnnotatedFrameView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Heat overlay")
                     .font(.title2.bold())
-                    .foregroundStyle(HiveCueTheme.ink)
+                    .foregroundStyle(BroodcheckTheme.ink)
 
                 Text("Tap the brood frame to place a heat / region mark, then Keep marks.")
                     .font(.subheadline)
-                    .foregroundStyle(HiveCueTheme.muted)
+                    .foregroundStyle(BroodcheckTheme.muted)
 
                 if let shot = appModel.inspectionShots.first {
                     HeatOverlayCanvas(
@@ -43,14 +43,14 @@ struct AnnotatedFrameView: View {
                 HStack(spacing: 12) {
                     Button("Keep marks") { appModel.keepOverlayMarks() }
                         .buttonStyle(.borderedProminent)
-                        .tint(HiveCueTheme.accent)
+                        .tint(BroodcheckTheme.accent)
                     Button("Discard") { appModel.discardOverlayDraft() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(20)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Annotated frame")
     }
 }

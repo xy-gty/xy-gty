@@ -1,9 +1,0 @@
-Dispatch `84bc37a9-9ef4-448c-a1ba-d2149f68b49b` complete.
-
-Launch hash verified. HiveCue independent acceptance finished with **Status/Verdict: ready**.
-
-- Frozen product commit `f28af04eed6677c6febdbcdd9f88d862d1ac1b8f` (read-only)
-- UL-01..UL-08 stamped on iPhone 17 Pro; domain tests 9/9; PrepCapture → seed → RestJourney
-- P1 gaps only: `ai_key_unavailable`, external legal URLs, CloudKit, Feishu row (non-blockers)
-- UL-07 soft known_issues (Option A): PhotosPicker AX on iOS 26 ZH, screenshot crop/scroll — functional paths logged
-- Finish: `cursor-package ultra-lite finish --status ready` → ok (`map_sha256` `1ca4b7b0…`)

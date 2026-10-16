@@ -1,5 +1,5 @@
 import SwiftUI
-import HiveCueDomain
+import BroodcheckDomain
 
 struct TurnReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,21 +9,21 @@ struct TurnReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Turn review")
                     .font(.title2.bold())
-                    .foregroundStyle(HiveCueTheme.ink)
+                    .foregroundStyle(BroodcheckTheme.ink)
 
                 if let turn = appModel.pendingTurn {
                     Text(turn.text)
                         .font(.body)
-                        .foregroundStyle(HiveCueTheme.ink)
+                        .foregroundStyle(BroodcheckTheme.ink)
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .fill(HiveCueTheme.card)
+                                .fill(BroodcheckTheme.card)
                         )
                 } else {
                     Text("No pending coach turn.")
-                        .foregroundStyle(HiveCueTheme.muted)
+                        .foregroundStyle(BroodcheckTheme.muted)
                 }
 
                 TextField("Optional feedback for next call", text: $appModel.userFeedback, axis: .vertical)
@@ -31,20 +31,20 @@ struct TurnReviewView: View {
                     .padding(12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(HiveCueTheme.card)
+                            .fill(BroodcheckTheme.card)
                     )
 
                 HStack(spacing: 12) {
                     Button(TurnReview.confirm) { appModel.keepPendingTurn() }
                         .buttonStyle(.borderedProminent)
-                        .tint(HiveCueTheme.accent)
+                        .tint(BroodcheckTheme.accent)
                     Button(TurnReview.reject) { appModel.discardPendingTurn() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(20)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Review turn")
     }
 }

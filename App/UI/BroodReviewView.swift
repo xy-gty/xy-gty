@@ -1,5 +1,5 @@
 import SwiftUI
-import HiveCueDomain
+import BroodcheckDomain
 
 struct BroodReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,7 +9,7 @@ struct BroodReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Brood review")
                     .font(.title2.bold())
-                    .foregroundStyle(HiveCueTheme.ink)
+                    .foregroundStyle(BroodcheckTheme.ink)
 
                 if let shotId = appModel.pendingDraft?.frameShotId,
                    let shot = appModel.frameShots.first(where: { $0.id == shotId }),
@@ -27,7 +27,7 @@ struct BroodReviewView: View {
                 HStack(spacing: 10) {
                     Button(BroodReviewBar.confirm) { appModel.keepBroodDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(HiveCueTheme.accent)
+                        .tint(BroodcheckTheme.accent)
                     Button(BroodReviewBar.reject) { appModel.discardBroodDraft() }
                         .buttonStyle(.bordered)
                     Button(BroodReviewBar.edit) {
@@ -38,7 +38,7 @@ struct BroodReviewView: View {
             }
             .padding(20)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Review")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -47,13 +47,13 @@ struct BroodReviewView: View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(HiveCueTheme.muted)
+                .foregroundStyle(BroodcheckTheme.muted)
             TextEditor(text: text)
                 .frame(minHeight: 72)
                 .padding(10)
                 .background(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(HiveCueTheme.card)
+                        .fill(BroodcheckTheme.card)
                 )
         }
     }

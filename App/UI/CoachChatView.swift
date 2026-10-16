@@ -1,6 +1,6 @@
 import SwiftUI
 import AppRuntimeCore
-import HiveCueDomain
+import BroodcheckDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -14,18 +14,18 @@ struct CoachChatView: View {
                         if message.role == "coach" { Spacer(minLength: 40) }
                         Text(message.text)
                             .font(.body)
-                            .foregroundStyle(message.role == "coach" ? Color.white : HiveCueTheme.ink)
+                            .foregroundStyle(message.role == "coach" ? Color.white : BroodcheckTheme.ink)
                             .padding(12)
                             .background(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .fill(message.role == "coach" ? HiveCueTheme.primary : HiveCueTheme.card)
+                                    .fill(message.role == "coach" ? BroodcheckTheme.primary : BroodcheckTheme.card)
                             )
                         if message.role != "coach" { Spacer(minLength: 40) }
                     }
                 }
                 if appModel.coachBusy {
                     ProgressView("Asking coach…")
-                        .tint(HiveCueTheme.primary)
+                        .tint(BroodcheckTheme.primary)
                 }
                 TextField("Ask for next hive action", text: $appModel.coachQuestion, axis: .vertical)
                     .focused($questionFocused)
@@ -33,7 +33,7 @@ struct CoachChatView: View {
                     .padding(12)
                     .background(
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
-                            .fill(HiveCueTheme.card)
+                            .fill(BroodcheckTheme.card)
                     )
             }
             .padding(16)
@@ -44,21 +44,21 @@ struct CoachChatView: View {
                     appModel.requestCoach()
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(HiveCueTheme.primary)
+                .tint(BroodcheckTheme.primary)
                 .disabled(appModel.coachBusy)
 
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption2)
-                        .foregroundStyle(HiveCueTheme.muted)
+                        .foregroundStyle(BroodcheckTheme.muted)
                         .lineLimit(2)
                 }
             }
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(HiveCueTheme.secondary)
+            .background(BroodcheckTheme.secondary)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Coach chat")
     }
 }

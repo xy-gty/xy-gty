@@ -1,4 +1,4 @@
-import HiveCueDomain
+import BroodcheckDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 InspectionsHomeView()
-                    .navigationDestination(for: HiveCueRoute.self) { route in
+                    .navigationDestination(for: BroodcheckRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "hexagon",
                         description: Text("Create an inspection from the Inspections tab.")
                     )
-                    .hiveCueScreen()
+                    .broodcheckScreen()
                 }
             }
             .tabItem { Label("Coach", systemImage: "bubble.left.and.bubble.right.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: HiveCueRoute) -> some View {
+    private func destination(for route: BroodcheckRoute) -> some View {
         switch route {
         case .inspectionsHome:
             InspectionsHomeView()

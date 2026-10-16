@@ -1,3 +1,0 @@
-commit=f28af04eed6677c6febdbcdd9f88d862d1ac1b8f
-branch=hivecue/kf-20261015T053908Z
-status_short=0

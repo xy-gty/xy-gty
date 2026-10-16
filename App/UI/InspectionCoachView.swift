@@ -1,5 +1,5 @@
 import SwiftUI
-import HiveCueDomain
+import BroodcheckDomain
 
 struct InspectionCoachView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -10,10 +10,10 @@ struct InspectionCoachView: View {
                 if let inspection = appModel.activeInspection {
                     Text(inspection.hiveLabel)
                         .font(.title2.bold())
-                        .foregroundStyle(HiveCueTheme.primary)
+                        .foregroundStyle(BroodcheckTheme.primary)
                     Text("Frame \(inspection.currentFrameLabel)")
                         .font(.subheadline)
-                        .foregroundStyle(HiveCueTheme.muted)
+                        .foregroundStyle(BroodcheckTheme.muted)
                 }
 
                 HexCombGrid(
@@ -43,25 +43,25 @@ struct InspectionCoachView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Findings")
                             .font(.headline)
-                            .foregroundStyle(HiveCueTheme.ink)
+                            .foregroundStyle(BroodcheckTheme.ink)
                         ForEach(appModel.inspectionFindings.prefix(4), id: \.id) { finding in
                             HStack(alignment: .top, spacing: 8) {
                                 Text(finding.tag.uppercased())
                                     .font(.caption2.bold())
                                     .padding(.horizontal, 8)
                                     .padding(.vertical, 4)
-                                    .background(Capsule().fill(HiveCueTheme.accent.opacity(0.2)))
-                                    .foregroundStyle(HiveCueTheme.accent)
+                                    .background(Capsule().fill(BroodcheckTheme.accent.opacity(0.2)))
+                                    .foregroundStyle(BroodcheckTheme.accent)
                                 Text(finding.detail)
                                     .font(.footnote)
-                                    .foregroundStyle(HiveCueTheme.ink)
+                                    .foregroundStyle(BroodcheckTheme.ink)
                             }
                         }
                     }
                     .padding(14)
                     .background(
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(HiveCueTheme.card)
+                            .fill(BroodcheckTheme.card)
                     )
                 }
 
@@ -86,12 +86,12 @@ struct InspectionCoachView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(HiveCueTheme.primary)
+                        .foregroundStyle(BroodcheckTheme.primary)
                 }
             }
             .padding(20)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Inspection coach")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -104,6 +104,6 @@ struct InspectionCoachView: View {
                 .padding(.vertical, 12)
         }
         .buttonStyle(.borderedProminent)
-        .tint(HiveCueTheme.primary)
+        .tint(BroodcheckTheme.primary)
     }
 }

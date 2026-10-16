@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import HiveCueDomain
+import BroodcheckDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -18,7 +18,7 @@ final class AppModel: ObservableObject {
     @Published var dictatedFields: [DictatedField] = []
 
     @Published var activeInspectionId: String?
-    @Published var path: [HiveCueRoute] = []
+    @Published var path: [BroodcheckRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -48,7 +48,7 @@ final class AppModel: ObservableObject {
     @Published var showCamera = false
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<HiveCueRoute>
+    let navigation: TypedNavigationStore<BroodcheckRoute>
     let tts = HandsFreeTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -63,7 +63,7 @@ final class AppModel: ObservableObject {
     private let dictatedFieldStore: AtomicCodableStore<[DictatedField]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = HiveCueStores.apiKeyStore()
+    private let keychain = BroodcheckStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
     private var pendingHeatMarks: [(x: Double, y: Double, heat: Double, label: String)] = []
@@ -137,27 +137,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("HiveCue", isDirectory: true)
+            .appendingPathComponent("Broodcheck", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        inspectionStore = HiveCueStores.inspectionStore(directory: root)
-        shotStore = HiveCueStores.frameShotStore(directory: root)
-        draftStore = HiveCueStores.broodDraftStore(directory: root)
-        findingStore = HiveCueStores.findingStore(directory: root)
-        overlayStore = HiveCueStores.annotatedOverlayStore(directory: root)
-        turnStore = HiveCueStores.coachTurnStore(directory: root)
-        messageStore = HiveCueStores.coachMessageStore(directory: root)
-        voiceNoteStore = HiveCueStores.voiceNoteStore(directory: root)
-        dictatedFieldStore = HiveCueStores.dictatedFieldStore(directory: root)
+        inspectionStore = BroodcheckStores.inspectionStore(directory: root)
+        shotStore = BroodcheckStores.frameShotStore(directory: root)
+        draftStore = BroodcheckStores.broodDraftStore(directory: root)
+        findingStore = BroodcheckStores.findingStore(directory: root)
+        overlayStore = BroodcheckStores.annotatedOverlayStore(directory: root)
+        turnStore = BroodcheckStores.coachTurnStore(directory: root)
+        messageStore = BroodcheckStores.coachMessageStore(directory: root)
+        voiceNoteStore = BroodcheckStores.voiceNoteStore(directory: root)
+        dictatedFieldStore = BroodcheckStores.dictatedFieldStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = HiveCueStores.storeURL(directory: root, name: HiveCueStores.aiConsentLocal)
+        let consentURL = BroodcheckStores.storeURL(directory: root, name: BroodcheckStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -172,7 +172,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await HiveCueStores.consentKeychainStore().save(mirrorData)
+                    try? await BroodcheckStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -233,7 +233,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: HiveCueRoute) {
+    func push(_ route: BroodcheckRoute) {
         path.append(route)
         persistNavigation()
     }

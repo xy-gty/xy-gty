@@ -1,5 +1,5 @@
 import Foundation
-import HiveCueDomain
+import BroodcheckDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -74,7 +74,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are HiveCue's AI hive-inspection coach. Reply with JSON only:
+        You are Broodcheck's AI hive-inspection coach. Reply with JSON only:
         {"reply":"concise next-action coaching for the beekeeper at the hive"}
         Reuse brood/stores/pest findings and prior_feedback. Hands may be gloved — keep steps actionable.
         """

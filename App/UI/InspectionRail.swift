@@ -12,11 +12,11 @@ struct InspectionRail: View {
             HStack {
                 Text("Inspection rail")
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(HiveCueTheme.muted)
+                    .foregroundStyle(BroodcheckTheme.muted)
                 Spacer()
                 Text(nextHint)
                     .font(.caption2.weight(.medium))
-                    .foregroundStyle(HiveCueTheme.accent)
+                    .foregroundStyle(BroodcheckTheme.accent)
                     .lineLimit(1)
             }
             ScrollView(.horizontal, showsIndicators: false) {
@@ -28,10 +28,10 @@ struct InspectionRail: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text("Step \(index + 1)")
                                     .font(.caption2)
-                                    .foregroundStyle(index == currentIndex ? Color.white.opacity(0.85) : HiveCueTheme.muted)
+                                    .foregroundStyle(index == currentIndex ? Color.white.opacity(0.85) : BroodcheckTheme.muted)
                                 Text(step)
                                     .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(index == currentIndex ? Color.white : HiveCueTheme.ink)
+                                    .foregroundStyle(index == currentIndex ? Color.white : BroodcheckTheme.ink)
                                     .lineLimit(2)
                             }
                             .padding(.horizontal, 14)
@@ -39,12 +39,12 @@ struct InspectionRail: View {
                             .frame(width: 132, alignment: .leading)
                             .background(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .fill(index == currentIndex ? HiveCueTheme.primary : HiveCueTheme.card)
+                                    .fill(index == currentIndex ? BroodcheckTheme.primary : BroodcheckTheme.card)
                             )
                             .overlay(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                                     .stroke(
-                                        index == currentIndex ? HiveCueTheme.primary : HiveCueTheme.primary.opacity(0.2),
+                                        index == currentIndex ? BroodcheckTheme.primary : BroodcheckTheme.primary.opacity(0.2),
                                         lineWidth: 1
                                     )
                             )
@@ -60,11 +60,11 @@ struct InspectionRail: View {
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(HiveCueTheme.secondary)
+                .fill(BroodcheckTheme.secondary)
         )
         .overlay(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .stroke(HiveCueTheme.primary.opacity(0.12), lineWidth: 1)
+                .stroke(BroodcheckTheme.primary.opacity(0.12), lineWidth: 1)
         )
     }
 }

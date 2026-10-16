@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Hexagonal brood-frame comb grid — HiveCue signature control (not FormCue chip rail).
+/// Hexagonal brood-frame comb grid — Broodcheck signature control (not Workrest chip rail).
 struct HexCombGrid: View {
     let labels: [String]
     let selectedIndex: Int
@@ -13,7 +13,7 @@ struct HexCombGrid: View {
         VStack(spacing: 10) {
             Text("Comb grid")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(HiveCueTheme.muted)
+                .foregroundStyle(BroodcheckTheme.muted)
                 .frame(maxWidth: .infinity, alignment: .leading)
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columns), spacing: 8) {
                 ForEach(Array(cells.enumerated()), id: \.offset) { index, label in
@@ -30,11 +30,11 @@ struct HexCombGrid: View {
         .padding(14)
         .background(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(HiveCueTheme.card.opacity(0.92))
+                .fill(BroodcheckTheme.card.opacity(0.92))
         )
         .overlay(
             RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .stroke(HiveCueTheme.primary.opacity(0.18), lineWidth: 1)
+                .stroke(BroodcheckTheme.primary.opacity(0.18), lineWidth: 1)
         )
     }
 }
@@ -46,12 +46,12 @@ private struct HexCell: View {
     var body: some View {
         ZStack {
             HexagonShape()
-                .fill(selected ? HiveCueTheme.accent : HiveCueTheme.primary.opacity(0.12))
+                .fill(selected ? BroodcheckTheme.accent : BroodcheckTheme.primary.opacity(0.12))
             HexagonShape()
-                .stroke(selected ? HiveCueTheme.accent : HiveCueTheme.primary.opacity(0.45), lineWidth: 1.5)
+                .stroke(selected ? BroodcheckTheme.accent : BroodcheckTheme.primary.opacity(0.45), lineWidth: 1.5)
             Text(label)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(selected ? Color.white : HiveCueTheme.ink)
+                .foregroundStyle(selected ? Color.white : BroodcheckTheme.ink)
                 .minimumScaleFactor(0.7)
                 .lineLimit(1)
                 .padding(.horizontal, 4)

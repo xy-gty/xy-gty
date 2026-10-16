@@ -1,5 +1,5 @@
 import SwiftUI
-import HiveCueDomain
+import BroodcheckDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -11,13 +11,13 @@ struct SettingsPrivacyView: View {
                     Text("Outbound AI")
                     Spacer()
                     Text(appModel.consentGranted ? "Allowed" : "Blocked")
-                        .foregroundStyle(appModel.consentGranted ? HiveCueTheme.accent : HiveCueTheme.primary)
+                        .foregroundStyle(appModel.consentGranted ? BroodcheckTheme.accent : BroodcheckTheme.primary)
                         .fontWeight(.semibold)
                 }
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(HiveCueTheme.muted)
+                        .foregroundStyle(BroodcheckTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -52,13 +52,13 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                LabeledContent("App", value: HiveCueIdentity.appName)
-                LabeledContent("Bundle", value: HiveCueIdentity.developmentBundleId)
-                LabeledContent("Simulator target", value: HiveCueDevicePolicy.targetDevice)
+                LabeledContent("App", value: BroodcheckIdentity.appName)
+                LabeledContent("Bundle", value: BroodcheckIdentity.developmentBundleId)
+                LabeledContent("Simulator target", value: BroodcheckDevicePolicy.targetDevice)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(HiveCueTheme.secondary.ignoresSafeArea())
+        .background(BroodcheckTheme.secondary.ignoresSafeArea())
         .navigationTitle("Settings")
     }
 }

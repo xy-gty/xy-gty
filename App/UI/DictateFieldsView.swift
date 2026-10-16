@@ -10,11 +10,11 @@ struct DictateFieldsView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Dictate inspection fields")
                     .font(.title2.bold())
-                    .foregroundStyle(HiveCueTheme.ink)
+                    .foregroundStyle(BroodcheckTheme.ink)
 
                 Text("Microphone + Speech Recognition write queen seen, temperament, and notes.")
                     .font(.subheadline)
-                    .foregroundStyle(HiveCueTheme.muted)
+                    .foregroundStyle(BroodcheckTheme.muted)
 
                 fieldRow(title: "Queen seen", text: $appModel.queenSeen, key: "queen_seen")
                 fieldRow(title: "Temperament", text: $appModel.temperament, key: "temperament")
@@ -22,19 +22,19 @@ struct DictateFieldsView: View {
 
                 if appModel.speechBusy {
                     ProgressView("Listening…")
-                        .tint(HiveCueTheme.primary)
+                        .tint(BroodcheckTheme.primary)
                 }
 
                 if !appModel.speechTranscript.isEmpty {
                     Text("Last transcript: \(appModel.speechTranscript)")
                         .font(.caption)
-                        .foregroundStyle(HiveCueTheme.muted)
+                        .foregroundStyle(BroodcheckTheme.muted)
                 }
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(HiveCueTheme.primary)
+                        .foregroundStyle(BroodcheckTheme.primary)
                 }
             }
             .padding(20)
@@ -44,12 +44,12 @@ struct DictateFieldsView: View {
                 appModel.saveTypedFields()
             }
             .buttonStyle(.borderedProminent)
-            .tint(HiveCueTheme.accent)
+            .tint(BroodcheckTheme.accent)
             .padding(16)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(HiveCueTheme.secondary)
+            .background(BroodcheckTheme.secondary)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Dictate")
     }
 
@@ -57,14 +57,14 @@ struct DictateFieldsView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(HiveCueTheme.muted)
+                .foregroundStyle(BroodcheckTheme.muted)
             TextField(title, text: text, axis: .vertical)
                 .focused($fieldFocused)
                 .lineLimit(1 ... 3)
                 .padding(10)
                 .background(
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(HiveCueTheme.card)
+                        .fill(BroodcheckTheme.card)
                 )
             Button {
                 appModel.startDictate(fieldKey: key)
@@ -72,7 +72,7 @@ struct DictateFieldsView: View {
                 Label("Record \(title)", systemImage: "mic.fill")
             }
             .buttonStyle(.bordered)
-            .tint(HiveCueTheme.primary)
+            .tint(BroodcheckTheme.primary)
             .accessibilityLabel("Record \(title) with microphone")
         }
     }

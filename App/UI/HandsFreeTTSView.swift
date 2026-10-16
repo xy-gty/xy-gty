@@ -8,11 +8,11 @@ struct HandsFreeTTSView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Hands-free notes")
                     .font(.title2.bold())
-                    .foregroundStyle(HiveCueTheme.ink)
+                    .foregroundStyle(BroodcheckTheme.ink)
 
                 Text("Play inspection notes while suited and gloved. Rail + comb grid sync on Next.")
                     .font(.subheadline)
-                    .foregroundStyle(HiveCueTheme.muted)
+                    .foregroundStyle(BroodcheckTheme.muted)
 
                 InspectionRail(
                     steps: appModel.railSteps,
@@ -29,36 +29,36 @@ struct HandsFreeTTSView: View {
 
                 if appModel.tts.isSpeaking {
                     Label("Speaking…", systemImage: "waveform")
-                        .foregroundStyle(HiveCueTheme.accent)
+                        .foregroundStyle(BroodcheckTheme.accent)
                         .font(.headline)
                 }
 
                 HStack(spacing: 12) {
                     Button("Play") { appModel.playHandsFree() }
                         .buttonStyle(.borderedProminent)
-                        .tint(HiveCueTheme.primary)
+                        .tint(BroodcheckTheme.primary)
                     Button("Pause") { appModel.pauseHandsFree() }
                         .buttonStyle(.bordered)
                     Button("Next note") { appModel.nextHandsFreeNote() }
                         .buttonStyle(.bordered)
-                        .tint(HiveCueTheme.accent)
+                        .tint(BroodcheckTheme.accent)
                 }
 
                 ForEach(appModel.inspectionVoiceNotes, id: \.id) { note in
                     Text(note.text)
                         .font(.footnote)
-                        .foregroundStyle(HiveCueTheme.ink)
+                        .foregroundStyle(BroodcheckTheme.ink)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(HiveCueTheme.card)
+                                .fill(BroodcheckTheme.card)
                         )
                 }
             }
             .padding(20)
         }
-        .hiveCueScreen()
+        .broodcheckScreen()
         .navigationTitle("Hands-free")
     }
 }

@@ -1,1 +1,0 @@
-Pass if the still shows a brood findings review with Keep/Discard/Edit review controls, brood/stores/pest finding cues, and a photo-forward layout (not bare chat).

@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import HiveCueDomain
+import BroodcheckDomain
 
 /// Heat / region overlay canvas on a brood-frame photo.
 struct HeatOverlayCanvas: View {
@@ -20,15 +20,15 @@ struct HeatOverlayCanvas: View {
                         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 } else {
                     RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(HiveCueTheme.primary.opacity(0.08))
+                        .fill(BroodcheckTheme.primary.opacity(0.08))
                         .overlay {
                             VStack(spacing: 8) {
                                 Image(systemName: "hexagon.fill")
                                     .font(.largeTitle)
-                                    .foregroundStyle(HiveCueTheme.primary.opacity(0.45))
+                                    .foregroundStyle(BroodcheckTheme.primary.opacity(0.45))
                                 Text("No brood frame yet")
                                     .font(.subheadline.weight(.medium))
-                                    .foregroundStyle(HiveCueTheme.muted)
+                                    .foregroundStyle(BroodcheckTheme.muted)
                             }
                         }
                 }
@@ -44,7 +44,7 @@ struct HeatOverlayCanvas: View {
                         .overlay {
                             Text(mark.label)
                                 .font(.caption2.bold())
-                                .foregroundStyle(HiveCueTheme.ink)
+                                .foregroundStyle(BroodcheckTheme.ink)
                                 .position(
                                     x: mark.xNorm * geo.size.width,
                                     y: max(14, mark.yNorm * geo.size.height - 22)
@@ -54,8 +54,8 @@ struct HeatOverlayCanvas: View {
 
                 if let draftPoint {
                     Circle()
-                        .strokeBorder(HiveCueTheme.accent, lineWidth: 3)
-                        .background(Circle().fill(HiveCueTheme.accent.opacity(0.25)))
+                        .strokeBorder(BroodcheckTheme.accent, lineWidth: 3)
+                        .background(Circle().fill(BroodcheckTheme.accent.opacity(0.25)))
                         .frame(width: 44, height: 44)
                         .position(
                             x: draftPoint.x * geo.size.width,
@@ -75,6 +75,6 @@ struct HeatOverlayCanvas: View {
     }
 
     private func heatColor(_ value: Double) -> Color {
-        value >= 0.55 ? HiveCueTheme.heatHot : HiveCueTheme.heatCool
+        value >= 0.55 ? BroodcheckTheme.heatHot : BroodcheckTheme.heatCool
     }
 }
