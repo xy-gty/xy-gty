@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BE6FCDDC2BDCFFE8E62825C /* TurnReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70467C6B5B61897EF0F72CB5 /* TurnReviewView.swift */; };
+		0E42E166F46CAF1B5C9B5468 /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFB749131ACA1EEBA8DD85 /* CaptureImportView.swift */; };
+		26D5A9F0996A52D05613DE08 /* DictateFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA270066E9B776E3049CA2D /* DictateFieldsView.swift */; };
+		2700688D1EF08AD560A6267B /* BroodReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49372332B934E91400079F7C /* BroodReviewView.swift */; };
+		30B5759A92F2DA332833CCB9 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08C15E08A9606BDE7928F0E /* SpeechRecognitionService.swift */; };
+		31A52AE5D1C832D28AB701CF /* HeatOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCEACCC6E6A77F9852133A4 /* HeatOverlay.swift */; };
+		3CB51FB55DA5E0759EE02BBD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B585FC72C195CC6FCDA5F26D /* PrivacyInfo.xcprivacy */; };
+		4B562FA17AB97FAAE9BA82DB /* HandsFreeTTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D9AAFA589EE17C78FE57F /* HandsFreeTTSPlayer.swift */; };
+		525D3EA0EE2B4F5EB5C70E77 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED685E230234A342110901F /* LocalLegalWebView.swift */; };
+		5A5519FF9A4AACFD46B60F29 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0CE0AA36B1AF263E4C8A63 /* CameraPicker.swift */; };
+		5D7489567FD255727E0FC65E /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02004436721E3ECA1134F02 /* SettingsPrivacyView.swift */; };
+		5FDA5CEF15571BA9101990FF /* BroodcheckDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 90D854A9BE660EB074CA7618 /* BroodcheckDomain */; };
+		647F32452B7B906AB87127FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5921DC937439A712C436B925 /* Assets.xcassets */; };
+		6B5D595F96FA502F6E3FDBB4 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39CF02A9DD0132310D77C8 /* DeepSeekClient.swift */; };
+		70BC8B6C8D766A620431E480 /* BroodRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198E27A37AEE0DF3985F87A /* BroodRecognizer.swift */; };
+		7DA96499342EA5312AF9ED16 /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12C34453372AE8C3142015 /* CoachChatView.swift */; };
+		7E8FC1CCAA52803A255A8AF9 /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7AFB54033C30223043FC1 /* provider-policy.html */; };
+		80363BD4932CBCCB8CCD32A2 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC5C6F06CE7386CB05E96D /* ConsentSheet.swift */; };
+		8DD7619042ED8BC2C5DE498A /* InspectionRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD90B9E3FE7054317BDBB25 /* InspectionRail.swift */; };
+		98C39468E2BE58F3E9C9FD61 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC33E2B446609F70945013 /* AppModel.swift */; };
+		9EC04C4E54232E3F71EFB14F /* BroodcheckDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 7789AC7EAF8F3EA66905BC5D /* BroodcheckDomain */; };
+		A90D2FFB4B70F576AB408F2E /* BroodcheckDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48CD33ECC7934487A95BD8 /* BroodcheckDomainTests.swift */; };
+		B28088719CE859BF554008E9 /* InspectionsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059973001358381DB9A40E53 /* InspectionsHomeView.swift */; };
+		BBBA0AB5666ED13C28A657CE /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 3FDAB21FEC6DA674E57F9CC2 /* support.html */; };
+		C5E20D0ABA5208FF9D2DDF33 /* InspectionCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554FA39E7A7677B0F25E0222 /* InspectionCoachView.swift */; };
+		CC93D544FD9F3C8B53A303EA /* HandsFreeTTSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BFAED00E1259890C487D93 /* HandsFreeTTSView.swift */; };
+		CEF2EB68ACCA9BDBA5C99887 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DF8585F08FDBF4D508002 /* RootNavigationView.swift */; };
+		D7978A96717184F197C089F1 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 047ECF09D47B7717E1D14955 /* terms.html */; };
+		D82A4DA514272FE5EBFD812E /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A1036F60C6F5F4BE2414F /* privacy.html */; };
+		DDA99F6028A22D25F95D90B6 /* BroodcheckTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460170644806BBF70F7ACA5C /* BroodcheckTheme.swift */; };
+		E057935041EC9D50E82D27F6 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = CA4AD7CF8DC3487C4FD3AFCA /* AppRuntimeCore */; };
+		E73DEDA310E308DA0F303EED /* HexCombGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC68F93324590E2BF193E11 /* HexCombGrid.swift */; };
+		F37D09B265405127DDD9B18B /* BroodcheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B21FB21B7845D8626C433B /* BroodcheckApp.swift */; };
+		F6585FAAE097611AA0D7063D /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5030CDF21CCE6854A43A8D6D /* AppRuntimeCore */; };
+		F93C64065FF0BB6B9EB7ED9A /* AnnotatedFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3F1636156D77AB29A0728 /* AnnotatedFrameView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		658192B650330015FB2536CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 547A432EB58FB0B03508EB33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46601E5452B27988E6C919C;
+			remoteInfo = Broodcheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D4633CFA656102BA2D7D3C /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		047ECF09D47B7717E1D14955 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		059973001358381DB9A40E53 /* InspectionsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsHomeView.swift; sourceTree = "<group>"; };
+		06AFB749131ACA1EEBA8DD85 /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
+		0C12C34453372AE8C3142015 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		1DC7AFB54033C30223043FC1 /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		21B21FB21B7845D8626C433B /* BroodcheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroodcheckApp.swift; sourceTree = "<group>"; };
+		2A7A1036F60C6F5F4BE2414F /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		2DD90B9E3FE7054317BDBB25 /* InspectionRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionRail.swift; sourceTree = "<group>"; };
+		3A48CD33ECC7934487A95BD8 /* BroodcheckDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroodcheckDomainTests.swift; sourceTree = "<group>"; };
+		3FDAB21FEC6DA674E57F9CC2 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		460170644806BBF70F7ACA5C /* BroodcheckTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroodcheckTheme.swift; sourceTree = "<group>"; };
+		4891F0F57EF1B6205F61112D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49372332B934E91400079F7C /* BroodReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroodReviewView.swift; sourceTree = "<group>"; };
+		554FA39E7A7677B0F25E0222 /* InspectionCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionCoachView.swift; sourceTree = "<group>"; };
+		5921DC937439A712C436B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70467C6B5B61897EF0F72CB5 /* TurnReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnReviewView.swift; sourceTree = "<group>"; };
+		70B6F86244AF7CEBA9C58236 /* BroodcheckDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BroodcheckDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCEC15CC3FBEE063D0BE3E4 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		98EC33E2B446609F70945013 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A02004436721E3ECA1134F02 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		AED685E230234A342110901F /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		B198E27A37AEE0DF3985F87A /* BroodRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroodRecognizer.swift; sourceTree = "<group>"; };
+		B3DC5C6F06CE7386CB05E96D /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		B585FC72C195CC6FCDA5F26D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BA39CF02A9DD0132310D77C8 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		BAA270066E9B776E3049CA2D /* DictateFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictateFieldsView.swift; sourceTree = "<group>"; };
+		C4F3F1636156D77AB29A0728 /* AnnotatedFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedFrameView.swift; sourceTree = "<group>"; };
+		C6BFAED00E1259890C487D93 /* HandsFreeTTSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeTTSView.swift; sourceTree = "<group>"; };
+		C72DF8585F08FDBF4D508002 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		CDCEACCC6E6A77F9852133A4 /* HeatOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatOverlay.swift; sourceTree = "<group>"; };
+		DE3ED63ADE0A53880C1F3E58 /* Broodcheck.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Broodcheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08C15E08A9606BDE7928F0E /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		EB0CE0AA36B1AF263E4C8A63 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		FAC68F93324590E2BF193E11 /* HexCombGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexCombGrid.swift; sourceTree = "<group>"; };
+		FF8D9AAFA589EE17C78FE57F /* HandsFreeTTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeTTSPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A049E68E8A0D18A2BA059BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E057935041EC9D50E82D27F6 /* AppRuntimeCore in Frameworks */,
+				9EC04C4E54232E3F71EFB14F /* BroodcheckDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882D07EEDB3E32508420E252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDA5CEF15571BA9101990FF /* BroodcheckDomain in Frameworks */,
+				F6585FAAE097611AA0D7063D /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F9E3B674F8C34DE227FA740 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3A48CD33ECC7934487A95BD8 /* BroodcheckDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1E97A3416637D8A98E48A666 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C4F3F1636156D77AB29A0728 /* AnnotatedFrameView.swift */,
+				49372332B934E91400079F7C /* BroodReviewView.swift */,
+				EB0CE0AA36B1AF263E4C8A63 /* CameraPicker.swift */,
+				06AFB749131ACA1EEBA8DD85 /* CaptureImportView.swift */,
+				0C12C34453372AE8C3142015 /* CoachChatView.swift */,
+				BAA270066E9B776E3049CA2D /* DictateFieldsView.swift */,
+				C6BFAED00E1259890C487D93 /* HandsFreeTTSView.swift */,
+				CDCEACCC6E6A77F9852133A4 /* HeatOverlay.swift */,
+				FAC68F93324590E2BF193E11 /* HexCombGrid.swift */,
+				460170644806BBF70F7ACA5C /* BroodcheckTheme.swift */,
+				554FA39E7A7677B0F25E0222 /* InspectionCoachView.swift */,
+				2DD90B9E3FE7054317BDBB25 /* InspectionRail.swift */,
+				059973001358381DB9A40E53 /* InspectionsHomeView.swift */,
+				C72DF8585F08FDBF4D508002 /* RootNavigationView.swift */,
+				70467C6B5B61897EF0F72CB5 /* TurnReviewView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4768DE0AC15FFA965DC14688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE3ED63ADE0A53880C1F3E58 /* Broodcheck.app */,
+				70B6F86244AF7CEBA9C58236 /* BroodcheckDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A2D253D396E873310EA0F4A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5921DC937439A712C436B925 /* Assets.xcassets */,
+				21B21FB21B7845D8626C433B /* BroodcheckApp.swift */,
+				4891F0F57EF1B6205F61112D /* Info.plist */,
+				B585FC72C195CC6FCDA5F26D /* PrivacyInfo.xcprivacy */,
+				D336BEC8A2B2B32926852915 /* AI */,
+				E68118996E710A89243D1ADB /* Resources */,
+				FCA582C37D14CCC8694911AF /* Services */,
+				1E97A3416637D8A98E48A666 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		765784B642CE1EAB1B099251 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				03D4633CFA656102BA2D7D3C /* AppRuntimeCore */,
+				7FCEC15CC3FBEE063D0BE3E4 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8506E1F45E69BBB30B3F9AF0 = {
+			isa = PBXGroup;
+			children = (
+				5A2D253D396E873310EA0F4A /* App */,
+				765784B642CE1EAB1B099251 /* Packages */,
+				0F9E3B674F8C34DE227FA740 /* Tests */,
+				4768DE0AC15FFA965DC14688 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D336BEC8A2B2B32926852915 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC5C6F06CE7386CB05E96D /* ConsentSheet.swift */,
+				BA39CF02A9DD0132310D77C8 /* DeepSeekClient.swift */,
+				AED685E230234A342110901F /* LocalLegalWebView.swift */,
+				A02004436721E3ECA1134F02 /* SettingsPrivacyView.swift */,
+				E08C15E08A9606BDE7928F0E /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		E68118996E710A89243D1ADB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E81DC593DB47CAE1AA4B59A8 /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E81DC593DB47CAE1AA4B59A8 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				2A7A1036F60C6F5F4BE2414F /* privacy.html */,
+				1DC7AFB54033C30223043FC1 /* provider-policy.html */,
+				3FDAB21FEC6DA674E57F9CC2 /* support.html */,
+				047ECF09D47B7717E1D14955 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		FCA582C37D14CCC8694911AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98EC33E2B446609F70945013 /* AppModel.swift */,
+				B198E27A37AEE0DF3985F87A /* BroodRecognizer.swift */,
+				FF8D9AAFA589EE17C78FE57F /* HandsFreeTTSPlayer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A46601E5452B27988E6C919C /* Broodcheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E70170116419E8706544F899 /* Build configuration list for PBXNativeTarget "Broodcheck" */;
+			buildPhases = (
+				D14B44B84854767340C46329 /* Sources */,
+				647F227AB71877D0C53444D5 /* Resources */,
+				1A049E68E8A0D18A2BA059BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broodcheck;
+			packageProductDependencies = (
+				CA4AD7CF8DC3487C4FD3AFCA /* AppRuntimeCore */,
+				7789AC7EAF8F3EA66905BC5D /* BroodcheckDomain */,
+			);
+			productName = Broodcheck;
+			productReference = DE3ED63ADE0A53880C1F3E58 /* Broodcheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE3845E9D7D1199ADC1D22A2 /* BroodcheckDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4275CFEAB0179F92DB532223 /* Build configuration list for PBXNativeTarget "BroodcheckDomainTests" */;
+			buildPhases = (
+				B6948AFE4BC0133730E2BBF2 /* Sources */,
+				882D07EEDB3E32508420E252 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58D0760E1E3A06E6E1D3F13D /* PBXTargetDependency */,
+			);
+			name = BroodcheckDomainTests;
+			packageProductDependencies = (
+				90D854A9BE660EB074CA7618 /* BroodcheckDomain */,
+				5030CDF21CCE6854A43A8D6D /* AppRuntimeCore */,
+			);
+			productName = BroodcheckDomainTests;
+			productReference = 70B6F86244AF7CEBA9C58236 /* BroodcheckDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		547A432EB58FB0B03508EB33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B7D704676B5850096E9AD9EC /* Build configuration list for PBXProject "Broodcheck" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8506E1F45E69BBB30B3F9AF0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9DBC105FBB42C4A9AD38D561 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				BA98FB14525FD291C238A3C9 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4768DE0AC15FFA965DC14688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A46601E5452B27988E6C919C /* Broodcheck */,
+				BE3845E9D7D1199ADC1D22A2 /* BroodcheckDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		647F227AB71877D0C53444D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647F32452B7B906AB87127FD /* Assets.xcassets in Resources */,
+				3CB51FB55DA5E0759EE02BBD /* PrivacyInfo.xcprivacy in Resources */,
+				D82A4DA514272FE5EBFD812E /* privacy.html in Resources */,
+				7E8FC1CCAA52803A255A8AF9 /* provider-policy.html in Resources */,
+				BBBA0AB5666ED13C28A657CE /* support.html in Resources */,
+				D7978A96717184F197C089F1 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6948AFE4BC0133730E2BBF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90D2FFB4B70F576AB408F2E /* BroodcheckDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B44B84854767340C46329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93C64065FF0BB6B9EB7ED9A /* AnnotatedFrameView.swift in Sources */,
+				98C39468E2BE58F3E9C9FD61 /* AppModel.swift in Sources */,
+				70BC8B6C8D766A620431E480 /* BroodRecognizer.swift in Sources */,
+				2700688D1EF08AD560A6267B /* BroodReviewView.swift in Sources */,
+				5A5519FF9A4AACFD46B60F29 /* CameraPicker.swift in Sources */,
+				0E42E166F46CAF1B5C9B5468 /* CaptureImportView.swift in Sources */,
+				7DA96499342EA5312AF9ED16 /* CoachChatView.swift in Sources */,
+				80363BD4932CBCCB8CCD32A2 /* ConsentSheet.swift in Sources */,
+				6B5D595F96FA502F6E3FDBB4 /* DeepSeekClient.swift in Sources */,
+				26D5A9F0996A52D05613DE08 /* DictateFieldsView.swift in Sources */,
+				4B562FA17AB97FAAE9BA82DB /* HandsFreeTTSPlayer.swift in Sources */,
+				CC93D544FD9F3C8B53A303EA /* HandsFreeTTSView.swift in Sources */,
+				31A52AE5D1C832D28AB701CF /* HeatOverlay.swift in Sources */,
+				E73DEDA310E308DA0F303EED /* HexCombGrid.swift in Sources */,
+				F37D09B265405127DDD9B18B /* BroodcheckApp.swift in Sources */,
+				DDA99F6028A22D25F95D90B6 /* BroodcheckTheme.swift in Sources */,
+				C5E20D0ABA5208FF9D2DDF33 /* InspectionCoachView.swift in Sources */,
+				8DD7619042ED8BC2C5DE498A /* InspectionRail.swift in Sources */,
+				B28088719CE859BF554008E9 /* InspectionsHomeView.swift in Sources */,
+				525D3EA0EE2B4F5EB5C70E77 /* LocalLegalWebView.swift in Sources */,
+				CEF2EB68ACCA9BDBA5C99887 /* RootNavigationView.swift in Sources */,
+				5D7489567FD255727E0FC65E /* SettingsPrivacyView.swift in Sources */,
+				30B5759A92F2DA332833CCB9 /* SpeechRecognitionService.swift in Sources */,
+				0BE6FCDDC2BDCFFE8E62825C /* TurnReviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58D0760E1E3A06E6E1D3F13D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46601E5452B27988E6C919C /* Broodcheck */;
+			targetProxy = 658192B650330015FB2536CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3D283688DBCACBCBB99E797A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4531FB9172DF85E2AABB7888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6009A1FB203BFF1140AD5C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.broodcheck.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broodcheck.app/Broodcheck";
+			};
+			name = Release;
+		};
+		B2AF10A44AF39989B9D713D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.broodcheck.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broodcheck.app/Broodcheck";
+			};
+			name = Debug;
+		};
+		BA936AE9CE4EA57AE43F00BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broodcheck;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture brood-frame photos for AI hive inspection";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free inspection notes while suited and gloved";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import past frame photos to compare brood / stores / pests";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Dictate inspection fields (queen seen, temperament, notes) into the log";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Broodcheck;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E27C0AA5298286F021630053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broodcheck;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture brood-frame photos for AI hive inspection";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free inspection notes while suited and gloved";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import past frame photos to compare brood / stores / pests";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Dictate inspection fields (queen seen, temperament, notes) into the log";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Broodcheck;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4275CFEAB0179F92DB532223 /* Build configuration list for PBXNativeTarget "BroodcheckDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2AF10A44AF39989B9D713D1 /* Debug */,
+				6009A1FB203BFF1140AD5C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B7D704676B5850096E9AD9EC /* Build configuration list for PBXProject "Broodcheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D283688DBCACBCBB99E797A /* Debug */,
+				4531FB9172DF85E2AABB7888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E70170116419E8706544F899 /* Build configuration list for PBXNativeTarget "Broodcheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA936AE9CE4EA57AE43F00BE /* Debug */,
+				E27C0AA5298286F021630053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9DBC105FBB42C4A9AD38D561 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		BA98FB14525FD291C238A3C9 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5030CDF21CCE6854A43A8D6D /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		7789AC7EAF8F3EA66905BC5D /* BroodcheckDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BroodcheckDomain;
+		};
+		90D854A9BE660EB074CA7618 /* BroodcheckDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BroodcheckDomain;
+		};
+		CA4AD7CF8DC3487C4FD3AFCA /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 547A432EB58FB0B03508EB33 /* Project object */;
+}

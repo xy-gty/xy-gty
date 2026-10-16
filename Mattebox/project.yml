@@ -1,0 +1,69 @@
+name: Mattebox
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  MatteboxDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Mattebox:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: MatteboxDomain
+        product: MatteboxDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Mattebox
+        INFOPLIST_KEY_CFBundleDisplayName: Mattebox
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture on-set framing trial shots for composition coaching
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import scout or reference stills for aspect and framing analysis
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Hands-free on-set director cues while both hands hold the camera
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Spoken shot-size instructions written into coach chat and refresh overlays
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+  MatteboxDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: MatteboxDomain
+        product: MatteboxDomain
+      - package: AppRuntimeCore
+      - target: Mattebox
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.mattebox.tests
+schemes:
+  Mattebox:
+    build:
+      targets:
+        Mattebox: all
+        MatteboxDomainTests: [test]
+    test:
+      targets:
+        - MatteboxDomainTests
+    run:
+      config: Debug

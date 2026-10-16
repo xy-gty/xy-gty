@@ -1,0 +1,10 @@
+{
+  "schema": "appfactory.ios_package_manifest.v1",
+  "app_name": "Bloomkettle",
+  "bundle_id": "com.lingguang.bloomkettle",
+  "product_dir": "bloomkettle",
+  "development_team": null,
+  "platforms": ["iphonesimulator"],
+  "no_app_icon": true,
+  "no_launch_screen": true
+}

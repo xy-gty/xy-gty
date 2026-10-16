@@ -1,0 +1,69 @@
+name: Loopwell
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  LoopwellDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Loopwell:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: LoopwellDomain
+        product: LoopwellDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Loopwell
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Loopwell
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture yarn / WIP photos for stitch & row recognition
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import prior WIP / yarn shots into the coach flow
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Dictate pattern notes and row intent while knitting
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken next-row questions into coach chat and TTS
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+  LoopwellDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: LoopwellDomain
+        product: LoopwellDomain
+      - package: AppRuntimeCore
+      - target: Loopwell
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.loopwell.tests
+schemes:
+  Loopwell:
+    build:
+      targets:
+        Loopwell: all
+        LoopwellDomainTests: [test]
+    test:
+      targets:
+        - LoopwellDomainTests
+    run:
+      config: Debug

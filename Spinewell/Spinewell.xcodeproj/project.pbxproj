@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104CCDFAC95E8FA237FF659C /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = B4AF673FDB467EB7E7EBCD1B /* provider-policy.html */; };
+		14336665438C3EB58D201C3E /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644DF23D1B56449B7ED6580F /* CameraPicker.swift */; };
+		16A8A80938178FBF9A7BA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB714DE221E02E20F00DB7 /* Assets.xcassets */; };
+		2849460F34992C21741E18C0 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E93C5BD23D5295E63D881 /* DeepSeekClient.swift */; };
+		29A45C6A42022FFD158819F9 /* SpinewellTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39042459F3C88F76EB01F423 /* SpinewellTheme.swift */; };
+		32998FFDE8F017789F13E4C5 /* BookIDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7E39E0575D12656B221D4 /* BookIDResultView.swift */; };
+		34EE7138DFCE7DA98C83DAA7 /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF516DF768D281D4C327821 /* CoachChatView.swift */; };
+		369A330400932ACB2E0F864D /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = A8B081C361E344F747925ADE /* support.html */; };
+		38C87923D6A6F2C652F5D725 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0954B19B849E076DA0C23D /* LocalLegalWebView.swift */; };
+		3AFA276820C7D2E98B3592A2 /* ShelfHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF20013814EE53C27CF0D /* ShelfHomeView.swift */; };
+		402EEAC95B9E647591A45F37 /* SpinewellUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */; };
+		4C776468C89F0360D631AB47 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */; };
+		5AF85C6019F6665E9EBE4AE9 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600568BE0E5B3BE8D6851996 /* ConsentSheet.swift */; };
+		5BDE3F66AF99154A9396CFD2 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526758020C17565241DE0DD /* VoiceNoteRecorder.swift */; };
+		642D115E9D121A0B22ABB494 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A832B2A95F7893729116 /* RootNavigationView.swift */; };
+		66FEEE3E0BBC7796653A9CB7 /* SpinewellDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */; };
+		8119FD53AAF6A6EDBB6159B3 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBE0CA2F0326689E47FB11B /* AppRuntimeCore */; };
+		81F73727032F492E68635FC1 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = A4BD8BAE40CAD9D033A189E3 /* terms.html */; };
+		8B7E9087F1A07DDD9933AFF6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F2BA45D39B023E0C0D89B /* AppModel.swift */; };
+		A412C5554B299ED6E558AF36 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B057CF1266C39B45D272BE00 /* SpeechRecognitionService.swift */; };
+		A698A7705F9956FFF077FD95 /* SpinewellDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BEF27C50CF31599188173D2A /* SpinewellDomain */; };
+		B12C66937BB61DDBEF4BCEA3 /* ShelfCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */; };
+		B529E8763FC36762BEEBF87C /* SpinewellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */; };
+		C5C1845C02F5DC6E7F8D045B /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB982777E9BACD6B707B78 /* TTSPlayer.swift */; };
+		D35C4BB33547AF763E0BB832 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 4371E1FB8F117B0BBE39BFD5 /* privacy.html */; };
+		D5069E6032EE6A5CF11A96BB /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */; };
+		D53CE7BF1C27644850DDFC7E /* SpinewellDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */; };
+		F2DD4EE1586EAD68EE126DAF /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A3369AAF38D1434F95BC1 /* SettingsPrivacyView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80A288CA5A5915499E73F4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6E5662AF0C44927BC7C5DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21905DEB5EEC339AE7B75DD7;
+			remoteInfo = Spinewell;
+		};
+		8E47053BDD471F737E7423E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6E5662AF0C44927BC7C5DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21905DEB5EEC339AE7B75DD7;
+			remoteInfo = Spinewell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0195A832B2A95F7893729116 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		034E93C5BD23D5295E63D881 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		0FFB982777E9BACD6B707B78 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
+		17491C5413BD8B8F925E657E /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellDomainTests.swift; sourceTree = "<group>"; };
+		268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Spinewell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39042459F3C88F76EB01F423 /* SpinewellTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellTheme.swift; sourceTree = "<group>"; };
+		4371E1FB8F117B0BBE39BFD5 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCardView.swift; sourceTree = "<group>"; };
+		52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpinewellDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F74F30B094B4987B1DB1CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		600568BE0E5B3BE8D6851996 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		644DF23D1B56449B7ED6580F /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		6A7DF20013814EE53C27CF0D /* ShelfHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfHomeView.swift; sourceTree = "<group>"; };
+		76E7E39E0575D12656B221D4 /* BookIDResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIDResultView.swift; sourceTree = "<group>"; };
+		794F2BA45D39B023E0C0D89B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		8FF516DF768D281D4C327821 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellUISmokeTests.swift; sourceTree = "<group>"; };
+		A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A4BD8BAE40CAD9D033A189E3 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellApp.swift; sourceTree = "<group>"; };
+		A8B081C361E344F747925ADE /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		B057CF1266C39B45D272BE00 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		B4AF673FDB467EB7E7EBCD1B /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		BA0954B19B849E076DA0C23D /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		C25A3369AAF38D1434F95BC1 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		C526758020C17565241DE0DD /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpinewellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7CB714DE221E02E20F00DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFCECAC4AB5153F1147D602 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F0C233621B1918916445589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53CE7BF1C27644850DDFC7E /* SpinewellDomain in Frameworks */,
+				8119FD53AAF6A6EDBB6159B3 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4636B1A7AF21A565B654A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5069E6032EE6A5CF11A96BB /* AppRuntimeCore in Frameworks */,
+				A698A7705F9956FFF077FD95 /* SpinewellDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FEED3CAFD4142A275EB4268 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D7CB714DE221E02E20F00DB7 /* Assets.xcassets */,
+				A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */,
+				5F74F30B094B4987B1DB1CFA /* Info.plist */,
+				A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */,
+				ADDEE56A3EBB0010C40E4D54 /* AI */,
+				B01D0A9EBFCA130E6192BF22 /* Resources */,
+				78BD2285341787F77A81101C /* Services */,
+				6CE000B5C536DD46699F3E42 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4797DBD3D4893F9D251DA857 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				4371E1FB8F117B0BBE39BFD5 /* privacy.html */,
+				B4AF673FDB467EB7E7EBCD1B /* provider-policy.html */,
+				A8B081C361E344F747925ADE /* support.html */,
+				A4BD8BAE40CAD9D033A189E3 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		6CE000B5C536DD46699F3E42 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76E7E39E0575D12656B221D4 /* BookIDResultView.swift */,
+				644DF23D1B56449B7ED6580F /* CameraPicker.swift */,
+				8FF516DF768D281D4C327821 /* CoachChatView.swift */,
+				39042459F3C88F76EB01F423 /* SpinewellTheme.swift */,
+				0195A832B2A95F7893729116 /* RootNavigationView.swift */,
+				4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */,
+				6A7DF20013814EE53C27CF0D /* ShelfHomeView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6DAA0B454984357D5D656A07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */,
+				52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */,
+				CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78BD2285341787F77A81101C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				794F2BA45D39B023E0C0D89B /* AppModel.swift */,
+				0FFB982777E9BACD6B707B78 /* TTSPlayer.swift */,
+				C526758020C17565241DE0DD /* VoiceNoteRecorder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ADDEE56A3EBB0010C40E4D54 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				600568BE0E5B3BE8D6851996 /* ConsentSheet.swift */,
+				034E93C5BD23D5295E63D881 /* DeepSeekClient.swift */,
+				BA0954B19B849E076DA0C23D /* LocalLegalWebView.swift */,
+				C25A3369AAF38D1434F95BC1 /* SettingsPrivacyView.swift */,
+				B057CF1266C39B45D272BE00 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		B01D0A9EBFCA130E6192BF22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4797DBD3D4893F9D251DA857 /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B77888E9B368674A76E87B31 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				17491C5413BD8B8F925E657E /* AppRuntimeCore */,
+				ECFCECAC4AB5153F1147D602 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C319FD80F9015A0EC4614457 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */,
+				A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D9F643D998A5314C1D69EBEF = {
+			isa = PBXGroup;
+			children = (
+				3FEED3CAFD4142A275EB4268 /* App */,
+				B77888E9B368674A76E87B31 /* Packages */,
+				C319FD80F9015A0EC4614457 /* Tests */,
+				6DAA0B454984357D5D656A07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21905DEB5EEC339AE7B75DD7 /* Spinewell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "Spinewell" */;
+			buildPhases = (
+				2B6B43D67574B4C8E92AB64C /* Sources */,
+				5789BC87B852AF37C02D19C3 /* Resources */,
+				B4636B1A7AF21A565B654A34 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spinewell;
+			packageProductDependencies = (
+				D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */,
+				BEF27C50CF31599188173D2A /* SpinewellDomain */,
+			);
+			productName = Spinewell;
+			productReference = 268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58744DFE04FD8CAA1E8C1009 /* SpinewellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "SpinewellUITests" */;
+			buildPhases = (
+				E3C94ED96B4ED8067B5B863C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034A00D4461D84694175C193 /* PBXTargetDependency */,
+			);
+			name = SpinewellUITests;
+			packageProductDependencies = (
+			);
+			productName = SpinewellUITests;
+			productReference = CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7DC2577F294BB6667BED73B6 /* SpinewellDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "SpinewellDomainTests" */;
+			buildPhases = (
+				148F3868DDF102C6F19FD361 /* Sources */,
+				7F0C233621B1918916445589 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32418B28F1AB1051FB1F13B2 /* PBXTargetDependency */,
+			);
+			name = SpinewellDomainTests;
+			packageProductDependencies = (
+				6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */,
+				3DBE0CA2F0326689E47FB11B /* AppRuntimeCore */,
+			);
+			productName = SpinewellDomainTests;
+			productReference = 52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6E5662AF0C44927BC7C5DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					58744DFE04FD8CAA1E8C1009 = {
+						TestTargetID = 21905DEB5EEC339AE7B75DD7;
+					};
+				};
+			};
+			buildConfigurationList = 007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "Spinewell" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D9F643D998A5314C1D69EBEF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B9DBEB27BAFDE25C6E38D8C5 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				BD6B382D9FF8DEE556598330 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6DAA0B454984357D5D656A07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21905DEB5EEC339AE7B75DD7 /* Spinewell */,
+				7DC2577F294BB6667BED73B6 /* SpinewellDomainTests */,
+				58744DFE04FD8CAA1E8C1009 /* SpinewellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5789BC87B852AF37C02D19C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8A80938178FBF9A7BA1E8 /* Assets.xcassets in Resources */,
+				4C776468C89F0360D631AB47 /* PrivacyInfo.xcprivacy in Resources */,
+				D35C4BB33547AF763E0BB832 /* privacy.html in Resources */,
+				104CCDFAC95E8FA237FF659C /* provider-policy.html in Resources */,
+				369A330400932ACB2E0F864D /* support.html in Resources */,
+				81F73727032F492E68635FC1 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148F3868DDF102C6F19FD361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FEEE3E0BBC7796653A9CB7 /* SpinewellDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6B43D67574B4C8E92AB64C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7E9087F1A07DDD9933AFF6 /* AppModel.swift in Sources */,
+				32998FFDE8F017789F13E4C5 /* BookIDResultView.swift in Sources */,
+				14336665438C3EB58D201C3E /* CameraPicker.swift in Sources */,
+				34EE7138DFCE7DA98C83DAA7 /* CoachChatView.swift in Sources */,
+				5AF85C6019F6665E9EBE4AE9 /* ConsentSheet.swift in Sources */,
+				2849460F34992C21741E18C0 /* DeepSeekClient.swift in Sources */,
+				B529E8763FC36762BEEBF87C /* SpinewellApp.swift in Sources */,
+				29A45C6A42022FFD158819F9 /* SpinewellTheme.swift in Sources */,
+				38C87923D6A6F2C652F5D725 /* LocalLegalWebView.swift in Sources */,
+				642D115E9D121A0B22ABB494 /* RootNavigationView.swift in Sources */,
+				F2DD4EE1586EAD68EE126DAF /* SettingsPrivacyView.swift in Sources */,
+				B12C66937BB61DDBEF4BCEA3 /* ShelfCardView.swift in Sources */,
+				3AFA276820C7D2E98B3592A2 /* ShelfHomeView.swift in Sources */,
+				A412C5554B299ED6E558AF36 /* SpeechRecognitionService.swift in Sources */,
+				C5C1845C02F5DC6E7F8D045B /* TTSPlayer.swift in Sources */,
+				5BDE3F66AF99154A9396CFD2 /* VoiceNoteRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C94ED96B4ED8067B5B863C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402EEAC95B9E647591A45F37 /* SpinewellUISmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		034A00D4461D84694175C193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21905DEB5EEC339AE7B75DD7 /* Spinewell */;
+			targetProxy = 80A288CA5A5915499E73F4DF /* PBXContainerItemProxy */;
+		};
+		32418B28F1AB1051FB1F13B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21905DEB5EEC339AE7B75DD7 /* Spinewell */;
+			targetProxy = 8E47053BDD471F737E7423E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0112C9594885FF2A84CF27B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Spinewell;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cover, spine, or shelf-row photos to identify books on your personal shelf";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free shelf location and TBR notes while holding books";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import library or bookshelf album stills to backfill your personal shelf";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speak shelf coach questions such as where a book is or mark reading progress";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Spinewell;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		205D3D1D7CFB8AD15258893E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinewell.app/Spinewell";
+			};
+			name = Release;
+		};
+		4EFFC9EB46E0F66971C3DD7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spinewell;
+			};
+			name = Debug;
+		};
+		672D7B4EF2362DAEBDCF8731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spinewell;
+			};
+			name = Release;
+		};
+		8E6F993715C006C3D4A894EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CEF199CF30F012AA42F7E766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1A37139F9824C16E1976430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Spinewell;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cover, spine, or shelf-row photos to identify books on your personal shelf";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free shelf location and TBR notes while holding books";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import library or bookshelf album stills to backfill your personal shelf";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Speak shelf coach questions such as where a book is or mark reading progress";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Spinewell;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EA68EE4DA38C7144B040881F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinewell.app/Spinewell";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "Spinewell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF199CF30F012AA42F7E766 /* Debug */,
+				8E6F993715C006C3D4A894EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "SpinewellDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA68EE4DA38C7144B040881F /* Debug */,
+				205D3D1D7CFB8AD15258893E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "SpinewellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EFFC9EB46E0F66971C3DD7A /* Debug */,
+				672D7B4EF2362DAEBDCF8731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "Spinewell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0112C9594885FF2A84CF27B3 /* Debug */,
+				E1A37139F9824C16E1976430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B9DBEB27BAFDE25C6E38D8C5 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		BD6B382D9FF8DEE556598330 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DBE0CA2F0326689E47FB11B /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpinewellDomain;
+		};
+		BEF27C50CF31599188173D2A /* SpinewellDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpinewellDomain;
+		};
+		D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C6E5662AF0C44927BC7C5DB5 /* Project object */;
+}

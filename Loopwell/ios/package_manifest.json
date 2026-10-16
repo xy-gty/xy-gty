@@ -1,0 +1,8 @@
+{
+  "schema": "appfactory.ios_package_manifest.v1",
+  "app_name": "Loopwell",
+  "bundle_id": "com.lingguang.loopwell",
+  "platform": "ios",
+  "min_os": "17.0",
+  "product_dir": "loopwell"
+}

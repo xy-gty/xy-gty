@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EFF34F17EC2D7A02F953E59 /* BloomkettleUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2336EE999845CF17F0C5CF /* BloomkettleUISmokeTests.swift */; };
+		3B507CA93FA43F78B641D909 /* BloomkettleDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 25488A35173D5DCB37730034 /* BloomkettleDomain */; };
+		3E881B5A8A08B67A35B4AF22 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0C09FE9C7450AFC40141B /* AppModel.swift */; };
+		478F0EF2B7BDCB23049926BC /* ReadingReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FEB50084EE63EEE3C2DE6 /* ReadingReviewView.swift */; };
+		4F2E3AD8085915A0788B1AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BA42312956665C4ED166E3 /* Assets.xcassets */; };
+		553446AC8B03B76EFF5E00B0 /* BloomkettleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8C2E9A88D249008ADD11DA /* BloomkettleApp.swift */; };
+		5A1A5B83609154D757C5C25C /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27FDACB8CEBD1A5A850628 /* RootNavigationView.swift */; };
+		5A9D46E98140B235A55B0FD5 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859095FBFF5F6E2D008826C9 /* SettingsPrivacyView.swift */; };
+		6556CD6D5A19D6788506E940 /* BloomkettleDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67362C73A9ED768C01C418B3 /* BloomkettleDomainTests.swift */; };
+		65F35DE8A303C5788F4D5139 /* BloomkettleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88A5CC7641769E71F4C6A87 /* BloomkettleTheme.swift */; };
+		6E2B6278367B53B569268EF6 /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08235E5BF48AED2E29C509D7 /* CaptureImportView.swift */; };
+		7131A5E560D63A3742E4BF7F /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF94E04948C10E14A5121B /* CoachChatView.swift */; };
+		74F6069F241A5FDE46A5BC61 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75F0A6A9916A29E71650FF /* DeepSeekClient.swift */; };
+		775A7CDC6B3593CDC3A958F6 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 45A41E67CBCF194E1DC2CBA9 /* AppRuntimeCore */; };
+		813F94D136F208C4F3FD98EC /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = B39903A179CA4A2A39F09EFF /* privacy.html */; };
+		81DACEAF9E0D771F8993F501 /* BloomkettleDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6188D2A09CF44CC11A83B3D4 /* BloomkettleDomain */; };
+		94475BB7675A178CFF836F0D /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = A1873B362F2447DE2A129729 /* AppRuntimeCore */; };
+		A9E1017EC33DF82818589EEF /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = A01375AF0CB4F5A05E19D3B4 /* provider-policy.html */; };
+		AEE5DDC85E06AD5B511F7365 /* FunnelTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEA8BFA2388D424C6FEF92 /* FunnelTimelineView.swift */; };
+		B1312E84D0A99897B1505A67 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE2F70A372AB9D26C155ACE /* support.html */; };
+		BC2D266D1468518F949F9AFE /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD983D83483135A4A168CC9 /* ConsentSheet.swift */; };
+		C3D22ACAD57B0CCC3289FF42 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1770CB8616539C1D5C037994 /* PrivacyInfo.xcprivacy */; };
+		C73BCB56AFC8B3F1F11B7FAE /* BrewHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533D4A96037699D72D81339 /* BrewHomeView.swift */; };
+		C74528DADC0553214A25E392 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA468887C3D94E46100504 /* SpeechRecognitionService.swift */; };
+		E1692A52E6058A4EE4DF26F8 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684416AA1175FE745D72135 /* LocalLegalWebView.swift */; };
+		E802B9501F38E35E048F5D1F /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1F590B511054B284A6BD8 /* CameraPicker.swift */; };
+		E94FA081E429B50E12C084EC /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F1271A7FF7169191E798E /* SessionDetailView.swift */; };
+		ECCBA3E6BAB8611555E58112 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = CAC176A4F5B6AF3276F02D05 /* terms.html */; };
+		F3B1AF688DCA7B50876DECBE /* BrewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A695A030194CAACFD25B0CC /* BrewStore.swift */; };
+		FDE597C23F08A009E953AAA6 /* BrewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83147A04D11F0983615B0EF5 /* BrewNoteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		357C8D7B1AB3CBACF6571E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B9DC68AB8475446C6CEA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36E6996385B4230A604CB13;
+			remoteInfo = Bloomkettle;
+		};
+		B6B471C885C813B1FFECB317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B9DC68AB8475446C6CEA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36E6996385B4230A604CB13;
+			remoteInfo = Bloomkettle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08235E5BF48AED2E29C509D7 /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
+		0C75F0A6A9916A29E71650FF /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		0DFA468887C3D94E46100504 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		1770CB8616539C1D5C037994 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2684416AA1175FE745D72135 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		26D6480D1FC4F3AB6053119D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4DFEA8BFA2388D424C6FEF92 /* FunnelTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnelTimelineView.swift; sourceTree = "<group>"; };
+		4F2336EE999845CF17F0C5CF /* BloomkettleUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomkettleUISmokeTests.swift; sourceTree = "<group>"; };
+		5533D4A96037699D72D81339 /* BrewHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewHomeView.swift; sourceTree = "<group>"; };
+		5A695A030194CAACFD25B0CC /* BrewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewStore.swift; sourceTree = "<group>"; };
+		5DD983D83483135A4A168CC9 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		66B0C09FE9C7450AFC40141B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		67362C73A9ED768C01C418B3 /* BloomkettleDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomkettleDomainTests.swift; sourceTree = "<group>"; };
+		724F1271A7FF7169191E798E /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		83147A04D11F0983615B0EF5 /* BrewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewNoteView.swift; sourceTree = "<group>"; };
+		859095FBFF5F6E2D008826C9 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		88CF94E04948C10E14A5121B /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		9A27FDACB8CEBD1A5A850628 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		A01375AF0CB4F5A05E19D3B4 /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		B32AAD9F95A68F3D60244392 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		B39903A179CA4A2A39F09EFF /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		B4BA42312956665C4ED166E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B88A5CC7641769E71F4C6A87 /* BloomkettleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomkettleTheme.swift; sourceTree = "<group>"; };
+		BCA43FEF7479E4E464FFCDDD /* BloomkettleUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BloomkettleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8C2E9A88D249008ADD11DA /* BloomkettleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomkettleApp.swift; sourceTree = "<group>"; };
+		C0FB85113778D20595953EC2 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		C18FEB50084EE63EEE3C2DE6 /* ReadingReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingReviewView.swift; sourceTree = "<group>"; };
+		CAC176A4F5B6AF3276F02D05 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		CBB1F590B511054B284A6BD8 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		E9A3F4BD277F8A2F4903F14D /* BloomkettleDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BloomkettleDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD582AE763B020E80F25B2C /* Bloomkettle.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Bloomkettle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE2F70A372AB9D26C155ACE /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83964DC8923AC5124B538923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DACEAF9E0D771F8993F501 /* BloomkettleDomain in Frameworks */,
+				775A7CDC6B3593CDC3A958F6 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7EDB14ECA8CBE19AA19509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94475BB7675A178CFF836F0D /* AppRuntimeCore in Frameworks */,
+				3B507CA93FA43F78B641D909 /* BloomkettleDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EF5228970C732D60951E4B2 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				B39903A179CA4A2A39F09EFF /* privacy.html */,
+				A01375AF0CB4F5A05E19D3B4 /* provider-policy.html */,
+				EDE2F70A372AB9D26C155ACE /* support.html */,
+				CAC176A4F5B6AF3276F02D05 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		5FFC320A8BAE9089E4EF04E0 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				5DD983D83483135A4A168CC9 /* ConsentSheet.swift */,
+				0C75F0A6A9916A29E71650FF /* DeepSeekClient.swift */,
+				2684416AA1175FE745D72135 /* LocalLegalWebView.swift */,
+				859095FBFF5F6E2D008826C9 /* SettingsPrivacyView.swift */,
+				0DFA468887C3D94E46100504 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		6DDDC950C07EAC1F20A6693B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				67362C73A9ED768C01C418B3 /* BloomkettleDomainTests.swift */,
+				4F2336EE999845CF17F0C5CF /* BloomkettleUISmokeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		76363638D8DB4D9D950522CB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B4BA42312956665C4ED166E3 /* Assets.xcassets */,
+				BE8C2E9A88D249008ADD11DA /* BloomkettleApp.swift */,
+				26D6480D1FC4F3AB6053119D /* Info.plist */,
+				1770CB8616539C1D5C037994 /* PrivacyInfo.xcprivacy */,
+				5FFC320A8BAE9089E4EF04E0 /* AI */,
+				84CB47B2715E666097F7C9FD /* Resources */,
+				E63FA65F5E41AC649C2CF49E /* Services */,
+				B1F98EBDF62CACFF60E4A670 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84CB47B2715E666097F7C9FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5228970C732D60951E4B2 /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1F98EBDF62CACFF60E4A670 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B88A5CC7641769E71F4C6A87 /* BloomkettleTheme.swift */,
+				5533D4A96037699D72D81339 /* BrewHomeView.swift */,
+				83147A04D11F0983615B0EF5 /* BrewNoteView.swift */,
+				CBB1F590B511054B284A6BD8 /* CameraPicker.swift */,
+				08235E5BF48AED2E29C509D7 /* CaptureImportView.swift */,
+				88CF94E04948C10E14A5121B /* CoachChatView.swift */,
+				4DFEA8BFA2388D424C6FEF92 /* FunnelTimelineView.swift */,
+				C18FEB50084EE63EEE3C2DE6 /* ReadingReviewView.swift */,
+				9A27FDACB8CEBD1A5A850628 /* RootNavigationView.swift */,
+				724F1271A7FF7169191E798E /* SessionDetailView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E63FA65F5E41AC649C2CF49E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66B0C09FE9C7450AFC40141B /* AppModel.swift */,
+				5A695A030194CAACFD25B0CC /* BrewStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB3852F65D947D4C95185DC1 = {
+			isa = PBXGroup;
+			children = (
+				76363638D8DB4D9D950522CB /* App */,
+				FABDC6DDF648D523AC155C25 /* Packages */,
+				6DDDC950C07EAC1F20A6693B /* Tests */,
+				ECCD385364C3257B0185DC8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECCD385364C3257B0185DC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAD582AE763B020E80F25B2C /* Bloomkettle.app */,
+				E9A3F4BD277F8A2F4903F14D /* BloomkettleDomainTests.xctest */,
+				BCA43FEF7479E4E464FFCDDD /* BloomkettleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABDC6DDF648D523AC155C25 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B32AAD9F95A68F3D60244392 /* AppRuntimeCore */,
+				C0FB85113778D20595953EC2 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF85E53863A95F9222B0B971 /* BloomkettleDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A6EC34993165DEF3FC205A /* Build configuration list for PBXNativeTarget "BloomkettleDomainTests" */;
+			buildPhases = (
+				A5CD45E5E5E91ACB5810F1D0 /* Sources */,
+				83964DC8923AC5124B538923 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B4A492366D8C6B2BE4F12B /* PBXTargetDependency */,
+			);
+			name = BloomkettleDomainTests;
+			packageProductDependencies = (
+				6188D2A09CF44CC11A83B3D4 /* BloomkettleDomain */,
+				45A41E67CBCF194E1DC2CBA9 /* AppRuntimeCore */,
+			);
+			productName = BloomkettleDomainTests;
+			productReference = E9A3F4BD277F8A2F4903F14D /* BloomkettleDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F36E6996385B4230A604CB13 /* Bloomkettle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16026FCFA8A3B11466C55EE9 /* Build configuration list for PBXNativeTarget "Bloomkettle" */;
+			buildPhases = (
+				2187AF25D3FBDE08FDB39FD8 /* Sources */,
+				AE8C99BA9D7558B7A35EA33B /* Resources */,
+				8E7EDB14ECA8CBE19AA19509 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bloomkettle;
+			packageProductDependencies = (
+				A1873B362F2447DE2A129729 /* AppRuntimeCore */,
+				25488A35173D5DCB37730034 /* BloomkettleDomain */,
+			);
+			productName = Bloomkettle;
+			productReference = EAD582AE763B020E80F25B2C /* Bloomkettle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F656877A343C26C422026BA9 /* BloomkettleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60EF3C5D676026895B27BA42 /* Build configuration list for PBXNativeTarget "BloomkettleUITests" */;
+			buildPhases = (
+				FB7AAED2ACD51971166F56FA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B464E3F65EFA2E36BEFEF5 /* PBXTargetDependency */,
+			);
+			name = BloomkettleUITests;
+			packageProductDependencies = (
+			);
+			productName = BloomkettleUITests;
+			productReference = BCA43FEF7479E4E464FFCDDD /* BloomkettleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37B9DC68AB8475446C6CEA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F656877A343C26C422026BA9 = {
+						TestTargetID = F36E6996385B4230A604CB13;
+					};
+				};
+			};
+			buildConfigurationList = 723A26EDACE6E64D8CB854F7 /* Build configuration list for PBXProject "Bloomkettle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EB3852F65D947D4C95185DC1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A1B6F0609937E72C6F91537A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				27A05EC83B7394AD9F6D1325 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ECCD385364C3257B0185DC8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F36E6996385B4230A604CB13 /* Bloomkettle */,
+				EF85E53863A95F9222B0B971 /* BloomkettleDomainTests */,
+				F656877A343C26C422026BA9 /* BloomkettleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE8C99BA9D7558B7A35EA33B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2E3AD8085915A0788B1AE0 /* Assets.xcassets in Resources */,
+				C3D22ACAD57B0CCC3289FF42 /* PrivacyInfo.xcprivacy in Resources */,
+				813F94D136F208C4F3FD98EC /* privacy.html in Resources */,
+				A9E1017EC33DF82818589EEF /* provider-policy.html in Resources */,
+				B1312E84D0A99897B1505A67 /* support.html in Resources */,
+				ECCBA3E6BAB8611555E58112 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2187AF25D3FBDE08FDB39FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E881B5A8A08B67A35B4AF22 /* AppModel.swift in Sources */,
+				553446AC8B03B76EFF5E00B0 /* BloomkettleApp.swift in Sources */,
+				65F35DE8A303C5788F4D5139 /* BloomkettleTheme.swift in Sources */,
+				C73BCB56AFC8B3F1F11B7FAE /* BrewHomeView.swift in Sources */,
+				FDE597C23F08A009E953AAA6 /* BrewNoteView.swift in Sources */,
+				F3B1AF688DCA7B50876DECBE /* BrewStore.swift in Sources */,
+				E802B9501F38E35E048F5D1F /* CameraPicker.swift in Sources */,
+				6E2B6278367B53B569268EF6 /* CaptureImportView.swift in Sources */,
+				7131A5E560D63A3742E4BF7F /* CoachChatView.swift in Sources */,
+				BC2D266D1468518F949F9AFE /* ConsentSheet.swift in Sources */,
+				74F6069F241A5FDE46A5BC61 /* DeepSeekClient.swift in Sources */,
+				AEE5DDC85E06AD5B511F7365 /* FunnelTimelineView.swift in Sources */,
+				E1692A52E6058A4EE4DF26F8 /* LocalLegalWebView.swift in Sources */,
+				478F0EF2B7BDCB23049926BC /* ReadingReviewView.swift in Sources */,
+				5A1A5B83609154D757C5C25C /* RootNavigationView.swift in Sources */,
+				E94FA081E429B50E12C084EC /* SessionDetailView.swift in Sources */,
+				5A9D46E98140B235A55B0FD5 /* SettingsPrivacyView.swift in Sources */,
+				C74528DADC0553214A25E392 /* SpeechRecognitionService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CD45E5E5E91ACB5810F1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6556CD6D5A19D6788506E940 /* BloomkettleDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7AAED2ACD51971166F56FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFF34F17EC2D7A02F953E59 /* BloomkettleUISmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B464E3F65EFA2E36BEFEF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36E6996385B4230A604CB13 /* Bloomkettle */;
+			targetProxy = B6B471C885C813B1FFECB317 /* PBXContainerItemProxy */;
+		};
+		A1B4A492366D8C6B2BE4F12B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36E6996385B4230A604CB13 /* Bloomkettle */;
+			targetProxy = 357C8D7B1AB3CBACF6571E0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BF914E2B89B032314E73807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bloomkettle.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bloomkettle;
+			};
+			name = Release;
+		};
+		300FF688E4177BA8F544B40C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bloomkettle.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloomkettle.app/Bloomkettle";
+			};
+			name = Debug;
+		};
+		57E14715643CFCBD7F992ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bloomkettle;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture beans, grounds, bloom, pour, or crema so Bloomkettle can coach your pour-over";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free pour cues while both hands hold the kettle";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import post-brew shots for diagnosis and pour-over coaching";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken cues like 1:16 V60 or next pour into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bloomkettle;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		76A011CFA296D89E59F78A8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA0BE89534F4886DAF0FA415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFE81F8637464315F560918F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bloomkettle.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bloomkettle;
+			};
+			name = Debug;
+		};
+		C5A4557B30334184E2F97399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bloomkettle.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloomkettle.app/Bloomkettle";
+			};
+			name = Release;
+		};
+		E91868AD2840C4B4027EB799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bloomkettle;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture beans, grounds, bloom, pour, or crema so Bloomkettle can coach your pour-over";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free pour cues while both hands hold the kettle";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import post-brew shots for diagnosis and pour-over coaching";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken cues like 1:16 V60 or next pour into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bloomkettle;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16026FCFA8A3B11466C55EE9 /* Build configuration list for PBXNativeTarget "Bloomkettle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91868AD2840C4B4027EB799 /* Debug */,
+				57E14715643CFCBD7F992ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		60EF3C5D676026895B27BA42 /* Build configuration list for PBXNativeTarget "BloomkettleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE81F8637464315F560918F /* Debug */,
+				2BF914E2B89B032314E73807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		723A26EDACE6E64D8CB854F7 /* Build configuration list for PBXProject "Bloomkettle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0BE89534F4886DAF0FA415 /* Debug */,
+				76A011CFA296D89E59F78A8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E4A6EC34993165DEF3FC205A /* Build configuration list for PBXNativeTarget "BloomkettleDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300FF688E4177BA8F544B40C /* Debug */,
+				C5A4557B30334184E2F97399 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		27A05EC83B7394AD9F6D1325 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		A1B6F0609937E72C6F91537A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25488A35173D5DCB37730034 /* BloomkettleDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BloomkettleDomain;
+		};
+		45A41E67CBCF194E1DC2CBA9 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		6188D2A09CF44CC11A83B3D4 /* BloomkettleDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BloomkettleDomain;
+		};
+		A1873B362F2447DE2A129729 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 37B9DC68AB8475446C6CEA3B /* Project object */;
+}

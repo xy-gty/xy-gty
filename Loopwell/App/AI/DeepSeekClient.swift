@@ -1,0 +1,146 @@
+import Foundation
+import LoopwellDomain
+
+@MainActor
+struct DeepSeekClient {
+    enum Failure: LocalizedError {
+        case notAuthorized
+        case missingAPIKey
+        case invalidURL
+        case httpStatus(Int, String)
+        case emptyResponse
+        case decodeFailed(String)
+
+        var errorDescription: String? {
+            switch self {
+            case .notAuthorized:
+                return "AI send blocked: consent not granted."
+            case .missingAPIKey:
+                return "DeepSeek API key not configured."
+            case .invalidURL:
+                return "DeepSeek endpoint misconfigured."
+            case let .httpStatus(code, body):
+                return "DeepSeek HTTP \(code): \(body.prefix(200))"
+            case .emptyResponse:
+                return "DeepSeek returned an empty response."
+            case let .decodeFailed(reason):
+                return "Could not parse coach response: \(reason)"
+            }
+        }
+    }
+
+    private static let endpoint = URL(string: "https://api.deepseek.com/chat/completions")!
+    private static let modelID = "deepseek-chat"
+
+    private let apiKey: String
+    private let assertAuthorized: () throws -> Void
+    private let session: URLSession
+
+    init(apiKey: String, assertAuthorized: @escaping () throws -> Void, session: URLSession = .shared) {
+        self.apiKey = apiKey
+        self.assertAuthorized = assertAuthorized
+        self.session = session
+    }
+
+    func coachNextRow(
+        wipPhotoDescriptor: String,
+        recognizedStitchSummary: String,
+        currentRow: Int,
+        nextRowIntent: String,
+        patternNoteText: String,
+        chatText: String,
+        voiceTranscript: String,
+        priorFeedback: [String],
+        projectId: String
+    ) async throws -> CoachTurn {
+        try assertAuthorized()
+        guard !apiKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            throw Failure.missingAPIKey
+        }
+
+        let payload: [String: Any] = [
+            "wip_photo_descriptor": wipPhotoDescriptor,
+            "recognized_stitch_summary": recognizedStitchSummary,
+            "current_row": currentRow,
+            "next_row_intent": nextRowIntent,
+            "pattern_note_text": patternNoteText,
+            "chat_text": chatText,
+            "voice_transcript": voiceTranscript,
+            "prior_feedback": priorFeedback,
+        ]
+
+        let system = """
+        You are Loopwell's AI weave coach for knitting and crochet. Reply with JSON only:
+        {"reply":"concise next-row stitch coaching for the maker's WIP"}
+        Reuse prior_feedback and recognized_stitch_summary. Hands stay on needles — keep steps actionable.
+        """
+        let body: [String: Any] = [
+            "model": Self.modelID,
+            "messages": [
+                ["role": "system", "content": system],
+                ["role": "user", "content": String(data: try JSONSerialization.data(withJSONObject: payload), encoding: .utf8) ?? "{}"],
+            ],
+            "response_format": ["type": "json_object"],
+            "temperature": 0.4,
+        ]
+
+        try assertAuthorized()
+        var request = URLRequest(url: Self.endpoint)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+
+        let (data, response) = try await session.data(for: request)
+        try assertAuthorized()
+
+        guard let http = response as? HTTPURLResponse else {
+            throw Failure.httpStatus(-1, "non-HTTP response")
+        }
+        guard (200 ..< 300).contains(http.statusCode) else {
+            let snippet = String(data: data, encoding: .utf8) ?? ""
+            throw Failure.httpStatus(http.statusCode, snippet)
+        }
+
+        let api = try JSONDecoder().decode(ChatCompletionResponse.self, from: data)
+        guard let content = api.choices.first?.message.content, !content.isEmpty else {
+            throw Failure.emptyResponse
+        }
+        let reply = try parseReply(content)
+        return CoachTurn(
+            id: UUID().uuidString,
+            projectId: projectId,
+            role: "coach",
+            text: reply,
+            createdAt: Date()
+        )
+    }
+
+    private struct ChatCompletionResponse: Decodable {
+        struct Choice: Decodable {
+            struct Message: Decodable { let content: String? }
+            let message: Message
+        }
+        let choices: [Choice]
+    }
+
+    private struct CoachJSON: Decodable {
+        let reply: String?
+    }
+
+    private func parseReply(_ content: String) throws -> String {
+        let trimmed = content.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard let data = trimmed.data(using: .utf8) else {
+            throw Failure.decodeFailed("invalid UTF-8")
+        }
+        do {
+            let decoded = try JSONDecoder().decode(CoachJSON.self, from: data)
+            let reply = (decoded.reply ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+            if reply.isEmpty { throw Failure.emptyResponse }
+            return reply
+        } catch {
+            if trimmed.count > 12 { return trimmed }
+            throw Failure.decodeFailed(error.localizedDescription)
+        }
+    }
+}

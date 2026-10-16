@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BB4E4479E9FA353A60D3DB /* BightstepDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 24C68F9C8392F5911B7C3DDC /* BightstepDomain */; };
+		05DED796EE00B2AEB5E57A58 /* deepseek-privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C4417B2D1EAC866F7944 /* deepseek-privacy.html */; };
+		0C7CB68573085B66729E83A3 /* KnotCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F446F12A9E33A77D649018D /* KnotCaptureView.swift */; };
+		1400B2DE5CF605A37D23C14C /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352090C8519A175D52AF5371 /* CoachChatView.swift */; };
+		1DA22BA9085F3A1FC98FA177 /* HandsFreeCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */; };
+		22280240728218772C18B0F3 /* StepOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C70F08A96F39B135A50BD /* StepOverlayView.swift */; };
+		2ADF7B76CCA5F4977C2B4FBB /* BightstepDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */; };
+		3900E5BB75AD9086F3E534BD /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA862C518CF337858320D518 /* SpeechCaptureView.swift */; };
+		4DACDB0A25612FBD7382B968 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 469996C65B3C87EB8B198945 /* AppRuntimeCore */; };
+		6431814DA599443BACE8698B /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = A22014A703ADCEE280D99AFC /* privacy.html */; };
+		74A91B913398D21411309239 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E382BA02959F55D244F3519 /* SpeechCaptureHost.swift */; };
+		763562011677ADA96FB40FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58917D1F9A5AB432249D729 /* Assets.xcassets */; };
+		78A98616E047C9B507CF7E80 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 596936263CF165CE3633B0C7 /* support.html */; };
+		7C443E59717B3621F2215DDA /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D475B33F3D0FEB39CFDD4B47 /* SettingsPrivacyView.swift */; };
+		7DA819982E7C2761C3981A56 /* RopeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B12CC5F9F676B465E37779 /* RopeHomeView.swift */; };
+		8471CF630F39624F382331ED /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F58C97C78714704CC4BB15B /* AppModel.swift */; };
+		B5CCA127DBF2CC03FAE11911 /* BightstepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B002E569CD2EF76756AB5 /* BightstepApp.swift */; };
+		C0676D20F247DFB8A0959323 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4158E972E22A884C467FB081 /* AppRuntimeCore */; };
+		C1A5FC8BE8603FEEDA132639 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0315FBCEDBA222D5ECE910A3 /* PrivacyInfo.xcprivacy */; };
+		C67DB27F40781E3B5D6E2F6F /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06064D50E2B7FDD01C1363AB /* ConsentSheet.swift */; };
+		C7C9EBFB8960F35B36E28E6B /* BightstepTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3F0F711C82A079E965431 /* BightstepTheme.swift */; };
+		CF06AF93D9C02CB7CC93CE1A /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF67F25C99542434B24535D /* DeepSeekClient.swift */; };
+		D8C64524E94B2257F1011DE0 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */; };
+		DFD6741992A5D05A098FB3EC /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D9526256DC96FDEE46DB86C /* terms.html */; };
+		E26C333DABD47A372CD27077 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886EDCA7D09F687A05FCB513 /* LocalLegalWebView.swift */; };
+		E7FBED01BDCE1926AD39818C /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD09BD7475AE35C9EB9D3859 /* CameraCapturePicker.swift */; };
+		EC4268F0251DF8A6691C8AFD /* StageReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5127AF6CDFF23D2E3792D644 /* StageReviewView.swift */; };
+		F9BC1B303FE2B0AA4A4368AB /* BightstepDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 4233C0691361A437C1059E5C /* BightstepDomain */; };
+		FCA5197D31C2DA8A1894636A /* KnotStageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EAD9F19E487D6843718434E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EC538ADF4ABCDF235978584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF933DA18D298C89A5921AE5;
+			remoteInfo = Bightstep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0315FBCEDBA222D5ECE910A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		06064D50E2B7FDD01C1363AB /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		08B12CC5F9F676B465E37779 /* RopeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeHomeView.swift; sourceTree = "<group>"; };
+		0F446F12A9E33A77D649018D /* KnotCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotCaptureView.swift; sourceTree = "<group>"; };
+		0FF67F25C99542434B24535D /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		22BF0E627627801074CC7C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2D9526256DC96FDEE46DB86C /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		352090C8519A175D52AF5371 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		50A8C4417B2D1EAC866F7944 /* deepseek-privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "deepseek-privacy.html"; sourceTree = "<group>"; };
+		5127AF6CDFF23D2E3792D644 /* StageReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageReviewView.swift; sourceTree = "<group>"; };
+		596936263CF165CE3633B0C7 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		5D49D9C43827A79356A41A0E /* bightstep */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bightstep; path = .; sourceTree = SOURCE_ROOT; };
+		6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepDomainTests.swift; sourceTree = "<group>"; };
+		7F58C97C78714704CC4BB15B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BightstepDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		886EDCA7D09F687A05FCB513 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeCoachView.swift; sourceTree = "<group>"; };
+		99B2E71940CD64B032E64F18 /* Bightstep.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Bightstep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E382BA02959F55D244F3519 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
+		A22014A703ADCEE280D99AFC /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		CD09BD7475AE35C9EB9D3859 /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
+		CECEAFC775AA8274A2F0011E /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		D475B33F3D0FEB39CFDD4B47 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		D58917D1F9A5AB432249D729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D71C70F08A96F39B135A50BD /* StepOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepOverlayView.swift; sourceTree = "<group>"; };
+		DA862C518CF337858320D518 /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
+		E13B002E569CD2EF76756AB5 /* BightstepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepApp.swift; sourceTree = "<group>"; };
+		E2E3F0F711C82A079E965431 /* BightstepTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BightstepTheme.swift; sourceTree = "<group>"; };
+		F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStageDetailView.swift; sourceTree = "<group>"; };
+		F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBE3CF4C8061FACAB58D98A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BC1B303FE2B0AA4A4368AB /* BightstepDomain in Frameworks */,
+				4DACDB0A25612FBD7382B968 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27ED977A7DDD35998004690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0676D20F247DFB8A0959323 /* AppRuntimeCore in Frameworks */,
+				00BB4E4479E9FA353A60D3DB /* BightstepDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577C2882671D07D168BEF359 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6418E20432119FCC0DA540FE /* BightstepDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		685A14937EEC4560C004C737 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CECEAFC775AA8274A2F0011E /* AppRuntimeCore */,
+				5D49D9C43827A79356A41A0E /* bightstep */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		72CCE5D126EBCD8BD2C1D910 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F58C97C78714704CC4BB15B /* AppModel.swift */,
+				CD09BD7475AE35C9EB9D3859 /* CameraCapturePicker.swift */,
+				9E382BA02959F55D244F3519 /* SpeechCaptureHost.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98617FF9F484947FC58E4D33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0315FBCEDBA222D5ECE910A3 /* PrivacyInfo.xcprivacy */,
+				98F64E66AB5D82462EBE2A68 /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98F64E66AB5D82462EBE2A68 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				50A8C4417B2D1EAC866F7944 /* deepseek-privacy.html */,
+				A22014A703ADCEE280D99AFC /* privacy.html */,
+				596936263CF165CE3633B0C7 /* support.html */,
+				2D9526256DC96FDEE46DB86C /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		9C8E5A49ABFC2BB6E3273C7F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D58917D1F9A5AB432249D729 /* Assets.xcassets */,
+				22BF0E627627801074CC7C30 /* Info.plist */,
+				E13B002E569CD2EF76756AB5 /* BightstepApp.swift */,
+				D491C9E54BCB579CBBF779D9 /* AI */,
+				98617FF9F484947FC58E4D33 /* Resources */,
+				72CCE5D126EBCD8BD2C1D910 /* Services */,
+				F0AE44EF4D087C07913F260F /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D491C9E54BCB579CBBF779D9 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				06064D50E2B7FDD01C1363AB /* ConsentSheet.swift */,
+				0FF67F25C99542434B24535D /* DeepSeekClient.swift */,
+				886EDCA7D09F687A05FCB513 /* LocalLegalWebView.swift */,
+				D475B33F3D0FEB39CFDD4B47 /* SettingsPrivacyView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		D4CA6C17DCD6DA5A37127F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99B2E71940CD64B032E64F18 /* Bightstep.app */,
+				7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E182094CDA080A8D05E664C6 = {
+			isa = PBXGroup;
+			children = (
+				9C8E5A49ABFC2BB6E3273C7F /* App */,
+				685A14937EEC4560C004C737 /* Packages */,
+				577C2882671D07D168BEF359 /* Tests */,
+				D4CA6C17DCD6DA5A37127F58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0AE44EF4D087C07913F260F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				352090C8519A175D52AF5371 /* CoachChatView.swift */,
+				967680A01DA08C3E41EBFAFD /* HandsFreeCoachView.swift */,
+				0F446F12A9E33A77D649018D /* KnotCaptureView.swift */,
+				E2E3F0F711C82A079E965431 /* BightstepTheme.swift */,
+				F05EEAA08C5D01784D14328B /* KnotStageDetailView.swift */,
+				F5FE5E1598C09FEC1BA11B8F /* RootTabView.swift */,
+				08B12CC5F9F676B465E37779 /* RopeHomeView.swift */,
+				DA862C518CF337858320D518 /* SpeechCaptureView.swift */,
+				5127AF6CDFF23D2E3792D644 /* StageReviewView.swift */,
+				D71C70F08A96F39B135A50BD /* StepOverlayView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246157F659D578DABD359F93 /* BightstepDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "BightstepDomainTests" */;
+			buildPhases = (
+				19DC29A45D271357465E91BD /* Sources */,
+				CBE3CF4C8061FACAB58D98A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E732D064716B4B9B62D02D6 /* PBXTargetDependency */,
+			);
+			name = BightstepDomainTests;
+			packageProductDependencies = (
+				4233C0691361A437C1059E5C /* BightstepDomain */,
+				469996C65B3C87EB8B198945 /* AppRuntimeCore */,
+			);
+			productName = BightstepDomainTests;
+			productReference = 7FD347F67531EE23D8A25921 /* BightstepDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF933DA18D298C89A5921AE5 /* Bightstep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "Bightstep" */;
+			buildPhases = (
+				B3A55331930038566B0AD170 /* Sources */,
+				9D83334EAAD338B0A7C5406D /* Resources */,
+				D27ED977A7DDD35998004690 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bightstep;
+			packageProductDependencies = (
+				4158E972E22A884C467FB081 /* AppRuntimeCore */,
+				24C68F9C8392F5911B7C3DDC /* BightstepDomain */,
+			);
+			productName = Bightstep;
+			productReference = 99B2E71940CD64B032E64F18 /* Bightstep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EC538ADF4ABCDF235978584 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "Bightstep" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E182094CDA080A8D05E664C6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F074833D63CD777D92E3E30A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				AA166A446550C7217EB62399 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D4CA6C17DCD6DA5A37127F58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF933DA18D298C89A5921AE5 /* Bightstep */,
+				246157F659D578DABD359F93 /* BightstepDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D83334EAAD338B0A7C5406D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763562011677ADA96FB40FC5 /* Assets.xcassets in Resources */,
+				C1A5FC8BE8603FEEDA132639 /* PrivacyInfo.xcprivacy in Resources */,
+				05DED796EE00B2AEB5E57A58 /* deepseek-privacy.html in Resources */,
+				6431814DA599443BACE8698B /* privacy.html in Resources */,
+				78A98616E047C9B507CF7E80 /* support.html in Resources */,
+				DFD6741992A5D05A098FB3EC /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19DC29A45D271357465E91BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADF7B76CCA5F4977C2B4FBB /* BightstepDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A55331930038566B0AD170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8471CF630F39624F382331ED /* AppModel.swift in Sources */,
+				E7FBED01BDCE1926AD39818C /* CameraCapturePicker.swift in Sources */,
+				1400B2DE5CF605A37D23C14C /* CoachChatView.swift in Sources */,
+				C67DB27F40781E3B5D6E2F6F /* ConsentSheet.swift in Sources */,
+				CF06AF93D9C02CB7CC93CE1A /* DeepSeekClient.swift in Sources */,
+				1DA22BA9085F3A1FC98FA177 /* HandsFreeCoachView.swift in Sources */,
+				0C7CB68573085B66729E83A3 /* KnotCaptureView.swift in Sources */,
+				B5CCA127DBF2CC03FAE11911 /* BightstepApp.swift in Sources */,
+				C7C9EBFB8960F35B36E28E6B /* BightstepTheme.swift in Sources */,
+				FCA5197D31C2DA8A1894636A /* KnotStageDetailView.swift in Sources */,
+				E26C333DABD47A372CD27077 /* LocalLegalWebView.swift in Sources */,
+				D8C64524E94B2257F1011DE0 /* RootTabView.swift in Sources */,
+				7DA819982E7C2761C3981A56 /* RopeHomeView.swift in Sources */,
+				7C443E59717B3621F2215DDA /* SettingsPrivacyView.swift in Sources */,
+				74A91B913398D21411309239 /* SpeechCaptureHost.swift in Sources */,
+				3900E5BB75AD9086F3E534BD /* SpeechCaptureView.swift in Sources */,
+				EC4268F0251DF8A6691C8AFD /* StageReviewView.swift in Sources */,
+				22280240728218772C18B0F3 /* StepOverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E732D064716B4B9B62D02D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF933DA18D298C89A5921AE5 /* Bightstep */;
+			targetProxy = 9EAD9F19E487D6843718434E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11EB5BFDC5D904BDB06CA85B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bightstep;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Bightstep photographs in-progress rope knots to recognize stage and wrong hauls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Bightstep uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bightstep imports practice reference photos to diagnose which rope-knot step drifted.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Bightstep uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bightstep;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7C532950BB3DECFA8E69C020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bightstep.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bightstep.app/Bightstep";
+			};
+			name = Release;
+		};
+		82C99E31EAB5E27B2769AA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C0767386A3464A3268034CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.bightstep.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bightstep.app/Bightstep";
+			};
+			name = Debug;
+		};
+		CD7C9147F69E1537C4A867B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bightstep;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Bightstep photographs in-progress rope knots to recognize stage and wrong hauls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Bightstep uses the microphone so you can ask hands-free coach questions while both hands hold the rope.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bightstep imports practice reference photos to diagnose which rope-knot step drifted.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Bightstep uses on-device speech recognition to turn spoken commands into editable coach chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Bightstep;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D4CD4D7C6E090D452417B782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94B4097A3F47D95B0377CA2B /* Build configuration list for PBXProject "Bightstep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CD4D7C6E090D452417B782 /* Debug */,
+				82C99E31EAB5E27B2769AA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		99368DCC3FA7CD1E76D1CBC8 /* Build configuration list for PBXNativeTarget "Bightstep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7C9147F69E1537C4A867B3 /* Debug */,
+				11EB5BFDC5D904BDB06CA85B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF6194CD4F4A06F527B4D370 /* Build configuration list for PBXNativeTarget "BightstepDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0767386A3464A3268034CB7 /* Debug */,
+				7C532950BB3DECFA8E69C020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA166A446550C7217EB62399 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		F074833D63CD777D92E3E30A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24C68F9C8392F5911B7C3DDC /* BightstepDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BightstepDomain;
+		};
+		4158E972E22A884C467FB081 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		4233C0691361A437C1059E5C /* BightstepDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BightstepDomain;
+		};
+		469996C65B3C87EB8B198945 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6EC538ADF4ABCDF235978584 /* Project object */;
+}

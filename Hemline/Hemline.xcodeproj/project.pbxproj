@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BABDCB0B5F7D48560EADB8 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3B9641FEE1102E8107FD3 /* support.html */; };
+		0A7428266D9A4DB5EF3A78ED /* HemlineDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9123463A19A114FDFFDB3D70 /* HemlineDomain */; };
+		0F19575696F4EDF5F97AE4BC /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */; };
+		15D8C7AE9BF6400AEFB4149E /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */; };
+		1DE7A29FA3B611C6C9BB8367 /* SpeechCaptureHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D474B2384755CE50238B02 /* SpeechCaptureHost.swift */; };
+		201C9127A29D2E6664354EA7 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF0F8A13C3BBDDA04B9B1B /* AppModel.swift */; };
+		2513E87C52CB9123658DA9A6 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = D584C311C23B2913C037223B /* terms.html */; };
+		2E274663B13858F864BAF045 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF47A6C2570DED272E5FFBE /* RootTabView.swift */; };
+		40E2CDDF98A8E135A2D5ED58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC13C564940844E9CEDA801C /* Assets.xcassets */; };
+		4CE455CF5F6C3745955A9CF7 /* CameraCapturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518BA435C2DBB233688A5324 /* CameraCapturePicker.swift */; };
+		593AC875A135243748C76685 /* MorningBriefingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB00BE211D864596028B2D9 /* MorningBriefingView.swift */; };
+		694F364F4BEE827E7C766AF8 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07E80BE05C4196F047FFDC /* DeepSeekClient.swift */; };
+		6DD7E6A6F85A3316ED83ABD4 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */; };
+		70E6519BA0405FCBBA99AB46 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A629C29066549901C54B3EFA /* LocalLegalWebView.swift */; };
+		7962A39E203C21D07C237B63 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */; };
+		820E2073DC581869E633D22C /* FlatLayBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */; };
+		8785CE7BFEAB4A7CBB0D6CC6 /* ClosetShelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */; };
+		9256596078BDA1540C33D105 /* SpeechCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */; };
+		9BF7D927CC9DFCAE05DE5F4E /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7A56E60CAB52625FA1102 /* privacy.html */; };
+		B2BA315899C80595A4B37955 /* ClosetItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A6573050EE84312C14FF2 /* ClosetItemDetailView.swift */; };
+		BEA41F3153AECA99A5B6F4C3 /* HemlineTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */; };
+		C806ECEFF3AB6CF5E8542388 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */; };
+		DF18D8A496A45ED95C79BA5B /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 087F3E8F46BA7519801C1513 /* AppRuntimeCore */; };
+		E0367730279A04FCC7AC8D1F /* HemlineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */; };
+		E48FD3E226812BDF224A2A7D /* HemlineDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */; };
+		EBB54CFB27E901C2D05C0163 /* HemlineDomain in Frameworks */ = {isa = PBXBuildFile; productRef = CABF41E87066324614A22824 /* HemlineDomain */; };
+		EE3F27FFD46401051E70B8F6 /* StylistChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF683ABE21E4838ADBF11BBB /* StylistChatView.swift */; };
+		FCD0135F930B94F519516105 /* GarmentReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD1DBFCA0C39C6E4E1BEBE /* GarmentReviewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6636016656B0C587CB691ACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 452F84CF33E39EFB78D66353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F00E3B522D3ED75C3559301;
+			remoteInfo = Hemline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineTheme.swift; sourceTree = "<group>"; };
+		10D474B2384755CE50238B02 /* SpeechCaptureHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureHost.swift; sourceTree = "<group>"; };
+		2CBE30B71992D348C31CD711 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		49DD1DBFCA0C39C6E4E1BEBE /* GarmentReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentReviewView.swift; sourceTree = "<group>"; };
+		4E8A6573050EE84312C14FF2 /* ClosetItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetItemDetailView.swift; sourceTree = "<group>"; };
+		4F6F189FFAA4FEC579C97BE5 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		4FF47A6C2570DED272E5FFBE /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		518BA435C2DBB233688A5324 /* CameraCapturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapturePicker.swift; sourceTree = "<group>"; };
+		6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HemlineDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE7A56E60CAB52625FA1102 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		6DB00BE211D864596028B2D9 /* MorningBriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningBriefingView.swift; sourceTree = "<group>"; };
+		6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineApp.swift; sourceTree = "<group>"; };
+		7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
+		75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetShelfView.swift; sourceTree = "<group>"; };
+		7FFBF292C7165A0D2C2A7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechCaptureView.swift; sourceTree = "<group>"; };
+		8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatLayBoardView.swift; sourceTree = "<group>"; };
+		8FC3B9641FEE1102E8107FD3 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HemlineDomainTests.swift; sourceTree = "<group>"; };
+		99FF0F8A13C3BBDDA04B9B1B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9AFADB5A226F82A5FEC02D33 /* Hemline.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Hemline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		A629C29066549901C54B3EFA /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D584C311C23B2913C037223B /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		DF683ABE21E4838ADBF11BBB /* StylistChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistChatView.swift; sourceTree = "<group>"; };
+		EB07E80BE05C4196F047FFDC /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		FC13C564940844E9CEDA801C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0D6E16C326E02E06E952DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7428266D9A4DB5EF3A78ED /* HemlineDomain in Frameworks */,
+				DF18D8A496A45ED95C79BA5B /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2B39F877CBC7C35565246C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD7E6A6F85A3316ED83ABD4 /* AppRuntimeCore in Frameworks */,
+				EBB54CFB27E901C2D05C0163 /* HemlineDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8C0E5811FAF52BDC125F47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AFADB5A226F82A5FEC02D33 /* Hemline.app */,
+				6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F635C2168050F74C8D1593 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				99FF0F8A13C3BBDDA04B9B1B /* AppModel.swift */,
+				518BA435C2DBB233688A5324 /* CameraCapturePicker.swift */,
+				10D474B2384755CE50238B02 /* SpeechCaptureHost.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		21A119185951256DF738FA74 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				2CBE30B71992D348C31CD711 /* AppRuntimeCore */,
+				4F6F189FFAA4FEC579C97BE5 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		2F6387846367DCC8CDEDD99B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FC13C564940844E9CEDA801C /* Assets.xcassets */,
+				6FDE5EC78EAC1682E8F32B1B /* HemlineApp.swift */,
+				7FFBF292C7165A0D2C2A7E3F /* Info.plist */,
+				8542CA0BAAA105837BAC8AC0 /* AI */,
+				C2DF489D641A8E470689174B /* Resources */,
+				12F635C2168050F74C8D1593 /* Services */,
+				5E64A1591533D3833465A099 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5E64A1591533D3833465A099 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7058B0A5F8B7A43A1A3B95FC /* CaptureImportView.swift */,
+				086BE9819C2D4F541EBBD1B9 /* HemlineTheme.swift */,
+				4E8A6573050EE84312C14FF2 /* ClosetItemDetailView.swift */,
+				75D3F10C09BB4325AB83682D /* ClosetShelfView.swift */,
+				8F0E12F6B77838E718A8B999 /* FlatLayBoardView.swift */,
+				49DD1DBFCA0C39C6E4E1BEBE /* GarmentReviewView.swift */,
+				6DB00BE211D864596028B2D9 /* MorningBriefingView.swift */,
+				4FF47A6C2570DED272E5FFBE /* RootTabView.swift */,
+				821F8AD0359227DE903A8F2B /* SpeechCaptureView.swift */,
+				DF683ABE21E4838ADBF11BBB /* StylistChatView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8542CA0BAAA105837BAC8AC0 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				A2F30EA21D68069D61E8DE36 /* ConsentSheet.swift */,
+				EB07E80BE05C4196F047FFDC /* DeepSeekClient.swift */,
+				A629C29066549901C54B3EFA /* LocalLegalWebView.swift */,
+				BED1C89A65EFF726828EB8A8 /* SettingsPrivacyView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		B5E2E28D67B6F37229E571C2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				91086E6ABE69C949947AB480 /* HemlineDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C2DF489D641A8E470689174B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D402B6E0F8F42EEDAB8C20ED /* PrivacyInfo.xcprivacy */,
+				D6FA10CE639CE35FD6CD3F1B /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6FA10CE639CE35FD6CD3F1B /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				6BE7A56E60CAB52625FA1102 /* privacy.html */,
+				8FC3B9641FEE1102E8107FD3 /* support.html */,
+				D584C311C23B2913C037223B /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		FD4CF6C5705E0452B53BE78C = {
+			isa = PBXGroup;
+			children = (
+				2F6387846367DCC8CDEDD99B /* App */,
+				21A119185951256DF738FA74 /* Packages */,
+				B5E2E28D67B6F37229E571C2 /* Tests */,
+				0C8C0E5811FAF52BDC125F47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65C564CC1A6B4C87BFE5F3AF /* HemlineDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "HemlineDomainTests" */;
+			buildPhases = (
+				4E6413B7302CD16F57C31531 /* Sources */,
+				3F0D6E16C326E02E06E952DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61F19BE31115FE3983E4A08 /* PBXTargetDependency */,
+			);
+			name = HemlineDomainTests;
+			packageProductDependencies = (
+				9123463A19A114FDFFDB3D70 /* HemlineDomain */,
+				087F3E8F46BA7519801C1513 /* AppRuntimeCore */,
+			);
+			productName = HemlineDomainTests;
+			productReference = 6806D767ECE10D19125581F6 /* HemlineDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F00E3B522D3ED75C3559301 /* Hemline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "Hemline" */;
+			buildPhases = (
+				13D801F6F43AA68A9082B3E2 /* Sources */,
+				44D62B8DC14403D359C6A2AD /* Resources */,
+				FE2B39F877CBC7C35565246C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hemline;
+			packageProductDependencies = (
+				F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */,
+				CABF41E87066324614A22824 /* HemlineDomain */,
+			);
+			productName = Hemline;
+			productReference = 9AFADB5A226F82A5FEC02D33 /* Hemline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		452F84CF33E39EFB78D66353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 484319D15733B9B9395B783D /* Build configuration list for PBXProject "Hemline" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FD4CF6C5705E0452B53BE78C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0B9AFF916B5796CB56E6435A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				242BE812BD064B6DB245E676 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0C8C0E5811FAF52BDC125F47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F00E3B522D3ED75C3559301 /* Hemline */,
+				65C564CC1A6B4C87BFE5F3AF /* HemlineDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44D62B8DC14403D359C6A2AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E2CDDF98A8E135A2D5ED58 /* Assets.xcassets in Resources */,
+				7962A39E203C21D07C237B63 /* PrivacyInfo.xcprivacy in Resources */,
+				9BF7D927CC9DFCAE05DE5F4E /* privacy.html in Resources */,
+				00BABDCB0B5F7D48560EADB8 /* support.html in Resources */,
+				2513E87C52CB9123658DA9A6 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13D801F6F43AA68A9082B3E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201C9127A29D2E6664354EA7 /* AppModel.swift in Sources */,
+				4CE455CF5F6C3745955A9CF7 /* CameraCapturePicker.swift in Sources */,
+				15D8C7AE9BF6400AEFB4149E /* CaptureImportView.swift in Sources */,
+				E0367730279A04FCC7AC8D1F /* HemlineApp.swift in Sources */,
+				BEA41F3153AECA99A5B6F4C3 /* HemlineTheme.swift in Sources */,
+				B2BA315899C80595A4B37955 /* ClosetItemDetailView.swift in Sources */,
+				8785CE7BFEAB4A7CBB0D6CC6 /* ClosetShelfView.swift in Sources */,
+				0F19575696F4EDF5F97AE4BC /* ConsentSheet.swift in Sources */,
+				694F364F4BEE827E7C766AF8 /* DeepSeekClient.swift in Sources */,
+				820E2073DC581869E633D22C /* FlatLayBoardView.swift in Sources */,
+				FCD0135F930B94F519516105 /* GarmentReviewView.swift in Sources */,
+				70E6519BA0405FCBBA99AB46 /* LocalLegalWebView.swift in Sources */,
+				593AC875A135243748C76685 /* MorningBriefingView.swift in Sources */,
+				2E274663B13858F864BAF045 /* RootTabView.swift in Sources */,
+				C806ECEFF3AB6CF5E8542388 /* SettingsPrivacyView.swift in Sources */,
+				1DE7A29FA3B611C6C9BB8367 /* SpeechCaptureHost.swift in Sources */,
+				9256596078BDA1540C33D105 /* SpeechCaptureView.swift in Sources */,
+				EE3F27FFD46401051E70B8F6 /* StylistChatView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6413B7302CD16F57C31531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48FD3E226812BDF224A2A7D /* HemlineDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61F19BE31115FE3983E4A08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F00E3B522D3ED75C3559301 /* Hemline */;
+			targetProxy = 6636016656B0C587CB691ACE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		269DD1C2A3B54F6B23DBEE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hemline;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hemline can snap garment photos into your closet catalog for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Hemline;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		742F3EFAD24FE9EF4117F202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.hemline.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemline.app/Hemline";
+			};
+			name = Debug;
+		};
+		74BA07C41DA802FAA2DFAD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7525A346D09E5DD3DAD147B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.hemline.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hemline.app/Hemline";
+			};
+			name = Release;
+		};
+		7ACF18AF8CDB315BDBA16B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB885F8544C022E71F2CA5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hemline;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hemline can snap garment photos into your closet catalog for optional recognition review.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Hemline;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		484319D15733B9B9395B783D /* Build configuration list for PBXProject "Hemline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACF18AF8CDB315BDBA16B3D /* Debug */,
+				74BA07C41DA802FAA2DFAD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5F0544FC14BB7CEE77D0A8C /* Build configuration list for PBXNativeTarget "Hemline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269DD1C2A3B54F6B23DBEE31 /* Debug */,
+				DB885F8544C022E71F2CA5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C44E8E8FAB853C847B81E1D6 /* Build configuration list for PBXNativeTarget "HemlineDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742F3EFAD24FE9EF4117F202 /* Debug */,
+				7525A346D09E5DD3DAD147B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0B9AFF916B5796CB56E6435A /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		242BE812BD064B6DB245E676 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		087F3E8F46BA7519801C1513 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		9123463A19A114FDFFDB3D70 /* HemlineDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HemlineDomain;
+		};
+		CABF41E87066324614A22824 /* HemlineDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HemlineDomain;
+		};
+		F651EC4C35E194400ACCF7B3 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 452F84CF33E39EFB78D66353 /* Project object */;
+}

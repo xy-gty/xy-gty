@@ -1,0 +1,69 @@
+name: Stirboard
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  StirboardDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Stirboard:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: StirboardDomain
+        product: StirboardDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Stirboard
+        INFOPLIST_KEY_CFBundleDisplayName: Stirboard
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture bottle faces, labels, and garnish stills so Stirboard can identify base spirits for your mix session
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import bar-shelf album stills to complete spirit identification in Stirboard
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free voice notes while both hands shake or stir
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken substitute and recipe questions into coach chat text
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+  StirboardDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: StirboardDomain
+        product: StirboardDomain
+      - package: AppRuntimeCore
+      - target: Stirboard
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.stirboard.tests
+schemes:
+  Stirboard:
+    build:
+      targets:
+        Stirboard: all
+        StirboardDomainTests: [test]
+    test:
+      targets:
+        - StirboardDomainTests
+    run:
+      config: Debug

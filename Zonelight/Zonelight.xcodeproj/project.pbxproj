@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DD3227BEB8CD4DDA534A33F /* MeterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E17698BA48A0679214435B7 /* MeterCardView.swift */; };
+		217AEAF57024463C9AFCD142 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78F49A192D59CF2978D664 /* SpeechRecognitionService.swift */; };
+		25BF96BCCC356A4865BD33A9 /* ZonelightDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 81BA277EE595CB7BAC5367E3 /* ZonelightDomain */; };
+		28AD71FE8384AC7582C3A024 /* ZonelightDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D881393A5F44165934416CC /* ZonelightDomainTests.swift */; };
+		2F35771F423BD32B877A3246 /* SignatureComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFE2090B3175D968D4A1BF5 /* SignatureComponents.swift */; };
+		36F740E4CEBAFDD25D443982 /* ExposureResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C6A11977BE49C31B4348A /* ExposureResultView.swift */; };
+		38FDBBAF2CB29C8304D99479 /* ZonelightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */; };
+		3B4AAEE616CC3F4CAAF6D135 /* SetCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E185665F29FF7FCEC8FB971A /* SetCalloutView.swift */; };
+		47538DB6B2DF9C1C7C5E72B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415FC09CE9EB34261498ECBD /* Assets.xcassets */; };
+		493BCD93BB6FEF96984BC924 /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */; };
+		4C6D5FD5858CB93D7B068BC8 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6C6748E9E85FC61DE27EB /* LocalLegalWebView.swift */; };
+		580C4A8AA1154B398C84DD3B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */; };
+		608B2E81316780C099DAA1C1 /* ZonelightUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */; };
+		6EAFA44BBC8D665E9CA41731 /* ZonelightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */; };
+		82E02A62F38B64A1EB3B0062 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A657CA4A86BF7CFACB14B /* SettingsPrivacyView.swift */; };
+		83E00BB01BF87918B19F37BA /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = CF249DB91FA14B63479CAD7A /* provider-policy.html */; };
+		89674492D31883C6CBA527B8 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */; };
+		92D55039D3FE885FFD308290 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 5655C0C47D4C8762A6A4D33B /* support.html */; };
+		955BADD0A6F30E245CA151B5 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B3E7EA74D180D07877A3B1 /* DeepSeekClient.swift */; };
+		AED3FCC4175F328F53146060 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B403095F03B6776AA823CE /* ConsentSheet.swift */; };
+		B7B0780AEEED0FC6113038D7 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5B72C77FD6769A77AD5C207C /* AppRuntimeCore */; };
+		B909877BDD3F3351B56707D9 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */; };
+		BA4F672DA57BFE0492B4ABE5 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2B4A9FABE8C4FBE774B61B13 /* privacy.html */; };
+		BDCF270BDC7057C1A36C76AF /* ZonelightDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 308F8570DDC664F57871AC8F /* ZonelightDomain */; };
+		BDD480C8795D04A77B1587B1 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */; };
+		C04A8BEC20F22AA4190E9FF5 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA156FD810CEB4D75B5BFBC /* VoiceNoteRecorder.swift */; };
+		C3BE743682A01C757B1FCB1F /* MeterHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E4ECC4719C63DED9DE764 /* MeterHomeView.swift */; };
+		C82D6A088EF246A7D2B6DC92 /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642EB6ADC8D20D045F82588 /* TTSPlayer.swift */; };
+		CB36B2D87C64E75DCB368DF9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8A9D69CD67714BCBECD05 /* AppModel.swift */; };
+		CE0186DD304DD2381CBF081E /* MeterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192CFBD907CA143033191773 /* MeterStore.swift */; };
+		CF856E4EA9B78DD4889939FA /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE427DAD982329D08DEAD2 /* VoiceNoteView.swift */; };
+		E0C382828A7F44C86135EE03 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = B410DB56D18678FD1CF70BC3 /* terms.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		099516CCFBA4F07014C2E2B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC83F55F571F464D34D3A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212766C4ECF1B49445CE8172;
+			remoteInfo = Zonelight;
+		};
+		C1D09ECB962FC46E3E2F1582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABC83F55F571F464D34D3A75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212766C4ECF1B49445CE8172;
+			remoteInfo = Zonelight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9A657CA4A86BF7CFACB14B /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		192CFBD907CA143033191773 /* MeterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterStore.swift; sourceTree = "<group>"; };
+		2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZonelightUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4A9FABE8C4FBE774B61B13 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		3251E013E594090663AAAF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3D881393A5F44165934416CC /* ZonelightDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightDomainTests.swift; sourceTree = "<group>"; };
+		3E17698BA48A0679214435B7 /* MeterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterCardView.swift; sourceTree = "<group>"; };
+		415FC09CE9EB34261498ECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightApp.swift; sourceTree = "<group>"; };
+		4DDA28F49648CE1CF652C588 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		5635689520D81E685AFB4156 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		5655C0C47D4C8762A6A4D33B /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightTheme.swift; sourceTree = "<group>"; };
+		6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ZonelightDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		778C6A11977BE49C31B4348A /* ExposureResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureResultView.swift; sourceTree = "<group>"; };
+		7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Zonelight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B3E7EA74D180D07877A3B1 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		9642EB6ADC8D20D045F82588 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
+		9A78F49A192D59CF2978D664 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		9CA156FD810CEB4D75B5BFBC /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		9EFE2090B3175D968D4A1BF5 /* SignatureComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureComponents.swift; sourceTree = "<group>"; };
+		A8F8A9D69CD67714BCBECD05 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B410DB56D18678FD1CF70BC3 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		B49E4ECC4719C63DED9DE764 /* MeterHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterHomeView.swift; sourceTree = "<group>"; };
+		BFAE427DAD982329D08DEAD2 /* VoiceNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteView.swift; sourceTree = "<group>"; };
+		C2B403095F03B6776AA823CE /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		CF249DB91FA14B63479CAD7A /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		D3E6C6748E9E85FC61DE27EB /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		E185665F29FF7FCEC8FB971A /* SetCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCalloutView.swift; sourceTree = "<group>"; };
+		EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonelightUISmokeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F1F337AF87852525378F32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B909877BDD3F3351B56707D9 /* AppRuntimeCore in Frameworks */,
+				25BF96BCCC356A4865BD33A9 /* ZonelightDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A92F927253C64305EB96DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCF270BDC7057C1A36C76AF /* ZonelightDomain in Frameworks */,
+				B7B0780AEEED0FC6113038D7 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251F3C618E21B4E9CB227E5A /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				2B4A9FABE8C4FBE774B61B13 /* privacy.html */,
+				CF249DB91FA14B63479CAD7A /* provider-policy.html */,
+				5655C0C47D4C8762A6A4D33B /* support.html */,
+				B410DB56D18678FD1CF70BC3 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		425B0BACFD4645B33294CB85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				415FC09CE9EB34261498ECBD /* Assets.xcassets */,
+				3251E013E594090663AAAF3C /* Info.plist */,
+				4A3D6CC35E0BE502EDFE40D5 /* ZonelightApp.swift */,
+				81F0CDAB0778A08F902DA0C8 /* PrivacyInfo.xcprivacy */,
+				4F07ADC1F5640A0C8FEA5A13 /* AI */,
+				8934CD11D5D607425AFF01AE /* Resources */,
+				8F7D39A3A843DE1987C5D461 /* Services */,
+				4F80B755805071C5862DFB58 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E8F58E4C92DDD788B9B803C /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3D6E4480F863038F2FC375 /* ZonelightUISmokeTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		4F07ADC1F5640A0C8FEA5A13 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				C2B403095F03B6776AA823CE /* ConsentSheet.swift */,
+				91B3E7EA74D180D07877A3B1 /* DeepSeekClient.swift */,
+				D3E6C6748E9E85FC61DE27EB /* LocalLegalWebView.swift */,
+				0E9A657CA4A86BF7CFACB14B /* SettingsPrivacyView.swift */,
+				9A78F49A192D59CF2978D664 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		4F80B755805071C5862DFB58 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA37F52266D5AB28FFAD1930 /* CameraPicker.swift */,
+				EDEF161D0C57620F3FC79B0B /* CoachChatView.swift */,
+				778C6A11977BE49C31B4348A /* ExposureResultView.swift */,
+				62FCA76ECC2B247DC08CC36F /* ZonelightTheme.swift */,
+				3E17698BA48A0679214435B7 /* MeterCardView.swift */,
+				B49E4ECC4719C63DED9DE764 /* MeterHomeView.swift */,
+				7AEDAEC96F4740784D4885A2 /* RootNavigationView.swift */,
+				E185665F29FF7FCEC8FB971A /* SetCalloutView.swift */,
+				9EFE2090B3175D968D4A1BF5 /* SignatureComponents.swift */,
+				BFAE427DAD982329D08DEAD2 /* VoiceNoteView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6A359DF642604DF44A4AE24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */,
+				6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */,
+				2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87997DD9D2EC7FB37D482C3D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA28F49648CE1CF652C588 /* AppRuntimeCore */,
+				5635689520D81E685AFB4156 /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8934CD11D5D607425AFF01AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				251F3C618E21B4E9CB227E5A /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F7D39A3A843DE1987C5D461 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8A9D69CD67714BCBECD05 /* AppModel.swift */,
+				192CFBD907CA143033191773 /* MeterStore.swift */,
+				9642EB6ADC8D20D045F82588 /* TTSPlayer.swift */,
+				9CA156FD810CEB4D75B5BFBC /* VoiceNoteRecorder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E03E279354B2E9EF43C5DF5C = {
+			isa = PBXGroup;
+			children = (
+				425B0BACFD4645B33294CB85 /* App */,
+				87997DD9D2EC7FB37D482C3D /* Packages */,
+				E7B89E39C711F4991FCB7F70 /* Tests */,
+				4E8F58E4C92DDD788B9B803C /* UITests */,
+				6A359DF642604DF44A4AE24D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B89E39C711F4991FCB7F70 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D881393A5F44165934416CC /* ZonelightDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04166DD7C50FB34A030F0436 /* ZonelightUISmokeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "ZonelightUISmokeTests" */;
+			buildPhases = (
+				85425831064E3A7C568B1C68 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74AEEAC0A84AC69BEAFCEF30 /* PBXTargetDependency */,
+			);
+			name = ZonelightUISmokeTests;
+			packageProductDependencies = (
+			);
+			productName = ZonelightUISmokeTests;
+			productReference = 2583E97C90D163E2E5D782D0 /* ZonelightUISmokeTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		212766C4ECF1B49445CE8172 /* Zonelight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "Zonelight" */;
+			buildPhases = (
+				FCAF927947E53469C76EC554 /* Sources */,
+				F4168A303C2877F7E5E029FC /* Resources */,
+				0F1F337AF87852525378F32E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zonelight;
+			packageProductDependencies = (
+				A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */,
+				81BA277EE595CB7BAC5367E3 /* ZonelightDomain */,
+			);
+			productName = Zonelight;
+			productReference = 861F2C7AFDA0007EEBE6FFF8 /* Zonelight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89C5A72E5DB0E54A5E2A80D7 /* ZonelightDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "ZonelightDomainTests" */;
+			buildPhases = (
+				3AC20A0CB0C193D8020EBD0E /* Sources */,
+				5A92F927253C64305EB96DD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8F414AE12AD90FC120A763 /* PBXTargetDependency */,
+			);
+			name = ZonelightDomainTests;
+			packageProductDependencies = (
+				308F8570DDC664F57871AC8F /* ZonelightDomain */,
+				5B72C77FD6769A77AD5C207C /* AppRuntimeCore */,
+			);
+			productName = ZonelightDomainTests;
+			productReference = 6A5CC7FC64763F356DD794F7 /* ZonelightDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABC83F55F571F464D34D3A75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					04166DD7C50FB34A030F0436 = {
+						TestTargetID = 212766C4ECF1B49445CE8172;
+					};
+				};
+			};
+			buildConfigurationList = 81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "Zonelight" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E03E279354B2E9EF43C5DF5C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFDDB5CA0E414DC96F10AA14 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				8ACF4382855115C8A7A23477 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6A359DF642604DF44A4AE24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				212766C4ECF1B49445CE8172 /* Zonelight */,
+				89C5A72E5DB0E54A5E2A80D7 /* ZonelightDomainTests */,
+				04166DD7C50FB34A030F0436 /* ZonelightUISmokeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4168A303C2877F7E5E029FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47538DB6B2DF9C1C7C5E72B0 /* Assets.xcassets in Resources */,
+				580C4A8AA1154B398C84DD3B /* PrivacyInfo.xcprivacy in Resources */,
+				BA4F672DA57BFE0492B4ABE5 /* privacy.html in Resources */,
+				83E00BB01BF87918B19F37BA /* provider-policy.html in Resources */,
+				92D55039D3FE885FFD308290 /* support.html in Resources */,
+				E0C382828A7F44C86135EE03 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AC20A0CB0C193D8020EBD0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD71FE8384AC7582C3A024 /* ZonelightDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85425831064E3A7C568B1C68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608B2E81316780C099DAA1C1 /* ZonelightUISmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAF927947E53469C76EC554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB36B2D87C64E75DCB368DF9 /* AppModel.swift in Sources */,
+				BDD480C8795D04A77B1587B1 /* CameraPicker.swift in Sources */,
+				493BCD93BB6FEF96984BC924 /* CoachChatView.swift in Sources */,
+				AED3FCC4175F328F53146060 /* ConsentSheet.swift in Sources */,
+				955BADD0A6F30E245CA151B5 /* DeepSeekClient.swift in Sources */,
+				36F740E4CEBAFDD25D443982 /* ExposureResultView.swift in Sources */,
+				4C6D5FD5858CB93D7B068BC8 /* LocalLegalWebView.swift in Sources */,
+				38FDBBAF2CB29C8304D99479 /* ZonelightApp.swift in Sources */,
+				6EAFA44BBC8D665E9CA41731 /* ZonelightTheme.swift in Sources */,
+				0DD3227BEB8CD4DDA534A33F /* MeterCardView.swift in Sources */,
+				C3BE743682A01C757B1FCB1F /* MeterHomeView.swift in Sources */,
+				CE0186DD304DD2381CBF081E /* MeterStore.swift in Sources */,
+				89674492D31883C6CBA527B8 /* RootNavigationView.swift in Sources */,
+				3B4AAEE616CC3F4CAAF6D135 /* SetCalloutView.swift in Sources */,
+				82E02A62F38B64A1EB3B0062 /* SettingsPrivacyView.swift in Sources */,
+				2F35771F423BD32B877A3246 /* SignatureComponents.swift in Sources */,
+				217AEAF57024463C9AFCD142 /* SpeechRecognitionService.swift in Sources */,
+				C82D6A088EF246A7D2B6DC92 /* TTSPlayer.swift in Sources */,
+				C04A8BEC20F22AA4190E9FF5 /* VoiceNoteRecorder.swift in Sources */,
+				CF856E4EA9B78DD4889939FA /* VoiceNoteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8F414AE12AD90FC120A763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212766C4ECF1B49445CE8172 /* Zonelight */;
+			targetProxy = C1D09ECB962FC46E3E2F1582 /* PBXContainerItemProxy */;
+		};
+		74AEEAC0A84AC69BEAFCEF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212766C4ECF1B49445CE8172 /* Zonelight */;
+			targetProxy = 099516CCFBA4F07014C2E2B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		117F834BF58499CF9AD5861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zonelight;
+			};
+			name = Release;
+		};
+		13FDC5EA66F908213637301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zonelight;
+			};
+			name = Debug;
+		};
+		5C505CF3C9424AEE24ABDA07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zonelight;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free meter notes while holding the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in Zonelight";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken zone and exposure questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Zonelight;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		67F0B54CA524F6D858F77FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D6C2FC0D907FC3332561267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zonelight.app/Zonelight";
+			};
+			name = Debug;
+		};
+		A25B4388260D3D62F708A78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.zonelight.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zonelight.app/Zonelight";
+			};
+			name = Release;
+		};
+		AED4DE830EA4BF1D336361DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D14A686989B5BD0B442D91C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Zonelight;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free meter notes while holding the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import stills to complete spot-meter sessions in Zonelight";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken zone and exposure questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Zonelight;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81F8DC6DE6BE679B721FD73D /* Build configuration list for PBXProject "Zonelight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F0B54CA524F6D858F77FC3 /* Debug */,
+				AED4DE830EA4BF1D336361DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		97F8EF1E85D665F6CE6890FA /* Build configuration list for PBXNativeTarget "ZonelightUISmokeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13FDC5EA66F908213637301F /* Debug */,
+				117F834BF58499CF9AD5861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B13365A36BAF5A4C1EC253BF /* Build configuration list for PBXNativeTarget "Zonelight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C505CF3C9424AEE24ABDA07 /* Debug */,
+				D14A686989B5BD0B442D91C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EE9C9C6F2761AFDD12786596 /* Build configuration list for PBXNativeTarget "ZonelightDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6C2FC0D907FC3332561267 /* Debug */,
+				A25B4388260D3D62F708A78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8ACF4382855115C8A7A23477 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		AFDDB5CA0E414DC96F10AA14 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		308F8570DDC664F57871AC8F /* ZonelightDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZonelightDomain;
+		};
+		5B72C77FD6769A77AD5C207C /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		81BA277EE595CB7BAC5367E3 /* ZonelightDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZonelightDomain;
+		};
+		A8C65CFCC6BC12B1ACB33842 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABC83F55F571F464D34D3A75 /* Project object */;
+}

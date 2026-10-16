@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9B9372C27371A904BEF6C8 /* WorkrestDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 4B5AFDE6A43928FB826EE313 /* WorkrestDomain */; };
+		1213821C73E233122AD7454F /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BCAE34A11C02CA70C3EE5 /* AppModel.swift */; };
+		137D4B1F38EF1AE048315F66 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = BEB013E5883813AD29AE34E6 /* AppRuntimeCore */; };
+		29F57D41AC6E003762A9D97C /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F615621C13769C9CF3D243A /* SettingsPrivacyView.swift */; };
+		2B9E590D8A665BBCEBE6FB64 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA31E5F4F7A965DDA7B4630C /* ConsentSheet.swift */; };
+		34CB0FBE404856BAA784C65F /* WorkrestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA252A73BCEACCF1EC98256F /* WorkrestApp.swift */; };
+		37DF96F527F109EFA160190B /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D5849451E8C585BCEC36EF41 /* AppRuntimeCore */; };
+		393293E2FE2692D739CAD8A8 /* FormReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E9D543783DF5D94A152C18 /* FormReviewView.swift */; };
+		400F6A7CA5659B6F1742AE4B /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = BE505E16F7E1D848DBF52400 /* support.html */; };
+		573DEE199A8924FC912D5D34 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED730BE13876D7D0B0F2DC /* RootNavigationView.swift */; };
+		5ED49E709E249C18D918B3D4 /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4CEA6F595364573839617 /* CaptureImportView.swift */; };
+		6345D09B6D6D381CB7B878DE /* TurnReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314A1439CF62622091CACA7C /* TurnReviewView.swift */; };
+		656574096DF10AF79067B192 /* WorkrestTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE9E2F93B98B9A81C4DD49 /* WorkrestTheme.swift */; };
+		71932CFECDA6FD8D3A6A100A /* WorkrestDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 54E70C91D6B2D38485D500B5 /* WorkrestDomain */; };
+		804F1D7707311B6E6CD18439 /* DictateIntentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253ED94A7453F41E69B9B4D /* DictateIntentView.swift */; };
+		8526EF97C6C139B93AE728FF /* HandsFreeTTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3AFEA1F8F077A5D87B6CC /* HandsFreeTTSPlayer.swift */; };
+		8B2F402BEA6DD66D1B018EA3 /* SessionCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94C0C91348FFF7C77C4DB3 /* SessionCoachView.swift */; };
+		8DDC4CA6362E873AAA267BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB57DC79000528845E379F4B /* Assets.xcassets */; };
+		8DF623449AA19D10FB8E2978 /* HandsFreeTTSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6518B32F625DEDCAD46E5B /* HandsFreeTTSView.swift */; };
+		97214B97224501BFCD2B3B59 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5D5179964F75AB92E758F /* SpeechRecognitionService.swift */; };
+		A237E67E4A0CD5FD39032F56 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A4EAE63D5242ACCD7E8ED369 /* PrivacyInfo.xcprivacy */; };
+		A45640CAB1661B2F2BC9B170 /* WorkrestDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A0C16A5797E41737D5C25 /* WorkrestDomainTests.swift */; };
+		A6A2C98C9EBCCDA72E612DA3 /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = 1575C2D79A736F8E5278DAD8 /* provider-policy.html */; };
+		A6C785550FCE59DAC7F54F11 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733529B7A39C0B8A838E5EC9 /* DeepSeekClient.swift */; };
+		B20AA8FB2D405F8E8795186C /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D98EE6DDAF3486DC9FDD80 /* LocalLegalWebView.swift */; };
+		C28D43294369B64F25AD7B2E /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE7E908508ED70D9179A74 /* CameraPicker.swift */; };
+		C90BCEA9D6461A8C7BF3F0D4 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 754B3A05333710A601AAB7EA /* privacy.html */; };
+		CC8ADB837EDB9A27F674749F /* AnnotatedFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0047BD9F22C4D68706FCA51 /* AnnotatedFormView.swift */; };
+		E14CD9CC52E8A156C9D4815F /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF2B9A3379CC713D7B6B064 /* CoachChatView.swift */; };
+		E691F0BB4071D0D0FDE11DF3 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = A19AD946DB2DCDFF9C1898EA /* terms.html */; };
+		EABD6D31FC8C72A709F6E646 /* SessionsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C239C29922FF6BBA855D59 /* SessionsHomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56A2DEED7A2569B8923120BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95B5B4FCC35CDA1D0EFBB00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 826581D888D7CFCE544C94C0;
+			remoteInfo = Workrest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EE5D5179964F75AB92E758F /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		130A0C16A5797E41737D5C25 /* WorkrestDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkrestDomainTests.swift; sourceTree = "<group>"; };
+		1575C2D79A736F8E5278DAD8 /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		18B3AFEA1F8F077A5D87B6CC /* HandsFreeTTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeTTSPlayer.swift; sourceTree = "<group>"; };
+		1BDE9E2F93B98B9A81C4DD49 /* WorkrestTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkrestTheme.swift; sourceTree = "<group>"; };
+		20D98EE6DDAF3486DC9FDD80 /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		314A1439CF62622091CACA7C /* TurnReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnReviewView.swift; sourceTree = "<group>"; };
+		3A6518B32F625DEDCAD46E5B /* HandsFreeTTSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsFreeTTSView.swift; sourceTree = "<group>"; };
+		6518F7A15549AB0C7A202446 /* WorkrestDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WorkrestDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		733529B7A39C0B8A838E5EC9 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		754B3A05333710A601AAB7EA /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		7C94C0C91348FFF7C77C4DB3 /* SessionCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCoachView.swift; sourceTree = "<group>"; };
+		9F615621C13769C9CF3D243A /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		A19AD946DB2DCDFF9C1898EA /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		A253ED94A7453F41E69B9B4D /* DictateIntentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictateIntentView.swift; sourceTree = "<group>"; };
+		A4EAE63D5242ACCD7E8ED369 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A5E9D543783DF5D94A152C18 /* FormReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormReviewView.swift; sourceTree = "<group>"; };
+		AB8BCAE34A11C02CA70C3EE5 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B3A4ABAF046C36AC33C76A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B3C239C29922FF6BBA855D59 /* SessionsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsHomeView.swift; sourceTree = "<group>"; };
+		BA31E5F4F7A965DDA7B4630C /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		BBF2B9A3379CC713D7B6B064 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
+		BE505E16F7E1D848DBF52400 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		C0047BD9F22C4D68706FCA51 /* AnnotatedFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedFormView.swift; sourceTree = "<group>"; };
+		C0A4CEA6F595364573839617 /* CaptureImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImportView.swift; sourceTree = "<group>"; };
+		C48EB88155CA47A249D8C89B /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		C7CE7E908508ED70D9179A74 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		CCED730BE13876D7D0B0F2DC /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		D793EC5755C50ACF23B07A8B /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		EA252A73BCEACCF1EC98256F /* WorkrestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkrestApp.swift; sourceTree = "<group>"; };
+		EB57DC79000528845E379F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F724CD94AC66C01CDDCD55A5 /* Workrest.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Workrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2640E64A09294DFC370A80A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71932CFECDA6FD8D3A6A100A /* WorkrestDomain in Frameworks */,
+				37DF96F527F109EFA160190B /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89D818A1520A2E3F1EA9736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137D4B1F38EF1AE048315F66 /* AppRuntimeCore in Frameworks */,
+				0A9B9372C27371A904BEF6C8 /* WorkrestDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A309349300DBB80B3FDDD0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB8BCAE34A11C02CA70C3EE5 /* AppModel.swift */,
+				18B3AFEA1F8F077A5D87B6CC /* HandsFreeTTSPlayer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		20AB03B6BDB26E8F27BC70AD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				130A0C16A5797E41737D5C25 /* WorkrestDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3B31CC7D7A01D1049A7C6880 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCC76C06D5AF5D48BCCE78D1 /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DC0E4DE3F2864B237C7E752 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C0047BD9F22C4D68706FCA51 /* AnnotatedFormView.swift */,
+				C7CE7E908508ED70D9179A74 /* CameraPicker.swift */,
+				C0A4CEA6F595364573839617 /* CaptureImportView.swift */,
+				BBF2B9A3379CC713D7B6B064 /* CoachChatView.swift */,
+				A253ED94A7453F41E69B9B4D /* DictateIntentView.swift */,
+				1BDE9E2F93B98B9A81C4DD49 /* WorkrestTheme.swift */,
+				A5E9D543783DF5D94A152C18 /* FormReviewView.swift */,
+				3A6518B32F625DEDCAD46E5B /* HandsFreeTTSView.swift */,
+				CCED730BE13876D7D0B0F2DC /* RootNavigationView.swift */,
+				7C94C0C91348FFF7C77C4DB3 /* SessionCoachView.swift */,
+				B3C239C29922FF6BBA855D59 /* SessionsHomeView.swift */,
+				314A1439CF62622091CACA7C /* TurnReviewView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		83584B6E02DFF1910628C893 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C48EB88155CA47A249D8C89B /* AppRuntimeCore */,
+				D793EC5755C50ACF23B07A8B /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		AFD244B654CD2CA3E83BC035 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB57DC79000528845E379F4B /* Assets.xcassets */,
+				EA252A73BCEACCF1EC98256F /* WorkrestApp.swift */,
+				B3A4ABAF046C36AC33C76A11 /* Info.plist */,
+				A4EAE63D5242ACCD7E8ED369 /* PrivacyInfo.xcprivacy */,
+				CDEC0D2DBF31B51627BE1776 /* AI */,
+				3B31CC7D7A01D1049A7C6880 /* Resources */,
+				0A309349300DBB80B3FDDD0D /* Services */,
+				3DC0E4DE3F2864B237C7E752 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8A4F521C009BEF05C5693AC = {
+			isa = PBXGroup;
+			children = (
+				AFD244B654CD2CA3E83BC035 /* App */,
+				83584B6E02DFF1910628C893 /* Packages */,
+				20AB03B6BDB26E8F27BC70AD /* Tests */,
+				E78507F03ECDDEBF2D2F601A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDEC0D2DBF31B51627BE1776 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				BA31E5F4F7A965DDA7B4630C /* ConsentSheet.swift */,
+				733529B7A39C0B8A838E5EC9 /* DeepSeekClient.swift */,
+				20D98EE6DDAF3486DC9FDD80 /* LocalLegalWebView.swift */,
+				9F615621C13769C9CF3D243A /* SettingsPrivacyView.swift */,
+				0EE5D5179964F75AB92E758F /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		DCC76C06D5AF5D48BCCE78D1 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				754B3A05333710A601AAB7EA /* privacy.html */,
+				1575C2D79A736F8E5278DAD8 /* provider-policy.html */,
+				BE505E16F7E1D848DBF52400 /* support.html */,
+				A19AD946DB2DCDFF9C1898EA /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		E78507F03ECDDEBF2D2F601A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F724CD94AC66C01CDDCD55A5 /* Workrest.app */,
+				6518F7A15549AB0C7A202446 /* WorkrestDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6940D538C197BE4A40EC5097 /* WorkrestDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81FD0820F871E599220B7E0 /* Build configuration list for PBXNativeTarget "WorkrestDomainTests" */;
+			buildPhases = (
+				457A6E7C63F22729877B0F22 /* Sources */,
+				2640E64A09294DFC370A80A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5935A778B594F8BD3C774B /* PBXTargetDependency */,
+			);
+			name = WorkrestDomainTests;
+			packageProductDependencies = (
+				54E70C91D6B2D38485D500B5 /* WorkrestDomain */,
+				D5849451E8C585BCEC36EF41 /* AppRuntimeCore */,
+			);
+			productName = WorkrestDomainTests;
+			productReference = 6518F7A15549AB0C7A202446 /* WorkrestDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		826581D888D7CFCE544C94C0 /* Workrest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA10C85FCE2C26A2451D50E /* Build configuration list for PBXNativeTarget "Workrest" */;
+			buildPhases = (
+				3FDFF4FC30B6A239E215619F /* Sources */,
+				ED2E3D66CE5B85386F192A65 /* Resources */,
+				A89D818A1520A2E3F1EA9736 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Workrest;
+			packageProductDependencies = (
+				BEB013E5883813AD29AE34E6 /* AppRuntimeCore */,
+				4B5AFDE6A43928FB826EE313 /* WorkrestDomain */,
+			);
+			productName = Workrest;
+			productReference = F724CD94AC66C01CDDCD55A5 /* Workrest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95B5B4FCC35CDA1D0EFBB00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 1D1AD69EF90EA6B81D5F69D3 /* Build configuration list for PBXProject "Workrest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B8A4F521C009BEF05C5693AC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				90A4CB0C0C46578E81A77B63 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				C6DB460E7D84E3322011068D /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E78507F03ECDDEBF2D2F601A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				826581D888D7CFCE544C94C0 /* Workrest */,
+				6940D538C197BE4A40EC5097 /* WorkrestDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED2E3D66CE5B85386F192A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDC4CA6362E873AAA267BBF /* Assets.xcassets in Resources */,
+				A237E67E4A0CD5FD39032F56 /* PrivacyInfo.xcprivacy in Resources */,
+				C90BCEA9D6461A8C7BF3F0D4 /* privacy.html in Resources */,
+				A6A2C98C9EBCCDA72E612DA3 /* provider-policy.html in Resources */,
+				400F6A7CA5659B6F1742AE4B /* support.html in Resources */,
+				E691F0BB4071D0D0FDE11DF3 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FDFF4FC30B6A239E215619F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8ADB837EDB9A27F674749F /* AnnotatedFormView.swift in Sources */,
+				1213821C73E233122AD7454F /* AppModel.swift in Sources */,
+				C28D43294369B64F25AD7B2E /* CameraPicker.swift in Sources */,
+				5ED49E709E249C18D918B3D4 /* CaptureImportView.swift in Sources */,
+				E14CD9CC52E8A156C9D4815F /* CoachChatView.swift in Sources */,
+				2B9E590D8A665BBCEBE6FB64 /* ConsentSheet.swift in Sources */,
+				A6C785550FCE59DAC7F54F11 /* DeepSeekClient.swift in Sources */,
+				804F1D7707311B6E6CD18439 /* DictateIntentView.swift in Sources */,
+				34CB0FBE404856BAA784C65F /* WorkrestApp.swift in Sources */,
+				656574096DF10AF79067B192 /* WorkrestTheme.swift in Sources */,
+				393293E2FE2692D739CAD8A8 /* FormReviewView.swift in Sources */,
+				8526EF97C6C139B93AE728FF /* HandsFreeTTSPlayer.swift in Sources */,
+				8DF623449AA19D10FB8E2978 /* HandsFreeTTSView.swift in Sources */,
+				B20AA8FB2D405F8E8795186C /* LocalLegalWebView.swift in Sources */,
+				573DEE199A8924FC912D5D34 /* RootNavigationView.swift in Sources */,
+				8B2F402BEA6DD66D1B018EA3 /* SessionCoachView.swift in Sources */,
+				EABD6D31FC8C72A709F6E646 /* SessionsHomeView.swift in Sources */,
+				29F57D41AC6E003762A9D97C /* SettingsPrivacyView.swift in Sources */,
+				97214B97224501BFCD2B3B59 /* SpeechRecognitionService.swift in Sources */,
+				6345D09B6D6D381CB7B878DE /* TurnReviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457A6E7C63F22729877B0F22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45640CAB1661B2F2BC9B170 /* WorkrestDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E5935A778B594F8BD3C774B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 826581D888D7CFCE544C94C0 /* Workrest */;
+			targetProxy = 56A2DEED7A2569B8923120BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EB52C1982C6ECA113A06BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		37174739B78CB2FFA26D8B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Workrest;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture mid-set form / posture for AI correction";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free coach dictate while both hands train";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import demo / reference poses into the coach flow";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "e.g. skip rest / spoken interval intent → coach + TTS";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Workrest;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		67B88213DCADB9528322FDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.workrest.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workrest.app/Workrest";
+			};
+			name = Release;
+		};
+		E06C9EE21053699C104DACFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E61F7A7412473F09303873E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.workrest.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workrest.app/Workrest";
+			};
+			name = Debug;
+		};
+		FF7E8A0E76952786B7D2CF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Workrest;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture mid-set form / posture for AI correction";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free coach dictate while both hands train";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import demo / reference poses into the coach flow";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "e.g. skip rest / spoken interval intent → coach + TTS";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Workrest;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D1AD69EF90EA6B81D5F69D3 /* Build configuration list for PBXProject "Workrest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB52C1982C6ECA113A06BAD /* Debug */,
+				E06C9EE21053699C104DACFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5CA10C85FCE2C26A2451D50E /* Build configuration list for PBXNativeTarget "Workrest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7E8A0E76952786B7D2CF85 /* Debug */,
+				37174739B78CB2FFA26D8B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F81FD0820F871E599220B7E0 /* Build configuration list for PBXNativeTarget "WorkrestDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E61F7A7412473F09303873E1 /* Debug */,
+				67B88213DCADB9528322FDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		90A4CB0C0C46578E81A77B63 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+		C6DB460E7D84E3322011068D /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B5AFDE6A43928FB826EE313 /* WorkrestDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorkrestDomain;
+		};
+		54E70C91D6B2D38485D500B5 /* WorkrestDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WorkrestDomain;
+		};
+		BEB013E5883813AD29AE34E6 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		D5849451E8C585BCEC36EF41 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D95B5B4FCC35CDA1D0EFBB00 /* Project object */;
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "appfactory.package_manifest.v1",
+  "app_name": "Heatbar",
+  "bundle_id": "com.lingguang.heatbar",
+  "product_dir": "heatbar",
+  "platform": "ios",
+  "deployment_target": "17.0",
+  "ai_profile": "ultra_lite"
+}

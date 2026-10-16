@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08EB72635EF390B00B5A2FB2 /* provider-policy.html in Resources */ = {isa = PBXBuildFile; fileRef = 6684D5F78EE23D82A61C9DE7 /* provider-policy.html */; };
+		1049DFED926785289EA34CF0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A49BF1FD908B87A7E0E9755 /* AppModel.swift */; };
+		134CB5D5A2F04CEA032F924B /* IDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811354A3C618ACCEF7C022C0 /* IDResultView.swift */; };
+		1661FB5FA0E1A49575DD9F27 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B65C372AE7480F7C6A497F /* LocalLegalWebView.swift */; };
+		168B46AFC30DA36692977EEC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 93158A3715ABF632AB94B1FA /* PrivacyInfo.xcprivacy */; };
+		189933B6BEB184725A966B9B /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48BE93CB6284EEC35118482 /* DeepSeekClient.swift */; };
+		2698EC05A9F72D7201A3DB19 /* BarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D61193475858FE7DDA1ED /* BarHomeView.swift */; };
+		39566F34B5D85A10158F2916 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C27A95A3B3AF88F79E0AA03 /* VoiceNoteRecorder.swift */; };
+		395BF92ED900BE7CA7E8DD20 /* StirboardDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F9B358DD9A1ADB46DD95F9 /* StirboardDomainTests.swift */; };
+		3DB8BFFE8292514E074D3AFF /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064549788089E4C2E7A05802 /* RootNavigationView.swift */; };
+		49B2FDED4D1A60D4AB3BA9F3 /* StirboardDomain in Frameworks */ = {isa = PBXBuildFile; productRef = C77FD70F4C9B501F3FE734DC /* StirboardDomain */; };
+		5BCDECC3AE09D3D7AEA58793 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E3B57B3E50D3C1BD5CE4031 /* privacy.html */; };
+		6267E71BD95C2C7FB322273B /* StirboardDomain in Frameworks */ = {isa = PBXBuildFile; productRef = CA828EFDC0CA7AA0084106CF /* StirboardDomain */; };
+		629352ABA06E1D2F14A6EC84 /* PourBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9731712DA96F2B5F5C5F1 /* PourBoardView.swift */; };
+		72C5A8112A9492C7135F0873 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 32B425B03881435B24CB7394 /* AppRuntimeCore */; };
+		765221DBB7246D4243E07170 /* StirboardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CAE912CA7EDCED25CFAFAD /* StirboardTheme.swift */; };
+		7B3780ABA7160AAC759B8CD4 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA7711014115A83EE9C350 /* SettingsPrivacyView.swift */; };
+		83C5AC9DFFFF7145E392A097 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9B19EFB1162EA9C9AF7B0 /* ConsentSheet.swift */; };
+		95D63605575F357FEA329401 /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF732E79E82ED67DFA7364 /* VoiceNoteView.swift */; };
+		A60566390612B54E5BEA6A00 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29F06E1D73D7862AD2E4FE6 /* CameraPicker.swift */; };
+		B8414DE0F6E150CE920C3A54 /* RecipeChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1FA91B7E73B6148649ED8 /* RecipeChatView.swift */; };
+		B9DB44012DDBB4B6FC49DE3C /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = 147985899516F28F7469B552 /* support.html */; };
+		C35096FE5A9FF31601A6A0F7 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 531A3DF90DC5F310B20E3734 /* terms.html */; };
+		DE2A74B844136F674D3EC3EA /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C1A64708C3E400065DEF3 /* SpeechRecognitionService.swift */; };
+		E223AC9A376F92509992C032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0800EB62EEB514195F3189 /* Assets.xcassets */; };
+		E4B0322FAE3B027C4BF39ECB /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A9BE4A7F2B18EBA8A5A49 /* TTSPlayer.swift */; };
+		EAFDC7F46943312F0737F8AF /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F9F032F0E258753EB0FAF6E /* AppRuntimeCore */; };
+		EBF1EDC88C87103FBEF3BFE9 /* StirboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8F9BDC35F4041D9F7AD1A4 /* StirboardApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85BA8E0D4D26188A6D4730EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEAF393A21C45DF7F67C80D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF48CEDFC316A2D411ADAD5F;
+			remoteInfo = Stirboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		064549788089E4C2E7A05802 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		09BF732E79E82ED67DFA7364 /* VoiceNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteView.swift; sourceTree = "<group>"; };
+		0A0800EB62EEB514195F3189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A7A9BE4A7F2B18EBA8A5A49 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
+		0C27A95A3B3AF88F79E0AA03 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
+		0C8F9BDC35F4041D9F7AD1A4 /* StirboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StirboardApp.swift; sourceTree = "<group>"; };
+		1174D6128CDE010A673100AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		147985899516F28F7469B552 /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
+		27CAE912CA7EDCED25CFAFAD /* StirboardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StirboardTheme.swift; sourceTree = "<group>"; };
+		4EDF28953AE3E435D7ADB7BC /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
+		531A3DF90DC5F310B20E3734 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
+		54D9B19EFB1162EA9C9AF7B0 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
+		6684D5F78EE23D82A61C9DE7 /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
+		6E3B57B3E50D3C1BD5CE4031 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		764C1A64708C3E400065DEF3 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		7867B6507FE06755DD2347DC /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
+		7A49BF1FD908B87A7E0E9755 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		811354A3C618ACCEF7C022C0 /* IDResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResultView.swift; sourceTree = "<group>"; };
+		8216FC92DA4AC5A31A88A9CF /* StirboardDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StirboardDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B1FA91B7E73B6148649ED8 /* RecipeChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeChatView.swift; sourceTree = "<group>"; };
+		852D61193475858FE7DDA1ED /* BarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarHomeView.swift; sourceTree = "<group>"; };
+		93158A3715ABF632AB94B1FA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A1AA7711014115A83EE9C350 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
+		B10400AA61ECAFAE751D7A9B /* Stirboard.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Stirboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29F06E1D73D7862AD2E4FE6 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		B3F9B358DD9A1ADB46DD95F9 /* StirboardDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StirboardDomainTests.swift; sourceTree = "<group>"; };
+		D48BE93CB6284EEC35118482 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
+		D5B65C372AE7480F7C6A497F /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
+		FBA9731712DA96F2B5F5C5F1 /* PourBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourBoardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33357DB455E3165DDAA73722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDC7F46943312F0737F8AF /* AppRuntimeCore in Frameworks */,
+				49B2FDED4D1A60D4AB3BA9F3 /* StirboardDomain in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9291E5A9B9F93B1FC359AE81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6267E71BD95C2C7FB322273B /* StirboardDomain in Frameworks */,
+				72C5A8112A9492C7135F0873 /* AppRuntimeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0997423CAB467DB9AC4A6CA2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A0800EB62EEB514195F3189 /* Assets.xcassets */,
+				1174D6128CDE010A673100AB /* Info.plist */,
+				0C8F9BDC35F4041D9F7AD1A4 /* StirboardApp.swift */,
+				93158A3715ABF632AB94B1FA /* PrivacyInfo.xcprivacy */,
+				A05C606E952E16AF539D93BA /* AI */,
+				B04C1B855B464923ED25617D /* Resources */,
+				60A50314A62E0CE269584A8C /* Services */,
+				C2AA9856B6E85E02D4C6625B /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5006E6FD3968D8281F6CEACC /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4EDF28953AE3E435D7ADB7BC /* AppRuntimeCore */,
+				7867B6507FE06755DD2347DC /* product */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5A7F01F3C1C5D4B67B757544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10400AA61ECAFAE751D7A9B /* Stirboard.app */,
+				8216FC92DA4AC5A31A88A9CF /* StirboardDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60A50314A62E0CE269584A8C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A49BF1FD908B87A7E0E9755 /* AppModel.swift */,
+				0A7A9BE4A7F2B18EBA8A5A49 /* TTSPlayer.swift */,
+				0C27A95A3B3AF88F79E0AA03 /* VoiceNoteRecorder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83AC7BBBA4773455B636610C /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				6E3B57B3E50D3C1BD5CE4031 /* privacy.html */,
+				6684D5F78EE23D82A61C9DE7 /* provider-policy.html */,
+				147985899516F28F7469B552 /* support.html */,
+				531A3DF90DC5F310B20E3734 /* terms.html */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		A05C606E952E16AF539D93BA /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				54D9B19EFB1162EA9C9AF7B0 /* ConsentSheet.swift */,
+				D48BE93CB6284EEC35118482 /* DeepSeekClient.swift */,
+				D5B65C372AE7480F7C6A497F /* LocalLegalWebView.swift */,
+				A1AA7711014115A83EE9C350 /* SettingsPrivacyView.swift */,
+				764C1A64708C3E400065DEF3 /* SpeechRecognitionService.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		B04C1B855B464923ED25617D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83AC7BBBA4773455B636610C /* Legal */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2AA9856B6E85E02D4C6625B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				852D61193475858FE7DDA1ED /* BarHomeView.swift */,
+				B29F06E1D73D7862AD2E4FE6 /* CameraPicker.swift */,
+				811354A3C618ACCEF7C022C0 /* IDResultView.swift */,
+				27CAE912CA7EDCED25CFAFAD /* StirboardTheme.swift */,
+				FBA9731712DA96F2B5F5C5F1 /* PourBoardView.swift */,
+				84B1FA91B7E73B6148649ED8 /* RecipeChatView.swift */,
+				064549788089E4C2E7A05802 /* RootNavigationView.swift */,
+				09BF732E79E82ED67DFA7364 /* VoiceNoteView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D7278A81791790BDF74559B1 = {
+			isa = PBXGroup;
+			children = (
+				0997423CAB467DB9AC4A6CA2 /* App */,
+				5006E6FD3968D8281F6CEACC /* Packages */,
+				F6D5CB05198788348CD225CF /* Tests */,
+				5A7F01F3C1C5D4B67B757544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D5CB05198788348CD225CF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F9B358DD9A1ADB46DD95F9 /* StirboardDomainTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF48CEDFC316A2D411ADAD5F /* Stirboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37976DBDC23D9CEDAC10D4DC /* Build configuration list for PBXNativeTarget "Stirboard" */;
+			buildPhases = (
+				2D3346437B07FE9124EE4124 /* Sources */,
+				3A9937A5FD68915C246317BD /* Resources */,
+				33357DB455E3165DDAA73722 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stirboard;
+			packageProductDependencies = (
+				4F9F032F0E258753EB0FAF6E /* AppRuntimeCore */,
+				C77FD70F4C9B501F3FE734DC /* StirboardDomain */,
+			);
+			productName = Stirboard;
+			productReference = B10400AA61ECAFAE751D7A9B /* Stirboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3DE97FC4E76D04FD4C1E74D /* StirboardDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC45A84E3714E917BC83CA28 /* Build configuration list for PBXNativeTarget "StirboardDomainTests" */;
+			buildPhases = (
+				BD8B24CB70C5B7068E4CD274 /* Sources */,
+				9291E5A9B9F93B1FC359AE81 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FF626F11EA815B63C45AABA /* PBXTargetDependency */,
+			);
+			name = StirboardDomainTests;
+			packageProductDependencies = (
+				CA828EFDC0CA7AA0084106CF /* StirboardDomain */,
+				32B425B03881435B24CB7394 /* AppRuntimeCore */,
+			);
+			productName = StirboardDomainTests;
+			productReference = 8216FC92DA4AC5A31A88A9CF /* StirboardDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CEAF393A21C45DF7F67C80D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 9EAE246FCBF505BE63655364 /* Build configuration list for PBXProject "Stirboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D7278A81791790BDF74559B1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC102A159755CF99C42CBA14 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */,
+				1EF47A01AA08078492FA7E5E /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A7F01F3C1C5D4B67B757544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF48CEDFC316A2D411ADAD5F /* Stirboard */,
+				F3DE97FC4E76D04FD4C1E74D /* StirboardDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A9937A5FD68915C246317BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E223AC9A376F92509992C032 /* Assets.xcassets in Resources */,
+				168B46AFC30DA36692977EEC /* PrivacyInfo.xcprivacy in Resources */,
+				5BCDECC3AE09D3D7AEA58793 /* privacy.html in Resources */,
+				08EB72635EF390B00B5A2FB2 /* provider-policy.html in Resources */,
+				B9DB44012DDBB4B6FC49DE3C /* support.html in Resources */,
+				C35096FE5A9FF31601A6A0F7 /* terms.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D3346437B07FE9124EE4124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1049DFED926785289EA34CF0 /* AppModel.swift in Sources */,
+				2698EC05A9F72D7201A3DB19 /* BarHomeView.swift in Sources */,
+				A60566390612B54E5BEA6A00 /* CameraPicker.swift in Sources */,
+				83C5AC9DFFFF7145E392A097 /* ConsentSheet.swift in Sources */,
+				189933B6BEB184725A966B9B /* DeepSeekClient.swift in Sources */,
+				134CB5D5A2F04CEA032F924B /* IDResultView.swift in Sources */,
+				1661FB5FA0E1A49575DD9F27 /* LocalLegalWebView.swift in Sources */,
+				EBF1EDC88C87103FBEF3BFE9 /* StirboardApp.swift in Sources */,
+				765221DBB7246D4243E07170 /* StirboardTheme.swift in Sources */,
+				629352ABA06E1D2F14A6EC84 /* PourBoardView.swift in Sources */,
+				B8414DE0F6E150CE920C3A54 /* RecipeChatView.swift in Sources */,
+				3DB8BFFE8292514E074D3AFF /* RootNavigationView.swift in Sources */,
+				7B3780ABA7160AAC759B8CD4 /* SettingsPrivacyView.swift in Sources */,
+				DE2A74B844136F674D3EC3EA /* SpeechRecognitionService.swift in Sources */,
+				E4B0322FAE3B027C4BF39ECB /* TTSPlayer.swift in Sources */,
+				39566F34B5D85A10158F2916 /* VoiceNoteRecorder.swift in Sources */,
+				95D63605575F357FEA329401 /* VoiceNoteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8B24CB70C5B7068E4CD274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395BF92ED900BE7CA7E8DD20 /* StirboardDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FF626F11EA815B63C45AABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF48CEDFC316A2D411ADAD5F /* Stirboard */;
+			targetProxy = 85BA8E0D4D26188A6D4730EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		259ED9D76E31F3B5B954B588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Stirboard;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture bottle faces, labels, and garnish stills so Stirboard can identify base spirits for your mix session";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free voice notes while both hands shake or stir";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import bar-shelf album stills to complete spirit identification in Stirboard";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken substitute and recipe questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Stirboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		480F6FE1C0484483018055D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5296B0879F021619AC457F4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Stirboard;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture bottle faces, labels, and garnish stills so Stirboard can identify base spirits for your mix session";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free voice notes while both hands shake or stir";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import bar-shelf album stills to complete spirit identification in Stirboard";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken substitute and recipe questions into coach chat text";
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Stirboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E2523F51C5CB01D9D3AA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.stirboard.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stirboard.app/Stirboard";
+			};
+			name = Release;
+		};
+		953554A93B814CD1E297480F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.stirboard.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stirboard.app/Stirboard";
+			};
+			name = Debug;
+		};
+		C0102EEADBDD18DC5534FE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37976DBDC23D9CEDAC10D4DC /* Build configuration list for PBXNativeTarget "Stirboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5296B0879F021619AC457F4C /* Debug */,
+				259ED9D76E31F3B5B954B588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EAE246FCBF505BE63655364 /* Build configuration list for PBXProject "Stirboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480F6FE1C0484483018055D7 /* Debug */,
+				C0102EEADBDD18DC5534FE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC45A84E3714E917BC83CA28 /* Build configuration list for PBXNativeTarget "StirboardDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953554A93B814CD1E297480F /* Debug */,
+				6E2523F51C5CB01D9D3AA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1EF47A01AA08078492FA7E5E /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		AC102A159755CF99C42CBA14 /* XCLocalSwiftPackageReference "Vendor/AppRuntimeCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/AppRuntimeCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32B425B03881435B24CB7394 /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		4F9F032F0E258753EB0FAF6E /* AppRuntimeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRuntimeCore;
+		};
+		C77FD70F4C9B501F3FE734DC /* StirboardDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StirboardDomain;
+		};
+		CA828EFDC0CA7AA0084106CF /* StirboardDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StirboardDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8CEAF393A21C45DF7F67C80D /* Project object */;
+}

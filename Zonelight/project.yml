@@ -1,0 +1,83 @@
+name: Zonelight
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  ZonelightDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Zonelight:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+      - path: App/PrivacyInfo.xcprivacy
+    dependencies:
+      - package: AppRuntimeCore
+      - package: ZonelightDomain
+        product: ZonelightDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Zonelight
+        INFOPLIST_KEY_CFBundleDisplayName: Zonelight
+        INFOPLIST_KEY_NSCameraUsageDescription: Capture spot-meter and gray-card readings so Zonelight can suggest exposure coaching
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Import stills to complete spot-meter sessions in Zonelight
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Record hands-free meter notes while holding the camera
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turn spoken zone and exposure questions into coach chat text
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+  ZonelightDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: ZonelightDomain
+        product: ZonelightDomain
+      - package: AppRuntimeCore
+      - target: Zonelight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.zonelight.tests
+  ZonelightUISmokeTests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: Zonelight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.zonelight.uitests
+        TEST_TARGET_NAME: Zonelight
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Zonelight:
+    build:
+      targets:
+        Zonelight: all
+        ZonelightDomainTests: [test]
+        ZonelightUISmokeTests: [test]
+    test:
+      targets:
+        - ZonelightDomainTests
+        - ZonelightUISmokeTests
+    run:
+      config: Debug

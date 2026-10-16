@@ -1,0 +1,68 @@
+name: Hemline
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+packages:
+  AppRuntimeCore:
+    path: Vendor/AppRuntimeCore
+  HemlineDomain:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGNING_ALLOWED: YES
+    CODE_SIGN_IDENTITY: "-"
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  Hemline:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+    resources:
+      - path: App/Resources
+      - path: App/Assets.xcassets
+      - path: App/Info.plist
+    dependencies:
+      - package: AppRuntimeCore
+      - package: HemlineDomain
+        product: HemlineDomain
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xycoins.2027.test
+        PRODUCT_NAME: Hemline
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Hemline
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Hemline imports garment photos you choose so you can review tags before saving pieces to your closet catalog.
+        INFOPLIST_KEY_NSCameraUsageDescription: Hemline can snap garment photos into your closet catalog for optional recognition review.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Hemline uses the microphone so you can speak outfit questions that fill stylist chat before you send.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Hemline uses on-device speech recognition to turn spoken outfit questions into editable stylist chat text you review before sending.
+        INFOPLIST_KEY_UILaunchScreen_Generation: NO
+        TARGETED_DEVICE_FAMILY: "1"
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.0"
+  HemlineDomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - package: HemlineDomain
+        product: HemlineDomain
+      - package: AppRuntimeCore
+      - target: Hemline
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lingguang.hemline.tests
+schemes:
+  Hemline:
+    build:
+      targets:
+        Hemline: all
+        HemlineDomainTests: [test]
+    test:
+      targets:
+        - HemlineDomainTests
+    run:
+      config: Debug
