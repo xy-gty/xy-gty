@@ -1,5 +1,0 @@
-AppFactory pm_visuals / UltraLite full-screen frame image job for ScoutCue (AI photo-scout / timing planner). Unique UI: soft scenery card stack + sky-arc ephemeris timeline. Palette primary #4338CA indigo, secondary #EEF2FF soft indigo wash, accent #FB7185 rose. Multi-color, nice-looking. Ban all-black shell. Ban DimCue measure-overlay twin. Ban KnotCue rope-path carousel twin. Do not draw AppIcon or splash.
-
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-
-Page: NextStopBriefing. Card titled Next stop: west ridge. Briefing text Walk 4 min; face west; shoot during golden window. Large Play / Pause / Next controls with speaker glyph. Progress pill 1 of 3. Soft indigo wash background, rose accent on Play. Sky-arc chip showing Golden. No carousel rope UI.

@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import ScoutCueDomain
+import SunbriefDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -18,7 +18,7 @@ final class AppModel: ObservableObject {
     @Published var briefings: [BriefingClip] = []
 
     @Published var activeCardId: String?
-    @Published var path: [ScoutCueRoute] = []
+    @Published var path: [SunbriefRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -39,7 +39,7 @@ final class AppModel: ObservableObject {
     @Published var pendingShotId: String?
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<ScoutCueRoute>
+    let navigation: TypedNavigationStore<SunbriefRoute>
     let tts = BriefingPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -54,7 +54,7 @@ final class AppModel: ObservableObject {
     private let briefingsStore: AtomicCodableStore<[BriefingClip]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = ScoutCueStores.apiKeyStore()
+    private let keychain = SunbriefStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
     private var pendingOverlayPoint: CGPoint?
@@ -108,27 +108,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("ScoutCue", isDirectory: true)
+            .appendingPathComponent("Sunbrief", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        shotsStore = ScoutCueStores.scoutShotStore(directory: root)
-        cardsStore = ScoutCueStores.sceneCardStore(directory: root)
-        plansStore = ScoutCueStores.scoutPlanStore(directory: root)
-        windowsStore = ScoutCueStores.timingWindowStore(directory: root)
-        overlaysStore = ScoutCueStores.overlayMarkStore(directory: root)
-        messagesStore = ScoutCueStores.coachMessageStore(directory: root)
-        turnsStore = ScoutCueStores.coachTurnStore(directory: root)
-        notesStore = ScoutCueStores.shootNoteStore(directory: root)
-        briefingsStore = ScoutCueStores.briefingClipStore(directory: root)
+        shotsStore = SunbriefStores.scoutShotStore(directory: root)
+        cardsStore = SunbriefStores.sceneCardStore(directory: root)
+        plansStore = SunbriefStores.scoutPlanStore(directory: root)
+        windowsStore = SunbriefStores.timingWindowStore(directory: root)
+        overlaysStore = SunbriefStores.overlayMarkStore(directory: root)
+        messagesStore = SunbriefStores.coachMessageStore(directory: root)
+        turnsStore = SunbriefStores.coachTurnStore(directory: root)
+        notesStore = SunbriefStores.shootNoteStore(directory: root)
+        briefingsStore = SunbriefStores.briefingClipStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = ScoutCueStores.storeURL(directory: root, name: ScoutCueStores.aiConsentLocal)
+        let consentURL = SunbriefStores.storeURL(directory: root, name: SunbriefStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -143,7 +143,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await ScoutCueStores.consentKeychainStore().save(mirrorData)
+                    try? await SunbriefStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -205,7 +205,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: ScoutCueRoute) {
+    func push(_ route: SunbriefRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -578,7 +578,7 @@ final class AppModel: ObservableObject {
             xNorm: Double(point.x),
             yNorm: Double(point.y),
             text: overlayDraftText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                ? "Soft golden cue" : overlayDraftText
+                ? "Soft golden light" : overlayDraftText
         )
         overlays.append(mark)
         try? overlaysStore.save(overlays)

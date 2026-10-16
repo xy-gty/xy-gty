@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct SceneReviewView: View {
@@ -48,22 +48,22 @@ struct SceneReviewView: View {
                         appModel.discardSceneDraft()
                     }
                     .buttonStyle(.bordered)
-                    .tint(ScoutCueTheme.muted)
+                    .tint(SunbriefTheme.muted)
 
                     Button(SceneReviewBar.confirm) {
                         appModel.keepSceneDraft()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(ScoutCueTheme.indigo)
+                    .tint(SunbriefTheme.indigo)
                 }
 
                 Text("Local heuristic labels always available; AI refinement needs key + consent.")
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Scene review")
         .navigationBarTitleDisplayMode(.inline)
     }

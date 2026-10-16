@@ -1,1 +1,0 @@
-Does this still show a Capture/Import chooser with Take photo and Choose from library actions on a light soft UI (not a measure overlay or rope carousel)?

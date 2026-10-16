@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct ScoutsHomeView: View {
@@ -9,19 +9,19 @@ struct ScoutsHomeView: View {
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("ScoutCue")
+                        Text("Sunbrief")
                             .font(.largeTitle.bold())
-                            .foregroundStyle(ScoutCueTheme.indigo)
+                            .foregroundStyle(SunbriefTheme.indigo)
                         Text("AI photo scout · timing planner")
                             .font(.subheadline)
-                            .foregroundStyle(ScoutCueTheme.muted)
+                            .foregroundStyle(SunbriefTheme.muted)
                     }
                     Spacer()
                     Button {
                         appModel.push(.settings)
                     } label: {
                         Image(systemName: "gearshape.fill")
-                            .foregroundStyle(ScoutCueTheme.indigo)
+                            .foregroundStyle(SunbriefTheme.indigo)
                             .padding(10)
                             .background(Circle().fill(Color.white))
                     }
@@ -52,7 +52,7 @@ struct ScoutsHomeView: View {
                         .padding(.vertical, 16)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(ScoutCueTheme.indigo)
+                .tint(SunbriefTheme.indigo)
 
                 if appModel.activeCard != nil {
                     HStack(spacing: 10) {
@@ -66,16 +66,16 @@ struct ScoutsHomeView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(ScoutCueTheme.muted)
+                        .foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationBarHidden(true)
     }
 
-    private func navChip(_ title: String, icon: String, route: ScoutCueRoute) -> some View {
+    private func navChip(_ title: String, icon: String, route: SunbriefRoute) -> some View {
         Button {
             appModel.push(route)
         } label: {
@@ -83,13 +83,13 @@ struct ScoutsHomeView: View {
                 Image(systemName: icon)
                 Text(title).font(.caption2.weight(.semibold))
             }
-            .foregroundStyle(ScoutCueTheme.indigo)
+            .foregroundStyle(SunbriefTheme.indigo)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 12)
             .background(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                     .fill(Color.white)
-                    .shadow(color: ScoutCueTheme.indigo.opacity(0.1), radius: 6, y: 2)
+                    .shadow(color: SunbriefTheme.indigo.opacity(0.1), radius: 6, y: 2)
             )
         }
         .buttonStyle(.plain)

@@ -1,8 +1,8 @@
 {
   "schema": "appfactory.ios_package_manifest.v1",
-  "app_name": "ScoutCue",
-  "bundle_id": "com.lingguang.scoutcue",
+  "app_name": "Sunbrief",
+  "bundle_id": "com.lingguang.sunbrief",
   "platform": "ios",
   "min_os": "17.0",
-  "product_dir": "scoutcue"
+  "product_dir": "sunbrief"
 }

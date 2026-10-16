@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct SkyArcTimelineView: View {
@@ -10,7 +10,7 @@ struct SkyArcTimelineView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Sky-arc timing")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(ScoutCueTheme.muted)
+                .foregroundStyle(SunbriefTheme.muted)
 
             GeometryReader { geo in
                 let w = geo.size.width
@@ -26,7 +26,7 @@ struct SkyArcTimelineView: View {
                     }
                     .stroke(
                         LinearGradient(
-                            colors: [ScoutCueTheme.sky, ScoutCueTheme.gold, ScoutCueTheme.rose],
+                            colors: [SunbriefTheme.sky, SunbriefTheme.gold, SunbriefTheme.rose],
                             startPoint: .leading,
                             endPoint: .trailing
                         ),
@@ -42,12 +42,12 @@ struct SkyArcTimelineView: View {
                         } label: {
                             VStack(spacing: 2) {
                                 Circle()
-                                    .fill(window.id == selectedId ? ScoutCueTheme.rose : ScoutCueTheme.indigo)
+                                    .fill(window.id == selectedId ? SunbriefTheme.rose : SunbriefTheme.indigo)
                                     .frame(width: window.id == selectedId ? 14 : 10, height: window.id == selectedId ? 14 : 10)
-                                    .shadow(color: ScoutCueTheme.indigo.opacity(0.25), radius: 3, y: 1)
+                                    .shadow(color: SunbriefTheme.indigo.opacity(0.25), radius: 3, y: 1)
                                 Text(shortLabel(window))
                                     .font(.caption2.weight(.medium))
-                                    .foregroundStyle(ScoutCueTheme.ink)
+                                    .foregroundStyle(SunbriefTheme.ink)
                                     .lineLimit(1)
                             }
                         }
@@ -61,7 +61,7 @@ struct SkyArcTimelineView: View {
             .padding(.horizontal, 4)
             .background(
                 RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(ScoutCueTheme.mist.opacity(0.9))
+                    .fill(SunbriefTheme.mist.opacity(0.9))
             )
         }
     }

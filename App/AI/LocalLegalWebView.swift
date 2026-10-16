@@ -31,13 +31,13 @@ struct LocalLegalWebView: View {
                 LegalWKView(url: url)
             } else {
                 Text("Missing local page \(page.fileName)")
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
                     .padding()
             }
         }
         .navigationTitle(page.title)
         .navigationBarTitleDisplayMode(.inline)
-        .scoutCueScreen()
+        .sunbriefScreen()
     }
 }
 

@@ -1,5 +1,5 @@
 import PhotosUI
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct CaptureImportView: View {
@@ -10,14 +10,14 @@ struct CaptureImportView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Shoot on-site or import a prior scouting landscape.")
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                 Text(PrivacyUsageCopy.camera)
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
                 Text(PrivacyUsageCopy.photoLibrary)
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                 Button {
                     showCamera = true
@@ -27,7 +27,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 16)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(ScoutCueTheme.indigo)
+                .tint(SunbriefTheme.indigo)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Choose from library", systemImage: "photo.on.rectangle")
@@ -35,7 +35,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 16)
                 }
                 .buttonStyle(.bordered)
-                .tint(ScoutCueTheme.indigo)
+                .tint(SunbriefTheme.indigo)
                 .disabled(appModel.importBusy)
 
                 if appModel.importBusy {
@@ -43,12 +43,12 @@ struct CaptureImportView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(ScoutCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Capture / Import")
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: appModel.selectedPhotoItem) { _, _ in

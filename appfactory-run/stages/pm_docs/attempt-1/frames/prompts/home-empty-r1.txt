@@ -1,5 +1,0 @@
-AppFactory pm_visuals / UltraLite full-screen frame image job for ScoutCue (AI photo-scout / timing planner). Unique UI: soft scenery card stack + sky-arc ephemeris timeline. Palette primary #4338CA indigo, secondary #EEF2FF soft indigo wash, accent #FB7185 rose. Multi-color, nice-looking. Ban all-black shell. Ban DimCue measure-overlay twin. Ban KnotCue rope-path carousel twin. Do not draw AppIcon or splash.
-
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-
-Page: ScoutsHome empty state. Top brand word ScoutCue in indigo. Below it a soft sky-arc timeline with labeled nodes Sunrise, Golden, Blue, Moon on a pale wash. Mid-screen an empty soft stacked card silhouette with dashed edge and helper text Capture or import your first scout. Large primary button Capture / Import in indigo; secondary ghost Open coach disabled look. Bottom tab row soft icons. Bright airy photography-app atmosphere with cool indigo wash and rose accent chips—no black chrome, no rulers, no rope carousel.

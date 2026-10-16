@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct DictateNoteView: View {
@@ -8,13 +8,13 @@ struct DictateNoteView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Dictate shoot notes into the scout plan.")
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
                 Text(PrivacyUsageCopy.microphone)
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
                 Text(PrivacyUsageCopy.speechRecognition)
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                 Button {
                     Task { await appModel.startDictation() }
@@ -28,7 +28,7 @@ struct DictateNoteView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(ScoutCueTheme.rose)
+                .tint(SunbriefTheme.rose)
                 .disabled(appModel.speechBusy)
 
                 TextField("Transcript / typed note", text: $appModel.speechTranscript, axis: .vertical)
@@ -40,7 +40,7 @@ struct DictateNoteView: View {
                         .buttonStyle(.bordered)
                     Button("Save note") { appModel.saveShootNote() }
                         .buttonStyle(.borderedProminent)
-                        .tint(ScoutCueTheme.indigo)
+                        .tint(SunbriefTheme.indigo)
                 }
 
                 ForEach(appModel.planNotes, id: \.id) { note in
@@ -53,12 +53,12 @@ struct DictateNoteView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(ScoutCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Dictate")
         .navigationBarTitleDisplayMode(.inline)
     }

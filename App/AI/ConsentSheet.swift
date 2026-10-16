@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct ConsentSheet: View {
@@ -10,48 +10,48 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(ScoutCueTheme.ink)
+                        .foregroundStyle(SunbriefTheme.ink)
 
                     Text(
-                        "ScoutCue sends the fields below to \(AIConsentContract.provider) for sun/moon timing coaching. "
+                        "Sunbrief sends the fields below to \(AIConsentContract.provider) for sun/moon timing coaching. "
                             + "Advice is a scouting aid, not an observatory or light meter. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(ScoutCueTheme.ink)
+                            .foregroundStyle(SunbriefTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.circle")
                                 .font(.subheadline)
-                                .foregroundStyle(ScoutCueTheme.indigo)
+                                .foregroundStyle(SunbriefTheme.indigo)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(ScoutCueTheme.muted)
+                        .foregroundStyle(SunbriefTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
                             appModel.dismissConsent()
                         }
                         .buttonStyle(.bordered)
-                        .tint(ScoutCueTheme.muted)
+                        .tint(SunbriefTheme.muted)
 
                         Button("Allow") {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(ScoutCueTheme.indigo)
+                        .tint(SunbriefTheme.indigo)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .scoutCueScreen()
+            .sunbriefScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

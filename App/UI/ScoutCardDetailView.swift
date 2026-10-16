@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct ScoutCardDetailView: View {
@@ -29,11 +29,11 @@ struct ScoutCardDetailView: View {
                     if let plan = appModel.activePlan {
                         Text(plan.title)
                             .font(.headline)
-                            .foregroundStyle(ScoutCueTheme.ink)
+                            .foregroundStyle(SunbriefTheme.ink)
                         if !plan.notes.isEmpty {
                             Text(plan.notes)
                                 .font(.footnote)
-                                .foregroundStyle(ScoutCueTheme.muted)
+                                .foregroundStyle(SunbriefTheme.muted)
                         }
                     }
 
@@ -45,21 +45,21 @@ struct ScoutCardDetailView: View {
                     }
                 } else {
                     Text("No scout card yet — capture scenery first.")
-                        .foregroundStyle(ScoutCueTheme.muted)
+                        .foregroundStyle(SunbriefTheme.muted)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(ScoutCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Scout card")
         .navigationBarTitleDisplayMode(.inline)
     }
 
-    private func detailButton(_ title: String, icon: String, route: ScoutCueRoute) -> some View {
+    private func detailButton(_ title: String, icon: String, route: SunbriefRoute) -> some View {
         Button {
             appModel.push(route)
         } label: {
@@ -69,6 +69,6 @@ struct ScoutCardDetailView: View {
                 .padding(.vertical, 14)
         }
         .buttonStyle(.borderedProminent)
-        .tint(route == .coachChat ? ScoutCueTheme.indigo : ScoutCueTheme.rose.opacity(0.85))
+        .tint(route == .coachChat ? SunbriefTheme.indigo : SunbriefTheme.rose.opacity(0.85))
     }
 }

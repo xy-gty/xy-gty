@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct SettingsPrivacyView: View {
@@ -11,7 +11,7 @@ struct SettingsPrivacyView: View {
                     Text("Consent status")
                     Spacer()
                     Text(appModel.consentGranted ? "Allowed" : "Off")
-                        .foregroundStyle(appModel.consentGranted ? ScoutCueTheme.indigo : ScoutCueTheme.muted)
+                        .foregroundStyle(appModel.consentGranted ? SunbriefTheme.indigo : SunbriefTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -20,7 +20,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(ScoutCueTheme.muted)
+                        .foregroundStyle(SunbriefTheme.muted)
                 }
             }
 
@@ -40,7 +40,7 @@ struct SettingsPrivacyView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .background(ScoutCueTheme.wash)
+        .background(SunbriefTheme.wash)
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }

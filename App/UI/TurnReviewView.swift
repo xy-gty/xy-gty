@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct TurnReviewView: View {
@@ -9,36 +9,36 @@ struct TurnReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Review coach draft")
                     .font(.title3.bold())
-                    .foregroundStyle(ScoutCueTheme.ink)
+                    .foregroundStyle(SunbriefTheme.ink)
 
                 Text(appModel.pendingTurn?.text ?? "No draft")
                     .padding(16)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                    .shadow(color: ScoutCueTheme.indigo.opacity(0.1), radius: 8, y: 3)
+                    .shadow(color: SunbriefTheme.indigo.opacity(0.1), radius: 8, y: 3)
 
                 HStack(spacing: 12) {
                     Button(TurnReview.reject) {
                         appModel.discardPendingTurn()
                     }
                     .buttonStyle(.bordered)
-                    .tint(ScoutCueTheme.muted)
+                    .tint(SunbriefTheme.muted)
 
                     Button(TurnReview.confirm) {
                         appModel.keepPendingTurn()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(ScoutCueTheme.indigo)
+                    .tint(SunbriefTheme.indigo)
                 }
 
                 Text("Discard writes nothing. Keep stores CoachTurn for the next call.")
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Turn review")
         .navigationBarTitleDisplayMode(.inline)
     }

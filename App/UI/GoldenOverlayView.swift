@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct GoldenOverlayView: View {
@@ -8,7 +8,7 @@ struct GoldenOverlayView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Tap the scenery to place soft golden-hour pins — not measuring rods.")
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                 ZStack {
                     if let shot = appModel.activeShot, let image = appModel.loadShotImage(shot) {
@@ -19,7 +19,7 @@ struct GoldenOverlayView: View {
                             .overlay {
                                 GeometryReader { geo in
                                     ForEach(appModel.cardOverlays, id: \.id) { mark in
-                                        pin(mark.text, color: ScoutCueTheme.rose)
+                                        pin(mark.text, color: SunbriefTheme.rose)
                                             .position(
                                                 x: CGFloat(mark.xNorm) * geo.size.width,
                                                 y: CGFloat(mark.yNorm) * geo.size.height
@@ -40,9 +40,9 @@ struct GoldenOverlayView: View {
                             }
                     } else {
                         RoundedRectangle(cornerRadius: 16)
-                            .fill(ScoutCueTheme.mist)
+                            .fill(SunbriefTheme.mist)
                             .frame(height: 220)
-                            .overlay(Text("Keep a scout card with a photo first.").foregroundStyle(ScoutCueTheme.muted))
+                            .overlay(Text("Keep a scout card with a photo first.").foregroundStyle(SunbriefTheme.muted))
                     }
                 }
 
@@ -54,21 +54,21 @@ struct GoldenOverlayView: View {
                         .buttonStyle(.bordered)
                     Button("Save overlay") { appModel.saveOverlayMark() }
                         .buttonStyle(.borderedProminent)
-                        .tint(ScoutCueTheme.indigo)
+                        .tint(SunbriefTheme.indigo)
                 }
 
                 ForEach(appModel.cardOverlays, id: \.id) { mark in
                     Label(mark.text, systemImage: "mappin.and.ellipse")
-                        .foregroundStyle(ScoutCueTheme.indigo)
+                        .foregroundStyle(SunbriefTheme.indigo)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(ScoutCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Golden overlay")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -85,7 +85,7 @@ struct GoldenOverlayView: View {
                 .padding(.vertical, 2)
                 .background(Color.white.opacity(0.92))
                 .clipShape(Capsule())
-                .foregroundStyle(ScoutCueTheme.ink)
+                .foregroundStyle(SunbriefTheme.ink)
         }
     }
 }

@@ -1,1 +1,0 @@
-Does this still show a next-stop briefing screen with Play/Pause/Next TTS controls and readable briefing text?

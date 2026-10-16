@@ -1,5 +1,5 @@
 import Foundation
-import ScoutCueDomain
+import SunbriefDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -68,7 +68,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are ScoutCue's AI photo-scout coach. Reply with JSON only:
+        You are Sunbrief's AI photo-scout coach. Reply with JSON only:
         {"reply":"concise sun/moon/golden-hour advice for this scenery"}
         Reuse prior_feedback and plan_windows. Not a professional observatory or light meter.
         """

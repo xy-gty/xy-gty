@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct SoftCardStackView: View {
@@ -28,21 +28,21 @@ struct SoftCardStackView: View {
     private var emptyStack: some View {
         VStack(spacing: 12) {
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .fill(ScoutCueTheme.mist)
+                .fill(SunbriefTheme.mist)
                 .frame(height: 160)
                 .overlay(
                     VStack(spacing: 8) {
                         Image(systemName: "rectangle.stack")
                             .font(.largeTitle)
-                            .foregroundStyle(ScoutCueTheme.indigo.opacity(0.7))
+                            .foregroundStyle(SunbriefTheme.indigo.opacity(0.7))
                         Text("Capture or import your first scout")
                             .font(.subheadline.weight(.medium))
-                            .foregroundStyle(ScoutCueTheme.muted)
+                            .foregroundStyle(SunbriefTheme.muted)
                             .multilineTextAlignment(.center)
                     }
                     .padding()
                 )
-                .shadow(color: ScoutCueTheme.indigo.opacity(0.12), radius: 12, y: 6)
+                .shadow(color: SunbriefTheme.indigo.opacity(0.12), radius: 12, y: 6)
         }
         .padding(.horizontal, 8)
     }
@@ -56,7 +56,7 @@ struct SoftSceneCard: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(card.placeLabel)
                 .font(.title3.bold())
-                .foregroundStyle(ScoutCueTheme.ink)
+                .foregroundStyle(SunbriefTheme.ink)
             HStack {
                 Label(card.lightQuality, systemImage: "sun.max.fill")
                 Spacer()
@@ -64,13 +64,13 @@ struct SoftSceneCard: View {
                     .font(.caption)
             }
             .font(.subheadline)
-            .foregroundStyle(ScoutCueTheme.muted)
+            .foregroundStyle(SunbriefTheme.muted)
             Text(card.status.capitalized)
                 .font(.caption.weight(.semibold))
                 .padding(.horizontal, 10)
                 .padding(.vertical, 4)
-                .background(ScoutCueTheme.rose.opacity(0.2))
-                .foregroundStyle(ScoutCueTheme.rose)
+                .background(SunbriefTheme.rose.opacity(0.2))
+                .foregroundStyle(SunbriefTheme.rose)
                 .clipShape(Capsule())
         }
         .padding(18)
@@ -78,11 +78,11 @@ struct SoftSceneCard: View {
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(Color.white)
-                .shadow(color: ScoutCueTheme.indigo.opacity(highlighted ? 0.22 : 0.12), radius: highlighted ? 16 : 10, y: 6)
+                .shadow(color: SunbriefTheme.indigo.opacity(highlighted ? 0.22 : 0.12), radius: highlighted ? 16 : 10, y: 6)
         )
         .overlay(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .stroke(highlighted ? ScoutCueTheme.indigo : ScoutCueTheme.indigo.opacity(0.12), lineWidth: highlighted ? 2 : 1)
+                .stroke(highlighted ? SunbriefTheme.indigo : SunbriefTheme.indigo.opacity(0.12), lineWidth: highlighted ? 2 : 1)
         )
         .padding(.horizontal, 12)
     }

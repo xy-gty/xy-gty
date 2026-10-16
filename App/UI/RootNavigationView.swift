@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             ScoutsHomeView()
-                .navigationDestination(for: ScoutCueRoute.self) { route in
+                .navigationDestination(for: SunbriefRoute.self) { route in
                     switch route {
                     case .scoutsHome:
                         ScoutsHomeView()

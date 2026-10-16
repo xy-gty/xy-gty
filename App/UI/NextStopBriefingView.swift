@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct NextStopBriefingView: View {
@@ -9,31 +9,31 @@ struct NextStopBriefingView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("TTS next-stop shoot briefing")
                     .font(.title3.bold())
-                    .foregroundStyle(ScoutCueTheme.ink)
+                    .foregroundStyle(SunbriefTheme.ink)
 
                 let clips = appModel.planBriefings
                 if clips.isEmpty {
                     Text("Keep a scout card first to generate briefing clips.")
-                        .foregroundStyle(ScoutCueTheme.muted)
+                        .foregroundStyle(SunbriefTheme.muted)
                 } else {
                     let idx = min(appModel.briefingIndex, clips.count - 1)
                     let clip = clips[idx]
                     VStack(alignment: .leading, spacing: 10) {
                         Label(clip.stopLabel, systemImage: "flag.fill")
                             .font(.headline)
-                            .foregroundStyle(ScoutCueTheme.indigo)
+                            .foregroundStyle(SunbriefTheme.indigo)
                         Text(clip.spokenText)
-                            .foregroundStyle(ScoutCueTheme.ink)
+                            .foregroundStyle(SunbriefTheme.ink)
                         if appModel.tts.isSpeaking {
                             Label("Speaking…", systemImage: "waveform")
-                                .foregroundStyle(ScoutCueTheme.rose)
+                                .foregroundStyle(SunbriefTheme.rose)
                         }
                     }
                     .padding(16)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                    .shadow(color: ScoutCueTheme.indigo.opacity(0.1), radius: 8, y: 3)
+                    .shadow(color: SunbriefTheme.indigo.opacity(0.1), radius: 8, y: 3)
                 }
 
                 HStack(spacing: 12) {
@@ -41,7 +41,7 @@ struct NextStopBriefingView: View {
                         Label("Play", systemImage: "play.fill")
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(ScoutCueTheme.indigo)
+                    .tint(SunbriefTheme.indigo)
 
                     Button { appModel.pauseBriefing() } label: {
                         Label("Pause", systemImage: "pause.fill")
@@ -52,16 +52,16 @@ struct NextStopBriefingView: View {
                         Label("Next", systemImage: "forward.fill")
                     }
                     .buttonStyle(.bordered)
-                    .tint(ScoutCueTheme.rose)
+                    .tint(SunbriefTheme.rose)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(ScoutCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(SunbriefTheme.muted)
                 }
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Next stop")
         .navigationBarTitleDisplayMode(.inline)
     }

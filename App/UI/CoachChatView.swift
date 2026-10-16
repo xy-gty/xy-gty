@@ -1,4 +1,4 @@
-import ScoutCueDomain
+import SunbriefDomain
 import SwiftUI
 
 struct CoachChatView: View {
@@ -8,14 +8,14 @@ struct CoachChatView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 Text("Ask about sun, moon, or golden-hour timing for this scout.")
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
 
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(ScoutCueTheme.rose.opacity(0.15))
+                        .background(SunbriefTheme.rose.opacity(0.15))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
 
@@ -43,16 +43,16 @@ struct CoachChatView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(ScoutCueTheme.indigo)
+                .tint(SunbriefTheme.indigo)
                 .disabled(appModel.coachBusy)
 
                 Text("First live send shows consent. Keep / Discard on the reply draft.")
                     .font(.caption)
-                    .foregroundStyle(ScoutCueTheme.muted)
+                    .foregroundStyle(SunbriefTheme.muted)
             }
             .padding(20)
         }
-        .scoutCueScreen()
+        .sunbriefScreen()
         .navigationTitle("Coach")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -62,8 +62,8 @@ struct CoachChatView: View {
             if !coach { Spacer(minLength: 40) }
             Text(text)
                 .padding(12)
-                .foregroundStyle(coach ? ScoutCueTheme.ink : Color.white)
-                .background(coach ? Color.white : ScoutCueTheme.indigo)
+                .foregroundStyle(coach ? SunbriefTheme.ink : Color.white)
+                .background(coach ? Color.white : SunbriefTheme.indigo)
                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             if coach { Spacer(minLength: 40) }
         }
