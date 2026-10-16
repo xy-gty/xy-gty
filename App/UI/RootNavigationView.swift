@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 SessionsHomeView()
-                    .navigationDestination(for: FrameCueRoute.self) { route in
+                    .navigationDestination(for: MatteboxRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "rectangle.dashed",
                         description: Text("Create a framing session from the Sessions tab.")
                     )
-                    .frameCueScreen()
+                    .matteboxScreen()
                 }
             }
             .tabItem { Label("Stage", systemImage: "rectangle.inset.filled") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: FrameCueRoute) -> some View {
+    private func destination(for route: MatteboxRoute) -> some View {
         switch route {
         case .sessionsHome:
             SessionsHomeView()

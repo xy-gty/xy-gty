@@ -12,7 +12,7 @@ final class SpeechRecognitionService {
         var errorDescription: String? {
             switch self {
             case .unavailable: return "Speech recognition unavailable on this device."
-            case .denied: return "Speech / mic permission denied — type your shot-size cue instead."
+            case .denied: return "Speech / mic permission denied — type your shot-size note instead."
             case .noResult: return "No speech captured."
             }
         }

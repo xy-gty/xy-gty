@@ -1,5 +1,5 @@
 import Foundation
-import FrameCueDomain
+import MatteboxDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -72,7 +72,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are FrameCue's AI director framing coach. Reply with JSON only:
+        You are Mattebox's AI director framing coach. Reply with JSON only:
         {"reply":"concise on-set framing tip for shot size, aspect, lens language, or safe-frame"}
         Reuse composition notes, shot-size plan, overlays and prior_feedback. Hands may be on a camera — keep cues short. Not a board-game twin, not a film-sprocket twin, not a night-exposure twin.
         """

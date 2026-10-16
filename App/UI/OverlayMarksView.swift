@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct OverlayMarksView: View {
@@ -16,7 +16,7 @@ struct OverlayMarksView: View {
                                 .scaledToFit()
                         } else {
                             Text("Import a still to mark safe-frame / thirds")
-                                .foregroundStyle(FrameCueTheme.muted)
+                                .foregroundStyle(MatteboxTheme.muted)
                                 .padding()
                         }
                     }
@@ -24,14 +24,14 @@ struct OverlayMarksView: View {
                 }
 
                 Toggle("Safe frame", isOn: $appModel.safeFrameEnabled)
-                    .tint(FrameCueTheme.accent)
+                    .tint(MatteboxTheme.accent)
                 Toggle("Rule of thirds", isOn: $appModel.ruleOfThirdsEnabled)
-                    .tint(FrameCueTheme.primary)
+                    .tint(MatteboxTheme.primary)
 
                 TextField("Notes", text: $appModel.overlayDraftNotes, axis: .vertical)
                     .lineLimit(2...4)
                     .padding(10)
-                    .background(RoundedRectangle(cornerRadius: 10).fill(FrameCueTheme.card))
+                    .background(RoundedRectangle(cornerRadius: 10).fill(MatteboxTheme.card))
 
                 HStack {
                     Button(OverlayEditor.reject) { appModel.discardOverlayMarks() }
@@ -39,18 +39,18 @@ struct OverlayMarksView: View {
                     Spacer()
                     Button(OverlayEditor.confirm) { appModel.keepOverlayMarks() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FrameCueTheme.primary)
+                        .tint(MatteboxTheme.primary)
                 }
 
                 if !appModel.sessionOverlays.isEmpty {
                     Text("Confirmed overlays: \(appModel.sessionOverlays.count)")
                         .font(.footnote)
-                        .foregroundStyle(FrameCueTheme.muted)
+                        .foregroundStyle(MatteboxTheme.muted)
                 }
             }
             .padding(16)
         }
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Overlay marks")
     }
 }

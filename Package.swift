@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "FrameCue",
+    name: "Mattebox",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "FrameCueDomain", targets: ["FrameCueDomain"]),
+        .library(name: "MatteboxDomain", targets: ["MatteboxDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "FrameCueDomain",
+            name: "MatteboxDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/FrameCueDomain"
+            path: "Sources/MatteboxDomain"
         ),
     ]
 )

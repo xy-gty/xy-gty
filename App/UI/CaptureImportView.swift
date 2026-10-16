@@ -11,10 +11,10 @@ struct CaptureImportView: View {
                     VStack(spacing: 10) {
                         Image(systemName: "camera.viewfinder")
                             .font(.system(size: 40))
-                            .foregroundStyle(FrameCueTheme.primary)
+                            .foregroundStyle(MatteboxTheme.primary)
                         Text("Shoot a trial frame or import a scout still.")
                             .multilineTextAlignment(.center)
-                            .foregroundStyle(FrameCueTheme.ink)
+                            .foregroundStyle(MatteboxTheme.ink)
                             .padding(.horizontal)
                     }
                     .frame(maxWidth: .infinity, minHeight: 180)
@@ -27,14 +27,14 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FrameCueTheme.primary)
+                .tint(MatteboxTheme.primary)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Photo library", systemImage: "photo.on.rectangle")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
-                .tint(FrameCueTheme.accent)
+                .tint(MatteboxTheme.accent)
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     Task { await appModel.importPhotoFromLibrary() }
                 }
@@ -44,12 +44,12 @@ struct CaptureImportView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FrameCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(MatteboxTheme.muted)
                 }
             }
             .padding(20)
         }
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Capture / Import")
         .sheet(isPresented: $appModel.showCamera) {
             CameraPicker { image in

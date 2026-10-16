@@ -6,7 +6,7 @@ struct DictateShotView: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Speak a shot-size instruction (e.g. “switch to medium shot”).")
-                .foregroundStyle(FrameCueTheme.ink)
+                .foregroundStyle(MatteboxTheme.ink)
                 .multilineTextAlignment(.center)
 
             if appModel.speechBusy {
@@ -21,23 +21,23 @@ struct DictateShotView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FrameCueTheme.primary)
+                .tint(MatteboxTheme.primary)
             }
 
             if !appModel.speechTranscript.isEmpty {
                 Text("Transcript: \(appModel.speechTranscript)")
                     .font(.callout)
-                    .foregroundStyle(FrameCueTheme.muted)
+                    .foregroundStyle(MatteboxTheme.muted)
             }
 
             if let status = appModel.statusMessage {
-                Text(status).font(.footnote).foregroundStyle(FrameCueTheme.muted)
+                Text(status).font(.footnote).foregroundStyle(MatteboxTheme.muted)
             }
 
             Spacer()
         }
         .padding(20)
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Dictate shot")
     }
 }

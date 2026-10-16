@@ -12,13 +12,13 @@ struct NewSessionView: View {
                 Button("Create & capture") {
                     appModel.createSession()
                 }
-                .tint(FrameCueTheme.primary)
+                .tint(MatteboxTheme.primary)
             } footer: {
                 Text("Opens Capture / Import for an on-set still.")
             }
         }
         .scrollContentBackground(.hidden)
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("New session")
     }
 }

@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct SessionsHomeView: View {
@@ -7,24 +7,24 @@ struct SessionsHomeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("FrameCue")
+                Text("Mattebox")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(FrameCueTheme.primary)
+                    .foregroundStyle(MatteboxTheme.primary)
 
                 Text("AI director framing coach — clapper slate + shot chips.")
                     .font(.subheadline)
-                    .foregroundStyle(FrameCueTheme.muted)
+                    .foregroundStyle(MatteboxTheme.muted)
 
                 ClapperFrameCanvas(title: "Slate", shotLabel: "MS") {
                     VStack(spacing: 12) {
                         Image(systemName: "viewfinder")
                             .font(.system(size: 44))
-                            .foregroundStyle(FrameCueTheme.primary.opacity(0.45))
+                            .foregroundStyle(MatteboxTheme.primary.opacity(0.45))
                         Text(appModel.sessions.isEmpty
                              ? "Empty slate — start a framing session"
                              : "\(appModel.sessions.count) session(s) on the board")
                             .font(.callout)
-                            .foregroundStyle(FrameCueTheme.ink)
+                            .foregroundStyle(MatteboxTheme.ink)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                     }
@@ -46,14 +46,14 @@ struct SessionsHomeView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FrameCueTheme.primary)
+                .tint(MatteboxTheme.primary)
                 .accessibilityIdentifier("new_session_cta")
 
                 if !appModel.sessions.isEmpty {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Sessions")
                             .font(.headline)
-                            .foregroundStyle(FrameCueTheme.ink)
+                            .foregroundStyle(MatteboxTheme.ink)
                         ForEach(appModel.sessions, id: \.id) { session in
                             Button {
                                 appModel.openSession(session)
@@ -62,20 +62,20 @@ struct SessionsHomeView: View {
                                     VStack(alignment: .leading, spacing: 4) {
                                         Text(session.title)
                                             .font(.body.weight(.semibold))
-                                            .foregroundStyle(FrameCueTheme.ink)
+                                            .foregroundStyle(MatteboxTheme.ink)
                                         Text("\(session.currentShotSize) · \(session.aspectRatio)")
                                             .font(.caption)
-                                            .foregroundStyle(FrameCueTheme.muted)
+                                            .foregroundStyle(MatteboxTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(FrameCueTheme.accent)
+                                        .foregroundStyle(MatteboxTheme.accent)
                                 }
                                 .padding(14)
-                                .background(RoundedRectangle(cornerRadius: 12).fill(FrameCueTheme.card))
+                                .background(RoundedRectangle(cornerRadius: 12).fill(MatteboxTheme.card))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .stroke(FrameCueTheme.primary.opacity(0.2), lineWidth: 1)
+                                        .stroke(MatteboxTheme.primary.opacity(0.2), lineWidth: 1)
                                 )
                             }
                             .buttonStyle(.plain)
@@ -86,12 +86,12 @@ struct SessionsHomeView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(FrameCueTheme.muted)
+                        .foregroundStyle(MatteboxTheme.muted)
                 }
             }
             .padding(20)
         }
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Sessions")
         .navigationBarTitleDisplayMode(.inline)
     }

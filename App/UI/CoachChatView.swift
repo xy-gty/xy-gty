@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import AppRuntimeCore
 import SwiftUI
 
@@ -14,7 +14,7 @@ struct CoachChatView: View {
                     if let reason = appModel.aiUnavailableReason {
                         Text(reason)
                             .font(.footnote)
-                            .foregroundStyle(FrameCueTheme.muted)
+                            .foregroundStyle(MatteboxTheme.muted)
                             .padding(.bottom, 4)
                     }
                     ForEach(appModel.sessionMessages, id: \.id) { msg in
@@ -24,11 +24,11 @@ struct CoachChatView: View {
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14)
-                                        .fill(msg.role == "coach" ? FrameCueTheme.primary.opacity(0.12) : FrameCueTheme.card)
+                                        .fill(msg.role == "coach" ? MatteboxTheme.primary.opacity(0.12) : MatteboxTheme.card)
                                 )
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 14)
-                                        .stroke(FrameCueTheme.primary.opacity(0.2), lineWidth: 1)
+                                        .stroke(MatteboxTheme.primary.opacity(0.2), lineWidth: 1)
                                 )
                             if msg.role != "coach" { Spacer(minLength: 40) }
                         }
@@ -37,7 +37,7 @@ struct CoachChatView: View {
                         .lineLimit(2...4)
                         .focused($focused)
                         .padding(10)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(FrameCueTheme.card))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(MatteboxTheme.card))
                 }
                 .padding(16)
             },
@@ -57,13 +57,13 @@ struct CoachChatView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FrameCueTheme.primary)
+                .tint(MatteboxTheme.primary)
                 .disabled(appModel.coachBusy)
                 .padding(.horizontal, 16)
                 .padding(.bottom, 8)
             }
         )
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Coach")
     }
 }

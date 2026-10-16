@@ -13,12 +13,12 @@ struct HandsFreeTTSView: View {
                 VStack(spacing: 12) {
                     Image(systemName: "speaker.wave.2.bubble.left.fill")
                         .font(.system(size: 40))
-                        .foregroundStyle(FrameCueTheme.accent)
+                        .foregroundStyle(MatteboxTheme.accent)
                     let cues = appModel.directorCues
                     let idx = min(appModel.ttsCueIndex, max(cues.count - 1, 0))
-                    Text(cues.isEmpty ? "No cues yet" : cues[idx])
+                    Text(cues.isEmpty ? "No lines yet" : cues[idx])
                         .multilineTextAlignment(.center)
-                        .foregroundStyle(FrameCueTheme.ink)
+                        .foregroundStyle(MatteboxTheme.ink)
                         .padding(.horizontal)
                 }
                 .frame(maxWidth: .infinity, minHeight: 180)
@@ -33,7 +33,7 @@ struct HandsFreeTTSView: View {
             HStack(spacing: 12) {
                 Button("Play") { appModel.playCurrentCue() }
                     .buttonStyle(.borderedProminent)
-                    .tint(FrameCueTheme.accent)
+                    .tint(MatteboxTheme.accent)
                 Button("Pause") { appModel.tts.pause() }
                     .buttonStyle(.bordered)
                 Button("Next") { appModel.nextCue() }
@@ -46,7 +46,7 @@ struct HandsFreeTTSView: View {
             Spacer()
         }
         .padding(16)
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Hands-free TTS")
     }
 }

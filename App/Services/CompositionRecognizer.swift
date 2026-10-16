@@ -1,5 +1,5 @@
 import UIKit
-import FrameCueDomain
+import MatteboxDomain
 
 enum CompositionRecognizer {
     struct Result {

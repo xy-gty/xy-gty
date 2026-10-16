@@ -1,5 +1,5 @@
 import SwiftUI
-import FrameCueDomain
+import MatteboxDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(FrameCueTheme.ink)
+                        .foregroundStyle(MatteboxTheme.ink)
 
                     Text(
-                        "FrameCue sends the fields below to \(AIConsentContract.provider) for director framing coaching on shot size, aspect, lens language, and overlays. "
+                        "Mattebox sends the fields below to \(AIConsentContract.provider) for director framing coaching on shot size, aspect, lens language, and overlays. "
                             + "This is a coaching aid, not a camera-metering authority. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(FrameCueTheme.muted)
+                    .foregroundStyle(MatteboxTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(FrameCueTheme.ink)
+                            .foregroundStyle(MatteboxTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(FrameCueTheme.primary)
+                                .foregroundStyle(MatteboxTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(FrameCueTheme.muted)
+                        .foregroundStyle(MatteboxTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(FrameCueTheme.primary)
+                        .tint(MatteboxTheme.primary)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .frameCueScreen()
+            .matteboxScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

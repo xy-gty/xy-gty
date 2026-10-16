@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct TurnReviewView: View {
@@ -8,23 +8,23 @@ struct TurnReviewView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Turn review")
                 .font(.title2.bold())
-                .foregroundStyle(FrameCueTheme.ink)
+                .foregroundStyle(MatteboxTheme.ink)
             Text(appModel.pendingTurn?.text ?? "No pending turn")
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(RoundedRectangle(cornerRadius: 12).fill(FrameCueTheme.card))
+                .background(RoundedRectangle(cornerRadius: 12).fill(MatteboxTheme.card))
             HStack {
                 Button(TurnReview.reject) { appModel.discardTurn() }
                     .buttonStyle(.bordered)
                 Spacer()
                 Button(TurnReview.confirm) { appModel.keepTurn() }
                     .buttonStyle(.borderedProminent)
-                    .tint(FrameCueTheme.primary)
+                    .tint(MatteboxTheme.primary)
             }
             Spacer()
         }
         .padding(20)
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Review turn")
     }
 }

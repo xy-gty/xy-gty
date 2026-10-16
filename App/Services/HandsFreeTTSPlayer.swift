@@ -17,7 +17,7 @@ final class HandsFreeTTSPlayer: NSObject, AVSpeechSynthesizerDelegate {
         lastError = nil
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else {
-            lastError = "Director cue text is empty."
+            lastError = "Shot note is empty."
             return
         }
         do {

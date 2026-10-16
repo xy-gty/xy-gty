@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct SlateStageView: View {
@@ -24,9 +24,9 @@ struct SlateStageView: View {
                             VStack(spacing: 8) {
                                 Image(systemName: "rectangle.dashed")
                                     .font(.largeTitle)
-                                    .foregroundStyle(FrameCueTheme.primary.opacity(0.4))
+                                    .foregroundStyle(MatteboxTheme.primary.opacity(0.4))
                                 Text("No still yet — capture or import")
-                                    .foregroundStyle(FrameCueTheme.muted)
+                                    .foregroundStyle(MatteboxTheme.muted)
                             }
                         }
                     }
@@ -43,14 +43,14 @@ struct SlateStageView: View {
                     VStack(alignment: .leading, spacing: 6) {
                         Text("Kept composition")
                             .font(.headline)
-                            .foregroundStyle(FrameCueTheme.ink)
+                            .foregroundStyle(MatteboxTheme.ink)
                         Text(note.subject)
                             .font(.subheadline)
-                            .foregroundStyle(FrameCueTheme.muted)
+                            .foregroundStyle(MatteboxTheme.muted)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(12)
-                    .background(RoundedRectangle(cornerRadius: 10).fill(FrameCueTheme.card))
+                    .background(RoundedRectangle(cornerRadius: 10).fill(MatteboxTheme.card))
                 }
 
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
@@ -62,12 +62,12 @@ struct SlateStageView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FrameCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(MatteboxTheme.muted)
                 }
             }
             .padding(16)
         }
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Stage")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -79,7 +79,7 @@ struct SlateStageView: View {
             ZStack {
                 if appModel.safeFrameEnabled || appModel.sessionOverlays.first?.safeFrameEnabled == true {
                     Rectangle()
-                        .stroke(FrameCueTheme.accent.opacity(0.85), lineWidth: 2)
+                        .stroke(MatteboxTheme.accent.opacity(0.85), lineWidth: 2)
                         .padding(w * 0.06)
                 }
                 if appModel.ruleOfThirdsEnabled || appModel.sessionOverlays.first?.ruleOfThirdsEnabled == true {
@@ -89,7 +89,7 @@ struct SlateStageView: View {
                         p.move(to: CGPoint(x: 0, y: h / 3)); p.addLine(to: CGPoint(x: w, y: h / 3))
                         p.move(to: CGPoint(x: 0, y: 2 * h / 3)); p.addLine(to: CGPoint(x: w, y: 2 * h / 3))
                     }
-                    .stroke(FrameCueTheme.primary.opacity(0.55), lineWidth: 1)
+                    .stroke(MatteboxTheme.primary.opacity(0.55), lineWidth: 1)
                 }
             }
         }
@@ -104,6 +104,6 @@ struct SlateStageView: View {
                 .padding(.vertical, 12)
         }
         .buttonStyle(.bordered)
-        .tint(FrameCueTheme.primary)
+        .tint(MatteboxTheme.primary)
     }
 }

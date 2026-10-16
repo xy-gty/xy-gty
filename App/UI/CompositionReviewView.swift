@@ -1,4 +1,4 @@
-import FrameCueDomain
+import MatteboxDomain
 import SwiftUI
 
 struct CompositionReviewView: View {
@@ -9,13 +9,13 @@ struct CompositionReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Composition review")
                     .font(.title2.bold())
-                    .foregroundStyle(FrameCueTheme.ink)
+                    .foregroundStyle(MatteboxTheme.ink)
 
                 TextEditor(text: $appModel.editingIssueSummary)
                     .frame(minHeight: 140)
                     .padding(8)
-                    .background(RoundedRectangle(cornerRadius: 10).fill(FrameCueTheme.card))
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(FrameCueTheme.primary.opacity(0.25)))
+                    .background(RoundedRectangle(cornerRadius: 10).fill(MatteboxTheme.card))
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(MatteboxTheme.primary.opacity(0.25)))
 
                 Group {
                     labelRow("Subject", appModel.pendingSubject)
@@ -33,20 +33,20 @@ struct CompositionReviewView: View {
                     .buttonStyle(.bordered)
                     Button(CompositionReviewBar.confirm) { appModel.keepCompositionDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FrameCueTheme.primary)
+                        .tint(MatteboxTheme.primary)
                 }
             }
             .padding(20)
         }
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Review")
         .navigationBarTitleDisplayMode(.inline)
     }
 
     private func labelRow(_ title: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(title).font(.caption.weight(.semibold)).foregroundStyle(FrameCueTheme.accent)
-            Text(value).font(.subheadline).foregroundStyle(FrameCueTheme.ink)
+            Text(title).font(.caption.weight(.semibold)).foregroundStyle(MatteboxTheme.accent)
+            Text(value).font(.subheadline).foregroundStyle(MatteboxTheme.ink)
         }
     }
 }

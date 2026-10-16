@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import FrameCueDomain
+import MatteboxDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -21,7 +21,7 @@ final class AppModel: ObservableObject {
     @Published var directorCues: [String] = []
 
     @Published var activeSessionId: String?
-    @Published var path: [FrameCueRoute] = []
+    @Published var path: [MatteboxRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -53,7 +53,7 @@ final class AppModel: ObservableObject {
     @Published var ttsPulse = false
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<FrameCueRoute>
+    let navigation: TypedNavigationStore<MatteboxRoute>
     let tts = HandsFreeTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -68,7 +68,7 @@ final class AppModel: ObservableObject {
     private let voiceStore: AtomicCodableStore<[VoiceIntent]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = FrameCueStores.apiKeyStore()
+    private let keychain = MatteboxStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
 
@@ -109,27 +109,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("FrameCue", isDirectory: true)
+            .appendingPathComponent("Mattebox", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        sessionStore = FrameCueStores.framingSessionStore(directory: root)
-        stillStore = FrameCueStores.frameStillStore(directory: root)
-        draftStore = FrameCueStores.compositionDraftStore(directory: root)
-        noteStore = FrameCueStores.compositionNoteStore(directory: root)
-        shotStore = FrameCueStores.shotSizePlanStore(directory: root)
-        overlayStore = FrameCueStores.aspectOverlayStore(directory: root)
-        turnStore = FrameCueStores.coachTurnStore(directory: root)
-        messageStore = FrameCueStores.coachMessageStore(directory: root)
-        voiceStore = FrameCueStores.voiceIntentStore(directory: root)
+        sessionStore = MatteboxStores.framingSessionStore(directory: root)
+        stillStore = MatteboxStores.frameStillStore(directory: root)
+        draftStore = MatteboxStores.compositionDraftStore(directory: root)
+        noteStore = MatteboxStores.compositionNoteStore(directory: root)
+        shotStore = MatteboxStores.shotSizePlanStore(directory: root)
+        overlayStore = MatteboxStores.aspectOverlayStore(directory: root)
+        turnStore = MatteboxStores.coachTurnStore(directory: root)
+        messageStore = MatteboxStores.coachMessageStore(directory: root)
+        voiceStore = MatteboxStores.voiceIntentStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = FrameCueStores.storeURL(directory: root, name: FrameCueStores.aiConsentLocal)
+        let consentURL = MatteboxStores.storeURL(directory: root, name: MatteboxStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -144,7 +144,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await FrameCueStores.consentKeychainStore().save(mirrorData)
+                    try? await MatteboxStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -212,7 +212,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: FrameCueRoute) {
+    func push(_ route: MatteboxRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -623,7 +623,7 @@ final class AppModel: ObservableObject {
     private func localCoachReply() -> CoachTurn {
         let sid = activeSession?.id ?? ""
         let noteHint = sessionNote.map { "Reuse: \($0.subject)." } ?? "Capture a still and Keep composition notes first."
-        let text = "Local framing cue (AI key gap): hold \(shotPhrase(selectedChip)) at \(activeSession?.aspectRatio ?? "16:9"). \(noteHint) Watch edges; refresh safe-frame if subject drifts."
+        let text = "Local framing note (AI key gap): hold \(shotPhrase(selectedChip)) at \(activeSession?.aspectRatio ?? "16:9"). \(noteHint) Watch edges; refresh safe-frame if subject drifts."
         return CoachTurn(id: UUID().uuidString, sessionId: sid, role: "coach", text: text, createdAt: Date())
     }
 

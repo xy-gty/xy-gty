@@ -1,5 +1,5 @@
 import SwiftUI
-import FrameCueDomain
+import MatteboxDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -13,7 +13,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(FrameCueTheme.muted)
+                        .foregroundStyle(MatteboxTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -36,23 +36,23 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                LabeledContent("App", value: FrameCueIdentity.appName)
-                LabeledContent("Bundle", value: FrameCueIdentity.developmentBundleId)
-                LabeledContent("Palette", value: "\(FrameCuePalette.primary) / \(FrameCuePalette.secondary) / \(FrameCuePalette.accent)")
-                Text("UI: clapper frame canvas + bottom shot-size chip bar. Not a RuleCue / StopCue / NightCue twin.")
+                LabeledContent("App", value: MatteboxIdentity.appName)
+                LabeledContent("Bundle", value: MatteboxIdentity.developmentBundleId)
+                LabeledContent("Palette", value: "\(MatteboxPalette.primary) / \(MatteboxPalette.secondary) / \(MatteboxPalette.accent)")
+                Text("Clapper frame canvas with a shot-size chip bar for on-set framing.")
                     .font(.footnote)
-                    .foregroundStyle(FrameCueTheme.muted)
+                    .foregroundStyle(MatteboxTheme.muted)
             }
         }
         .scrollContentBackground(.hidden)
-        .frameCueScreen()
+        .matteboxScreen()
         .navigationTitle("Settings")
     }
 
     private func permissionRow(_ title: String, _ copy: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title).font(.headline).foregroundStyle(FrameCueTheme.ink)
-            Text(copy).font(.footnote).foregroundStyle(FrameCueTheme.muted)
+            Text(title).font(.headline).foregroundStyle(MatteboxTheme.ink)
+            Text(copy).font(.footnote).foregroundStyle(MatteboxTheme.muted)
         }
         .padding(.vertical, 2)
     }
