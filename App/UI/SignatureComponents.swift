@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 /// Dual compliance + 21+ strip — required on every alcohol-advice surface.
 struct ComplianceBanner: View {
@@ -7,19 +7,19 @@ struct ComplianceBanner: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(CellarCueCompliance.sommelierCertificationDisclaimer)
+            Text(RacknoteCompliance.sommelierCertificationDisclaimer)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(CellarCueTheme.primary)
-            Text(CellarCueCompliance.investmentAdviceDisclaimer)
+                .foregroundStyle(RacknoteTheme.primary)
+            Text(RacknoteCompliance.investmentAdviceDisclaimer)
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(CellarCueTheme.primary)
+                .foregroundStyle(RacknoteTheme.primary)
             if showAgeGate {
-                Text(CellarCueCompliance.ageGateLabel)
+                Text(RacknoteCompliance.ageGateLabel)
                     .font(.caption2.weight(.bold))
                     .padding(.horizontal, 8)
                     .padding(.vertical, 2)
-                    .background(Capsule().fill(CellarCueTheme.accent.opacity(0.15)))
-                    .foregroundStyle(CellarCueTheme.accent)
+                    .background(Capsule().fill(RacknoteTheme.accent.opacity(0.15)))
+                    .foregroundStyle(RacknoteTheme.accent)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -29,7 +29,7 @@ struct ComplianceBanner: View {
                 .fill(Color.white.opacity(0.85))
                 .overlay(
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .stroke(CellarCueTheme.primary.opacity(0.2), lineWidth: 1)
+                        .stroke(RacknoteTheme.primary.opacity(0.2), lineWidth: 1)
                 )
         )
         .accessibilityElement(children: .combine)
@@ -53,13 +53,13 @@ struct CellarRowBinGridView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Cellar rack")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(CellarCueTheme.muted)
+                .foregroundStyle(RacknoteTheme.muted)
                 .textCase(.uppercase)
 
             if bins.isEmpty {
                 Text("Empty rack — Shoot or Import to place a bottle.")
                     .font(.subheadline)
-                    .foregroundStyle(CellarCueTheme.muted)
+                    .foregroundStyle(RacknoteTheme.muted)
                     .padding(.vertical, 12)
             } else {
                 ForEach(rows, id: \.first?.row) { rowBins in
@@ -73,20 +73,20 @@ struct CellarRowBinGridView: View {
                                 VStack(spacing: 4) {
                                     Text(bin.label)
                                         .font(.caption.weight(.bold))
-                                        .foregroundStyle(CellarCueTheme.ink)
+                                        .foregroundStyle(RacknoteTheme.ink)
                                     Text(filled ? "●" : "○")
                                         .font(.title3)
-                                        .foregroundStyle(filled ? CellarCueTheme.accent : CellarCueTheme.muted)
+                                        .foregroundStyle(filled ? RacknoteTheme.accent : RacknoteTheme.muted)
                                 }
                                 .frame(maxWidth: .infinity)
                                 .padding(.vertical, 10)
                                 .background(
                                     RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                        .fill(filled ? CellarCueTheme.binFilled : CellarCueTheme.binEmpty)
+                                        .fill(filled ? RacknoteTheme.binFilled : RacknoteTheme.binEmpty)
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 10, style: .continuous)
                                                 .stroke(
-                                                    selected ? CellarCueTheme.accent : CellarCueTheme.primary.opacity(0.2),
+                                                    selected ? RacknoteTheme.accent : RacknoteTheme.primary.opacity(0.2),
                                                     lineWidth: selected ? 2 : 1
                                                 )
                                         )
@@ -114,13 +114,13 @@ struct LabelOCRHeroCardView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Label OCR")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(CellarCueTheme.muted)
+                .foregroundStyle(RacknoteTheme.muted)
                 .textCase(.uppercase)
 
             if isBusy {
                 Text("Reading label…")
                     .font(.title3.weight(.semibold))
-                    .foregroundStyle(CellarCueTheme.primary)
+                    .foregroundStyle(RacknoteTheme.primary)
                     .frame(maxWidth: .infinity, minHeight: 120, alignment: .leading)
                     .padding(16)
                     .background(heroChrome)
@@ -128,28 +128,28 @@ struct LabelOCRHeroCardView: View {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(bottle.producer ?? "Unknown producer")
                         .font(.system(size: 28, weight: .bold, design: .rounded))
-                        .foregroundStyle(CellarCueTheme.ink)
+                        .foregroundStyle(RacknoteTheme.ink)
                         .lineLimit(2)
                     HStack(spacing: 12) {
                         Text(bottle.vintage ?? "—")
                             .font(.title3.weight(.semibold))
                         Text(bottle.varietal ?? "—")
                             .font(.title3)
-                            .foregroundStyle(CellarCueTheme.muted)
+                            .foregroundStyle(RacknoteTheme.muted)
                     }
                     if let region = bottle.region, !region.isEmpty {
                         Text(region)
                             .font(.subheadline)
-                            .foregroundStyle(CellarCueTheme.muted)
+                            .foregroundStyle(RacknoteTheme.muted)
                     }
                     if let ocr {
                         Text(String(format: "Confidence %.0f%%", ocr.confidence * 100))
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(CellarCueTheme.accent)
+                            .foregroundStyle(RacknoteTheme.accent)
                     }
                     Text("Bin \(bottle.binId) · \(bottle.status)")
                         .font(.caption)
-                        .foregroundStyle(CellarCueTheme.muted)
+                        .foregroundStyle(RacknoteTheme.muted)
                 }
                 .frame(maxWidth: .infinity, minHeight: 120, alignment: .leading)
                 .padding(16)
@@ -157,7 +157,7 @@ struct LabelOCRHeroCardView: View {
             } else {
                 Text("Large label-OCR hero — capture or import a still")
                     .font(.title3.weight(.medium))
-                    .foregroundStyle(CellarCueTheme.muted)
+                    .foregroundStyle(RacknoteTheme.muted)
                     .frame(maxWidth: .infinity, minHeight: 120, alignment: .leading)
                     .padding(16)
                     .background(heroChrome)
@@ -168,12 +168,12 @@ struct LabelOCRHeroCardView: View {
 
     private var heroChrome: some View {
         RoundedRectangle(cornerRadius: 18, style: .continuous)
-            .fill(CellarCueTheme.cardFill)
+            .fill(RacknoteTheme.cardFill)
             .overlay(
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
-                    .stroke(CellarCueTheme.primary.opacity(0.25), lineWidth: 1.5)
+                    .stroke(RacknoteTheme.primary.opacity(0.25), lineWidth: 1.5)
             )
-            .shadow(color: CellarCueTheme.primary.opacity(0.08), radius: 8, y: 3)
+            .shadow(color: RacknoteTheme.primary.opacity(0.08), radius: 8, y: 3)
     }
 }
 
@@ -185,7 +185,7 @@ struct DrinkingWindowTimelineView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Drinking window")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(CellarCueTheme.muted)
+                .foregroundStyle(RacknoteTheme.muted)
                 .textCase(.uppercase)
 
             if let window, !window.timelinePoints.isEmpty {
@@ -206,27 +206,27 @@ struct DrinkingWindowTimelineView: View {
                             .padding(.vertical, 8)
                             .background(
                                 Capsule()
-                                    .fill(isOpen ? CellarCueTheme.accent.opacity(0.2) : CellarCueTheme.binEmpty)
+                                    .fill(isOpen ? RacknoteTheme.accent.opacity(0.2) : RacknoteTheme.binEmpty)
                                     .overlay(
                                         Capsule()
-                                            .stroke(isOpen ? CellarCueTheme.accent : Color.clear, lineWidth: 2)
+                                            .stroke(isOpen ? RacknoteTheme.accent : Color.clear, lineWidth: 2)
                                     )
                             )
-                            .foregroundStyle(CellarCueTheme.ink)
+                            .foregroundStyle(RacknoteTheme.ink)
                         }
                     }
                 }
                 Text("Status: \(window.status) · informational only — not investment timing")
                     .font(.caption2)
-                    .foregroundStyle(CellarCueTheme.muted)
+                    .foregroundStyle(RacknoteTheme.muted)
             } else {
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .fill(CellarCueTheme.binEmpty)
+                    .fill(RacknoteTheme.binEmpty)
                     .frame(height: 44)
                     .overlay(
                         Text("Aging timeline empty — Identify a bottle first")
                             .font(.caption)
-                            .foregroundStyle(CellarCueTheme.muted)
+                            .foregroundStyle(RacknoteTheme.muted)
                     )
             }
         }

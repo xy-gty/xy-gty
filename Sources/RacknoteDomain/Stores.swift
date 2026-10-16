@@ -2,14 +2,14 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum CellarCueStores {
+public enum RacknoteStores {
     public static let cellarState = "cellar_cue_state"
     public static let aiConsentLocal = "ai_consent_local"
-    public static let supportFolderName = "CellarCue"
-    public static let mediaDirectoryName = "CellarCue"
+    public static let supportFolderName = "Racknote"
+    public static let mediaDirectoryName = "Racknote"
 
-    /// Keychain service for credential presence (cellarcue.ai per technical contract).
-    public static let keychainService = "cellarcue.ai"
+    /// Keychain service for credential presence (racknote.ai per technical contract).
+    public static let keychainService = "racknote.ai"
     public static let keychainAPIKeyAccount = "deepseek_api_key"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -31,7 +31,7 @@ public enum CellarCueStores {
         directory.appendingPathComponent("\(name).json", isDirectory: false)
     }
 
-    public static func cellarStore(directory: URL) -> AtomicCodableStore<CellarCueState> {
+    public static func cellarStore(directory: URL) -> AtomicCodableStore<RacknoteState> {
         AtomicCodableStore(url: storeURL(directory: directory, name: cellarState))
     }
 
@@ -50,17 +50,17 @@ public enum CellarCueStores {
 
 /// CellarStore facade — AtomicCodableStore persistence for racks, bins, bottles, and related entities.
 public struct CellarStore {
-    private let store: AtomicCodableStore<CellarCueState>
+    private let store: AtomicCodableStore<RacknoteState>
 
     public init(directory: URL) {
-        self.store = CellarCueStores.cellarStore(directory: directory)
+        self.store = RacknoteStores.cellarStore(directory: directory)
     }
 
-    public func load() throws -> CellarCueState {
-        try store.load() ?? CellarCueState()
+    public func load() throws -> RacknoteState {
+        try store.load() ?? RacknoteState()
     }
 
-    public func save(_ state: CellarCueState) throws {
+    public func save(_ state: RacknoteState) throws {
         try store.save(state)
     }
 }

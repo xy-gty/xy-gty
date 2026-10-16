@@ -1,5 +1,5 @@
 import Foundation
-import CellarCueDomain
+import RacknoteDomain
 
 struct LabelOCRPayload: Sendable {
     var producer: String
@@ -75,14 +75,14 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are CellarCue, an AI wine-cellar coach. Reply with JSON only:
+        You are Racknote, an AI wine-cellar coach. Reply with JSON only:
         {"producer":"","vintage":"","varietal":"","region":"","rawText":"","confidence":0.0,
          "suggestedBinLabel":"R1-B1","timelinePoints":["hold:2026","approaching:2028","open:2030","past:2038"],
          "windowStatus":"hold","coachTip":""}
         Structure label OCR for bin placement and drinking-window timeline.
         NEVER claim sommelier certification, certified tasting, or investment returns.
         Always include phrases in coachTip: 非侍酒认证 / not a sommelier certification; 非投资建议 / not investment advice; 21+.
-        Do not name Vinocell. Not a MixCue/SporeCue/WingCue/FrameCue/RuleCue/StopCue twin.
+        Do not name Vinocell. Not a Stirboard/Gillnote/Fieldmark/Mattebox/Tablehost/Onionreel twin.
         """
 
         let content = try await chat(system: system, userJSON: payload)
@@ -106,7 +106,7 @@ struct DeepSeekClient {
             "active_bottle_or_bin_id": bottleId,
         ]
         let system = """
-        You are CellarCue drinking-window and food-pairing coach. Reply JSON only:
+        You are Racknote drinking-window and food-pairing coach. Reply JSON only:
         {"reply":"...","pairingDish":"...","pairingRationale":"..."}
         Restate 非侍酒认证 / not a sommelier certification and 非投资建议 / not investment advice and 21+
         whenever alcohol advice appears. Never claim certified tasting or investment returns.

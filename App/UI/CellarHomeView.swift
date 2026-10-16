@@ -1,6 +1,6 @@
 import PhotosUI
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct CellarHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,15 +9,15 @@ struct CellarHomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
-                    Text("CellarCue")
+                    Text("Racknote")
                         .font(.largeTitle.bold())
-                        .foregroundStyle(CellarCueTheme.primary)
+                        .foregroundStyle(RacknoteTheme.primary)
                     Spacer()
                     Button {
                         appModel.push(.settings)
                     } label: {
                         Image(systemName: "gearshape.fill")
-                            .foregroundStyle(CellarCueTheme.primary)
+                            .foregroundStyle(RacknoteTheme.primary)
                     }
                     .accessibilityLabel("Settings")
                 }
@@ -27,7 +27,7 @@ struct CellarHomeView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(CellarCueTheme.muted)
+                        .foregroundStyle(RacknoteTheme.muted)
                         .padding(8)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background(RoundedRectangle(cornerRadius: 8).fill(Color.white.opacity(0.7)))
@@ -36,7 +36,7 @@ struct CellarHomeView: View {
                 if let banner = appModel.statusMessage {
                     Text(banner)
                         .font(.footnote)
-                        .foregroundStyle(appModel.statusIsError ? Color.red : CellarCueTheme.ink)
+                        .foregroundStyle(appModel.statusIsError ? Color.red : RacknoteTheme.ink)
                 }
 
                 LabelOCRHeroCardView(
@@ -72,7 +72,7 @@ struct CellarHomeView: View {
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .background(Capsule().fill(CellarCueTheme.accent))
+                    .background(Capsule().fill(RacknoteTheme.accent))
                     .foregroundStyle(.white)
             }
             .accessibilityIdentifier("ShootButton")
@@ -85,9 +85,9 @@ struct CellarHomeView: View {
                     .padding(.vertical, 14)
                     .background(
                         Capsule()
-                            .stroke(CellarCueTheme.primary, lineWidth: 2)
+                            .stroke(RacknoteTheme.primary, lineWidth: 2)
                     )
-                    .foregroundStyle(CellarCueTheme.primary)
+                    .foregroundStyle(RacknoteTheme.primary)
             }
             .accessibilityLabel("Import")
 
@@ -96,8 +96,8 @@ struct CellarHomeView: View {
             } label: {
                 Image(systemName: "mic.fill")
                     .padding(14)
-                    .background(Circle().fill(CellarCueTheme.binEmpty))
-                    .foregroundStyle(CellarCueTheme.primary)
+                    .background(Circle().fill(RacknoteTheme.binEmpty))
+                    .foregroundStyle(RacknoteTheme.primary)
             }
             .accessibilityLabel("Voice note")
         }
@@ -118,7 +118,7 @@ struct CellarHomeView: View {
                 }
             } label: {
                 Image(systemName: appModel.speechService.isListening ? "stop.circle.fill" : "waveform")
-                    .foregroundStyle(CellarCueTheme.accent)
+                    .foregroundStyle(RacknoteTheme.accent)
             }
             .accessibilityLabel("Speech question")
 
@@ -126,7 +126,7 @@ struct CellarHomeView: View {
                 appModel.sendCoachQuestion()
             }
             .font(.subheadline.weight(.semibold))
-            .foregroundStyle(CellarCueTheme.primary)
+            .foregroundStyle(RacknoteTheme.primary)
         }
         .padding(.top, 4)
     }

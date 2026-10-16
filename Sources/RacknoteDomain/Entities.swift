@@ -274,7 +274,7 @@ public struct AppSettings: Codable, Hashable, Sendable {
 }
 
 /// Aggregate root persisted via AtomicCodableStore for restart restore.
-public struct CellarCueState: Codable, Hashable, Sendable {
+public struct RacknoteState: Codable, Hashable, Sendable {
     public var racks: [CellarRack]
     public var bins: [CellarBin]
     public var bottles: [BottleEntry]

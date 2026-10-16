@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -12,30 +12,30 @@ struct ConsentSheet: View {
 
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(CellarCueTheme.ink)
+                        .foregroundStyle(RacknoteTheme.ink)
 
                     Text(
-                        "CellarCue sends the fields below to \(AIConsentContract.provider) for label OCR, drinking-window coaching, and pull briefs. "
-                            + "\(CellarCueCompliance.sommelierCertificationDisclaimer). "
-                            + "\(CellarCueCompliance.investmentAdviceDisclaimer). Revoke anytime in Settings."
+                        "Racknote sends the fields below to \(AIConsentContract.provider) for label OCR, drinking-window coaching, and pull briefs. "
+                            + "\(RacknoteCompliance.sommelierCertificationDisclaimer). "
+                            + "\(RacknoteCompliance.investmentAdviceDisclaimer). Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(CellarCueTheme.muted)
+                    .foregroundStyle(RacknoteTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(CellarCueTheme.ink)
+                            .foregroundStyle(RacknoteTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(CellarCueTheme.primary)
+                                .foregroundStyle(RacknoteTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(CellarCueTheme.muted)
+                        .foregroundStyle(RacknoteTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -47,7 +47,7 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(CellarCueTheme.accent)
+                        .tint(RacknoteTheme.accent)
                     }
                     .padding(.top, 8)
                 }

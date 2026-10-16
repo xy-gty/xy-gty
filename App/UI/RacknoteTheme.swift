@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum CellarCueTheme {
+enum RacknoteTheme {
     static let primary = Color(hex: 0x3730A3)
     static let secondary = Color(hex: 0xEEF2FF)
     static let accent = Color(hex: 0xEA580C)
@@ -22,6 +22,6 @@ extension Color {
 
 extension View {
     func cellarScreen() -> some View {
-        self.background(CellarCueTheme.secondary.ignoresSafeArea())
+        self.background(RacknoteTheme.secondary.ignoresSafeArea())
     }
 }

@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E5296CFDB525228C4077AD0D"
-               BuildableName = "CellarCue.app"
-               BlueprintName = "CellarCue"
-               ReferencedContainer = "container:CellarCue.xcodeproj">
+               BuildableName = "Racknote.app"
+               BlueprintName = "Racknote"
+               ReferencedContainer = "container:Racknote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0EC4B6F58B8C9BBD48B2F68E"
-               BuildableName = "CellarCueDomainTests.xctest"
-               BlueprintName = "CellarCueDomainTests"
-               ReferencedContainer = "container:CellarCue.xcodeproj">
+               BuildableName = "RacknoteDomainTests.xctest"
+               BlueprintName = "RacknoteDomainTests"
+               ReferencedContainer = "container:Racknote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAAE710986E0B1DC1C15560A"
-               BuildableName = "CellarCueUISmokeTests.xctest"
-               BlueprintName = "CellarCueUISmokeTests"
-               ReferencedContainer = "container:CellarCue.xcodeproj">
+               BuildableName = "RacknoteUISmokeTests.xctest"
+               BlueprintName = "RacknoteUISmokeTests"
+               ReferencedContainer = "container:Racknote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E5296CFDB525228C4077AD0D"
-            BuildableName = "CellarCue.app"
-            BlueprintName = "CellarCue"
-            ReferencedContainer = "container:CellarCue.xcodeproj">
+            BuildableName = "Racknote.app"
+            BlueprintName = "Racknote"
+            ReferencedContainer = "container:Racknote.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -73,9 +73,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0EC4B6F58B8C9BBD48B2F68E"
-               BuildableName = "CellarCueDomainTests.xctest"
-               BlueprintName = "CellarCueDomainTests"
-               ReferencedContainer = "container:CellarCue.xcodeproj">
+               BuildableName = "RacknoteDomainTests.xctest"
+               BlueprintName = "RacknoteDomainTests"
+               ReferencedContainer = "container:Racknote.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -84,9 +84,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAAE710986E0B1DC1C15560A"
-               BuildableName = "CellarCueUISmokeTests.xctest"
-               BlueprintName = "CellarCueUISmokeTests"
-               ReferencedContainer = "container:CellarCue.xcodeproj">
+               BuildableName = "RacknoteUISmokeTests.xctest"
+               BlueprintName = "RacknoteUISmokeTests"
+               ReferencedContainer = "container:Racknote.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -108,9 +108,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E5296CFDB525228C4077AD0D"
-            BuildableName = "CellarCue.app"
-            BlueprintName = "CellarCue"
-            ReferencedContainer = "container:CellarCue.xcodeproj">
+            BuildableName = "Racknote.app"
+            BlueprintName = "Racknote"
+            ReferencedContainer = "container:Racknote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -127,9 +127,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E5296CFDB525228C4077AD0D"
-            BuildableName = "CellarCue.app"
-            BlueprintName = "CellarCue"
-            ReferencedContainer = "container:CellarCue.xcodeproj">
+            BuildableName = "Racknote.app"
+            BlueprintName = "Racknote"
+            ReferencedContainer = "container:Racknote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

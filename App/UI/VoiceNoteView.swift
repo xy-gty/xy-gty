@@ -10,17 +10,17 @@ struct VoiceNoteView: View {
 
                 Text("Hands-free bin note")
                     .font(.title2.bold())
-                    .foregroundStyle(CellarCueTheme.ink)
+                    .foregroundStyle(RacknoteTheme.ink)
 
                 Text("Record while carrying bottles. Extends cellar coach — not a separate side product.")
                     .font(.subheadline)
-                    .foregroundStyle(CellarCueTheme.muted)
+                    .foregroundStyle(RacknoteTheme.muted)
                     .multilineTextAlignment(.center)
 
                 if appModel.voiceRecorder.isRecording {
                     Text("Recording…")
                         .font(.headline)
-                        .foregroundStyle(CellarCueTheme.accent)
+                        .foregroundStyle(RacknoteTheme.accent)
                 }
 
                 if let err = appModel.voiceRecorder.lastError {
@@ -32,7 +32,7 @@ struct VoiceNoteView: View {
                 HStack(spacing: 16) {
                     Button("Start") { appModel.startVoiceNote() }
                         .buttonStyle(.borderedProminent)
-                        .tint(CellarCueTheme.accent)
+                        .tint(RacknoteTheme.accent)
                         .disabled(appModel.voiceRecorder.isRecording)
 
                     Button("Stop & save") { appModel.stopVoiceNote() }

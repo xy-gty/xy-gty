@@ -1,14 +1,14 @@
 import SwiftUI
 
 @main
-struct CellarCueApp: App {
+struct RacknoteApp: App {
     @StateObject private var appModel = AppModel()
 
     var body: some Scene {
         WindowGroup {
             RootNavigationView()
                 .environmentObject(appModel)
-                .tint(CellarCueTheme.accent)
+                .tint(RacknoteTheme.accent)
         }
     }
 }

@@ -2,7 +2,7 @@ import Foundation
 import AppRuntimeCore
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum CellarCueRoute: String, Codable, Hashable, Sendable {
+public enum RacknoteRoute: String, Codable, Hashable, Sendable {
     case cellarHome
     case cameraCapture
     case photoImport
@@ -16,10 +16,10 @@ public enum CellarCueRoute: String, Codable, Hashable, Sendable {
     case legal
 }
 
-public enum CellarCueNavigation {
+public enum RacknoteNavigation {
     public static let storeFileName = "navigation_path.json"
 
-    public static func isValid(_ route: CellarCueRoute) -> Bool {
+    public static func isValid(_ route: RacknoteRoute) -> Bool {
         switch route {
         case .cellarHome, .cameraCapture, .photoImport, .labelResult, .windowChat,
              .rackCard, .pullBrief, .voiceNote, .aiConsent, .settings, .legal:
@@ -28,7 +28,7 @@ public enum CellarCueNavigation {
     }
 
     @MainActor
-    public static func makeStore(directory: URL) -> TypedNavigationStore<CellarCueRoute> {
+    public static func makeStore(directory: URL) -> TypedNavigationStore<RacknoteRoute> {
         TypedNavigationStore(
             url: directory.appendingPathComponent(storeFileName, isDirectory: false),
             isValid: isValid

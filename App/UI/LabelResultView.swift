@@ -1,5 +1,5 @@
 import SwiftUI
-import CellarCueDomain
+import RacknoteDomain
 
 struct LabelResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -27,7 +27,7 @@ struct LabelResultView: View {
                 if let banner = appModel.statusMessage {
                     Text(banner)
                         .font(.footnote)
-                        .foregroundStyle(appModel.statusIsError ? Color.red : CellarCueTheme.ink)
+                        .foregroundStyle(appModel.statusIsError ? Color.red : RacknoteTheme.ink)
                 }
 
                 VStack(spacing: 10) {
@@ -39,13 +39,13 @@ struct LabelResultView: View {
                             .padding(.vertical, 12)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(CellarCueTheme.accent)
+                    .tint(RacknoteTheme.accent)
                     .disabled(appModel.identifyBusy)
 
                     HStack {
                         Button("Save Bottle") { appModel.saveBottle() }
                             .buttonStyle(.borderedProminent)
-                            .tint(CellarCueTheme.accent)
+                            .tint(RacknoteTheme.accent)
                         Button("Keep") { appModel.saveBottle() }
                             .buttonStyle(.bordered)
                         Button("Dismiss") { appModel.dismissID() }
@@ -53,15 +53,15 @@ struct LabelResultView: View {
                     }
 
                     Button("Ask coach") { appModel.push(.windowChat) }
-                        .foregroundStyle(CellarCueTheme.primary)
+                        .foregroundStyle(RacknoteTheme.primary)
                     Button("Make rack card") { appModel.openRackCard() }
                         .buttonStyle(.borderedProminent)
-                        .tint(CellarCueTheme.accent)
+                        .tint(RacknoteTheme.accent)
                     Button("Play brief") { appModel.playPullBrief() }
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
-                        .background(Capsule().fill(CellarCueTheme.secondary))
-                        .foregroundStyle(CellarCueTheme.primary)
+                        .background(Capsule().fill(RacknoteTheme.secondary))
+                        .foregroundStyle(RacknoteTheme.primary)
                 }
             }
             .padding(16)

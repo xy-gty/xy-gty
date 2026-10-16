@@ -1,4 +1,4 @@
-import CellarCueDomain
+import RacknoteDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             CellarHomeView()
-                .navigationDestination(for: CellarCueRoute.self) { route in
+                .navigationDestination(for: RacknoteRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -33,7 +33,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: CellarCueRoute) -> some View {
+    private func destination(for route: RacknoteRoute) -> some View {
         switch route {
         case .cellarHome:
             CellarHomeView()

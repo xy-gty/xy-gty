@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import CellarCueDomain
+import RacknoteDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = CellarCueState()
-    @Published var path: [CellarCueRoute] = []
+    @Published var state = RacknoteState()
+    @Published var path: [RacknoteRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -28,7 +28,7 @@ final class AppModel: ObservableObject {
     @Published var draftCallouts: [String] = []
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<CellarCueRoute>
+    let navigation: TypedNavigationStore<RacknoteRoute>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -37,7 +37,7 @@ final class AppModel: ObservableObject {
     private let supportRoot: URL
     private let photosRoot: URL
     private let audioRoot: URL
-    private let keychain = CellarCueStores.apiKeyStore()
+    private let keychain = RacknoteStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -87,7 +87,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent(CellarCueStores.mediaDirectoryName, isDirectory: true)
+            .appendingPathComponent(RacknoteStores.mediaDirectoryName, isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -98,10 +98,10 @@ final class AppModel: ObservableObject {
         cellarStore = CellarStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
-            isValid: CellarCueNavigation.isValid
+            isValid: RacknoteNavigation.isValid
         )
 
-        let consentURL = CellarCueStores.storeURL(directory: root, name: CellarCueStores.aiConsentLocal)
+        let consentURL = RacknoteStores.storeURL(directory: root, name: RacknoteStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -117,7 +117,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await CellarCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await RacknoteStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -143,7 +143,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? cellarStore.load()) ?? CellarCueState()
+        state = (try? cellarStore.load()) ?? RacknoteState()
         CellarComplianceCopy.ensureDefaultRack(state: &state)
         persist()
         consentGranted = consentGate.state.granted
@@ -182,7 +182,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: CellarCueRoute) {
+    func push(_ route: RacknoteRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -413,9 +413,9 @@ final class AppModel: ObservableObject {
                 "Pull from \(bin)",
                 "\(bottle.producer ?? "Bottle") · \(bottle.vintage ?? "")",
                 "Window: \(activeWindow?.status ?? "unknown")",
-                CellarCueCompliance.sommelierCertificationDisclaimer,
-                CellarCueCompliance.investmentAdviceDisclaimer,
-                CellarCueCompliance.ageGateLabel,
+                RacknoteCompliance.sommelierCertificationDisclaimer,
+                RacknoteCompliance.investmentAdviceDisclaimer,
+                RacknoteCompliance.ageGateLabel,
             ]
         }
         push(.rackCard)

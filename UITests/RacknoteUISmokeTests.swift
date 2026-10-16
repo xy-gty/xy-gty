@@ -1,12 +1,12 @@
 import XCTest
 
-final class CellarCueUISmokeTests: XCTestCase {
+final class RacknoteUISmokeTests: XCTestCase {
     func testCellarHomeSignatureAndSettings() {
         let app = XCUIApplication()
         app.launchArguments = ["-ui-smoke-reset"]
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["CellarCue"].waitForExistence(timeout: 12))
+        XCTAssertTrue(app.staticTexts["Racknote"].waitForExistence(timeout: 12))
         XCTAssertTrue(
             app.otherElements["ComplianceBanner"].waitForExistence(timeout: 5)
                 || app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "非侍酒")).firstMatch.exists

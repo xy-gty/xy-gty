@@ -9,7 +9,7 @@ public enum CellarReviewControls {
 }
 
 /// Hard compliance — required on alcohol advice / drinking window / pairing / coach surfaces.
-public enum CellarCueCompliance {
+public enum RacknoteCompliance {
     public static let sommelierCertificationDisclaimer = "非侍酒认证 / not a sommelier certification"
     public static let investmentAdviceDisclaimer = "非投资建议 / not investment advice"
     public static let requiredDisclaimers = [
@@ -25,7 +25,7 @@ public enum CellarCueCompliance {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "cellarcue.consent.v1"
+    public static let disclosureVersion = "racknote.consent.v1"
     public static let fields = [
         "label_still",
         "user_question",
@@ -49,7 +49,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum CellarCueInterfaceNames {
+public enum RacknoteInterfaceNames {
     public static let cellarStore = "CellarStore"
     public static let photoCaptureService = "PhotoCaptureService"
     public static let photoLibraryImporter = "PhotoLibraryImporter"
@@ -72,47 +72,47 @@ public enum CellarCueInterfaceNames {
 /// Permission usage strings extending cellar coach (no Vinocell / competitor names).
 public enum PrivacyUsageCopy {
     public static let camera =
-        "Capture wine label, cork, and bin-tag stills so CellarCue can place bottles in your cellar grid"
+        "Capture wine label, cork, and bin-tag stills so Racknote can place bottles in your cellar grid"
     public static let photoLibrary =
-        "Import cellar photos to complete label OCR and bin placement in CellarCue"
+        "Import cellar photos to complete label OCR and bin placement in Racknote"
     public static let microphone =
         "Record hands-free bin notes while carrying bottles"
     public static let speechRecognition =
         "Turn spoken drinking-window and pairing questions into coach chat text"
 }
 
-public enum CellarCueIdentity {
-    public static let appName = "CellarCue"
-    public static let developmentBundleId = "com.lingguang.cellarcue"
-    public static let productDir = "cellarcue"
+public enum RacknoteIdentity {
+    public static let appName = "Racknote"
+    public static let developmentBundleId = "com.lingguang.racknote"
+    public static let productDir = "racknote"
     public static let uiLanguage = "en-US"
     public static let simulatorPrefUDID = "B14CC0EA"
 }
 
-public enum CellarCuePalette {
+public enum RacknotePalette {
     public static let primary = "#3730A3"
     public static let secondary = "#EEF2FF"
     public static let accent = "#EA580C"
 }
 
-public enum CellarCueUISpecies {
+public enum RacknoteUISpecies {
     public static let signature =
         "cellar_row_bin_grid + large_label_ocr_hero_card + drinking_window_aging_timeline"
 }
 
-public enum CellarCueDevicePolicy {
+public enum RacknoteDevicePolicy {
     public static let targetDevice = "iPhone 17 Pro"
     public static let preferredUDID = "B14CC0EA"
     public static let bannedDevices = ["iPhone 17 Pro Max"]
 }
 
-public enum CellarCuePermissions {
+public enum RacknotePermissions {
     public static let required = ["camera", "photos", "microphone", "speech_recognition"]
 }
 
-public enum CellarCueAllergy {
+public enum RacknoteAllergy {
     public static let bannedTwinShells = [
-        "MixCue", "SporeCue", "WingCue", "FrameCue", "RuleCue", "StopCue",
+        "Stirboard", "Gillnote", "Fieldmark", "Mattebox", "Tablehost", "Onionreel",
     ]
     public static let bannedCompetitorNames = ["Vinocell"]
     public static let requiredUI = [
@@ -122,7 +122,7 @@ public enum CellarCueAllergy {
     ]
 }
 
-public enum CellarCueGaps {
+public enum RacknoteGaps {
     public static let privacyURL = "UNKNOWN"
     public static let termsURL = "UNKNOWN"
     public static let supportURL = "UNKNOWN"
@@ -134,13 +134,13 @@ public enum CellarCueGaps {
 public enum CellarComplianceCopy {
     public static func ensureDisclaimers(_ text: String) -> String {
         var out = text
-        for phrase in CellarCueCompliance.requiredDisclaimers {
+        for phrase in RacknoteCompliance.requiredDisclaimers {
             if !out.contains(phrase) {
                 out += " \(phrase)."
             }
         }
-        if CellarCueCompliance.ageGate21PlusOnAlcoholAdvice, !out.contains(CellarCueCompliance.ageGateLabel) {
-            out += " \(CellarCueCompliance.ageGateLabel)."
+        if RacknoteCompliance.ageGate21PlusOnAlcoholAdvice, !out.contains(RacknoteCompliance.ageGateLabel) {
+            out += " \(RacknoteCompliance.ageGateLabel)."
         }
         return out
     }
@@ -157,9 +157,9 @@ public enum CellarComplianceCopy {
         let display = name.isEmpty ? "this bottle" : name
         let body = """
         Pull brief for \(display) in \(binLabel). Window status: \(windowStatus). \
-        \(CellarCueCompliance.sommelierCertificationDisclaimer). \
-        \(CellarCueCompliance.investmentAdviceDisclaimer). \
-        \(CellarCueCompliance.ageGateLabel). Informational only — never certified tasting or investment returns.
+        \(RacknoteCompliance.sommelierCertificationDisclaimer). \
+        \(RacknoteCompliance.investmentAdviceDisclaimer). \
+        \(RacknoteCompliance.ageGateLabel). Informational only — never certified tasting or investment returns.
         """
         return PullBrief(
             bottleId: bottle.id,
@@ -186,7 +186,7 @@ public enum CellarComplianceCopy {
         )
     }
 
-    public static func ensureDefaultRack(state: inout CellarCueState) {
+    public static func ensureDefaultRack(state: inout RacknoteState) {
         guard state.racks.isEmpty else { return }
         let rack = CellarRack(
             id: "rack-home",

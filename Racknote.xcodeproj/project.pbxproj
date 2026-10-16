@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		04CCC206B22E144E34C09FA9 /* VoiceNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC010E8896660680AB080A7B /* VoiceNoteView.swift */; };
-		0A2F79C32295E0B93257F55C /* CellarCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D69FA914CEFB0ECA805B5E92 /* CellarCueDomain */; };
+		0A2F79C32295E0B93257F55C /* RacknoteDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D69FA914CEFB0ECA805B5E92 /* RacknoteDomain */; };
 		1B3D7DFDF6482ED3C927E967 /* PullBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C958A28E1DEE6288912AF2C /* PullBriefView.swift */; };
 		1D4592CF061FA8F889839D18 /* RackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB58190B63E1C0D947A3A4C /* RackCardView.swift */; };
-		298EF9694D8731227DA665DF /* CellarCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9048C8D5467AD35D779E6 /* CellarCueTheme.swift */; };
+		298EF9694D8731227DA665DF /* RacknoteTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C9048C8D5467AD35D779E6 /* RacknoteTheme.swift */; };
 		2E5BE7E2DD45FF388144D459 /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F9B7E7D4BAC34E56B030 /* TTSPlayer.swift */; };
 		2FE066FFBC3F935D1AC4DD24 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = CB5BC6C77D1E99AB84C5E6B6 /* AppRuntimeCore */; };
 		31CD3D3BD9FC2BFA71D6BB98 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105368E32A88BF84619E5DB3 /* ConsentSheet.swift */; };
 		3CE49F80AC592F46ED4B3F52 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 31698E9057BD9213B2A967D3 /* PrivacyInfo.xcprivacy */; };
 		47386D0DEC319C869B39F764 /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE3534A6A5B326A78EFE92B /* support.html */; };
 		4E832CDEBA9B5992D469D440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15949C333111347004E2FAE /* Assets.xcassets */; };
-		73FBC8FCECD8686A06EBACD0 /* CellarCueUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060831389AFC6016C6F3B3AE /* CellarCueUISmokeTests.swift */; };
+		73FBC8FCECD8686A06EBACD0 /* RacknoteUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060831389AFC6016C6F3B3AE /* RacknoteUISmokeTests.swift */; };
 		78DA8478331221C1DCF32C2C /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C265467E021754A5F31C3 /* RootNavigationView.swift */; };
 		7A1F0059765089AFF364741A /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479F27F246960238E1326DD /* DeepSeekClient.swift */; };
 		7E35DC0717CB50CC66654183 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = D6051DF8123A55C777809351 /* privacy.html */; };
 		8F7250D929380CAA01D7F2D7 /* LabelResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2090EAA8C6672EEF700FECC /* LabelResultView.swift */; };
-		A076977C4BF1AE5165743E7B /* CellarCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 86416309CD6565556A13E18F /* CellarCueDomain */; };
+		A076977C4BF1AE5165743E7B /* RacknoteDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 86416309CD6565556A13E18F /* RacknoteDomain */; };
 		AF1E5FB61483E5AE88DD49F0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761C47362541DBC89EE1109 /* AppModel.swift */; };
 		B3D06B66A8A7EAD8D16B26A1 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 65D0F63C9EC1483354C72260 /* AppRuntimeCore */; };
 		BC34DA6DB1CBA62F5EF52B09 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD2962DCB4EF2E376F4E36 /* SettingsPrivacyView.swift */; };
@@ -31,10 +31,10 @@
 		C3F05A626B12F17058D64AF0 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AE51ED1619D7450F507A7 /* SpeechRecognitionService.swift */; };
 		C6347FC45808F8E320041DCB /* CellarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6AEBD4C3F9E9A5F5A4050C /* CellarHomeView.swift */; };
 		D107B8DD4DBD14729851F12D /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE16FDA5B2491CB9DA89D1 /* VoiceNoteRecorder.swift */; };
-		D4EC4424EAC6F85F4C67CC5C /* CellarCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D410C1296FD1432C8BD9FCC /* CellarCueDomainTests.swift */; };
+		D4EC4424EAC6F85F4C67CC5C /* RacknoteDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D410C1296FD1432C8BD9FCC /* RacknoteDomainTests.swift */; };
 		D66CB2DBBC7005D9949C2E26 /* WindowChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB38A8AD3E3549526C03473 /* WindowChatView.swift */; };
 		DDA0FF657FA29C34CB80CB27 /* SignatureComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9580A0403B7002353527F44 /* SignatureComponents.swift */; };
-		E3177815FD7DAB45CD7EC367 /* CellarCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887EFB9FA02EEE0EF52D /* CellarCueApp.swift */; };
+		E3177815FD7DAB45CD7EC367 /* RacknoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66887EFB9FA02EEE0EF52D /* RacknoteApp.swift */; };
 		E69114AE27B1EFC4412DDA94 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 4D75300867E42506AD90B294 /* terms.html */; };
 		F61C20D345937D5FA7C90AD6 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100AD5A58F2F154C76623DC /* LocalLegalWebView.swift */; };
 		F883DE3756D4EBF98CA7DEC6 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45044BA61D41C1D0B8522AC9 /* CameraPicker.swift */; };
@@ -46,28 +46,28 @@
 			containerPortal = 80AE2C00F9BBF96042520604 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5296CFDB525228C4077AD0D;
-			remoteInfo = CellarCue;
+			remoteInfo = Racknote;
 		};
 		D5B4F7C8D20D879E328E19E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80AE2C00F9BBF96042520604 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E5296CFDB525228C4077AD0D;
-			remoteInfo = CellarCue;
+			remoteInfo = Racknote;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0479F27F246960238E1326DD /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
-		060831389AFC6016C6F3B3AE /* CellarCueUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarCueUISmokeTests.swift; sourceTree = "<group>"; };
-		0D410C1296FD1432C8BD9FCC /* CellarCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarCueDomainTests.swift; sourceTree = "<group>"; };
+		060831389AFC6016C6F3B3AE /* RacknoteUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacknoteUISmokeTests.swift; sourceTree = "<group>"; };
+		0D410C1296FD1432C8BD9FCC /* RacknoteDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacknoteDomainTests.swift; sourceTree = "<group>"; };
 		105368E32A88BF84619E5DB3 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
-		165F18B8D9209EE2BE80791F /* CellarCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CellarCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		165F18B8D9209EE2BE80791F /* Racknote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Racknote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16680445EEAEC8DEFBEBB8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F95AA0E591F2BC56DF4EFAA /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
 		31698E9057BD9213B2A967D3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		45044BA61D41C1D0B8522AC9 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
-		46C9048C8D5467AD35D779E6 /* CellarCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarCueTheme.swift; sourceTree = "<group>"; };
+		46C9048C8D5467AD35D779E6 /* RacknoteTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacknoteTheme.swift; sourceTree = "<group>"; };
 		4761C47362541DBC89EE1109 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		4A6AEBD4C3F9E9A5F5A4050C /* CellarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarHomeView.swift; sourceTree = "<group>"; };
 		4D75300867E42506AD90B294 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
@@ -75,16 +75,16 @@
 		5C958A28E1DEE6288912AF2C /* PullBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullBriefView.swift; sourceTree = "<group>"; };
 		5FB38A8AD3E3549526C03473 /* WindowChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowChatView.swift; sourceTree = "<group>"; };
 		6100AD5A58F2F154C76623DC /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
-		7E66887EFB9FA02EEE0EF52D /* CellarCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarCueApp.swift; sourceTree = "<group>"; };
+		7E66887EFB9FA02EEE0EF52D /* RacknoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacknoteApp.swift; sourceTree = "<group>"; };
 		84DD2962DCB4EF2E376F4E36 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
 		91AE16FDA5B2491CB9DA89D1 /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
-		B35258E758AD2B54B1D96144 /* CellarCueUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CellarCueUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35258E758AD2B54B1D96144 /* RacknoteUISmokeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RacknoteUISmokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0C265467E021754A5F31C3 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
 		BEB58190B63E1C0D947A3A4C /* RackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RackCardView.swift; sourceTree = "<group>"; };
 		CEF5F9B7E7D4BAC34E56B030 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
 		D6051DF8123A55C777809351 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		D9580A0403B7002353527F44 /* SignatureComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureComponents.swift; sourceTree = "<group>"; };
-		DD74853661AFF67F277304E0 /* CellarCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CellarCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD74853661AFF67F277304E0 /* RacknoteDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RacknoteDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15949C333111347004E2FAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC010E8896660680AB080A7B /* VoiceNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteView.swift; sourceTree = "<group>"; };
 		ECE521CD1462F31CBB9D1BCB /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2F79C32295E0B93257F55C /* CellarCueDomain in Frameworks */,
+				0A2F79C32295E0B93257F55C /* RacknoteDomain in Frameworks */,
 				B3D06B66A8A7EAD8D16B26A1 /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FE066FFBC3F935D1AC4DD24 /* AppRuntimeCore in Frameworks */,
-				A076977C4BF1AE5165743E7B /* CellarCueDomain in Frameworks */,
+				A076977C4BF1AE5165743E7B /* RacknoteDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +118,9 @@
 		1E02B27236767FFF5404D46F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				165F18B8D9209EE2BE80791F /* CellarCue.app */,
-				DD74853661AFF67F277304E0 /* CellarCueDomainTests.xctest */,
-				B35258E758AD2B54B1D96144 /* CellarCueUISmokeTests.xctest */,
+				165F18B8D9209EE2BE80791F /* Racknote.app */,
+				DD74853661AFF67F277304E0 /* RacknoteDomainTests.xctest */,
+				B35258E758AD2B54B1D96144 /* RacknoteUISmokeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 		A3DA1A9F55B2A16AA1DAB763 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0D410C1296FD1432C8BD9FCC /* CellarCueDomainTests.swift */,
+				0D410C1296FD1432C8BD9FCC /* RacknoteDomainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				45044BA61D41C1D0B8522AC9 /* CameraPicker.swift */,
-				46C9048C8D5467AD35D779E6 /* CellarCueTheme.swift */,
+				46C9048C8D5467AD35D779E6 /* RacknoteTheme.swift */,
 				4A6AEBD4C3F9E9A5F5A4050C /* CellarHomeView.swift */,
 				F2090EAA8C6672EEF700FECC /* LabelResultView.swift */,
 				5C958A28E1DEE6288912AF2C /* PullBriefView.swift */,
@@ -207,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				E15949C333111347004E2FAE /* Assets.xcassets */,
-				7E66887EFB9FA02EEE0EF52D /* CellarCueApp.swift */,
+				7E66887EFB9FA02EEE0EF52D /* RacknoteApp.swift */,
 				16680445EEAEC8DEFBEBB8B7 /* Info.plist */,
 				31698E9057BD9213B2A967D3 /* PrivacyInfo.xcprivacy */,
 				264B89384D514C4A6A363DC0 /* AI */,
@@ -221,7 +221,7 @@
 		DEAD47141BEF5F2768724F6A /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				060831389AFC6016C6F3B3AE /* CellarCueUISmokeTests.swift */,
+				060831389AFC6016C6F3B3AE /* RacknoteUISmokeTests.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -237,9 +237,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EC4B6F58B8C9BBD48B2F68E /* CellarCueDomainTests */ = {
+		0EC4B6F58B8C9BBD48B2F68E /* RacknoteDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9CEF494F9D5E7F1153B738B /* Build configuration list for PBXNativeTarget "CellarCueDomainTests" */;
+			buildConfigurationList = B9CEF494F9D5E7F1153B738B /* Build configuration list for PBXNativeTarget "RacknoteDomainTests" */;
 			buildPhases = (
 				C24DC97604AF4CBA34B5C103 /* Sources */,
 				C0113B260B94BE9DCE9F4AD8 /* Frameworks */,
@@ -249,18 +249,18 @@
 			dependencies = (
 				00951F587213BB9A87630407 /* PBXTargetDependency */,
 			);
-			name = CellarCueDomainTests;
+			name = RacknoteDomainTests;
 			packageProductDependencies = (
-				D69FA914CEFB0ECA805B5E92 /* CellarCueDomain */,
+				D69FA914CEFB0ECA805B5E92 /* RacknoteDomain */,
 				65D0F63C9EC1483354C72260 /* AppRuntimeCore */,
 			);
-			productName = CellarCueDomainTests;
-			productReference = DD74853661AFF67F277304E0 /* CellarCueDomainTests.xctest */;
+			productName = RacknoteDomainTests;
+			productReference = DD74853661AFF67F277304E0 /* RacknoteDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E5296CFDB525228C4077AD0D /* CellarCue */ = {
+		E5296CFDB525228C4077AD0D /* Racknote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 918E4EBEF231ABD580C92E79 /* Build configuration list for PBXNativeTarget "CellarCue" */;
+			buildConfigurationList = 918E4EBEF231ABD580C92E79 /* Build configuration list for PBXNativeTarget "Racknote" */;
 			buildPhases = (
 				7A6D65957EC6075D7E6756E7 /* Sources */,
 				92310F2A17B1623186C4523E /* Resources */,
@@ -270,18 +270,18 @@
 			);
 			dependencies = (
 			);
-			name = CellarCue;
+			name = Racknote;
 			packageProductDependencies = (
 				CB5BC6C77D1E99AB84C5E6B6 /* AppRuntimeCore */,
-				86416309CD6565556A13E18F /* CellarCueDomain */,
+				86416309CD6565556A13E18F /* RacknoteDomain */,
 			);
-			productName = CellarCue;
-			productReference = 165F18B8D9209EE2BE80791F /* CellarCue.app */;
+			productName = Racknote;
+			productReference = 165F18B8D9209EE2BE80791F /* Racknote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EAAE710986E0B1DC1C15560A /* CellarCueUISmokeTests */ = {
+		EAAE710986E0B1DC1C15560A /* RacknoteUISmokeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9D10B1F66B2DE2DDC2C3935 /* Build configuration list for PBXNativeTarget "CellarCueUISmokeTests" */;
+			buildConfigurationList = F9D10B1F66B2DE2DDC2C3935 /* Build configuration list for PBXNativeTarget "RacknoteUISmokeTests" */;
 			buildPhases = (
 				571DFD66DCDEC56C69755BAE /* Sources */,
 			);
@@ -290,11 +290,11 @@
 			dependencies = (
 				11FF51234C40D0E5F0E658F9 /* PBXTargetDependency */,
 			);
-			name = CellarCueUISmokeTests;
+			name = RacknoteUISmokeTests;
 			packageProductDependencies = (
 			);
-			productName = CellarCueUISmokeTests;
-			productReference = B35258E758AD2B54B1D96144 /* CellarCueUISmokeTests.xctest */;
+			productName = RacknoteUISmokeTests;
+			productReference = B35258E758AD2B54B1D96144 /* RacknoteUISmokeTests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -311,7 +311,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B7D11A244BF38EB345D1F2EC /* Build configuration list for PBXProject "CellarCue" */;
+			buildConfigurationList = B7D11A244BF38EB345D1F2EC /* Build configuration list for PBXProject "Racknote" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -329,9 +329,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5296CFDB525228C4077AD0D /* CellarCue */,
-				0EC4B6F58B8C9BBD48B2F68E /* CellarCueDomainTests */,
-				EAAE710986E0B1DC1C15560A /* CellarCueUISmokeTests */,
+				E5296CFDB525228C4077AD0D /* Racknote */,
+				0EC4B6F58B8C9BBD48B2F68E /* RacknoteDomainTests */,
+				EAAE710986E0B1DC1C15560A /* RacknoteUISmokeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73FBC8FCECD8686A06EBACD0 /* CellarCueUISmokeTests.swift in Sources */,
+				73FBC8FCECD8686A06EBACD0 /* RacknoteUISmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +367,8 @@
 			files = (
 				AF1E5FB61483E5AE88DD49F0 /* AppModel.swift in Sources */,
 				F883DE3756D4EBF98CA7DEC6 /* CameraPicker.swift in Sources */,
-				E3177815FD7DAB45CD7EC367 /* CellarCueApp.swift in Sources */,
-				298EF9694D8731227DA665DF /* CellarCueTheme.swift in Sources */,
+				E3177815FD7DAB45CD7EC367 /* RacknoteApp.swift in Sources */,
+				298EF9694D8731227DA665DF /* RacknoteTheme.swift in Sources */,
 				C6347FC45808F8E320041DCB /* CellarHomeView.swift in Sources */,
 				31CD3D3BD9FC2BFA71D6BB98 /* ConsentSheet.swift in Sources */,
 				7A1F0059765089AFF364741A /* DeepSeekClient.swift in Sources */,
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4EC4424EAC6F85F4C67CC5C /* CellarCueDomainTests.swift in Sources */,
+				D4EC4424EAC6F85F4C67CC5C /* RacknoteDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,12 +400,12 @@
 /* Begin PBXTargetDependency section */
 		00951F587213BB9A87630407 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E5296CFDB525228C4077AD0D /* CellarCue */;
+			target = E5296CFDB525228C4077AD0D /* Racknote */;
 			targetProxy = BCE3D92D9690D83FAA591DD8 /* PBXContainerItemProxy */;
 		};
 		11FF51234C40D0E5F0E658F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E5296CFDB525228C4077AD0D /* CellarCue */;
+			target = E5296CFDB525228C4077AD0D /* Racknote */;
 			targetProxy = D5B4F7C8D20D879E328E19E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,14 +414,14 @@
 		0CC0EA2306C6162518AEE267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CellarCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture wine label, cork, and bin-tag stills so CellarCue can place bottles in your cellar grid";
+				INFOPLIST_KEY_CFBundleDisplayName = Racknote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture wine label, cork, and bin-tag stills so Racknote can place bottles in your cellar grid";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free bin notes while carrying bottles";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import cellar photos to complete label OCR and bin placement in CellarCue";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import cellar photos to complete label OCR and bin placement in Racknote";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken drinking-window and pairing questions into coach chat text";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -429,8 +429,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue;
-				PRODUCT_NAME = CellarCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Racknote;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -439,14 +439,14 @@
 		223838B612583F9399788622 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CellarCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture wine label, cork, and bin-tag stills so CellarCue can place bottles in your cellar grid";
+				INFOPLIST_KEY_CFBundleDisplayName = Racknote;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture wine label, cork, and bin-tag stills so Racknote can place bottles in your cellar grid";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record hands-free bin notes while carrying bottles";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import cellar photos to complete label OCR and bin placement in CellarCue";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import cellar photos to complete label OCR and bin placement in Racknote";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken drinking-window and pairing questions into coach chat text";
 				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,8 +454,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue;
-				PRODUCT_NAME = CellarCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Racknote;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -536,10 +536,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.racknote.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CellarCue.app/CellarCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Racknote.app/Racknote";
 			};
 			name = Release;
 		};
@@ -553,10 +553,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.racknote.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CellarCue;
+				TEST_TARGET_NAME = Racknote;
 			};
 			name = Debug;
 		};
@@ -629,10 +629,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.racknote.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CellarCue;
+				TEST_TARGET_NAME = Racknote;
 			};
 			name = Release;
 		};
@@ -645,17 +645,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.cellarcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.racknote.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CellarCue.app/CellarCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Racknote.app/Racknote";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		918E4EBEF231ABD580C92E79 /* Build configuration list for PBXNativeTarget "CellarCue" */ = {
+		918E4EBEF231ABD580C92E79 /* Build configuration list for PBXNativeTarget "Racknote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC0EA2306C6162518AEE267 /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B7D11A244BF38EB345D1F2EC /* Build configuration list for PBXProject "CellarCue" */ = {
+		B7D11A244BF38EB345D1F2EC /* Build configuration list for PBXProject "Racknote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				449F543ACFE09032E2E50470 /* Debug */,
@@ -673,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B9CEF494F9D5E7F1153B738B /* Build configuration list for PBXNativeTarget "CellarCueDomainTests" */ = {
+		B9CEF494F9D5E7F1153B738B /* Build configuration list for PBXNativeTarget "RacknoteDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E721F932C34A5F91A290364F /* Debug */,
@@ -682,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F9D10B1F66B2DE2DDC2C3935 /* Build configuration list for PBXNativeTarget "CellarCueUISmokeTests" */ = {
+		F9D10B1F66B2DE2DDC2C3935 /* Build configuration list for PBXNativeTarget "RacknoteUISmokeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6092B7740D854FA16061049E /* Debug */,
@@ -709,17 +709,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		86416309CD6565556A13E18F /* CellarCueDomain */ = {
+		86416309CD6565556A13E18F /* RacknoteDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CellarCueDomain;
+			productName = RacknoteDomain;
 		};
 		CB5BC6C77D1E99AB84C5E6B6 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		D69FA914CEFB0ECA805B5E92 /* CellarCueDomain */ = {
+		D69FA914CEFB0ECA805B5E92 /* RacknoteDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CellarCueDomain;
+			productName = RacknoteDomain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,33 +1,33 @@
 import XCTest
-import CellarCueDomain
+import RacknoteDomain
 import AppRuntimeCore
 
-final class CellarCueDomainTests: XCTestCase {
+final class RacknoteDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(CellarReviewControls.confirm, ["Save Bottle", "Keep", "Use"])
         XCTAssertEqual(CellarReviewControls.reject, ["Dismiss", "Reject"])
         XCTAssertEqual(CellarReviewControls.edit, ["Edit bin", "Edit window"])
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "cellarcue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "racknote.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 5)
     }
 
     func testComplianceDisclaimers() {
         XCTAssertEqual(
-            CellarCueCompliance.sommelierCertificationDisclaimer,
+            RacknoteCompliance.sommelierCertificationDisclaimer,
             "非侍酒认证 / not a sommelier certification"
         )
         XCTAssertEqual(
-            CellarCueCompliance.investmentAdviceDisclaimer,
+            RacknoteCompliance.investmentAdviceDisclaimer,
             "非投资建议 / not investment advice"
         )
-        XCTAssertFalse(CellarCueCompliance.sommelierCertification)
-        XCTAssertFalse(CellarCueCompliance.investmentAdvice)
-        XCTAssertTrue(CellarCueCompliance.ageGate21PlusOnAlcoholAdvice)
+        XCTAssertFalse(RacknoteCompliance.sommelierCertification)
+        XCTAssertFalse(RacknoteCompliance.investmentAdvice)
+        XCTAssertTrue(RacknoteCompliance.ageGate21PlusOnAlcoholAdvice)
         let ensured = CellarComplianceCopy.ensureDisclaimers("Barolo window open")
-        XCTAssertTrue(ensured.contains(CellarCueCompliance.sommelierCertificationDisclaimer))
-        XCTAssertTrue(ensured.contains(CellarCueCompliance.investmentAdviceDisclaimer))
-        XCTAssertTrue(ensured.contains(CellarCueCompliance.ageGateLabel))
+        XCTAssertTrue(ensured.contains(RacknoteCompliance.sommelierCertificationDisclaimer))
+        XCTAssertTrue(ensured.contains(RacknoteCompliance.investmentAdviceDisclaimer))
+        XCTAssertTrue(ensured.contains(RacknoteCompliance.ageGateLabel))
     }
 
     func testPrivacyUsageCopy() {
@@ -40,12 +40,12 @@ final class CellarCueDomainTests: XCTestCase {
 
     func testCellarStoreRoundTrip() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("cellarcue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("racknote-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
         let store = CellarStore(directory: dir)
-        var state = CellarCueState()
+        var state = RacknoteState()
         CellarComplianceCopy.ensureDefaultRack(state: &state)
         let bottle = BottleEntry(
             id: "b1",
@@ -121,26 +121,26 @@ final class CellarCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteAndAllergy() {
-        XCTAssertEqual(CellarCueIdentity.developmentBundleId, "com.lingguang.cellarcue")
-        XCTAssertEqual(CellarCueIdentity.productDir, "cellarcue")
-        XCTAssertEqual(CellarCueIdentity.appName, "CellarCue")
-        XCTAssertEqual(CellarCuePalette.primary, "#3730A3")
-        XCTAssertEqual(CellarCuePalette.secondary, "#EEF2FF")
-        XCTAssertEqual(CellarCuePalette.accent, "#EA580C")
-        XCTAssertEqual(CellarCueDevicePolicy.targetDevice, "iPhone 17 Pro")
-        XCTAssertEqual(CellarCueDevicePolicy.preferredUDID, "B14CC0EA")
-        XCTAssertTrue(CellarCueDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("MixCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("SporeCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("WingCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("FrameCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("RuleCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedTwinShells.contains("StopCue"))
-        XCTAssertTrue(CellarCueAllergy.bannedCompetitorNames.contains("Vinocell"))
-        XCTAssertTrue(CellarCueAllergy.requiredUI.contains("cellar row/bin grid"))
-        XCTAssertTrue(CellarCueAllergy.requiredUI.contains("large label-OCR hero card"))
-        XCTAssertTrue(CellarCueAllergy.requiredUI.contains("drinking-window aging timeline"))
-        XCTAssertEqual(CellarCuePermissions.required.count, 4)
+        XCTAssertEqual(RacknoteIdentity.developmentBundleId, "com.lingguang.racknote")
+        XCTAssertEqual(RacknoteIdentity.productDir, "racknote")
+        XCTAssertEqual(RacknoteIdentity.appName, "Racknote")
+        XCTAssertEqual(RacknotePalette.primary, "#3730A3")
+        XCTAssertEqual(RacknotePalette.secondary, "#EEF2FF")
+        XCTAssertEqual(RacknotePalette.accent, "#EA580C")
+        XCTAssertEqual(RacknoteDevicePolicy.targetDevice, "iPhone 17 Pro")
+        XCTAssertEqual(RacknoteDevicePolicy.preferredUDID, "B14CC0EA")
+        XCTAssertTrue(RacknoteDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Stirboard"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Gillnote"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Fieldmark"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Mattebox"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Tablehost"))
+        XCTAssertTrue(RacknoteAllergy.bannedTwinShells.contains("Onionreel"))
+        XCTAssertTrue(RacknoteAllergy.bannedCompetitorNames.contains("Vinocell"))
+        XCTAssertTrue(RacknoteAllergy.requiredUI.contains("cellar row/bin grid"))
+        XCTAssertTrue(RacknoteAllergy.requiredUI.contains("large label-OCR hero card"))
+        XCTAssertTrue(RacknoteAllergy.requiredUI.contains("drinking-window aging timeline"))
+        XCTAssertEqual(RacknotePermissions.required.count, 4)
     }
 
     func testPullBriefIncludesCompliance() {
@@ -162,9 +162,9 @@ final class CellarCueDomainTests: XCTestCase {
             binLabel: "R2-B1",
             windowStatus: "open"
         )
-        XCTAssertTrue(brief.scriptText.contains(CellarCueCompliance.sommelierCertificationDisclaimer))
-        XCTAssertTrue(brief.scriptText.contains(CellarCueCompliance.investmentAdviceDisclaimer))
-        XCTAssertTrue(brief.scriptText.contains(CellarCueCompliance.ageGateLabel))
+        XCTAssertTrue(brief.scriptText.contains(RacknoteCompliance.sommelierCertificationDisclaimer))
+        XCTAssertTrue(brief.scriptText.contains(RacknoteCompliance.investmentAdviceDisclaimer))
+        XCTAssertTrue(brief.scriptText.contains(RacknoteCompliance.ageGateLabel))
         XCTAssertFalse(brief.scriptText.lowercased().contains("certified tasting returns"))
         XCTAssertFalse(brief.scriptText.lowercased().contains("vinocell"))
     }
@@ -183,14 +183,14 @@ final class CellarCueDomainTests: XCTestCase {
     }
 
     func testNavigationRoutesValid() {
-        XCTAssertTrue(CellarCueNavigation.isValid(.cellarHome))
-        XCTAssertTrue(CellarCueNavigation.isValid(.labelResult))
-        XCTAssertTrue(CellarCueNavigation.isValid(.windowChat))
-        XCTAssertTrue(CellarCueNavigation.isValid(.rackCard))
-        XCTAssertTrue(CellarCueNavigation.isValid(.pullBrief))
-        XCTAssertTrue(CellarCueNavigation.isValid(.voiceNote))
-        XCTAssertTrue(CellarCueNavigation.isValid(.aiConsent))
-        XCTAssertTrue(CellarCueNavigation.isValid(.settings))
-        XCTAssertTrue(CellarCueNavigation.isValid(.legal))
+        XCTAssertTrue(RacknoteNavigation.isValid(.cellarHome))
+        XCTAssertTrue(RacknoteNavigation.isValid(.labelResult))
+        XCTAssertTrue(RacknoteNavigation.isValid(.windowChat))
+        XCTAssertTrue(RacknoteNavigation.isValid(.rackCard))
+        XCTAssertTrue(RacknoteNavigation.isValid(.pullBrief))
+        XCTAssertTrue(RacknoteNavigation.isValid(.voiceNote))
+        XCTAssertTrue(RacknoteNavigation.isValid(.aiConsent))
+        XCTAssertTrue(RacknoteNavigation.isValid(.settings))
+        XCTAssertTrue(RacknoteNavigation.isValid(.legal))
     }
 }
