@@ -1,5 +1,5 @@
 import SwiftUI
-import YarnCueDomain
+import LoopwellDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(YarnCueTheme.ink)
+                        .foregroundStyle(LoopwellTheme.ink)
 
                     Text(
-                        "YarnCue sends the fields below to \(AIConsentContract.provider) for next-row weave coaching. "
+                        "Loopwell sends the fields below to \(AIConsentContract.provider) for next-row weave coaching. "
                             + "This is a knitting/crochet aid, not a medical device. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(YarnCueTheme.ink)
+                            .foregroundStyle(LoopwellTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.circle")
                                 .font(.subheadline)
-                                .foregroundStyle(YarnCueTheme.fuchsia)
+                                .foregroundStyle(LoopwellTheme.fuchsia)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(YarnCueTheme.muted)
+                        .foregroundStyle(LoopwellTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(YarnCueTheme.fuchsia)
+                        .tint(LoopwellTheme.fuchsia)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .yarnCueScreen()
+            .loopwellScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

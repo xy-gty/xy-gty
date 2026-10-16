@@ -1,6 +1,6 @@
 import AppRuntimeCore
 import SwiftUI
-import YarnCueDomain
+import LoopwellDomain
 
 struct ProjectsHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,48 +8,48 @@ struct ProjectsHomeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                YarnBallSwatchStrip(hexes: YarnCueTheme.defaultSwatches, title: "Yarn ball color strip")
+                YarnBallSwatchStrip(hexes: LoopwellTheme.defaultSwatches, title: "Yarn ball color strip")
 
-                Text("YarnCue")
+                Text("Loopwell")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(YarnCueTheme.fuchsia)
+                    .foregroundStyle(LoopwellTheme.fuchsia)
 
-                Text("Snap yarn & WIP photos, Keep stitch cues, then coach the next row with hands-free TTS.")
+                Text("Snap yarn & WIP photos, Keep stitch lines, then coach the next row with hands-free TTS.")
                     .font(.body)
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(YarnCueTheme.ink)
+                        .foregroundStyle(LoopwellTheme.ink)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RoundedRectangle(cornerRadius: 12).fill(YarnCueTheme.lime.opacity(0.25)))
+                        .background(RoundedRectangle(cornerRadius: 12).fill(LoopwellTheme.lime.opacity(0.25)))
                 }
 
                 if appModel.projects.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("No projects yet")
                             .font(.title3.bold())
-                            .foregroundStyle(YarnCueTheme.ink)
+                            .foregroundStyle(LoopwellTheme.ink)
                         Text("Start with a project shelf, then capture your first WIP.")
-                            .foregroundStyle(YarnCueTheme.muted)
+                            .foregroundStyle(LoopwellTheme.muted)
                         Button("New project") {
                             appModel.push(.newProject)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(YarnCueTheme.fuchsia)
+                        .tint(LoopwellTheme.fuchsia)
                         .accessibilityIdentifier("cta-new-project")
                     }
                     .padding(20)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(RoundedRectangle(cornerRadius: 18).fill(YarnCueTheme.card))
+                    .background(RoundedRectangle(cornerRadius: 18).fill(LoopwellTheme.card))
                 } else {
                     Button("New project") {
                         appModel.push(.newProject)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(YarnCueTheme.fuchsia)
+                    .tint(LoopwellTheme.fuchsia)
 
                     ForEach(appModel.projects, id: \.id) { project in
                         Button {
@@ -58,15 +58,15 @@ struct ProjectsHomeView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(project.title)
                                     .font(.headline)
-                                    .foregroundStyle(YarnCueTheme.ink)
+                                    .foregroundStyle(LoopwellTheme.ink)
                                 Text("Current row \(project.currentRow)")
                                     .font(.subheadline)
-                                    .foregroundStyle(YarnCueTheme.muted)
+                                    .foregroundStyle(LoopwellTheme.muted)
                                 YarnBallSwatchStrip(hexes: project.yarnSwatchHexes, title: "Swatches")
                             }
                             .padding(16)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(RoundedRectangle(cornerRadius: 16).fill(YarnCueTheme.card))
+                            .background(RoundedRectangle(cornerRadius: 16).fill(LoopwellTheme.card))
                         }
                         .buttonStyle(.plain)
                     }
@@ -74,7 +74,7 @@ struct ProjectsHomeView: View {
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Projects")
     }
 }
@@ -88,7 +88,7 @@ struct NewProjectView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Project title")
                     .font(.headline)
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
                 TextField("Title", text: $appModel.newProjectTitle)
                     .textFieldStyle(.roundedBorder)
                     .focused($titleFocused)
@@ -99,10 +99,10 @@ struct NewProjectView: View {
                 appModel.createProject()
             }
             .buttonStyle(.borderedProminent)
-            .tint(YarnCueTheme.fuchsia)
+            .tint(LoopwellTheme.fuchsia)
             .padding()
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("New project")
     }
 }

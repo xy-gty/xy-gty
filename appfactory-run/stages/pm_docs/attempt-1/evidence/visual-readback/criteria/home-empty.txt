@@ -1,1 +1,0 @@
-Projects empty home shows YarnCue branding, an empty or placeholder yarn-ball swatch strip, a New project CTA, and is not a bare chat shell or all-black UI.

@@ -1,6 +1,6 @@
 import SwiftUI
 import UIKit
-import YarnCueDomain
+import LoopwellDomain
 
 struct StitchReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -10,7 +10,7 @@ struct StitchReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Stitch / row review")
                     .font(.title2.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 if let draft = appModel.pendingDraft,
                    let shot = appModel.wipShots.first(where: { $0.id == draft.wipShotId }),
@@ -41,7 +41,7 @@ struct StitchReviewView: View {
                 HStack(spacing: 12) {
                     Button(StitchReviewBar.confirm) { appModel.keepStitchDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(YarnCueTheme.lime)
+                        .tint(LoopwellTheme.lime)
                     Button(StitchReviewBar.reject) { appModel.discardStitchDraft() }
                         .buttonStyle(.bordered)
                     Button(StitchReviewBar.edit) {
@@ -52,7 +52,7 @@ struct StitchReviewView: View {
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Review")
     }
 }

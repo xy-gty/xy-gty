@@ -7,10 +7,10 @@ struct HandsFreeTTSView: View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Hands-free coach")
                 .font(.title.bold())
-                .foregroundStyle(YarnCueTheme.ink)
+                .foregroundStyle(LoopwellTheme.ink)
 
             Text("Large Play / Next keep both hands on the needles.")
-                .foregroundStyle(YarnCueTheme.muted)
+                .foregroundStyle(LoopwellTheme.muted)
 
             NextRowStepBand(
                 cues: appModel.stepLabels,
@@ -22,7 +22,7 @@ struct HandsFreeTTSView: View {
 
             if appModel.tts.isSpeaking {
                 Label("Speaking…", systemImage: "waveform")
-                    .foregroundStyle(YarnCueTheme.fuchsia)
+                    .foregroundStyle(LoopwellTheme.fuchsia)
             }
 
             Button {
@@ -33,7 +33,7 @@ struct HandsFreeTTSView: View {
                     .frame(maxWidth: .infinity, minHeight: 64)
             }
             .buttonStyle(.borderedProminent)
-            .tint(YarnCueTheme.fuchsia)
+            .tint(LoopwellTheme.fuchsia)
             .accessibilityIdentifier("cta-tts-play")
 
             HStack(spacing: 12) {
@@ -42,14 +42,14 @@ struct HandsFreeTTSView: View {
                     .frame(maxWidth: .infinity, minHeight: 52)
                 Button("Next step") { appModel.nextHandsFreeStep() }
                     .buttonStyle(.borderedProminent)
-                    .tint(YarnCueTheme.lime)
+                    .tint(LoopwellTheme.lime)
                     .frame(maxWidth: .infinity, minHeight: 52)
             }
 
             Spacer()
         }
         .padding(20)
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Hands-free")
     }
 }

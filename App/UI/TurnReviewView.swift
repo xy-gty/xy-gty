@@ -1,5 +1,5 @@
 import SwiftUI
-import YarnCueDomain
+import LoopwellDomain
 
 struct TurnReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,27 +9,27 @@ struct TurnReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Review coach turn")
                     .font(.title2.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 if let turn = appModel.pendingTurn {
                     Text(turn.text)
-                        .foregroundStyle(YarnCueTheme.ink)
+                        .foregroundStyle(LoopwellTheme.ink)
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RoundedRectangle(cornerRadius: 16).fill(YarnCueTheme.card))
+                        .background(RoundedRectangle(cornerRadius: 16).fill(LoopwellTheme.card))
                 }
 
                 HStack(spacing: 12) {
                     Button(TurnReview.confirm) { appModel.keepPendingTurn() }
                         .buttonStyle(.borderedProminent)
-                        .tint(YarnCueTheme.lime)
+                        .tint(LoopwellTheme.lime)
                     Button(TurnReview.reject) { appModel.discardPendingTurn() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Turn review")
     }
 }

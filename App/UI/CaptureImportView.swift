@@ -10,10 +10,10 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Capture or import")
                     .font(.title.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 Text("Camera for yarn / WIP photos; Photo library for prior shots into the coach flow.")
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
 
                 if appModel.importBusy {
                     ProgressView("Importing…")
@@ -26,7 +26,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(YarnCueTheme.fuchsia)
+                .tint(LoopwellTheme.fuchsia)
                 .accessibilityIdentifier("cta-camera")
 
                 PhotosPicker(
@@ -38,7 +38,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
-                .tint(YarnCueTheme.fuchsia)
+                .tint(LoopwellTheme.fuchsia)
                 .accessibilityIdentifier("cta-photo-library")
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     Task { await appModel.importPhotoFromLibrary() }
@@ -47,12 +47,12 @@ struct CaptureImportView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(YarnCueTheme.ink)
+                        .foregroundStyle(LoopwellTheme.ink)
                 }
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Capture")
         .sheet(isPresented: $showCamera) {
             CameraPicker { image in

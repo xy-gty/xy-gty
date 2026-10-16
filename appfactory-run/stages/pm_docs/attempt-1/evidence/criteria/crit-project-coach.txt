@@ -1,1 +1,0 @@
-Project coach shows a yarn-ball swatch color strip and a horizontal next-row step band as distinct UI, not a rope carousel or sky-arc card stack.

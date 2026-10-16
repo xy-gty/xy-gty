@@ -1,1 +1,0 @@
-Hands-free TTS screen shows large Play/Pause/Next controls and the current row/step text for hands-busy coaching.

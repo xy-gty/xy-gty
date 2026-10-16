@@ -8,10 +8,10 @@ struct AnnotatedWIPView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Annotated WIP")
                     .font(.title2.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 Text("Tap the photo to place a stitch mark, then Keep marks.")
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
 
                 if let shot = appModel.projectShots.first,
                    let image = appModel.loadShotImage(shot) {
@@ -25,7 +25,7 @@ struct AnnotatedWIPView: View {
                                 Text(mark.label)
                                     .font(.caption2.bold())
                                     .padding(6)
-                                    .background(Capsule().fill(YarnCueTheme.lime))
+                                    .background(Capsule().fill(LoopwellTheme.lime))
                                     .position(
                                         x: mark.xNorm * geo.size.width,
                                         y: mark.yNorm * max(geo.size.width * image.size.height / max(image.size.width, 1), 1)
@@ -42,7 +42,7 @@ struct AnnotatedWIPView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                 } else {
                     Text("Capture a WIP photo first.")
-                        .foregroundStyle(YarnCueTheme.muted)
+                        .foregroundStyle(LoopwellTheme.muted)
                 }
 
                 TextField("Mark label", text: $appModel.overlayDraftLabel)
@@ -51,14 +51,14 @@ struct AnnotatedWIPView: View {
                 HStack {
                     Button("Keep marks") { appModel.keepOverlayMark() }
                         .buttonStyle(.borderedProminent)
-                        .tint(YarnCueTheme.lime)
+                        .tint(LoopwellTheme.lime)
                     Button("Discard") { appModel.discardOverlayDraft() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Annotate")
     }
 }

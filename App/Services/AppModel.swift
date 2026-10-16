@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import YarnCueDomain
+import LoopwellDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -17,7 +17,7 @@ final class AppModel: ObservableObject {
     @Published var notes: [PatternNote] = []
 
     @Published var activeProjectId: String?
-    @Published var path: [YarnCueRoute] = []
+    @Published var path: [LoopwellRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -42,7 +42,7 @@ final class AppModel: ObservableObject {
     @Published var ttsStepIndex = 0
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<YarnCueRoute>
+    let navigation: TypedNavigationStore<LoopwellRoute>
     let tts = HandsFreeTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -56,7 +56,7 @@ final class AppModel: ObservableObject {
     private let noteStore: AtomicCodableStore<[PatternNote]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = YarnCueStores.apiKeyStore()
+    private let keychain = LoopwellStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
     private var pendingOverlayPoint: CGPoint?
@@ -106,26 +106,26 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("YarnCue", isDirectory: true)
+            .appendingPathComponent("Loopwell", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        projectsStore = YarnCueStores.projectStore(directory: root)
-        wipStore = YarnCueStores.wipShotStore(directory: root)
-        draftStore = YarnCueStores.stitchRecognitionDraftStore(directory: root)
-        cueStore = YarnCueStores.stitchCueStore(directory: root)
-        overlayStore = YarnCueStores.annotatedOverlayStore(directory: root)
-        turnStore = YarnCueStores.coachTurnStore(directory: root)
-        messageStore = YarnCueStores.coachMessageStore(directory: root)
-        noteStore = YarnCueStores.patternNoteStore(directory: root)
+        projectsStore = LoopwellStores.projectStore(directory: root)
+        wipStore = LoopwellStores.wipShotStore(directory: root)
+        draftStore = LoopwellStores.stitchRecognitionDraftStore(directory: root)
+        cueStore = LoopwellStores.stitchCueStore(directory: root)
+        overlayStore = LoopwellStores.annotatedOverlayStore(directory: root)
+        turnStore = LoopwellStores.coachTurnStore(directory: root)
+        messageStore = LoopwellStores.coachMessageStore(directory: root)
+        noteStore = LoopwellStores.patternNoteStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = YarnCueStores.storeURL(directory: root, name: YarnCueStores.aiConsentLocal)
+        let consentURL = LoopwellStores.storeURL(directory: root, name: LoopwellStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -140,7 +140,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await YarnCueStores.consentKeychainStore().save(mirrorData)
+                    try? await LoopwellStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -206,7 +206,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: YarnCueRoute) {
+    func push(_ route: LoopwellRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -223,7 +223,7 @@ final class AppModel: ObservableObject {
         let project = Project(
             id: UUID().uuidString,
             title: title.isEmpty ? "WIP project" : title,
-            yarnSwatchHexes: YarnCueTheme.defaultSwatches,
+            yarnSwatchHexes: LoopwellTheme.defaultSwatches,
             currentRow: 1,
             updatedAt: Date()
         )
@@ -354,7 +354,7 @@ final class AppModel: ObservableObject {
         currentStepIndex = max(0, projectCues.count - 1)
         pendingDraft = nil
         pendingShotId = nil
-        statusMessage = "Stitch cue kept."
+        statusMessage = "Stitch line kept."
         path = [.projectCoach]
         persistNavigation()
     }
@@ -476,7 +476,7 @@ final class AppModel: ObservableObject {
             let priorFeedback = projectTurns.filter { $0.role == "user" }.map(\.text)
             let reply = try await client.coachNextRow(
                 wipPhotoDescriptor: projectShots.first.map { "\($0.source) \($0.capturedAt)" } ?? "no photo",
-                recognizedStitchSummary: cueSummary.isEmpty ? "no cues yet" : cueSummary,
+                recognizedStitchSummary: cueSummary.isEmpty ? "no lines yet" : cueSummary,
                 currentRow: project.currentRow,
                 nextRowIntent: coachQuestion.isEmpty ? "What is the next row stitch?" : coachQuestion,
                 patternNoteText: projectNotes.first?.text ?? "",
@@ -513,7 +513,7 @@ final class AppModel: ObservableObject {
         if let cue, let project {
             text = "Local weave tip (AI key gap): after \(cue.stitchName) on row \(cue.rowNumber) in \(project.title), work the next row matching yarn tension; keep stitch count even. Configure DeepSeek for live coach."
         } else {
-            text = "Local weave tip: capture a WIP, Keep a stitch cue, then ask for the next row. Configure DeepSeek key for live coach."
+            text = "Local weave tip: capture a WIP, Keep a stitch line, then ask for the next row. Configure DeepSeek key for live coach."
         }
         return CoachTurn(
             id: UUID().uuidString,
@@ -635,7 +635,7 @@ final class AppModel: ObservableObject {
     func playHandsFree() {
         let cues = projectCues
         guard !cues.isEmpty else {
-            statusMessage = "No stitch cues to speak yet."
+            statusMessage = "No stitch lines to speak yet."
             return
         }
         let idx = min(max(0, ttsStepIndex), cues.count - 1)

@@ -1,5 +1,5 @@
 import SwiftUI
-import YarnCueDomain
+import LoopwellDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -43,9 +43,9 @@ struct SettingsPrivacyView: View {
                 ))
                 Text("Disclosure \(AIConsentContract.disclosureVersion) · provider \(AIConsentContract.provider)")
                     .font(.caption)
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
                 if let reason = appModel.aiUnavailableReason {
-                    Text(reason).font(.caption).foregroundStyle(YarnCueTheme.muted)
+                    Text(reason).font(.caption).foregroundStyle(LoopwellTheme.muted)
                 }
             }
 
@@ -71,7 +71,7 @@ struct SettingsPrivacyView: View {
             .font(.caption)
         }
         .scrollContentBackground(.hidden)
-        .background(YarnCueTheme.softWash.ignoresSafeArea())
+        .background(LoopwellTheme.softWash.ignoresSafeArea())
         .navigationTitle("Settings")
         .sheet(item: $legalPage) { page in
             NavigationStack {

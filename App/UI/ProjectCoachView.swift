@@ -9,7 +9,7 @@ struct ProjectCoachView: View {
                 if let project = appModel.activeProject {
                     Text(project.title)
                         .font(.largeTitle.bold())
-                        .foregroundStyle(YarnCueTheme.fuchsia)
+                        .foregroundStyle(LoopwellTheme.fuchsia)
 
                     YarnBallSwatchStrip(hexes: project.yarnSwatchHexes)
 
@@ -23,7 +23,7 @@ struct ProjectCoachView: View {
                     if let status = appModel.statusMessage {
                         Text(status)
                             .font(.footnote)
-                            .foregroundStyle(YarnCueTheme.ink)
+                            .foregroundStyle(LoopwellTheme.ink)
                     }
 
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
@@ -45,12 +45,12 @@ struct ProjectCoachView: View {
                     }
                 } else {
                     Text("Open or create a project from Projects.")
-                        .foregroundStyle(YarnCueTheme.muted)
+                        .foregroundStyle(LoopwellTheme.muted)
                 }
             }
             .padding(20)
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Coach")
     }
 
@@ -61,6 +61,6 @@ struct ProjectCoachView: View {
                 .frame(maxWidth: .infinity, minHeight: 52)
         }
         .buttonStyle(.borderedProminent)
-        .tint(YarnCueTheme.fuchsia)
+        .tint(LoopwellTheme.fuchsia)
     }
 }

@@ -1,5 +1,5 @@
 import Foundation
-import YarnCueDomain
+import LoopwellDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -70,7 +70,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are YarnCue's AI weave coach for knitting and crochet. Reply with JSON only:
+        You are Loopwell's AI weave coach for knitting and crochet. Reply with JSON only:
         {"reply":"concise next-row stitch coaching for the maker's WIP"}
         Reuse prior_feedback and recognized_stitch_summary. Hands stay on needles — keep steps actionable.
         """

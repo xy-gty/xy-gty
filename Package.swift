@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "YarnCueDomain",
+    name: "LoopwellDomain",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "YarnCueDomain", targets: ["YarnCueDomain"]),
+        .library(name: "LoopwellDomain", targets: ["LoopwellDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "YarnCueDomain",
+            name: "LoopwellDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/YarnCueDomain"
+            path: "Sources/LoopwellDomain"
         ),
     ]
 )

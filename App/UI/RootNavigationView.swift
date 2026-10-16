@@ -1,4 +1,4 @@
-import YarnCueDomain
+import LoopwellDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 ProjectsHomeView()
-                    .navigationDestination(for: YarnCueRoute.self) { route in
+                    .navigationDestination(for: LoopwellRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "circle.hexagongrid.fill",
                         description: Text("Create a project from the Projects tab.")
                     )
-                    .yarnCueScreen()
+                    .loopwellScreen()
                 }
             }
             .tabItem { Label("Coach", systemImage: "bubble.left.and.bubble.right.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: YarnCueRoute) -> some View {
+    private func destination(for route: LoopwellRoute) -> some View {
         switch route {
         case .projectsHome:
             ProjectsHomeView()

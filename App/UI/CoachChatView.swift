@@ -1,6 +1,6 @@
 import AppRuntimeCore
 import SwiftUI
-import YarnCueDomain
+import LoopwellDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -11,14 +11,14 @@ struct CoachChatView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Weave coach")
                     .font(.title2.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(YarnCueTheme.muted)
+                        .foregroundStyle(LoopwellTheme.muted)
                         .padding(10)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(YarnCueTheme.card))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(LoopwellTheme.card))
                 }
 
                 ForEach(appModel.projectMessages.filter { $0.status == "confirmed" }, id: \.id) { message in
@@ -50,12 +50,12 @@ struct CoachChatView: View {
                     appModel.requestCoach()
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(YarnCueTheme.fuchsia)
+                .tint(LoopwellTheme.fuchsia)
                 .disabled(appModel.coachBusy)
             }
             .padding()
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Chat")
     }
 
@@ -63,12 +63,12 @@ struct CoachChatView: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(message.role.capitalized)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(YarnCueTheme.fuchsia)
+                .foregroundStyle(LoopwellTheme.fuchsia)
             Text(message.text)
-                .foregroundStyle(YarnCueTheme.ink)
+                .foregroundStyle(LoopwellTheme.ink)
         }
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 14).fill(YarnCueTheme.card))
+        .background(RoundedRectangle(cornerRadius: 14).fill(LoopwellTheme.card))
     }
 }

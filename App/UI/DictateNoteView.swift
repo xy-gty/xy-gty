@@ -10,10 +10,10 @@ struct DictateNoteView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Dictate pattern notes")
                     .font(.title2.bold())
-                    .foregroundStyle(YarnCueTheme.ink)
+                    .foregroundStyle(LoopwellTheme.ink)
 
                 Text("Microphone + speech recognition fill the note; you can still type if permission is denied.")
-                    .foregroundStyle(YarnCueTheme.muted)
+                    .foregroundStyle(LoopwellTheme.muted)
 
                 TextField("Pattern note / row intent", text: $appModel.dictateBuffer, axis: .vertical)
                     .textFieldStyle(.roundedBorder)
@@ -23,7 +23,7 @@ struct DictateNoteView: View {
                 if !appModel.speechTranscript.isEmpty {
                     Text("Last transcript: \(appModel.speechTranscript)")
                         .font(.footnote)
-                        .foregroundStyle(YarnCueTheme.muted)
+                        .foregroundStyle(LoopwellTheme.muted)
                 }
 
                 if let status = appModel.statusMessage {
@@ -40,7 +40,7 @@ struct DictateNoteView: View {
                         .frame(maxWidth: .infinity, minHeight: 48)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(YarnCueTheme.fuchsia)
+                .tint(LoopwellTheme.fuchsia)
                 .disabled(appModel.speechBusy)
 
                 Button("Save note") { appModel.saveDictatedNote() }
@@ -49,7 +49,7 @@ struct DictateNoteView: View {
             }
             .padding()
         }
-        .yarnCueScreen()
+        .loopwellScreen()
         .navigationTitle("Dictate")
     }
 }

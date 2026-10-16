@@ -1,8 +1,0 @@
-{
-  "schema": "appfactory.product_freeze.v1",
-  "product_repo": "/Users/a2026/work/factory-prod-1/runs/kf-20261014T130415Z-f3114989/product",
-  "commit": "4770b6a8073711e044ddfce4575e49c535768ce1",
-  "branch": "yarncue/kf-20261014T130415Z",
-  "status_short": "",
-  "read_only": true
-}
