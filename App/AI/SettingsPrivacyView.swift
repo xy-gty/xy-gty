@@ -1,5 +1,5 @@
 import SwiftUI
-import FormCueDomain
+import WorkrestDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -43,9 +43,9 @@ struct SettingsPrivacyView: View {
                 ))
                 Text("Disclosure \(AIConsentContract.disclosureVersion) · provider \(AIConsentContract.provider)")
                     .font(.caption)
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
                 if let reason = appModel.aiUnavailableReason {
-                    Text(reason).font(.caption).foregroundStyle(FormCueTheme.muted)
+                    Text(reason).font(.caption).foregroundStyle(WorkrestTheme.muted)
                 }
             }
 
@@ -72,7 +72,7 @@ struct SettingsPrivacyView: View {
             .font(.caption)
         }
         .scrollContentBackground(.hidden)
-        .background(FormCueTheme.softWash.ignoresSafeArea())
+        .background(WorkrestTheme.softWash.ignoresSafeArea())
         .navigationTitle("Settings")
         .sheet(item: $legalPage) { page in
             NavigationStack {

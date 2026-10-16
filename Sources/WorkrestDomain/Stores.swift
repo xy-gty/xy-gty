@@ -2,10 +2,10 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum FormCueStores {
+public enum WorkrestStores {
     public static let sessions = "sessions"
     public static let formShots = "form_shots"
-    public static let formCueDrafts = "form_cue_drafts"
+    public static let workrestDrafts = "form_cue_drafts"
     public static let formCorrections = "form_corrections"
     public static let intervalBlocks = "interval_blocks"
     public static let annotatedOverlays = "annotated_overlays"
@@ -14,7 +14,7 @@ public enum FormCueStores {
     public static let voiceIntents = "voice_intents"
     public static let aiConsentLocal = "ai_consent_local"
 
-    public static let keychainService = "com.lingguang.formcue"
+    public static let keychainService = "com.lingguang.workrest"
     public static let keychainAPIKeyAccount = "deepseek_api_key"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -30,8 +30,8 @@ public enum FormCueStores {
         AtomicCodableStore(url: storeURL(directory: directory, name: formShots))
     }
 
-    public static func formCueDraftStore(directory: URL) -> AtomicCodableStore<[FormCueDraft]> {
-        AtomicCodableStore(url: storeURL(directory: directory, name: formCueDrafts))
+    public static func workrestDraftStore(directory: URL) -> AtomicCodableStore<[WorkrestDraft]> {
+        AtomicCodableStore(url: storeURL(directory: directory, name: workrestDrafts))
     }
 
     public static func formCorrectionStore(directory: URL) -> AtomicCodableStore<[FormCorrection]> {

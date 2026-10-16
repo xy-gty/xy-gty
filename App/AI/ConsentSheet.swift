@@ -1,5 +1,5 @@
 import SwiftUI
-import FormCueDomain
+import WorkrestDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(FormCueTheme.ink)
+                        .foregroundStyle(WorkrestTheme.ink)
 
                     Text(
-                        "FormCue sends the fields below to \(AIConsentContract.provider) for HIIT form coaching. "
+                        "Workrest sends the fields below to \(AIConsentContract.provider) for HIIT form coaching. "
                             + "This is a training aid, not a medical device. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(FormCueTheme.ink)
+                            .foregroundStyle(WorkrestTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.circle")
                                 .font(.subheadline)
-                                .foregroundStyle(FormCueTheme.primary)
+                                .foregroundStyle(WorkrestTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(FormCueTheme.muted)
+                        .foregroundStyle(WorkrestTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .formCueScreen()
+            .workrestScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

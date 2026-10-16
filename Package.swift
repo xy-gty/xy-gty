@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "FormCue",
+    name: "Workrest",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "FormCueDomain", targets: ["FormCueDomain"]),
+        .library(name: "WorkrestDomain", targets: ["WorkrestDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "FormCueDomain",
+            name: "WorkrestDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/FormCueDomain"
+            path: "Sources/WorkrestDomain"
         ),
     ]
 )

@@ -8,10 +8,10 @@ struct DictateIntentView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Dictate intent")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 Text("Say “skip rest” or your next coach intent while both hands train.")
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
 
                 TextField("Transcript / typed intent", text: $appModel.dictateBuffer, axis: .vertical)
                     .textFieldStyle(.roundedBorder)
@@ -24,28 +24,28 @@ struct DictateIntentView: View {
                         Label(appModel.speechBusy ? "Listening…" : "Record", systemImage: "mic.fill")
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(FormCueTheme.primary)
+                    .tint(WorkrestTheme.primary)
                     .disabled(appModel.speechBusy)
                     .accessibilityIdentifier("cta-record")
 
                     Button("Apply intent") { appModel.applyDictateIntent() }
                         .buttonStyle(.bordered)
-                        .tint(FormCueTheme.accent)
+                        .tint(WorkrestTheme.accent)
                 }
 
                 if !appModel.speechTranscript.isEmpty {
                     Text("Last heard: \(appModel.speechTranscript)")
                         .font(.footnote)
-                        .foregroundStyle(FormCueTheme.muted)
+                        .foregroundStyle(WorkrestTheme.muted)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FormCueTheme.ink)
+                    Text(status).font(.footnote).foregroundStyle(WorkrestTheme.ink)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Dictate")
     }
 }

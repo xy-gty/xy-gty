@@ -1,6 +1,6 @@
 import AppRuntimeCore
 import SwiftUI
-import FormCueDomain
+import WorkrestDomain
 
 struct SessionsHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -14,46 +14,46 @@ struct SessionsHomeView: View {
                     onSelect: { _ in }
                 )
 
-                Text("FormCue")
+                Text("Workrest")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(FormCueTheme.primary)
+                    .foregroundStyle(WorkrestTheme.primary)
 
-                Text("Snap mid-set form, Keep posture cues, run intervals on a chip rail with a large rest ring, and annotate the polaroid strip.")
+                Text("Snap mid-set form, Keep posture notes, run intervals on a chip rail with a large rest ring, and annotate the polaroid strip.")
                     .font(.body)
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(FormCueTheme.ink)
+                        .foregroundStyle(WorkrestTheme.ink)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RoundedRectangle(cornerRadius: 12).fill(FormCueTheme.accent.opacity(0.25)))
+                        .background(RoundedRectangle(cornerRadius: 12).fill(WorkrestTheme.accent.opacity(0.25)))
                 }
 
                 if appModel.sessions.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("No sessions yet")
                             .font(.title3.bold())
-                            .foregroundStyle(FormCueTheme.ink)
+                            .foregroundStyle(WorkrestTheme.ink)
                         Text("Start a session shelf, then capture your first mid-set pose.")
-                            .foregroundStyle(FormCueTheme.muted)
+                            .foregroundStyle(WorkrestTheme.muted)
                         Button("New session") {
                             appModel.push(.newSession)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                         .accessibilityIdentifier("cta-new-session")
                     }
                     .padding(20)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(RoundedRectangle(cornerRadius: 18).fill(FormCueTheme.card))
+                    .background(RoundedRectangle(cornerRadius: 18).fill(WorkrestTheme.card))
                 } else {
                     Button("New session") {
                         appModel.push(.newSession)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(FormCueTheme.primary)
+                    .tint(WorkrestTheme.primary)
 
                     ForEach(appModel.sessions, id: \.id) { session in
                         Button {
@@ -62,14 +62,14 @@ struct SessionsHomeView: View {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(session.title)
                                     .font(.headline)
-                                    .foregroundStyle(FormCueTheme.ink)
+                                    .foregroundStyle(WorkrestTheme.ink)
                                 Text("Block · \(session.currentBlockLabel)")
                                     .font(.subheadline)
-                                    .foregroundStyle(FormCueTheme.muted)
+                                    .foregroundStyle(WorkrestTheme.muted)
                             }
                             .padding(16)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(RoundedRectangle(cornerRadius: 16).fill(FormCueTheme.card))
+                            .background(RoundedRectangle(cornerRadius: 16).fill(WorkrestTheme.card))
                         }
                         .buttonStyle(.plain)
                     }
@@ -77,7 +77,7 @@ struct SessionsHomeView: View {
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Sessions")
     }
 }
@@ -91,7 +91,7 @@ struct NewSessionView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Session title")
                     .font(.headline)
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
                 TextField("Title", text: $appModel.newSessionTitle)
                     .textFieldStyle(.roundedBorder)
                     .focused($titleFocused)
@@ -102,10 +102,10 @@ struct NewSessionView: View {
                 appModel.createSession()
             }
             .buttonStyle(.borderedProminent)
-            .tint(FormCueTheme.primary)
+            .tint(WorkrestTheme.primary)
             .padding()
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("New session")
     }
 }

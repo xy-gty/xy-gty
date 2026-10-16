@@ -44,7 +44,7 @@ public struct FormShot: Codable, Hashable, Sendable {
     }
 }
 
-public struct FormCueDraft: Codable, Hashable, Sendable {
+public struct WorkrestDraft: Codable, Hashable, Sendable {
     public var id: String
     public var sessionId: String
     public var formShotId: String

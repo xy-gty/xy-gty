@@ -1,4 +1,4 @@
-import FormCueDomain
+import WorkrestDomain
 import SwiftUI
 
 struct FormReviewView: View {
@@ -10,12 +10,12 @@ struct FormReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Form review")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 if let draft = appModel.pendingDraft {
                     Text("Draft for shot \(draft.formShotId.prefix(8))…")
                         .font(.caption)
-                        .foregroundStyle(FormCueTheme.muted)
+                        .foregroundStyle(WorkrestTheme.muted)
                 }
 
                 Text("Posture summary")
@@ -34,22 +34,22 @@ struct FormReviewView: View {
                 HStack(spacing: 12) {
                     Button(FormReviewBar.confirm) { appModel.keepFormDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                         .accessibilityIdentifier("cta-keep-form")
                     Button(FormReviewBar.reject) { appModel.discardFormDraft() }
                         .buttonStyle(.bordered)
                     Button(FormReviewBar.edit) { editingFocused = true }
                         .buttonStyle(.bordered)
-                        .tint(FormCueTheme.accent)
+                        .tint(WorkrestTheme.accent)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FormCueTheme.ink)
+                    Text(status).font(.footnote).foregroundStyle(WorkrestTheme.ink)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Review")
     }
 }

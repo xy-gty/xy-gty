@@ -3,13 +3,13 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import FormCueDomain
+import WorkrestDomain
 
 @MainActor
 final class AppModel: ObservableObject {
     @Published var sessions: [Session] = []
     @Published var formShots: [FormShot] = []
-    @Published var drafts: [FormCueDraft] = []
+    @Published var drafts: [WorkrestDraft] = []
     @Published var corrections: [FormCorrection] = []
     @Published var blocks: [IntervalBlock] = []
     @Published var overlays: [AnnotatedOverlay] = []
@@ -18,7 +18,7 @@ final class AppModel: ObservableObject {
     @Published var intents: [VoiceIntent] = []
 
     @Published var activeSessionId: String?
-    @Published var path: [FormCueRoute] = []
+    @Published var path: [WorkrestRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -26,7 +26,7 @@ final class AppModel: ObservableObject {
     @Published var importBusy = false
     @Published var speechBusy = false
     @Published var selectedPhotoItem: PhotosPickerItem?
-    @Published var pendingDraft: FormCueDraft?
+    @Published var pendingDraft: WorkrestDraft?
     @Published var pendingTurn: CoachTurn?
     @Published var editingPosture = ""
     @Published var editingFocus = ""
@@ -46,13 +46,13 @@ final class AppModel: ObservableObject {
     @Published var selectedPolaroidIndex: Int?
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<FormCueRoute>
+    let navigation: TypedNavigationStore<WorkrestRoute>
     let tts = HandsFreeTTSPlayer()
     let speechService = SpeechRecognitionService()
 
     private let sessionStore: AtomicCodableStore<[Session]>
     private let shotStore: AtomicCodableStore<[FormShot]>
-    private let draftStore: AtomicCodableStore<[FormCueDraft]>
+    private let draftStore: AtomicCodableStore<[WorkrestDraft]>
     private let correctionStore: AtomicCodableStore<[FormCorrection]>
     private let blockStore: AtomicCodableStore<[IntervalBlock]>
     private let overlayStore: AtomicCodableStore<[AnnotatedOverlay]>
@@ -61,7 +61,7 @@ final class AppModel: ObservableObject {
     private let intentStore: AtomicCodableStore<[VoiceIntent]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = FormCueStores.apiKeyStore()
+    private let keychain = WorkrestStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
     private var pendingOverlayPoint: CGPoint?
@@ -120,27 +120,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("FormCue", isDirectory: true)
+            .appendingPathComponent("Workrest", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        sessionStore = FormCueStores.sessionStore(directory: root)
-        shotStore = FormCueStores.formShotStore(directory: root)
-        draftStore = FormCueStores.formCueDraftStore(directory: root)
-        correctionStore = FormCueStores.formCorrectionStore(directory: root)
-        blockStore = FormCueStores.intervalBlockStore(directory: root)
-        overlayStore = FormCueStores.annotatedOverlayStore(directory: root)
-        turnStore = FormCueStores.coachTurnStore(directory: root)
-        messageStore = FormCueStores.coachMessageStore(directory: root)
-        intentStore = FormCueStores.voiceIntentStore(directory: root)
+        sessionStore = WorkrestStores.sessionStore(directory: root)
+        shotStore = WorkrestStores.formShotStore(directory: root)
+        draftStore = WorkrestStores.workrestDraftStore(directory: root)
+        correctionStore = WorkrestStores.formCorrectionStore(directory: root)
+        blockStore = WorkrestStores.intervalBlockStore(directory: root)
+        overlayStore = WorkrestStores.annotatedOverlayStore(directory: root)
+        turnStore = WorkrestStores.coachTurnStore(directory: root)
+        messageStore = WorkrestStores.coachMessageStore(directory: root)
+        intentStore = WorkrestStores.voiceIntentStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = FormCueStores.storeURL(directory: root, name: FormCueStores.aiConsentLocal)
+        let consentURL = WorkrestStores.storeURL(directory: root, name: WorkrestStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -155,7 +155,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await FormCueStores.consentKeychainStore().save(mirrorData)
+                    try? await WorkrestStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -218,7 +218,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: FormCueRoute) {
+    func push(_ route: WorkrestRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -331,7 +331,7 @@ final class AppModel: ObservableObject {
         pendingShotId = id
 
         let recognized = FormRecognizer.recognize(image: image, session: session)
-        let draft = FormCueDraft(
+        let draft = WorkrestDraft(
             id: UUID().uuidString,
             sessionId: session.id,
             formShotId: id,
@@ -696,7 +696,7 @@ final class AppModel: ObservableObject {
         guard size.width > 0, size.height > 0 else { return }
         pendingOverlayPoint = CGPoint(x: point.x / size.width, y: point.y / size.height)
         if overlayDraftLabel.isEmpty {
-            overlayDraftLabel = sessionCorrections.first?.cueText ?? "Align cue"
+            overlayDraftLabel = sessionCorrections.first?.cueText ?? "Align form"
         }
     }
 

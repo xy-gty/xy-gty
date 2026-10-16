@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum FormCueRoute: String, Codable, CaseIterable, Sendable {
+public enum WorkrestRoute: String, Codable, CaseIterable, Sendable {
     case sessionsHome = "SessionsHome"
     case newSession = "NewSession"
     case captureImport = "CaptureImport"

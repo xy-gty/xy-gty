@@ -8,7 +8,7 @@ struct AnnotatedFormView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Annotated form")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 PolaroidFormStrip(
                     titles: appModel.polaroidTitles,
@@ -27,7 +27,7 @@ struct AnnotatedFormView: View {
                                 .frame(maxWidth: .infinity)
                             ForEach(appModel.sessionOverlays.filter { $0.formShotId == shot.id }, id: \.id) { mark in
                                 Circle()
-                                    .fill(FormCueTheme.accent)
+                                    .fill(WorkrestTheme.accent)
                                     .frame(width: 14, height: 14)
                                     .position(
                                         x: mark.xNorm * geo.size.width,
@@ -36,7 +36,7 @@ struct AnnotatedFormView: View {
                                     .overlay(
                                         Text(mark.label)
                                             .font(.caption2.bold())
-                                            .foregroundStyle(FormCueTheme.ink)
+                                            .foregroundStyle(WorkrestTheme.ink)
                                             .offset(y: 16)
                                     )
                             }
@@ -50,7 +50,7 @@ struct AnnotatedFormView: View {
                         )
                     }
                     .frame(height: 320)
-                    .background(FormCueTheme.card)
+                    .background(WorkrestTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 } else {
                     ContentUnavailableView(
@@ -60,7 +60,7 @@ struct AnnotatedFormView: View {
                     )
                     Button("Capture form") { appModel.push(.captureImport) }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                 }
 
                 TextField("Mark label", text: $appModel.overlayDraftLabel)
@@ -69,19 +69,19 @@ struct AnnotatedFormView: View {
                 HStack {
                     Button("Keep marks") { appModel.keepOverlayMark() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                         .accessibilityIdentifier("cta-keep-marks")
                     Button("Discard") { appModel.discardOverlayDraft() }
                         .buttonStyle(.bordered)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FormCueTheme.ink)
+                    Text(status).font(.footnote).foregroundStyle(WorkrestTheme.ink)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Polaroid marks")
     }
 }

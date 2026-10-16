@@ -8,7 +8,7 @@ struct HandsFreeTTSView: View {
             VStack(alignment: .leading, spacing: 18) {
                 Text("Hands-free callouts")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 IntervalChipRail(
                     blocks: appModel.chipLabels,
@@ -28,27 +28,27 @@ struct HandsFreeTTSView: View {
                 HStack(spacing: 12) {
                     Button("Play") { appModel.playHandsFree() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                         .accessibilityIdentifier("cta-tts-play")
                     Button("Pause") { appModel.pauseHandsFree() }
                         .buttonStyle(.bordered)
                     Button("Next") { appModel.nextHandsFreeStep() }
                         .buttonStyle(.bordered)
-                        .tint(FormCueTheme.accent)
+                        .tint(WorkrestTheme.accent)
                 }
 
                 if appModel.tts.isSpeaking {
                     Label("Speaking…", systemImage: "speaker.wave.2.fill")
-                        .foregroundStyle(FormCueTheme.accent)
+                        .foregroundStyle(WorkrestTheme.accent)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FormCueTheme.ink)
+                    Text(status).font(.footnote).foregroundStyle(WorkrestTheme.ink)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Hands-free")
     }
 }

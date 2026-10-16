@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "826581D888D7CFCE544C94C0"
-               BuildableName = "FormCue.app"
-               BlueprintName = "FormCue"
-               ReferencedContainer = "container:FormCue.xcodeproj">
+               BuildableName = "Workrest.app"
+               BlueprintName = "Workrest"
+               ReferencedContainer = "container:Workrest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6940D538C197BE4A40EC5097"
-               BuildableName = "FormCueDomainTests.xctest"
-               BlueprintName = "FormCueDomainTests"
-               ReferencedContainer = "container:FormCue.xcodeproj">
+               BuildableName = "WorkrestDomainTests.xctest"
+               BlueprintName = "WorkrestDomainTests"
+               ReferencedContainer = "container:Workrest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "826581D888D7CFCE544C94C0"
-            BuildableName = "FormCue.app"
-            BlueprintName = "FormCue"
-            ReferencedContainer = "container:FormCue.xcodeproj">
+            BuildableName = "Workrest.app"
+            BlueprintName = "Workrest"
+            ReferencedContainer = "container:Workrest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -59,9 +59,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6940D538C197BE4A40EC5097"
-               BuildableName = "FormCueDomainTests.xctest"
-               BlueprintName = "FormCueDomainTests"
-               ReferencedContainer = "container:FormCue.xcodeproj">
+               BuildableName = "WorkrestDomainTests.xctest"
+               BlueprintName = "WorkrestDomainTests"
+               ReferencedContainer = "container:Workrest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "826581D888D7CFCE544C94C0"
-            BuildableName = "FormCue.app"
-            BlueprintName = "FormCue"
-            ReferencedContainer = "container:FormCue.xcodeproj">
+            BuildableName = "Workrest.app"
+            BlueprintName = "Workrest"
+            ReferencedContainer = "container:Workrest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "826581D888D7CFCE544C94C0"
-            BuildableName = "FormCue.app"
-            BlueprintName = "FormCue"
-            ReferencedContainer = "container:FormCue.xcodeproj">
+            BuildableName = "Workrest.app"
+            BlueprintName = "Workrest"
+            ReferencedContainer = "container:Workrest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

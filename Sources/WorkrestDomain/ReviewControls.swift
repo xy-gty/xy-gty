@@ -15,7 +15,7 @@ public enum TurnReview {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "formcue.consent.v1"
+    public static let disclosureVersion = "workrest.consent.v1"
     public static let fields = [
         "form_photo_descriptor",
         "posture_summary",
@@ -41,7 +41,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum FormCueInterfaceNames {
+public enum WorkrestInterfaceNames {
     public static let formReviewBar = "FormReviewBar"
     public static let turnReview = "TurnReview"
     public static let aiConsentGate = "AIConsentGate"
@@ -70,14 +70,14 @@ public enum PrivacyUsageCopy {
         "e.g. skip rest / spoken interval intent → coach + TTS"
 }
 
-public enum FormCueIdentity {
-    public static let appName = "FormCue"
-    public static let developmentBundleId = "com.lingguang.formcue"
-    public static let productDir = "formcue"
+public enum WorkrestIdentity {
+    public static let appName = "Workrest"
+    public static let developmentBundleId = "com.lingguang.workrest"
+    public static let productDir = "workrest"
     public static let uiLanguage = "en-US"
 }
 
-public enum FormCuePalette {
+public enum WorkrestPalette {
     public static let primary = "#DC2626"
     public static let secondary = "#FEF2F2"
     public static let accent = "#22D3EE"

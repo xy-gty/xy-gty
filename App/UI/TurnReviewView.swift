@@ -1,4 +1,4 @@
-import FormCueDomain
+import WorkrestDomain
 import SwiftUI
 
 struct TurnReviewView: View {
@@ -9,17 +9,17 @@ struct TurnReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Turn review")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 if let turn = appModel.pendingTurn {
                     Text(turn.text)
-                        .foregroundStyle(FormCueTheme.ink)
+                        .foregroundStyle(WorkrestTheme.ink)
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RoundedRectangle(cornerRadius: 14).fill(FormCueTheme.card))
+                        .background(RoundedRectangle(cornerRadius: 14).fill(WorkrestTheme.card))
                 } else {
                     Text("No pending coach draft.")
-                        .foregroundStyle(FormCueTheme.muted)
+                        .foregroundStyle(WorkrestTheme.muted)
                 }
 
                 TextField("Optional feedback for next call", text: $appModel.userFeedback, axis: .vertical)
@@ -29,7 +29,7 @@ struct TurnReviewView: View {
                 HStack(spacing: 12) {
                     Button(TurnReview.confirm) { appModel.keepPendingTurn() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FormCueTheme.primary)
+                        .tint(WorkrestTheme.primary)
                         .accessibilityIdentifier("cta-keep-turn")
                     Button(TurnReview.reject) { appModel.discardPendingTurn() }
                         .buttonStyle(.bordered)
@@ -37,7 +37,7 @@ struct TurnReviewView: View {
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Review turn")
     }
 }

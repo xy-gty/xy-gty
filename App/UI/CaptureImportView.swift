@@ -10,10 +10,10 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Capture or import a mid-set pose")
                     .font(.title2.bold())
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
 
                 Text("Camera for live form · Photos for a reference demo pose.")
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
 
                 Button {
                     showCamera = true
@@ -22,7 +22,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity, minHeight: 52)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(FormCueTheme.primary)
+                .tint(WorkrestTheme.primary)
                 .accessibilityIdentifier("cta-camera")
 
                 PhotosPicker(
@@ -34,7 +34,7 @@ struct CaptureImportView: View {
                         .frame(maxWidth: .infinity, minHeight: 52)
                 }
                 .buttonStyle(.bordered)
-                .tint(FormCueTheme.accent)
+                .tint(WorkrestTheme.accent)
                 .accessibilityIdentifier("cta-photo-library")
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     Task { await appModel.importPhotoFromLibrary() }
@@ -45,12 +45,12 @@ struct CaptureImportView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(FormCueTheme.ink)
+                    Text(status).font(.footnote).foregroundStyle(WorkrestTheme.ink)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Capture")
         .sheet(isPresented: $showCamera) {
             CameraPicker { image in

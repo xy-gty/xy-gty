@@ -1,4 +1,4 @@
-import FormCueDomain
+import WorkrestDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 SessionsHomeView()
-                    .navigationDestination(for: FormCueRoute.self) { route in
+                    .navigationDestination(for: WorkrestRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "figure.run",
                         description: Text("Create a session from the Sessions tab.")
                     )
-                    .formCueScreen()
+                    .workrestScreen()
                 }
             }
             .tabItem { Label("Coach", systemImage: "bubble.left.and.bubble.right.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: FormCueRoute) -> some View {
+    private func destination(for route: WorkrestRoute) -> some View {
         switch route {
         case .sessionsHome:
             SessionsHomeView()

@@ -1,8 +1,8 @@
 import XCTest
-import FormCueDomain
+import WorkrestDomain
 import AppRuntimeCore
 
-final class FormCueDomainTests: XCTestCase {
+final class WorkrestDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(FormReviewBar.confirm, "Keep")
         XCTAssertEqual(FormReviewBar.reject, "Discard")
@@ -10,7 +10,7 @@ final class FormCueDomainTests: XCTestCase {
         XCTAssertEqual(TurnReview.confirm, "Keep")
         XCTAssertEqual(TurnReview.reject, "Discard")
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "formcue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "workrest.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 7)
     }
 
@@ -20,7 +20,7 @@ final class FormCueDomainTests: XCTestCase {
             "CoachChat", "TurnReview", "AnnotatedForm", "HandsFreeTTS", "DictateIntent",
             "Settings", "LegalPages", "ConsentSheet",
         ]
-        XCTAssertEqual(FormCueRoute.allCases.map(\.rawValue), expected)
+        XCTAssertEqual(WorkrestRoute.allCases.map(\.rawValue), expected)
     }
 
     func testPrivacyUsageCopy() {
@@ -32,7 +32,7 @@ final class FormCueDomainTests: XCTestCase {
 
     func testFormCorrectionKeepPersists() throws {
         let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("formcue-cue-\(UUID().uuidString).json")
+            .appendingPathComponent("workrest-cue-\(UUID().uuidString).json")
         defer { try? FileManager.default.removeItem(at: url) }
         let store = AtomicCodableStore<[FormCorrection]>(url: url)
         let cue = FormCorrection(
@@ -52,7 +52,7 @@ final class FormCueDomainTests: XCTestCase {
 
     func testDiscardDoesNotWriteConfirmedCorrection() throws {
         let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("formcue-discard-\(UUID().uuidString).json")
+            .appendingPathComponent("workrest-discard-\(UUID().uuidString).json")
         defer { try? FileManager.default.removeItem(at: url) }
         let store = AtomicCodableStore<[FormCorrection]>(url: url)
         try store.save([])
@@ -105,17 +105,17 @@ final class FormCueDomainTests: XCTestCase {
         let data = try JSONEncoder().encode(session)
         let decoded = try JSONDecoder().decode(Session.self, from: data)
         XCTAssertEqual(decoded.title, "Red HIIT")
-        XCTAssertEqual(FormCueIdentity.developmentBundleId, "com.lingguang.formcue")
-        XCTAssertEqual(FormCueIdentity.productDir, "formcue")
-        XCTAssertEqual(FormCueIdentity.appName, "FormCue")
-        XCTAssertEqual(FormCuePalette.primary, "#DC2626")
-        XCTAssertEqual(FormCuePalette.secondary, "#FEF2F2")
-        XCTAssertEqual(FormCuePalette.accent, "#22D3EE")
+        XCTAssertEqual(WorkrestIdentity.developmentBundleId, "com.lingguang.workrest")
+        XCTAssertEqual(WorkrestIdentity.productDir, "workrest")
+        XCTAssertEqual(WorkrestIdentity.appName, "Workrest")
+        XCTAssertEqual(WorkrestPalette.primary, "#DC2626")
+        XCTAssertEqual(WorkrestPalette.secondary, "#FEF2F2")
+        XCTAssertEqual(WorkrestPalette.accent, "#22D3EE")
     }
 
     func testIntervalBlockPersistence() throws {
         let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("formcue-block-\(UUID().uuidString).json")
+            .appendingPathComponent("workrest-block-\(UUID().uuidString).json")
         defer { try? FileManager.default.removeItem(at: url) }
         let store = AtomicCodableStore<[IntervalBlock]>(url: url)
         let block = IntervalBlock(

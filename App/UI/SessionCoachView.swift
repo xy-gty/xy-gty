@@ -9,7 +9,7 @@ struct SessionCoachView: View {
                 if let session = appModel.activeSession {
                     Text(session.title)
                         .font(.largeTitle.bold())
-                        .foregroundStyle(FormCueTheme.primary)
+                        .foregroundStyle(WorkrestTheme.primary)
 
                     IntervalChipRail(
                         blocks: appModel.chipLabels,
@@ -36,7 +36,7 @@ struct SessionCoachView: View {
                     if let status = appModel.statusMessage {
                         Text(status)
                             .font(.footnote)
-                            .foregroundStyle(FormCueTheme.ink)
+                            .foregroundStyle(WorkrestTheme.ink)
                     }
 
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
@@ -65,12 +65,12 @@ struct SessionCoachView: View {
                     }
                 } else {
                     Text("Open or create a session from Sessions.")
-                        .foregroundStyle(FormCueTheme.muted)
+                        .foregroundStyle(WorkrestTheme.muted)
                 }
             }
             .padding(20)
         }
-        .formCueScreen()
+        .workrestScreen()
         .navigationTitle("Coach")
     }
 
@@ -81,6 +81,6 @@ struct SessionCoachView: View {
                 .frame(maxWidth: .infinity, minHeight: 52)
         }
         .buttonStyle(.borderedProminent)
-        .tint(FormCueTheme.primary)
+        .tint(WorkrestTheme.primary)
     }
 }

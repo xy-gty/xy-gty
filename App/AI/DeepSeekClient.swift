@@ -1,5 +1,5 @@
 import Foundation
-import FormCueDomain
+import WorkrestDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -70,7 +70,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are FormCue's AI HIIT form coach. Reply with JSON only:
+        You are Workrest's AI HIIT form coach. Reply with JSON only:
         {"reply":"concise posture + interval coaching for the athlete"}
         Reuse prior_feedback, posture_summary, and interval_plan_summary. Hands stay on the work — keep cues actionable.
         """

@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum FormCueTheme {
+enum WorkrestTheme {
     /// #DC2626
     static let primary = Color(red: 0xDC / 255, green: 0x26 / 255, blue: 0x26 / 255)
     /// #FEF2F2
@@ -14,14 +14,14 @@ enum FormCueTheme {
 }
 
 extension View {
-    func formCueScreen() -> some View {
+    func workrestScreen() -> some View {
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(FormCueTheme.softWash.ignoresSafeArea())
+            .background(WorkrestTheme.softWash.ignoresSafeArea())
     }
 }
 
-/// Horizontal interval chip rail — FormCue unique UI (hard).
+/// Horizontal interval chip rail — Workrest unique UI (hard).
 struct IntervalChipRail: View {
     let blocks: [String]
     let currentIndex: Int
@@ -31,7 +31,7 @@ struct IntervalChipRail: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Interval chips")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(FormCueTheme.muted)
+                .foregroundStyle(WorkrestTheme.muted)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
                     ForEach(Array(blocks.enumerated()), id: \.offset) { idx, label in
@@ -41,18 +41,18 @@ struct IntervalChipRail: View {
                             Text(label)
                                 .font(.subheadline.weight(.semibold))
                                 .lineLimit(2)
-                                .foregroundStyle(idx == currentIndex ? FormCueTheme.ink : FormCueTheme.muted)
+                                .foregroundStyle(idx == currentIndex ? WorkrestTheme.ink : WorkrestTheme.muted)
                                 .padding(.horizontal, 14)
                                 .padding(.vertical, 12)
                                 .frame(minWidth: 120, alignment: .leading)
                                 .background(
                                     Capsule(style: .continuous)
-                                        .fill(idx == currentIndex ? FormCueTheme.accent.opacity(0.35) : FormCueTheme.card)
+                                        .fill(idx == currentIndex ? WorkrestTheme.accent.opacity(0.35) : WorkrestTheme.card)
                                 )
                                 .overlay(
                                     Capsule(style: .continuous)
                                         .strokeBorder(
-                                            idx == currentIndex ? FormCueTheme.accent : FormCueTheme.primary.opacity(0.3),
+                                            idx == currentIndex ? WorkrestTheme.accent : WorkrestTheme.primary.opacity(0.3),
                                             lineWidth: idx == currentIndex ? 2 : 1
                                         )
                                 )
@@ -66,7 +66,7 @@ struct IntervalChipRail: View {
     }
 }
 
-/// Large rest ring — FormCue unique UI (hard).
+/// Large rest ring — Workrest unique UI (hard).
 struct RestRing: View {
     let phaseLabel: String
     let secondsRemaining: Int
@@ -81,11 +81,11 @@ struct RestRing: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(FormCueTheme.primary.opacity(0.15), lineWidth: 18)
+                .stroke(WorkrestTheme.primary.opacity(0.15), lineWidth: 18)
             Circle()
                 .trim(from: 0, to: progress)
                 .stroke(
-                    isRest ? FormCueTheme.accent : FormCueTheme.primary,
+                    isRest ? WorkrestTheme.accent : WorkrestTheme.primary,
                     style: StrokeStyle(lineWidth: 18, lineCap: .round)
                 )
                 .rotationEffect(.degrees(-90))
@@ -93,14 +93,14 @@ struct RestRing: View {
             VStack(spacing: 4) {
                 Text(phaseLabel)
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(FormCueTheme.muted)
+                    .foregroundStyle(WorkrestTheme.muted)
                 Text("\(secondsRemaining)")
                     .font(.system(size: 56, weight: .bold, design: .rounded))
-                    .foregroundStyle(FormCueTheme.ink)
+                    .foregroundStyle(WorkrestTheme.ink)
                     .monospacedDigit()
                 Text(isRest ? "REST" : "WORK")
                     .font(.headline.weight(.heavy))
-                    .foregroundStyle(isRest ? FormCueTheme.accent : FormCueTheme.primary)
+                    .foregroundStyle(isRest ? WorkrestTheme.accent : WorkrestTheme.primary)
             }
         }
         .frame(width: 220, height: 220)
@@ -109,7 +109,7 @@ struct RestRing: View {
     }
 }
 
-/// Polaroid-style form-correction strip — FormCue unique UI (hard).
+/// Polaroid-style form-correction strip — Workrest unique UI (hard).
 struct PolaroidFormStrip: View {
     let titles: [String]
     let selectedIndex: Int?
@@ -119,7 +119,7 @@ struct PolaroidFormStrip: View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Polaroid form strip")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(FormCueTheme.muted)
+                .foregroundStyle(WorkrestTheme.muted)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
                     ForEach(Array(titles.enumerated()), id: \.offset) { idx, title in
@@ -128,26 +128,26 @@ struct PolaroidFormStrip: View {
                         } label: {
                             VStack(spacing: 8) {
                                 RoundedRectangle(cornerRadius: 4, style: .continuous)
-                                    .fill(FormCueTheme.softWash)
+                                    .fill(WorkrestTheme.softWash)
                                     .frame(width: 96, height: 96)
                                     .overlay(
                                         Image(systemName: "figure.strengthtraining.traditional")
                                             .font(.title)
-                                            .foregroundStyle(FormCueTheme.primary)
+                                            .foregroundStyle(WorkrestTheme.primary)
                                     )
                                 Text(title)
                                     .font(.caption2.weight(.semibold))
-                                    .foregroundStyle(FormCueTheme.ink)
+                                    .foregroundStyle(WorkrestTheme.ink)
                                     .lineLimit(2)
                                     .frame(width: 100)
                             }
                             .padding(10)
-                            .background(FormCueTheme.card)
-                            .shadow(color: FormCueTheme.ink.opacity(0.12), radius: 4, y: 2)
+                            .background(WorkrestTheme.card)
+                            .shadow(color: WorkrestTheme.ink.opacity(0.12), radius: 4, y: 2)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 2)
                                     .strokeBorder(
-                                        selectedIndex == idx ? FormCueTheme.accent : FormCueTheme.primary.opacity(0.2),
+                                        selectedIndex == idx ? WorkrestTheme.accent : WorkrestTheme.primary.opacity(0.2),
                                         lineWidth: selectedIndex == idx ? 2 : 1
                                     )
                             )
