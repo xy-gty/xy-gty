@@ -1,5 +1,5 @@
 import SwiftUI
-import NightCueDomain
+import ShutterduskDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(NightCueTheme.ink)
+                        .foregroundStyle(ShutterduskTheme.ink)
 
                     Text(
-                        "NightCue sends the fields below to \(AIConsentContract.provider) for night long-exposure coaching. "
+                        "Shutterdusk sends the fields below to \(AIConsentContract.provider) for night long-exposure coaching. "
                             + "This is a coaching aid, not a calibrated light meter. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(NightCueTheme.muted)
+                    .foregroundStyle(ShutterduskTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(NightCueTheme.ink)
+                            .foregroundStyle(ShutterduskTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(NightCueTheme.primary)
+                                .foregroundStyle(ShutterduskTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(NightCueTheme.muted)
+                        .foregroundStyle(ShutterduskTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(NightCueTheme.primary)
+                        .tint(ShutterduskTheme.primary)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .nightCueScreen()
+            .shutterduskScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

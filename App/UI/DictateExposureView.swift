@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct DictateExposureView: View {
@@ -25,7 +25,7 @@ struct DictateExposureView: View {
                 if !appModel.speechTranscript.isEmpty {
                     Text("Transcript: \(appModel.speechTranscript)")
                         .font(.caption)
-                        .foregroundStyle(NightCueTheme.muted)
+                        .foregroundStyle(ShutterduskTheme.muted)
                 }
             }
 
@@ -33,17 +33,17 @@ struct DictateExposureView: View {
                 Button("Save into coach") {
                     appModel.saveDictatedExposure()
                 }
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
             }
 
             if let status = appModel.statusMessage {
                 Section {
-                    Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                    Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
                 }
             }
         }
         .scrollContentBackground(.hidden)
-        .background(NightCueTheme.secondary.ignoresSafeArea())
+        .background(ShutterduskTheme.secondary.ignoresSafeArea())
         .navigationTitle("Dictate")
     }
 }

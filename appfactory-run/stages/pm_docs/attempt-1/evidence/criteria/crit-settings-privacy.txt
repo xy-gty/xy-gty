@@ -1,2 +1,0 @@
-Does this still show Settings with Revoke AI consent and four permission rows, NightCue palette, no paywall/AppIcon splash?
-Answer with pass or fail first, then brief evidence.

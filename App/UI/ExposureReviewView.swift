@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct ExposureReviewView: View {
@@ -9,7 +9,7 @@ struct ExposureReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Exposure / noise diagnosis")
                     .font(.title2.bold())
-                    .foregroundStyle(NightCueTheme.ink)
+                    .foregroundStyle(ShutterduskTheme.ink)
 
                 if let draft = appModel.pendingDraft,
                    let frame = appModel.nightFrames.first(where: { $0.id == draft.nightFrameId }),
@@ -41,27 +41,27 @@ struct ExposureReviewView: View {
                     .buttonStyle(.bordered)
                     Button(ExposureReviewBar.confirm) { appModel.keepExposureDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(NightCueTheme.primary)
+                        .tint(ShutterduskTheme.primary)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                    Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
                 }
             }
             .padding(20)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Review")
         .navigationBarBackButtonHidden(true)
     }
 
     private func labeledField(_ title: String, text: Binding<String>) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(title).font(.caption.bold()).foregroundStyle(NightCueTheme.muted)
+            Text(title).font(.caption.bold()).foregroundStyle(ShutterduskTheme.muted)
             TextField(title, text: text, axis: .vertical)
                 .lineLimit(2 ... 4)
                 .padding(10)
-                .background(NightCueTheme.card)
+                .background(ShutterduskTheme.card)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         }
     }

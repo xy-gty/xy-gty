@@ -9,11 +9,11 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Capture or import a night test frame")
                     .font(.title2.bold())
-                    .foregroundStyle(NightCueTheme.ink)
+                    .foregroundStyle(ShutterduskTheme.ink)
 
                 Text("Camera for fresh tripod shots · Photos for history compare. Permissions are required for the real flows.")
                     .font(.subheadline)
-                    .foregroundStyle(NightCueTheme.muted)
+                    .foregroundStyle(ShutterduskTheme.muted)
 
                 Button {
                     appModel.showCamera = true
@@ -23,7 +23,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Photo library", systemImage: "photo.on.rectangle")
@@ -31,7 +31,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.bordered)
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     Task { await appModel.importPhotoFromLibrary() }
                 }
@@ -43,12 +43,12 @@ struct CaptureImportView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(NightCueTheme.primary)
+                        .foregroundStyle(ShutterduskTheme.primary)
                 }
             }
             .padding(20)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Capture")
         .sheet(isPresented: $appModel.showCamera) {
             CameraPicker { image in

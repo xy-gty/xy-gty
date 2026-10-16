@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Exposure-diagnosis overlay layers — not HiveCue heat maps / FormCue rest rings / ScoutCue solar shells.
+/// Exposure-diagnosis overlay layers — not Broodcheck heat maps / Workrest rest rings / Sunbrief solar shells.
 struct ExposureDiagnosisOverlayCanvas: View {
     struct Mark: Identifiable {
         let id: String
@@ -29,9 +29,9 @@ struct ExposureDiagnosisOverlayCanvas: View {
                                 .font(.caption2.bold())
                                 .padding(.horizontal, 6)
                                 .padding(.vertical, 2)
-                                .background(NightCueTheme.card.opacity(0.92))
+                                .background(ShutterduskTheme.card.opacity(0.92))
                                 .clipShape(Capsule())
-                                .foregroundStyle(NightCueTheme.ink)
+                                .foregroundStyle(ShutterduskTheme.ink)
                         }
                         .position(x: x, y: y)
                     }
@@ -45,15 +45,15 @@ struct ExposureDiagnosisOverlayCanvas: View {
     private func color(for mark: Mark) -> Color {
         switch mark.label.lowercased() {
         case "underexposed", "under":
-            return NightCueTheme.underexposed
+            return ShutterduskTheme.underexposed
         case "noise":
-            return NightCueTheme.primary
+            return ShutterduskTheme.primary
         case "trail":
             return Color(red: 0.45, green: 0.55, blue: 0.95)
         case "highlight", "pass", "ok":
-            return NightCueTheme.passZone
+            return ShutterduskTheme.passZone
         default:
-            return NightCueTheme.accent
+            return ShutterduskTheme.accent
         }
     }
 }

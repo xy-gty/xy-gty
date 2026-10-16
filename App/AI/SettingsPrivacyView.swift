@@ -1,5 +1,5 @@
 import SwiftUI
-import NightCueDomain
+import ShutterduskDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -11,13 +11,13 @@ struct SettingsPrivacyView: View {
                     Text("Outbound AI")
                     Spacer()
                     Text(appModel.consentGranted ? "Allowed" : "Blocked")
-                        .foregroundStyle(appModel.consentGranted ? NightCueTheme.accent : NightCueTheme.primary)
+                        .foregroundStyle(appModel.consentGranted ? ShutterduskTheme.accent : ShutterduskTheme.primary)
                         .fontWeight(.semibold)
                 }
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(NightCueTheme.muted)
+                        .foregroundStyle(ShutterduskTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -52,14 +52,14 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Identity") {
-                LabeledContent("App", value: NightCueIdentity.appName)
-                LabeledContent("Bundle", value: NightCueIdentity.developmentBundleId)
-                LabeledContent("Simulator target", value: NightCueDevicePolicy.targetDevice)
-                LabeledContent("Product dir", value: NightCueIdentity.productDir)
+                LabeledContent("App", value: ShutterduskIdentity.appName)
+                LabeledContent("Bundle", value: ShutterduskIdentity.developmentBundleId)
+                LabeledContent("Simulator target", value: ShutterduskDevicePolicy.targetDevice)
+                LabeledContent("Product dir", value: ShutterduskIdentity.productDir)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(NightCueTheme.secondary.ignoresSafeArea())
+        .background(ShutterduskTheme.secondary.ignoresSafeArea())
         .navigationTitle("Settings")
     }
 }

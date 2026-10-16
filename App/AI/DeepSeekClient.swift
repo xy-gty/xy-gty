@@ -1,5 +1,5 @@
 import Foundation
-import NightCueDomain
+import ShutterduskDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -74,7 +74,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are NightCue's AI night long-exposure coach. Reply with JSON only:
+        You are Shutterdusk's AI night long-exposure coach. Reply with JSON only:
         {"reply":"concise next-action coaching for the photographer on a tripod"}
         Reuse exposure/noise/trail findings and prior_feedback. Hands may be on the tripod — keep ISO/shutter/aperture steps actionable. Not a solar/ephemeris scout.
         """

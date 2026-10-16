@@ -1,8 +1,0 @@
-Dispatch `e7b2b568-…` finished **ready**.
-
-- Launch hash verified; sealed preparation consumed; NightCue built on `nightcue`→`product`
-- Palette `#1E3A8A` / `#EFF6FF` / `#FBBF24`; UI = night-frame rail + exposure-diagnosis overlays
-- Build + 9 domain tests passed; smoke on iPhone 17 Pro `8843C141…` (not Pro Max); candidate `17f64efd1d5a-9c657b80f631`
-- Pushed `nightcue/kf-20261015T075333Z` → `git@github.com:xy-gty/xy-gty.git` @ `17f64efd…`
-- Feishu delivery skipped; soft gaps in MAP (local_only / free_app_only / no branding assets)
-- Finish receipt: `map_sha256 b4ca048f…`

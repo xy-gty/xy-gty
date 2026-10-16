@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "NightCue",
+    name: "Shutterdusk",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "NightCueDomain", targets: ["NightCueDomain"]),
+        .library(name: "ShutterduskDomain", targets: ["ShutterduskDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "NightCueDomain",
+            name: "ShutterduskDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/NightCueDomain"
+            path: "Sources/ShutterduskDomain"
         ),
     ]
 )

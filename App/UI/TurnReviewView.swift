@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct TurnReviewView: View {
@@ -9,20 +9,20 @@ struct TurnReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Review coach turn")
                     .font(.title2.bold())
-                    .foregroundStyle(NightCueTheme.ink)
+                    .foregroundStyle(ShutterduskTheme.ink)
 
                 if let turn = appModel.pendingTurn {
                     Text(turn.text)
                         .padding(16)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(NightCueTheme.card)
+                        .background(ShutterduskTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 }
 
                 TextField("Optional feedback for next call", text: $appModel.userFeedback, axis: .vertical)
                     .lineLimit(2 ... 4)
                     .padding(10)
-                    .background(NightCueTheme.card)
+                    .background(ShutterduskTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
 
                 HStack {
@@ -30,16 +30,16 @@ struct TurnReviewView: View {
                         .buttonStyle(.bordered)
                     Button(TurnReview.confirm) { appModel.keepPendingTurn() }
                         .buttonStyle(.borderedProminent)
-                        .tint(NightCueTheme.primary)
+                        .tint(ShutterduskTheme.primary)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                    Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
                 }
             }
             .padding(20)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Turn review")
         .navigationBarBackButtonHidden(true)
     }

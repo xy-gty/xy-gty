@@ -1,2 +1,0 @@
-Does this still show exposure/noise diagnosis review with Keep/Discard controls, diagnosis chips on a night frame, night-frame rail, and NightCue palette (not HiveCue brood/heat)?
-Answer with pass or fail first, then brief evidence.

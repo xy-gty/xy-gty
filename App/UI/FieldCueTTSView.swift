@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct FieldCueTTSView: View {
@@ -6,13 +6,13 @@ struct FieldCueTTSView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Hands-free field cues")
+            Text("Hands-free exposure notes")
                 .font(.title2.bold())
-                .foregroundStyle(NightCueTheme.ink)
+                .foregroundStyle(ShutterduskTheme.ink)
 
             Text("Stay on the tripod — play ISO / shutter / focus cues aloud.")
                 .font(.subheadline)
-                .foregroundStyle(NightCueTheme.muted)
+                .foregroundStyle(ShutterduskTheme.muted)
 
             NightFrameRail(
                 labels: appModel.frameLabels,
@@ -23,22 +23,22 @@ struct FieldCueTTSView: View {
             ForEach(Array(appModel.sessionCues.enumerated()), id: \.element.id) { index, cue in
                 HStack {
                     Circle()
-                        .fill(index == appModel.ttsCueIndex ? NightCueTheme.accent : NightCueTheme.primary.opacity(0.25))
+                        .fill(index == appModel.ttsCueIndex ? ShutterduskTheme.accent : ShutterduskTheme.primary.opacity(0.25))
                         .frame(width: 10, height: 10)
                     Text(cue.text)
                         .font(.body)
-                        .foregroundStyle(NightCueTheme.ink)
+                        .foregroundStyle(ShutterduskTheme.ink)
                 }
                 .padding(12)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(NightCueTheme.card)
+                .background(ShutterduskTheme.card)
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
             }
 
             HStack {
                 Button("Play") { appModel.playFieldCues() }
                     .buttonStyle(.borderedProminent)
-                    .tint(NightCueTheme.primary)
+                    .tint(ShutterduskTheme.primary)
                 Button("Pause") { appModel.pauseFieldCues() }
                     .buttonStyle(.bordered)
                 Button("Next") { appModel.nextFieldCue() }
@@ -47,17 +47,17 @@ struct FieldCueTTSView: View {
 
             if appModel.tts.isSpeaking {
                 Label("Speaking…", systemImage: "speaker.wave.2.fill")
-                    .foregroundStyle(NightCueTheme.accent)
+                    .foregroundStyle(ShutterduskTheme.accent)
             }
 
             if let status = appModel.statusMessage {
-                Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
             }
 
             Spacer()
         }
         .padding(20)
-        .nightCueScreen()
-        .navigationTitle("Field cues")
+        .shutterduskScreen()
+        .navigationTitle("Exposure notes")
     }
 }

@@ -1,5 +1,5 @@
 import UIKit
-import NightCueDomain
+import ShutterduskDomain
 
 enum ExposureRecognizer {
     struct Result {
@@ -38,7 +38,7 @@ enum ExposureRecognizer {
             trail = "Trail signs: watch for smear on light trails — lock tripod and use 2s timer."
             marks.append((0.4, 0.72, 0.55, "trail"))
         } else {
-            trail = "No strong trail smear cues in local draft."
+            trail = "No strong trail smear notes in local draft."
         }
 
         return Result(

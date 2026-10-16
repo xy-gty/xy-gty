@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Horizontal night-frame rail — distinct from HiveCue inspection rail / FormCue chip rail / YarnCue yarn strip.
+/// Horizontal night-frame rail — distinct from Broodcheck inspection rail / Workrest chip rail / Loopwell yarn strip.
 struct NightFrameRail: View {
     let labels: [String]
     @Binding var selectedIndex: Int
@@ -18,24 +18,24 @@ struct NightFrameRail: View {
                             RoundedRectangle(cornerRadius: 10, style: .continuous)
                                 .fill(
                                     index == selectedIndex
-                                        ? NightCueTheme.accent.opacity(0.35)
-                                        : NightCueTheme.primary.opacity(0.12)
+                                        ? ShutterduskTheme.accent.opacity(0.35)
+                                        : ShutterduskTheme.primary.opacity(0.12)
                                 )
                                 .frame(width: 72, height: 56)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                                         .stroke(
-                                            index == selectedIndex ? NightCueTheme.accent : NightCueTheme.primary.opacity(0.35),
+                                            index == selectedIndex ? ShutterduskTheme.accent : ShutterduskTheme.primary.opacity(0.35),
                                             lineWidth: index == selectedIndex ? 2.5 : 1
                                         )
                                 )
                                 .overlay(
                                     Image(systemName: "moon.stars.fill")
-                                        .foregroundStyle(index == selectedIndex ? NightCueTheme.primary : NightCueTheme.muted)
+                                        .foregroundStyle(index == selectedIndex ? ShutterduskTheme.primary : ShutterduskTheme.muted)
                                 )
                             Text(label)
                                 .font(.caption2.weight(index == selectedIndex ? .bold : .medium))
-                                .foregroundStyle(NightCueTheme.ink)
+                                .foregroundStyle(ShutterduskTheme.ink)
                                 .lineLimit(1)
                                 .frame(width: 76)
                         }

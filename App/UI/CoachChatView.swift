@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct CoachChatView: View {
@@ -13,9 +13,9 @@ struct CoachChatView: View {
                             if message.role == "coach" { Spacer(minLength: 40) }
                             Text(message.text)
                                 .padding(12)
-                                .background(message.role == "coach" ? NightCueTheme.primary.opacity(0.12) : NightCueTheme.card)
+                                .background(message.role == "coach" ? ShutterduskTheme.primary.opacity(0.12) : ShutterduskTheme.card)
                                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-                                .foregroundStyle(NightCueTheme.ink)
+                                .foregroundStyle(ShutterduskTheme.ink)
                             if message.role != "coach" { Spacer(minLength: 40) }
                         }
                     }
@@ -31,7 +31,7 @@ struct CoachChatView: View {
             if let reason = appModel.aiUnavailableReason {
                 Text(reason)
                     .font(.caption)
-                    .foregroundStyle(NightCueTheme.primary)
+                    .foregroundStyle(ShutterduskTheme.primary)
                     .padding(.horizontal)
             }
 
@@ -39,18 +39,18 @@ struct CoachChatView: View {
                 TextField("Ask about ISO, shutter, focus…", text: $appModel.coachQuestion, axis: .vertical)
                     .lineLimit(1 ... 3)
                     .padding(10)
-                    .background(NightCueTheme.card)
+                    .background(ShutterduskTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 Button("Send") {
                     appModel.requestCoach()
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
                 .disabled(appModel.coachBusy)
             }
             .padding(16)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Coach chat")
     }
 }

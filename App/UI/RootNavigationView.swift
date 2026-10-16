@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 SessionsHomeView()
-                    .navigationDestination(for: NightCueRoute.self) { route in
+                    .navigationDestination(for: ShutterduskRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "moon.stars",
                         description: Text("Create a night session from the Sessions tab.")
                     )
-                    .nightCueScreen()
+                    .shutterduskScreen()
                 }
             }
             .tabItem { Label("Coach", systemImage: "bubble.left.and.bubble.right.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: NightCueRoute) -> some View {
+    private func destination(for route: ShutterduskRoute) -> some View {
         switch route {
         case .sessionsHome:
             SessionsHomeView()

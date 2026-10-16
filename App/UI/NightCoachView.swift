@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct NightCoachView: View {
@@ -10,10 +10,10 @@ struct NightCoachView: View {
                 if let session = appModel.activeSession {
                     Text(session.locationLabel)
                         .font(.title2.bold())
-                        .foregroundStyle(NightCueTheme.primary)
+                        .foregroundStyle(ShutterduskTheme.primary)
                     Text(session.sceneGoal)
                         .font(.subheadline)
-                        .foregroundStyle(NightCueTheme.muted)
+                        .foregroundStyle(ShutterduskTheme.muted)
                 }
 
                 NightFrameRail(
@@ -23,7 +23,7 @@ struct NightCoachView: View {
                 )
 
                 Toggle("Exposure-diagnosis overlays", isOn: $appModel.showOverlays)
-                    .tint(NightCueTheme.accent)
+                    .tint(ShutterduskTheme.accent)
 
                 ZStack {
                     if let frame = appModel.sessionFrames.first,
@@ -34,16 +34,16 @@ struct NightCoachView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                     } else {
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-                            .fill(NightCueTheme.primary.opacity(0.12))
+                            .fill(ShutterduskTheme.primary.opacity(0.12))
                             .frame(height: 220)
                             .overlay(
                                 VStack(spacing: 8) {
                                     Image(systemName: "moon.stars")
                                         .font(.largeTitle)
-                                        .foregroundStyle(NightCueTheme.primary)
+                                        .foregroundStyle(ShutterduskTheme.primary)
                                     Text("Capture a night frame to fill the rail")
                                         .font(.caption)
-                                        .foregroundStyle(NightCueTheme.muted)
+                                        .foregroundStyle(ShutterduskTheme.muted)
                                 }
                             )
                     }
@@ -57,22 +57,22 @@ struct NightCoachView: View {
                 if let finding = appModel.sessionFindings.first {
                     Text("Latest: \(finding.tag) — \(finding.detail)")
                         .font(.footnote)
-                        .foregroundStyle(NightCueTheme.ink)
+                        .foregroundStyle(ShutterduskTheme.ink)
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(NightCueTheme.card)
+                        .background(ShutterduskTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
 
                 VStack(spacing: 10) {
                     Button("Ask coach") { appModel.push(.coachChat) }
                         .buttonStyle(.borderedProminent)
-                        .tint(NightCueTheme.primary)
+                        .tint(ShutterduskTheme.primary)
                         .frame(maxWidth: .infinity)
                     HStack {
                         Button("Annotate") { appModel.push(.annotatedOverlay) }
                             .buttonStyle(.bordered)
-                        Button("Field cues") { appModel.push(.fieldCueTTS) }
+                        Button("Exposure notes") { appModel.push(.fieldCueTTS) }
                             .buttonStyle(.bordered)
                         Button("Dictate") { appModel.push(.dictateExposure) }
                             .buttonStyle(.bordered)
@@ -82,12 +82,12 @@ struct NightCoachView: View {
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                    Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
                 }
             }
             .padding(20)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Night coach")
     }
 }

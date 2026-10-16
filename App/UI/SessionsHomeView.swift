@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct SessionsHomeView: View {
@@ -7,27 +7,27 @@ struct SessionsHomeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("NightCue")
+                Text("Shutterdusk")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(NightCueTheme.primary)
+                    .foregroundStyle(ShutterduskTheme.primary)
 
                 Text("AI night long-exposure coach — shoot or import test frames, diagnose exposure & noise, then coach on the tripod.")
                     .font(.subheadline)
-                    .foregroundStyle(NightCueTheme.muted)
+                    .foregroundStyle(ShutterduskTheme.muted)
 
                 // Empty-state tripod + rail placeholder (not a bare chat shell)
                 VStack(alignment: .leading, spacing: 12) {
                     HStack(spacing: 12) {
                         Image(systemName: "camera.viewfinder")
                             .font(.title)
-                            .foregroundStyle(NightCueTheme.accent)
+                            .foregroundStyle(ShutterduskTheme.accent)
                         VStack(alignment: .leading) {
                             Text("Night stand ready")
                                 .font(.headline)
-                                .foregroundStyle(NightCueTheme.ink)
+                                .foregroundStyle(ShutterduskTheme.ink)
                             Text("Night-frame rail waits for your first test shot.")
                                 .font(.caption)
-                                .foregroundStyle(NightCueTheme.muted)
+                                .foregroundStyle(ShutterduskTheme.muted)
                         }
                     }
                     NightFrameRail(
@@ -38,7 +38,7 @@ struct SessionsHomeView: View {
                     .opacity(0.55)
                 }
                 .padding(16)
-                .background(NightCueTheme.card)
+                .background(ShutterduskTheme.card)
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
 
                 Button {
@@ -50,13 +50,13 @@ struct SessionsHomeView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
                 .accessibilityIdentifier("cta-new-session")
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(NightCueTheme.primary)
+                        .foregroundStyle(ShutterduskTheme.primary)
                 }
 
                 if appModel.sessions.isEmpty {
@@ -70,7 +70,7 @@ struct SessionsHomeView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Recent sessions")
                             .font(.headline)
-                            .foregroundStyle(NightCueTheme.ink)
+                            .foregroundStyle(ShutterduskTheme.ink)
                         ForEach(appModel.sessions, id: \.id) { session in
                             Button {
                                 appModel.openSession(session)
@@ -79,17 +79,17 @@ struct SessionsHomeView: View {
                                     VStack(alignment: .leading, spacing: 4) {
                                         Text(session.locationLabel)
                                             .font(.headline)
-                                            .foregroundStyle(NightCueTheme.ink)
+                                            .foregroundStyle(ShutterduskTheme.ink)
                                         Text(session.sceneGoal)
                                             .font(.caption)
-                                            .foregroundStyle(NightCueTheme.muted)
+                                            .foregroundStyle(ShutterduskTheme.muted)
                                     }
                                     Spacer()
                                     Image(systemName: "chevron.right")
-                                        .foregroundStyle(NightCueTheme.accent)
+                                        .foregroundStyle(ShutterduskTheme.accent)
                                 }
                                 .padding(14)
-                                .background(NightCueTheme.card)
+                                .background(ShutterduskTheme.card)
                                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                             }
                             .buttonStyle(.plain)
@@ -99,7 +99,7 @@ struct SessionsHomeView: View {
             }
             .padding(20)
         }
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Sessions")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -118,11 +118,11 @@ struct NewSessionView: View {
                 Button("Create session") {
                     appModel.createSession()
                 }
-                .tint(NightCueTheme.primary)
+                .tint(ShutterduskTheme.primary)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(NightCueTheme.secondary.ignoresSafeArea())
+        .background(ShutterduskTheme.secondary.ignoresSafeArea())
         .navigationTitle("New session")
     }
 }

@@ -1,2 +1,0 @@
-Does this still show NightCue Sessions empty state with night-frame rail placeholder, New session CTA, ice/#1E3A8A/#FBBF24 palette, and no HiveCue hex / FormCue / YarnCue / ScoutCue twins or all-black shell?
-Answer with pass or fail first, then brief evidence.

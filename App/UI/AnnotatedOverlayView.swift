@@ -1,4 +1,4 @@
-import NightCueDomain
+import ShutterduskDomain
 import SwiftUI
 
 struct AnnotatedOverlayView: View {
@@ -8,7 +8,7 @@ struct AnnotatedOverlayView: View {
         VStack(spacing: 16) {
             Text("Confirm diagnosis marks on the night frame")
                 .font(.headline)
-                .foregroundStyle(NightCueTheme.ink)
+                .foregroundStyle(ShutterduskTheme.ink)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             Picker("Mark type", selection: $appModel.overlayDraftLabel) {
@@ -29,12 +29,12 @@ struct AnnotatedOverlayView: View {
                             .frame(width: geo.size.width, height: geo.size.height)
                     } else {
                         RoundedRectangle(cornerRadius: 12)
-                            .fill(NightCueTheme.primary.opacity(0.1))
+                            .fill(ShutterduskTheme.primary.opacity(0.1))
                     }
                     ExposureDiagnosisOverlayCanvas(marks: appModel.overlayMarks, showOverlays: true)
                     if let point = appModel.draftOverlayPoint {
                         Circle()
-                            .strokeBorder(NightCueTheme.accent, lineWidth: 3)
+                            .strokeBorder(ShutterduskTheme.accent, lineWidth: 3)
                             .frame(width: 36, height: 36)
                             .position(
                                 x: point.x * geo.size.width,
@@ -59,15 +59,15 @@ struct AnnotatedOverlayView: View {
                     .buttonStyle(.bordered)
                 Button("Keep marks") { appModel.keepOverlayMarks() }
                     .buttonStyle(.borderedProminent)
-                    .tint(NightCueTheme.primary)
+                    .tint(ShutterduskTheme.primary)
             }
 
             if let status = appModel.statusMessage {
-                Text(status).font(.footnote).foregroundStyle(NightCueTheme.primary)
+                Text(status).font(.footnote).foregroundStyle(ShutterduskTheme.primary)
             }
         }
         .padding(20)
-        .nightCueScreen()
+        .shutterduskScreen()
         .navigationTitle("Annotate")
     }
 }

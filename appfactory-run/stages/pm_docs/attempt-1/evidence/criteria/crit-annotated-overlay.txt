@@ -1,2 +1,0 @@
-Does this still show annotated exposure-diagnosis overlay editor on a night photo with Keep marks, not HiveCue heat blobs or ScoutCue arcs?
-Answer with pass or fail first, then brief evidence.

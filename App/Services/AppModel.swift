@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import NightCueDomain
+import ShutterduskDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -18,7 +18,7 @@ final class AppModel: ObservableObject {
     @Published var dictatedExposures: [DictatedExposure] = []
 
     @Published var activeSessionId: String?
-    @Published var path: [NightCueRoute] = []
+    @Published var path: [ShutterduskRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -50,7 +50,7 @@ final class AppModel: ObservableObject {
     @Published var ttsCueIndex = 0
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<NightCueRoute>
+    let navigation: TypedNavigationStore<ShutterduskRoute>
     let tts = FieldCueTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -65,7 +65,7 @@ final class AppModel: ObservableObject {
     private let dictatedStore: AtomicCodableStore<[DictatedExposure]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = NightCueStores.apiKeyStore()
+    private let keychain = ShutterduskStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
     private var pendingDiagnosisMarks: [(x: Double, y: Double, value: Double, label: String)] = []
@@ -131,27 +131,27 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("NightCue", isDirectory: true)
+            .appendingPathComponent("Shutterdusk", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        sessionStore = NightCueStores.sessionStore(directory: root)
-        frameStore = NightCueStores.nightFrameStore(directory: root)
-        draftStore = NightCueStores.exposureDraftStore(directory: root)
-        findingStore = NightCueStores.diagnosisFindingStore(directory: root)
-        overlayStore = NightCueStores.annotatedOverlayStore(directory: root)
-        turnStore = NightCueStores.coachTurnStore(directory: root)
-        messageStore = NightCueStores.coachMessageStore(directory: root)
-        fieldCueStore = NightCueStores.fieldCueStore(directory: root)
-        dictatedStore = NightCueStores.dictatedExposureStore(directory: root)
+        sessionStore = ShutterduskStores.sessionStore(directory: root)
+        frameStore = ShutterduskStores.nightFrameStore(directory: root)
+        draftStore = ShutterduskStores.exposureDraftStore(directory: root)
+        findingStore = ShutterduskStores.diagnosisFindingStore(directory: root)
+        overlayStore = ShutterduskStores.annotatedOverlayStore(directory: root)
+        turnStore = ShutterduskStores.coachTurnStore(directory: root)
+        messageStore = ShutterduskStores.coachMessageStore(directory: root)
+        fieldCueStore = ShutterduskStores.fieldCueStore(directory: root)
+        dictatedStore = ShutterduskStores.dictatedExposureStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = NightCueStores.storeURL(directory: root, name: NightCueStores.aiConsentLocal)
+        let consentURL = ShutterduskStores.storeURL(directory: root, name: ShutterduskStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -166,7 +166,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await NightCueStores.consentKeychainStore().save(mirrorData)
+                    try? await ShutterduskStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -227,7 +227,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: NightCueRoute) {
+    func push(_ route: ShutterduskRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -534,7 +534,7 @@ final class AppModel: ObservableObject {
         showConsent = false
         pendingCoachAction = nil
         if path.last == .consentSheet { _ = path.popLast(); persistNavigation() }
-        statusMessage = "AI send blocked — night-frame rail, overlays, and local cues still available."
+        statusMessage = "AI send blocked — night-frame rail, overlays, and local notes still available."
         refreshAIAvailability()
     }
 
@@ -680,13 +680,13 @@ final class AppModel: ObservableObject {
     func playFieldCues() {
         let corpus = sessionCues.map(\.text)
         guard !corpus.isEmpty else {
-            statusMessage = "No field cues yet — Keep an exposure finding first."
+            statusMessage = "No exposure notes yet — Keep an exposure finding first."
             return
         }
         if ttsCueIndex >= corpus.count { ttsCueIndex = 0 }
         let text = corpus[ttsCueIndex]
         tts.speak(text)
-        statusMessage = "Playing cue \(ttsCueIndex + 1)/\(corpus.count)"
+        statusMessage = "Playing note \(ttsCueIndex + 1)/\(corpus.count)"
     }
 
     func pauseFieldCues() {
