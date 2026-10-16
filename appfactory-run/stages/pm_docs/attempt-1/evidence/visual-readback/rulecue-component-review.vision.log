@@ -1,6 +1,0 @@
-{
-  "ok": true,
-  "receipt_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/evidence/visual-readback/rulecue-component-review.receipt.json",
-  "raw_ref": "/Users/a2026/work/factory-prod-1/runs/kf-20261015T111031Z-ed6f1861/stages/pm_docs/attempt-1/evidence/visual-readback/rulecue-component-review.receipt.jsonl",
-  "model": "auto"
-}

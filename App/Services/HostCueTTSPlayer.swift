@@ -17,7 +17,7 @@ final class HostCueTTSPlayer: NSObject, AVSpeechSynthesizerDelegate {
         lastError = nil
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else {
-            lastError = "Host cue text is empty."
+            lastError = "Setup line is empty."
             return
         }
         do {

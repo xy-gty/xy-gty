@@ -1,2 +1,0 @@
-Does this still show RuleCue Component Review with AI draft chips and Keep/Discard/Edit review bar on parchment/amber/cyan UI?
-Answer with pass or fail first, then brief evidence.

@@ -16,12 +16,12 @@ struct CoachChatView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(msg.role.capitalized)
                                     .font(.caption2)
-                                    .foregroundStyle(RuleCueTheme.muted)
+                                    .foregroundStyle(TablehostTheme.muted)
                                 Text(msg.text)
-                                    .foregroundStyle(RuleCueTheme.ink)
+                                    .foregroundStyle(TablehostTheme.ink)
                             }
                             .padding(12)
-                            .background(msg.role == "coach" ? RuleCueTheme.accent.opacity(0.12) : RuleCueTheme.card)
+                            .background(msg.role == "coach" ? TablehostTheme.accent.opacity(0.12) : TablehostTheme.card)
                             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                             if msg.role != "coach" { Spacer(minLength: 40) }
                         }
@@ -33,12 +33,12 @@ struct CoachChatView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Zone: \(appModel.currentZoneLabel)")
                         .font(.caption)
-                        .foregroundStyle(RuleCueTheme.accent)
+                        .foregroundStyle(TablehostTheme.accent)
                     TextField("Ask a ruling (e.g. can I play this card)", text: $appModel.coachQuestion, axis: .vertical)
                         .lineLimit(2 ... 4)
                         .focused($focused)
                         .padding(10)
-                        .background(RuleCueTheme.card)
+                        .background(TablehostTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     if appModel.coachBusy {
                         ProgressView("Sending…")
@@ -48,19 +48,19 @@ struct CoachChatView: View {
                         appModel.requestCoach()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(RuleCueTheme.primary)
+                    .tint(TablehostTheme.primary)
                     .disabled(appModel.coachBusy)
                     if let reason = appModel.aiUnavailableReason {
                         Text(reason)
                             .font(.caption2)
-                            .foregroundStyle(RuleCueTheme.muted)
+                            .foregroundStyle(TablehostTheme.muted)
                     }
                 }
                 .padding(16)
-                .background(RuleCueTheme.secondary)
+                .background(TablehostTheme.secondary)
             }
         )
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Coach chat")
     }
 }

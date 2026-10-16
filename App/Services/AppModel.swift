@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import RuleCueDomain
+import TablehostDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -19,7 +19,7 @@ final class AppModel: ObservableObject {
     @Published var spokenQuestions: [SpokenQuestion] = []
 
     @Published var activeSessionId: String?
-    @Published var path: [RuleCueRoute] = []
+    @Published var path: [TablehostRoute] = []
     @Published var statusMessage: String?
     @Published var showConsent = false
     @Published var consentGranted = false
@@ -49,7 +49,7 @@ final class AppModel: ObservableObject {
     @Published var draftMarkLabel = ""
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<RuleCueRoute>
+    let navigation: TypedNavigationStore<TablehostRoute>
     let tts = HostCueTTSPlayer()
     let speechService = SpeechRecognitionService()
 
@@ -65,7 +65,7 @@ final class AppModel: ObservableObject {
     private let spokenStore: AtomicCodableStore<[SpokenQuestion]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = RuleCueStores.apiKeyStore()
+    private let keychain = TablehostStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingCoachAction: (() -> Void)?
 
@@ -124,28 +124,28 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("RuleCue", isDirectory: true)
+            .appendingPathComponent("Tablehost", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        sessionStore = RuleCueStores.gameSessionStore(directory: root)
-        photoStore = RuleCueStores.tablePhotoStore(directory: root)
-        draftStore = RuleCueStores.componentDraftStore(directory: root)
-        mapStore = RuleCueStores.componentMapStore(directory: root)
-        phaseStore = RuleCueStores.phaseStepStore(directory: root)
-        overlayStore = RuleCueStores.setupOverlayStore(directory: root)
-        turnStore = RuleCueStores.coachTurnStore(directory: root)
-        messageStore = RuleCueStores.coachMessageStore(directory: root)
-        hostCueStore = RuleCueStores.hostCueStore(directory: root)
-        spokenStore = RuleCueStores.spokenQuestionStore(directory: root)
+        sessionStore = TablehostStores.gameSessionStore(directory: root)
+        photoStore = TablehostStores.tablePhotoStore(directory: root)
+        draftStore = TablehostStores.componentDraftStore(directory: root)
+        mapStore = TablehostStores.componentMapStore(directory: root)
+        phaseStore = TablehostStores.phaseStepStore(directory: root)
+        overlayStore = TablehostStores.setupOverlayStore(directory: root)
+        turnStore = TablehostStores.coachTurnStore(directory: root)
+        messageStore = TablehostStores.coachMessageStore(directory: root)
+        hostCueStore = TablehostStores.hostCueStore(directory: root)
+        spokenStore = TablehostStores.spokenQuestionStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = RuleCueStores.storeURL(directory: root, name: RuleCueStores.aiConsentLocal)
+        let consentURL = TablehostStores.storeURL(directory: root, name: TablehostStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -160,7 +160,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await RuleCueStores.consentKeychainStore().save(mirrorData)
+                    try? await TablehostStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -222,7 +222,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: RuleCueRoute) {
+    func push(_ route: TablehostRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -543,7 +543,7 @@ final class AppModel: ObservableObject {
         showConsent = false
         pendingCoachAction = nil
         if path.last == .consentSheet { _ = path.popLast(); persistNavigation() }
-        statusMessage = "AI send blocked — table zones, steps, and local cues still available."
+        statusMessage = "AI send blocked — table zones, steps, and local notes still available."
         refreshAIAvailability()
     }
 
@@ -684,25 +684,25 @@ final class AppModel: ObservableObject {
     func playHostCue() {
         let cues = sessionHostCues
         guard !cues.isEmpty else {
-            statusMessage = "No host cues yet — Keep a component draft first."
+            statusMessage = "No setup lines yet — Keep a component draft first."
             return
         }
         if ttsCueIndex >= cues.count { ttsCueIndex = 0 }
         let cue = cues[ttsCueIndex]
         tts.onFinished = { [weak self] in
-            self?.statusMessage = "Finished cue \(cue.sortIndex + 1)."
+            self?.statusMessage = "Finished line \(cue.sortIndex + 1)."
         }
         tts.play(cue.text)
         if let err = tts.lastError {
             statusMessage = err
         } else {
-            statusMessage = "Playing host cue \(ttsCueIndex + 1)/\(cues.count)."
+            statusMessage = "Playing setup line \(ttsCueIndex + 1)/\(cues.count)."
         }
     }
 
     func pauseHostCue() {
         tts.pause()
-        statusMessage = "Host cue paused."
+        statusMessage = "Setup line paused."
     }
 
     func nextHostCue() {

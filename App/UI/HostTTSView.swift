@@ -6,11 +6,11 @@ struct HostTTSView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Table-host cues")
+                Text("Setup lines")
                     .font(.title2.bold())
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
                 Text("Hands-free TTS while you place components.")
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
 
                 TurnStepBar(
                     steps: appModel.sessionPhases,
@@ -19,21 +19,21 @@ struct HostTTSView: View {
                 )
 
                 if appModel.sessionHostCues.isEmpty {
-                    Text("No host cues yet. Keep a component draft to seed setup prompts.")
-                        .foregroundStyle(RuleCueTheme.muted)
+                    Text("No setup lines yet. Keep a component draft to seed setup prompts.")
+                        .foregroundStyle(TablehostTheme.muted)
                 } else {
                     ForEach(Array(appModel.sessionHostCues.enumerated()), id: \.element.id) { index, cue in
                         HStack(alignment: .top) {
                             Circle()
-                                .fill(index == appModel.ttsCueIndex ? RuleCueTheme.accent : RuleCueTheme.primary.opacity(0.35))
+                                .fill(index == appModel.ttsCueIndex ? TablehostTheme.accent : TablehostTheme.primary.opacity(0.35))
                                 .frame(width: 10, height: 10)
                                 .padding(.top, 6)
                             Text(cue.text)
-                                .foregroundStyle(RuleCueTheme.ink)
+                                .foregroundStyle(TablehostTheme.ink)
                         }
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RuleCueTheme.card)
+                        .background(TablehostTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     }
                 }
@@ -41,23 +41,23 @@ struct HostTTSView: View {
                 HStack(spacing: 12) {
                     Button("Play") { appModel.playHostCue() }
                         .buttonStyle(.borderedProminent)
-                        .tint(RuleCueTheme.primary)
+                        .tint(TablehostTheme.primary)
                     Button("Pause") { appModel.pauseHostCue() }
                         .buttonStyle(.bordered)
-                    Button("Next cue") { appModel.nextHostCue() }
+                    Button("Next line") { appModel.nextHostCue() }
                         .buttonStyle(.bordered)
-                        .tint(RuleCueTheme.accent)
+                        .tint(TablehostTheme.accent)
                 }
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Host TTS")
     }
 }

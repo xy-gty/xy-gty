@@ -1,5 +1,5 @@
 import SwiftUI
-import RuleCueDomain
+import TablehostDomain
 
 /// Horizontal turn step bar — current step highlighted in cue-cyan (#0891B2).
 struct TurnStepBar: View {
@@ -13,7 +13,7 @@ struct TurnStepBar: View {
                 ForEach(Array(displaySteps.enumerated()), id: \.offset) { index, step in
                     if index > 0 {
                         Rectangle()
-                            .fill(RuleCueTheme.primary.opacity(0.25))
+                            .fill(TablehostTheme.primary.opacity(0.25))
                             .frame(width: 18, height: 2)
                             .padding(.horizontal, 2)
                     }
@@ -23,22 +23,22 @@ struct TurnStepBar: View {
                         VStack(spacing: 6) {
                             ZStack {
                                 Circle()
-                                    .fill(index == currentIndex ? RuleCueTheme.accent : RuleCueTheme.card)
+                                    .fill(index == currentIndex ? TablehostTheme.accent : TablehostTheme.card)
                                     .frame(width: 28, height: 28)
                                     .overlay(
                                         Circle()
                                             .stroke(
-                                                index == currentIndex ? RuleCueTheme.accent : RuleCueTheme.primary.opacity(0.45),
+                                                index == currentIndex ? TablehostTheme.accent : TablehostTheme.primary.opacity(0.45),
                                                 lineWidth: 2
                                             )
                                     )
                                 Text("\(index + 1)")
                                     .font(.caption.bold())
-                                    .foregroundStyle(index == currentIndex ? .white : RuleCueTheme.ink)
+                                    .foregroundStyle(index == currentIndex ? .white : TablehostTheme.ink)
                             }
                             Text(step.title)
                                 .font(.caption2.weight(index == currentIndex ? .semibold : .regular))
-                                .foregroundStyle(index == currentIndex ? RuleCueTheme.accent : RuleCueTheme.ink)
+                                .foregroundStyle(index == currentIndex ? TablehostTheme.accent : TablehostTheme.ink)
                                 .lineLimit(1)
                                 .frame(maxWidth: 88)
                         }
@@ -54,8 +54,8 @@ struct TurnStepBar: View {
             .padding(.vertical, 4)
             .background(
                 Capsule(style: .continuous)
-                    .fill(RuleCueTheme.card)
-                    .shadow(color: RuleCueTheme.primary.opacity(0.1), radius: 3, y: 1)
+                    .fill(TablehostTheme.card)
+                    .shadow(color: TablehostTheme.primary.opacity(0.1), radius: 3, y: 1)
             )
         }
     }

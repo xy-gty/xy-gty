@@ -1,5 +1,5 @@
 import Foundation
-import RuleCueDomain
+import TablehostDomain
 
 @MainActor
 struct DeepSeekClient {
@@ -72,7 +72,7 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are RuleCue's AI board-game rules and setup coach. Reply with JSON only:
+        You are Tablehost's AI board-game rules and setup coach. Reply with JSON only:
         {"reply":"concise ruling or setup tip for a tabletop player"}
         Reuse component maps, phase steps, overlay notes and prior_feedback. Hands may be busy on the table — keep steps actionable. Not a stop-motion film twin, not a night-exposure twin, not a hive/form/yarn/scout twin.
         """

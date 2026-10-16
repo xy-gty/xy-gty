@@ -1,5 +1,5 @@
 import SwiftUI
-import RuleCueDomain
+import TablehostDomain
 
 struct ComponentReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,12 +9,12 @@ struct ComponentReviewView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Component & phase draft")
                     .font(.title2.bold())
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
 
                 if let draft = appModel.pendingDraft {
                     Text("Photo \(draft.tablePhotoId.prefix(8))…")
                         .font(.caption)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
 
                 Text("Components")
@@ -22,7 +22,7 @@ struct ComponentReviewView: View {
                 TextField("Component summary", text: $appModel.editingComponentSummary, axis: .vertical)
                     .lineLimit(3 ... 6)
                     .padding(12)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
 
                 Text("Phases")
@@ -30,7 +30,7 @@ struct ComponentReviewView: View {
                 TextField("Phase summary", text: $appModel.editingPhaseSummary, axis: .vertical)
                     .lineLimit(3 ... 6)
                     .padding(12)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
 
                 if !appModel.pendingZoneLabels.isEmpty {
@@ -46,7 +46,7 @@ struct ComponentReviewView: View {
                 HStack(spacing: 10) {
                     Button(ComponentReviewBar.confirm) { appModel.keepComponentDraft() }
                         .buttonStyle(.borderedProminent)
-                        .tint(RuleCueTheme.accent)
+                        .tint(TablehostTheme.accent)
                     Button(ComponentReviewBar.reject) { appModel.discardComponentDraft() }
                         .buttonStyle(.bordered)
                     Button(ComponentReviewBar.edit) {
@@ -58,12 +58,12 @@ struct ComponentReviewView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Review")
     }
 }

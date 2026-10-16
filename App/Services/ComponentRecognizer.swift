@@ -1,5 +1,5 @@
 import UIKit
-import RuleCueDomain
+import TablehostDomain
 
 enum ComponentRecognizer {
     struct Result {

@@ -1,4 +1,4 @@
-import RuleCueDomain
+import TablehostDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -8,7 +8,7 @@ struct RootNavigationView: View {
         TabView {
             NavigationStack(path: $appModel.path) {
                 SessionsHomeView()
-                    .navigationDestination(for: RuleCueRoute.self) { route in
+                    .navigationDestination(for: TablehostRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -23,7 +23,7 @@ struct RootNavigationView: View {
                         systemImage: "rectangle.on.rectangle",
                         description: Text("Create a board-game session from the Sessions tab.")
                     )
-                    .ruleCueScreen()
+                    .tablehostScreen()
                 }
             }
             .tabItem { Label("Table", systemImage: "tablecells.fill") }
@@ -42,7 +42,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: RuleCueRoute) -> some View {
+    private func destination(for route: TablehostRoute) -> some View {
         switch route {
         case .sessionsHome:
             SessionsHomeView()

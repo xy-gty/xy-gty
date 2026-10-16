@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "RuleCue",
+    name: "Tablehost",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "RuleCueDomain", targets: ["RuleCueDomain"]),
+        .library(name: "TablehostDomain", targets: ["TablehostDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "RuleCueDomain",
+            name: "TablehostDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/RuleCueDomain"
+            path: "Sources/TablehostDomain"
         ),
     ]
 )

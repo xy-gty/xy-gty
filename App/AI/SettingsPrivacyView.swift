@@ -1,5 +1,5 @@
 import SwiftUI
-import RuleCueDomain
+import TablehostDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
@@ -11,7 +11,7 @@ struct SettingsPrivacyView: View {
                     Text("Sharing allowed")
                     Spacer()
                     Text(appModel.consentGranted ? "Yes" : "No")
-                        .foregroundStyle(appModel.consentGranted ? RuleCueTheme.accent : RuleCueTheme.muted)
+                        .foregroundStyle(appModel.consentGranted ? TablehostTheme.accent : TablehostTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -19,7 +19,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
             }
 
@@ -36,27 +36,27 @@ struct SettingsPrivacyView: View {
                 }
                 Text("Remote privacy/terms/support URLs are UNKNOWN gaps (local_only).")
                     .font(.caption)
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
             }
 
             Section("Identity") {
-                LabeledContent("App", value: RuleCueIdentity.appName)
-                LabeledContent("Bundle", value: RuleCueIdentity.developmentBundleId)
-                LabeledContent("Product dir", value: RuleCueIdentity.productDir)
+                LabeledContent("App", value: TablehostIdentity.appName)
+                LabeledContent("Bundle", value: TablehostIdentity.developmentBundleId)
+                LabeledContent("Product dir", value: TablehostIdentity.productDir)
             }
         }
         .navigationTitle("Settings")
-        .ruleCueScreen()
+        .tablehostScreen()
     }
 
     private func permissionRow(_ title: String, _ copy: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
                 .font(.headline)
-                .foregroundStyle(RuleCueTheme.ink)
+                .foregroundStyle(TablehostTheme.ink)
             Text(copy)
                 .font(.caption)
-                .foregroundStyle(RuleCueTheme.muted)
+                .foregroundStyle(TablehostTheme.muted)
         }
         .padding(.vertical, 4)
     }

@@ -9,9 +9,9 @@ struct TableCoachView: View {
                 if let session = appModel.activeSession {
                     Text(session.gameName)
                         .font(.title2.bold())
-                        .foregroundStyle(RuleCueTheme.primary)
+                        .foregroundStyle(TablehostTheme.primary)
                     Text("\(session.playerCount) players · zone \(appModel.currentZoneLabel)")
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
 
                 TurnStepBar(
@@ -22,7 +22,7 @@ struct TableCoachView: View {
 
                 Text("Table zones")
                     .font(.headline)
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
 
                 TableZoneCards(
                     zones: appModel.zoneLabels,
@@ -33,10 +33,10 @@ struct TableCoachView: View {
                 if let overlay = appModel.sessionOverlays.first {
                     Text("Confirmed overlay: \(overlay.notes)")
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.accent)
+                        .foregroundStyle(TablehostTheme.accent)
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RuleCueTheme.card)
+                        .background(TablehostTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
 
@@ -58,12 +58,12 @@ struct TableCoachView: View {
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Table coach")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -77,17 +77,17 @@ struct TableCoachView: View {
             VStack(spacing: 8) {
                 Image(systemName: icon)
                     .font(.title2)
-                    .foregroundStyle(RuleCueTheme.accent)
+                    .foregroundStyle(TablehostTheme.accent)
                 Text(title)
                     .font(.headline)
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
             }
             .frame(maxWidth: .infinity, minHeight: 88)
-            .background(RuleCueTheme.card)
+            .background(TablehostTheme.card)
             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .stroke(RuleCueTheme.primary.opacity(0.25), lineWidth: 1)
+                    .stroke(TablehostTheme.primary.opacity(0.25), lineWidth: 1)
             )
         }
         .buttonStyle(.plain)

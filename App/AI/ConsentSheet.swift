@@ -1,5 +1,5 @@
 import SwiftUI
-import RuleCueDomain
+import TablehostDomain
 
 struct ConsentSheet: View {
     @ObservedObject var appModel: AppModel
@@ -10,29 +10,29 @@ struct ConsentSheet: View {
                 VStack(alignment: .leading, spacing: 16) {
                     Text("Share data with \(AIConsentContract.provider)?")
                         .font(.title2.bold())
-                        .foregroundStyle(RuleCueTheme.ink)
+                        .foregroundStyle(TablehostTheme.ink)
 
                     Text(
-                        "RuleCue sends the fields below to \(AIConsentContract.provider) for board-game rules and setup coaching. "
+                        "Tablehost sends the fields below to \(AIConsentContract.provider) for board-game rules and setup coaching. "
                             + "This is a coaching aid, not an official rules authority. Revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
                             .font(.headline)
-                            .foregroundStyle(RuleCueTheme.ink)
+                            .foregroundStyle(TablehostTheme.ink)
                         ForEach(AIConsentContract.fields, id: \.self) { field in
                             Label(field.replacingOccurrences(of: "_", with: " "), systemImage: "checkmark.seal.fill")
                                 .font(.subheadline)
-                                .foregroundStyle(RuleCueTheme.primary)
+                                .foregroundStyle(TablehostTheme.primary)
                         }
                     }
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
@@ -44,13 +44,13 @@ struct ConsentSheet: View {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(RuleCueTheme.primary)
+                        .tint(TablehostTheme.primary)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .ruleCueScreen()
+            .tablehostScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

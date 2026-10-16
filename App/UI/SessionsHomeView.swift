@@ -1,5 +1,5 @@
 import SwiftUI
-import RuleCueDomain
+import TablehostDomain
 
 struct SessionsHomeView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -7,21 +7,21 @@ struct SessionsHomeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("RuleCue")
+                Text("Tablehost")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(RuleCueTheme.primary)
+                    .foregroundStyle(TablehostTheme.primary)
 
                 Text("Board-game rules & setup coach")
                     .font(.title3)
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.accent)
+                        .foregroundStyle(TablehostTheme.accent)
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RuleCueTheme.card)
+                        .background(TablehostTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
 
@@ -29,9 +29,9 @@ struct SessionsHomeView: View {
                     VStack(alignment: .leading, spacing: 16) {
                         Text("No sessions yet")
                             .font(.title2.bold())
-                            .foregroundStyle(RuleCueTheme.ink)
+                            .foregroundStyle(TablehostTheme.ink)
                         Text("Snap a rulebook or table photo, keep reviewed zones, and walk the turn step bar while you set up.")
-                            .foregroundStyle(RuleCueTheme.muted)
+                            .foregroundStyle(TablehostTheme.muted)
                         TableZoneSilhouette()
                         Button {
                             appModel.push(.newSession)
@@ -42,14 +42,14 @@ struct SessionsHomeView: View {
                                 .padding(.vertical, 14)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(RuleCueTheme.primary)
+                        .tint(TablehostTheme.primary)
                     }
                     .padding(18)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                     .overlay(
                         RoundedRectangle(cornerRadius: 18, style: .continuous)
-                            .stroke(RuleCueTheme.primary.opacity(0.25), lineWidth: 1)
+                            .stroke(TablehostTheme.primary.opacity(0.25), lineWidth: 1)
                     )
                 } else {
                     Button {
@@ -59,7 +59,7 @@ struct SessionsHomeView: View {
                             .font(.headline)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(RuleCueTheme.primary)
+                    .tint(TablehostTheme.primary)
 
                     ForEach(appModel.sessions, id: \.id) { session in
                         Button {
@@ -69,21 +69,21 @@ struct SessionsHomeView: View {
                                 VStack(alignment: .leading, spacing: 4) {
                                     Text(session.gameName)
                                         .font(.headline)
-                                        .foregroundStyle(RuleCueTheme.ink)
+                                        .foregroundStyle(TablehostTheme.ink)
                                     Text("\(session.playerCount) players · \(session.currentPhase)")
                                         .font(.caption)
-                                        .foregroundStyle(RuleCueTheme.muted)
+                                        .foregroundStyle(TablehostTheme.muted)
                                 }
                                 Spacer()
                                 Image(systemName: "chevron.right")
-                                    .foregroundStyle(RuleCueTheme.accent)
+                                    .foregroundStyle(TablehostTheme.accent)
                             }
                             .padding(14)
-                            .background(RuleCueTheme.card)
+                            .background(TablehostTheme.card)
                             .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                    .stroke(RuleCueTheme.primary.opacity(0.2), lineWidth: 1)
+                                    .stroke(TablehostTheme.primary.opacity(0.2), lineWidth: 1)
                             )
                         }
                         .buttonStyle(.plain)
@@ -92,7 +92,7 @@ struct SessionsHomeView: View {
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Sessions")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -122,11 +122,11 @@ struct NewSessionView: View {
                 Button("Start capture") {
                     appModel.createSession()
                 }
-                .tint(RuleCueTheme.primary)
+                .tint(TablehostTheme.primary)
             }
         }
         .scrollContentBackground(.hidden)
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("New session")
     }
 }

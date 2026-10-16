@@ -1,8 +1,0 @@
-{
-  "schema": "appfactory.cursor_task_children.v1",
-  "run_id": "kf-20261015T111031Z-ed6f1861",
-  "dispatch_id": "6c42a648-0d63-44ac-8db4-c04fd78eda6d",
-  "child_slots": 0,
-  "children": [],
-  "note": "Ultra-lite p1 factory-prod-1 single-slot; parent owns all files"
-}

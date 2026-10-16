@@ -1,4 +1,0 @@
-Query chain:
- →Find: Application 'com.lingguang.rulecue'
-  ↪︎Find: Descendants matching type Button
-    ↪︎Find: Elements matching predicate '"添加" IN identifiers'

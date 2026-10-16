@@ -8,9 +8,9 @@ struct SetupOverlayView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Setup / zone overlay")
                     .font(.title2.bold())
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
                 Text("Confirm annotated zone marks for the current table layout.")
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
 
                 TableZoneCards(
                     zones: appModel.zoneLabels,
@@ -20,32 +20,32 @@ struct SetupOverlayView: View {
 
                 TextField("Mark label", text: $appModel.draftMarkLabel)
                     .padding(12)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
 
                 TextField("Overlay notes", text: $appModel.overlayDraftNotes, axis: .vertical)
                     .lineLimit(3 ... 6)
                     .padding(12)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
 
                 if let existing = appModel.sessionOverlays.first {
                     Text("Last kept: \(existing.notes)")
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.accent)
+                        .foregroundStyle(TablehostTheme.accent)
                 }
 
                 HStack {
                     Button("Keep guide") { appModel.keepSetupOverlay() }
                         .buttonStyle(.borderedProminent)
-                        .tint(RuleCueTheme.accent)
+                        .tint(TablehostTheme.accent)
                     Button("Discard") { appModel.discardSetupOverlay() }
                         .buttonStyle(.bordered)
                 }
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Setup overlay")
     }
 }

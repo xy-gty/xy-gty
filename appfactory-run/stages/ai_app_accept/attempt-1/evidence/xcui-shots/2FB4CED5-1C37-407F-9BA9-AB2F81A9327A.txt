@@ -1,5 +1,0 @@
-Query chain:
- →Find: Application 'com.lingguang.rulecue'
-  ↪︎Find: Descendants matching type StaticText
-    ↪︎Find: Elements matching predicate 'label CONTAINS "DeepSeek key not configured"'
-      ↪︎Find: First Match

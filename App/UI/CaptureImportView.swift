@@ -9,14 +9,14 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 18) {
                 Text("Capture or import")
                     .font(.title2.bold())
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
                 Text("Snap rulebook pages, component close-ups, or the current table layout — or import past table photos.")
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.accent)
+                        .foregroundStyle(TablehostTheme.accent)
                 }
 
                 Button {
@@ -28,7 +28,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(RuleCueTheme.primary)
+                .tint(TablehostTheme.primary)
 
                 PhotosPicker(
                     selection: $appModel.selectedPhotoItem,
@@ -41,7 +41,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.bordered)
-                .tint(RuleCueTheme.accent)
+                .tint(TablehostTheme.accent)
                 .onChange(of: appModel.selectedPhotoItem) { _, _ in
                     Task { await appModel.importPhotoFromLibrary() }
                 }
@@ -53,7 +53,7 @@ struct CaptureImportView: View {
                 if !appModel.sessionPhotos.isEmpty {
                     Text("Photos in session: \(appModel.sessionPhotos.count)")
                         .font(.subheadline)
-                        .foregroundStyle(RuleCueTheme.ink)
+                        .foregroundStyle(TablehostTheme.ink)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
                             ForEach(appModel.sessionPhotos, id: \.id) { photo in
@@ -71,11 +71,11 @@ struct CaptureImportView: View {
 
                 Text("Permission denied? You can still browse a local empty session and type questions later.")
                     .font(.caption)
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Capture / Import")
         .sheet(isPresented: $appModel.showCamera) {
             CameraPicker { image in

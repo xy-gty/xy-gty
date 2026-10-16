@@ -8,9 +8,9 @@ struct DictateRulesView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Dictate rules question")
                     .font(.title2.bold())
-                    .foregroundStyle(RuleCueTheme.ink)
+                    .foregroundStyle(TablehostTheme.ink)
                 Text("Microphone + speech recognition write into coach chat and advance the next tip.")
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
 
                 TurnStepBar(
                     steps: appModel.sessionPhases,
@@ -22,14 +22,14 @@ struct DictateRulesView: View {
                     Text("Heard: \(appModel.speechTranscript)")
                         .padding(12)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(RuleCueTheme.card)
+                        .background(TablehostTheme.card)
                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                 }
 
                 TextField("Or type the question", text: $appModel.coachQuestion, axis: .vertical)
                     .lineLimit(2 ... 4)
                     .padding(12)
-                    .background(RuleCueTheme.card)
+                    .background(TablehostTheme.card)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
 
                 Button {
@@ -40,28 +40,28 @@ struct DictateRulesView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(RuleCueTheme.primary)
+                .tint(TablehostTheme.primary)
                 .disabled(appModel.speechBusy)
 
                 Button("Open coach chat with text") {
                     appModel.push(.coachChat)
                 }
                 .buttonStyle(.bordered)
-                .tint(RuleCueTheme.accent)
+                .tint(TablehostTheme.accent)
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(RuleCueTheme.muted)
+                        .foregroundStyle(TablehostTheme.muted)
                 }
 
                 Text("If mic/speech is denied, keep typing in the field above.")
                     .font(.caption)
-                    .foregroundStyle(RuleCueTheme.muted)
+                    .foregroundStyle(TablehostTheme.muted)
             }
             .padding(20)
         }
-        .ruleCueScreen()
+        .tablehostScreen()
         .navigationTitle("Dictate")
     }
 }
