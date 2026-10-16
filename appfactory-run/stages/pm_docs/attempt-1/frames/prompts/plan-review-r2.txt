@@ -1,5 +1,0 @@
-AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-Screen: Plan review human gate. Lilac cards on soft cloud, violet primary, mint accents. NOT all-black.
-Title "Review plan". Card listing 4 editable practice steps with durations. Bottom review bar: Edit (secondary), Discard (text), Keep (filled violet). Subtle AI draft badge.
-Large legible text. No paywall. No timeline script UI.

@@ -1,5 +1,5 @@
 import Foundation
-import PitchCueDomain
+import CountroomDomain
 
 /// HTTPS DeepSeek chat completions for practice coaching (text context only).
 @MainActor
@@ -75,7 +75,7 @@ struct DeepSeekClient {
         let payloadJSON = String(data: try encoder.encode(payload), encoding: .utf8) ?? "{}"
 
         let system = """
-        You are PitchCue's AI practice coach for instrumentalists. Reply with JSON only:
+        You are Countroom's AI practice coach for instrumentalists. Reply with JSON only:
         {"steps":[{"title":"short","durationSec":number,"tip":"spoken tip"}],"reply":"coach chat reply"}
         Coaching aid only — not a medical or professional tuner replacement. Reuse prior_plan_steps and user_feedback when present.
         """

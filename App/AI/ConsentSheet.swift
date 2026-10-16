@@ -1,4 +1,4 @@
-import PitchCueDomain
+import CountroomDomain
 import SwiftUI
 
 struct ConsentSheet: View {
@@ -12,11 +12,11 @@ struct ConsentSheet: View {
                         .font(.title2.bold())
 
                     Text(
-                        "PitchCue sends the fields below to \(AIConsentContract.provider) for practice coaching. "
+                        "Countroom sends the fields below to \(AIConsentContract.provider) for practice coaching. "
                             + "Plans are coaching aids, not medical or professional tuner advice. You can revoke anytime in Settings."
                     )
                     .font(.body)
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Fields sent")
@@ -29,26 +29,26 @@ struct ConsentSheet: View {
 
                     Text("Disclosure version: \(AIConsentContract.disclosureVersion)")
                         .font(.caption)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
 
                     HStack(spacing: 12) {
                         Button("Not now") {
                             appModel.dismissConsent()
                         }
                         .buttonStyle(.bordered)
-                        .tint(PitchCueTheme.muted)
+                        .tint(CountroomTheme.muted)
 
                         Button("Allow") {
                             appModel.grantConsentAndContinue()
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(PitchCueTheme.violet)
+                        .tint(CountroomTheme.violet)
                     }
                     .padding(.top, 8)
                 }
                 .padding(24)
             }
-            .pitchCueScreen()
+            .countroomScreen()
             .navigationTitle("AI data sharing")
             .navigationBarTitleDisplayMode(.inline)
         }

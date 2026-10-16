@@ -1,4 +1,4 @@
-import PitchCueDomain
+import CountroomDomain
 import SwiftUI
 
 struct PlanReviewView: View {
@@ -11,7 +11,7 @@ struct PlanReviewView: View {
                     Text(turn.text)
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(PitchCueTheme.softCloud)
+                        .background(CountroomTheme.softCloud)
                         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
 
@@ -20,7 +20,7 @@ struct PlanReviewView: View {
                 TextEditor(text: $appModel.editingStepsText)
                     .frame(minHeight: 160)
                     .padding(8)
-                    .background(PitchCueTheme.softCloud)
+                    .background(CountroomTheme.softCloud)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
 
                 HStack(spacing: 12) {
@@ -39,17 +39,17 @@ struct PlanReviewView: View {
                         appModel.keepPlanDraft()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(PitchCueTheme.violet)
+                    .tint(CountroomTheme.violet)
                 }
                 .accessibilityElement(children: .contain)
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(PitchCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(CountroomTheme.muted)
                 }
             }
             .padding(20)
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Plan review")
         .navigationBarTitleDisplayMode(.inline)
     }

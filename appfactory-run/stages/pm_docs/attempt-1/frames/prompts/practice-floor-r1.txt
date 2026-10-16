@@ -1,5 +1,0 @@
-AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-Screen: Practice floor — unique UI combo. Lilac (#F5F3FF) canvas, violet (#7C3AED) controls, mint (#10B981) waveform. NOT all-black. NOT CuePartner script timeline.
-Top: current step title "Long tones · 2 min". Prominent HORIZONTAL practice strip (scrollable rounded capsules for steps). Below: CONTINUOUS audio waveform in mint across width. Controls: Count-in, Drone, Metronome BPM 72, Stop. Small circular dial peek only as secondary, not the hero.
-Large legible text. Coach-first layout.

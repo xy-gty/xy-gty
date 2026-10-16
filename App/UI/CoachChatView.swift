@@ -9,7 +9,7 @@ struct CoachChatView: View {
         RuntimeForm(dismissFocus: { focused = false }) {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Tell the coach your practice goal. Plans require Keep before they stick.")
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
 
                 TextField("Instrument goal", text: $appModel.userGoal, axis: .vertical)
                     .lineLimit(2 ... 4)
@@ -35,19 +35,19 @@ struct CoachChatView: View {
                 if !appModel.speechTranscript.isEmpty {
                     Text("Speech: \(appModel.speechTranscript)")
                         .font(.caption)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
                 }
 
                 ForEach(appModel.sessionTurns, id: \.id) { turn in
                     VStack(alignment: .leading, spacing: 4) {
                         Text(turn.role.capitalized)
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(PitchCueTheme.violet)
+                            .foregroundStyle(CountroomTheme.violet)
                         Text(turn.text)
                     }
                     .padding(12)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(PitchCueTheme.softCloud)
+                    .background(CountroomTheme.softCloud)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
 
@@ -62,10 +62,10 @@ struct CoachChatView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.footnote)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
                 }
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(PitchCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(CountroomTheme.muted)
                 }
             }
             .padding(20)
@@ -80,13 +80,13 @@ struct CoachChatView: View {
                     .padding(.vertical, 12)
             }
             .buttonStyle(.borderedProminent)
-            .tint(PitchCueTheme.violet)
+            .tint(CountroomTheme.violet)
             .disabled(appModel.coachBusy)
             .padding(.horizontal, 20)
             .padding(.vertical, 8)
             .accessibilityLabel("Ask coach")
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Coach chat")
         .navigationBarTitleDisplayMode(.inline)
     }

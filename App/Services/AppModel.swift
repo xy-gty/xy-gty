@@ -3,7 +3,7 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import PitchCueDomain
+import CountroomDomain
 
 @MainActor
 final class AppModel: ObservableObject {
@@ -36,12 +36,12 @@ final class AppModel: ObservableObject {
     @Published var pendingTurn: CoachTurn?
     @Published var editingStepsText = ""
     @Published var aiUnavailableReason: String?
-    @Published var path: [PitchCueRoute] = []
+    @Published var path: [CountroomRoute] = []
     @Published var currentStepIndex = 0
     @Published var cameraImage: UIImage?
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<PitchCueRoute>
+    let navigation: TypedNavigationStore<CountroomRoute>
     let tts = TTSCoach()
     var audioBed = AudioBedEngine()
     let pitchDetector = PitchDetector()
@@ -54,7 +54,7 @@ final class AppModel: ObservableObject {
     private let pitchStore: AtomicCodableStore<[PitchSample]>
     private let supportRoot: URL
     private let importsRoot: URL
-    private let keychain = PitchCueStores.apiKeyStore()
+    private let keychain = CountroomStores.apiKeyStore()
     private var cachedAPIKey: String?
     private let speechService = SpeechRecognitionService()
     private var pendingCoachAction: (() -> Void)?
@@ -99,24 +99,24 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("PitchCue", isDirectory: true)
+            .appendingPathComponent("Countroom", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         importsRoot = root.appendingPathComponent("imports", isDirectory: true)
         try? FileManager.default.createDirectory(at: importsRoot, withIntermediateDirectories: true)
 
-        sessionsStore = PitchCueStores.practiceSessionStore(directory: root)
-        photosStore = PitchCueStores.sheetPhotoStore(directory: root)
-        plansStore = PitchCueStores.practicePlanStore(directory: root)
-        turnsStore = PitchCueStores.coachTurnStore(directory: root)
-        bedsStore = PitchCueStores.audioBedStore(directory: root)
-        pitchStore = PitchCueStores.pitchSampleStore(directory: root)
+        sessionsStore = CountroomStores.practiceSessionStore(directory: root)
+        photosStore = CountroomStores.sheetPhotoStore(directory: root)
+        plansStore = CountroomStores.practicePlanStore(directory: root)
+        turnsStore = CountroomStores.coachTurnStore(directory: root)
+        bedsStore = CountroomStores.audioBedStore(directory: root)
+        pitchStore = CountroomStores.pitchSampleStore(directory: root)
         navigation = TypedNavigationStore(
             url: root.appendingPathComponent("navigation.json"),
             isValid: { _ in true }
         )
 
-        let consentURL = PitchCueStores.storeURL(directory: root, name: PitchCueStores.aiConsentLocal)
+        let consentURL = CountroomStores.storeURL(directory: root, name: CountroomStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -131,7 +131,7 @@ final class AppModel: ObservableObject {
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
                 Task {
-                    try? await PitchCueStores.consentKeychainStore().save(mirrorData)
+                    try? await CountroomStores.consentKeychainStore().save(mirrorData)
                 }
             }
         )
@@ -198,7 +198,7 @@ final class AppModel: ObservableObject {
         try? navigation.save(path)
     }
 
-    func push(_ route: PitchCueRoute) {
+    func push(_ route: CountroomRoute) {
         path.append(route)
         persistNavigation()
     }

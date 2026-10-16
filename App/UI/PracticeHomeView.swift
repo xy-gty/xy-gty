@@ -6,13 +6,13 @@ struct PracticeHomeView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("PitchCue")
+                Text("Countroom")
                     .font(.largeTitle.bold())
-                    .foregroundStyle(PitchCueTheme.violet)
+                    .foregroundStyle(CountroomTheme.violet)
 
                 Text("AI practice coach — warm-ups, count-ins, and beds. Not a tuner clone.")
                     .font(.subheadline)
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
 
                 PracticeStripView(
                     steps: appModel.confirmedPlan?.steps ?? ["Import a sheet", "Ask coach", "Keep plan", "Count-in"],
@@ -40,7 +40,7 @@ struct PracticeHomeView: View {
                             .font(.headline)
                         Text(session.instrumentLabel)
                             .font(.caption)
-                            .foregroundStyle(PitchCueTheme.muted)
+                            .foregroundStyle(CountroomTheme.muted)
                         if appModel.confirmedPlan != nil {
                             Button("Resume practice floor") {
                                 appModel.push(.practiceFloor)
@@ -50,7 +50,7 @@ struct PracticeHomeView: View {
                     }
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(PitchCueTheme.softCloud)
+                    .background(CountroomTheme.softCloud)
                     .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 }
 
@@ -63,18 +63,18 @@ struct PracticeHomeView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(PitchCueTheme.violet)
+                .tint(CountroomTheme.violet)
                 .accessibilityLabel("New practice")
 
                 if let status = appModel.statusMessage {
                     Text(status)
                         .font(.footnote)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
                 }
             }
             .padding(20)
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Practice")
         .navigationBarTitleDisplayMode(.inline)
     }

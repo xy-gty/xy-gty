@@ -1,8 +1,0 @@
-{
-  "source": "cursor_task_host",
-  "dispatch_id": "4179ae95-b51f-429c-859c-5eb174b28771",
-  "execution_seq": 1,
-  "agent_id": "cursor-cli-build-4179ae95b51f",
-  "status": "completed",
-  "final_text": "Dispatch **4179ae95-\u20268771** completed as PitchCue `ai_app_build` (Cursor UltraLite P1).\n\n- Launch file SHA verified; preparation consumed; AppRuntimeCore wired\n- Product commit `0c9a46961a1b19bfe70c2b422641a07dd3d2a2e7` (`com.lingguang.pitchcue`)\n- Build + 8 domain tests passed; iPhone 17 Pro smoke install/launch OK\n- Candidate `0c9a46961a1b-529d64745e90` published (`candidate_unaccepted`)\n- MAP `ready`; `cursor-package ultra-lite finish` OK; simulator lease released\n\nGaps left for Acceptance/Delivery: live AI key, Feishu row, external legal URLs, CloudKit, deferred branding, \u771f\u673a camera/mic.\n"
-}

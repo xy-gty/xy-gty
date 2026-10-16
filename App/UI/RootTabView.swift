@@ -1,5 +1,5 @@
 import SwiftUI
-import PitchCueDomain
+import CountroomDomain
 
 struct RootTabView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -8,7 +8,7 @@ struct RootTabView: View {
         TabView(selection: $appModel.selectedTab) {
             NavigationStack(path: $appModel.path) {
                 PracticeHomeView()
-                    .navigationDestination(for: PitchCueRoute.self) { route in
+                    .navigationDestination(for: CountroomRoute.self) { route in
                         destination(for: route)
                     }
             }
@@ -36,7 +36,7 @@ struct RootTabView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: PitchCueRoute) -> some View {
+    private func destination(for route: CountroomRoute) -> some View {
         switch route {
         case .practiceHome:
             PracticeHomeView()

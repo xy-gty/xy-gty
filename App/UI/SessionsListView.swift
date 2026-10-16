@@ -20,17 +20,17 @@ struct SessionsListView: View {
                             Text(session.title).font(.headline)
                             Text(session.instrumentLabel)
                                 .font(.caption)
-                                .foregroundStyle(PitchCueTheme.muted)
+                                .foregroundStyle(CountroomTheme.muted)
                             Text(session.updatedAt.formatted(date: .abbreviated, time: .shortened))
                                 .font(.caption2)
-                                .foregroundStyle(PitchCueTheme.muted)
+                                .foregroundStyle(CountroomTheme.muted)
                         }
                     }
                 }
             }
         }
         .scrollContentBackground(.hidden)
-        .background(PitchCueTheme.lilac)
+        .background(CountroomTheme.lilac)
         .navigationTitle("Sessions")
     }
 }

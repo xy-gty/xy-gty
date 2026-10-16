@@ -12,13 +12,13 @@ struct TunerDialView: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(PitchCueTheme.violet.opacity(0.25), lineWidth: 18)
+                .stroke(CountroomTheme.violet.opacity(0.25), lineWidth: 18)
                 .frame(width: 220, height: 220)
             Circle()
                 .trim(from: 0.15, to: 0.85)
                 .stroke(
                     AngularGradient(
-                        colors: [PitchCueTheme.violet, PitchCueTheme.mint, PitchCueTheme.violet],
+                        colors: [CountroomTheme.violet, CountroomTheme.mint, CountroomTheme.violet],
                         center: .center
                     ),
                     style: StrokeStyle(lineWidth: 18, lineCap: .round)
@@ -27,7 +27,7 @@ struct TunerDialView: View {
                 .frame(width: 220, height: 220)
 
             Capsule()
-                .fill(PitchCueTheme.ink)
+                .fill(CountroomTheme.ink)
                 .frame(width: 4, height: 78)
                 .offset(y: -40)
                 .rotationEffect(.degrees(needleDegrees))
@@ -35,10 +35,10 @@ struct TunerDialView: View {
             VStack(spacing: 4) {
                 Text(String(format: "%.1f¢", centsOffset))
                     .font(.title2.monospacedDigit().bold())
-                    .foregroundStyle(abs(centsOffset) < 8 ? PitchCueTheme.mint : PitchCueTheme.violet)
+                    .foregroundStyle(abs(centsOffset) < 8 ? CountroomTheme.mint : CountroomTheme.violet)
                 Text(String(format: "%.1f Hz", frequencyHz))
                     .font(.caption.monospacedDigit())
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
             }
         }
         .frame(width: 240, height: 240)

@@ -1,5 +1,0 @@
-AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-Screen: Optional pitch feedback with CIRCULAR tuner dial as hero. Lilac background, violet ring, mint in-tune arc. NOT all-black. NOT a TonalEnergy clone (no branded chrome; coach context chips visible).
-Large circular dial centered showing note "A4" and cents "+3". Horizontal practice strip thin under nav. Continuous tiny waveform under dial. CTA "Start listening" violet. Caption "Coaching aid — not a medical tuner".
-Large legible text.

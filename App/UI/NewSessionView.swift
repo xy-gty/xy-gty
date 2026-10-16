@@ -1,5 +1,5 @@
 import SwiftUI
-import PitchCueDomain
+import CountroomDomain
 
 struct NewSessionView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -16,11 +16,11 @@ struct NewSessionView: View {
                 Button("Continue to Capture / Import") {
                     appModel.createSession(title: title.isEmpty ? "Practice session" : title)
                 }
-                .tint(PitchCueTheme.violet)
+                .tint(CountroomTheme.violet)
             }
         }
         .scrollContentBackground(.hidden)
-        .background(PitchCueTheme.lilac)
+        .background(CountroomTheme.lilac)
         .navigationTitle("New session")
         .navigationBarTitleDisplayMode(.inline)
     }

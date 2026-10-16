@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "PitchCueDomain",
+    name: "CountroomDomain",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "PitchCueDomain", targets: ["PitchCueDomain"]),
+        .library(name: "CountroomDomain", targets: ["CountroomDomain"]),
     ],
     dependencies: [
         .package(path: "Vendor/AppRuntimeCore"),
     ],
     targets: [
         .target(
-            name: "PitchCueDomain",
+            name: "CountroomDomain",
             dependencies: [
                 .product(name: "AppRuntimeCore", package: "AppRuntimeCore"),
             ],
-            path: "Sources/PitchCueDomain"
+            path: "Sources/CountroomDomain"
         ),
     ]
 )

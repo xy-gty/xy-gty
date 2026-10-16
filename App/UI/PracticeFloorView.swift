@@ -10,7 +10,7 @@ struct PracticeFloorView: View {
                     .font(.title2.bold())
                 if !appModel.currentStepTip.isEmpty {
                     Text(appModel.currentStepTip)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
                 }
 
                 PracticeStripView(
@@ -28,7 +28,7 @@ struct PracticeFloorView: View {
                         appModel.speakCountIn()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(PitchCueTheme.violet)
+                    .tint(CountroomTheme.violet)
                     .disabled(appModel.confirmedPlan == nil)
                     .accessibilityLabel("Count-in")
 
@@ -65,25 +65,25 @@ struct PracticeFloorView: View {
                         appModel.toggleAudioBed()
                     }
                     .buttonStyle(.bordered)
-                    .tint(PitchCueTheme.mint)
+                    .tint(CountroomTheme.mint)
                 }
                 .padding()
-                .background(PitchCueTheme.softCloud)
+                .background(CountroomTheme.softCloud)
                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
 
                 Button("Pitch check") {
                     appModel.startPitchCheck()
                 }
                 .buttonStyle(.bordered)
-                .tint(PitchCueTheme.violet)
+                .tint(CountroomTheme.violet)
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(PitchCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(CountroomTheme.muted)
                 }
             }
             .padding(20)
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Practice floor")
         .navigationBarTitleDisplayMode(.inline)
         .onDisappear {

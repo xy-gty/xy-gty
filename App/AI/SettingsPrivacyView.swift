@@ -1,4 +1,4 @@
-import PitchCueDomain
+import CountroomDomain
 import SwiftUI
 
 struct SettingsPrivacyView: View {
@@ -11,7 +11,7 @@ struct SettingsPrivacyView: View {
                     Text("Consent status")
                     Spacer()
                     Text(appModel.consentGranted ? "Allowed" : "Off")
-                        .foregroundStyle(appModel.consentGranted ? PitchCueTheme.mint : PitchCueTheme.muted)
+                        .foregroundStyle(appModel.consentGranted ? CountroomTheme.mint : CountroomTheme.muted)
                 }
                 Button("Revoke AI consent", role: .destructive) {
                     appModel.revokeConsent()
@@ -20,7 +20,7 @@ struct SettingsPrivacyView: View {
                 if let reason = appModel.aiUnavailableReason {
                     Text(reason)
                         .font(.caption)
-                        .foregroundStyle(PitchCueTheme.muted)
+                        .foregroundStyle(CountroomTheme.muted)
                 }
             }
 
@@ -40,7 +40,7 @@ struct SettingsPrivacyView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .background(PitchCueTheme.lilac)
+        .background(CountroomTheme.lilac)
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }

@@ -1,1 +1,0 @@
-Pass only if this still shows plan review with Keep / Discard / Edit controls and readable step list.

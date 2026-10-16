@@ -1,5 +1,0 @@
-AppFactory UltraLite full-screen frame for PitchCue. iOS SwiftUI phone UI mock, English labels.
-render the entire app as a single narrow, tall vertical column centered in the frame (phone screen fills full frame height, large legible text)
-Screen: Coach chat with warm-up plan draft. Lilac background, violet bubbles/CTA, mint check accents. NOT all-black.
-Top nav "Coach". Small sheet thumbnail chip. Chat: user bubble "Warm-up for violin etude"; coach bubble with 3 numbered plan steps. Input bar with mic affordance and "Ask coach" violet button. Not a full-screen black tuner.
-Large legible text. No script timeline clone.

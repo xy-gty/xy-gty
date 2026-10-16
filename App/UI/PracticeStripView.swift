@@ -17,18 +17,18 @@ struct PracticeStripView: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text("Step \(index + 1)")
                                 .font(.caption2.weight(.semibold))
-                                .foregroundStyle(index == currentIndex ? PitchCueTheme.mint : PitchCueTheme.muted)
+                                .foregroundStyle(index == currentIndex ? CountroomTheme.mint : CountroomTheme.muted)
                             Text(parsed.title)
                                 .font(.subheadline.weight(.semibold))
-                                .foregroundStyle(PitchCueTheme.ink)
+                                .foregroundStyle(CountroomTheme.ink)
                                 .lineLimit(2)
                                 .frame(width: 120, alignment: .leading)
                         }
                         .padding(12)
-                        .background(index == currentIndex ? PitchCueTheme.violet.opacity(0.12) : PitchCueTheme.softCloud)
+                        .background(index == currentIndex ? CountroomTheme.violet.opacity(0.12) : CountroomTheme.softCloud)
                         .overlay(
                             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                .stroke(index == currentIndex ? PitchCueTheme.violet : Color.clear, lineWidth: 2)
+                                .stroke(index == currentIndex ? CountroomTheme.violet : Color.clear, lineWidth: 2)
                         )
                         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                     }
@@ -49,7 +49,7 @@ struct WaveformView: View {
             HStack(alignment: .center, spacing: 2) {
                 ForEach(Array(levels.enumerated()), id: \.offset) { _, level in
                     Capsule()
-                        .fill(PitchCueTheme.mint)
+                        .fill(CountroomTheme.mint)
                         .frame(width: max((geo.size.width / CGFloat(max(levels.count, 1))) - 2, 2),
                                height: max(geo.size.height * level, 4))
                 }
@@ -57,7 +57,7 @@ struct WaveformView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         .padding(8)
-        .background(PitchCueTheme.softCloud)
+        .background(CountroomTheme.softCloud)
         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
         .accessibilityLabel("Continuous audio waveform")
     }

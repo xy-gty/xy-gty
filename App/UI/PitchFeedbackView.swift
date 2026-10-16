@@ -9,7 +9,7 @@ struct PitchFeedbackView: View {
                 .font(.headline)
             Text("Coaching aid only — not a professional tuner replacement.")
                 .font(.footnote)
-                .foregroundStyle(PitchCueTheme.muted)
+                .foregroundStyle(CountroomTheme.muted)
                 .multilineTextAlignment(.center)
 
             TunerDialView(
@@ -26,19 +26,19 @@ struct PitchFeedbackView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            .tint(PitchCueTheme.violet)
+            .tint(CountroomTheme.violet)
             .accessibilityLabel("Start listening")
 
             if let msg = appModel.pitchDetector.statusMessage {
                 Text(msg)
                     .font(.footnote)
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
                     .multilineTextAlignment(.center)
             }
             Spacer()
         }
         .padding(24)
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Pitch feedback")
         .navigationBarTitleDisplayMode(.inline)
         .onDisappear {

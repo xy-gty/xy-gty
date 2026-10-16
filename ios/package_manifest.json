@@ -1,8 +1,8 @@
 {
   "schema": "appfactory.ios_package_manifest.v1",
-  "app_name": "PitchCue",
-  "bundle_id": "com.lingguang.pitchcue",
+  "app_name": "Countroom",
+  "bundle_id": "com.lingguang.countroom",
   "platform": "ios",
   "min_os": "17.0",
-  "product_dir": "pitchcue"
+  "product_dir": "countroom"
 }

@@ -9,7 +9,7 @@ struct CaptureImportView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Capture or import sheet music / fingering photos for coaching.")
-                    .foregroundStyle(PitchCueTheme.muted)
+                    .foregroundStyle(CountroomTheme.muted)
 
                 PhotosPicker(selection: $appModel.selectedPhotoItem, matching: .images) {
                     Label("Photo library", systemImage: "photo.on.rectangle")
@@ -17,7 +17,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(PitchCueTheme.violet)
+                .tint(CountroomTheme.violet)
                 .disabled(appModel.importBusy)
 
                 Button {
@@ -28,7 +28,7 @@ struct CaptureImportView: View {
                         .padding(.vertical, 14)
                 }
                 .buttonStyle(.bordered)
-                .tint(PitchCueTheme.violet)
+                .tint(CountroomTheme.violet)
 
                 if appModel.importBusy {
                     ProgressView("Importing…")
@@ -41,16 +41,16 @@ struct CaptureImportView: View {
                         appModel.push(.coachChat)
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(PitchCueTheme.mint)
+                    .tint(CountroomTheme.mint)
                 }
 
                 if let status = appModel.statusMessage {
-                    Text(status).font(.footnote).foregroundStyle(PitchCueTheme.muted)
+                    Text(status).font(.footnote).foregroundStyle(CountroomTheme.muted)
                 }
             }
             .padding(20)
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Capture / Import")
         .navigationBarTitleDisplayMode(.inline)
         .onChange(of: appModel.selectedPhotoItem) { _, _ in

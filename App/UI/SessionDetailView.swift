@@ -8,7 +8,7 @@ struct SessionDetailView: View {
             VStack(alignment: .leading, spacing: 14) {
                 if let session = appModel.activeSession {
                     Text(session.title).font(.title2.bold())
-                    Text(session.instrumentLabel).foregroundStyle(PitchCueTheme.muted)
+                    Text(session.instrumentLabel).foregroundStyle(CountroomTheme.muted)
 
                     if let photo = appModel.activePhoto {
                         Text("Sheet: \(photo.relativePath) (\(photo.source))")
@@ -26,11 +26,11 @@ struct SessionDetailView: View {
                             appModel.push(.practiceFloor)
                         }
                         .buttonStyle(.borderedProminent)
-                        .tint(PitchCueTheme.violet)
+                        .tint(CountroomTheme.violet)
                         .accessibilityLabel("Resume practice")
                     } else {
                         Text("No confirmed plan yet.")
-                            .foregroundStyle(PitchCueTheme.muted)
+                            .foregroundStyle(CountroomTheme.muted)
                         Button("Ask coach") {
                             appModel.push(.coachChat)
                         }
@@ -51,7 +51,7 @@ struct SessionDetailView: View {
             }
             .padding(20)
         }
-        .pitchCueScreen()
+        .countroomScreen()
         .navigationTitle("Session")
         .navigationBarTitleDisplayMode(.inline)
     }
