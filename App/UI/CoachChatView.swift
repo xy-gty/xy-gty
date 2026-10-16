@@ -1,5 +1,5 @@
 import SwiftUI
-import FolioCueDomain
+import SpinewellDomain
 
 struct CoachChatView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -12,18 +12,18 @@ struct CoachChatView: View {
                     if let book = appModel.activeBookID {
                         Text("\(book.title) · coach")
                             .font(.headline)
-                            .foregroundStyle(FolioCueTheme.ink)
+                            .foregroundStyle(SpinewellTheme.ink)
                     }
                     ForEach(appModel.sessionTurns, id: \.createdAt) { turn in
                         HStack {
                             if turn.role == "coach" { Spacer(minLength: 40) }
                             Text(turn.text)
                                 .font(.body)
-                                .foregroundStyle(turn.role == "coach" ? FolioCueTheme.ink : Color.white)
+                                .foregroundStyle(turn.role == "coach" ? SpinewellTheme.ink : Color.white)
                                 .padding(12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                                        .fill(turn.role == "coach" ? FolioCueTheme.cardFace : FolioCueTheme.primary)
+                                        .fill(turn.role == "coach" ? SpinewellTheme.cardFace : SpinewellTheme.primary)
                                 )
                             if turn.role == "user" { Spacer(minLength: 40) }
                         }
@@ -43,11 +43,11 @@ struct CoachChatView: View {
                         appModel.sendCoachQuestion()
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(FolioCueTheme.accent)
+                    .tint(SpinewellTheme.accent)
                     .disabled(appModel.coachQuestion.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
                 HStack {
-                    Button(appModel.speechService.isListening ? "Stop speech" : "Speak cue") {
+                    Button(appModel.speechService.isListening ? "Stop speech" : "Read aloud") {
                         if appModel.speechService.isListening {
                             appModel.finishSpeechQuestion()
                         } else {
@@ -64,13 +64,13 @@ struct CoachChatView: View {
                 if !appModel.speechService.transcript.isEmpty {
                     Text(appModel.speechService.transcript)
                         .font(.caption)
-                        .foregroundStyle(FolioCueTheme.muted)
+                        .foregroundStyle(SpinewellTheme.muted)
                 }
             }
             .padding(12)
             .background(.ultraThinMaterial)
         }
-        .folioCueScreen()
+        .spinewellScreen()
         .navigationTitle("Coach")
         .accessibilityIdentifier("CoachChat")
     }

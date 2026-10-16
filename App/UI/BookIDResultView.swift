@@ -1,5 +1,5 @@
 import SwiftUI
-import FolioCueDomain
+import SpinewellDomain
 
 struct BookIDResultView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -24,7 +24,7 @@ struct BookIDResultView: View {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Edit before save")
                             .font(.headline)
-                            .foregroundStyle(FolioCueTheme.ink)
+                            .foregroundStyle(SpinewellTheme.ink)
                         TextField("Title", text: $appModel.editTitleDraft)
                             .textFieldStyle(.roundedBorder)
                         HStack {
@@ -44,13 +44,13 @@ struct BookIDResultView: View {
                     .padding(14)
                     .background(
                         RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .fill(FolioCueTheme.cardFace)
+                            .fill(SpinewellTheme.cardFace)
                     )
 
                     HStack {
                         Button("Save to Shelf") { appModel.saveToShelf() }
                             .buttonStyle(.borderedProminent)
-                            .tint(FolioCueTheme.primary)
+                            .tint(SpinewellTheme.primary)
                         Button("Dismiss") { appModel.dismissID() }
                             .buttonStyle(.bordered)
                     }
@@ -69,7 +69,7 @@ struct BookIDResultView: View {
             }
             .padding(16)
         }
-        .folioCueScreen()
+        .spinewellScreen()
         .navigationTitle("Book ID")
         .accessibilityIdentifier("BookIDResult")
     }

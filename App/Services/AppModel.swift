@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import FolioCueDomain
+import SpinewellDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = FolioCueState()
-    @Published var path: [FolioCueRoute] = []
+    @Published var state = SpinewellState()
+    @Published var path: [SpinewellRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -28,7 +28,7 @@ final class AppModel: ObservableObject {
     @Published var editProgressDraft = 0
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<FolioCueRoutePayload>
+    let navigation: TypedNavigationStore<SpinewellRoutePayload>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -38,7 +38,7 @@ final class AppModel: ObservableObject {
     private let photosRoot: URL
     private let audioRoot: URL
     private let cardsRoot: URL
-    private let keychain = FolioCueStores.apiKeyStore()
+    private let keychain = SpinewellStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -85,7 +85,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("foliocue", isDirectory: true)
+            .appendingPathComponent("spinewell", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         photosRoot = root.appendingPathComponent("photos", isDirectory: true)
@@ -97,11 +97,11 @@ final class AppModel: ObservableObject {
 
         shelfStore = ShelfStore(directory: root)
         navigation = TypedNavigationStore(
-            url: FolioCueStores.storeURL(directory: root, name: FolioCueStores.navigationFile),
-            isValid: { FolioCueRoute.allCases.contains($0.route) }
+            url: SpinewellStores.storeURL(directory: root, name: SpinewellStores.navigationFile),
+            isValid: { SpinewellRoute.allCases.contains($0.route) }
         )
 
-        let consentURL = FolioCueStores.storeURL(directory: root, name: FolioCueStores.aiConsentLocal)
+        let consentURL = SpinewellStores.storeURL(directory: root, name: SpinewellStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -117,7 +117,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await FolioCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await SpinewellStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -134,7 +134,7 @@ final class AppModel: ObservableObject {
 
     /// Simulator/UITest-only seed so core shelf flows can be exercised without camera hardware.
     private func seedUITestShelfIfNeeded() {
-        state = FolioCueState()
+        state = SpinewellState()
         let id = "uitest-session"
         let image = UIGraphicsImageRenderer(size: CGSize(width: 320, height: 480)).image { ctx in
             UIColor(red: 0.024, green: 0.373, blue: 0.275, alpha: 1).setFill()
@@ -175,7 +175,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? shelfStore.load()) ?? FolioCueState()
+        state = (try? shelfStore.load()) ?? SpinewellState()
         consentGranted = consentGate.state.granted
         if activeSessionId == nil {
             activeSessionId = state.sessions.first?.id
@@ -210,11 +210,11 @@ final class AppModel: ObservableObject {
     }
 
     func persistNavigation() {
-        let payloads = path.map { FolioCueRoutePayload(route: $0, sessionId: activeSessionId) }
+        let payloads = path.map { SpinewellRoutePayload(route: $0, sessionId: activeSessionId) }
         try? navigation.save(payloads)
     }
 
-    func push(_ route: FolioCueRoute) {
+    func push(_ route: SpinewellRoute) {
         path.append(route)
         persistNavigation()
     }
@@ -329,7 +329,7 @@ final class AppModel: ObservableObject {
                 editionHint: "local-only",
                 confidence: 0.35,
                 rationale: "AI not configured. Local draft ID only — confirm to keep on your personal shelf.",
-                complianceBanner: FolioCueCompliance.personalBookshelfCoach
+                complianceBanner: SpinewellCompliance.personalBookshelfCoach
             )
             applyIdentified(book: local, sessionId: session.id, banner: "AI not configured — local draft ID ready.", error: true)
             return
@@ -440,7 +440,7 @@ final class AppModel: ObservableObject {
             book.title,
             book.author,
             progress.map { "\($0.state) · \($0.percent)%" } ?? "tbr · 0%",
-            FolioCueCompliance.personalBookshelfCoach,
+            SpinewellCompliance.personalBookshelfCoach,
         ]
         let path = cardsRoot.appendingPathComponent("\(session.id).txt")
         let body = callouts.joined(separator: "\n")
@@ -469,11 +469,11 @@ final class AppModel: ObservableObject {
         }
         let lane = state.spineRail.first(where: { $0.bookId == session.id })?.shelfLane ?? "home"
         let script = """
-        FolioCue find cue: \(book.title) by \(book.author) is on your \(lane) spine rail. \
-        \(FolioCueCompliance.personalBookshelfCoach). \
-        \(FolioCueCompliance.notBookstoreCatalogScraping). \
-        \(FolioCueCompliance.notFullTextPiracyReader). \
-        \(FolioCueCompliance.notHomeworkGrading).
+        Spinewell find cue: \(book.title) by \(book.author) is on your \(lane) spine rail. \
+        \(SpinewellCompliance.personalBookshelfCoach). \
+        \(SpinewellCompliance.notBookstoreCatalogScraping). \
+        \(SpinewellCompliance.notFullTextPiracyReader). \
+        \(SpinewellCompliance.notHomeworkGrading).
         """
         let callout = FindCallout(
             sessionId: session.id,
@@ -574,7 +574,7 @@ final class AppModel: ObservableObject {
     private func localCoachReply(question: String, strategy: String) -> String {
         switch strategy {
         case "find":
-            return "AI not configured. Check the spine rail lane for this title, then use Speak Find for a TTS cue. \(FolioCueCompliance.personalBookshelfCoach)."
+            return "AI not configured. Check the spine rail lane for this title, then use Speak Find for a spoken find. \(SpinewellCompliance.personalBookshelfCoach)."
         case "reading":
             return "AI not configured. Marked locally as reading — nudge yourself one chapter today. Not homework grading."
         default:

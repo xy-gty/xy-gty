@@ -2,13 +2,13 @@ import Foundation
 import AppRuntimeCore
 
 /// Domain store wiring to AppRuntimeCore persistence primitives.
-public enum FolioCueStores {
-    public static let stateFile = "foliocue_state"
+public enum SpinewellStores {
+    public static let stateFile = "spinewell_state"
     public static let aiConsentLocal = "ai_consent_local"
     public static let navigationFile = "navigation_stack"
 
     /// Keychain service per technical contract (KeychainCredentialStore role).
-    public static let keychainService = "foliocue.ai"
+    public static let keychainService = "spinewell.ai"
     public static let keychainAPIKeyAccount = "DEEPSEEK_API_KEY"
     public static let keychainConsentAccount = "ai_consent_record"
 
@@ -16,7 +16,7 @@ public enum FolioCueStores {
         directory.appendingPathComponent("\(name).json", isDirectory: false)
     }
 
-    public static func stateStore(directory: URL) -> AtomicCodableStore<FolioCueState> {
+    public static func stateStore(directory: URL) -> AtomicCodableStore<SpinewellState> {
         AtomicCodableStore(url: storeURL(directory: directory, name: stateFile))
     }
 
@@ -35,8 +35,8 @@ public enum FolioCueStores {
     @MainActor
     public static func navigationStore(
         directory: URL,
-        isValid: @escaping (FolioCueRoutePayload) -> Bool = { _ in true }
-    ) -> TypedNavigationStore<FolioCueRoutePayload> {
+        isValid: @escaping (SpinewellRoutePayload) -> Bool = { _ in true }
+    ) -> TypedNavigationStore<SpinewellRoutePayload> {
         TypedNavigationStore(
             url: storeURL(directory: directory, name: navigationFile),
             isValid: isValid
@@ -46,17 +46,17 @@ public enum FolioCueStores {
 
 /// ShelfStore facade — AtomicCodableStore persistence for shelf sessions and related entities.
 public struct ShelfStore {
-    private let store: AtomicCodableStore<FolioCueState>
+    private let store: AtomicCodableStore<SpinewellState>
 
     public init(directory: URL) {
-        self.store = FolioCueStores.stateStore(directory: directory)
+        self.store = SpinewellStores.stateStore(directory: directory)
     }
 
-    public func load() throws -> FolioCueState {
-        try store.load() ?? FolioCueState()
+    public func load() throws -> SpinewellState {
+        try store.load() ?? SpinewellState()
     }
 
-    public func save(_ state: FolioCueState) throws {
+    public func save(_ state: SpinewellState) throws {
         try store.save(state)
     }
 
@@ -75,8 +75,8 @@ public struct ShelfStore {
     }
 }
 
-public enum FolioCueNavigation {
-    public static func isValid(_ route: FolioCueRoute) -> Bool {
-        FolioCueRoute.allCases.contains(route)
+public enum SpinewellNavigation {
+    public static func isValid(_ route: SpinewellRoute) -> Bool {
+        SpinewellRoute.allCases.contains(route)
     }
 }

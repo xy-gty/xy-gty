@@ -1,14 +1,14 @@
 import XCTest
-import FolioCueDomain
+import SpinewellDomain
 import AppRuntimeCore
 
-final class FolioCueDomainTests: XCTestCase {
+final class SpinewellDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(ShelfReviewControls.confirm, ["Save to Shelf", "Keep", "Use"])
         XCTAssertEqual(ShelfReviewControls.reject, ["Dismiss", "Reject"])
         XCTAssertEqual(ShelfReviewControls.edit, ["Edit title", "Edit progress"])
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "foliocue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "spinewell.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 5)
     }
 
@@ -22,12 +22,12 @@ final class FolioCueDomainTests: XCTestCase {
 
     func testShelfStoreRoundTrip() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("foliocue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("spinewell-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
         let store = ShelfStore(directory: dir)
-        var state = FolioCueState()
+        var state = SpinewellState()
         let session = ShelfSession(
             id: "s1",
             createdAt: Date(),
@@ -45,7 +45,7 @@ final class FolioCueDomainTests: XCTestCase {
                 editionHint: "Ace",
                 confidence: 0.91,
                 rationale: "cover typography",
-                complianceBanner: FolioCueCompliance.personalBookshelfCoach
+                complianceBanner: SpinewellCompliance.personalBookshelfCoach
             )
         ]
         state.readingProgress = [
@@ -101,35 +101,35 @@ final class FolioCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteAndAllergy() {
-        XCTAssertEqual(FolioCueIdentity.developmentBundleId, "com.lingguang.foliocue")
-        XCTAssertEqual(FolioCueIdentity.productDir, "foliocue")
-        XCTAssertEqual(FolioCueIdentity.appName, "FolioCue")
-        XCTAssertEqual(FolioCuePalette.primary, "#065F46")
-        XCTAssertEqual(FolioCuePalette.secondary, "#FEF3C7")
-        XCTAssertEqual(FolioCuePalette.accent, "#C026D3")
-        XCTAssertEqual(FolioCueDevicePolicy.targetDevice, "iPhone 17 Pro")
-        XCTAssertEqual(FolioCueDevicePolicy.preferredUDID, "B14CC0EA")
-        XCTAssertTrue(FolioCueDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("LuxCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("CellarCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("MixCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("SporeCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("FrameCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("NightCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("ScoutCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedTwinShells.contains("StopCue"))
-        XCTAssertTrue(FolioCueAllergy.bannedAppCopyNames.contains("BookBuddy"))
-        XCTAssertTrue(FolioCueAllergy.requiredUI.contains("horizontal spine-rail shelf"))
-        XCTAssertTrue(FolioCueAllergy.requiredUI.contains("large cover OCR card"))
-        XCTAssertTrue(FolioCueAllergy.requiredUI.contains("reading progress bar"))
-        XCTAssertTrue(FolioCueAllergy.noAppIconOrLaunchScreen)
+        XCTAssertEqual(SpinewellIdentity.developmentBundleId, "com.lingguang.spinewell")
+        XCTAssertEqual(SpinewellIdentity.productDir, "spinewell")
+        XCTAssertEqual(SpinewellIdentity.appName, "Spinewell")
+        XCTAssertEqual(SpinewellPalette.primary, "#065F46")
+        XCTAssertEqual(SpinewellPalette.secondary, "#FEF3C7")
+        XCTAssertEqual(SpinewellPalette.accent, "#C026D3")
+        XCTAssertEqual(SpinewellDevicePolicy.targetDevice, "iPhone 17 Pro")
+        XCTAssertEqual(SpinewellDevicePolicy.preferredUDID, "B14CC0EA")
+        XCTAssertTrue(SpinewellDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Zonelight"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Racknote"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Stirboard"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Gillnote"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Mattebox"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Shutterdusk"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Sunbrief"))
+        XCTAssertTrue(SpinewellAllergy.bannedTwinShells.contains("Onionreel"))
+        XCTAssertTrue(SpinewellAllergy.bannedAppCopyNames.contains("BookBuddy"))
+        XCTAssertTrue(SpinewellAllergy.requiredUI.contains("horizontal spine-rail shelf"))
+        XCTAssertTrue(SpinewellAllergy.requiredUI.contains("large cover OCR card"))
+        XCTAssertTrue(SpinewellAllergy.requiredUI.contains("reading progress bar"))
+        XCTAssertTrue(SpinewellAllergy.noAppIconOrLaunchScreen)
     }
 
     func testComplianceDisclaimers() {
-        XCTAssertEqual(FolioCueCompliance.requiredDisclaimers.count, 4)
-        XCTAssertTrue(FolioCueCompliance.requiredDisclaimers[0].contains("个人藏书教练"))
-        XCTAssertTrue(FolioCueCompliance.requiredDisclaimers[1].contains("非书店目录爬取"))
-        XCTAssertTrue(FolioCueCompliance.requiredDisclaimers[2].contains("非全文盗版阅读器"))
-        XCTAssertTrue(FolioCueCompliance.requiredDisclaimers[3].contains("非课业批改"))
+        XCTAssertEqual(SpinewellCompliance.requiredDisclaimers.count, 4)
+        XCTAssertTrue(SpinewellCompliance.requiredDisclaimers[0].contains("个人藏书教练"))
+        XCTAssertTrue(SpinewellCompliance.requiredDisclaimers[1].contains("非书店目录爬取"))
+        XCTAssertTrue(SpinewellCompliance.requiredDisclaimers[2].contains("非全文盗版阅读器"))
+        XCTAssertTrue(SpinewellCompliance.requiredDisclaimers[3].contains("非课业批改"))
     }
 }

@@ -1,16 +1,16 @@
 import SwiftUI
-import FolioCueDomain
+import SpinewellDomain
 
 struct SettingsPrivacyView: View {
     @ObservedObject var appModel: AppModel
 
     var body: some View {
         Form {
-            Section("FolioCue") {
-                Text(FolioCueCompliance.personalBookshelfCoach)
-                Text(FolioCueCompliance.notBookstoreCatalogScraping)
-                Text(FolioCueCompliance.notFullTextPiracyReader)
-                Text(FolioCueCompliance.notHomeworkGrading)
+            Section("Spinewell") {
+                Text(SpinewellCompliance.personalBookshelfCoach)
+                Text(SpinewellCompliance.notBookstoreCatalogScraping)
+                Text(SpinewellCompliance.notFullTextPiracyReader)
+                Text(SpinewellCompliance.notHomeworkGrading)
             }
 
             Section("AI data sharing") {

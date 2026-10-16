@@ -1,5 +1,5 @@
 import Foundation
-import FolioCueDomain
+import SpinewellDomain
 
 struct BookIDPayload: Sendable {
     var book: BookID
@@ -65,11 +65,11 @@ struct DeepSeekClient {
         ]
 
         let system = """
-        You are FolioCue, an AI personal bookshelf coach. Reply with JSON only:
+        You are Spinewell, an AI personal bookshelf coach. Reply with JSON only:
         {"title":"","author":"","editionHint":"","confidence":0.0,"rationale":"","complianceBanner":"个人藏书教练 / personal bookshelf coach"}
         Identify books from personal cover/spine stills for a home shelf. Never scrape bookstore catalogs.
         Never provide full-text piracy reading. Never grade homework. Never name BookBuddy.
-        Not a LuxCue/CellarCue/MixCue/SporeCue/FrameCue/NightCue/ScoutCue/StopCue twin.
+        Not a Zonelight/Racknote/Stirboard/Gillnote/Mattebox/Shutterdusk/Sunbrief/Onionreel twin.
         """
 
         let content = try await chat(system: system, userJSON: payload)
@@ -99,7 +99,7 @@ struct DeepSeekClient {
             "confirmed_book_notes": confirmedNotes,
         ]
         let system = """
-        You are FolioCue TBR/reading coach. Reply JSON only:
+        You are Spinewell TBR/reading coach. Reply JSON only:
         {"reply":"short coach answer","strategy":"tbr|reading|find"}
         Personal bookshelf coach only. Not bookstore catalog scraping. Not a full-text piracy reader. Not homework grading.
         Never name BookBuddy.
@@ -168,7 +168,7 @@ struct DeepSeekClient {
             confidence: min(1, max(0, confidence)),
             rationale: (obj["rationale"] as? String) ?? "",
             complianceBanner: (obj["complianceBanner"] as? String)
-                ?? FolioCueCompliance.personalBookshelfCoach
+                ?? SpinewellCompliance.personalBookshelfCoach
         )
         return BookIDPayload(book: book)
     }

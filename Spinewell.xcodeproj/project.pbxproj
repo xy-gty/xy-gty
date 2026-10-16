@@ -11,29 +11,29 @@
 		14336665438C3EB58D201C3E /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644DF23D1B56449B7ED6580F /* CameraPicker.swift */; };
 		16A8A80938178FBF9A7BA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CB714DE221E02E20F00DB7 /* Assets.xcassets */; };
 		2849460F34992C21741E18C0 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034E93C5BD23D5295E63D881 /* DeepSeekClient.swift */; };
-		29A45C6A42022FFD158819F9 /* FolioCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39042459F3C88F76EB01F423 /* FolioCueTheme.swift */; };
+		29A45C6A42022FFD158819F9 /* SpinewellTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39042459F3C88F76EB01F423 /* SpinewellTheme.swift */; };
 		32998FFDE8F017789F13E4C5 /* BookIDResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7E39E0575D12656B221D4 /* BookIDResultView.swift */; };
 		34EE7138DFCE7DA98C83DAA7 /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF516DF768D281D4C327821 /* CoachChatView.swift */; };
 		369A330400932ACB2E0F864D /* support.html in Resources */ = {isa = PBXBuildFile; fileRef = A8B081C361E344F747925ADE /* support.html */; };
 		38C87923D6A6F2C652F5D725 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0954B19B849E076DA0C23D /* LocalLegalWebView.swift */; };
 		3AFA276820C7D2E98B3592A2 /* ShelfHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF20013814EE53C27CF0D /* ShelfHomeView.swift */; };
-		402EEAC95B9E647591A45F37 /* FolioCueUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8EB33AF168D61880BE7E0 /* FolioCueUISmokeTests.swift */; };
+		402EEAC95B9E647591A45F37 /* SpinewellUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */; };
 		4C776468C89F0360D631AB47 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */; };
 		5AF85C6019F6665E9EBE4AE9 /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600568BE0E5B3BE8D6851996 /* ConsentSheet.swift */; };
 		5BDE3F66AF99154A9396CFD2 /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526758020C17565241DE0DD /* VoiceNoteRecorder.swift */; };
 		642D115E9D121A0B22ABB494 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0195A832B2A95F7893729116 /* RootNavigationView.swift */; };
-		66FEEE3E0BBC7796653A9CB7 /* FolioCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3188DDCE7C9F2B9E4D310A /* FolioCueDomainTests.swift */; };
+		66FEEE3E0BBC7796653A9CB7 /* SpinewellDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */; };
 		8119FD53AAF6A6EDBB6159B3 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3DBE0CA2F0326689E47FB11B /* AppRuntimeCore */; };
 		81F73727032F492E68635FC1 /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = A4BD8BAE40CAD9D033A189E3 /* terms.html */; };
 		8B7E9087F1A07DDD9933AFF6 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F2BA45D39B023E0C0D89B /* AppModel.swift */; };
 		A412C5554B299ED6E558AF36 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B057CF1266C39B45D272BE00 /* SpeechRecognitionService.swift */; };
-		A698A7705F9956FFF077FD95 /* FolioCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BEF27C50CF31599188173D2A /* FolioCueDomain */; };
+		A698A7705F9956FFF077FD95 /* SpinewellDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BEF27C50CF31599188173D2A /* SpinewellDomain */; };
 		B12C66937BB61DDBEF4BCEA3 /* ShelfCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */; };
-		B529E8763FC36762BEEBF87C /* FolioCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7158368B49DFCB76F15CAA0 /* FolioCueApp.swift */; };
+		B529E8763FC36762BEEBF87C /* SpinewellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */; };
 		C5C1845C02F5DC6E7F8D045B /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB982777E9BACD6B707B78 /* TTSPlayer.swift */; };
 		D35C4BB33547AF763E0BB832 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 4371E1FB8F117B0BBE39BFD5 /* privacy.html */; };
 		D5069E6032EE6A5CF11A96BB /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */; };
-		D53CE7BF1C27644850DDFC7E /* FolioCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6C64FF675C3A2AE708DF97A7 /* FolioCueDomain */; };
+		D53CE7BF1C27644850DDFC7E /* SpinewellDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */; };
 		F2DD4EE1586EAD68EE126DAF /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A3369AAF38D1434F95BC1 /* SettingsPrivacyView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,14 +43,14 @@
 			containerPortal = C6E5662AF0C44927BC7C5DB5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 21905DEB5EEC339AE7B75DD7;
-			remoteInfo = FolioCue;
+			remoteInfo = Spinewell;
 		};
 		8E47053BDD471F737E7423E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C6E5662AF0C44927BC7C5DB5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 21905DEB5EEC339AE7B75DD7;
-			remoteInfo = FolioCue;
+			remoteInfo = Spinewell;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,12 +59,12 @@
 		034E93C5BD23D5295E63D881 /* DeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSeekClient.swift; sourceTree = "<group>"; };
 		0FFB982777E9BACD6B707B78 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
 		17491C5413BD8B8F925E657E /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
-		1F3188DDCE7C9F2B9E4D310A /* FolioCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioCueDomainTests.swift; sourceTree = "<group>"; };
-		268CD1F27FE0F9C8CFEFC3FA /* FolioCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FolioCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		39042459F3C88F76EB01F423 /* FolioCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioCueTheme.swift; sourceTree = "<group>"; };
+		1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellDomainTests.swift; sourceTree = "<group>"; };
+		268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Spinewell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39042459F3C88F76EB01F423 /* SpinewellTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellTheme.swift; sourceTree = "<group>"; };
 		4371E1FB8F117B0BBE39BFD5 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfCardView.swift; sourceTree = "<group>"; };
-		52CE4F45F166A01766BF3D2A /* FolioCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FolioCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpinewellDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F74F30B094B4987B1DB1CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		600568BE0E5B3BE8D6851996 /* ConsentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentSheet.swift; sourceTree = "<group>"; };
 		644DF23D1B56449B7ED6580F /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
@@ -72,17 +72,17 @@
 		76E7E39E0575D12656B221D4 /* BookIDResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookIDResultView.swift; sourceTree = "<group>"; };
 		794F2BA45D39B023E0C0D89B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		8FF516DF768D281D4C327821 /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
-		A2E8EB33AF168D61880BE7E0 /* FolioCueUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioCueUISmokeTests.swift; sourceTree = "<group>"; };
+		A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellUISmokeTests.swift; sourceTree = "<group>"; };
 		A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		A4BD8BAE40CAD9D033A189E3 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
-		A7158368B49DFCB76F15CAA0 /* FolioCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioCueApp.swift; sourceTree = "<group>"; };
+		A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinewellApp.swift; sourceTree = "<group>"; };
 		A8B081C361E344F747925ADE /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
 		B057CF1266C39B45D272BE00 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
 		B4AF673FDB467EB7E7EBCD1B /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
 		BA0954B19B849E076DA0C23D /* LocalLegalWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLegalWebView.swift; sourceTree = "<group>"; };
 		C25A3369AAF38D1434F95BC1 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
 		C526758020C17565241DE0DD /* VoiceNoteRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecorder.swift; sourceTree = "<group>"; };
-		CA7CB20D3AD5FFE7022A4E65 /* FolioCueUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FolioCueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpinewellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CB714DE221E02E20F00DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFCECAC4AB5153F1147D602 /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CE7BF1C27644850DDFC7E /* FolioCueDomain in Frameworks */,
+				D53CE7BF1C27644850DDFC7E /* SpinewellDomain in Frameworks */,
 				8119FD53AAF6A6EDBB6159B3 /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5069E6032EE6A5CF11A96BB /* AppRuntimeCore in Frameworks */,
-				A698A7705F9956FFF077FD95 /* FolioCueDomain in Frameworks */,
+				A698A7705F9956FFF077FD95 /* SpinewellDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D7CB714DE221E02E20F00DB7 /* Assets.xcassets */,
-				A7158368B49DFCB76F15CAA0 /* FolioCueApp.swift */,
+				A7158368B49DFCB76F15CAA0 /* SpinewellApp.swift */,
 				5F74F30B094B4987B1DB1CFA /* Info.plist */,
 				A4822290FC5528A624E362EC /* PrivacyInfo.xcprivacy */,
 				ADDEE56A3EBB0010C40E4D54 /* AI */,
@@ -141,7 +141,7 @@
 				76E7E39E0575D12656B221D4 /* BookIDResultView.swift */,
 				644DF23D1B56449B7ED6580F /* CameraPicker.swift */,
 				8FF516DF768D281D4C327821 /* CoachChatView.swift */,
-				39042459F3C88F76EB01F423 /* FolioCueTheme.swift */,
+				39042459F3C88F76EB01F423 /* SpinewellTheme.swift */,
 				0195A832B2A95F7893729116 /* RootNavigationView.swift */,
 				4BDB39268A7CA400B3137E7E /* ShelfCardView.swift */,
 				6A7DF20013814EE53C27CF0D /* ShelfHomeView.swift */,
@@ -152,9 +152,9 @@
 		6DAA0B454984357D5D656A07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				268CD1F27FE0F9C8CFEFC3FA /* FolioCue.app */,
-				52CE4F45F166A01766BF3D2A /* FolioCueDomainTests.xctest */,
-				CA7CB20D3AD5FFE7022A4E65 /* FolioCueUITests.xctest */,
+				268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */,
+				52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */,
+				CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,8 +201,8 @@
 		C319FD80F9015A0EC4614457 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1F3188DDCE7C9F2B9E4D310A /* FolioCueDomainTests.swift */,
-				A2E8EB33AF168D61880BE7E0 /* FolioCueUISmokeTests.swift */,
+				1F3188DDCE7C9F2B9E4D310A /* SpinewellDomainTests.swift */,
+				A2E8EB33AF168D61880BE7E0 /* SpinewellUISmokeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21905DEB5EEC339AE7B75DD7 /* FolioCue */ = {
+		21905DEB5EEC339AE7B75DD7 /* Spinewell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "FolioCue" */;
+			buildConfigurationList = D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "Spinewell" */;
 			buildPhases = (
 				2B6B43D67574B4C8E92AB64C /* Sources */,
 				5789BC87B852AF37C02D19C3 /* Resources */,
@@ -232,18 +232,18 @@
 			);
 			dependencies = (
 			);
-			name = FolioCue;
+			name = Spinewell;
 			packageProductDependencies = (
 				D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */,
-				BEF27C50CF31599188173D2A /* FolioCueDomain */,
+				BEF27C50CF31599188173D2A /* SpinewellDomain */,
 			);
-			productName = FolioCue;
-			productReference = 268CD1F27FE0F9C8CFEFC3FA /* FolioCue.app */;
+			productName = Spinewell;
+			productReference = 268CD1F27FE0F9C8CFEFC3FA /* Spinewell.app */;
 			productType = "com.apple.product-type.application";
 		};
-		58744DFE04FD8CAA1E8C1009 /* FolioCueUITests */ = {
+		58744DFE04FD8CAA1E8C1009 /* SpinewellUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "FolioCueUITests" */;
+			buildConfigurationList = D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "SpinewellUITests" */;
 			buildPhases = (
 				E3C94ED96B4ED8067B5B863C /* Sources */,
 			);
@@ -252,16 +252,16 @@
 			dependencies = (
 				034A00D4461D84694175C193 /* PBXTargetDependency */,
 			);
-			name = FolioCueUITests;
+			name = SpinewellUITests;
 			packageProductDependencies = (
 			);
-			productName = FolioCueUITests;
-			productReference = CA7CB20D3AD5FFE7022A4E65 /* FolioCueUITests.xctest */;
+			productName = SpinewellUITests;
+			productReference = CA7CB20D3AD5FFE7022A4E65 /* SpinewellUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		7DC2577F294BB6667BED73B6 /* FolioCueDomainTests */ = {
+		7DC2577F294BB6667BED73B6 /* SpinewellDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "FolioCueDomainTests" */;
+			buildConfigurationList = 2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "SpinewellDomainTests" */;
 			buildPhases = (
 				148F3868DDF102C6F19FD361 /* Sources */,
 				7F0C233621B1918916445589 /* Frameworks */,
@@ -271,13 +271,13 @@
 			dependencies = (
 				32418B28F1AB1051FB1F13B2 /* PBXTargetDependency */,
 			);
-			name = FolioCueDomainTests;
+			name = SpinewellDomainTests;
 			packageProductDependencies = (
-				6C64FF675C3A2AE708DF97A7 /* FolioCueDomain */,
+				6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */,
 				3DBE0CA2F0326689E47FB11B /* AppRuntimeCore */,
 			);
-			productName = FolioCueDomainTests;
-			productReference = 52CE4F45F166A01766BF3D2A /* FolioCueDomainTests.xctest */;
+			productName = SpinewellDomainTests;
+			productReference = 52CE4F45F166A01766BF3D2A /* SpinewellDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "FolioCue" */;
+			buildConfigurationList = 007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "Spinewell" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -312,9 +312,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21905DEB5EEC339AE7B75DD7 /* FolioCue */,
-				7DC2577F294BB6667BED73B6 /* FolioCueDomainTests */,
-				58744DFE04FD8CAA1E8C1009 /* FolioCueUITests */,
+				21905DEB5EEC339AE7B75DD7 /* Spinewell */,
+				7DC2577F294BB6667BED73B6 /* SpinewellDomainTests */,
+				58744DFE04FD8CAA1E8C1009 /* SpinewellUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FEEE3E0BBC7796653A9CB7 /* FolioCueDomainTests.swift in Sources */,
+				66FEEE3E0BBC7796653A9CB7 /* SpinewellDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,8 +354,8 @@
 				34EE7138DFCE7DA98C83DAA7 /* CoachChatView.swift in Sources */,
 				5AF85C6019F6665E9EBE4AE9 /* ConsentSheet.swift in Sources */,
 				2849460F34992C21741E18C0 /* DeepSeekClient.swift in Sources */,
-				B529E8763FC36762BEEBF87C /* FolioCueApp.swift in Sources */,
-				29A45C6A42022FFD158819F9 /* FolioCueTheme.swift in Sources */,
+				B529E8763FC36762BEEBF87C /* SpinewellApp.swift in Sources */,
+				29A45C6A42022FFD158819F9 /* SpinewellTheme.swift in Sources */,
 				38C87923D6A6F2C652F5D725 /* LocalLegalWebView.swift in Sources */,
 				642D115E9D121A0B22ABB494 /* RootNavigationView.swift in Sources */,
 				F2DD4EE1586EAD68EE126DAF /* SettingsPrivacyView.swift in Sources */,
@@ -371,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				402EEAC95B9E647591A45F37 /* FolioCueUISmokeTests.swift in Sources */,
+				402EEAC95B9E647591A45F37 /* SpinewellUISmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,12 +380,12 @@
 /* Begin PBXTargetDependency section */
 		034A00D4461D84694175C193 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21905DEB5EEC339AE7B75DD7 /* FolioCue */;
+			target = 21905DEB5EEC339AE7B75DD7 /* Spinewell */;
 			targetProxy = 80A288CA5A5915499E73F4DF /* PBXContainerItemProxy */;
 		};
 		32418B28F1AB1051FB1F13B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21905DEB5EEC339AE7B75DD7 /* FolioCue */;
+			target = 21905DEB5EEC339AE7B75DD7 /* Spinewell */;
 			targetProxy = 8E47053BDD471F737E7423E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,11 +394,11 @@
 		0112C9594885FF2A84CF27B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FolioCue;
+				INFOPLIST_KEY_CFBundleDisplayName = Spinewell;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cover, spine, or shelf-row photos to identify books on your personal shelf";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free shelf location and TBR notes while holding books";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import library or bookshelf album stills to backfill your personal shelf";
@@ -409,8 +409,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue;
-				PRODUCT_NAME = FolioCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Spinewell;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -425,10 +425,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FolioCue.app/FolioCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinewell.app/Spinewell";
 			};
 			name = Release;
 		};
@@ -441,10 +441,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FolioCue;
+				TEST_TARGET_NAME = Spinewell;
 			};
 			name = Debug;
 		};
@@ -457,10 +457,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FolioCue;
+				TEST_TARGET_NAME = Spinewell;
 			};
 			name = Release;
 		};
@@ -592,11 +592,11 @@
 		E1A37139F9824C16E1976430 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FolioCue;
+				INFOPLIST_KEY_CFBundleDisplayName = Spinewell;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Capture cover, spine, or shelf-row photos to identify books on your personal shelf";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free shelf location and TBR notes while holding books";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import library or bookshelf album stills to backfill your personal shelf";
@@ -607,8 +607,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue;
-				PRODUCT_NAME = FolioCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Spinewell;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -623,17 +623,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.foliocue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.spinewell.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FolioCue.app/FolioCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spinewell.app/Spinewell";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "FolioCue" */ = {
+		007BD49C56EBBCB2B8F89B32 /* Build configuration list for PBXProject "Spinewell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEF199CF30F012AA42F7E766 /* Debug */,
@@ -642,7 +642,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "FolioCueDomainTests" */ = {
+		2A447A962AFCB7C15D6D0D2C /* Build configuration list for PBXNativeTarget "SpinewellDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA68EE4DA38C7144B040881F /* Debug */,
@@ -651,7 +651,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "FolioCueUITests" */ = {
+		D0BC96D975E0DDF360ACD168 /* Build configuration list for PBXNativeTarget "SpinewellUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EFFC9EB46E0F66971C3DD7A /* Debug */,
@@ -660,7 +660,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "FolioCue" */ = {
+		D0C6903607EE96897B430F1F /* Build configuration list for PBXNativeTarget "Spinewell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0112C9594885FF2A84CF27B3 /* Debug */,
@@ -687,13 +687,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		6C64FF675C3A2AE708DF97A7 /* FolioCueDomain */ = {
+		6C64FF675C3A2AE708DF97A7 /* SpinewellDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FolioCueDomain;
+			productName = SpinewellDomain;
 		};
-		BEF27C50CF31599188173D2A /* FolioCueDomain */ = {
+		BEF27C50CF31599188173D2A /* SpinewellDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FolioCueDomain;
+			productName = SpinewellDomain;
 		};
 		D00883C02F7C4572E56CC5F9 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

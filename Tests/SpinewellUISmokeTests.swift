@@ -1,13 +1,13 @@
 import XCTest
 
 /// Core-flow smoke on iPhone 17 Pro Simulator. Uses -uitest-seed launch arg.
-final class FolioCueUISmokeTests: XCTestCase {
+final class SpinewellUISmokeTests: XCTestCase {
     func testCoreShelfFlows() throws {
         let app = XCUIApplication()
         app.launchArguments = ["-uitest-seed"]
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["FolioCue"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.staticTexts["Spinewell"].waitForExistence(timeout: 8))
         XCTAssertTrue(app.descendants(matching: .any)["SpineRail"].waitForExistence(timeout: 4))
         XCTAssertTrue(app.descendants(matching: .any)["ComplianceRibbon"].waitForExistence(timeout: 4))
 

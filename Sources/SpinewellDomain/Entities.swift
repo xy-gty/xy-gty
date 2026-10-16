@@ -232,8 +232,8 @@ public struct AppSettings: Codable, Hashable, Sendable {
     }
 }
 
-/// Aggregate root persisted via AtomicCodableStore\<FolioCueState\>.
-public struct FolioCueState: Codable, Hashable, Sendable {
+/// Aggregate root persisted via AtomicCodableStore\<SpinewellState\>.
+public struct SpinewellState: Codable, Hashable, Sendable {
     public var sessions: [ShelfSession]
     public var captures: [CoverCapture]
     public var bookIDs: [BookID]

@@ -1,4 +1,4 @@
-import FolioCueDomain
+import SpinewellDomain
 import SwiftUI
 
 struct RootNavigationView: View {
@@ -7,7 +7,7 @@ struct RootNavigationView: View {
     var body: some View {
         NavigationStack(path: $appModel.path) {
             ShelfHomeView()
-                .navigationDestination(for: FolioCueRoute.self) { route in
+                .navigationDestination(for: SpinewellRoute.self) { route in
                     destination(for: route)
                 }
         }
@@ -33,7 +33,7 @@ struct RootNavigationView: View {
     }
 
     @ViewBuilder
-    private func destination(for route: FolioCueRoute) -> some View {
+    private func destination(for route: SpinewellRoute) -> some View {
         switch route {
         case .shelfHome:
             ShelfHomeView()
