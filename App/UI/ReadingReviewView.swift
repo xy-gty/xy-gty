@@ -1,5 +1,5 @@
 import SwiftUI
-import FinishCueDomain
+import HeatbarDomain
 
 struct ReadingReviewView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -9,7 +9,7 @@ struct ReadingReviewView: View {
             Section {
                 Text("Keep confirmed reads into the heat. Discard drops drafts from official results. Edit then Keep.")
                     .font(.footnote)
-                    .foregroundStyle(FinishCueTheme.muted)
+                    .foregroundStyle(HeatbarTheme.muted)
                     .listRowBackground(Color.clear)
             }
 
@@ -22,13 +22,13 @@ struct ReadingReviewView: View {
                             Spacer()
                             Text(read.status)
                                 .font(.caption.weight(.semibold))
-                                .foregroundStyle(read.status == "confirmed" ? FinishCueTheme.accent : FinishCueTheme.primary)
+                                .foregroundStyle(read.status == "confirmed" ? HeatbarTheme.accent : HeatbarTheme.primary)
                         }
                         Text(read.athleteLabel.isEmpty ? "Athlete TBD" : read.athleteLabel)
                             .font(.subheadline)
                         Text(read.timeRead.isEmpty ? "—.—" : read.timeRead)
                             .font(.title3.monospacedDigit().weight(.bold))
-                            .foregroundStyle(FinishCueTheme.ink)
+                            .foregroundStyle(HeatbarTheme.ink)
 
                         if appModel.editingReadId == read.id {
                             HStack {
@@ -40,13 +40,13 @@ struct ReadingReviewView: View {
                                     .textFieldStyle(.roundedBorder)
                                 Button(ReadingReviewBar.confirm) { appModel.applyEditRead() }
                                     .buttonStyle(.borderedProminent)
-                                    .tint(FinishCueTheme.accent)
+                                    .tint(HeatbarTheme.accent)
                             }
                         } else {
                             HStack {
                                 Button(ReadingReviewBar.confirm) { appModel.keepRead(read.id) }
                                     .buttonStyle(.borderedProminent)
-                                    .tint(FinishCueTheme.accent)
+                                    .tint(HeatbarTheme.accent)
                                     .accessibilityIdentifier("Keep-\(read.id)")
                                 Button(ReadingReviewBar.reject) { appModel.discardRead(read.id) }
                                     .buttonStyle(.bordered)
@@ -60,7 +60,7 @@ struct ReadingReviewView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Reading review")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

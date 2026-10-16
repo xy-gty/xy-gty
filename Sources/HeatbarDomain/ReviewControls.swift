@@ -10,7 +10,7 @@ public enum ReadingReviewBar {
 
 public enum AIConsentContract {
     public static let provider = "DeepSeek"
-    public static let disclosureVersion = "finishcue.consent.v1"
+    public static let disclosureVersion = "heatbar.consent.v1"
     public static let fields = [
         "strip_desc",
         "lane_guesses",
@@ -37,7 +37,7 @@ public enum AIConsentContract {
 }
 
 /// Interface name literals for deferred Builder wiring (no UI).
-public enum FinishCueInterfaceNames {
+public enum HeatbarInterfaceNames {
     public static let readingReviewBar = "ReadingReviewBar"
     public static let aiConsentGate = "AIConsentGate"
     public static let photoImportSession = "PhotoImportSession"
@@ -56,16 +56,16 @@ public enum FinishCueInterfaceNames {
 
 public enum PrivacyUsageCopy {
     public static let camera =
-        "Capture finish-line slit or video so FinishCue can read lanes and times"
+        "Capture finish-line slit or video so Heatbar can read lanes and times"
     public static let photoLibrary =
         "Import training or amateur-meet finish strips for review and coaching"
     public static let microphone =
         "Hands-free start and lap calls while the phone is racked at the finish"
     public static let speechRecognition =
-        "Turn spoken cues like start heat or mark lane into coach chat text"
+        "Turn spoken lines like start heat or mark lane into coach chat text"
 }
 
-public enum FinishCueCompliance {
+public enum HeatbarCompliance {
     public static let trainingAidAmateurMeet =
         "辅助训练/业余会合影计时 · Training aid & amateur meet photo timing"
     public static let notOfficialFAT =
@@ -85,44 +85,44 @@ public enum FinishCueCompliance {
         "Training aid & amateur meet photo timing; not an official FAT timing device; not betting or anti-doping"
 }
 
-public enum FinishCueIdentity {
-    public static let appName = "FinishCue"
-    public static let developmentBundleId = "com.lingguang.finishcue"
-    public static let productDir = "finishcue"
+public enum HeatbarIdentity {
+    public static let appName = "Heatbar"
+    public static let developmentBundleId = "com.lingguang.heatbar"
+    public static let productDir = "heatbar"
     public static let uiLanguage = "en-US"
     public static let deliveryRepo = "git@github.com:xy-gty/xy-gty.git"
     public static let deliveryBranchHint = "xy-gty"
 }
 
-public enum FinishCuePalette {
+public enum HeatbarPalette {
     public static let primary = "#BE185D"
     public static let secondary = "#ECFEFF"
     public static let accent = "#65A30D"
 }
 
-public enum FinishCueDevicePolicy {
+public enum HeatbarDevicePolicy {
     public static let targetDevice = "iPhone 17 Pro"
     public static let preferredUDID = "B14CC0EA"
     public static let bannedDevices = ["iPhone 17 Pro Max"]
 }
 
 /// Explicit anti-twin markers — Builder must not adopt these shells.
-public enum FinishCueAllergy {
+public enum HeatbarAllergy {
     public static let bannedTwinShells = [
-        "FolioCue",
-        "LuxCue",
-        "StopCue",
-        "FormCue",
-        "CellarCue",
-        "MixCue",
+        "Spinewell",
+        "Zonelight",
+        "Onionreel",
+        "Workrest",
+        "Racknote",
+        "Stirboard",
     ]
     public static let bannedAppCopyNames = [
         "SprintTimer",
     ]
-    /// FormCue = HIIT bricks; StopCue = onion-skin freeze — do not reuse.
+    /// Workrest = HIIT bricks; Onionreel = onion-skin freeze — do not reuse.
     public static let differentiationNotes = [
-        "FormCue HIIT bricks — not FinishCue",
-        "StopCue onion-skin freeze — not FinishCue",
+        "Workrest HIIT bricks — not Heatbar",
+        "Onionreel onion-skin freeze — not Heatbar",
     ]
     public static let requiredUI = [
         "horizontal slit-scan finish-bar scrubber",

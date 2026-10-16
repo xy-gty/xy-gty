@@ -12,17 +12,17 @@
 		0F63BB9774E8AE5E62110745 /* HeatHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3977CDAF670934B2600E109 /* HeatHomeView.swift */; };
 		17E51D9554E8C8DFF9BFEF25 /* DeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E62433BDFEE738CBD406A /* DeepSeekClient.swift */; };
 		190B6B3F80483DAC46AEA7E8 /* SettingsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF4DB2BE9B8BEAB40E0D66 /* SettingsPrivacyView.swift */; };
-		1A378E75D5DE388B97AE949E /* FinishCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5930426481D95957740887 /* FinishCueTheme.swift */; };
-		1E59A37E0A6FD08438BFEE46 /* FinishCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA2B456A769ABD81871253 /* FinishCueApp.swift */; };
+		1A378E75D5DE388B97AE949E /* HeatbarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5930426481D95957740887 /* HeatbarTheme.swift */; };
+		1E59A37E0A6FD08438BFEE46 /* HeatbarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA2B456A769ABD81871253 /* HeatbarApp.swift */; };
 		254FA45F44E3033B20CD1325 /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = D41998B034620E5473B55ED1 /* AppRuntimeCore */; };
 		2D0AB30316D6CB980D22940A /* VoiceNoteRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3881AEF100E42365A5F9B8 /* VoiceNoteRecorder.swift */; };
-		37229C2D3B5276F0C6644D3A /* FinishCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = A7E95D277D92B92E7B8C7CAD /* FinishCueDomain */; };
-		3EDC230DBFC741F9C6A82B23 /* FinishCueUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25AE64181816FC5DE8C93C /* FinishCueUISmokeTests.swift */; };
+		37229C2D3B5276F0C6644D3A /* HeatbarDomain in Frameworks */ = {isa = PBXBuildFile; productRef = A7E95D277D92B92E7B8C7CAD /* HeatbarDomain */; };
+		3EDC230DBFC741F9C6A82B23 /* HeatbarUISmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25AE64181816FC5DE8C93C /* HeatbarUISmokeTests.swift */; };
 		3F5F5144F36AF91DD90F507B /* CoachChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43B77784D69D0B4A5A986D /* CoachChatView.swift */; };
 		43FC9D03A05514A58BC8ECFB /* CaptureImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B9C60B49015F4BB6E719FB /* CaptureImportView.swift */; };
 		5B4CCA54D6796A7EF4082666 /* SlitScrubberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C909A7D70396C29D52BA78 /* SlitScrubberView.swift */; };
 		5CDB8ADE93009FD50263848D /* terms.html in Resources */ = {isa = PBXBuildFile; fileRef = 02097C0BA6F40E976DE396C0 /* terms.html */; };
-		60654D4EC72DC1281D2C093E /* FinishCueDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6A602CC98B4189E0A5DE02F3 /* FinishCueDomain */; };
+		60654D4EC72DC1281D2C093E /* HeatbarDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6A602CC98B4189E0A5DE02F3 /* HeatbarDomain */; };
 		646220CFA5CD8C6AF5949B17 /* HeatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A085D5BF49CD21C7B7786 /* HeatDetailView.swift */; };
 		660DBE15061DBAA457AA9D72 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE047257B6277212E35C4C /* RootNavigationView.swift */; };
 		6FDE4750E8ADD082DE53E44E /* AppRuntimeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 454F1CB71B77B4F70DE6D0FA /* AppRuntimeCore */; };
@@ -36,7 +36,7 @@
 		B472E026125DDAF73D0077B2 /* FinishCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B7523BF352977A6DDFB95 /* FinishCardView.swift */; };
 		B99D6BD88A1854A3760BEAC6 /* TTSPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23ADBC89BAE5C115314974 /* TTSPlayer.swift */; };
 		D3AA594727166352AD1846DF /* SlitScanComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895E7824BDFBB11DA3B6F55 /* SlitScanComponents.swift */; };
-		DBFB58639AB1F1DB3E075D3A /* FinishCueDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141FB04F82833EE62906A /* FinishCueDomainTests.swift */; };
+		DBFB58639AB1F1DB3E075D3A /* HeatbarDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141FB04F82833EE62906A /* HeatbarDomainTests.swift */; };
 		DE56AD3BA36C7B4B6CD7BBD8 /* LocalLegalWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CBDEA3520BD17F780AE8D9 /* LocalLegalWebView.swift */; };
 		E0FF3A61E36CC572D1AE178E /* ConsentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F34BBB848FA7D0549A567E /* ConsentSheet.swift */; };
 		E5E8FE5F8EC0047A218B3087 /* CalloutDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83FE41B998F9217E9A60ED /* CalloutDeckView.swift */; };
@@ -49,14 +49,14 @@
 			containerPortal = 853567F45E1E5936F1112DA2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE2DBF0E49AE47B62821CC79;
-			remoteInfo = FinishCue;
+			remoteInfo = Heatbar;
 		};
 		E856354449FCF76C3BA8549F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 853567F45E1E5936F1112DA2 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE2DBF0E49AE47B62821CC79;
-			remoteInfo = FinishCue;
+			remoteInfo = Heatbar;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,23 +65,23 @@
 		02097C0BA6F40E976DE396C0 /* terms.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = terms.html; sourceTree = "<group>"; };
 		0F23ADBC89BAE5C115314974 /* TTSPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSPlayer.swift; sourceTree = "<group>"; };
 		24E4BA0E774AA15C24E84FF2 /* AppRuntimeCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppRuntimeCore; path = Vendor/AppRuntimeCore; sourceTree = SOURCE_ROOT; };
-		28F8C2738E82B7B41F1971B4 /* FinishCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FinishCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F8C2738E82B7B41F1971B4 /* Heatbar.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Heatbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEBA463AF22E2F8D719E42B /* product */ = {isa = PBXFileReference; lastKnownFileType = folder; name = product; path = .; sourceTree = SOURCE_ROOT; };
-		32BA2B456A769ABD81871253 /* FinishCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCueApp.swift; sourceTree = "<group>"; };
-		33A96261D387BD98EE96E041 /* FinishCueDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FinishCueDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BA2B456A769ABD81871253 /* HeatbarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatbarApp.swift; sourceTree = "<group>"; };
+		33A96261D387BD98EE96E041 /* HeatbarDomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HeatbarDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE047257B6277212E35C4C /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
-		3C25AE64181816FC5DE8C93C /* FinishCueUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCueUISmokeTests.swift; sourceTree = "<group>"; };
-		49C154DB40D58AA370B814C1 /* FinishCueUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FinishCueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C25AE64181816FC5DE8C93C /* HeatbarUISmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatbarUISmokeTests.swift; sourceTree = "<group>"; };
+		49C154DB40D58AA370B814C1 /* HeatbarUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HeatbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2892F383F44D533B5AC813 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
 		5AC0279BAEF553E389EFFAE7 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		6526F97399E55E3A9765B268 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6A756C131CE3DF171EB0732F /* provider-policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "provider-policy.html"; sourceTree = "<group>"; };
 		6CA210A6060B4BFD0839BF3A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		724141FB04F82833EE62906A /* FinishCueDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCueDomainTests.swift; sourceTree = "<group>"; };
+		724141FB04F82833EE62906A /* HeatbarDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatbarDomainTests.swift; sourceTree = "<group>"; };
 		7B43B77784D69D0B4A5A986D /* CoachChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachChatView.swift; sourceTree = "<group>"; };
 		83C909A7D70396C29D52BA78 /* SlitScrubberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlitScrubberView.swift; sourceTree = "<group>"; };
 		8895E7824BDFBB11DA3B6F55 /* SlitScanComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlitScanComponents.swift; sourceTree = "<group>"; };
-		8F5930426481D95957740887 /* FinishCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCueTheme.swift; sourceTree = "<group>"; };
+		8F5930426481D95957740887 /* HeatbarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatbarTheme.swift; sourceTree = "<group>"; };
 		A3977CDAF670934B2600E109 /* HeatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatHomeView.swift; sourceTree = "<group>"; };
 		A6FF4DB2BE9B8BEAB40E0D66 /* SettingsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyView.swift; sourceTree = "<group>"; };
 		A88B02CD56EE2A81353B69E7 /* ReadingReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingReviewView.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254FA45F44E3033B20CD1325 /* AppRuntimeCore in Frameworks */,
-				37229C2D3B5276F0C6644D3A /* FinishCueDomain in Frameworks */,
+				37229C2D3B5276F0C6644D3A /* HeatbarDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60654D4EC72DC1281D2C093E /* FinishCueDomain in Frameworks */,
+				60654D4EC72DC1281D2C093E /* HeatbarDomain in Frameworks */,
 				6FDE4750E8ADD082DE53E44E /* AppRuntimeCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,9 +135,9 @@
 		24DDC870443AD74CC8CF57E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28F8C2738E82B7B41F1971B4 /* FinishCue.app */,
-				33A96261D387BD98EE96E041 /* FinishCueDomainTests.xctest */,
-				49C154DB40D58AA370B814C1 /* FinishCueUITests.xctest */,
+				28F8C2738E82B7B41F1971B4 /* Heatbar.app */,
+				33A96261D387BD98EE96E041 /* HeatbarDomainTests.xctest */,
+				49C154DB40D58AA370B814C1 /* HeatbarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				A9B9C60B49015F4BB6E719FB /* CaptureImportView.swift */,
 				7B43B77784D69D0B4A5A986D /* CoachChatView.swift */,
 				D69B7523BF352977A6DDFB95 /* FinishCardView.swift */,
-				8F5930426481D95957740887 /* FinishCueTheme.swift */,
+				8F5930426481D95957740887 /* HeatbarTheme.swift */,
 				DA5A085D5BF49CD21C7B7786 /* HeatDetailView.swift */,
 				A3977CDAF670934B2600E109 /* HeatHomeView.swift */,
 				A88B02CD56EE2A81353B69E7 /* ReadingReviewView.swift */,
@@ -206,8 +206,8 @@
 		9C2FEF7B989D8D052CC2963F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				724141FB04F82833EE62906A /* FinishCueDomainTests.swift */,
-				3C25AE64181816FC5DE8C93C /* FinishCueUISmokeTests.swift */,
+				724141FB04F82833EE62906A /* HeatbarDomainTests.swift */,
+				3C25AE64181816FC5DE8C93C /* HeatbarUISmokeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				B94E8F25592CF649E5637FAE /* Assets.xcassets */,
-				32BA2B456A769ABD81871253 /* FinishCueApp.swift */,
+				32BA2B456A769ABD81871253 /* HeatbarApp.swift */,
 				FD00A14988C9484F2AF3644E /* Info.plist */,
 				6526F97399E55E3A9765B268 /* PrivacyInfo.xcprivacy */,
 				97FBFD2CC5E32E523BA2745D /* AI */,
@@ -238,9 +238,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C11E81176F9F5E1A6DC0D63 /* FinishCueDomainTests */ = {
+		2C11E81176F9F5E1A6DC0D63 /* HeatbarDomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6218AB9F372CDDBB02C6EE7C /* Build configuration list for PBXNativeTarget "FinishCueDomainTests" */;
+			buildConfigurationList = 6218AB9F372CDDBB02C6EE7C /* Build configuration list for PBXNativeTarget "HeatbarDomainTests" */;
 			buildPhases = (
 				692870BA4F64A5C949880582 /* Sources */,
 				5AF7D57C3A3514B987813F32 /* Frameworks */,
@@ -250,18 +250,18 @@
 			dependencies = (
 				B7E4ADF38DA6A34112E6455F /* PBXTargetDependency */,
 			);
-			name = FinishCueDomainTests;
+			name = HeatbarDomainTests;
 			packageProductDependencies = (
-				6A602CC98B4189E0A5DE02F3 /* FinishCueDomain */,
+				6A602CC98B4189E0A5DE02F3 /* HeatbarDomain */,
 				454F1CB71B77B4F70DE6D0FA /* AppRuntimeCore */,
 			);
-			productName = FinishCueDomainTests;
-			productReference = 33A96261D387BD98EE96E041 /* FinishCueDomainTests.xctest */;
+			productName = HeatbarDomainTests;
+			productReference = 33A96261D387BD98EE96E041 /* HeatbarDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		54C1C59BE45F1DB238113A72 /* FinishCueUITests */ = {
+		54C1C59BE45F1DB238113A72 /* HeatbarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35046F58D08F814603A871E5 /* Build configuration list for PBXNativeTarget "FinishCueUITests" */;
+			buildConfigurationList = 35046F58D08F814603A871E5 /* Build configuration list for PBXNativeTarget "HeatbarUITests" */;
 			buildPhases = (
 				1ABDC364735D6ADA843BCB11 /* Sources */,
 			);
@@ -270,16 +270,16 @@
 			dependencies = (
 				ADD9B5AA5CE1990FD46537BD /* PBXTargetDependency */,
 			);
-			name = FinishCueUITests;
+			name = HeatbarUITests;
 			packageProductDependencies = (
 			);
-			productName = FinishCueUITests;
-			productReference = 49C154DB40D58AA370B814C1 /* FinishCueUITests.xctest */;
+			productName = HeatbarUITests;
+			productReference = 49C154DB40D58AA370B814C1 /* HeatbarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		DE2DBF0E49AE47B62821CC79 /* FinishCue */ = {
+		DE2DBF0E49AE47B62821CC79 /* Heatbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F68F27CD5E2194D67A400D8 /* Build configuration list for PBXNativeTarget "FinishCue" */;
+			buildConfigurationList = 5F68F27CD5E2194D67A400D8 /* Build configuration list for PBXNativeTarget "Heatbar" */;
 			buildPhases = (
 				1F88C4F9F9A7FF285E5F9DBE /* Sources */,
 				3907CE5AC01E8386B50CCF58 /* Resources */,
@@ -289,13 +289,13 @@
 			);
 			dependencies = (
 			);
-			name = FinishCue;
+			name = Heatbar;
 			packageProductDependencies = (
 				D41998B034620E5473B55ED1 /* AppRuntimeCore */,
-				A7E95D277D92B92E7B8C7CAD /* FinishCueDomain */,
+				A7E95D277D92B92E7B8C7CAD /* HeatbarDomain */,
 			);
-			productName = FinishCue;
-			productReference = 28F8C2738E82B7B41F1971B4 /* FinishCue.app */;
+			productName = Heatbar;
+			productReference = 28F8C2738E82B7B41F1971B4 /* Heatbar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +312,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C7148AF236946093EE44402 /* Build configuration list for PBXProject "FinishCue" */;
+			buildConfigurationList = 9C7148AF236946093EE44402 /* Build configuration list for PBXProject "Heatbar" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -330,9 +330,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE2DBF0E49AE47B62821CC79 /* FinishCue */,
-				2C11E81176F9F5E1A6DC0D63 /* FinishCueDomainTests */,
-				54C1C59BE45F1DB238113A72 /* FinishCueUITests */,
+				DE2DBF0E49AE47B62821CC79 /* Heatbar */,
+				2C11E81176F9F5E1A6DC0D63 /* HeatbarDomainTests */,
+				54C1C59BE45F1DB238113A72 /* HeatbarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EDC230DBFC741F9C6A82B23 /* FinishCueUISmokeTests.swift in Sources */,
+				3EDC230DBFC741F9C6A82B23 /* HeatbarUISmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,8 +374,8 @@
 				E0FF3A61E36CC572D1AE178E /* ConsentSheet.swift in Sources */,
 				17E51D9554E8C8DFF9BFEF25 /* DeepSeekClient.swift in Sources */,
 				B472E026125DDAF73D0077B2 /* FinishCardView.swift in Sources */,
-				1E59A37E0A6FD08438BFEE46 /* FinishCueApp.swift in Sources */,
-				1A378E75D5DE388B97AE949E /* FinishCueTheme.swift in Sources */,
+				1E59A37E0A6FD08438BFEE46 /* HeatbarApp.swift in Sources */,
+				1A378E75D5DE388B97AE949E /* HeatbarTheme.swift in Sources */,
 				646220CFA5CD8C6AF5949B17 /* HeatDetailView.swift in Sources */,
 				0F63BB9774E8AE5E62110745 /* HeatHomeView.swift in Sources */,
 				0BF20F781A5EA0B2F2C6E060 /* HeatStore.swift in Sources */,
@@ -395,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFB58639AB1F1DB3E075D3A /* FinishCueDomainTests.swift in Sources */,
+				DBFB58639AB1F1DB3E075D3A /* HeatbarDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +404,12 @@
 /* Begin PBXTargetDependency section */
 		ADD9B5AA5CE1990FD46537BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE2DBF0E49AE47B62821CC79 /* FinishCue */;
+			target = DE2DBF0E49AE47B62821CC79 /* Heatbar */;
 			targetProxy = 3F35232683D45F5487B7B99F /* PBXContainerItemProxy */;
 		};
 		B7E4ADF38DA6A34112E6455F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE2DBF0E49AE47B62821CC79 /* FinishCue */;
+			target = DE2DBF0E49AE47B62821CC79 /* Heatbar */;
 			targetProxy = E856354449FCF76C3BA8549F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,10 +424,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.heatbar.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinishCue.app/FinishCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heatbar.app/Heatbar";
 			};
 			name = Debug;
 		};
@@ -440,22 +440,22 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.heatbar.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinishCue.app/FinishCue";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heatbar.app/Heatbar";
 			};
 			name = Release;
 		};
 		1C95144292C63F981D7D073D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FinishCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture finish-line slit or video so FinishCue can read lanes and times";
+				INFOPLIST_KEY_CFBundleDisplayName = Heatbar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture finish-line slit or video so Heatbar can read lanes and times";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free start and lap calls while the phone is racked at the finish";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import training or amateur-meet finish strips for review and coaching";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken cues like start heat or mark lane into coach chat text";
@@ -465,8 +465,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue;
-				PRODUCT_NAME = FinishCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Heatbar;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -606,10 +606,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.heatbar.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FinishCue;
+				TEST_TARGET_NAME = Heatbar;
 			};
 			name = Release;
 		};
@@ -622,22 +622,22 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue.uitests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.heatbar.uitests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FinishCue;
+				TEST_TARGET_NAME = Heatbar;
 			};
 			name = Debug;
 		};
 		F99D086637B4401ABC17436F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FinishCue;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Capture finish-line slit or video so FinishCue can read lanes and times";
+				INFOPLIST_KEY_CFBundleDisplayName = Heatbar;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture finish-line slit or video so Heatbar can read lanes and times";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hands-free start and lap calls while the phone is racked at the finish";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Import training or amateur-meet finish strips for review and coaching";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turn spoken cues like start heat or mark lane into coach chat text";
@@ -647,8 +647,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingguang.finishcue;
-				PRODUCT_NAME = FinishCue;
+				PRODUCT_BUNDLE_IDENTIFIER = xycoins.2027.test;
+				PRODUCT_NAME = Heatbar;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -657,7 +657,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35046F58D08F814603A871E5 /* Build configuration list for PBXNativeTarget "FinishCueUITests" */ = {
+		35046F58D08F814603A871E5 /* Build configuration list for PBXNativeTarget "HeatbarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D953C0A9AD8D0965F2FB1259 /* Debug */,
@@ -666,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5F68F27CD5E2194D67A400D8 /* Build configuration list for PBXNativeTarget "FinishCue" */ = {
+		5F68F27CD5E2194D67A400D8 /* Build configuration list for PBXNativeTarget "Heatbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F99D086637B4401ABC17436F /* Debug */,
@@ -675,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6218AB9F372CDDBB02C6EE7C /* Build configuration list for PBXNativeTarget "FinishCueDomainTests" */ = {
+		6218AB9F372CDDBB02C6EE7C /* Build configuration list for PBXNativeTarget "HeatbarDomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				051AB23A17B3002390E1D70E /* Debug */,
@@ -684,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9C7148AF236946093EE44402 /* Build configuration list for PBXProject "FinishCue" */ = {
+		9C7148AF236946093EE44402 /* Build configuration list for PBXProject "Heatbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B8B8D778C335BCA2DD239F0 /* Debug */,
@@ -711,13 +711,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppRuntimeCore;
 		};
-		6A602CC98B4189E0A5DE02F3 /* FinishCueDomain */ = {
+		6A602CC98B4189E0A5DE02F3 /* HeatbarDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FinishCueDomain;
+			productName = HeatbarDomain;
 		};
-		A7E95D277D92B92E7B8C7CAD /* FinishCueDomain */ = {
+		A7E95D277D92B92E7B8C7CAD /* HeatbarDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FinishCueDomain;
+			productName = HeatbarDomain;
 		};
 		D41998B034620E5473B55ED1 /* AppRuntimeCore */ = {
 			isa = XCSwiftPackageProductDependency;

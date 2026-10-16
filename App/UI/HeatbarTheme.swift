@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum FinishCueTheme {
+enum HeatbarTheme {
     static let primary = Color(hex: 0xBE185D)
     static let secondary = Color(hex: 0xECFEFF)
     static let accent = Color(hex: 0x65A30D)
@@ -26,9 +26,9 @@ extension Color {
 }
 
 extension View {
-    func finishCueScreen() -> some View {
+    func heatbarScreen() -> some View {
         self
-            .background(FinishCueTheme.iceField.ignoresSafeArea())
+            .background(HeatbarTheme.iceField.ignoresSafeArea())
     }
 }
 
@@ -42,15 +42,15 @@ struct ComplianceBanner: View {
             Text("辅助训练/业余会合影计时；非官方 FAT；非博彩/反兴奋剂")
                 .font(.caption2)
         }
-        .foregroundStyle(FinishCueTheme.ink)
+        .foregroundStyle(HeatbarTheme.ink)
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 14, style: .continuous)
-                .fill(FinishCueTheme.secondary.opacity(0.95))
+                .fill(HeatbarTheme.secondary.opacity(0.95))
                 .overlay(
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .stroke(FinishCueTheme.primary.opacity(0.35), lineWidth: 1)
+                        .stroke(HeatbarTheme.primary.opacity(0.35), lineWidth: 1)
                 )
         )
         .accessibilityIdentifier("ComplianceBanner")

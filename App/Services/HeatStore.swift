@@ -1,19 +1,19 @@
 import Foundation
 import AppRuntimeCore
-import FinishCueDomain
+import HeatbarDomain
 
 final class HeatStore: HeatPackStore {
-    private let store: AtomicCodableStore<FinishCueState>
+    private let store: AtomicCodableStore<HeatbarState>
 
     init(directory: URL) {
-        store = FinishCueStores.stateStore(directory: directory)
+        store = HeatbarStores.stateStore(directory: directory)
     }
 
-    func load() throws -> FinishCueState {
-        try store.load() ?? FinishCueState()
+    func load() throws -> HeatbarState {
+        try store.load() ?? HeatbarState()
     }
 
-    func save(_ state: FinishCueState) throws {
+    func save(_ state: HeatbarState) throws {
         try store.save(state)
     }
 

@@ -8,11 +8,11 @@ struct CalloutDeckView: View {
             VStack(alignment: .leading, spacing: 16) {
                 Text("Callout deck")
                     .font(.title2.bold())
-                    .foregroundStyle(FinishCueTheme.ink)
+                    .foregroundStyle(HeatbarTheme.ink)
 
                 Text("TTS start commands and time callouts. Works offline without AI.")
                     .font(.subheadline)
-                    .foregroundStyle(FinishCueTheme.muted)
+                    .foregroundStyle(HeatbarTheme.muted)
 
                 HStack(spacing: 12) {
                     Button {
@@ -21,7 +21,7 @@ struct CalloutDeckView: View {
                         Label("Play start", systemImage: "play.fill")
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(FinishCueTheme.primary, in: RoundedRectangle(cornerRadius: 14))
+                            .background(HeatbarTheme.primary, in: RoundedRectangle(cornerRadius: 14))
                             .foregroundStyle(.white)
                     }
                     .accessibilityIdentifier("PlayStart")
@@ -32,7 +32,7 @@ struct CalloutDeckView: View {
                         Label("Play times", systemImage: "speaker.wave.2.fill")
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(FinishCueTheme.accent, in: RoundedRectangle(cornerRadius: 14))
+                            .background(HeatbarTheme.accent, in: RoundedRectangle(cornerRadius: 14))
                             .foregroundStyle(.white)
                     }
                     .accessibilityIdentifier("PlayTimes")
@@ -42,7 +42,7 @@ struct CalloutDeckView: View {
                     Task {
                         _ = await appModel.voiceRecorder.requestMicAccess()
                         let url = FileManager.default.temporaryDirectory
-                            .appendingPathComponent("finishcue-mic-\(UUID().uuidString).m4a")
+                            .appendingPathComponent("heatbar-mic-\(UUID().uuidString).m4a")
                         if appModel.voiceRecorder.isRecording {
                             appModel.voiceRecorder.stop()
                         } else {
@@ -55,7 +55,7 @@ struct CalloutDeckView: View {
                         systemImage: "mic.fill"
                     )
                 }
-                .tint(FinishCueTheme.primary)
+                .tint(HeatbarTheme.primary)
                 .accessibilityIdentifier("HandsFreeMic")
 
                 ForEach(appModel.heatCallouts, id: \.id) { cue in
@@ -65,17 +65,17 @@ struct CalloutDeckView: View {
                         HStack {
                             Text(cue.cueKind.uppercased())
                                 .font(.caption.bold())
-                                .foregroundStyle(FinishCueTheme.accent)
+                                .foregroundStyle(HeatbarTheme.accent)
                             Text(cue.text)
-                                .foregroundStyle(FinishCueTheme.ink)
+                                .foregroundStyle(HeatbarTheme.ink)
                             Spacer()
                             if cue.spokenAt != nil {
                                 Image(systemName: "checkmark.circle.fill")
-                                    .foregroundStyle(FinishCueTheme.accent)
+                                    .foregroundStyle(HeatbarTheme.accent)
                             }
                         }
                         .padding(12)
-                        .background(FinishCueTheme.secondary, in: RoundedRectangle(cornerRadius: 12))
+                        .background(HeatbarTheme.secondary, in: RoundedRectangle(cornerRadius: 12))
                     }
                     .buttonStyle(.plain)
                 }
@@ -85,7 +85,7 @@ struct CalloutDeckView: View {
             }
             .padding(20)
         }
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Callouts")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear { appModel.ensureCallouts() }

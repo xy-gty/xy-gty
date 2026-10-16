@@ -18,7 +18,7 @@ struct SlitScrubberView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                         .overlay(
                             RoundedRectangle(cornerRadius: 12)
-                                .stroke(FinishCueTheme.primary.opacity(0.3), lineWidth: 1)
+                                .stroke(HeatbarTheme.primary.opacity(0.3), lineWidth: 1)
                         )
                 }
 
@@ -41,12 +41,12 @@ struct SlitScrubberView: View {
                         chipDraft = ""
                     }
                     .buttonStyle(.borderedProminent)
-                    .tint(FinishCueTheme.accent)
+                    .tint(HeatbarTheme.accent)
                 }
 
                 if appModel.readBusy {
                     Label("Reading lanes…", systemImage: "waveform.path.ecg")
-                        .foregroundStyle(FinishCueTheme.primary)
+                        .foregroundStyle(HeatbarTheme.primary)
                 }
 
                 Button {
@@ -56,7 +56,7 @@ struct SlitScrubberView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(FinishCueTheme.primary, in: RoundedRectangle(cornerRadius: 14))
+                        .background(HeatbarTheme.primary, in: RoundedRectangle(cornerRadius: 14))
                         .foregroundStyle(.white)
                 }
                 .disabled(appModel.readBusy)
@@ -65,11 +65,11 @@ struct SlitScrubberView: View {
                 Button("Open coach chat") {
                     appModel.push(.coachChat)
                 }
-                .foregroundStyle(FinishCueTheme.accent)
+                .foregroundStyle(HeatbarTheme.accent)
             }
             .padding(20)
         }
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Slit scrubber")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("SlitScrubber")

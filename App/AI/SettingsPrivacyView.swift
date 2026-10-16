@@ -1,5 +1,5 @@
 import SwiftUI
-import FinishCueDomain
+import HeatbarDomain
 
 struct SettingsPrivacyView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -21,9 +21,9 @@ struct SettingsPrivacyView: View {
                 ))
                 Text("Provider: \(AIConsentContract.provider) · \(AIConsentContract.disclosureVersion)")
                     .font(.caption)
-                    .foregroundStyle(FinishCueTheme.muted)
+                    .foregroundStyle(HeatbarTheme.muted)
                 if let reason = appModel.aiUnavailableReason {
-                    Text(reason).font(.caption).foregroundStyle(FinishCueTheme.muted)
+                    Text(reason).font(.caption).foregroundStyle(HeatbarTheme.muted)
                 }
             }
 
@@ -35,7 +35,7 @@ struct SettingsPrivacyView: View {
             }
 
             Section("Compliance") {
-                ForEach(FinishCueCompliance.requiredDisclaimers, id: \.self) { line in
+                ForEach(HeatbarCompliance.requiredDisclaimers, id: \.self) { line in
                     Text(line).font(.caption)
                 }
             }
@@ -52,7 +52,7 @@ struct SettingsPrivacyView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Settings")
         .accessibilityIdentifier("SettingsPrivacy")
     }

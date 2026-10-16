@@ -9,11 +9,11 @@ struct CaptureImportView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Capture or import finish strip")
                     .font(.title2.bold())
-                    .foregroundStyle(FinishCueTheme.ink)
+                    .foregroundStyle(HeatbarTheme.ink)
 
                 Text("Camera for on-rack finish slits; Photos for training or amateur-meet strips.")
                     .font(.subheadline)
-                    .foregroundStyle(FinishCueTheme.muted)
+                    .foregroundStyle(HeatbarTheme.muted)
 
                 Button {
                     appModel.showCamera = true
@@ -22,7 +22,7 @@ struct CaptureImportView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(FinishCueTheme.primary, in: RoundedRectangle(cornerRadius: 14))
+                        .background(HeatbarTheme.primary, in: RoundedRectangle(cornerRadius: 14))
                         .foregroundStyle(.white)
                 }
                 .accessibilityIdentifier("SnapFinish")
@@ -32,7 +32,7 @@ struct CaptureImportView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(FinishCueTheme.accent, in: RoundedRectangle(cornerRadius: 14))
+                        .background(HeatbarTheme.accent, in: RoundedRectangle(cornerRadius: 14))
                         .foregroundStyle(.white)
                 }
                 .accessibilityIdentifier("ImportStrip")
@@ -43,11 +43,11 @@ struct CaptureImportView: View {
                 Button("Cancel") {
                     appModel.popToHome()
                 }
-                .foregroundStyle(FinishCueTheme.muted)
+                .foregroundStyle(HeatbarTheme.muted)
             }
             .padding(20)
         }
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Capture")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("CaptureImport")
