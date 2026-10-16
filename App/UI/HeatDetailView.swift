@@ -9,7 +9,7 @@ struct HeatDetailView: View {
                 Section(heat.title) {
                     Text(heat.complianceSnapshot)
                         .font(.caption)
-                        .foregroundStyle(FinishCueTheme.muted)
+                        .foregroundStyle(HeatbarTheme.muted)
                     Button("Capture / import") { appModel.push(.captureImport) }
                     Button("Slit scrubber") { appModel.push(.slitScrubber) }
                     Button("Coach chat") { appModel.push(.coachChat) }
@@ -19,7 +19,7 @@ struct HeatDetailView: View {
 
             Section("Confirmed reads") {
                 if appModel.confirmedReads.isEmpty {
-                    Text("None yet").foregroundStyle(FinishCueTheme.muted)
+                    Text("None yet").foregroundStyle(HeatbarTheme.muted)
                 } else {
                     ForEach(appModel.confirmedReads, id: \.id) { read in
                         Text("L\(read.laneNumber)  \(read.athleteLabel)  \(read.timeRead)")
@@ -31,7 +31,7 @@ struct HeatDetailView: View {
             Section("Finish cards") {
                 let cards = appModel.heatCards.filter { $0.status == "confirmed" }
                 if cards.isEmpty {
-                    Text("None kept").foregroundStyle(FinishCueTheme.muted)
+                    Text("None kept").foregroundStyle(HeatbarTheme.muted)
                 } else {
                     ForEach(cards, id: \.id) { card in
                         Text("Lanes \(card.laneNumbers.map(String.init).joined(separator: ",")) · \(card.timeChips.joined(separator: ", "))")
@@ -40,7 +40,7 @@ struct HeatDetailView: View {
             }
         }
         .scrollContentBackground(.hidden)
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Heat detail")
         .accessibilityIdentifier("HeatDetail")
     }

@@ -19,10 +19,10 @@ struct CoachChatView: View {
                                     .padding(12)
                                     .background(
                                         turn.role == "user"
-                                            ? FinishCueTheme.primary.opacity(0.9)
-                                            : FinishCueTheme.secondary
+                                            ? HeatbarTheme.primary.opacity(0.9)
+                                            : HeatbarTheme.secondary
                                     )
-                                    .foregroundStyle(turn.role == "user" ? Color.white : FinishCueTheme.ink)
+                                    .foregroundStyle(turn.role == "user" ? Color.white : HeatbarTheme.ink)
                                     .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                                 if turn.role != "user" { Spacer(minLength: 40) }
                             }
@@ -40,7 +40,7 @@ struct CoachChatView: View {
 
             if appModel.coachBusy {
                 ProgressView("Coach thinking…")
-                    .tint(FinishCueTheme.primary)
+                    .tint(HeatbarTheme.primary)
                     .padding(.bottom, 4)
             }
 
@@ -54,7 +54,7 @@ struct CoachChatView: View {
                     } label: {
                         Image(systemName: "arrow.up.circle.fill")
                             .font(.title)
-                            .foregroundStyle(FinishCueTheme.primary)
+                            .foregroundStyle(HeatbarTheme.primary)
                     }
                     .disabled(appModel.coachQuestion.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     .accessibilityIdentifier("SendCoach")
@@ -74,11 +74,11 @@ struct CoachChatView: View {
                         }
                     } label: {
                         Label(
-                            appModel.speechService.isListening ? "Stop speak" : "Speak cue",
+                            appModel.speechService.isListening ? "Stop speak" : "Read aloud",
                             systemImage: appModel.speechService.isListening ? "stop.circle.fill" : "mic.circle.fill"
                         )
                     }
-                    .tint(FinishCueTheme.accent)
+                    .tint(HeatbarTheme.accent)
                     .accessibilityIdentifier("SpeakCue")
 
                     Spacer()
@@ -93,9 +93,9 @@ struct CoachChatView: View {
                 }
             }
             .padding(16)
-            .background(FinishCueTheme.secondary.opacity(0.7))
+            .background(HeatbarTheme.secondary.opacity(0.7))
         }
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Coach chat")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("CoachChat")

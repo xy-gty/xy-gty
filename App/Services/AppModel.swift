@@ -3,12 +3,12 @@ import SwiftUI
 import UIKit
 import PhotosUI
 import AppRuntimeCore
-import FinishCueDomain
+import HeatbarDomain
 
 @MainActor
 final class AppModel: ObservableObject {
-    @Published var state = FinishCueState()
-    @Published var path: [FinishCueRoute] = []
+    @Published var state = HeatbarState()
+    @Published var path: [HeatbarRoute] = []
     @Published var statusMessage: String?
     @Published var statusIsError = false
     @Published var showConsent = false
@@ -33,7 +33,7 @@ final class AppModel: ObservableObject {
     @Published var lastUserFeedback = ""
 
     let consentGate: AIConsentGate
-    let navigation: TypedNavigationStore<FinishCueRoutePayload>
+    let navigation: TypedNavigationStore<HeatbarRoutePayload>
     let tts = TTSPlayer()
     let speechService = SpeechRecognitionService()
     let voiceRecorder = VoiceNoteRecorder()
@@ -41,7 +41,7 @@ final class AppModel: ObservableObject {
     private let heatStore: HeatStore
     private let supportRoot: URL
     private let mediaRoot: URL
-    private let keychain = FinishCueStores.apiKeyStore()
+    private let keychain = HeatbarStores.apiKeyStore()
     private var cachedAPIKey: String?
     private var pendingAIAction: (() -> Void)?
     private var importGeneration = 0
@@ -93,7 +93,7 @@ final class AppModel: ObservableObject {
 
     init() {
         let root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("finishcue", isDirectory: true)
+            .appendingPathComponent("heatbar", isDirectory: true)
         try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
         supportRoot = root
         mediaRoot = root.appendingPathComponent("media", isDirectory: true)
@@ -101,11 +101,11 @@ final class AppModel: ObservableObject {
 
         heatStore = HeatStore(directory: root)
         navigation = TypedNavigationStore(
-            url: FinishCueStores.storeURL(directory: root, name: FinishCueStores.navigationFile),
-            isValid: { FinishCueRoute.allCases.contains($0.route) }
+            url: HeatbarStores.storeURL(directory: root, name: HeatbarStores.navigationFile),
+            isValid: { HeatbarRoute.allCases.contains($0.route) }
         )
 
-        let consentURL = FinishCueStores.storeURL(directory: root, name: FinishCueStores.aiConsentLocal)
+        let consentURL = HeatbarStores.storeURL(directory: root, name: HeatbarStores.aiConsentLocal)
         consentGate = AIConsentContract.makeGate(
             load: {
                 guard FileManager.default.fileExists(atPath: consentURL.path) else { return nil }
@@ -121,7 +121,7 @@ final class AppModel: ObservableObject {
                     revokedAt: gateState.granted ? nil : Date()
                 )
                 let mirrorData = try JSONEncoder().encode(mirror)
-                Task { try? await FinishCueStores.consentKeychainStore().save(mirrorData) }
+                Task { try? await HeatbarStores.consentKeychainStore().save(mirrorData) }
             }
         )
         consentGranted = consentGate.state.granted
@@ -143,7 +143,7 @@ final class AppModel: ObservableObject {
     }
 
     private func seedUITestHeatIfNeeded() {
-        state = FinishCueState()
+        state = HeatbarState()
         let heatId = "uitest-heat"
         let stripId = "uitest-strip"
         let image = UIGraphicsImageRenderer(size: CGSize(width: 640, height: 120)).image { ctx in
@@ -161,7 +161,7 @@ final class AppModel: ObservableObject {
             id: heatId,
             title: "UITest Heat A",
             venueNote: "practice",
-            complianceSnapshot: FinishCueCompliance.bannerEN,
+            complianceSnapshot: HeatbarCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )
@@ -197,7 +197,7 @@ final class AppModel: ObservableObject {
     }
 
     func reload() {
-        state = (try? heatStore.load()) ?? FinishCueState()
+        state = (try? heatStore.load()) ?? HeatbarState()
         consentGranted = consentGate.state.granted
         if activeHeatId == nil {
             activeHeatId = state.heatPacks.first?.id
@@ -211,7 +211,7 @@ final class AppModel: ObservableObject {
 
     private func saveNavigation() {
         let payloads = path.map {
-            FinishCueRoutePayload(
+            HeatbarRoutePayload(
                 route: $0,
                 heatPackId: activeHeatId,
                 finishStripId: activeStripId,
@@ -242,7 +242,7 @@ final class AppModel: ObservableObject {
         statusIsError = error
     }
 
-    func push(_ route: FinishCueRoute) {
+    func push(_ route: HeatbarRoute) {
         path.append(route)
         saveNavigation()
     }
@@ -260,7 +260,7 @@ final class AppModel: ObservableObject {
             id: id,
             title: title,
             venueNote: "",
-            complianceSnapshot: FinishCueCompliance.bannerEN,
+            complianceSnapshot: HeatbarCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )

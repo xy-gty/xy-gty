@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>FinishCue</string>
+	<string>Heatbar</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>FinishCue</string>
+	<string>Heatbar</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -29,7 +29,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Capture finish-line slit or video so FinishCue can read lanes and times</string>
+	<string>Capture finish-line slit or video so Heatbar can read lanes and times</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Import training or amateur-meet finish strips for review and coaching</string>
 	<key>NSMicrophoneUsageDescription</key>

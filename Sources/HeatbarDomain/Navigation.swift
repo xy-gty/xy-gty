@@ -1,7 +1,7 @@
 import Foundation
 
 /// Frozen navigation destinations from technical_contract.v1.json.
-public enum FinishCueRoute: String, Codable, CaseIterable, Sendable {
+public enum HeatbarRoute: String, Codable, CaseIterable, Sendable {
     case heatHome = "HeatHome"
     case captureImport = "CaptureImport"
     case slitScrubber = "SlitScrubber"
@@ -16,15 +16,15 @@ public enum FinishCueRoute: String, Codable, CaseIterable, Sendable {
 }
 
 /// Parameterized route payload for TypedNavigationStore restore.
-public struct FinishCueRoutePayload: Codable, Hashable, Sendable {
-    public var route: FinishCueRoute
+public struct HeatbarRoutePayload: Codable, Hashable, Sendable {
+    public var route: HeatbarRoute
     public var heatPackId: String?
     public var finishStripId: String?
     public var finishCardId: String?
     /// privacy | terms | support | providerPolicy
     public var legalPage: String?
     public init(
-        route: FinishCueRoute,
+        route: HeatbarRoute,
         heatPackId: String? = nil,
         finishStripId: String? = nil,
         finishCardId: String? = nil,

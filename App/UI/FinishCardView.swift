@@ -1,5 +1,5 @@
 import SwiftUI
-import FinishCueDomain
+import HeatbarDomain
 
 struct FinishCardView: View {
     @EnvironmentObject private var appModel: AppModel
@@ -18,7 +18,7 @@ struct FinishCardView: View {
 
                 Text("Annotated finish-bar card")
                     .font(.title2.bold())
-                    .foregroundStyle(FinishCueTheme.ink)
+                    .foregroundStyle(HeatbarTheme.ink)
 
                 if let path = card?.stripCropURL ?? appModel.activeStrip?.localMediaURL,
                    let image = UIImage(contentsOfFile: path) {
@@ -34,7 +34,7 @@ struct FinishCardView: View {
                             .font(.caption.bold())
                             .padding(.horizontal, 10)
                             .padding(.vertical, 6)
-                            .background(FinishCueTheme.primary.opacity(0.15), in: Capsule())
+                            .background(HeatbarTheme.primary.opacity(0.15), in: Capsule())
                     }
                 }
 
@@ -45,7 +45,7 @@ struct FinishCardView: View {
                                 .font(.subheadline.monospacedDigit().weight(.semibold))
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 8)
-                                .background(FinishCueTheme.accent.opacity(0.2), in: Capsule())
+                                .background(HeatbarTheme.accent.opacity(0.2), in: Capsule())
                         }
                     }
                 }
@@ -53,7 +53,7 @@ struct FinishCardView: View {
                 HStack {
                     Button("Keep card") { appModel.keepCard() }
                         .buttonStyle(.borderedProminent)
-                        .tint(FinishCueTheme.accent)
+                        .tint(HeatbarTheme.accent)
                         .accessibilityIdentifier("KeepCard")
                     Button("Discard") { appModel.discardCard() }
                         .buttonStyle(.bordered)
@@ -61,7 +61,7 @@ struct FinishCardView: View {
             }
             .padding(20)
         }
-        .finishCueScreen()
+        .heatbarScreen()
         .navigationTitle("Finish card")
         .navigationBarTitleDisplayMode(.inline)
         .accessibilityIdentifier("FinishCard")

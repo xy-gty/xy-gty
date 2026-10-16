@@ -1,5 +1,5 @@
 import Foundation
-import FinishCueDomain
+import HeatbarDomain
 
 struct LaneReadDraft: Sendable {
     var laneNumber: Int
@@ -74,10 +74,10 @@ struct DeepSeekClient {
             "heat_question": "",
         ]
         let system = """
-        You are FinishCue, an AI finish-line coach for training and amateur meet photo timing.
+        You are Heatbar, an AI finish-line coach for training and amateur meet photo timing.
         Reply JSON only: {"strip_desc":"","lanes":[{"lane":1,"athlete":"","time":"12.34"}]}
         Not an official FAT timing device. Not betting. Not anti-doping enforcement.
-        Never name SprintTimer or competitor brands. Not FormCue HIIT. Not StopCue onion-skin.
+        Never name SprintTimer or competitor brands. Not Workrest HIIT. Not Onionreel onion-skin.
         """
         let content = try await chat(system: system, userJSON: payload)
         return try Self.parseReads(content: content, fallbackDesc: stripDesc)
@@ -104,7 +104,7 @@ struct DeepSeekClient {
             "raw_time_reads": [],
         ]
         let system = """
-        You are FinishCue heat coach. Reply JSON only:
+        You are Heatbar heat coach. Reply JSON only:
         {"reply":"short coach answer","heat_order_note":"lane order summary"}
         Training aid / amateur meet photo timing only. Not official FAT. Not betting. Not anti-doping.
         Never name SprintTimer.

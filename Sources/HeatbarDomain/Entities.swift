@@ -205,8 +205,8 @@ public struct AppSettings: Codable, Hashable, Sendable {
     }
 }
 
-/// Aggregate root persisted via AtomicCodableStore\<FinishCueState\>.
-public struct FinishCueState: Codable, Hashable, Sendable {
+/// Aggregate root persisted via AtomicCodableStore\<HeatbarState\>.
+public struct HeatbarState: Codable, Hashable, Sendable {
     public var heatPacks: [HeatPack]
     public var finishStrips: [FinishStrip]
     public var laneReads: [LaneRead]

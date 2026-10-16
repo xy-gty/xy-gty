@@ -1,14 +1,14 @@
 import XCTest
-import FinishCueDomain
+import HeatbarDomain
 import AppRuntimeCore
 
-final class FinishCueDomainTests: XCTestCase {
+final class HeatbarDomainTests: XCTestCase {
     func testReviewControlLabels() {
         XCTAssertEqual(ReadingReviewBar.confirm, "Keep")
         XCTAssertEqual(ReadingReviewBar.reject, "Discard")
         XCTAssertEqual(ReadingReviewBar.edit, "Edit")
         XCTAssertEqual(AIConsentContract.provider, "DeepSeek")
-        XCTAssertEqual(AIConsentContract.disclosureVersion, "finishcue.consent.v1")
+        XCTAssertEqual(AIConsentContract.disclosureVersion, "heatbar.consent.v1")
         XCTAssertEqual(AIConsentContract.fields.count, 8)
     }
 
@@ -22,19 +22,19 @@ final class FinishCueDomainTests: XCTestCase {
 
     func testHeatStoreRoundTrip() throws {
         let dir = FileManager.default.temporaryDirectory
-            .appendingPathComponent("finishcue-store-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("heatbar-store-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         defer { try? FileManager.default.removeItem(at: dir) }
 
-        let store = AtomicCodableStore<FinishCueState>(
-            url: FinishCueStores.storeURL(directory: dir, name: FinishCueStores.stateFile)
+        let store = AtomicCodableStore<HeatbarState>(
+            url: HeatbarStores.storeURL(directory: dir, name: HeatbarStores.stateFile)
         )
-        var state = FinishCueState()
+        var state = HeatbarState()
         let pack = HeatPack(
             id: "h1",
             title: "Heat A",
             venueNote: "practice",
-            complianceSnapshot: FinishCueCompliance.bannerEN,
+            complianceSnapshot: HeatbarCompliance.bannerEN,
             createdAt: Date(),
             updatedAt: Date()
         )
@@ -100,22 +100,22 @@ final class FinishCueDomainTests: XCTestCase {
     }
 
     func testIdentityPaletteComplianceAndAllergy() {
-        XCTAssertEqual(FinishCueIdentity.developmentBundleId, "com.lingguang.finishcue")
-        XCTAssertEqual(FinishCueIdentity.productDir, "finishcue")
-        XCTAssertEqual(FinishCueIdentity.appName, "FinishCue")
-        XCTAssertEqual(FinishCuePalette.primary, "#BE185D")
-        XCTAssertEqual(FinishCuePalette.secondary, "#ECFEFF")
-        XCTAssertEqual(FinishCuePalette.accent, "#65A30D")
-        XCTAssertEqual(FinishCueDevicePolicy.targetDevice, "iPhone 17 Pro")
-        XCTAssertEqual(FinishCueDevicePolicy.preferredUDID, "B14CC0EA")
-        XCTAssertTrue(FinishCueDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
-        XCTAssertTrue(FinishCueAllergy.bannedAppCopyNames.contains("SprintTimer"))
-        XCTAssertTrue(FinishCueAllergy.bannedTwinShells.contains("FormCue"))
-        XCTAssertTrue(FinishCueAllergy.bannedTwinShells.contains("StopCue"))
-        XCTAssertTrue(FinishCueAllergy.requiredUI.contains(where: { $0.contains("slit-scan") }))
-        XCTAssertTrue(FinishCueAllergy.noAppIconOrLaunchScreen)
-        XCTAssertTrue(FinishCueCompliance.bannerZH.contains("辅助训练"))
-        XCTAssertTrue(FinishCueCompliance.bannerEN.contains("not an official FAT"))
+        XCTAssertEqual(HeatbarIdentity.developmentBundleId, "com.lingguang.heatbar")
+        XCTAssertEqual(HeatbarIdentity.productDir, "heatbar")
+        XCTAssertEqual(HeatbarIdentity.appName, "Heatbar")
+        XCTAssertEqual(HeatbarPalette.primary, "#BE185D")
+        XCTAssertEqual(HeatbarPalette.secondary, "#ECFEFF")
+        XCTAssertEqual(HeatbarPalette.accent, "#65A30D")
+        XCTAssertEqual(HeatbarDevicePolicy.targetDevice, "iPhone 17 Pro")
+        XCTAssertEqual(HeatbarDevicePolicy.preferredUDID, "B14CC0EA")
+        XCTAssertTrue(HeatbarDevicePolicy.bannedDevices.contains("iPhone 17 Pro Max"))
+        XCTAssertTrue(HeatbarAllergy.bannedAppCopyNames.contains("SprintTimer"))
+        XCTAssertTrue(HeatbarAllergy.bannedTwinShells.contains("Workrest"))
+        XCTAssertTrue(HeatbarAllergy.bannedTwinShells.contains("Onionreel"))
+        XCTAssertTrue(HeatbarAllergy.requiredUI.contains(where: { $0.contains("slit-scan") }))
+        XCTAssertTrue(HeatbarAllergy.noAppIconOrLaunchScreen)
+        XCTAssertTrue(HeatbarCompliance.bannerZH.contains("辅助训练"))
+        XCTAssertTrue(HeatbarCompliance.bannerEN.contains("not an official FAT"))
     }
 
     func testNavigationRoutesCoverContract() {
@@ -123,7 +123,7 @@ final class FinishCueDomainTests: XCTestCase {
             "HeatHome", "CaptureImport", "SlitScrubber", "CoachChat", "ReadingReview",
             "FinishCard", "CalloutDeck", "HeatDetail", "Settings", "LegalPages", "ConsentSheet",
         ]
-        let actual = Set(FinishCueRoute.allCases.map(\.rawValue))
+        let actual = Set(HeatbarRoute.allCases.map(\.rawValue))
         XCTAssertEqual(actual, required)
     }
 }
